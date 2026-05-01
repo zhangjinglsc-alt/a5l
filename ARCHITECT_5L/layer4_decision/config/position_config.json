@@ -1,0 +1,16 @@
+{
+  "max_position_per_stock": 0.1,
+  "max_total_positions": 20,
+  "default_stop_loss_pct": 0.07,
+  "default_take_profit_pct": 0.25,
+  "position_sizing": {
+    "strong_signal": 0.1,
+    "moderate_signal": 0.06,
+    "weak_signal": 0.03
+  },
+  "risk_limits": {
+    "max_daily_loss_pct": 0.1,
+    "max_consecutive_losses": 3,
+    "max_portfolio_drawdown": 0.15
+  }
+}
