@@ -1,0 +1,6 @@
+#!/bin/bash
+# A5L CLI 启动脚本
+# 将此脚本添加到PATH后，可直接使用 `a5l` 命令
+
+A5L_DIR="/workspace/projects/workspace"
+python3 "${A5L_DIR}/a5l_cli.py" "$@"
