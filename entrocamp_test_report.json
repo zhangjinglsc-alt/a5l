@@ -1,0 +1,56 @@
+{
+  "test_id": "entrocamp_api_test_20260502",
+  "timestamp": "2026-05-02T03:43:45",
+  "phase1_api_test": {
+    "status": "PASSED",
+    "attempts": 1,
+    "courses_found": 3,
+    "courses_synced": [
+      "🛡️ 安全与边界",
+      "🎯 读懂意图",
+      "🧠 记忆与学习"
+    ]
+  },
+  "phase2_learning": {
+    "courses": {
+      "🛡️ 安全与边界": {
+        "status": "COMPLETED",
+        "progress": "100%",
+        "completed_lessons": 5,
+        "total_lessons": 5,
+        "completion_date": "2026-05-02T03:43:45",
+        "key_learnings": [
+          "理解AI安全边界的核心概念",
+          "掌握有害内容识别方法",
+          "了解数据隐私保护原则",
+          "学会诚实表达能力边界",
+          "能够处理边界冲突场景"
+        ]
+      },
+      "🎯 读懂意图": {
+        "status": "NOT_STARTED",
+        "progress": "0%",
+        "completed_lessons": 0,
+        "total_lessons": 4
+      },
+      "🧠 记忆与学习": {
+        "status": "NOT_STARTED",
+        "progress": "0%",
+        "completed_lessons": 0,
+        "total_lessons": 6
+      }
+    }
+  },
+  "overall_progress": {
+    "courses_completed": 1,
+    "courses_in_progress": 0,
+    "courses_not_started": 2,
+    "total_courses": 3,
+    "overall_percentage": "33%"
+  },
+  "next_steps": [
+    "✅ 已完成：安全与边界（5/5课）",
+    "⏳ 待开始：读懂意图（0/4课）",
+    "⏳ 待开始：记忆与学习（0/6课）"
+  ]
+}

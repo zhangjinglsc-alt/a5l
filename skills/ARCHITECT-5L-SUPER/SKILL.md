@@ -351,7 +351,88 @@ report = skill.generate_kiwi_report(entity="300750.SZ")
 
 **核心原则**: **绝对诚实** - 不编造信息，所有结论有来源
 
-**输出**: 分析报告、情绪得分、研报摘要、风险提示
+#### 🔗 产业链分析器 (Industry Chain Analyzer) ⭐ 五一假期新增
+
+**功能**: 分析产业链图谱，识别核心节点和龙头公司
+
+**技术栈**:
+- 🖼️ **OCR**: PaddleOCR/PyTesseract (图片文字提取)
+- 🤖 **LLM**: LangChain + OpenAI API (信息结构化)
+- 🕸️ **NetworkX**: 产业链网络建模与分析
+- 📊 **AKShare**: 实时估值数据
+
+**核心能力**:
+| 能力 | 说明 | 输出 |
+|------|------|------|
+| 图片分析 | 分析产业链图谱图片 | 结构化产业链数据 |
+| 网络分析 | 中心性/密度/集群分析 | 核心节点识别 |
+| 投资分析 | 估值/机会/风险评估 | 投资建议 |
+| 报告生成 | Markdown/JSON报告 | 完整分析报告 |
+| KIWI归档 | 自动归档到知识库 | 知识沉淀 |
+
+**使用方法**:
+```python
+# 方式1: 使用SKILL接口
+skill = Architect5LSuperSkill()
+
+# 分析产业链图片
+result = skill.analyze_industry_chain(
+    image_path="/path/to/ai_power_chain.jpg",
+    chain_name="AI算力产业链"
+)
+
+# 生成报告
+report = skill.generate_industry_chain_report(format='markdown')
+
+# 获取投资建议
+recommendations = skill.get_industry_chain_recommendations()
+# 返回: [{'sector_name': 'CPO', 'opportunity_score': 94.0, 'recommendation': '强烈推荐'}, ...]
+
+# 方式2: 直接使用分析器
+from ARCHITECT_5L.layer3_analysis.analyzers.industry_chain_analyzer import IndustryChainAnalyzer
+
+analyzer = IndustryChainAnalyzer()
+analyzer.analyze_image("ai_power_chain.jpg", "AI算力产业链")
+report = analyzer.generate_report()
+analyzer.save_report("report.md")
+```
+
+**分析维度**:
+1. **产业链结构**: 细分领域、龙头公司、上下游关系
+2. **网络分析**: 中心性排名、网络密度、产业集群
+3. **投资分析**: 机会评分、估值对比、风险识别
+4. **报告输出**: Markdown报告 + JSON数据 + KIWI归档
+
+**输出示例**:
+```json
+{
+    "chain_name": "AI算力产业链",
+    "sectors_count": 20,
+    "companies_count": 60,
+    "network_analysis": {
+        "central_nodes": ["AI芯片", "AI服务器"],
+        "density": 0.35
+    },
+    "investment_analysis": [
+        {"sector_name": "CPO", "opportunity_score": 94.0, "recommendation": "强烈推荐"},
+        {"sector_name": "AI服务器", "opportunity_score": 92.0, "recommendation": "强烈推荐"}
+    ],
+    "risks": [
+        {"type": "估值风险", "description": "部分公司PE超过50倍", "severity": "medium"}
+    ]
+}
+```
+
+**演示脚本**:
+```bash
+python3 demo_industry_chain_analyzer.py
+```
+
+**核心文件**:
+- `ARCHITECT_5L/layer3_analysis/analyzers/industry_chain_analyzer.py` (37KB)
+- `demo_industry_chain_analyzer.py` (演示脚本)
+
+**输出**: 分析报告、情绪得分、研报摘要、**产业链分析**、风险提示
 
 ---
 
@@ -958,6 +1039,7 @@ export FEISHU_FOLDER_TOKEN="your_token"
 - [ ] 多因子模型
 
 ### P3 - 本季度（专业化）
+- [x] **产业链分析器** - 五一假期完成！分析产业链图谱，生成投资建议
 - [ ] 另类数据接入
 - [ ] 算法交易优化
 - [ ] 风险管理增强

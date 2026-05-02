@@ -1,0 +1,43 @@
+{
+  "system": {
+    "version": "2.0.0",
+    "name": "Evolution Daemon",
+    "environment": "production",
+    "timezone": "Asia/Shanghai",
+    "language": "zh-CN"
+  },
+  "performance": {
+    "max_memory_mb": 2048,
+    "max_cpu_percent": 80,
+    "max_disk_percent": 80,
+    "cache_enabled": true,
+    "optimization_enabled": true
+  },
+  "automation": {
+    "backup_enabled": true,
+    "backup_schedule": "0 2 * * *",
+    "sync_enabled": true,
+    "sync_schedule": "0 3 * * *",
+    "monitoring_enabled": true,
+    "monitoring_schedule": "0 6 * * *",
+    "optimization_enabled": true,
+    "optimization_schedule": "0 0 * * 0"
+  },
+  "skills": {
+    "registration_enabled": true,
+    "validation_enabled": true,
+    "hot_reload_enabled": true,
+    "auto_update_enabled": true
+  },
+  "security": {
+    "api_key_encrypted": true,
+    "log_access_control": true,
+    "data_encryption": true
+  },
+  "logging": {
+    "level": "INFO",
+    "rotation_enabled": true,
+    "retention_days": 30,
+    "max_file_size_mb": 100
+  }
+}

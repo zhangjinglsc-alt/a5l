@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "memory-palace": {
+      "version": "1.8.5",
+      "installedAt": 1777570025834
+    },
+    "memory-dreaming": {
+      "version": "0.2.0",
+      "installedAt": 1777570036074
+    },
+    "wiki-system": {
+      "version": "1.0.9",
+      "installedAt": 1777570084688
+    }
+  }
+}

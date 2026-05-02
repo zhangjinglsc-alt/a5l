@@ -1,0 +1,92 @@
+2026-05-01 09:15:43,983 - INFO - ==================================================
+2026-05-01 09:15:43,983 - INFO - 智能分层波动监控系统启动
+2026-05-01 09:15:43,983 - INFO - ==================================================
+2026-05-01 09:15:43,983 - INFO - 交易时间: 9:15-15:00
+2026-05-01 09:15:43,983 - INFO - 监控指数: 上证指数, 深证成指, 创业板指, 科创50
+2026-05-01 09:15:43,983 - INFO - 阈值配置: 正常<5% | 显著≥5% | 剧烈≥10%
+2026-05-01 09:15:43,983 - INFO - ==================================================
+2026-05-01 09:15:49,377 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 09:15:49,377 - WARNING - 未获取到指数数据
+2026-05-01 09:30:54,775 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 09:30:54,775 - WARNING - 未获取到指数数据
+2026-05-01 09:45:59,756 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 09:45:59,756 - WARNING - 未获取到指数数据
+2026-05-01 10:01:05,104 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 10:01:05,104 - WARNING - 未获取到指数数据
+2026-05-01 10:16:10,988 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 10:16:10,988 - WARNING - 未获取到指数数据
+2026-05-01 10:31:16,098 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 10:31:16,098 - WARNING - 未获取到指数数据
+2026-05-01 10:46:21,670 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 10:46:21,670 - WARNING - 未获取到指数数据
+2026-05-01 11:01:26,928 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 11:01:26,928 - WARNING - 未获取到指数数据
+2026-05-01 11:16:32,395 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 11:16:32,395 - WARNING - 未获取到指数数据
+2026-05-01 11:31:38,570 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 11:31:38,570 - WARNING - 未获取到指数数据
+2026-05-01 11:46:43,444 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 11:46:43,444 - WARNING - 未获取到指数数据
+2026-05-01 12:01:48,623 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 12:01:48,623 - WARNING - 未获取到指数数据
+2026-05-01 12:16:54,886 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 12:16:54,886 - WARNING - 未获取到指数数据
+2026-05-01 12:32:00,917 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 12:32:00,917 - WARNING - 未获取到指数数据
+2026-05-01 12:47:06,520 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 12:47:06,520 - WARNING - 未获取到指数数据
+2026-05-01 13:02:11,270 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 13:02:11,270 - WARNING - 未获取到指数数据
+2026-05-01 13:17:17,067 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 13:17:17,068 - WARNING - 未获取到指数数据
+2026-05-01 13:32:21,678 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 13:32:21,678 - WARNING - 未获取到指数数据
+2026-05-01 13:47:26,685 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 13:47:26,685 - WARNING - 未获取到指数数据
+2026-05-01 14:02:31,794 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 14:02:31,794 - WARNING - 未获取到指数数据
+2026-05-01 14:17:36,739 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 14:17:36,739 - WARNING - 未获取到指数数据
+2026-05-01 14:32:42,989 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 14:32:42,989 - WARNING - 未获取到指数数据
+2026-05-01 14:47:47,944 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-01 14:47:47,944 - WARNING - 未获取到指数数据
+2026-05-01 15:02:47,944 - INFO - 非交易时段，每小时检查
+2026-05-01 16:02:47,944 - INFO - 非交易时段，每小时检查
+2026-05-01 17:02:47,945 - INFO - 非交易时段，每小时检查
+2026-05-01 18:02:47,945 - INFO - 非交易时段，每小时检查
+2026-05-01 19:02:47,945 - INFO - 非交易时段，每小时检查
+2026-05-01 20:02:47,945 - INFO - 非交易时段，每小时检查
+2026-05-01 21:02:47,946 - INFO - 非交易时段，每小时检查
+2026-05-01 22:02:47,946 - INFO - 非交易时段，每小时检查
+2026-05-01 23:02:47,946 - INFO - 非交易时段，每小时检查
+2026-05-02 00:02:47,946 - INFO - 周末休市，监控暂停
+2026-05-02 00:02:47,946 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 01:02:47,946 - INFO - 周末休市，监控暂停
+2026-05-02 01:02:47,947 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 02:02:47,947 - INFO - 周末休市，监控暂停
+2026-05-02 02:02:47,947 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 03:02:47,947 - INFO - 周末休市，监控暂停
+2026-05-02 03:02:47,947 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 04:02:47,947 - INFO - 周末休市，监控暂停
+2026-05-02 04:02:47,947 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 05:02:47,948 - INFO - 周末休市，监控暂停
+2026-05-02 05:02:47,948 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 06:02:47,948 - INFO - 周末休市，监控暂停
+2026-05-02 06:02:47,948 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 07:02:47,949 - INFO - 周末休市，监控暂停
+2026-05-02 07:02:47,949 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 08:02:47,949 - INFO - 周末休市，监控暂停
+2026-05-02 08:02:47,949 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 09:02:47,949 - INFO - 周末休市，监控暂停
+2026-05-02 09:02:47,949 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 10:02:47,950 - INFO - 周末休市，监控暂停
+2026-05-02 10:02:47,950 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 11:02:47,950 - INFO - 周末休市，监控暂停
+2026-05-02 11:02:47,950 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 12:02:47,950 - INFO - 周末休市，监控暂停
+2026-05-02 12:02:47,950 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 13:02:47,950 - INFO - 周末休市，监控暂停
+2026-05-02 13:02:47,951 - INFO - 下次开市: 2026-05-04 09:15
+2026-05-02 14:02:47,951 - INFO - 周末休市，监控暂停
+2026-05-02 14:02:47,951 - INFO - 下次开市: 2026-05-04 09:15

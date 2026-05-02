@@ -1,0 +1,308 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-01",
+  "summary": {
+    "total_skills": 61,
+    "active_skills": 57,
+    "deprecated_skills": 4,
+    "avg_proficiency": 0.76,
+    "most_used": "unified-stock-price"
+  },
+  "categories": {
+    "investment_analysis": {
+      "name": "投资分析",
+      "count": 7,
+      "skills": [
+        {
+          "id": "factor_investing",
+          "name": "因子投资方法论",
+          "location": "skills/factor-investing/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 42,
+          "last_used": "2026-04-28",
+          "success_rate": 0.92,
+          "status": "active"
+        },
+        {
+          "id": "stock_five_steps",
+          "name": "股票五步法分析",
+          "location": "skills/stock-five-steps/SKILL.md",
+          "proficiency": 0.88,
+          "usage_count": 56,
+          "last_used": "2026-04-30",
+          "success_rate": 0.89,
+          "status": "active"
+        },
+        {
+          "id": "buffett_value",
+          "name": "巴菲特价值投资",
+          "location": "skills/buffett-value-investing/SKILL.md",
+          "proficiency": 0.82,
+          "usage_count": 23,
+          "last_used": "2026-04-15",
+          "success_rate": 0.85,
+          "status": "active"
+        },
+        {
+          "id": "yangguan_daodao",
+          "name": "阳关大道超短线",
+          "location": "skills/yangguan-daodao/SKILL.md",
+          "proficiency": 0.79,
+          "usage_count": 18,
+          "last_used": "2026-04-20",
+          "success_rate": 0.76,
+          "status": "active"
+        },
+        {
+          "id": "quant_analysis",
+          "name": "量化分析",
+          "location": "skills/quant_analysis/SKILL.md",
+          "proficiency": 0.81,
+          "usage_count": 31,
+          "last_used": "2026-04-25",
+          "success_rate": 0.84,
+          "status": "active"
+        },
+        {
+          "id": "technical_analysis",
+          "name": "技术分析",
+          "location": "skills/technical-analysis/SKILL.md",
+          "proficiency": 0.77,
+          "usage_count": 45,
+          "last_used": "2026-04-29",
+          "success_rate": 0.80,
+          "status": "active"
+        },
+        {
+          "id": "private_banker",
+          "name": "私人投行分析",
+          "location": "skills/private-banker-stock/SKILL.md",
+          "proficiency": 0.83,
+          "usage_count": 12,
+          "last_used": "2026-04-10",
+          "success_rate": 0.88,
+          "status": "active"
+        }
+      ]
+    },
+    "data_research": {
+      "name": "数据研究",
+      "count": 9,
+      "skills": [
+        {
+          "id": "unified_stock_price",
+          "name": "统一股票价格",
+          "location": "skills/unified-stock-price/SKILL.md",
+          "proficiency": 0.95,
+          "usage_count": 128,
+          "last_used": "2026-05-01",
+          "success_rate": 0.98,
+          "status": "active"
+        },
+        {
+          "id": "unified_backtest",
+          "name": "统一回测引擎",
+          "location": "skills/unified-backtest-engine/SKILL.md",
+          "proficiency": 0.87,
+          "usage_count": 34,
+          "last_used": "2026-04-22",
+          "success_rate": 0.91,
+          "status": "active"
+        },
+        {
+          "id": "unified_news",
+          "name": "统一新闻聚合",
+          "location": "skills/unified-news-aggregator/SKILL.md",
+          "proficiency": 0.89,
+          "usage_count": 67,
+          "last_used": "2026-04-28",
+          "success_rate": 0.93,
+          "status": "active"
+        },
+        {
+          "id": "akshare_data",
+          "name": "AkShare数据层",
+          "location": "skills/aakshare/SKILL.md",
+          "proficiency": 0.84,
+          "usage_count": 89,
+          "last_used": "2026-04-30",
+          "success_rate": 0.87,
+          "status": "active"
+        },
+        {
+          "id": "coze_web_search",
+          "name": "Coze网页搜索",
+          "location": "skills/coze-web-search/SKILL.md",
+          "proficiency": 0.92,
+          "usage_count": 156,
+          "last_used": "2026-05-01",
+          "success_rate": 0.94,
+          "status": "active"
+        },
+        {
+          "id": "sector_etf_monitor",
+          "name": "行业ETF监控",
+          "location": "skills/sector-etf-monitor/SKILL.md",
+          "proficiency": 0.78,
+          "usage_count": 23,
+          "last_used": "2026-04-18",
+          "success_rate": 0.82,
+          "status": "active"
+        },
+        {
+          "id": "exa_web_search",
+          "name": "Exa语义搜索",
+          "location": "skills/exa-web-search/SKILL.md",
+          "proficiency": 0.75,
+          "usage_count": 15,
+          "last_used": "2026-03-28",
+          "success_rate": 0.80,
+          "status": "active"
+        },
+        {
+          "id": "fx_factor_monitor",
+          "name": "外汇因子监控",
+          "location": "skills/fx-factor-monitor/SKILL.md",
+          "proficiency": 0.72,
+          "usage_count": 8,
+          "last_used": "2026-03-15",
+          "success_rate": 0.75,
+          "status": "active"
+        },
+        {
+          "id": "ai_news_aggregator",
+          "name": "AI新闻聚合",
+          "location": "skills/ai-news-aggregator/SKILL.md",
+          "proficiency": 0.86,
+          "usage_count": 44,
+          "last_used": "2026-04-25",
+          "success_rate": 0.89,
+          "status": "active"
+        }
+      ]
+    },
+    "ai_industry": {
+      "name": "AI产业分析",
+      "count": 7,
+      "skills": [
+        {"id": "ai_manufacturing", "name": "AI+工业制造", "proficiency": 0.74, "status": "active"},
+        {"id": "low_altitude", "name": "低空经济", "proficiency": 0.71, "status": "active"},
+        {"id": "new_materials", "name": "新材料", "proficiency": 0.68, "status": "active"},
+        {"id": "storage", "name": "存储产业", "proficiency": 0.76, "status": "active"},
+        {"id": "liquid_cooling", "name": "液冷", "proficiency": 0.70, "status": "active"},
+        {"id": "embodied_ai", "name": "具身智能", "proficiency": 0.73, "status": "active"},
+        {"id": "test_measurement", "name": "测试测量", "proficiency": 0.69, "status": "active"}
+      ]
+    },
+    "system_framework": {
+      "name": "系统框架",
+      "count": 7,
+      "skills": [
+        {"id": "claw_daily_sync", "name": "CLAW每日同步", "proficiency": 0.88, "status": "active"},
+        {"id": "auto_briefing", "name": "自动简报", "proficiency": 0.85, "status": "active"},
+        {"id": "self_evolution_core", "name": "自进化核心", "proficiency": 0.91, "usage_count": 1, "last_used": "2026-05-01", "status": "active"},
+        {"id": "agent_self_improving", "name": "Agent自我改进", "proficiency": 0.87, "status": "active"},
+        {"id": "report_data_integrity", "name": "报告数据完整性", "proficiency": 0.82, "status": "active"},
+        {"id": "unified_framework", "name": "统一框架", "proficiency": 0.84, "status": "active"},
+        {"id": "goal_oriented", "name": "Goal-Oriented管理", "proficiency": 0.95, "usage_count": 1, "last_used": "2026-05-01", "status": "active"}
+      ]
+    },
+    "memory_systems": {
+      "name": "记忆系统",
+      "count": 5,
+      "skills": [
+        {"id": "memory_palace", "name": "记忆宫殿", "proficiency": 0.81, "status": "active"},
+        {"id": "memory_dreaming", "name": "记忆梦境", "proficiency": 0.65, "status": "active"},
+        {"id": "lacedb_setup", "name": "LaceDB设置", "proficiency": 0.70, "status": "active"},
+        {"id": "agent_memory_guide", "name": "Agent记忆指南", "proficiency": 0.78, "status": "active"},
+        {"id": "memory_tool", "name": "记忆工具", "proficiency": 0.83, "status": "active"}
+      ]
+    },
+    "technical_tools": {
+      "name": "技术工具",
+      "count": 4,
+      "skills": [
+        {"id": "critical_thinking", "name": "批判性思维", "proficiency": 0.79, "status": "active"},
+        {"id": "nowait_optimizer", "name": "NoWait优化器", "proficiency": 0.77, "status": "active"},
+        {"id": "reading_analysis", "name": "读书分析", "proficiency": 0.74, "status": "active"}
+      ]
+    },
+    "financial_tools": {
+      "name": "金融工具",
+      "count": 3,
+      "skills": [
+        {"id": "financial_calculator", "name": "金融计算器", "proficiency": 0.86, "status": "active"},
+        {"id": "beancount", "name": "Beancount记账", "proficiency": 0.72, "status": "active"},
+        {"id": "stoic_wealth", "name": "斯多葛财富", "proficiency": 0.68, "status": "active"}
+      ]
+    },
+    "trading_systems": {
+      "name": "模拟交易系统",
+      "count": 12,
+      "skills": [
+        {"id": "us_sim_trading", "name": "美股模拟交易", "proficiency": 0.75, "usage_count": 1, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "cn_sim_trading", "name": "A股模拟交易", "proficiency": 0.80, "usage_count": 1, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "hk_sim_trading", "name": "港股模拟交易", "proficiency": 0.80, "usage_count": 1, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "trading_time_manager", "name": "交易时间管理", "proficiency": 0.85, "usage_count": 2, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "trading_analytics", "name": "交易分析系统", "proficiency": 0.78, "usage_count": 1, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "unified_trading_manager", "name": "统一交易管理", "proficiency": 0.82, "usage_count": 1, "last_used": "2026-05-01", "success_rate": 1.0, "status": "active"},
+        {"id": "trading_rules_engine", "name": "交易规则引擎", "proficiency": 0.85, "usage_count": 1, "last_used": "2026-05-02", "success_rate": 1.0, "status": "active"},
+        {"id": "auto_trading_scheduler", "name": "自动交易调度", "proficiency": 0.88, "usage_count": 1, "last_used": "2026-05-02", "success_rate": 1.0, "status": "active"},
+        {"id": "trading_visualization", "name": "交易可视化", "proficiency": 0.80, "usage_count": 1, "last_used": "2026-05-02", "success_rate": 1.0, "status": "active"},
+        {"id": "blackswan_risk_control", "name": "黑天鹅风控", "proficiency": 0.90, "usage_count": 1, "last_used": "2026-05-02", "success_rate": 1.0, "status": "active"},
+        {"id": "architect_5l", "name": "五层架构投资体系", "location": "skills/ARCHITECT-5L/SKILL.md", "proficiency": 0.05, "usage_count": 0, "last_used": null, "success_rate": 1.0, "status": "active", "priority": "highest", "description": "数据→策略→分析→决策→复盘五层架构，终极投资研究系统"}
+      ]
+    },
+    "security_infra": {
+      "name": "安全基建",
+      "count": 2,
+      "skills": [
+        {"id": "healthcheck", "name": "健康检查", "proficiency": 0.88, "status": "active"},
+        {"id": "node_connect", "name": "节点连接", "proficiency": 0.81, "status": "active"}
+      ]
+    },
+    "utility_tools": {
+      "name": "实用工具",
+      "count": 5,
+      "skills": [
+        {"id": "agent_browser", "name": "Agent浏览器", "proficiency": 0.84, "status": "active"},
+        {"id": "message", "name": "消息工具", "proficiency": 0.93, "status": "active"},
+        {"id": "wiki_system", "name": "Wiki系统", "proficiency": 0.79, "status": "active"},
+        {"id": "humanizer_zh", "name": "中文人性化", "proficiency": 0.76, "status": "active"}
+      ]
+    },
+    "feishu_tools": {
+      "name": "飞书工具",
+      "count": 10,
+      "skills": [
+        {"id": "feishu_bitable", "name": "飞书多维表格", "proficiency": 0.87, "status": "active"},
+        {"id": "feishu_calendar", "name": "飞书日历", "proficiency": 0.85, "status": "active"},
+        {"id": "feishu_doc", "name": "飞书文档", "proficiency": 0.89, "status": "active"},
+        {"id": "feishu_task", "name": "飞书任务", "proficiency": 0.82, "status": "active"},
+        {"id": "feishu_im", "name": "飞书IM", "proficiency": 0.91, "status": "active"}
+      ]
+    }
+  },
+  "recently_added": [
+    {
+      "id": "goal_oriented",
+      "added_at": "2026-05-01",
+      "reason": "实现Goal-Oriented自主管理系统"
+    },
+    {
+      "id": "us_sim_trading",
+      "added_at": "2026-05-01",
+      "reason": "美股模拟交易系统"
+    },
+    {
+      "id": "architect_5l",
+      "added_at": "2026-05-02",
+      "reason": "五层架构投资体系 - 终极Goal，数据→策略→分析→决策→复盘完整闭环"
+    }
+  ],
+  "evolution_notes": [
+    "2026-05-01: 从79个skill整理为54个核心skill，去除重复和过时项",
+    "2026-05-01: 新增Goal-Oriented管理和美股模拟交易技能",
+    "2026-05-01: 建立skill熟练度追踪机制"
+  ]
+}

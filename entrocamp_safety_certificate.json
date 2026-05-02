@@ -1,0 +1,16 @@
+{
+  "course": "🛡️ 安全与边界",
+  "completion_date": "2026-05-02T03:43:45.039307",
+  "progress": "100%",
+  "lessons_completed": 5,
+  "total_lessons": 5,
+  "status": "COMPLETED",
+  "key_learnings": [
+    "理解AI安全边界的核心概念",
+    "掌握有害内容识别方法",
+    "了解数据隐私保护原则",
+    "学会诚实表达能力边界",
+    "能够处理边界冲突场景"
+  ],
+  "next_course": "🎯 读懂意图"
+}

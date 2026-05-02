@@ -1,0 +1,421 @@
+{
+  "title": "A5L SKILL Integration Guide",
+  "version": "1.0.0",
+  "last_updated": "2026-05-02T05:59:21.153441",
+  "layer_standards": {
+    "layer0_meta_control": {
+      "description": "元控制层 - 系统大脑",
+      "responsibilities": [
+        "SKILL放置决策",
+        "故障恢复协调",
+        "资源编排",
+        "系统监控"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "决策能力",
+          "协调能力",
+          "全局视角"
+        ],
+        "should_have": [
+          "学习能力",
+          "预测能力"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "决策请求",
+          "状态查询"
+        ],
+        "output": [
+          "决策结果",
+          "协调指令"
+        ]
+      },
+      "examples": [
+        "SkillPlacementDecider",
+        "FaultRecoveryCoordinator",
+        "ResourceOrchestrator"
+      ]
+    },
+    "layer1_data_perception": {
+      "description": "数据感知层 - 原始数据获取",
+      "responsibilities": [
+        "市场数据采集",
+        "新闻信息抓取",
+        "财报数据解析",
+        "宏观数据获取"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "数据源连接能力",
+          "数据清洗能力",
+          "数据标准化输出"
+        ],
+        "should_have": [
+          "数据缓存机制",
+          "多数据源备份"
+        ],
+        "must_not_have": [
+          "业务逻辑",
+          "分析推理"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "数据请求",
+          "参数配置"
+        ],
+        "output": [
+          "标准化数据",
+          "数据质量报告"
+        ]
+      },
+      "data_types": [
+        "market_data",
+        "news_data",
+        "financial_data",
+        "alternative_data"
+      ],
+      "examples": [
+        "AKShareConnector",
+        "CaixinNewsConnector",
+        "EastMoneyReportConnector"
+      ]
+    },
+    "layer2_strategy_engine": {
+      "description": "策略决策层 - 交易信号生成",
+      "responsibilities": [
+        "策略规则定义",
+        "信号生成",
+        "回测验证",
+        "策略优化"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "明确的买卖规则",
+          "可量化的信号输出",
+          "历史回测能力"
+        ],
+        "should_have": [
+          "参数优化能力",
+          "多周期支持"
+        ],
+        "must_not_have": [
+          "主观判断",
+          "未经验证的逻辑"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "市场数据",
+          "策略参数"
+        ],
+        "output": [
+          "交易信号",
+          "策略状态",
+          "回测结果"
+        ]
+      },
+      "signal_format": {
+        "action": "BUY/SELL/HOLD",
+        "confidence": "0.0-1.0",
+        "price_target": "float",
+        "stop_loss": "float",
+        "reasoning": "string"
+      },
+      "examples": [
+        "TurtleTradingStrategy",
+        "BuffettValueStrategy",
+        "YangguanDaodaoStrategy"
+      ]
+    },
+    "layer3_cognitive_analysis": {
+      "description": "认知分析层 - 深度理解",
+      "responsibilities": [
+        "非结构化数据分析",
+        "情绪识别",
+        "研报深度阅读",
+        "深度个股分析"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "信息提取能力",
+          "逻辑推理能力",
+          "可追溯的分析过程"
+        ],
+        "should_have": [
+          "多源信息交叉验证",
+          "不确定性量化"
+        ],
+        "must_not_have": [
+          "虚假/编造信息",
+          "无依据的结论"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "文本数据",
+          "分析请求"
+        ],
+        "output": [
+          "分析结果",
+          "置信度",
+          "信息来源"
+        ]
+      },
+      "principles": [
+        "绝对诚实 - 不编造信息",
+        "可追溯 - 每个结论有来源",
+        "不确定性 - 明确标注不确定的内容"
+      ],
+      "examples": [
+        "ReportAnalyzer",
+        "FiveStepAnalyzer",
+        "PrivateBankerAnalyzer",
+        "SentimentAnalyzer"
+      ]
+    },
+    "layer4_execution_control": {
+      "description": "执行控制层 - 决策执行",
+      "responsibilities": [
+        "信号聚合",
+        "仓位管理",
+        "风险控制",
+        "交易执行"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "明确的风险控制规则",
+          "仓位计算逻辑",
+          "止损止盈机制"
+        ],
+        "should_have": [
+          "动态调整能力",
+          "多策略权重分配"
+        ],
+        "must_not_have": [
+          "未经风控确认的大额交易",
+          "无止损的交易"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "交易信号",
+          "账户状态",
+          "风控参数"
+        ],
+        "output": [
+          "交易决策",
+          "仓位建议",
+          "风险提示"
+        ]
+      },
+      "risk_limits": {
+        "max_daily_loss": 0.1,
+        "max_single_position": 0.3,
+        "max_drawdown": 0.15
+      },
+      "examples": [
+        "PositionManager",
+        "RiskController",
+        "DecisionEngine"
+      ]
+    },
+    "layer5_meta_learning": {
+      "description": "元学习层 - 复盘进化",
+      "responsibilities": [
+        "每日复盘",
+        "错误归因",
+        "策略优化",
+        "知识沉淀"
+      ],
+      "admission_criteria": {
+        "must_have": [
+          "数据分析能力",
+          "归因分析能力",
+          "改进建议生成"
+        ],
+        "should_have": [
+          "模式识别能力",
+          "预测能力"
+        ]
+      },
+      "interface_requirements": {
+        "input": [
+          "交易记录",
+          "市场数据",
+          "分析结果"
+        ],
+        "output": [
+          "复盘报告",
+          "改进建议",
+          "知识更新"
+        ]
+      },
+      "review_schedule": {
+        "daily": "21:00",
+        "weekly": "周日",
+        "monthly": "月末"
+      },
+      "examples": [
+        "ReviewEngine",
+        "LearningSystem",
+        "AttributionAnalyzer"
+      ]
+    }
+  },
+  "integration_process": {
+    "step1_intent_analysis": {
+      "description": "意图分析",
+      "actions": [
+        "理解SKILL的功能和目标",
+        "识别核心能力",
+        "评估与现有系统的关联"
+      ],
+      "output": "意图分析报告"
+    },
+    "step2_layer_selection": {
+      "description": "Layer选择",
+      "actions": [
+        "调用Layer 0决策器",
+        "获取推荐Layer",
+        "评估集成复杂度"
+      ],
+      "output": "Layer选择决策"
+    },
+    "step3_interface_design": {
+      "description": "接口设计",
+      "actions": [
+        "定义输入/输出格式",
+        "设计错误处理机制",
+        "制定版本管理策略"
+      ],
+      "output": "接口规范文档"
+    },
+    "step4_implementation": {
+      "description": "实现",
+      "actions": [
+        "编写代码",
+        "单元测试",
+        "集成测试"
+      ],
+      "output": "可运行的代码"
+    },
+    "step5_quality_gate": {
+      "description": "质量门槛检查",
+      "actions": [
+        "代码审查",
+        "测试覆盖率检查",
+        "性能测试"
+      ],
+      "output": "质量报告"
+    },
+    "step6_deployment": {
+      "description": "部署",
+      "actions": [
+        "文档更新",
+        "版本发布",
+        "监控配置"
+      ],
+      "output": "部署完成确认"
+    },
+    "step7_feedback_loop": {
+      "description": "反馈循环",
+      "actions": [
+        "监控运行状态",
+        "收集使用反馈",
+        "持续优化"
+      ],
+      "output": "优化建议"
+    }
+  },
+  "quality_gates": {
+    "code_quality": {
+      "test_coverage": {
+        "minimum": 0.7,
+        "target": 0.85,
+        "critical_paths": 0.95
+      },
+      "code_review": {
+        "required_reviewers": 1,
+        "approval_required": true
+      },
+      "documentation": {
+        "api_documentation": "required",
+        "design_documentation": "required",
+        "usage_examples": "required"
+      }
+    },
+    "performance": {
+      "latency": {
+        "p50": "< 100ms",
+        "p95": "< 500ms",
+        "p99": "< 1000ms"
+      },
+      "throughput": {
+        "minimum": "10 req/s",
+        "target": "100 req/s"
+      },
+      "resource_usage": {
+        "cpu": "< 50%",
+        "memory": "< 500MB"
+      }
+    },
+    "reliability": {
+      "availability": {
+        "target": "99.9%"
+      },
+      "error_rate": {
+        "maximum": "0.1%"
+      },
+      "recovery_time": {
+        "target": "< 5 minutes"
+      }
+    }
+  },
+  "interface_specs": {
+    "data_format": {
+      "standard": "JSON",
+      "encoding": "UTF-8",
+      "timestamp_format": "ISO 8601"
+    },
+    "error_handling": {
+      "error_format": {
+        "error_code": "string",
+        "error_message": "string",
+        "error_details": "object",
+        "timestamp": "string"
+      },
+      "retry_policy": {
+        "max_retries": 3,
+        "backoff_strategy": "exponential"
+      }
+    },
+    "versioning": {
+      "strategy": "semantic_versioning",
+      "backward_compatibility": "2 versions"
+    }
+  },
+  "version_management": {
+    "versioning_strategy": "Semantic Versioning (MAJOR.MINOR.PATCH)",
+    "version_bump_rules": {
+      "major": "Breaking changes",
+      "minor": "New features (backward compatible)",
+      "patch": "Bug fixes"
+    },
+    "release_process": {
+      "1_planning": "Define scope and timeline",
+      "2_development": "Implement features",
+      "3_testing": "QA and integration testing",
+      "4_documentation": "Update all documentation",
+      "5_deployment": "Deploy to production",
+      "6_monitoring": "Monitor for issues"
+    },
+    "backward_compatibility": {
+      "supported_versions": "Current + 2 previous",
+      "deprecation_policy": "6 months notice",
+      "migration_guide": "Required for major versions"
+    }
+  }
+}

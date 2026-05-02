@@ -1,0 +1,45 @@
+{
+  "jobs": [
+    {
+      "name": "Agent自主进化周期",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行自主进化周期：cd /workspace/projects/workspace && python3 TOOLS/agent_evolution_engine.py",
+        "model": "coze/kimi-k2-5-260127",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu"
+      },
+      "sessionTarget": "isolated",
+      "enabled": true
+    },
+    {
+      "name": "美股模拟交易监控",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 21 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agentTurn",
+        "message": "美股开盘监控：检查美股模拟交易持仓，生成日报",
+        "model": "coze/kimi-k2-5-260127",
+        "thinking": "off",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "sessionTarget": "isolated",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "industry_chain": {
+    "name": "AI算力产业链",
+    "sectors": [
+      {
+        "name": "CPO",
+        "companies": [
+          {
+            "name": "中际旭创",
+            "symbol": "300308.SZ",
+            "sector": "CPO",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "新易盛",
+            "symbol": "300502.SZ",
+            "sector": "CPO",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "天孚通信",
+            "symbol": "300394.SZ",
+            "sector": "CPO",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          }
+        ],
+        "upstream": [
+          "光芯片",
+          "电芯片"
+        ],
+        "downstream": [
+          "AI服务器"
+        ],
+        "key_tech": [
+          "硅光技术",
+          "800G光模块"
+        ],
+        "growth_stage": "growth",
+        "description": ""
+      },
+      {
+        "name": "AI服务器",
+        "companies": [
+          {
+            "name": "浪潮信息",
+            "symbol": "000977.SZ",
+            "sector": "AI服务器",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "工业富联",
+            "symbol": "601138.SH",
+            "sector": "AI服务器",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "中科曙光",
+            "symbol": "603019.SH",
+            "sector": "AI服务器",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          }
+        ],
+        "upstream": [
+          "AI芯片",
+          "存储芯片",
+          "CPO"
+        ],
+        "downstream": [
+          "AIDC",
+          "AI应用"
+        ],
+        "key_tech": [
+          "液冷技术",
+          "高速互联"
+        ],
+        "growth_stage": "growth",
+        "description": ""
+      },
+      {
+        "name": "AI芯片",
+        "companies": [
+          {
+            "name": "海光信息",
+            "symbol": "688041.SH",
+            "sector": "AI芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "寒武纪",
+            "symbol": "688256.SH",
+            "sector": "AI芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "景嘉微",
+            "symbol": "300474.SZ",
+            "sector": "AI芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          }
+        ],
+        "upstream": [
+          "半导体设备",
+          "先进封装"
+        ],
+        "downstream": [
+          "AI服务器",
+          "AI PC",
+          "自动驾驶"
+        ],
+        "key_tech": [
+          "GPGPU",
+          "NPU",
+          "Chiplet"
+        ],
+        "growth_stage": "growth",
+        "description": ""
+      },
+      {
+        "name": "存储芯片",
+        "companies": [
+          {
+            "name": "兆易创新",
+            "symbol": "603986.SH",
+            "sector": "存储芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "佰维存储",
+            "symbol": "688525.SH",
+            "sector": "存储芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          },
+          {
+            "name": "江波龙",
+            "symbol": "301308.SZ",
+            "sector": "存储芯片",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          }
+        ],
+        "upstream": [
+          "半导体设备",
+          "晶圆制造"
+        ],
+        "downstream": [
+          "AI服务器",
+          "AI PC",
+          "手机"
+        ],
+        "key_tech": [
+          "HBM",
+          "DDR5",
+          "3D NAND"
+        ],
+        "growth_stage": "growth",
+        "description": ""
+      },
+      {
+        "name": "AIDC",
+        "companies": [
+          {
+            "name": "润泽科技",
+            "symbol": "300442.SZ",
+            "sector": "AIDC",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": true,
+            "description": ""
+          },
+          {
+            "name": "光环新网",
+            "symbol": "300383.SZ",
+            "sector": "AIDC",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          },
+          {
+            "name": "数据港",
+            "symbol": "603881.SH",
+            "sector": "AIDC",
+            "market_cap": null,
+            "pe_ratio": null,
+            "pb_ratio": null,
+            "is_leader": false,
+            "description": ""
+          }
+        ],
+        "upstream": [
+          "AI服务器",
+          "液冷温控",
+          "电力设备"
+        ],
+        "downstream": [
+          "云计算",
+          "AI应用"
+        ],
+        "key_tech": [
+          "液冷数据中心",
+          "绿色能源"
+        ],
+        "growth_stage": "growth",
+        "description": ""
+      }
+    ],
+    "created_at": "2026-05-02T14:23:31.280866",
+    "total_sectors": 5,
+    "total_companies": 15
+  },
+  "network_analysis": {
+    "centrality": {},
+    "metrics": {},
+    "clusters": []
+  },
+  "investment_analysis": [
+    {
+      "sector_name": "CPO",
+      "opportunity_score": 94.0,
+      "concentration_score": 100,
+      "growth_score": 90,
+      "leader_companies": [
+        "中际旭创",
+        "新易盛"
+      ],
+      "recommendation": "强烈推荐"
+    },
+    {
+      "sector_name": "AI服务器",
+      "opportunity_score": 94.0,
+      "concentration_score": 100,
+      "growth_score": 90,
+      "leader_companies": [
+        "浪潮信息",
+        "工业富联"
+      ],
+      "recommendation": "强烈推荐"
+    },
+    {
+      "sector_name": "AI芯片",
+      "opportunity_score": 94.0,
+      "concentration_score": 100,
+      "growth_score": 90,
+      "leader_companies": [
+        "海光信息",
+        "寒武纪"
+      ],
+      "recommendation": "强烈推荐"
+    },
+    {
+      "sector_name": "存储芯片",
+      "opportunity_score": 80.7,
+      "concentration_score": 66.7,
+      "growth_score": 90,
+      "leader_companies": [
+        "兆易创新"
+      ],
+      "recommendation": "强烈推荐"
+    },
+    {
+      "sector_name": "AIDC",
+      "opportunity_score": 80.7,
+      "concentration_score": 66.7,
+      "growth_score": 90,
+      "leader_companies": [
+        "润泽科技"
+      ],
+      "recommendation": "强烈推荐"
+    }
+  ],
+  "archived_at": "2026-05-02T14:23:31.282436"
+}

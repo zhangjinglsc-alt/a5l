@@ -1,0 +1,401 @@
+[
+  {
+    "id": "G001-L3-EVOLUTION",
+    "title": "实现L3自主进化",
+    "description": "从L2半辅助模式进化到L3半自主模式：自主识别并修复简单问题，异常时尝试自我恢复",
+    "status": "active",
+    "created_at": "2026-05-01T22:21:13",
+    "deadline": "2026-05-15",
+    "parent_id": null,
+    "progress": 45.0,
+    "milestones": [
+      {
+        "name": "建立自诊断引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现自修复功能",
+        "completed": false,
+        "progress": 35
+      },
+      {
+        "name": "建立预测能力",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "完善验收机制",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "持续运行7天无干预",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T001-诊断",
+      "T002-修复",
+      "T003-预测",
+      "T004-验收",
+      "T005-持续运行"
+    ]
+  },
+  {
+    "id": "G002-RECURSIVE-IMPROVEMENT",
+    "title": "建立递归自我改进系统",
+    "description": "实现能够改进自身的自我改进机制（Meta-Self-Improvement）。递归层级：Level 0功能改进 → Level 1流程改进 → Level 2元认知改进",
+    "status": "active",
+    "created_at": "2026-05-01T23:25:00",
+    "deadline": "2026-05-08",
+    "parent_id": "G001-L3-EVOLUTION",
+    "progress": 30.0,
+    "milestones": [
+      {
+        "name": "设计递归改进框架",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现改进效果度量",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立元反馈机制",
+        "completed": false,
+        "progress": 20
+      },
+      {
+        "name": "创建改进日志系统",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现递归深度控制",
+        "completed": true,
+        "date": "2026-05-01"
+      }
+    ],
+    "tasks": [
+      "T006-递归框架",
+      "T007-效果度量",
+      "T008-元反馈",
+      "T009-日志系统",
+      "T010-递归控制"
+    ],
+    "recursive_config": {
+      "max_depth": 3,
+      "min_improvement_threshold": 0.05,
+      "auto_trigger": true,
+      "target_components": [
+        "evolution_engine",
+        "goal_manager",
+        "archive_system",
+        "feishu_sync"
+      ]
+    }
+  },
+  {
+    "id": "G003-SIM-TRADING-US",
+    "title": "美股模拟交易系统",
+    "description": "美股模拟交易环境，$100,000本金，实现自主选股、自动执行、自动风控",
+    "status": "active",
+    "created_at": "2026-05-01T15:36:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 25.0,
+    "milestones": [
+      {
+        "name": "初始化交易账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 30
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 20
+      },
+      {
+        "name": "建立风控系统",
+        "completed": false,
+        "progress": 10
+      }
+    ],
+    "tasks": [
+      "T011-US账户初始化",
+      "T012-US选股策略",
+      "T013-US自动执行",
+      "T014-US风控系统"
+    ],
+    "account_info": {
+      "account_id": "US_SIM_001",
+      "initial_capital": 100000,
+      "currency": "USD",
+      "current_equity": 99992.34
+    }
+  },
+  {
+    "id": "G004-SIM-TRADING-CN",
+    "title": "A股模拟交易系统",
+    "description": "A股模拟交易环境，¥1,000,000本金，支持T+1、涨跌停、印花税等A股特有规则",
+    "status": "active",
+    "created_at": "2026-05-01T23:33:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 20.0,
+    "milestones": [
+      {
+        "name": "初始化A股账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现A股交易引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持T+1规则",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持涨跌停保护",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T015-CN账户初始化",
+      "T016-CN交易引擎",
+      "T017-CN选股策略",
+      "T018-CN自动执行"
+    ],
+    "account_info": {
+      "account_id": "CN_SIM_001",
+      "initial_capital": 1000000,
+      "currency": "CNY",
+      "current_equity": 1000000
+    },
+    "market_specific": {
+      "t_plus_1": true,
+      "price_limits": true,
+      "stamp_duty": true,
+      "lot_size": 100
+    }
+  },
+  {
+    "id": "G005-SIM-TRADING-HK",
+    "title": "港股模拟交易系统",
+    "description": "港股模拟交易环境，HK$800,000本金，支持T+2、无涨跌停、每手股数可变等港股规则",
+    "status": "active",
+    "created_at": "2026-05-01T23:33:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 20.0,
+    "milestones": [
+      {
+        "name": "初始化港股账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现港股交易引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持T+2交收",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持可变每手股数",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T019-HK账户初始化",
+      "T020-HK交易引擎",
+      "T021-HK选股策略",
+      "T022-HK自动执行"
+    ],
+    "account_info": {
+      "account_id": "HK_SIM_001",
+      "initial_capital": 800000,
+      "currency": "HKD",
+      "current_equity": 800000
+    },
+    "market_specific": {
+      "t_plus_2": true,
+      "no_price_limits": true,
+      "variable_lot_size": true
+    }
+  },
+  {
+    "id": "G006-ARCHITECT-5L",
+    "title": "构建五层架构投资体系 (ARCHITECT-5L)",
+    "description": "构建完整的数据→策略→分析→决策→复盘投资闭环系统。Layer 1数据底座 + Layer 2策略引擎 + Layer 3非结构化分析 + Layer 4决策信号 + Layer 5复盘进化。这是终极Goal，整合所有交易和研究能力。",
+    "status": "active",
+    "created_at": "2026-05-02T02:51:00",
+    "deadline": "2026-06-15",
+    "parent_id": "G001-L3-EVOLUTION",
+    "progress": 100.0,
+    "priority": "highest",
+    "milestones": [
+      {
+        "name": "Phase 1: 架构设计与规划",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 2: Layer 1 数据底座",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 3: Layer 2 策略引擎",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 4: Layer 3 非结构化分析",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 5: Layer 4 决策信号",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 6: Layer 5 复盘进化",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 7: 递归改进整合",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "系统联调与验证",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      }
+    ],
+    "tasks": [
+      "T023-更新SOUL写入终极Goal",
+      "T024-创建五层架构文件结构",
+      "T025-创建强力Skill文档",
+      "T026-Layer1数据底座搭建",
+      "T027-Layer2策略引擎实现",
+      "T028-Layer3非结构化分析",
+      "T029-Layer4决策信号",
+      "T030-Layer5复盘进化",
+      "T031-递归改进整合",
+      "T032-系统联调测试"
+    ],
+    "architecture": {
+      "layer1": {
+        "name": "数据底座层",
+        "data_sources": [
+          "AKShare",
+          "TuShare",
+          "EastMoney",
+          "Jin10"
+        ],
+        "markets": [
+          "A-share",
+          "US",
+          "HK"
+        ],
+        "data_types": [
+          "price",
+          "volume",
+          "financial",
+          "announcement",
+          "macro",
+          "sector",
+          "sentiment"
+        ]
+      },
+      "layer2": {
+        "name": "交易策略层",
+        "strategies": [
+          "Stock Wizard",
+          "Turtle Trading",
+          "Trend+RS",
+          "Volume-Price",
+          "Fundamental Growth",
+          "Yangguan",
+          "Buffett Value"
+        ]
+      },
+      "layer3": {
+        "name": "非结构化分析层",
+        "outputs": "Daily Feishu Reports (YYYYMMDD-Market-Sector)",
+        "principles": [
+          "Honesty above all",
+          "Verified sources only",
+          "No hallucination"
+        ]
+      },
+      "layer4": {
+        "name": "决策信号层",
+        "modes": [
+          "Simulated Trading (Auto)",
+          "Real Portfolio Research Assistant"
+        ]
+      },
+      "layer5": {
+        "name": "复盘进化层",
+        "schedule": "Daily 21:00",
+        "outputs": "Review reports with attribution analysis"
+      }
+    },
+    "success_criteria": [
+      "Layer 1: 99.9% data availability, <1min latency",
+      "Layer 2: 5+ strategies with documented rules and backtests",
+      "Layer 3: Daily Feishu reports with VERIFIED information only",
+      "Layer 4: Automated simulated trading + real portfolio tracking",
+      "Layer 5: Daily 21:00 review reports with honest attribution",
+      "Recursive: Monthly improvement in win rate and risk-adjusted returns"
+    ],
+    "commitment": "Absolute honesty. No fabricated data. No hallucinated sources. Meticulous verification. Continuous improvement."
+  }
+]

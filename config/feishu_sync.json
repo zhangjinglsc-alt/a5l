@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "created_at": "2026-05-01",
+  "root_folder": {
+    "name": "OpenClaw Agent数据归档",
+    "token": "DG2GfGe0nlLuvSdYlxwcpH0MnGb",
+    "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+  },
+  "sync_config": {
+    "auto_sync_enabled": true,
+    "sync_time": "23:30",
+    "sync_layers": ["soul", "skill", "memory", "goal", "data"],
+    "retention_days": 90
+  },
+  "layer_mapping": {
+    "soul": {
+      "folder": "01-SOUL（灵魂层）",
+      "filename_pattern": "SOUL-人格宪章-{date}.md",
+      "format": "doc"
+    },
+    "skill": {
+      "folder": "02-SKILL（技能层）",
+      "filename_pattern": "SKILL-注册表-{date}",
+      "format": "bitable",
+      "csv_import": true
+    },
+    "memory": {
+      "folder": "03-MOUL（记忆层）/每日情景记忆",
+      "filename_pattern": "MEMORY-{date}.md",
+      "format": "doc"
+    },
+    "goal": {
+      "folder": "04-GOAL（目标层）",
+      "filename_pattern": "GOAL-进展-{date}.md",
+      "format": "doc"
+    },
+    "data": {
+      "folder": "05-DATA（数据层）",
+      "filename_pattern": "DATA-持仓-{date}",
+      "format": "bitable"
+    }
+  }
+}

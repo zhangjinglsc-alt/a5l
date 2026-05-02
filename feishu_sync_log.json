@@ -1,0 +1,68 @@
+[
+  {
+    "date": "2026-05-01",
+    "synced_files": [
+      {
+        "type": "soul",
+        "filename": "SOUL-2026-05-01.md",
+        "size": 6539
+      },
+      {
+        "type": "skill",
+        "filename": "SKILL-2026-05-01.md",
+        "csv": "SKILL-2026-05-01.csv",
+        "size": 3586
+      },
+      {
+        "type": "memory",
+        "filename": "MEMORY-2026-05-01.md",
+        "size": 4515
+      },
+      {
+        "type": "goal",
+        "filename": "GOAL-2026-05-01.md",
+        "size": 403
+      },
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-01.md",
+        "size": 715
+      }
+    ],
+    "failed_files": [],
+    "timestamp": "2026-05-01T23:15:04.778509"
+  },
+  {
+    "date": "2026-05-01",
+    "synced_files": [
+      {
+        "type": "soul",
+        "filename": "SOUL-2026-05-01.md",
+        "size": 6539
+      },
+      {
+        "type": "skill",
+        "filename": "SKILL-2026-05-01.md",
+        "csv": "SKILL-2026-05-01.csv",
+        "size": 3586
+      },
+      {
+        "type": "memory",
+        "filename": "MEMORY-2026-05-01.md",
+        "size": 4515
+      },
+      {
+        "type": "goal",
+        "filename": "GOAL-2026-05-01.md",
+        "size": 403
+      },
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-01.md",
+        "size": 715
+      }
+    ],
+    "failed_files": [],
+    "timestamp": "2026-05-01T23:30:05.663134"
+  }
+]
