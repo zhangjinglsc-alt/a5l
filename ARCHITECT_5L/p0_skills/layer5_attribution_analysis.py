@@ -114,5 +114,4 @@ class AttributionAnalyzer:
         lines.append(f"- 重点提升: {weakest} 能力")
         lines.append(f"- 保持优势: {strongest} 能力")
         
-        return '
-'.join(lines)
+        return '\n'.join(lines)
