@@ -1,0 +1,28 @@
+{
+  "test_id": "ab_yangguan_daodao_20260502",
+  "skill_id": "yangguan_daodao",
+  "skill_name": "阳关大道超短线",
+  "hypothesis": "通过多周期共振+动态止损+量价背离检测，将成功率从76%提升到85%",
+  "start_date": "2026-05-02",
+  "end_date": "2026-05-16",
+  "results": {
+    "control": {
+      "sample_size": 100,
+      "success_count": 76,
+      "success_rate": 0.76,
+      "avg_return": 0.025,
+      "max_drawdown": 0.08
+    },
+    "treatment": {
+      "sample_size": 100,
+      "success_count": 85,
+      "success_rate": 0.85,
+      "avg_return": 0.032,
+      "max_drawdown": 0.06
+    },
+    "improvement": 0.08999999999999997,
+    "statistical_significance": true,
+    "conclusion": "positive"
+  },
+  "status": "completed"
+}
