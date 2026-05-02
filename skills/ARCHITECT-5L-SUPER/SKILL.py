@@ -2193,6 +2193,92 @@ class Architect5LSuperSkill:
             return self.user_habits.get_usage_statistics()
         return {}
 
+    # ==========================================================
+    # Layer 3: 空方视角风险审查系统 (Bearish Perspective)
+    # ==========================================================
+
+    def generate_risk_checklist(self, symbol: str) -> str:
+        """
+        生成风险自查清单
+
+        Args:
+            symbol: 股票代码
+
+        Returns:
+            Markdown格式的清单
+        """
+        try:
+            sys.path.insert(0, f"{self.workspace}/ARCHITECT_5L/layer3_analysis/analyzers")
+            from bearish_perspective_analyzer import BearishPerspectiveAnalyzer
+
+            analyzer = BearishPerspectiveAnalyzer()
+            checklist = analyzer.generate_risk_checklist_for_user(symbol)
+
+            # 保存到文件
+            output_path = f"{self.workspace}/risk_checklist_{symbol.replace('.', '_')}.md"
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(checklist)
+
+            return output_path
+        except Exception as e:
+            logger.error(f"生成风险清单失败: {e}")
+            return ""
+
+    def bearish_analysis(self, symbol: str, position_info: Dict = None,
+                        strategy_logic: str = None) -> Dict:
+        """
+        空方视角全面风险分析
+
+        Args:
+            symbol: 股票代码
+            position_info: 持仓信息
+            strategy_logic: 策略逻辑描述
+
+        Returns:
+            分析报告
+        """
+        try:
+            sys.path.insert(0, f"{self.workspace}/ARCHITECT_5L/layer3_analysis/analyzers")
+            from bearish_perspective_analyzer import BearishPerspectiveAnalyzer
+
+            analyzer = BearishPerspectiveAnalyzer()
+            report = analyzer.comprehensive_risk_analysis(
+                symbol=symbol,
+                position_info=position_info,
+                strategy_logic=strategy_logic
+            )
+
+            # 保存报告
+            analyzer.save_risk_report(report)
+
+            return report.to_dict()
+        except Exception as e:
+            logger.error(f"空方分析失败: {e}")
+            return {"error": str(e)}
+
+    def review_strategy_logic(self, symbol: str, strategy_logic: str) -> List[Dict]:
+        """
+        审查策略逻辑 (反驳式验证)
+
+        Args:
+            symbol: 股票代码
+            strategy_logic: 策略逻辑
+
+        Returns:
+            发现的缺陷列表
+        """
+        try:
+            sys.path.insert(0, f"{self.workspace}/ARCHITECT_5L/layer3_analysis/analyzers")
+            from bearish_perspective_analyzer import StrategyLogicReviewer
+
+            reviewer = StrategyLogicReviewer()
+            flaws = reviewer.review_strategy(symbol, strategy_logic)
+
+            return [flaw.to_dict() for flaw in flaws]
+        except Exception as e:
+            logger.error(f"策略审查失败: {e}")
+            return []
+
 def main():
     """演示超级SKILL"""
     print("="*70)

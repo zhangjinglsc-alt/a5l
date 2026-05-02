@@ -482,6 +482,142 @@ report = skill.generate_kiwi_report(entity="300750.SZ")
 
 **核心原则**: **绝对诚实** - 不编造信息，所有结论有来源
 
+#### 🐻 空方视角风险审查系统 (Bearish Perspective) ⭐ 五一假期新增
+
+**功能**: 以空方视角审视交易，发现潜在风险，验证策略逻辑
+
+**核心模块**:
+1. **风险自查清单** - 6大维度24项检查点
+2. **策略逻辑审查** - 反驳式验证交易想法
+3. **空方分析报告** - 专业的风险评估报告
+
+**6大风险维度**:
+| 维度 | 检查内容 | 权重 |
+|------|----------|------|
+| 估值风险 | PE/PB/PEG/历史分位 | 高 |
+| 技术风险 | 超买/背离/支撑/趋势 | 高 |
+| 基本面风险 | 业绩/负债/现金流/减持 | 高 |
+| 市场风险 | 大盘/板块/VIX/政策 | 中 |
+| 流动性风险 | 成交额/换手率/解禁 | 中 |
+| 集中度风险 | 客户/供应商/产品依赖 | 中 |
+
+**策略审查6维度**:
+1. 逻辑 - 买入逻辑是否严谨
+2. 数据 - 业绩是否支撑估值
+3. 市场 - 环境是否配合
+4. 时机 - 入场时机是否合适
+5. 仓位 - 风险控制是否到位
+6. 退出 - 止损止盈是否明确
+
+**风险等级**:
+```
+🔴 70%+ : 极高风险 - 强烈建议观望
+🟠 50-69%: 高风险 - 谨慎参与
+🟡 30-49%: 中等风险 - 控制仓位
+🟢 10-29%: 低风险 - 可以参与
+⚪ <10% : 安全 - 按计划执行
+```
+
+**使用方式**:
+```python
+skill = Architect5LSuperSkill()
+
+# 1. 生成风险自查清单
+checklist = skill.generate_risk_checklist("300308.SZ")
+# 输出Markdown格式清单，用户勾选后评估
+
+# 2. 完整空方视角分析
+report = skill.bearish_analysis(
+    symbol="300308.SZ",
+    position_info={
+        'planned_position': 0.20,
+        'entry_price': 145.0,
+        'stop_loss': 130.0
+    },
+    strategy_logic="买入逻辑..."
+)
+
+# 3. 查看分析结果
+print(f"风险评分: {report['overall_risk_score']}/100")
+print(f"风险等级: {report['risk_level']}")
+print(f"风险项: {len(report['risk_items'])}个")
+print(f"策略缺陷: {len(report['strategy_flaws'])}个")
+
+# 4. 查看具体风险
+for risk in report['risk_items']:
+    print(f"[{risk['level']}] {risk['risk_type']}: {risk['description']}")
+    print(f"   缓解措施: {risk['mitigation']}")
+
+# 5. 查看策略缺陷
+for flaw in report['strategy_flaws']:
+    print(f"[{flaw['severity']}] {flaw['aspect']}: {flaw['bearish_argument']}")
+    print(f"   建议: {flaw['suggestion']}")
+
+# 6. 获取最终建议
+print(report['recommendation'])
+```
+
+**报告输出**:
+```json
+{
+    "symbol": "300308.SZ",
+    "overall_risk_score": 72.5,
+    "risk_level": "极高风险",
+    "risk_items": [
+        {
+            "risk_type": "估值风险",
+            "description": "PE 45倍高于行业平均",
+            "level": "high",
+            "probability": 0.7,
+            "impact": 0.8,
+            "risk_score": 0.56,
+            "mitigation": "设定PE回归止损线"
+        }
+    ],
+    "strategy_flaws": [
+        {
+            "flaw_id": "LOGIC_001",
+            "aspect": "逻辑",
+            "bearish_argument": "突破新高但未考虑假突破",
+            "severity": "high",
+            "suggestion": "等待回踩确认"
+        }
+    ],
+    "bearish_summary": "当前价格已充分反映乐观预期...",
+    "recommendation": "强烈建议观望，当前风险过高",
+    "confidence": 0.85
+}
+```
+
+**使用场景**:
+```python
+# 场景1: 每次交易前的必做检查
+before_trade = skill.bearish_analysis(symbol, position, strategy)
+if before_trade['overall_risk_score'] > 70:
+    print("⚠️ 风险过高，建议放弃或减仓")
+
+# 场景2: 持仓定期风险检查
+for position in portfolio:
+    report = skill.bearish_analysis(position['symbol'])
+    if report['risk_level'] == '极高风险':
+        print(f"🚨 {position['symbol']} 风险升级，考虑减仓")
+
+# 场景3: 策略优化
+flaws = skill.review_strategy_logic(strategy)
+for flaw in flaws:
+    strategy = improve_strategy(strategy, flaw)
+```
+
+**设计理念**:
+> "多方观点让你看到机会，空方视角让你看到风险。只有同时看清两面，才能做出理性决策。"
+> 
+> "空方视角不是为了阻止交易，而是为了更全面地认识风险。"
+
+**核心文件**:
+- `ARCHITECT_5L/layer3_analysis/analyzers/bearish_perspective_analyzer.py` (24KB)
+
+---
+
 #### 🔗 产业链分析器 (Industry Chain Analyzer) ⭐ 五一假期新增
 
 **功能**: 分析产业链图谱，识别核心节点和龙头公司

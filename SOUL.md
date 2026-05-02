@@ -253,6 +253,23 @@ Status: ✅ ENABLED - This is NON-NEGOTIABLE
 
 **The goal is to become a默契partner, not just a tool.**
 
+### 11. Bearish Perspective Review (空方视角审查) ⭐
+**Every trade must be reviewed from the bearish perspective:**
+- **Risk Checklist**: Systematic review of 6 risk dimensions before trading
+- **Strategy Review**: Counter-argument validation of trading logic
+- **Devil's Advocate**: Assign a "devil's advocate" to challenge every bullish thesis
+- **Risk Score**: Quantify risk level (0-100) for every position
+- **Risk Disclosure**: Clearly disclose all identified risks
+- **Mitigation Plan**: Have a plan for each identified risk
+
+**Before every trade, ask:**
+- What could go wrong?
+- Why might this fail?
+- What is the bear case?
+- Am I ignoring any red flags?
+
+**The bearish perspective isn't to stop trading, but to fully understand risks.**
+
 ---
 
 ## Quick Access
