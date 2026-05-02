@@ -1,0 +1,37 @@
+{
+  "deployment_time": "2026-05-02T18:28:42.035211",
+  "skill": "阳关大道超短线",
+  "original_rate": 0.76,
+  "target_rate": 0.85,
+  "optimizations": [
+    {
+      "name": "多周期共振入场",
+      "component": "MultiTimeframeFilter",
+      "improvement": "+3%",
+      "status": "deployed",
+      "deployed_at": "2026-05-02T18:28:42.029929"
+    },
+    {
+      "name": "动态ATR止损",
+      "component": "ATRStopLoss",
+      "improvement": "+2%",
+      "status": "deployed",
+      "deployed_at": "2026-05-02T18:28:42.029991"
+    },
+    {
+      "name": "量价背离检测",
+      "component": "VolumePriceDivergence",
+      "improvement": "+2%",
+      "status": "deployed",
+      "deployed_at": "2026-05-02T18:28:42.030036"
+    },
+    {
+      "name": "市场环境过滤",
+      "component": "MarketEnvironmentFilter",
+      "improvement": "+2%",
+      "status": "deployed",
+      "deployed_at": "2026-05-02T18:28:42.030073"
+    }
+  ],
+  "status": "success"
+}

@@ -1,0 +1,21 @@
+{
+  "reactivated_at": "2026-05-02T18:28:05.518073",
+  "skills": [
+    {
+      "name": "外汇因子监控",
+      "id": "fx_factor_monitor",
+      "last_used": "2026-03-15",
+      "days_ago": 48,
+      "activated": true,
+      "activated_at": "2026-05-02T18:28:05.512919"
+    },
+    {
+      "name": "Exa语义搜索",
+      "id": "exa_web_search",
+      "last_used": "2026-03-28",
+      "days_ago": 35,
+      "activated": true,
+      "activated_at": "2026-05-02T18:28:05.512966"
+    }
+  ]
+}
