@@ -286,5 +286,37 @@
     "last_accessed": null,
     "is_archived": false,
     "is_important": false
+  },
+  "research_report_c61a4c72ed": {
+    "item_id": "research_report_c61a4c72ed",
+    "title": "【风口系列】低空经济：万亿新赛道，启航正当时",
+    "content_type": "research_report",
+    "source": "user_upload",
+    "content": null,
+    "file_path": "/workspace/projects/media/inbound/fbebcb97-cfc4-4e16-a19f-007b8fe1e1c5.jpg",
+    "file_size": 0,
+    "file_hash": null,
+    "stock_code": null,
+    "stock_name": null,
+    "industry": "低空经济",
+    "tags": [
+      "研报",
+      "低空经济",
+      "eVTOL",
+      "无人机",
+      "万亿赛道",
+      "政策驱动"
+    ],
+    "created_at": "2026-05-02T20:20:31.614477",
+    "updated_at": "2026-05-02T20:20:31.614485",
+    "content_date": null,
+    "author": null,
+    "source_url": null,
+    "feishu_url": null,
+    "kiwi_url": null,
+    "access_count": 0,
+    "last_accessed": null,
+    "is_archived": false,
+    "is_important": false
   }
 }
