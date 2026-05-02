@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-05-02T17:45:20.715539",
+  "version": "v2.0.0-alpha",
+  "metrics": {
+    "overall": {
+      "total_skills": 62,
+      "active_skills": 58,
+      "deprecated_skills": 4,
+      "active_rate": 0.9354838709677419,
+      "avg_proficiency": 0.76,
+      "health_score": 81.26451612903224
+    },
+    "low_proficiency": [
+      {
+        "id": "architect_5l",
+        "name": "五层架构投资体系",
+        "proficiency": 0.05,
+        "category": "模拟交易系统",
+        "target": 0.8,
+        "gap": 0.75
+      },
+      {
+        "id": "memory_dreaming",
+        "name": "记忆梦境",
+        "proficiency": 0.65,
+        "category": "记忆系统",
+        "target": 0.8,
+        "gap": 0.15000000000000002
+      },
+      {
+        "id": "new_materials",
+        "name": "新材料",
+        "proficiency": 0.68,
+        "category": "AI产业分析",
+        "target": 0.8,
+        "gap": 0.12
+      },
+      {
+        "id": "stoic_wealth",
+        "name": "斯多葛财富",
+        "proficiency": 0.68,
+        "category": "金融工具",
+        "target": 0.8,
+        "gap": 0.12
+      },
+      {
+        "id": "test_measurement",
+        "name": "测试测量",
+        "proficiency": 0.69,
+        "category": "AI产业分析",
+        "target": 0.8,
+        "gap": 0.1100000000000001
+      }
+    ],
+    "stale_skills": [
+      {
+        "id": "fx_factor_monitor",
+        "name": "外汇因子监控",
+        "days_ago": 48,
+        "last_used": "2026-03-15",
+        "category": "数据研究",
+        "status": "caution"
+      },
+      {
+        "id": "exa_web_search",
+        "name": "Exa语义搜索",
+        "days_ago": 35,
+        "last_used": "2026-03-28",
+        "category": "数据研究",
+        "status": "caution"
+      }
+    ],
+    "low_success": [
+      {
+        "id": "yangguan_daodao",
+        "name": "阳关大道超短线",
+        "success_rate": 0.76,
+        "usage_count": 18,
+        "category": "投资分析",
+        "target": 0.85,
+        "gap": 0.08999999999999997
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "level": "warning",
+      "type": "proficiency",
+      "message": "发现5个低熟练度SKILL需要训练"
+    },
+    {
+      "level": "warning",
+      "type": "success_rate",
+      "message": "发现1个低成功率SKILL需要算法优化"
+    }
+  ],
+  "summary": {
+    "health_score": 81.26451612903224,
+    "total_skills": 62,
+    "low_proficiency_count": 5,
+    "stale_skills_count": 2,
+    "low_success_count": 1,
+    "alert_count": 2
+  }
+}
