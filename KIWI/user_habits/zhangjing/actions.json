@@ -1,0 +1,64 @@
+[
+  {
+    "action_type": "analyze_stock",
+    "timestamp": "2026-05-02T14:29:32.673684",
+    "details": {
+      "symbol": "300308.SZ",
+      "market": "A股"
+    },
+    "context": "分析CPO龙头"
+  },
+  {
+    "action_type": "analyze_stock",
+    "timestamp": "2026-05-02T14:29:32.674072",
+    "details": {
+      "symbol": "000977.SZ",
+      "market": "A股"
+    },
+    "context": "分析AI服务器"
+  },
+  {
+    "action_type": "query_portfolio",
+    "timestamp": "2026-05-02T14:29:32.674455",
+    "details": {},
+    "context": "查看持仓"
+  },
+  {
+    "action_type": "daily_review",
+    "timestamp": "2026-05-02T14:29:32.675221",
+    "details": {},
+    "context": "每日复盘"
+  },
+  {
+    "action_type": "analyze_stock",
+    "timestamp": "2026-05-02T14:29:32.675803",
+    "details": {
+      "symbol": "300308.SZ",
+      "market": "A股"
+    },
+    "context": "再次分析CPO"
+  },
+  {
+    "action_type": "analyze_industry",
+    "timestamp": "2026-05-02T14:29:32.676375",
+    "details": {
+      "industry": "AI算力"
+    },
+    "context": "产业链分析"
+  },
+  {
+    "action_type": "set_config",
+    "timestamp": "2026-05-02T14:29:32.678108",
+    "details": {},
+    "context": "更新配置"
+  },
+  {
+    "action_type": "analyze_stock",
+    "timestamp": "2026-05-02T14:29:32.678787",
+    "details": {
+      "symbol": "688041.SH",
+      "market": "A股"
+    },
+    "context": "分析AI芯片"
+  }
+]

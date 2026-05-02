@@ -1734,7 +1734,10 @@ class Architect5LSuperSkill:
 
         # 初始化Layer 0: 元控制层 (系统大脑)
         self.layer0 = Layer0_MetaControl(workspace)
-        
+
+        # 初始化用户习惯学习系统 (默契培养)
+        self.user_habits = self._init_user_habits_system()
+
         # 初始化KIWI知识沉淀中心 (内部图书馆)
         self.kiwi = self._init_kiwi_hub()
 
@@ -1760,6 +1763,18 @@ class Architect5LSuperSkill:
             return kiwi
         except Exception as e:
             logger.warning(f"⚠️ KIWI初始化失败: {e}")
+            return None
+
+    def _init_user_habits_system(self):
+        """初始化用户习惯学习系统"""
+        try:
+            sys.path.insert(0, f"{self.workspace}/ARCHITECT_5L/layer0_control")
+            from user_habits_learning_system import UserHabitsLearningSystem
+            habits = UserHabitsLearningSystem(user_id="zhangjing")
+            logger.info("🧠 用户习惯学习系统已加载")
+            return habits
+        except Exception as e:
+            logger.warning(f"⚠️ 用户习惯系统初始化失败: {e}")
             return None
 
     def execute_full_pipeline(self, symbol: str, execute_trade: bool = False) -> Dict:
@@ -2071,6 +2086,112 @@ class Architect5LSuperSkill:
             },
             "status": self.status
         }
+
+    # ==========================================================
+    # 用户习惯学习系统接口 (User Habits Learning System)
+    # ==========================================================
+
+    def record_user_action(self, action_type: str, details: Dict = None, context: str = ""):
+        """
+        记录用户行为 (自动学习)
+
+        Args:
+            action_type: 行为类型 (analyze_stock/query_portfolio/daily_review/etc.)
+            details: 行为详情
+            context: 行为上下文
+        """
+        if self.user_habits:
+            self.user_habits.record_action(action_type, details, context)
+            logger.info(f"📝 记录用户行为: {action_type}")
+
+    def get_user_rapport_score(self) -> Dict:
+        """
+        获取用户默契度评分
+
+        Returns:
+            {
+                "score": 68.5,
+                "level": "亲密战友",
+                "max_score": 100
+            }
+        """
+        if self.user_habits:
+            return {
+                "score": self.user_habits.rapport_score,
+                "level": self.user_habits._get_rapport_level(),
+                "max_score": 100
+            }
+        return {"score": 0, "level": "未初始化", "max_score": 100}
+
+    def get_personalized_greeting(self) -> str:
+        """
+        获取个性化问候语
+
+        Returns:
+            根据默契度定制的问候语
+        """
+        if self.user_habits:
+            return self.user_habits.get_personalized_greeting()
+        return "你好！我是A5L，很高兴为你服务！"
+
+    def suggest_next_actions(self) -> List[Dict]:
+        """
+        智能建议下一步操作
+
+        Returns:
+            建议列表，每个建议包含描述和原因
+        """
+        if self.user_habits:
+            return self.user_habits.suggest_next_actions()
+        return []
+
+    def get_user_stock_interests(self) -> List[Dict]:
+        """
+        获取用户关注的股票 (基于历史行为)
+
+        Returns:
+            股票关注列表
+        """
+        if self.user_habits:
+            return self.user_habits.get_stock_interests()
+        return []
+
+    def update_user_preference(self, key: str, value: Any) -> bool:
+        """
+        更新用户偏好
+
+        Args:
+            key: 偏好键名
+            value: 偏好值
+
+        Returns:
+            是否更新成功
+        """
+        if self.user_habits:
+            return self.user_habits.update_preference(key, value)
+        return False
+
+    def generate_user_habits_report(self) -> str:
+        """
+        生成用户习惯学习报告
+
+        Returns:
+            报告文件路径
+        """
+        if self.user_habits:
+            return self.user_habits.save_habits_report()
+        return ""
+
+    def get_user_usage_statistics(self) -> Dict:
+        """
+        获取用户使用统计
+
+        Returns:
+            使用统计数据
+        """
+        if self.user_habits:
+            return self.user_habits.get_usage_statistics()
+        return {}
 
 def main():
     """演示超级SKILL"""

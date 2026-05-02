@@ -26,7 +26,7 @@
 
 **职责**: 系统大脑、智能指挥、主动协调、安全保障、及时响应、复利增值
 
-**七位一体架构**:
+**七位一体 + 用户习惯学习系统架构**:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Layer 0: 七位一体                         │
@@ -37,7 +37,9 @@
 │  🔒 Chief Security Officer (安全师) - 系统安全、异常处理    │
 │  ⚡ Immediate Response System (及时系统) - 对内快速响应     │
 │  📈 Compounding System (复利系统) - 对外复利增值            │
-│  👁️ Chief Oversight Officer (首席监管官) - 监督制衡 ⭐ 新增 │
+│  👁️ Chief Oversight Officer (首席监管官) - 监督制衡         │
+├─────────────────────────────────────────────────────────────┤
+│  🧠 User Habits Learning System (用户习惯学习) - 默契培养   │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -250,8 +252,137 @@ for role_id, perf in report['roles'].items():
 
 **制衡原则**:
 > "Power tends to corrupt; oversight ensures integrity. No role is above review."
-> 
+>
 > "权力趋于腐败，监管确保廉洁。没有任何角色凌驾于审查之上。"
+
+---
+
+### 🧠 用户习惯学习系统: 让A5L越来越懂你 ⭐ 五一假期新增
+
+**核心理念**: A5L应该像一位默契的搭档，越用越懂用户
+
+**默契度评分 (0-100)**:
+| 分数 | 等级 | 说明 |
+|------|------|------|
+| 80-100 | 💕 灵魂伴侣 | 高度默契，能预测用户需求 |
+| 60-79 | 🤝 亲密战友 | 很好的配合，了解主要习惯 |
+| 40-59 | 👥 默契搭档 | 基本了解，配合顺畅 |
+| 20-39 | 👋 熟悉朋友 | 初步了解，正在磨合 |
+| 0-19 | 🌱 初识之交 | 刚开始建立关系 |
+
+**学习维度**:
+1. **沟通偏好** - 回复风格、长度、表情符号使用
+2. **时间偏好** - 活跃时段、免打扰时间
+3. **投资偏好** - 关注市场、策略偏好、风险承受能力
+4. **报告偏好** - 格式、内容、图表需求
+5. **交互偏好** - 自动执行、确认需求、主动建议
+
+**核心能力**:
+| 能力 | 方法 | 说明 |
+|------|------|------|
+| 行为记录 | `record_action()` | 记录每次用户操作 |
+| 偏好学习 | `update_preference()` | 学习用户偏好设置 |
+| 模式识别 | `_update_patterns()` | 识别用户行为模式 |
+| 默契评分 | `_update_rapport_score()` | 计算默契度分数 |
+| 个性问候 | `get_personalized_greeting()` | 根据默契度定制问候 |
+| 智能建议 | `suggest_next_actions()` | 预测用户下一步需求 |
+| 关注追踪 | `get_stock_interests()` | 追踪用户关注的股票 |
+
+**使用方式**:
+```python
+skill = Architect5LSuperSkill()
+
+# 1. 记录用户行为 (自动进行)
+skill.record_user_action(
+    action_type="analyze_stock",
+    details={"symbol": "300308.SZ"},
+    context="分析CPO龙头"
+)
+
+# 2. 获取当前默契度
+rapport = skill.get_user_rapport_score()
+print(f"当前默契度: {rapport['score']:.1f}/100 - {rapport['level']}")
+# 输出: 当前默契度: 68.5/100 - 亲密战友
+
+# 3. 获取个性化问候
+greeting = skill.get_personalized_greeting()
+print(greeting)
+# 输出: 下午好！我们的默契度已经达到亲密战友级别(68分)了！🎉
+
+# 4. 获取智能建议
+suggestions = skill.suggest_next_actions()
+for suggestion in suggestions:
+    print(f"💡 建议: {suggestion['description']}")
+    print(f"   原因: {suggestion['reason']}")
+
+# 5. 生成习惯报告
+report_path = skill.generate_user_habits_report()
+# 生成完整的用户习惯分析报告
+
+# 6. 查看关注的股票
+interests = skill.get_user_stock_interests()
+for stock in interests[:5]:
+    print(f"📈 {stock['symbol']} - 关注{stock['interest_score']}次")
+```
+
+**自动学习场景**:
+```python
+# 场景1: 用户每天早上9点查看市场
+# A5L学习到这个模式后，会主动问候:
+"早上好！到了你习惯的开盘分析时间，需要我生成今日市场简报吗？"
+
+# 场景2: 用户多次查询某只股票
+# A5L会记住并主动关注:
+"注意到你近期多次关注300308.SZ(中际旭创)，该股票今日有重要公告，需要查看吗？"
+
+# 场景3: 用户习惯简洁回复
+# A5L会自动调整回复风格:
+# 从详细报告 → 简洁摘要 + 关键数据
+
+# 场景4: 用户偏好特定策略
+# A5L会优先推荐相关策略信号:
+"根据你的趋势跟踪偏好，发现以下突破信号..."
+```
+
+**提升默契度的方式**:
+1. **多交互** - 每次使用都会增加交互次数分数
+2. **设置偏好** - 完善个人偏好设置
+3. **持续使用** - 使用天数越久，默契度越高
+4. **多样化操作** - 不同功能的使用帮助A5L更全面了解
+
+**默契成长曲线**:
+```
+Day 1: 初识之交 (0-19分)
+   ↓ 开始使用，记录基础偏好
+Week 1: 熟悉朋友 (20-39分)
+   ↓ 识别基本行为模式
+Month 1: 默契搭档 (40-59分)
+   ↓ 了解主要习惯，能预测需求
+Month 3: 亲密战友 (60-79分)
+   ↓ 高度配合，个性化服务
+Month 6+: 灵魂伴侣 (80-100分)
+   ↓ 心有灵犀，默契无间
+```
+
+**核心文件**:
+- `ARCHITECT_5L/layer0_control/user_habits_learning_system.py` (23KB)
+- 存储位置: `KIWI/user_habits/{user_id}/`
+
+**用户数据**:
+- `preferences.json` - 用户偏好设置
+- `actions.json` - 行为历史记录
+- `patterns.json` - 识别的行为模式
+- `rapport_score.json` - 默契度分数
+- `habits_report.md` - 习惯分析报告
+
+**隐私保护**:
+- 所有数据存储在本地 KIWI 目录
+- 用户可导出/删除自己的数据
+- 不上传到任何外部服务器
+
+**设计初衷**:
+> "让A5L不仅仅是一个工具，而是一位越用越懂你的默契搭档。"
+> "每一次交互都是加深了解的机会，每一分默契都是长期陪伴的证明。"
 
 ---
 

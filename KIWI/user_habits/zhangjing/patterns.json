@@ -1,0 +1,96 @@
+{
+  "active_afternoon": {
+    "pattern_name": "active_afternoon",
+    "frequency": 8,
+    "last_occurrence": "2026-05-02T14:29:32.679011",
+    "typical_context": [
+      "分析CPO龙头",
+      "分析AI服务器",
+      "查看持仓",
+      "每日复盘",
+      "再次分析CPO",
+      "产业链分析",
+      "更新配置",
+      "分析AI芯片"
+    ]
+  },
+  "action_analyze_stock": {
+    "pattern_name": "action_analyze_stock",
+    "frequency": 4,
+    "last_occurrence": "2026-05-02T14:29:32.679017",
+    "typical_context": [
+      "分析CPO龙头",
+      "分析AI服务器",
+      "再次分析CPO",
+      "分析AI芯片"
+    ]
+  },
+  "market_A股": {
+    "pattern_name": "market_A股",
+    "frequency": 4,
+    "last_occurrence": "2026-05-02T14:29:32.679021",
+    "typical_context": [
+      "分析CPO龙头",
+      "分析AI服务器",
+      "再次分析CPO",
+      "分析AI芯片"
+    ]
+  },
+  "stock_300308.SZ": {
+    "pattern_name": "stock_300308.SZ",
+    "frequency": 2,
+    "last_occurrence": "2026-05-02T14:29:32.675971",
+    "typical_context": [
+      "分析CPO龙头",
+      "再次分析CPO"
+    ]
+  },
+  "stock_000977.SZ": {
+    "pattern_name": "stock_000977.SZ",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.674208",
+    "typical_context": [
+      "分析AI服务器"
+    ]
+  },
+  "action_query_portfolio": {
+    "pattern_name": "action_query_portfolio",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.674795",
+    "typical_context": [
+      "查看持仓"
+    ]
+  },
+  "action_daily_review": {
+    "pattern_name": "action_daily_review",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.675388",
+    "typical_context": [
+      "每日复盘"
+    ]
+  },
+  "action_analyze_industry": {
+    "pattern_name": "action_analyze_industry",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.676583",
+    "typical_context": [
+      "产业链分析"
+    ]
+  },
+  "action_set_config": {
+    "pattern_name": "action_set_config",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.678324",
+    "typical_context": [
+      "更新配置"
+    ]
+  },
+  "stock_688041.SH": {
+    "pattern_name": "stock_688041.SH",
+    "frequency": 1,
+    "last_occurrence": "2026-05-02T14:29:32.679025",
+    "typical_context": [
+      "分析AI芯片"
+    ]
+  }
+}
