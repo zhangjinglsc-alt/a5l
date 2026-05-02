@@ -62,6 +62,85 @@ def save_report(file_path: str,
     )
 
 
+def save_system_file(file_path: str,
+                    file_type: str,  # soul/goal/memory/cron/skill
+                    version: Optional[str] = None,
+                    change_summary: Optional[str] = None,
+                    auto_commit_git: bool = True,
+                    auto_sync_feishu: bool = True) -> Dict:
+    """
+    快捷保存系统文件 (SOUL/GOAL/MEMORY/CRON/SKILL)
+    
+    自动完成：存储 → Git提交 → 飞书同步
+    
+    使用示例:
+        # 保存SOUL更新
+        save_system_file(
+            file_path="/workspace/SOUL.md",
+            file_type="soul",
+            version="2.0.0",
+            change_summary="添加Knowledge Guardian角色"
+        )
+        
+        # 保存GOAL更新
+        save_system_file(
+            file_path="/workspace/GOAL.md",
+            file_type="goal",
+            version="2024.05",
+            change_summary="更新进化里程碑"
+        )
+    """
+    guardian = get_guardian()
+    
+    # 获取标题
+    title_map = {
+        "soul": "SOUL人格宪章",
+        "goal": "目标追踪",
+        "memory": "记忆档案",
+        "cron": "定时任务",
+        "skill": "技能注册表",
+        "doc": "系统文档"
+    }
+    title = title_map.get(file_type, "系统文档")
+    
+    # 使用自动归档工作流
+    from ARCHITECT_5L.layer0_control.knowledge_guardian import ContentType
+    
+    type_map = {
+        "soul": ContentType.SOUL_CONFIG,
+        "goal": ContentType.GOAL_TRACKING,
+        "memory": ContentType.MEMORY_LOG,
+        "cron": ContentType.CRON_TASK,
+        "skill": ContentType.SKILL_REGISTRY,
+        "doc": ContentType.SYSTEM_DOC
+    }
+    content_type = type_map.get(file_type, ContentType.SYSTEM_DOC)
+    
+    # 执行自动归档
+    result = guardian.auto_archive_workflow(
+        file_path=file_path,
+        content_type=content_type,
+        title=f"{title} - v{version}" if version else title,
+        file_type=file_type,
+        version=version,
+        change_summary=change_summary
+    )
+    
+    return result
+
+
+def backup_all_system_files() -> List[str]:
+    """
+    一键备份所有关键系统文件
+    
+    使用示例:
+        backed_up = backup_all_system_files()
+        print(f"已备份 {len(backed_up)} 个文件")
+    """
+    guardian = get_guardian()
+    return guardian.backup_critical_files()
+
+
 def save_analysis(file_path: str,
                  title: str,
                  stock_code: str,

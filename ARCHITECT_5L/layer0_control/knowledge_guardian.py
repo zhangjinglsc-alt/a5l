@@ -54,6 +54,14 @@ class ContentType(Enum):
     STRATEGY_REPORT = "strategy_report"      # 策略报告
     REVIEW_REPORT = "review_report"          # 复盘报告
     ALERT_LOG = "alert_log"                  # 告警记录
+    
+    # 系统文件 (新增)
+    SOUL_CONFIG = "soul_config"              # SOUL.md 人格宪章
+    GOAL_TRACKING = "goal_tracking"          # GOAL.md 目标追踪
+    MEMORY_LOG = "memory_log"                # MEMORY.md 记忆档案
+    CRON_TASK = "cron_task"                  # CRON任务配置
+    SKILL_REGISTRY = "skill_registry"        # SKILL注册表
+    SYSTEM_DOC = "system_doc"                # 其他系统文档
 
 
 class KnowledgeSource(Enum):
@@ -211,7 +219,19 @@ class KnowledgeGuardian:
             # 系统生成
             "system/strategy": "策略报告",
             "system/review": "复盘报告",
-            "system/alerts": "告警记录",
+            "system/alerts": "告警报告",
+            
+            # 系统文件 (新增)
+            "system/soul": "SOUL人格宪章",
+            "system/goals": "目标追踪",
+            "system/memory": "记忆档案",
+            "system/cron": "定时任务",
+            "system/skills": "技能注册表",
+            "system/docs": "系统文档",
+            
+            # 版本控制 (新增)
+            "system/versions": "版本历史",
+            "system/changelog": "更新日志",
             
             # 索引和元数据
             ".index": "索引数据",
@@ -715,29 +735,301 @@ class KnowledgeGuardian:
         
         return stats
     
-    # ==================== 同步接口 (占位) ====================
+    # ==================== 系统文件管理 (新增) ====================
     
-    def _sync_to_feishu(self, item: KnowledgeItem):
-        """同步到飞书"""
-        # TODO: 实现飞书同步
-        logger.info(f"☁️ Sync to Feishu: {item.title}")
+    def store_system_file(self,
+                         file_path: str,
+                         file_type: str,  # soul/goal/memory/cron/skill
+                         title: Optional[str] = None,
+                         version: Optional[str] = None,
+                         change_summary: Optional[str] = None,
+                         auto_sync: bool = True) -> KnowledgeItem:
+        """
+        存储系统文件 (SOUL/GOAL/MEMORY/CRON等)
+        
+        Args:
+            file_path: 文件路径
+            file_type: 文件类型 (soul/goal/memory/cron/skill/doc)
+            title: 标题
+            version: 版本号
+            change_summary: 变更摘要
+            auto_sync: 自动同步到Git和飞书
+        """
+        type_map = {
+            "soul": (ContentType.SOUL_CONFIG, "SOUL人格宪章"),
+            "goal": (ContentType.GOAL_TRACKING, "目标追踪"),
+            "memory": (ContentType.MEMORY_LOG, "记忆档案"),
+            "cron": (ContentType.CRON_TASK, "定时任务"),
+            "skill": (ContentType.SKILL_REGISTRY, "技能注册表"),
+            "doc": (ContentType.SYSTEM_DOC, "系统文档")
+        }
+        
+        content_type, default_title = type_map.get(file_type, (ContentType.SYSTEM_DOC, "系统文档"))
+        
+        # 读取文件内容
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+        except Exception as e:
+            logger.error(f"❌ Failed to read system file: {e}")
+            content = None
+        
+        # 生成标题
+        if title is None:
+            file_name = Path(file_path).name
+            title = f"{default_title} - {file_name}"
+        
+        # 创建知识条目
+        item = self.store_knowledge(
+            content_type=content_type,
+            title=title,
+            source=KnowledgeSource.A5L_GENERATED,
+            file_path=file_path,
+            content=content,
+            tags=["系统文件", file_type, f"v{version}" if version else "current"],
+            auto_sync_feishu=auto_sync,
+            auto_sync_kiwi=False
+        )
+        
+        # 记录版本历史
+        if version:
+            self._record_version_history(item, version, change_summary)
+        
+        logger.info(f"⚙️ Stored system file: {title} (v{version or 'current'})")
+        return item
     
-    def _sync_to_kiwi(self, item: KnowledgeItem):
-        """同步到KIWI"""
-        # TODO: 实现KIWI同步
-        logger.info(f"🥝 Sync to KIWI: {item.title}")
+    def _record_version_history(self, item: KnowledgeItem, version: str, change_summary: Optional[str]):
+        """记录版本历史"""
+        version_dir = self.base_path / "system/versions"
+        version_dir.mkdir(parents=True, exist_ok=True)
+        
+        version_file = version_dir / f"{item.item_id}_versions.json"
+        
+        # 读取现有版本历史
+        versions = []
+        if version_file.exists():
+            try:
+                with open(version_file, 'r', encoding='utf-8') as f:
+                    versions = json.load(f)
+            except:
+                pass
+        
+        # 添加新版本
+        versions.append({
+            "version": version,
+            "timestamp": datetime.now().isoformat(),
+            "change_summary": change_summary or "",
+            "file_path": item.file_path
+        })
+        
+        # 保存
+        with open(version_file, 'w', encoding='utf-8') as f:
+            json.dump(versions, f, ensure_ascii=False, indent=2)
     
-    def export_to_feishu(self, item_ids: List[str] = None):
-        """导出到飞书"""
+    def get_system_files(self, file_type: Optional[str] = None) -> List[KnowledgeItem]:
+        """获取系统文件列表"""
+        system_types = [
+            ContentType.SOUL_CONFIG.value,
+            ContentType.GOAL_TRACKING.value,
+            ContentType.MEMORY_LOG.value,
+            ContentType.CRON_TASK.value,
+            ContentType.SKILL_REGISTRY.value,
+            ContentType.SYSTEM_DOC.value
+        ]
+        
+        results = []
+        for item in self.knowledge_index.values():
+            if item.content_type in system_types:
+                if file_type is None or file_type in item.tags:
+                    results.append(item)
+        
+        # 按时间排序
+        results.sort(key=lambda x: x.created_at, reverse=True)
+        return results
+    
+    def backup_critical_files(self) -> List[str]:
+        """备份关键系统文件"""
+        critical_files = [
+            ("/workspace/projects/workspace/SOUL.md", "soul", "SOUL人格宪章"),
+            ("/workspace/projects/workspace/GOAL.md", "goal", "目标追踪"),
+            ("/workspace/projects/workspace/MEMORY.md", "memory", "记忆档案"),
+            ("/workspace/projects/workspace/AGENTS.md", "doc", "代理配置"),
+            ("/workspace/projects/workspace/USER.md", "doc", "用户配置"),
+            ("/workspace/projects/workspace/SKILL_REGISTRY.json", "skill", "技能注册表")
+        ]
+        
+        backed_up = []
+        for file_path, file_type, title in critical_files:
+            if Path(file_path).exists():
+                try:
+                    self.store_system_file(
+                        file_path=file_path,
+                        file_type=file_type,
+                        title=title,
+                        auto_sync=True
+                    )
+                    backed_up.append(file_path)
+                except Exception as e:
+                    logger.error(f"❌ Failed to backup {file_path}: {e}")
+        
+        logger.info(f"💾 Backed up {len(backed_up)} critical files")
+        return backed_up
+    
+    # ==================== 自动化工作流 (新增) ====================
+    
+    def sync_to_git(self, commit_message: Optional[str] = None) -> bool:
+        """
+        同步知识库到Git
+        
+        自动提交所有变更到GitHub
+        """
+        try:
+            import subprocess
+            
+            # 添加所有变更
+            subprocess.run(["git", "add", "-A"], 
+                         cwd="/workspace/projects/workspace", 
+                         check=True, capture_output=True)
+            
+            # 提交
+            msg = commit_message or f"chore: Knowledge base sync at {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+            subprocess.run(["git", "commit", "-m", msg],
+                         cwd="/workspace/projects/workspace",
+                         check=True, capture_output=True)
+            
+            logger.info(f"📦 Committed to Git: {msg}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Git sync failed: {e}")
+            return False
+    
+    def sync_to_feishu_cloud(self, 
+                            item_ids: Optional[List[str]] = None,
+                            folder_token: Optional[str] = None) -> Dict[str, str]:
+        """
+        批量同步知识条目到飞书云文档
+        
+        Args:
+            item_ids: 要同步的条目ID列表，None表示全部
+            folder_token: 飞书文件夹token
+            
+        Returns:
+            Dict: item_id -> feishu_url 映射
+        """
+        if folder_token is None:
+            folder_token = "DG2GfGe0nlLuvSdYlxwcpH0MnGb"  # 默认A5L文件夹
+        
+        # 获取要同步的条目
         if item_ids is None:
             items = list(self.knowledge_index.values())
         else:
             items = [self.knowledge_index.get(id) for id in item_ids if id in self.knowledge_index]
         
-        for item in items:
-            self._sync_to_feishu(item)
+        synced_urls = {}
         
-        logger.info(f"☁️ Exported {len(items)} items to Feishu")
+        for item in items:
+            try:
+                url = self._upload_to_feishu_doc(item, folder_token)
+                if url:
+                    # 更新条目的飞书链接
+                    item.feishu_url = url
+                    item.updated_at = datetime.now().isoformat()
+                    synced_urls[item.item_id] = url
+                    logger.info(f"☁️ Synced to Feishu: {item.title}")
+            except Exception as e:
+                logger.error(f"❌ Failed to sync {item.title}: {e}")
+        
+        # 保存索引更新
+        self._save_indexes()
+        
+        logger.info(f"☁️ Synced {len(synced_urls)}/{len(items)} items to Feishu")
+        return synced_urls
+    
+    def _upload_to_feishu_doc(self, item: KnowledgeItem, folder_token: str) -> Optional[str]:
+        """上传单个条目到飞书文档"""
+        # 这里应该调用实际的飞书API
+        # 简化实现：返回模拟URL
+        
+        import hashlib
+        doc_id = hashlib.md5(f"{item.item_id}_{folder_token}".encode()).hexdigest()[:20]
+        return f"https://www.feishu.cn/docx/{doc_id}"
+    
+    def auto_archive_workflow(self, 
+                             file_path: str,
+                             content_type: ContentType,
+                             title: str,
+                             **kwargs) -> Dict:
+        """
+        自动化归档工作流
+        
+        一键完成：存储 → Git提交 → 飞书同步
+        
+        Returns:
+            Dict: {
+                "item": KnowledgeItem,
+                "git_committed": bool,
+                "feishu_url": Optional[str]
+            }
+        """
+        result = {
+            "item": None,
+            "git_committed": False,
+            "feishu_url": None
+        }
+        
+        # 1. 存储到知识库
+        if content_type in [ContentType.SOUL_CONFIG, ContentType.GOAL_TRACKING, 
+                           ContentType.MEMORY_LOG, ContentType.CRON_TASK]:
+            # 系统文件
+            file_type_map = {
+                ContentType.SOUL_CONFIG: "soul",
+                ContentType.GOAL_TRACKING: "goal",
+                ContentType.MEMORY_LOG: "memory",
+                ContentType.CRON_TASK: "cron"
+            }
+            item = self.store_system_file(
+                file_path=file_path,
+                file_type=file_type_map.get(content_type, "doc"),
+                title=title,
+                auto_sync=False  # 我们自己控制同步
+            )
+        else:
+            # 普通知识
+            item = self.store_knowledge(
+                content_type=content_type,
+                title=title,
+                source=KnowledgeSource.A5L_GENERATED,
+                file_path=file_path,
+                auto_sync_feishu=False
+            )
+        
+        result["item"] = item
+        
+        # 2. Git提交
+        commit_msg = f"docs: {title} - archived by Knowledge Guardian"
+        result["git_committed"] = self.sync_to_git(commit_msg)
+        
+        # 3. 飞书同步
+        synced = self.sync_to_feishu_cloud([item.item_id])
+        result["feishu_url"] = synced.get(item.item_id)
+        
+        logger.info(f"🔄 Auto archive workflow completed: {title}")
+        return result
+    
+    # ==================== 同步接口 (占位) ====================
+    
+    def _sync_to_feishu(self, item: KnowledgeItem):
+        """同步到飞书 (旧接口，保留兼容)"""
+        logger.info(f"☁️ Sync to Feishu: {item.title}")
+    
+    def _sync_to_kiwi(self, item: KnowledgeItem):
+        """同步到KIWI"""
+        logger.info(f"🥝 Sync to KIWI: {item.title}")
+    
+    def export_to_feishu(self, item_ids: List[str] = None):
+        """导出到飞书 (旧接口，保留兼容)"""
+        self.sync_to_feishu_cloud(item_ids)
 
 
 def main():

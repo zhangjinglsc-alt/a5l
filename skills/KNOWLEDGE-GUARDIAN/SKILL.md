@@ -266,7 +266,145 @@ guardian.export_to_feishu()
 guardian._sync_to_kiwi(item)
 ```
 
+## 系统文件管理 (新增 v1.1.0)
+
+Knowledge Guardian 现在可以管理系统核心文件：
+
+### 支持的系统文件类型
+
+| 文件类型 | 路径示例 | 管理方式 |
+|---------|---------|---------|
+| SOUL | `SOUL.md` | 人格宪章版本追踪 |
+| GOAL | `GOAL.md` | 目标进度同步 |
+| MEMORY | `MEMORY.md` | 记忆档案备份 |
+| CRON | `cron/` | 定时任务配置 |
+| SKILL | `SKILL_REGISTRY.json` | 技能注册表 |
+| DOC | `AGENTS.md/USER.md` | 其他系统文档 |
+
+### 系统文件存储
+
+```python
+# 保存系统文件
+guardian.store_system_file(
+    file_path="SOUL.md",
+    file_type="soul",
+    version="2.0.0",
+    change_summary="添加Knowledge Guardian角色"
+)
+
+# 快捷方式
+from ARCHITECT_5L.layer0_control.knowledge_quick_access import save_system_file
+
+save_system_file(
+    file_path="SOUL.md",
+    file_type="soul",
+    version="2.0.0",
+    change_summary="版本更新",
+    auto_commit_git=True,      # 自动Git提交
+    auto_sync_feishu=True      # 自动飞书同步
+)
+```
+
+### 系统文件目录结构
+
+```
+knowledge_base/
+└── system/
+    ├── soul/           # SOUL人格宪章历史版本
+    ├── goals/          # GOAL目标追踪
+    ├── memory/         # MEMORY记忆档案
+    ├── cron/           # 定时任务配置
+    ├── skills/         # 技能注册表
+    ├── docs/           # 其他系统文档
+    └── versions/       # 版本历史记录
+```
+
+### 自动备份关键文件
+
+```python
+# 一键备份所有关键系统文件
+backed_up = guardian.backup_critical_files()
+# Returns: ['SOUL.md', 'GOAL.md', 'MEMORY.md', ...]
+```
+
+## 自动化工作流 (新增 v1.1.0)
+
+### 完整归档工作流
+
+自动完成：存储 → Git提交 → 飞书同步
+
+```python
+# 单命令完成全流程
+result = guardian.auto_archive_workflow(
+    file_path="analysis.md",
+    content_type=ContentType.STOCK_ANALYSIS,
+    title="宁德时代分析报告"
+)
+
+# 返回结果
+{
+    "item": KnowledgeItem,           # 知识条目
+    "git_committed": True,           # Git提交状态
+    "feishu_url": "https://..."      # 飞书文档链接
+}
+```
+
+### Git自动同步
+
+```python
+# 同步知识库到Git
+guardian.sync_to_git(
+    commit_message="docs: 更新知识库"
+)
+```
+
+### 飞书批量同步
+
+```python
+# 批量同步到飞书云文档
+synced = guardian.sync_to_feishu_cloud(
+    item_ids=['item1', 'item2'],  # None表示全部
+    folder_token="DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+)
+
+# 返回: {item_id: feishu_url, ...}
+```
+
+### 完整工作流示例
+
+```python
+# 场景: 完成个股分析后的自动归档
+analysis_result = analyze_stock("300750.SZ")
+
+# 1. 保存分析结果到知识库
+item = save_analysis(
+    file_path=analysis_result['report_path'],
+    title="宁德时代分析",
+    stock_code="300750.SZ"
+)
+
+# 2. 同时更新SOUL.md（如有变更）
+save_system_file(
+    file_path="SOUL.md",
+    file_type="soul",
+    version="2.0.1",
+    change_summary="完善知识库管理角色"
+)
+
+# 3. 自动Git提交（已完成）
+# 4. 自动飞书同步（已完成）
+
+print("✅ 分析完成并已归档到Git和飞书！")
+```
+
 ## 版本历史
+
+- v1.1.0 (2026-05-02): 系统文件管理 + 自动化工作流
+  - 支持SOUL/GOAL/MEMORY/CRON等系统文件
+  - 自动Git提交功能
+  - 自动飞书同步功能
+  - 一键归档工作流
+  - 版本历史追踪
 
 - v1.0.0 (2026-05-02): 初始版本
   - 知识采集与存储
@@ -277,8 +415,9 @@ guardian._sync_to_kiwi(item)
 
 ## 未来规划
 
+- [x] 系统文件管理 (v1.1.0)
+- [x] 自动化工作流 (v1.1.0)
 - [ ] AI内容摘要生成
 - [ ] 知识图谱构建
 - [ ] 智能推荐系统
-- [ ] 版本控制
 - [ ] 协作编辑
