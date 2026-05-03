@@ -1,0 +1,43 @@
+{
+  "monitor_name": "A5L研报文档监控",
+  "version": "1.0",
+  "created_at": "2026-05-03",
+  
+  "folders": [
+    {
+      "name": "研报中心",
+      "folder_token": "X1fCwWbswiJiFck0LGMci7xnnHf",
+      "description": "存储所有投资研报",
+      "monitor_enabled": true,
+      "file_types": ["pdf", "docx", "png", "jpg"]
+    }
+  ],
+  
+  "scan_interval": 300,
+  "scan_interval_desc": "每5分钟扫描一次(300秒)",
+  
+  "download_config": {
+    "target_directory": "data/stock_research/incoming",
+    "preserve_original_name": true,
+    "create_date_subdir": true
+  },
+  
+  "processing_config": {
+    "auto_trigger_analysis": true,
+    "analysis_delay": 10,
+    "max_concurrent": 3
+  },
+  
+  "notification": {
+    "on_new_file": true,
+    "on_analysis_complete": true,
+    "on_error": true,
+    "channels": ["log", "feishu"]
+  },
+  
+  "state_management": {
+    "state_file": "data/report_monitor_state.json",
+    "queue_file": "data/report_queue.json",
+    "backup_interval": 3600
+  }
+}
