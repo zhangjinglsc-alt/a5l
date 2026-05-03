@@ -1,0 +1,56 @@
+[
+  {
+    "id": "G010-KG-DRIVEN-INVESTMENT",
+    "title": "知识图谱驱动投资决策系统",
+    "description": "建立基于知识图谱的投资决策工作流，实现研报→实体提取→关系分析→投资信号→自动归档的完整闭环。让KG不再只是数据存储，而是主动发现投资机会的智能助手。",
+    "status": "active",
+    "created_at": "2026-05-03T23:40:00",
+    "deadline": "2026-05-10",
+    "parent_id": "G006-ARCHITECT-5L",
+    "progress": 0,
+    "priority": "P0",
+    "milestones": [
+      {"name": "研报自动处理", "completed": false, "progress": 0},
+      {"name": "关系发现引擎", "completed": false, "progress": 0},
+      {"name": "投资信号生成", "completed": false, "progress": 0},
+      {"name": "闭环归档", "completed": false, "progress": 0}
+    ],
+    "tasks": ["T010-1", "T010-2", "T010-3", "T010-4"]
+  },
+  {
+    "id": "G011-AGENT-ORCHESTRATION",
+    "title": "A5L智能体协调系统 (Layer 0增强)",
+    "description": "建立Layer 0作为智能体协调中心，统一管理各子系统（研报处理、KG更新、备份、飞书同步），实现任务自动分配、状态监控、异常恢复。",
+    "status": "active",
+    "created_at": "2026-05-03T23:40:00",
+    "deadline": "2026-05-15",
+    "parent_id": "G007-P5-AGENTIFICATION",
+    "progress": 0,
+    "priority": "P0",
+    "milestones": [
+      {"name": "任务调度器", "completed": false, "progress": 0},
+      {"name": "健康监控系统", "completed": false, "progress": 0},
+      {"name": "智能体通信协议", "completed": false, "progress": 0},
+      {"name": "决策看板", "completed": false, "progress": 0}
+    ],
+    "tasks": ["T011-1", "T011-2", "T011-3", "T011-4"]
+  },
+  {
+    "id": "G012-DATA-RESILIENCE",
+    "title": "数据安全与韧性架构",
+    "description": "在智能备份基础上，建立完整的数据韧性体系：自动故障检测、一键恢复、数据一致性校验、版本回滚。确保任何单点故障不会导致数据丢失。",
+    "status": "active",
+    "created_at": "2026-05-03T23:40:00",
+    "deadline": "2026-05-20",
+    "parent_id": "G001-L3-EVOLUTION",
+    "progress": 30,
+    "priority": "P1",
+    "milestones": [
+      {"name": "故障自动检测", "completed": false, "progress": 0},
+      {"name": "一键恢复系统", "completed": false, "progress": 0},
+      {"name": "版本回滚", "completed": false, "progress": 0},
+      {"name": "韧性演练", "completed": false, "progress": 0}
+    ],
+    "tasks": ["T012-1", "T012-2", "T012-3", "T012-4"]
+  }
+]
