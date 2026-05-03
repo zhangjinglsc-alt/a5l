@@ -413,6 +413,10 @@ class KnowledgeGraph:
             )
             self.db.add_relation(relation)
     
+    def get_entities_by_type(self, entity_type: str) -> List[Entity]:
+        """按类型获取实体"""
+        return self.db.get_entities_by_type(entity_type)
+    
     # ========== 实体操作 ==========
     
     def add_entity(self, entity: Entity) -> bool:
