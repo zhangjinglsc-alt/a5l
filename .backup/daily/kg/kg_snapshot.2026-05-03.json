@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-05-03T23:10:31.704471",
+  "entity_count": 69,
+  "relation_count": 112,
+  "entity_types": {
+    "Analysis": 2,
+    "Company": 10,
+    "Concept": 14,
+    "Event": 2,
+    "Industry": 13,
+    "Location": 6,
+    "Person": 3,
+    "Report": 6,
+    "Stock": 13
+  },
+  "relation_types": {
+    "acquisition_unwound": 1,
+    "belongs_to": 3,
+    "competes_with": 22,
+    "considering_incorporation": 1,
+    "correlates_with": 1,
+    "incorporated_in": 4,
+    "industry_chain": 23,
+    "industry_position": 4,
+    "mentioned_in": 52,
+    "unwinding_overseas_structure": 1
+  }
+}
