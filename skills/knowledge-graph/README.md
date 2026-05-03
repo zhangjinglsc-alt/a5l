@@ -6,7 +6,7 @@
 skills/knowledge-graph/
 ├── SKILL.md                      # 本文件 - 设计文档
 ├── knowledge_graph_core.py       # 核心模块（SQLite + NetworkX）
-├── entity_extractor.py           # 实体提取器（待开发）
+├── entity_extractor.py           # 实体提取器（已完成）
 ├── relation_builder.py           # 关系构建器（待开发）
 ├── visualizer.py                 # 可视化模块（待开发）
 ├── requirements.txt              # 依赖包
@@ -55,7 +55,7 @@ print(related)
 ## 开发计划
 
 - [x] Phase 1: 基础框架（SQLite+NetworkX架构）
-- [ ] Phase 2: 实体提取（规则-based NER）
+- [x] Phase 2: 实体提取（规则-based NER）
 - [ ] Phase 3: 关系构建（产业链/关联/持仓）
 - [ ] Phase 4: 可视化（pyvis交互式图谱）
 - [ ] Phase 5: 集成优化（KG集成+自动更新）
