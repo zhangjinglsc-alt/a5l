@@ -1,9 +1,11 @@
 # A5L 知识图谱构建工具 v1.0
 
 **SKILL名称**: knowledge-graph  
-**层级**: 待定（Layer2或Layer3）  
+**层级**: Layer2 - Strategy Engine（交易策略层）  
+**目录**: `/skills/knowledge-graph/`  
 **版本**: v1.0  
-**状态**: 待Chief Architect和Knowledge Guardian决策后开发
+**状态**: ✅ Phase 1完成，Phase 2开发中  
+**优先级**: P0 - 立即开发
 
 ---
 
