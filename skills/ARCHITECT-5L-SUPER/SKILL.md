@@ -1,3 +1,8 @@
+---
+name: ARCHITECT-5L-SUPER
+description: ARCHITECT-5L Super Edition with enhanced capabilities. Use for advanced investment system orchestration and meta-control.
+---
+
 # ARCHITECT-5L Super Skill
 
 **五层架构超级技能 - 可迭代的综合能力工具**

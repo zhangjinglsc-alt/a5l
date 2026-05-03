@@ -1,3 +1,8 @@
+---
+name: stock-five-steps
+description: Five-step stock analysis framework for systematic evaluation. Use for structured investment analysis from business to outlook.
+---
+
 # 股票五步法分析 SKILL
 
 ## 描述

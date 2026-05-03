@@ -1,3 +1,8 @@
+---
+name: ai-llm
+description: Large language model industry analysis including training, inference, and application layers. Use for tracking AI infrastructure investments and LLM market developments.
+---
+
 # AI-LLM SKILL
 
 ## 描述

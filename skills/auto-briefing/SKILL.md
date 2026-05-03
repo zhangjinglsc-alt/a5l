@@ -1,3 +1,8 @@
+---
+name: auto-briefing
+description: Automated briefing generation for daily market summaries. Use for creating personalized market briefings and investment updates.
+---
+
 # Auto Briefing SKILL
 
 ## 描述

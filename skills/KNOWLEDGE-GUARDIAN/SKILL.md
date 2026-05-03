@@ -1,3 +1,8 @@
+---
+name: KNOWLEDGE-GUARDIAN
+description: Knowledge Guardian v1.1 - Chief Librarian for knowledge graph management. Use for document archival, entity management, and research organization.
+---
+
 # Knowledge Guardian SKILL
 
 A5L Layer0 知识库守护者 - 统一管理所有投研资料和交易记录

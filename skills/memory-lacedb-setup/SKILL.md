@@ -1,3 +1,8 @@
+---
+name: memory-lacedb-setup
+description: Memory LaceDB setup and configuration for long-term storage. Use for persistent memory database initialization and management.
+---
+
 # Memory LaceDB Setup SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: reading-analysis
+description: Reading list management and document analysis workflow. Use for organizing research materials and tracking reading progress.
+---
+
 # Reading Analysis SKILL
 
 ## 描述

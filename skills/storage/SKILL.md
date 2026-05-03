@@ -1,3 +1,8 @@
+---
+name: storage
+description: Data storage industry analysis including DRAM, NAND, and HBM memory technologies. Use for tracking semiconductor memory investments and supply chain dynamics.
+---
+
 # 存储 SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: ai-apps
+description: AI applications industry analysis including enterprise AI adoption. Use for tracking AI software and application layer investments.
+---
+
 # AI Apps SKILL
 
 ## 描述

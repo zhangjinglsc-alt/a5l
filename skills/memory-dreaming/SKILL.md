@@ -1,3 +1,8 @@
+---
+name: memory-dreaming
+description: Record, analyze, and retrieve dream content for personal insight and pattern recognition. Use for maintaining a dream journal and exploring subconscious patterns.
+---
+
 # Memory Dreaming SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: nowait-reasoning-optimizer
+description: Optimize reasoning workflows for Claude Code and other coding agents. Use for reducing wait times and improving development efficiency.
+---
+
 # NoWait Reasoning Optimizer SKILL
 
 ## 描述

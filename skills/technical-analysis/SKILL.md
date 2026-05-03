@@ -1,3 +1,8 @@
+---
+name: technical-analysis
+description: Technical analysis including chart patterns, indicators, and trend analysis. Use for price action analysis, support/resistance identification, and trading signal generation.
+---
+
 # 技术分析 SKILL
 
 ## 描述

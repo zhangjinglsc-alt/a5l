@@ -1,3 +1,8 @@
+---
+name: unified-memory-system
+description: Unified memory system integration across all memory types. Use for comprehensive memory management and retrieval.
+---
+
 # 统一记忆系统 SKILL
 
 ## 描述

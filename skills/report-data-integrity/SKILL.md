@@ -1,3 +1,8 @@
+---
+name: report-data-integrity
+description: Data integrity validation and quality checks for investment reports. Use for ensuring data accuracy and consistency across analyses.
+---
+
 # 研报数据完整性保障 SKILL
 
 ## 描述

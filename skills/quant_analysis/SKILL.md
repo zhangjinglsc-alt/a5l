@@ -1,3 +1,8 @@
+---
+name: quant_analysis
+description: Quantitative analysis including statistical methods and mathematical modeling. Use for advanced quantitative research and algorithm development.
+---
+
 # 量化分析 SKILL
 
 ## 描述

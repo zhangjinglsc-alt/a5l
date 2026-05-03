@@ -1,3 +1,8 @@
+---
+name: exa-web-search
+description: Advanced web search using Exa API with neural search capabilities. Use for finding specific web content, research papers, and high-quality sources with semantic understanding.
+---
+
 # Exa Web Search SKILL
 
 ## 描述

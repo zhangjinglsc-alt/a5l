@@ -1,3 +1,8 @@
+---
+name: track_validation_metrics
+description: Track and validate prediction accuracy, backtest performance, and system metrics. Use for performance attribution and strategy effectiveness measurement.
+---
+
 # Track Validation Metrics SKILL
 
 ## 描述

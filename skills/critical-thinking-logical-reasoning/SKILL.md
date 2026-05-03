@@ -1,3 +1,8 @@
+---
+name: critical-thinking-logical-reasoning
+description: Critical thinking and logical reasoning frameworks. Use for investment thesis validation and bias detection.
+---
+
 # Critical Thinking & Logical Reasoning SKILL
 
 ## 描述

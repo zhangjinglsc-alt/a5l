@@ -1,3 +1,8 @@
+---
+name: memory
+description: Persistent memory management including long-term, working, and episodic memory. Use for storing user preferences, project context, and learning from interactions.
+---
+
 # Memory SKILL
 
 ## 描述

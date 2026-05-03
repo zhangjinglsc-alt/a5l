@@ -1,3 +1,8 @@
+---
+name: message
+description: Multi-platform messaging for sending notifications and alerts. Use for investment alerts, system notifications, and communication.
+---
+
 # Message SKILL
 
 ## 描述

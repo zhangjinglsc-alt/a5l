@@ -1,3 +1,8 @@
+---
+name: ai-manufacturing
+description: AI + Manufacturing industry analysis including smart factories. Use for tracking industrial AI and automation investments.
+---
+
 # AI+工业制造 SKILL
 
 ## 描述

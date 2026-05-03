@@ -1,3 +1,8 @@
+---
+name: material
+description: New materials industry analysis including carbon fiber, graphene, and advanced composites. Use for tracking materials science investments.
+---
+
 # 新材料 SKILL
 
 ## 描述

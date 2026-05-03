@@ -1,3 +1,8 @@
+---
+name: unified-framework
+description: Unified architecture framework integrating technical analysis, data acquisition, AI applications, and validation metrics layers. Use for comprehensive investment research and trading support system orchestration.
+---
+
 # Unified Framework SKILL
 
 ## 描述

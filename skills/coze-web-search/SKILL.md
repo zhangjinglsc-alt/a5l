@@ -1,3 +1,8 @@
+---
+name: coze-web-search
+description: Web search using Coze API with summary and content extraction. Use for quick information retrieval and web page analysis.
+---
+
 # Coze Web Search SKILL
 
 ## 描述

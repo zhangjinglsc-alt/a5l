@@ -1,3 +1,8 @@
+---
+name: liquid-cooling
+description: Liquid cooling industry analysis for data centers and AI infrastructure. Use for tracking thermal management investments.
+---
+
 # 液冷 SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: knowledge-graph
+description: Knowledge graph construction and management for investment research. Use for entity extraction, relationship mapping, and investment signal generation from unstructured data.
+---
+
 # A5L 知识图谱构建工具 v1.0
 
 **SKILL名称**: knowledge-graph  

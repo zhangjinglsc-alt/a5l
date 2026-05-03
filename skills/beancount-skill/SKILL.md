@@ -1,3 +1,8 @@
+---
+name: beancount-skill
+description: Double-entry bookkeeping using Beancount. Use for personal finance tracking, expense categorization, and financial statement generation.
+---
+
 # Beancount 记账 SKILL
 
 ## 描述

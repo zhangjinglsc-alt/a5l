@@ -1,3 +1,8 @@
+---
+name: test-measurement
+description: Test and measurement industry including electronic testing equipment. Use for tracking semiconductor testing investments.
+---
+
 # 测试测量 SKILL
 
 ## 描述

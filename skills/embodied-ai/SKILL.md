@@ -1,3 +1,8 @@
+---
+name: embodied-ai
+description: Analysis of embodied AI sector including humanoid robots, autonomous driving, and physical AI systems. Use for tracking robotics investments and autonomous vehicle developments.
+---
+
 # 具身智能 SKILL
 
 ## 描述

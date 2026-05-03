@@ -1,3 +1,8 @@
+---
+name: unified-stock-price
+description: Unified stock price data from multiple sources (AKShare, TuShare, Yahoo). Use for real-time and historical price data retrieval with failover.
+---
+
 # 统一股票价格 SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: sector-etf-monitor
+description: Sector and ETF monitoring for industry rotation strategies. Use for tracking sector performance and ETF flows.
+---
+
 # Sector ETF Monitor SKILL
 
 ## 描述

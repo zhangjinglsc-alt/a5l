@@ -1,3 +1,8 @@
+---
+name: buffett-value-investing
+description: Buffett-style value investing framework. Use for moat analysis, margin of safety calculation, and long-term value investing.
+---
+
 # 巴菲特价值投资思维 SKILL
 
 ## 描述

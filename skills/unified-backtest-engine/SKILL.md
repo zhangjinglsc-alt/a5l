@@ -1,3 +1,8 @@
+---
+name: unified-backtest-engine
+description: Unified backtesting engine for trading strategy validation. Use for historical performance testing, strategy optimization, and risk assessment.
+---
+
 # 统一回测引擎 SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: factor-investing
+description: Quantitative factor investing analysis including value, growth, momentum, quality, and low-volatility factors. Use for multi-factor stock screening, factor backtesting, and quantitative portfolio construction.
+---
+
 # 因子投资方法论 SKILL
 
 ## 描述

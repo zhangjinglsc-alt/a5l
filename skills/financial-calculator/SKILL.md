@@ -1,3 +1,8 @@
+---
+name: financial-calculator
+description: Financial calculations including compound interest, IRR, NPV, and amortization. Use for investment return analysis and financial planning.
+---
+
 # 财务计算器 SKILL
 
 ## 描述

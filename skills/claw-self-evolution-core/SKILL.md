@@ -1,3 +1,8 @@
+---
+name: claw-self-evolution-core
+description: Core self-improvement engine for agent autonomous evolution. Use for recursive self-improvement, capability assessment, and skill conflict resolution.
+---
+
 # Self-Evolution Core SKILL
 
 ## 描述

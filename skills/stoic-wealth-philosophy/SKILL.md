@@ -1,3 +1,8 @@
+---
+name: stoic-wealth-philosophy
+description: Stoic philosophy applied to wealth management and investment psychology. Use for developing rational investment mindset and emotional discipline.
+---
+
 # Stoic Wealth Philosophy SKILL
 
 ## 描述

@@ -1,3 +1,8 @@
+---
+name: unified-news-aggregator
+description: Unified news aggregation from 28+ high-value sources including financial, tech, and industry news. Use for comprehensive market intelligence and sentiment analysis.
+---
+
 # 统一新闻聚合 SKILL
 
 ## 描述

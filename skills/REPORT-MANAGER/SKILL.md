@@ -1,3 +1,8 @@
+---
+name: REPORT-MANAGER
+description: Report Manager for research document management and classification. Use for organizing investment reports and research workflows.
+---
+
 # Research Report Manager SKILL
 
 专业的投研文档管理系统，实现研报的自动分类、全文检索、标签管理和飞书云文档同步。

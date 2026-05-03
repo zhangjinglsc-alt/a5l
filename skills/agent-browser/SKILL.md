@@ -1,3 +1,8 @@
+---
+name: agent-browser
+description: Browser automation for web interaction, form filling, and data extraction. Use for automated web testing, scraping, and web-based workflows.
+---
+
 # Agent Browser SKILL
 
 ## 描述

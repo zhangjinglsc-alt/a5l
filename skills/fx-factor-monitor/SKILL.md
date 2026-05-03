@@ -1,3 +1,8 @@
+---
+name: fx-factor-monitor
+description: Foreign exchange factor monitoring and currency risk analysis. Use for tracking forex markets and currency-hedged investments.
+---
+
 # FX Factor Monitor SKILL
 
 ## 描述

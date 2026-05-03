@@ -1,3 +1,8 @@
+---
+name: claw-daily-sync
+description: Daily synchronization and system health checks. Use for maintaining system consistency and automated daily operations.
+---
+
 # CLAW Daily Sync SKILL
 
 ## 描述

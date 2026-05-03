@@ -1,3 +1,8 @@
+---
+name: private-banker-stock
+description: Private banker style institutional-grade stock analysis. Use for comprehensive fundamental analysis and valuation modeling.
+---
+
 # Private Banker Stock SKILL
 
 ## 描述

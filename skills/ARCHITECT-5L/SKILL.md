@@ -1,3 +1,8 @@
+---
+name: ARCHITECT-5L
+description: A5L five-layer investment architecture - Layer 0-5 system design and coordination. Use for investment system architecture, meta-control, and strategy orchestration.
+---
+
 # ARCHITECT-5L: 五层架构投资体系
 
 > **Skill ID**: `architect_5l`  

@@ -1,3 +1,8 @@
+---
+name: yangguan-daodao
+description: Yangguan Daodao ultra-short-term trading system. Use for 1-3 day swing trading based on volume-price patterns and market sentiment.
+---
+
 # 阳关大道超短线交易系统 SKILL
 
 ## 描述
