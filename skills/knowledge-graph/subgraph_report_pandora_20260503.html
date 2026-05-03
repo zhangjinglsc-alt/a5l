@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Knowledge Graph - report_pandora_20260503</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 100%;
+            height: 800px;
+            border: 1px solid lightgray;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .legend {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+        .legend-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Knowledge Graph - report_pandora_20260503</h1>
+    <div id="mynetwork"></div>
+    <div class="legend">
+        <strong>图例:</strong>
+        <div class="legend-item"><span class="color-box" style="background: #FF6B6B;"></span>股票</div>
+        <div class="legend-item"><span class="color-box" style="background: #4ECDC4;"></span>行业</div>
+        <div class="legend-item"><span class="color-box" style="background: #45B7D1;"></span>概念</div>
+        <div class="legend-item"><span class="color-box" style="background: #FFA07A;"></span>事件</div>
+        <div class="legend-item"><span class="color-box" style="background: #98D8C8;"></span>人物</div>
+        <div class="legend-item"><span class="color-box" style="background: #F7DC6F;"></span>研报</div>
+    </div>
+    <script type="text/javascript">
+        // 数据
+        var nodes = new vis.DataSet([{"id": "report_pandora_20260503", "label": "Pandora Lite周报_光子学和半导体_20260503", "title": "Type: Report<br>ID: report_pandora_20260503", "color": "#F7DC6F", "shape": "square", "size": 20}, {"id": "stock_BABA", "label": "BABA", "title": "Type: Stock<br>ID: stock_BABA", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "stock_INTC", "label": "INTC", "title": "Type: Stock<br>ID: stock_INTC", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "industry_半导体", "label": "半导体", "title": "Type: Industry<br>ID: industry_半导体", "color": "#4ECDC4", "shape": "box", "size": 20}, {"id": "stock_SAS", "label": "SAS", "title": "Type: Stock<br>ID: stock_SAS", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "stock_SMCI", "label": "SMCI", "title": "Type: Stock<br>ID: stock_SMCI", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "concept_人工智能", "label": "人工智能", "title": "Type: Concept<br>ID: concept_人工智能", "color": "#45B7D1", "shape": "diamond", "size": 20}, {"id": "stock_SCIP", "label": "SCIP", "title": "Type: Stock<br>ID: stock_SCIP", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "stock_SASO", "label": "SASO", "title": "Type: Stock<br>ID: stock_SASO", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "stock_COHR", "label": "COHR", "title": "Type: Stock<br>ID: stock_COHR", "color": "#FF6B6B", "shape": "dot", "size": 30}, {"id": "stock_IIVI", "label": "IIVI", "title": "Type: Stock<br>ID: stock_IIVI", "color": "#FF6B6B", "shape": "dot", "size": 30}]);
+        var edges = new vis.DataSet([{"from": "stock_BABA", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_INTC", "to": "industry_半导体", "label": "belongs_to", "title": "Type: belongs_to<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_INTC", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "industry_半导体", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_SAS", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_SMCI", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "concept_人工智能", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_SCIP", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_SASO", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_COHR", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}, {"from": "stock_IIVI", "to": "report_pandora_20260503", "label": "mentioned_in", "title": "Type: mentioned_in<br>Confidence: 1.0", "arrows": "to", "color": {"color": "#848484", "highlight": "#FF6B6B"}}]);
+        
+        // 创建网络
+        var container = document.getElementById('mynetwork');
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        var options = {
+            nodes: {
+                font: {
+                    size: 14,
+                    color: '#333'
+                },
+                borderWidth: 2,
+                shadow: true
+            },
+            edges: {
+                width: 2,
+                shadow: true,
+                smooth: {
+                    type: 'continuous'
+                },
+                font: {
+                    size: 12,
+                    align: 'middle'
+                }
+            },
+            physics: {
+                stabilization: false,
+                barnesHut: {
+                    gravitationalConstant: -8000,
+                    springConstant: 0.04,
+                    springLength: 200
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                hideEdgesOnDrag: true
+            }
+        };
+        
+        var network = new vis.Network(container, data, options);
+        
+        // 点击事件
+        network.on("click", function (params) {
+            if (params.nodes.length > 0) {
+                var nodeId = params.nodes[0];
+                console.log("Clicked node:", nodeId);
+            }
+        });
+    </script>
+</body>
+</html>
