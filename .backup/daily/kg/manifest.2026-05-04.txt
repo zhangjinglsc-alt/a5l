@@ -1,0 +1,4 @@
+/workspace/projects/workspace/.backup/daily/kg/knowledge_graph.db.2026-05-04.bak
+/workspace/projects/workspace/.backup/daily/kg/kg_code.2026-05-04.tar.gz
+/workspace/projects/workspace/.backup/daily/kg/reports.2026-05-04.tar.gz
+/workspace/projects/workspace/.backup/daily/kg/manifest.2026-05-04.txt
