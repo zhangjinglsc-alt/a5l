@@ -75,3 +75,13 @@ node_modules/
 
 # Keep directory structure
 !.gitkeep
+
+# Session备份文件 (由系统自动生成，不需要版本控制)
+.backup/sessions/active/*
+.backup/sessions/daily/*
+!.backup/sessions/milestones/*/
+
+# 运行时日志 (不需要版本控制)
+.evolution/*.log
+feishu_sync_log.json
+skills/auto-briefing/data/*.log
