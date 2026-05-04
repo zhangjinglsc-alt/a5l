@@ -48,5 +48,35 @@
     "revenue": 144663.19,
     "timestamp": "2026-05-04T11:00:07.143936",
     "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "000725",
+    "name": "京东方A",
+    "quantity": 200,
+    "price": 313.97,
+    "cost": 62856.79,
+    "timestamp": "2026-05-04T13:00:06.390630",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "002594",
+    "name": "比亚迪",
+    "quantity": 100,
+    "price": 124.9,
+    "cost": 12502.49,
+    "timestamp": "2026-05-04T13:00:06.390683",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "600276",
+    "name": "恒瑞医药",
+    "quantity": 200,
+    "price": 426.54,
+    "cost": 85393.31,
+    "timestamp": "2026-05-04T13:00:06.390727",
+    "reason": "建议买入"
   }
 ]
