@@ -52,6 +52,54 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+---
+
+## 🛡️ Core Files Management (NEW - 2026-05-04)
+
+### Critical Rule: Core Files Must Be Updated Daily
+
+**Core files are the organization's memory. Never let them go stale.**
+
+#### Core Files Checklist
+
+| File | Updated By | Checked By | Frequency |
+|------|------------|------------|-----------|
+| `SOUL.md` | Chief Architect | CSO | Immediate on change |
+| `MEMORY.md` | Knowledge Guardian | CSO | Daily at 17:30 |
+| `AGENTS.md` | Chief Architect | CSO | Immediate on change |
+| `memory/YYYY-MM-DD.md` | Duty Officer | Chief Architect | Daily end-of-day |
+| `SESSION_BACKUP` | Auto System | CSO | Real-time + Daily |
+
+#### Daily Check (17:30)
+
+Run: `/workspace/projects/workspace/TOOLS/core_files_check.sh`
+
+**If check fails:**
+1. Fix immediately (before 18:00)
+2. Re-run check to verify
+3. Document in daily notes
+
+#### Session Backup Requirements
+
+- **Real-time backup**: Every 30 minutes
+- **Daily backup**: 23:50 every day
+- **Milestone backup**: On every major achievement
+- **Retention**: Real-time (24h) | Daily (30d) | Milestone (forever)
+
+#### Violation Handling
+
+| Level | Condition | Action |
+|-------|-----------|--------|
+| P0 | Core file >3 days stale | Written review, weekly meeting report |
+| P1 | Session backup >24h failed | Emergency fix, incident report |
+| P2 | Daily memory delayed | Complete same day, no penalty |
+| P3 | Git commit message non-standard | Fix immediately, reminder only |
+
+**See full details in: `CORE_FILES_MANAGEMENT.md`**
+- Don't run destructive commands without asking.
+- `trash` > `rm` (recoverable beats gone forever)
+- When in doubt, ask.
+
 ## External vs Internal
 
 **Safe to do freely:**
