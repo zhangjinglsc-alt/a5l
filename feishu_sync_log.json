@@ -130,5 +130,44 @@
     ],
     "failed_files": [],
     "timestamp": "2026-05-03T23:30:12.295204"
+  },
+  {
+    "date": "2026-05-04",
+    "sync_type": "portfolio_evening_sync",
+    "synced_files": [
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-04.md",
+        "size": 1340
+      },
+      {
+        "type": "portfolio_csv",
+        "filename": "portfolio_20260504.csv",
+        "size": 442
+      }
+    ],
+    "feishu_updates": [
+      {
+        "table": "小张SignalArena交易系统",
+        "sheet": "持仓记录",
+        "action": "updated",
+        "records": 7
+      },
+      {
+        "table": "小张SignalArena交易系统",
+        "sheet": "每日盈亏",
+        "action": "updated",
+        "records": 1
+      }
+    ],
+    "portfolio_summary": {
+      "total_value": 6787421.47,
+      "total_cost": 6750016.55,
+      "total_pnl": 37404.92,
+      "total_pnl_pct": 0.55,
+      "holdings_count": 7
+    },
+    "failed_files": [],
+    "timestamp": "2026-05-04T15:37:00.000000"
   }
 ]
