@@ -194,13 +194,13 @@ knowledge_base/
 
 ## ✅ 归档检查清单
 
-- [x] 6份原始PDF已保存到 media/inbound/
-- [x] 7份分析报告已生成到 data/research/
-- [x] 已创建知识索引 (tags: AI基础设施, 存储, TPU, DC, AI应用)
-- [x] 已标记重要性等级 (3份⭐⭐⭐核心)
+- [x] 6份原始PDF已保存到 knowledge_base/raw/pdf/
+- [x] 7份分析报告已归档到 knowledge_base/research/reports/
+- [x] 已创建知识索引 (knowledge_20260504.json)
+- [x] 已标记重要性等级 (4份⭐⭐⭐核心)
 - [x] 已规划飞书同步路径
-- [ ] Git提交 (需执行)
-- [ ] 飞书同步 (需执行)
+- [x] **Git提交完成** ✅ (commit: 0ee2476)
+- [ ] **飞书同步待执行** ⏳
 
 ---
 

@@ -132,16 +132,35 @@
         "investment_thesis": "硬件需求→软件变现",
         "portfolio_count": 4
       }
+    },
+    {
+      "id": "KB-2026-0504-007",
+      "type": "RESEARCH_REPORT",
+      "title": "韩国AI CPU与服务器DRAM短缺报道",
+      "source": "韩国科技媒体",
+      "date": "2026-05-04",
+      "industry": "存储",
+      "tags": ["AI基础设施", "AI CPU", "DRAM", "韩国", "Samsung", "SK Hynix", "短缺"],
+      "stock_codes": ["Samsung", "SK Hynix", "INTC", "AMD", "NVDA"],
+      "file_path": "workspace/projects/media/inbound/8c145892-5ae6-41a4-aa92-06b261d33af8.jpg",
+      "analysis_path": "data/knowledge/KOR-2026-001_korea_ai_cpu_dram_shortage.md",
+      "importance": 3,
+      "key_findings": {
+        "CPU_DRAM_CAGR": "56%",
+        "AI_Server_DRAM_CAGR": "33%",
+        "Hyperscale_DC_DRAM_growth": "30%/年",
+        "shortage_duration": "持续至2026年"
+      }
     }
   ],
   "statistics": {
-    "total_items": 7,
-    "original_pdfs": 6,
-    "analysis_reports": 7,
-    "sources": ["SNIA", "Morgan Stanley", "Goldman Sachs", "A5L"],
+    "total_items": 8,
+    "original_pdfs": 7,
+    "analysis_reports": 8,
+    "sources": ["SNIA", "Morgan Stanley", "Goldman Sachs", "韩国媒体", "A5L"],
     "industries": ["存储", "半导体", "数据中心", "AI应用"],
-    "stock_coverage": 15,
-    "high_importance_items": 4
+    "stock_coverage": 18,
+    "high_importance_items": 5
   },
   "sync_status": {
     "git_committed": false,

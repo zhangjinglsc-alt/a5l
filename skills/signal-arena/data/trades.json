@@ -218,5 +218,65 @@
     "revenue": 40901.06,
     "timestamp": "2026-05-04T14:00:45.072198",
     "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 500,
+    "price": 42.96,
+    "cost": 21501.48,
+    "timestamp": "2026-05-04T14:30:28.778487",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "06186",
+    "name": "中国飞鹤",
+    "quantity": 200,
+    "price": 153.28,
+    "cost": 30686.66,
+    "timestamp": "2026-05-04T14:30:28.778540",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 100,
+    "price": 265.0,
+    "cost": 26526.5,
+    "timestamp": "2026-05-04T14:30:28.778580",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "02318",
+    "name": "中国平安",
+    "quantity": 200,
+    "price": 224.87,
+    "revenue": 44929.03,
+    "timestamp": "2026-05-04T15:00:22.965241",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 347.71,
+    "revenue": 34736.23,
+    "timestamp": "2026-05-04T15:00:22.965283",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 200,
+    "price": 40.0,
+    "revenue": 7992.0,
+    "timestamp": "2026-05-04T15:00:22.965315",
+    "reason": "建议卖出"
   }
 ]
