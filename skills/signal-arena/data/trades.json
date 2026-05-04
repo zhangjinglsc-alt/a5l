@@ -148,5 +148,35 @@
     "cost": 45620.57,
     "timestamp": "2026-05-04T13:00:23.333454",
     "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 100,
+    "price": 68.5,
+    "cost": 6856.85,
+    "timestamp": "2026-05-04T13:30:29.720654",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "03690",
+    "name": "美团-W",
+    "quantity": 100,
+    "price": 16.24,
+    "revenue": 1622.38,
+    "timestamp": "2026-05-04T13:30:29.720776",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00386",
+    "name": "中国石油化工",
+    "quantity": 200,
+    "price": 326.19,
+    "revenue": 65172.76,
+    "timestamp": "2026-05-04T13:30:29.720816",
+    "reason": "建议卖出"
   }
 ]
