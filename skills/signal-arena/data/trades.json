@@ -178,5 +178,45 @@
     "revenue": 65172.76,
     "timestamp": "2026-05-04T13:30:29.720816",
     "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 200,
+    "price": 50.01,
+    "cost": 10012.0,
+    "timestamp": "2026-05-04T14:00:45.072039",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 200,
+    "price": 142.76,
+    "cost": 28580.55,
+    "timestamp": "2026-05-04T14:00:45.072099",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02318",
+    "name": "中国平安",
+    "quantity": 200,
+    "price": 13.02,
+    "cost": 2606.6,
+    "timestamp": "2026-05-04T14:00:45.072140",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 409.42,
+    "revenue": 40901.06,
+    "timestamp": "2026-05-04T14:00:45.072198",
+    "reason": "建议卖出"
   }
 ]
