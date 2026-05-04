@@ -1,0 +1,13 @@
+{
+  "check_time": "2026-05-04T12:15:38.128588",
+  "overall_score": 100.0,
+  "scores": {
+    "local_positions": 100,
+    "simulation_status": 100,
+    "signal_uniqueness": 100,
+    "date_validity": 100,
+    "consistency": 100
+  },
+  "issues": [],
+  "status": "healthy"
+}
