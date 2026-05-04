@@ -1,0 +1,54 @@
+{
+  "date": "20260504",
+  "type": "feature_extraction",
+  "key_metrics": {
+    "total_positions": 7,
+    "profitable_count": 1,
+    "losing_count": 5,
+    "total_pnl": -112595.07999999961
+  },
+  "stock_features": [
+    {
+      "code": "000066",
+      "name": "中国长城",
+      "status": "满仓标记",
+      "pnl_pct": null
+    },
+    {
+      "code": "300708",
+      "name": "聚灿光电",
+      "status": "亏损",
+      "pnl_pct": -17.750929368029738
+    },
+    {
+      "code": "002436",
+      "name": "兴森科技",
+      "status": "亏损",
+      "pnl_pct": -5.394332536701946
+    },
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "status": "盈利",
+      "pnl_pct": 2.517162471395893
+    },
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "status": "亏损",
+      "pnl_pct": -10.220440881763528
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "status": "亏损",
+      "pnl_pct": -2.2396047756278197
+    },
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "status": "亏损",
+      "pnl_pct": -9.49494949494948
+    }
+  ]
+}

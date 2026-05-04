@@ -169,5 +169,17 @@
     },
     "failed_files": [],
     "timestamp": "2026-05-04T15:37:00.000000"
+  },
+  {
+    "date": "2026-05-04",
+    "synced_files": [
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-04.md",
+        "size": 715
+      }
+    ],
+    "failed_files": [],
+    "timestamp": "2026-05-04T23:30:04.927305"
   }
 ]

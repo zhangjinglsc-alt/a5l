@@ -1,10 +1,8 @@
 {
-  "date": "2026-05-01",
-  "events": [
-    "NFP"
-  ],
-  "frequency_minutes": 30,
-  "mode": "\u91cd\u8981\u4e8b\u4ef6\u65e5\u76d1\u63a7",
-  "updated_at": "2026-05-01T21:30:57.729367",
-  "next_reset": "2026-05-02T06:00:00"
+  "date": "2026-05-04",
+  "events": [],
+  "frequency_minutes": 120,
+  "mode": "\u5e38\u89c4\u76d1\u63a7",
+  "updated_at": "2026-05-04T21:30:04.280397",
+  "next_reset": "2026-05-05T06:00:00"
 }
