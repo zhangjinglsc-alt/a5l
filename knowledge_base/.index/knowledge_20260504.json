@@ -164,7 +164,8 @@
   },
   "sync_status": {
     "git_committed": false,
-    "feishu_synced": false,
+    "feishu_synced": true,
+    "feishu_sync_time": "2026-05-04T16:06:00+08:00",
     "kiwi_synced": false
   }
 }

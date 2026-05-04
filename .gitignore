@@ -89,3 +89,7 @@ skills/auto-briefing/data/*.log
 # 第三方工具/依赖目录 (不加入版本控制)
 m_flow/
 skills/agent-memory-system-guide/agent-memory-system-guide/
+
+# 运行时修改的文件 (不需要提交)
+.evolution/*.log
+skills/auto-briefing/data/volatility_monitor.log
