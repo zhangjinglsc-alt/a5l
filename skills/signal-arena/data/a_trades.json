@@ -1,0 +1,42 @@
+[
+  {
+    "action": "BUY",
+    "symbol": "000725",
+    "name": "京东方A",
+    "quantity": 200,
+    "price": 1230.58,
+    "cost": 246362.12,
+    "timestamp": "2026-05-04T09:30:14.772697",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "002594",
+    "name": "比亚迪",
+    "quantity": 200,
+    "price": 1417.86,
+    "cost": 283855.57,
+    "timestamp": "2026-05-04T09:30:14.772751",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "000858",
+    "name": "五粮液",
+    "quantity": 500,
+    "price": 434.54,
+    "cost": 217487.27,
+    "timestamp": "2026-05-04T10:30:08.199185",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "300124",
+    "name": "汇川技术",
+    "quantity": 200,
+    "price": 934.16,
+    "cost": 187018.83,
+    "timestamp": "2026-05-04T10:30:08.199245",
+    "reason": "建议买入"
+  }
+]

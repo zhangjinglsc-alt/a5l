@@ -1,6 +1,6 @@
 {
-  "status": "skipped",
-  "message": "非交易时间",
+  "status": "success",
+  "message": "交易执行成功",
   "retry_count": 0,
-  "timestamp": "2026-05-04T09:07:44.586551"
+  "timestamp": "2026-05-04T10:30:08.199911"
 }
