@@ -85,3 +85,7 @@ node_modules/
 .evolution/*.log
 feishu_sync_log.json
 skills/auto-briefing/data/*.log
+
+# 第三方工具/依赖目录 (不加入版本控制)
+m_flow/
+skills/agent-memory-system-guide/agent-memory-system-guide/
