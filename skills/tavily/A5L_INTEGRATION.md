@@ -60,5 +60,23 @@ search(query="Fed interest rate decision May 2026", topic="news")
 - ✅ 新闻和实时信息
 - ✅ 深度研究分析
 
-## 下一步
-获取TAVILY_API_KEY后，A5L即可全面调用tavily-search进行智能搜索！
+## ✅ API Key 已配置
+
+```bash
+export TAVILY_API_KEY="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"
+```
+
+**状态**: ✅ 已配置并测试成功
+
+**测试结果**:
+```
+✅ API Key 已设置: tvly-dev-1...
+测试搜索: 'AI investing trends 2026'
+{
+  "success": true,
+  "answer": "AI investment will reach $3 trillion by 2028...",
+  "results": [...]
+}
+```
+
+## 🎉 A5L现在可以全面调用tavily-search！
