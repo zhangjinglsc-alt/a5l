@@ -181,5 +181,50 @@
     ],
     "failed_files": [],
     "timestamp": "2026-05-04T23:30:04.927305"
+  },
+  {
+    "date": "2026-05-05",
+    "synced_files": [
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-05.md",
+        "size": 715
+      }
+    ],
+    "failed_files": [],
+    "timestamp": "2026-05-05T12:07:55.590709"
+  },
+  {
+    "date": "2026-05-05",
+    "synced_files": [
+      {
+        "type": "soul",
+        "filename": "SOUL-2026-05-05.md",
+        "size": 12664
+      },
+      {
+        "type": "skill",
+        "filename": "SKILL-2026-05-05.md",
+        "csv": "SKILL-2026-05-05.csv",
+        "size": 4129
+      },
+      {
+        "type": "memory",
+        "filename": "MEMORY-2026-05-05.md",
+        "size": 8898
+      },
+      {
+        "type": "goal",
+        "filename": "GOAL-2026-05-05.md",
+        "size": 874
+      },
+      {
+        "type": "data",
+        "filename": "DATA-持仓-2026-05-05.md",
+        "size": 715
+      }
+    ],
+    "failed_files": [],
+    "timestamp": "2026-05-05T12:08:17.804609"
   }
 ]
