@@ -479,5 +479,65 @@
     ],
     "failed": [],
     "timestamp": "2026-05-06T00:11:21.976969"
+  },
+  {
+    "date": "2026-05-06",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://www.feishu.cn/docx/VoGrdewrXoBGPtxnKY8ckaMInZd"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/C1jNdyGemowMRxxE9dBcXyvgnBg"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://www.feishu.cn/docx/MjC3dnX7Yok2kZxCoRlcTch6nDg"
+      },
+      {
+        "file": "HK_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/HtUmd6VQ5osPAcxddrEcYeN0npg"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/UMibdTD7JogNrYxdOJfcV6cInke"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/XLI0dZNvRom8uaxsIH4cJNQAnsd"
+      },
+      {
+        "file": "HK-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/Yunedj3yWoAIhGxoxR4c314Nnsf"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/SPLYdpgsQodSWbxy8xwcdr4inMh"
+      },
+      {
+        "file": "HK-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/Wb8ddRfOfoPLL4xqBRjcd13lnnf"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://www.feishu.cn/docx/Z3LJdh20hoONRHxv5vgc2oOxnCd"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/MaHld9rBgoCPBcxaJX4cNqUMnhc"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/WaYcd0E8KoVzSoxklA9cOMAqnff"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/A7KMdmzGCoFpZOxf0JicORXFnuf"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-06T01:40:04.117602"
   }
 ]
