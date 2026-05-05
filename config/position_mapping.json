@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "created_at": "2026-05-06",
+  "description": "A5L持仓文件映射配置 - 区分真实持仓与模拟持仓",
+  
+  "real_positions": {
+    "type": "REAL",
+    "description": "SignalArena真实持仓 (唯一真相源)",
+    "risk_level": "HIGH",
+    "warning": "涉及真实资金，操作前必须二次确认",
+    
+    "master_file": "memory/portfolio/REAL_POSITION_MASTER.md",
+    
+    "source_files": {
+      "signalarena_reports": "memory/portfolio/portfolio_report_*.md",
+      "transaction_logs": "trading-review-wiki/raw/交割单/"
+    },
+    
+    "accounts": [
+      {
+        "id": "own",
+        "name": "自有账户",
+        "type": "主账户",
+        "holdings": ["000066", "002436", "300708"]
+      },
+      {
+        "id": "wgb",
+        "name": "WGB",
+        "type": "子账户",
+        "holdings": ["601975"]
+      },
+      {
+        "id": "wangli",
+        "name": "王力",
+        "type": "子账户",
+        "holdings": ["601975"]
+      },
+      {
+        "id": "laoniang",
+        "name": "老娘",
+        "type": "子账户",
+        "holdings": ["601975", "688981"]
+      }
+    ],
+    
+    "current_holdings": {
+      "000066": { "name": "中国长城", "status": "满仓核心", "accounts": ["自有"] },
+      "601975": { "name": "招商南油", "status": "分散持仓", "accounts": ["WGB", "王力", "老娘"], "total_shares": 761400 },
+      "688981": { "name": "中芯国际", "status": "辅助持仓", "accounts": ["老娘"], "shares": 3139 },
+      "002436": { "name": "兴森科技", "status": "观察仓", "accounts": ["自有"], "shares": 100 },
+      "300708": { "name": "聚灿光电", "status": "观察仓", "accounts": ["自有"], "shares": 100 }
+    },
+    
+    "last_update": "2026-05-05 11:37:56"
+  },
+  
+  "simulation_positions": {
+    "type": "SIMULATION",
+    "description": "A5L三市场模拟交易 (试错实验场)",
+    "risk_level": "NONE",
+    "warning": "模拟账户，不涉及真实资金",
+    
+    "master_file": "memory/simulation/SIM_POSITION_MASTER.md",
+    
+    "accounts": [
+      {
+        "id": "US_SIM_001",
+        "market": "US",
+        "currency": "USD",
+        "initial_capital": 1000000,
+        "data_file": "data/simulation/US_SIM_001.json",
+        "doc_id": "UwxNdkLXHoB6hYxRAlyc9r7Vnef",
+        "status": "active",
+        "positions": 4,
+        "holdings": ["NVDA", "INTC", "WDC", "AMD"]
+      },
+      {
+        "id": "CN_SIM_001",
+        "market": "CN",
+        "currency": "CNY",
+        "initial_capital": 5000000,
+        "data_file": "data/simulation/CN_SIM_001.json",
+        "doc_id": "XHnvd8pvwoGlkYxPjPPc2GdgnBg",
+        "status": "waiting_open",
+        "positions": 0,
+        "holdings": [],
+        "plans": ["CN-PLAN-20260506-0001", "CN-PLAN-20260506-0002"]
+      },
+      {
+        "id": "HK_SIM_001",
+        "market": "HK",
+        "currency": "HKD",
+        "initial_capital": 800000,
+        "data_file": "data/simulation/HK_SIM_001.json",
+        "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM",
+        "status": "waiting_open",
+        "positions": 0,
+        "holdings": [],
+        "plans": ["HK-PLAN-20260506-0001", "HK-PLAN-20260506-0002"]
+      }
+    ],
+    
+    "last_update": "2026-05-06 00:49:00"
+  },
+  
+  "quick_access": {
+    "real_position_summary": "cat memory/portfolio/REAL_POSITION_MASTER.md | head -50",
+    "sim_position_summary": "cat memory/simulation/SIM_POSITION_MASTER.md | head -50",
+    "us_sim_positions": "cat data/simulation/US_SIM_001.json | jq '.positions'",
+    "cn_sim_positions": "cat data/simulation/CN_SIM_001.json | jq '.positions'",
+    "hk_sim_positions": "cat data/simulation/HK_SIM_001.json | jq '.positions'"
+  },
+  
+  "feishu_docs": {
+    "real_position": {
+      "title_format": "[REAL] 真实持仓报告 YYYYMMDD",
+      "folder": "空间2/40_持仓与交易/真实持仓"
+    },
+    "sim_us": {
+      "title_format": "[SIM-US] 美股模拟交易计划",
+      "doc_id": "UwxNdkLXHoB6hYxRAlyc9r7Vnef"
+    },
+    "sim_cn": {
+      "title_format": "[SIM-CN] A股模拟交易计划",
+      "doc_id": "XHnvd8pvwoGlkYxPjPPc2GdgnBg"
+    },
+    "sim_hk": {
+      "title_format": "[SIM-HK] 港股模拟交易计划",
+      "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM"
+    }
+  }
+}
