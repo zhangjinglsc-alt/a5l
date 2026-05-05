@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-03",
+  "last_updated": "2026-05-05",
   "summary": {
     "total_skills": 59,
     "active_skills": 55,
@@ -89,6 +89,17 @@
           "success_rate": 0.88,
           "status": "active",
           "description": "私人投行分析，专业机构级股票研究"
+        },
+        {
+          "id": "industry_research",
+          "name": "行业深度研究",
+          "location": "skills/industry-research/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 2,
+          "last_used": "2026-05-05",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "行业深度研究SKILL v4.0，白金方法论实战，80+句式模板"
         }
       ]
     },
@@ -667,6 +678,7 @@
     "2026-05-01: 新增Goal-Oriented管理和美股模拟交易技能",
     "2026-05-01: 建立skill熟练度追踪机制",
     "2026-05-03: 归档3个重叠技能：self-improving-agent/aakshare/ai-news-aggregator",
-    "2026-05-03: SKILL合并方案制定，功能重叠问题解决"
+    "2026-05-03: SKILL合并方案制定，功能重叠问题解决",
+    "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论"
   ]
 }

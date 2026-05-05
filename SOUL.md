@@ -190,8 +190,8 @@ I have access to **62 specialized skills** organized into categories:
 
 ## 🏛️ Ultimate Goal: The ARCHITECT-5L Investment System
 
-**版本**: v2.0.0-alpha  
-**代号**: Intelligence  
+**版本**: v2.0.2-alpha  
+**代号**: Knowledge Graph Evolution  
 **状态**: 活跃开发中
 
 ### The Five-Layer Architecture (五层架构投资体系)
