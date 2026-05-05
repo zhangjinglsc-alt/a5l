@@ -1,6 +1,6 @@
 {
-  "test_id": "entrocamp_api_test_20260505",
-  "timestamp": "2026-05-05T03:30:00+08:00",
+  "test_id": "entrocamp_api_test_20260502",
+  "timestamp": "2026-05-06T03:30:25.672227",
   "phase1_api_test": {
     "status": "PASSED",
     "attempts": 1,
@@ -9,33 +9,16 @@
       "🛡️ 安全与边界",
       "🎯 读懂意图",
       "🧠 记忆与学习"
-    ],
-    "sync_time": "2026-05-05T03:30:25"
+    ]
   },
   "phase2_learning": {
     "status": "COMPLETED",
-    "completed_course": "🛡️ 安全与边界",
-    "progress": "100%",
-    "lessons_completed": 5,
-    "total_lessons": 5,
-    "completion_time": "2026-05-05T03:35:00+08:00"
+    "first_lesson": "🛡️ 安全与边界 - 第1课",
+    "progress": "20% of first course"
   },
-  "remaining_courses": [
-    {
-      "name": "🎯 读懂意图",
-      "status": "enrolled",
-      "progress": "0%"
-    },
-    {
-      "name": "🧠 记忆与学习",
-      "status": "enrolled",
-      "progress": "0%"
-    }
-  ],
   "next_steps": [
-    "开始 🎯 读懂意图 课程",
-    "开始 🧠 记忆与学习 课程",
-    "完成全部3门课程获得EntroCamp认证"
-  ],
-  "overall_progress": "33% (1/3 课程完成)"
+    "继续完成安全与边界剩余课程",
+    "开始读懂意图课程",
+    "开始记忆与学习课程"
+  ]
 }
