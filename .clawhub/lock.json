@@ -12,6 +12,10 @@
     "wiki-system": {
       "version": "1.0.9",
       "installedAt": 1777570084688
+    },
+    "tavily": {
+      "version": "1.0.0",
+      "installedAt": 1778001598030
     }
   }
 }

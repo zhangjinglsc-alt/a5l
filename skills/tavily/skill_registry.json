@@ -1,0 +1,39 @@
+{
+  "name": "tavily-search",
+  "display_name": "Tavily AI Search",
+  "description": "AI-optimized web search using Tavily Search API. Provides AI-generated answers, structured results, and deep research capabilities.",
+  "category": "search",
+  "version": "1.0.0",
+  "author": "A5L",
+  "status": "active",
+  "priority": "high",
+  "dependencies": {
+    "python_packages": ["tavily-python"],
+    "env_vars": ["TAVILY_API_KEY"]
+  },
+  "capabilities": [
+    "web_search",
+    "ai_answer_generation",
+    "news_search",
+    "deep_research",
+    "image_search"
+  ],
+  "entry_points": {
+    "search": "a5l_tavily_integration.tavily_search",
+    "news": "a5l_tavily_integration.tavily_news",
+    "research": "a5l_tavily_integration.tavily_research"
+  },
+  "use_cases": [
+    "Investment research and due diligence",
+    "Real-time news monitoring",
+    "Market trend analysis",
+    "Company background checks",
+    "Industry landscape research"
+  ],
+  "a5l_integration": {
+    "layer": "L1_DataFoundation",
+    "manager": "CIO",
+    "usage_frequency": "high",
+    "fallback_order": ["coze_web_search", "exa_web_search"]
+  }
+}
