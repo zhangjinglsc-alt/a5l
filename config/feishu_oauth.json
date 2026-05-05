@@ -1,0 +1,16 @@
+{
+  "app_id": "cli_a94dcd846138dcb3",
+  "app_secret": "GxlntRwJWdvAHkcDEGLmFbZZKUHUmu2Y",
+  "user_access_token": null,
+  "token_expires_at": null,
+  "refresh_token": null,
+  "scope": [
+    "docs:document:create",
+    "docs:document:read",
+    "docs:document:update",
+    "drive:drive:read",
+    "drive:file:read",
+    "drive:file:write"
+  ],
+  "tenant_access_token": "t-g10455lE44IQKG5GZYYE4JZSYNWNICFPAJE4RRG4"
+}

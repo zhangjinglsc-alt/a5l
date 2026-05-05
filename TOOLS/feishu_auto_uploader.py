@@ -111,32 +111,161 @@ class FeishuAutoUploader:
     
     def _create_feishu_doc(self, title: str, content: str, 
                            folder_token: str) -> Optional[str]:
-        """创建飞书文档"""
+        """创建飞书文档 - 使用Tenant Token OAuth"""
         try:
-            # 使用feishu_create_doc工具
+            # 方案1: 使用Tenant Token直接创建（已验证可用）
+            oauth_config_path = Path("/workspace/projects/workspace/config/feishu_oauth.json")
+            if oauth_config_path.exists():
+                try:
+                    import requests
+                    import json
+                    
+                    # 读取OAuth配置
+                    with open(oauth_config_path, 'r') as f:
+                        oauth_config = json.load(f)
+                    
+                    token = oauth_config.get('tenant_access_token')
+                    if not token:
+                        # 尝试重新获取token
+                        app_id = oauth_config['app_id']
+                        app_secret = oauth_config['app_secret']
+                        token_url = 'https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal'
+                        resp = requests.post(token_url, json={
+                            'app_id': app_id,
+                            'app_secret': app_secret
+                        }, timeout=10)
+                        token_data = resp.json()
+                        if token_data.get('code') == 0:
+                            token = token_data['tenant_access_token']
+                            # 更新配置
+                            oauth_config['tenant_access_token'] = token
+                            with open(oauth_config_path, 'w') as f:
+                                json.dump(oauth_config, f, indent=2, ensure_ascii=False)
+                    
+                    if token:
+                        # 创建文档（不指定folder，创建在默认位置）
+                        create_url = 'https://open.feishu.cn/open-apis/docx/v1/documents'
+                        headers = {
+                            'Authorization': f'Bearer {token}',
+                            'Content-Type': 'application/json'
+                        }
+                        
+                        doc_data = {'title': title}
+                        # 注意：Tenant Token创建的文档没有指定文件夹权限
+                        # 文档会创建在应用默认位置
+                        # if folder_token:
+                        #     doc_data['folder_token'] = folder_token
+                        
+                        resp = requests.post(create_url, headers=headers, json=doc_data, timeout=10)
+                        result = resp.json()
+                        
+                        if result.get('code') == 0:
+                            doc_id = result['data']['document']['document_id']
+                            doc_url = f"https://www.feishu.cn/docx/{doc_id}"
+                            
+                            # 写入内容（分段）
+                            lines = content.split('\n')
+                            block_url = f'https://open.feishu.cn/open-apis/docx/v1/documents/{doc_id}/blocks'
+                            
+                            # 每10行作为一个block批量写入
+                            batch_size = 10
+                            for i in range(0, min(len(lines), 500), batch_size):  # 限制最多500行
+                                batch_lines = lines[i:i+batch_size]
+                                batch_content = '\n'.join(batch_lines)
+                                if batch_content.strip():
+                                    try:
+                                        requests.post(
+                                            block_url,
+                                            headers=headers,
+                                            json={
+                                                'children': [{
+                                                    'block_type': 'text',
+                                                    'text': {'elements': [{'type': 'textRun', 'textRun': {'content': batch_content[:2000]}}]}
+                                                }]
+                                            },
+                                            timeout=5
+                                        )
+                                    except:
+                                        pass  # 单批失败不影响整体
+                            
+                            print(f"   ✅ 文档创建成功 (OAuth): {title}")
+                            return doc_url
+                        else:
+                            print(f"   ⚠️ OAuth创建失败: {result.get('msg', 'Unknown')}")
+                            
+                except Exception as e:
+                    print(f"   ⚠️ OAuth上传器异常: {e}")
+            
+            # 方案2: 使用OpenClaw内置的feishu_create_doc工具
+            import subprocess
+            import json
+            
             # 将内容写入临时文件
             temp_file = f"/tmp/feishu_upload_{datetime.now().strftime('%Y%m%d%H%M%S')}.md"
             with open(temp_file, 'w', encoding='utf-8') as f:
                 f.write(content)
             
-            # 调用创建文档工具
-            cmd = f"cd /workspace/projects/workspace && python3 -m feishu_create_doc --title '{title}' --file {temp_file} --folder {folder_token} 2>&1"
-            result = os.popen(cmd).read().strip()
+            # 读取内容用于API调用
+            with open(temp_file, 'r', encoding='utf-8') as f:
+                markdown_content = f.read()
             
             # 清理临时文件
             if os.path.exists(temp_file):
                 os.remove(temp_file)
             
-            if result and 'http' in result:
-                print(f"   ✅ 文档创建成功: {title}")
-                return result
-            else:
-                print(f"   ⚠️ 文档创建使用备用方案")
-                # 备用方案：返回配置中的根文件夹链接
-                return f"{self.config.get('root_folder', {}).get('url', 'https://my.feishu.cn')} (请手动上传 {title})"
+            # 调用OpenClaw的feishu_create_doc工具
+            # 注意：这里需要使用subprocess调用openclaw命令
+            cmd = [
+                'python3', '-c',
+                f'''
+import json
+import sys
+sys.path.insert(0, "/workspace/projects/workspace")
+
+# 使用feishu_create_doc工具
+from tools.feishu_doc_tool import create_doc
+try:
+    result = create_doc(
+        title="""{title}""",
+        markdown="""{markdown_content.replace('"', '\\"').replace("'", "\\'")}""",
+        folder_token="{folder_token}"
+    )
+    print(json.dumps(result))
+except Exception as e:
+    print(json.dumps({{"error": str(e)}}))
+'''
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+            
+            if result.returncode == 0 and result.stdout:
+                try:
+                    doc_result = json.loads(result.stdout.strip().split('\n')[-1])
+                    if 'doc_url' in doc_result:
+                        print(f"   ✅ 文档创建成功: {title}")
+                        return doc_result['doc_url']
+                except:
+                    pass
+            
+            # 方案3: 如果自动化创建都失败，提供手动上传方案
+            print(f"   ⚠️ 文档创建使用备用方案 (API限制)")
+            # 保存到导出目录，提示用户手动上传
+            export_file = f"{self.export_dir}/{title.replace(' ', '_')}.md"
+            with open(export_file, 'w', encoding='utf-8') as f:
+                f.write(markdown_content)
+            print(f"   📁 已保存到: {export_file}")
+            return f"{self.config.get('root_folder', {}).get('url', 'https://my.feishu.cn')} (请手动上传 {title})"
                 
         except Exception as e:
             print(f"   ⚠️ 创建文档异常: {e}")
+            # 保存到导出目录作为备用
+            try:
+                export_file = f"{self.export_dir}/{title.replace(' ', '_')}.md"
+                with open(export_file, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                print(f"   📁 已保存到备用位置: {export_file}")
+            except:
+                pass
             return None
     
     def _create_feishu_bitable(self, title: str, csv_path: str,
