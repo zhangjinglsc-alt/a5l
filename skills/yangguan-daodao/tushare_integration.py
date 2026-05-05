@@ -10,6 +10,7 @@ sys.path.insert(0, '/workspace/projects/workspace')
 sys.path.insert(0, '/workspace/projects/workspace/tools')
 
 from data_unified import get_data_source
+from finnhub_client import FinnhubDataSource
 from datetime import datetime, timedelta
 import pandas as pd
 
