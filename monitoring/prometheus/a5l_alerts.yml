@@ -1,0 +1,95 @@
+# A5L 告警规则配置
+groups:
+  - name: a5l_system_alerts
+    rules:
+      # Gateway服务不可用
+      - alert: A5LGatewayDown
+        expr: up{job="a5l-gateway"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "A5L Gateway服务不可用"
+          description: "Gateway服务已宕机超过1分钟"
+
+      # 磁盘空间不足
+      - alert: DiskSpaceLow
+        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) < 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "磁盘空间不足"
+          description: "磁盘使用率超过90%"
+
+      # 内存使用过高
+      - alert: MemoryHigh
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes > 0.85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "内存使用过高"
+          description: "内存使用率超过85%"
+
+      # API响应时间过长
+      - alert: APIResponseSlow
+        expr: http_request_duration_seconds{quantile="0.95"} > 5
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "API响应缓慢"
+          description: "95%请求响应时间超过5秒"
+
+      # GitHub API错误率高
+      - alert: GitHubAPIErrors
+        expr: rate(http_requests_total{job="github-api",status=~"5.."}[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "GitHub API错误率高"
+          description: "GitHub API 5xx错误率超过10%"
+
+      # 模拟交易账户异常
+      - alert: SimulationAccountError
+        expr: a5l_simulation_errors_total > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "模拟交易系统异常"
+          description: "模拟交易账户发生错误"
+
+  - name: a5l_business_alerts
+    rules:
+      # 持仓数据更新延迟
+      - alert: PositionDataStale
+        expr: time() - a5l_position_last_update_timestamp > 900
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "持仓数据更新延迟"
+          description: "持仓数据超过15分钟未更新"
+
+      # 飞书同步失败
+      - alert: FeishuSyncFailed
+        expr: a5l_feishu_sync_errors_total > 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "飞书同步失败"
+          description: "飞书文档同步出现错误"
+
+      # GitHub推送失败
+      - alert: GitHubPushFailed
+        expr: a5l_github_push_errors_total > 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "GitHub推送失败"
+          description: "代码推送出现错误"
