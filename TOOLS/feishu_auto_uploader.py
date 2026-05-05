@@ -472,9 +472,15 @@ except Exception as e:
         for i, filename in enumerate(plan_files, 1):
             file_path = f"{plans_dir}/{filename}"
             
-            # 确定文档标题
-            if 'LIVE_STATUS' in filename:
-                title = f"模拟交易实时状态-{date_str}"
+            # 确定文档标题 - 修复命名冲突
+            if 'US_SIM' in filename and 'LIVE_STATUS' in filename:
+                title = f"美股实时状态-{date_str}"
+                folder = "06-SIMULATION（模拟交易）/实时状态"
+            elif 'CN_SIM' in filename and 'LIVE_STATUS' in filename:
+                title = f"A股实时状态-{date_str}"
+                folder = "06-SIMULATION（模拟交易）/实时状态"
+            elif 'HK_SIM' in filename and 'LIVE_STATUS' in filename:
+                title = f"港股实时状态-{date_str}"
                 folder = "06-SIMULATION（模拟交易）/实时状态"
             elif 'US-PLAN' in filename:
                 title = f"美股交易计划-{filename.replace('US-PLAN-', '').replace('.md', '')}"
