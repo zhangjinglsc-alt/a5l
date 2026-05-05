@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-05",
+  "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 59,
-    "active_skills": 55,
+    "total_skills": 60,
+    "active_skills": 56,
     "deprecated_skills": 4,
     "avg_proficiency": 0.77,
     "most_used": "unified-stock-price"
@@ -531,7 +531,7 @@
     },
     "security_infra": {
       "name": "安全基建",
-      "count": 2,
+      "count": 3,
       "skills": [
         {
           "id": "healthcheck",
@@ -546,6 +546,14 @@
           "proficiency": 0.81,
           "status": "active",
           "description": "节点连接诊断，设备配对与网络问题排查"
+        },
+        {
+          "id": "triple_backup",
+          "name": "三重备份标准",
+          "location": "skills/triple-backup-standard/SKILL.md",
+          "proficiency": 0.95,
+          "status": "active",
+          "description": "A5L所有角色产出强制执行三重备份：本地SSMG归档 → 飞书云文档 → GitHub版本控制"
         }
       ]
     },
