@@ -16,7 +16,9 @@
     "soul": {
       "folder": "01-SOUL（灵魂层）",
       "filename_pattern": "SOUL-人格宪章-{date}.md",
-      "format": "doc"
+      "format": "doc",
+      "doc_id": "WuQ1datWLosRLixj86icKPudnac",
+      "url": "https://www.feishu.cn/docx/WuQ1datWLosRLixj86icKPudnac"
     },
     "skill": {
       "folder": "02-SKILL（技能层）",
@@ -27,7 +29,9 @@
     "memory": {
       "folder": "03-MOUL（记忆层）/每日情景记忆",
       "filename_pattern": "MEMORY-{date}.md",
-      "format": "doc"
+      "format": "doc",
+      "doc_id": "P6F5dv7oHoXtr4xRZK4cZM1On9g",
+      "url": "https://www.feishu.cn/docx/P6F5dv7oHoXtr4xRZK4cZM1On9g"
     },
     "goal": {
       "folder": "04-GOAL（目标层）",
