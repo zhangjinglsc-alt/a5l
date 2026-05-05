@@ -384,27 +384,66 @@ class A5LDataSource:
         
         return pd.DataFrame()
     
-    def get_major_news(self, src: str = 'sina', days: int = 1) -> pd.DataFrame:
+    def get_major_news(self, src: str = 'sina', start_date: str = None, end_date: str = None) -> pd.DataFrame:
         """
         获取重大新闻
         
         Args:
-            src: 来源 (sina/10jqka/eastmoney/yuncaijing)
-            days: 获取天数
+            src: 来源 (sina/10jqka/eastmoney/yuncaijing/财联社)
+            start_date: 开始日期 (YYYY-MM-DD HH:MM:SS)
+            end_date: 结束日期 (YYYY-MM-DD HH:MM:SS)
         
         Returns:
             DataFrame包含重大新闻
         """
-        start_date = (datetime.now() - timedelta(days=days)).strftime('%Y%m%d')
+        if not start_date:
+            start_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')
+        if not end_date:
+            end_date = datetime.now().strftime('%Y-%m-%d 23:59:59')
         
         try:
-            df = self.tushare_pro.pro.major_news(src=src, start_date=start_date)
+            # 支持字段筛选
+            df = self.tushare_pro.pro.major_news(src=src, start_date=start_date, end_date=end_date)
             if len(df) > 0:
                 self.stats['tushare_calls'] += 1
                 logger.info(f"   ✅ Tushare: 重大新闻({src}) {len(df)}条")
                 return df
         except Exception as e:
             logger.warning(f"   Tushare重大新闻失败: {e}")
+        
+        return pd.DataFrame()
+    
+    def get_major_news_with_content(self, src: str = 'sina', start_date: str = None, end_date: str = None) -> pd.DataFrame:
+        """
+        获取重大新闻(带内容)
+        
+        Args:
+            src: 来源
+            start_date: 开始日期
+            end_date: 结束日期
+        
+        Returns:
+            DataFrame包含新闻标题和内容
+        """
+        if not start_date:
+            start_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')
+        if not end_date:
+            end_date = datetime.now().strftime('%Y-%m-%d 23:59:59')
+        
+        try:
+            # 带内容字段
+            df = self.tushare_pro.pro.major_news(
+                src=src, 
+                start_date=start_date, 
+                end_date=end_date,
+                fields='title,content,datetime,src'
+            )
+            if len(df) > 0:
+                self.stats['tushare_calls'] += 1
+                logger.info(f"   ✅ Tushare: 重大新闻(含内容) {len(df)}条")
+                return df
+        except Exception as e:
+            logger.warning(f"   Tushare重大新闻(内容)失败: {e}")
         
         return pd.DataFrame()
     
