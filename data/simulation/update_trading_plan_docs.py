@@ -8,6 +8,11 @@ A5L三市场模拟交易计划文档自动更新系统
 - 安全余量: 95% (远低于60次/分钟限制)
 
 Chief设置: 每15分钟自动更新
+
+数据源互为保障:
+- 美股: Finnhub → Yahoo Finance → 本地缓存
+- A股: Tushare → akshare → 本地缓存
+- 港股: Tushare → Yahoo Finance → 本地缓存
 """
 
 import sys
@@ -16,32 +21,30 @@ import time
 sys.path.insert(0, '/workspace/projects/workspace')
 sys.path.insert(0, '/workspace/projects/workspace/tools')
 
-from finnhub_client import FinnhubDataSource
-from data_unified import get_data_source
+from unified_data_source_manager import UnifiedDataSourceManager
 from datetime import datetime
 import json
 
 
 class TradingPlanDocumentUpdater:
-    """交易计划文档自动更新器 (带Finnhub限流控制)"""
+    """交易计划文档自动更新器 (带多数据源互为保障)"""
     
     def __init__(self):
         self.markets = ['CN', 'HK', 'US']
         self.base_path = '/workspace/projects/workspace/data/simulation'
-        # 启用限流控制 (80%安全余量: 48次/分钟)
-        self.finnhub = FinnhubDataSource(enable_rate_limit=True)
-        self.tushare = get_data_source()
+        # 使用统一数据源管理器 (多API互为保障)
+        self.data_manager = UnifiedDataSourceManager(enable_cache=True, cache_duration=300)
     
     def update_all_documents(self):
         """更新所有市场的交易计划文档"""
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 开始更新三市场交易计划文档...")
-        print(f"   Finnhub限流控制: 已启用 (最多48次/分钟, 安全余量80%)")
+        print(f"   数据源互为保障: 已启用")
         
         for market in self.markets:
             self._update_market_document(market)
         
-        # 打印限流统计
-        self.finnhub.print_rate_limit_status()
+        # 打印健康报告
+        self.data_manager.print_health_report()
         
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 文档更新完成！")
     
@@ -69,41 +72,52 @@ class TradingPlanDocumentUpdater:
         print(f"   ✅ {market}_SIM_001 文档已更新")
     
     def _get_market_data(self, market, config):
-        """获取市场实时数据"""
+        """获取市场实时数据 (多数据源互为保障)"""
         data = {
             'positions': [],
             'total_value': config['cash'],
             'total_pnl': 0
         }
         
-        for symbol, pos in config.get('positions', {}).items():
-            try:
-                if market == 'US':
-                    quote = self.finnhub.get_quote(symbol)
-                    current_price = quote.get('current', pos['current_price']) if quote else pos['current_price']
-                else:
-                    # A股和港股通过Tushare
-                    quote = self.tushare.get_a_share_realtime(symbol) if market == 'CN' else None
-                    current_price = quote.get('close', pos['current_price']) if quote else pos['current_price']
-                
-                market_value = current_price * pos['quantity']
-                pnl = (current_price - pos['cost_basis']) * pos['quantity']
-                pnl_pct = ((current_price - pos['cost_basis']) / pos['cost_basis']) * 100 if pos['cost_basis'] > 0 else 0
-                
-                data['positions'].append({
-                    'symbol': symbol,
-                    'quantity': pos['quantity'],
-                    'cost_basis': pos['cost_basis'],
-                    'current_price': current_price,
-                    'market_value': market_value,
-                    'pnl': pnl,
-                    'pnl_pct': pnl_pct
-                })
-                
-                data['total_value'] += market_value
-                data['total_pnl'] += pnl
-            except Exception as e:
-                print(f"      ⚠️ 获取{symbol}数据失败: {e}")
+        positions = config.get('positions', {})
+        if not positions:
+            return data
+        
+        # 批量获取价格 (使用统一数据源管理器)
+        symbols = list(positions.keys())
+        print(f"      📊 获取{len(symbols)}只股票价格...")
+        
+        price_results = self.data_manager.get_prices_batch(symbols)
+        
+        for symbol, pos in positions.items():
+            price_data = price_results.get(symbol)
+            
+            if price_data and price_data.current > 0:
+                current_price = price_data.current
+                source = price_data.source
+                is_cached = "(缓存)" if price_data.is_cached else ""
+                print(f"         {symbol}: {current_price} ({source}){is_cached}")
+            else:
+                # 使用上次已知价格
+                current_price = pos.get('current_price', pos['cost_basis'])
+                print(f"         {symbol}: 使用上次价格 {current_price} (数据获取失败)")
+            
+            market_value = current_price * pos['quantity']
+            pnl = (current_price - pos['cost_basis']) * pos['quantity']
+            pnl_pct = ((current_price - pos['cost_basis']) / pos['cost_basis']) * 100 if pos['cost_basis'] > 0 else 0
+            
+            data['positions'].append({
+                'symbol': symbol,
+                'quantity': pos['quantity'],
+                'cost_basis': pos['cost_basis'],
+                'current_price': current_price,
+                'market_value': market_value,
+                'pnl': pnl,
+                'pnl_pct': pnl_pct
+            })
+            
+            data['total_value'] += market_value
+            data['total_pnl'] += pnl
         
         return data
     
