@@ -384,6 +384,30 @@ class A5LDataSource:
         
         return pd.DataFrame()
     
+    def get_cctv_news(self, date: str = None) -> pd.DataFrame:
+        """
+        获取CCTV新闻联播文字稿
+        
+        Args:
+            date: 日期 (YYYYMMDD)，默认昨天
+        
+        Returns:
+            DataFrame包含新闻联播内容
+        """
+        if not date:
+            date = (datetime.now() - timedelta(days=1)).strftime('%Y%m%d')
+        
+        try:
+            df = self.tushare_pro.pro.cctv_news(date=date)
+            if len(df) > 0:
+                self.stats['tushare_calls'] += 1
+                logger.info(f"   ✅ Tushare: CCTV新闻联播 {date} {len(df)}条")
+                return df
+        except Exception as e:
+            logger.warning(f"   Tushare CCTV新闻失败: {e}")
+        
+        return pd.DataFrame()
+    
     def get_news_by_source(self, src: str = 'sina', start_date: str = None, end_date: str = None) -> pd.DataFrame:
         """
         按来源获取新闻 (pro.news接口)
