@@ -371,6 +371,11 @@ except Exception as e:
             else:
                 results["failed"].append("GOAL")
         
+        # 同步模拟交易文档
+        print("\n[5/5] 同步模拟交易文档...")
+        sim_results = self.sync_simulation_trading(date_str)
+        results['simulation'] = sim_results
+        
         # 保存同步日志
         self._save_sync_log(results)
         
@@ -378,13 +383,15 @@ except Exception as e:
         print(f"\n{'=' * 70}")
         print("✅ 飞书同步完成")
         print(f"{'=' * 70}")
-        print(f"成功: {len(results['synced'])} 个文件")
+        print(f"SSMG层成功: {len([s for s in results['synced'] if 'layer' in s])} 个文件")
+        print(f"模拟交易成功: {len(sim_results['synced'])} 个文件")
         print(f"失败: {len(results['failed'])} 个文件")
         
         if results['synced']:
-            print("\n已同步文件:")
+            print("\n已同步SSMG文件:")
             for item in results['synced']:
-                print(f"  - {item['layer']}: {item['url']}")
+                if 'layer' in item:
+                    print(f"  - {item['layer']}: {item['url']}")
         
         return results
     
@@ -412,6 +419,107 @@ except Exception as e:
         # 保存
         with open(log_file, 'w') as f:
             json.dump(logs, f, indent=2, ensure_ascii=False)
+    
+    def sync_simulation_trading(self, date_str: Optional[str] = None) -> Dict:
+        """
+        同步模拟交易文档到飞书
+        
+        Args:
+            date_str: 日期字符串 YYYY-MM-DD，默认今天
+        
+        Returns:
+            同步结果统计
+        """
+        if date_str is None:
+            date_str = datetime.now().strftime('%Y-%m-%d')
+        
+        print(f"\n{'=' * 70}")
+        print(f"📈 同步模拟交易文档到飞书: {date_str}")
+        print(f"{'=' * 70}")
+        
+        results = {
+            "date": date_str,
+            "type": "simulation_trading",
+            "synced": [],
+            "failed": [],
+            "timestamp": datetime.now().isoformat()
+        }
+        
+        # 模拟交易文档目录
+        plans_dir = f"{self.workspace}/data/simulation/plans"
+        
+        if not os.path.exists(plans_dir):
+            print(f"⚠️ 模拟交易文档目录不存在: {plans_dir}")
+            return results
+        
+        # 获取所有模拟交易相关文档
+        plan_files = []
+        for f in os.listdir(plans_dir):
+            if f.endswith('.md') and (date_str in f or 'LIVE_STATUS' in f or 'PLAN' in f):
+                plan_files.append(f)
+        
+        if not plan_files:
+            print(f"⚠️ 未找到模拟交易文档")
+            return results
+        
+        print(f"\n找到 {len(plan_files)} 个模拟交易文档:")
+        for i, f in enumerate(plan_files, 1):
+            print(f"  {i}. {f}")
+        
+        # 同步每个文档
+        print(f"\n☁️ 开始上传飞书...")
+        
+        for i, filename in enumerate(plan_files, 1):
+            file_path = f"{plans_dir}/{filename}"
+            
+            # 确定文档标题
+            if 'LIVE_STATUS' in filename:
+                title = f"模拟交易实时状态-{date_str}"
+                folder = "06-SIMULATION（模拟交易）/实时状态"
+            elif 'US-PLAN' in filename:
+                title = f"美股交易计划-{filename.replace('US-PLAN-', '').replace('.md', '')}"
+                folder = "06-SIMULATION（模拟交易）/美股计划"
+            elif 'CN-PLAN' in filename:
+                title = f"A股交易计划-{filename.replace('CN-PLAN-', '').replace('.md', '')}"
+                folder = "06-SIMULATION（模拟交易）/A股计划"
+            elif 'HK-PLAN' in filename:
+                title = f"港股交易计划-{filename.replace('HK-PLAN-', '').replace('.md', '')}"
+                folder = "06-SIMULATION（模拟交易）/港股计划"
+            else:
+                title = f"模拟交易-{filename.replace('.md', '')}"
+                folder = "06-SIMULATION（模拟交易）/其他"
+            
+            print(f"\n[{i}/{len(plan_files)}] 同步: {filename}")
+            url = self.upload_to_feishu(
+                file_path,
+                folder,
+                title,
+                "doc"
+            )
+            
+            if url:
+                results["synced"].append({"file": filename, "url": url})
+                print(f"   ✅ 成功: {title}")
+            else:
+                results["failed"].append(filename)
+                print(f"   ❌ 失败: {filename}")
+        
+        # 保存同步日志
+        self._save_sync_log(results)
+        
+        # 输出结果
+        print(f"\n{'=' * 70}")
+        print("✅ 模拟交易文档同步完成")
+        print(f"{'=' * 70}")
+        print(f"成功: {len(results['synced'])} 个文件")
+        print(f"失败: {len(results['failed'])} 个文件")
+        
+        if results['synced']:
+            print("\n已同步文件:")
+            for item in results['synced']:
+                print(f"  - {item['file']}")
+        
+        return results
 
 
 def main():

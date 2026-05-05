@@ -38,6 +38,13 @@
       "folder": "05-DATA（数据层）",
       "filename_pattern": "DATA-持仓-{date}",
       "format": "bitable"
+    },
+    "simulation": {
+      "folder": "06-SIMULATION（模拟交易）",
+      "filename_pattern": "SIMULATION-交易计划-{date}",
+      "format": "doc",
+      "source_dir": "data/simulation/plans",
+      "file_patterns": ["*_LIVE_STATUS.md", "*-PLAN-*.md"]
     }
   }
 }
