@@ -1,0 +1,9 @@
+{
+  "token": "fd24d18cd957a2feb18629058771772d8820c244719d67fca7d7d73b",
+  "setup_date": "2026-05-05T23:41:00+08:00",
+  "status": "active",
+  "membership": "annual_15000pts",
+  "news_membership": "annual",
+  "points": 15000,
+ "capabilities": ["full_market_data", "financial_data", "top_list", "money_flow", "north_money", "news_data", "macro_data", "realtime_quotes"]
+}
