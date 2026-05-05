@@ -1,6 +1,6 @@
 {
   "archive_date": "2026-05-06",
-  "created_at": "2026-05-06T00:11:21.964405",
+  "created_at": "2026-05-06T02:35:54.737819",
   "ssmg_version": "1.0",
   "layers": {
     "soul": {
@@ -10,18 +10,19 @@
       "file_count": 2
     },
     "memory": {
-      "file_count": 2
+      "file_count": 3
     },
     "goal": {
       "file_count": 2
     }
   },
-  "total_files": 7,
+  "total_files": 8,
   "files": [
     "SOUL-人格宪章.md",
     "SKILL-REGISTRY.json",
     "SKILL-REGISTRY.md",
     "MEMORY-长期记忆精华.md",
+    "EPISODIC-2026-05-06.md",
     "WORKING-工作记忆.json",
     "tasks.json",
     "goals.json"
