@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 飞书OAuth版文档上传工具
-支持通过OAuth创建云文档
+支持通过OAuth创建云文档（自动刷新Token）
 """
 
 import json
@@ -12,13 +12,22 @@ from typing import Optional, Dict
 import requests
 
 CONFIG_FILE = Path("/workspace/projects/workspace/config/feishu_oauth.json")
+sys.path.insert(0, '/workspace/projects/workspace/tools')
 
 class FeishuOAuthUploader:
-    """使用OAuth的飞书上传器"""
+    """使用OAuth的飞书上传器（自动刷新Token）"""
     
     def __init__(self):
         self.config = self._load_config()
-        self.access_token = self.config.get('user_access_token')
+        self.token_manager = None
+        self.access_token = None
+        
+        # 尝试加载Token管理器
+        try:
+            from feishu_token_manager import FeishuTokenManager
+            self.token_manager = FeishuTokenManager()
+        except ImportError:
+            print("⚠️  Token管理器未加载，使用静态Token")
         
     def _load_config(self) -> Dict:
         """加载OAuth配置"""
@@ -29,10 +38,26 @@ class FeishuOAuthUploader:
             return json.load(f)
     
     def _ensure_token(self) -> str:
-        """确保token有效"""
-        if not self.access_token:
-            raise ValueError("未配置User Access Token")
-        return self.access_token
+        """确保token有效（自动刷新）"""
+        # 优先使用Token管理器获取有效Token
+        if self.token_manager:
+            # 尝试获取Tenant Token（应用级别，可自动刷新）
+            token = self.token_manager.get_tenant_access_token()
+            if token:
+                self.access_token = token
+                return token
+            
+            # 如果配置了User Token，也尝试获取
+            token = self.token_manager.get_user_access_token()
+            if token:
+                self.access_token = token
+                return token
+        
+        # 回退到静态Token
+        if self.access_token:
+            return self.access_token
+        
+        raise ValueError("无法获取有效的Access Token，请配置Token管理器或更新OAuth配置")
     
     def create_document(self, title: str, content: str, folder_token: Optional[str] = None) -> Dict:
         """
