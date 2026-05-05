@@ -10,6 +10,73 @@
 
 ---
 
+## 🎯 用户自定义快捷指令 (Trigger Words)
+
+### "三重备份" / "备份" 触发词
+**设置时间**: 2026-05-05  
+**触发条件**: Chief说出"三重备份"或"备份"  
+**自动执行**:
+1. SSMG四层归档生成 (本地)
+2. 飞书云文档API自动上传 (云端)
+3. GitHub版本控制推送 (远程)
+
+**执行命令**:
+```bash
+cd /workspace/projects/workspace && \
+python3 TOOLS/ssmg_archive_system.py && \
+python3 TOOLS/feishu_auto_uploader.py && \
+git add -A && git commit -m "backup: 三重备份自动执行" && git push origin main
+```
+
+---
+
+## 🧩 A5L 子系统整合
+
+### 交易复盘Wiki系统 (trading-review-wiki/)
+**整合时间**: 2026-05-05  
+**归属管理者**: Knowledge Guardian (KG) v1.1.0  
+**系统位置**: `trading-review-wiki/`  
+**GitHub**: ✅ 已推送 (commit d9e3050)
+
+**系统架构**:
+```
+trading-review-wiki/
+├── AGENTS.md              # 系统规范 (已整合A5L架构说明)
+├── raw/                   # 原始资料 (不可变)
+│   ├── 日复盘/
+│   ├── 交割单/
+│   ├── 截图/
+│   ├── 研报新闻/
+│   └── 微信聊天/
+├── wiki/                  # KG维护的知识库
+│   ├── index.md           # 内容目录
+│   ├── log.md             # 操作日志
+│   ├── 策略/              # 交易策略
+│   ├── 股票/              # 个股档案
+│   ├── 模式/              # 市场模式
+│   ├── 错误/              # 错误类型
+│   ├── 市场环境/          # 情绪周期
+│   └── 进化/              # 进化史
+└── scripts/               # 自动化脚本
+```
+
+**核心功能**:
+| 功能 | 指令 | 管理者 |
+|------|------|--------|
+| Ingest | "摄入今日复盘" | KG |
+| Query | "查询 [问题]" | KG |
+| Lint | "执行周度/月度 Lint" | KG |
+
+**与其他系统关系**:
+- SignalArena → raw/日复盘/ → KG Ingest → wiki/股票/
+- A5L模拟交易 → KG 分析 → 策略有效性更新
+- 飞书知识库 ← KG 定期归档
+- 知识图谱 ← KG 实体关系提取
+
+**状态**: ✅ 已激活，等待触发
+
+---
+
 ## 🧬 进化里程碑
 
 ### 2026-05-04: AI基础设施产业链深度研究 + 复盘机制建立
