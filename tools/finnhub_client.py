@@ -2,10 +2,16 @@
 """
 Finnhub数据接口 - A5L美股数据模块
 来自OpenStock项目，用于美股实时数据获取
+
+API限流控制:
+- 免费版: 60次/分钟
+- 建议频率: 每15分钟更新一次 (32次/小时, 0.5次/分钟)
+- 安全余量: 95%
 """
 
 import os
 import json
+import time
 from datetime import datetime
 from typing import Optional, Dict, List
 import pandas as pd
@@ -19,15 +25,71 @@ except ImportError:
     print("⚠️ Finnhub未安装，请运行: pip install finnhub-python")
 
 
-class FinnhubDataSource:
-    """Finnhub数据源封装 - 美股实时数据"""
+class RateLimiter:
+    """API限流控制器 - 确保不超过Finnhub限制"""
     
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, max_requests_per_minute: int = 60, safety_margin: float = 0.8):
+        """
+        初始化限流器
+        
+        Args:
+            max_requests_per_minute: 每分钟最大请求数 (免费版=60)
+            safety_margin: 安全余量 (默认80%，即最多48次/分钟)
+        """
+        self.max_requests = int(max_requests_per_minute * safety_margin)  # 48次/分钟
+        self.requests = []  # 记录请求时间戳
+        self.min_delay = 60.0 / self.max_requests  # 最小间隔1.25秒
+        self.last_request_time = 0
+        
+    def wait_if_needed(self):
+        """检查是否需要等待以避免超限"""
+        now = time.time()
+        
+        # 清理1分钟前的请求记录
+        self.requests = [t for t in self.requests if now - t < 60]
+        
+        # 检查是否需要等待
+        if len(self.requests) >= self.max_requests:
+            # 需要等待
+            oldest_request = self.requests[0]
+            wait_time = 60 - (now - oldest_request) + 0.1  # 多等0.1秒确保
+            if wait_time > 0:
+                print(f"   ⏸️ 接近API限制，等待{wait_time:.1f}秒...")
+                time.sleep(wait_time)
+                self.requests = []  # 清空记录
+        
+        # 确保最小间隔
+        time_since_last = now - self.last_request_time
+        if time_since_last < self.min_delay:
+            sleep_time = self.min_delay - time_since_last
+            time.sleep(sleep_time)
+        
+        # 记录本次请求
+        self.requests.append(time.time())
+        self.last_request_time = time.time()
+        
+    def get_stats(self) -> Dict:
+        """获取当前限流统计"""
+        now = time.time()
+        self.requests = [t for t in self.requests if now - t < 60]
+        return {
+            'requests_in_last_minute': len(self.requests),
+            'max_allowed': self.max_requests,
+            'usage_pct': len(self.requests) / self.max_requests * 100,
+            'min_delay': self.min_delay
+        }
+
+
+class FinnhubDataSource:
+    """Finnhub数据源封装 - 美股实时数据 (带限流控制)"""
+    
+    def __init__(self, api_key: Optional[str] = None, enable_rate_limit: bool = True):
         """
         初始化Finnhub数据源
         
         Args:
             api_key: Finnhub API Key，如果不提供则从配置文件读取
+            enable_rate_limit: 是否启用限流控制 (默认True)
         """
         if not FINNHUB_AVAILABLE:
             raise ImportError("Finnhub未安装")
@@ -38,13 +100,19 @@ class FinnhubDataSource:
         if not self.api_key:
             raise ValueError("请提供Finnhub API Key或设置配置文件")
         
+        # 初始化限流器 (60次/分钟 * 80%安全余量 = 48次/分钟)
+        self.rate_limiter = RateLimiter(max_requests_per_minute=60, safety_margin=0.8) if enable_rate_limit else None
+        
         # 初始化客户端
         self.client = finnhub.Client(api_key=self.api_key)
         
         # 测试连接
         self._test_connection()
         
-        print("✅ Finnhub数据源初始化成功")
+        print("✅ Finnhub数据源初始化成功 (限流控制已启用)")
+        if self.rate_limiter:
+            stats = self.rate_limiter.get_stats()
+            print(f"   限流配置: 最多{stats['max_allowed']}次/分钟, 最小间隔{stats['min_delay']:.2f}秒")
     
     def _load_api_key(self) -> Optional[str]:
         """从配置文件加载API Key"""
@@ -72,7 +140,7 @@ class FinnhubDataSource:
     
     def get_quote(self, symbol: str) -> Dict:
         """
-        获取股票实时报价
+        获取股票实时报价 (带限流控制)
         
         Args:
             symbol: 股票代码 (如 'AAPL', 'NVDA')
@@ -80,6 +148,10 @@ class FinnhubDataSource:
         Returns:
             实时报价数据
         """
+        # 限流检查
+        if self.rate_limiter:
+            self.rate_limiter.wait_if_needed()
+        
         try:
             quote = self.client.quote(symbol)
             return {
@@ -99,7 +171,7 @@ class FinnhubDataSource:
     
     def get_company_profile(self, symbol: str) -> Dict:
         """
-        获取公司基本信息
+        获取公司基本信息 (带限流控制)
         
         Args:
             symbol: 股票代码
@@ -107,6 +179,10 @@ class FinnhubDataSource:
         Returns:
             公司资料
         """
+        # 限流检查
+        if self.rate_limiter:
+            self.rate_limiter.wait_if_needed()
+        
         try:
             profile = self.client.company_profile2(symbol=symbol)
             return {
@@ -125,7 +201,7 @@ class FinnhubDataSource:
     
     def get_financials(self, symbol: str) -> Dict:
         """
-        获取财务报表
+        获取财务报表 (带限流控制)
         
         Args:
             symbol: 股票代码
@@ -133,6 +209,10 @@ class FinnhubDataSource:
         Returns:
             财务数据
         """
+        # 限流检查
+        if self.rate_limiter:
+            self.rate_limiter.wait_if_needed()
+        
         try:
             financials = self.client.financials(symbol, 'annual', 'bs')
             return financials
@@ -142,7 +222,7 @@ class FinnhubDataSource:
     
     def get_news(self, symbol: str, start_date: str = None, end_date: str = None) -> List[Dict]:
         """
-        获取公司新闻
+        获取公司新闻 (带限流控制)
         
         Args:
             symbol: 股票代码
@@ -152,6 +232,10 @@ class FinnhubDataSource:
         Returns:
             新闻列表
         """
+        # 限流检查
+        if self.rate_limiter:
+            self.rate_limiter.wait_if_needed()
+        
         if not start_date:
             start_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
         if not end_date:
@@ -166,7 +250,7 @@ class FinnhubDataSource:
     
     def get_market_news(self, category: str = 'general') -> List[Dict]:
         """
-        获取市场新闻
+        获取市场新闻 (带限流控制)
         
         Args:
             category: 新闻类别 (general/forex/crypto/merger)
@@ -174,6 +258,10 @@ class FinnhubDataSource:
         Returns:
             新闻列表
         """
+        # 限流检查
+        if self.rate_limiter:
+            self.rate_limiter.wait_if_needed()
+        
         try:
             news = self.client.general_news(category)
             return news
@@ -206,20 +294,58 @@ class FinnhubDataSource:
         """快捷获取美股报价"""
         return self.get_quote(symbol)
     
-    def get_multiple_quotes(self, symbols: List[str]) -> Dict[str, Dict]:
+    def get_multiple_quotes(self, symbols: List[str], show_progress: bool = True) -> Dict[str, Dict]:
         """
-        批量获取多个股票报价
+        批量获取多个股票报价 (带限流控制和进度显示)
         
         Args:
             symbols: 股票代码列表
+            show_progress: 是否显示进度
         
         Returns:
             报价字典
         """
         results = {}
-        for symbol in symbols:
+        total = len(symbols)
+        
+        for i, symbol in enumerate(symbols, 1):
+            if show_progress and self.rate_limiter:
+                stats = self.rate_limiter.get_stats()
+                print(f"   [{i}/{total}] 获取{symbol}... (API使用: {stats['usage_pct']:.1f}%)")
+            
             results[symbol] = self.get_quote(symbol)
+        
         return results
+    
+    def get_rate_limit_stats(self) -> Dict:
+        """
+        获取当前API限流统计
+        
+        Returns:
+            限流统计信息
+        """
+        if self.rate_limiter:
+            return self.rate_limiter.get_stats()
+        return {'rate_limiting': 'disabled'}
+    
+    def print_rate_limit_status(self):
+        """打印当前限流状态"""
+        stats = self.get_rate_limit_stats()
+        print("="*60)
+        print("📊 Finnhub API限流状态")
+        print("="*60)
+        if stats.get('rate_limiting') == 'disabled':
+            print("   限流控制: 已禁用")
+        else:
+            print(f"   最近1分钟请求: {stats['requests_in_last_minute']}次")
+            print(f"   最大允许: {stats['max_allowed']}次/分钟")
+            print(f"   使用率: {stats['usage_pct']:.1f}%")
+            print(f"   最小间隔: {stats['min_delay']:.2f}秒")
+            if stats['usage_pct'] > 80:
+                print("   ⚠️ 警告: 接近API限制!")
+            else:
+                print("   ✅ 状态: 正常")
+        print("="*60)
 
 
 def setup_finnhub():

@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 """
 A5L三市场模拟交易计划文档自动更新系统
-每小时更新一次，确保Chief看到最新版本
+
+更新频率控制:
+- 推荐: 每15分钟更新一次 (Finnhub API限流: 60次/分钟)
+- 美股监控: 8只股票 × 4次/小时 = 32次API调用/小时
+- 安全余量: 95% (远低于60次/分钟限制)
+
+Chief设置: 每15分钟自动更新
 """
 
 import sys
 import os
+import time
 sys.path.insert(0, '/workspace/projects/workspace')
 sys.path.insert(0, '/workspace/projects/workspace/tools')
 
@@ -16,20 +23,25 @@ import json
 
 
 class TradingPlanDocumentUpdater:
-    """交易计划文档自动更新器"""
+    """交易计划文档自动更新器 (带Finnhub限流控制)"""
     
     def __init__(self):
         self.markets = ['CN', 'HK', 'US']
         self.base_path = '/workspace/projects/workspace/data/simulation'
-        self.finnhub = FinnhubDataSource()
+        # 启用限流控制 (80%安全余量: 48次/分钟)
+        self.finnhub = FinnhubDataSource(enable_rate_limit=True)
         self.tushare = get_data_source()
     
     def update_all_documents(self):
         """更新所有市场的交易计划文档"""
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 开始更新三市场交易计划文档...")
+        print(f"   Finnhub限流控制: 已启用 (最多48次/分钟, 安全余量80%)")
         
         for market in self.markets:
             self._update_market_document(market)
+        
+        # 打印限流统计
+        self.finnhub.print_rate_limit_status()
         
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 文档更新完成！")
     
