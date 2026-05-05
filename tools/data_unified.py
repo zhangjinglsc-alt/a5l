@@ -384,6 +384,34 @@ class A5LDataSource:
         
         return pd.DataFrame()
     
+    def get_news_by_source(self, src: str = 'sina', start_date: str = None, end_date: str = None) -> pd.DataFrame:
+        """
+        按来源获取新闻 (pro.news接口)
+        
+        Args:
+            src: 新闻来源 (sina/10jqka/eastmoney/yuncaijing等)
+            start_date: 开始时间 (YYYY-MM-DD HH:MM:SS)
+            end_date: 结束时间 (YYYY-MM-DD HH:MM:SS)
+        
+        Returns:
+            DataFrame包含新闻列表
+        """
+        if not start_date:
+            start_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')
+        if not end_date:
+            end_date = datetime.now().strftime('%Y-%m-%d 23:59:59')
+        
+        try:
+            df = self.tushare_pro.pro.news(src=src, start_date=start_date, end_date=end_date)
+            if len(df) > 0:
+                self.stats['tushare_calls'] += 1
+                logger.info(f"   ✅ Tushare: {src} 新闻 {len(df)}条")
+                return df
+        except Exception as e:
+            logger.warning(f"   Tushare新闻({src})失败: {e}")
+        
+        return pd.DataFrame()
+    
     def get_major_news(self, src: str = 'sina', start_date: str = None, end_date: str = None) -> pd.DataFrame:
         """
         获取重大新闻
