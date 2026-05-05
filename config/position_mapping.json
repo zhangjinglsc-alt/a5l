@@ -196,7 +196,7 @@
         "id": "HK_SIM_001",
         "market": "HK",
         "currency": "HKD",
-        "initial_capital": 800000,
+        "initial_capital": 5000000,
         "data_file": "data/simulation/HK_SIM_001.json",
         "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM",
         "status": "waiting_open",
