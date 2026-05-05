@@ -54,6 +54,25 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ---
 
+## 🎤 Voice Commands & Trigger Words
+
+### Automatic Execution Triggers
+
+When Chief (张晋) says specific keywords, execute immediately without asking for confirmation:
+
+| Trigger Word | Action | Status |
+|--------------|--------|--------|
+| **"三重备份"** / **"备份"** | 执行SSMG归档 → 飞书上传 → GitHub推送 | ✅ Active |
+
+**"三重备份"执行流程**:
+1. `python3 TOOLS/ssmg_archive_system.py` - 本地四层归档
+2. `python3 TOOLS/feishu_auto_uploader.py` - 飞书API自动上传
+3. `git add -A && git commit && git push` - GitHub版本控制
+
+**Note**: These triggers are stored in MEMORY.md for persistence across sessions.
+
+---
+
 ## 🛡️ Core Files Management (NEW - 2026-05-04)
 
 ### Critical Rule: Core Files Must Be Updated Daily
