@@ -272,5 +272,28 @@
     ],
     "failed": [],
     "timestamp": "2026-05-05T19:16:55.219064"
+  },
+  {
+    "date": "2026-05-05",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 SOUL-人格宪章-2026-05-05)"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 MEMORY-2026-05-05)"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 GOAL-进展-2026-05-05)"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-05T22:35:03.079404"
   }
 ]

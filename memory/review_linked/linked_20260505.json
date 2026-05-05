@@ -1,0 +1,143 @@
+{
+  "analysis_date": "20260505",
+  "generated_at": "2026-05-05 21:00:41",
+  "current_state": {
+    "total_positions": 7,
+    "profitable": 1,
+    "losing": 5,
+    "neutral": 0,
+    "total_pnl": -112595.07999999961,
+    "stocks": [
+      {
+        "code": "000066",
+        "name": "中国长城",
+        "account": "自有账户",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      },
+      {
+        "code": "300708",
+        "name": "聚灿光电",
+        "account": "自有账户",
+        "pnl": -191.0,
+        "pnl_pct": -17.750929368029738,
+        "status": "亏损"
+      },
+      {
+        "code": "002436",
+        "name": "兴森科技",
+        "account": "自有账户",
+        "pnl": -158.0,
+        "pnl_pct": -5.394332536701946,
+        "status": "亏损"
+      },
+      {
+        "code": "601975",
+        "name": "招商南油",
+        "account": "WGB",
+        "pnl": 50215.00000000023,
+        "pnl_pct": 2.517162471395893,
+        "status": "盈利"
+      },
+      {
+        "code": "601975",
+        "name": "招商南油",
+        "account": "王力",
+        "pnl": -135405.0,
+        "pnl_pct": -10.220440881763528,
+        "status": "亏损"
+      },
+      {
+        "code": "688981",
+        "name": "中芯国际",
+        "account": "老娘",
+        "pnl": -8538.079999999958,
+        "pnl_pct": -2.2396047756278197,
+        "status": "亏损"
+      },
+      {
+        "code": "601975",
+        "name": "招商南油",
+        "account": "老娘",
+        "pnl": -18517.99999999997,
+        "pnl_pct": -9.49494949494948,
+        "status": "亏损"
+      }
+    ]
+  },
+  "historical_patterns": [
+    {
+      "date": "2026-05-05",
+      "similarity_score": 5,
+      "patterns": {
+        "success_signals": [
+          "买入",
+          "加仓"
+        ],
+        "failure_signals": [
+          "减仓",
+          "止损",
+          "亏损"
+        ],
+        "market_context": [
+          "回调"
+        ],
+        "emotions": []
+      },
+      "preview": "# 2026-05-05 记忆档案\n\n## 00:01 - 新的一天开始\n\n**系统状态**: EVOLUTION_DAEMON凌晨检查  \n**日期**: 2026-05-05 (周二)  \n**昨日Git提交**: 148 commits\n\n---\n\n## 系统启动检查\n\n### 核心档案状态\n- [x] SOUL.md - 正常（2天前更新）\n- [x] MEMORY.md - 正常（0小时..."
+    },
+    {
+      "date": "2026-05-04",
+      "similarity_score": 1,
+      "patterns": {
+        "success_signals": [
+          "放量"
+        ],
+        "failure_signals": [],
+        "market_context": [
+          "震荡"
+        ],
+        "emotions": []
+      },
+      "preview": "\n---\n\n## 🧬 03:08-03:10 统一进化系统 v3.2 - 短期+中期双轨并行\n\n### 用户指令\n> \"短期中期的工作都开始做\"\n\n### 双轨并行执行完成 ✅\n\n## ⚡ 短期工作流: 自修复自动化 (6任务)\n\n| 任务 | 优先级 | 核心能力 | 状态 |\n|------|--------|----------|------|\n| 错误自动分类器 | P10 | 4维分类:..."
+    },
+    {
+      "date": "2026-05-03",
+      "similarity_score": 1,
+      "patterns": {
+        "success_signals": [
+          "突破"
+        ],
+        "failure_signals": [],
+        "market_context": [
+          "突破"
+        ],
+        "emotions": []
+      },
+      "preview": "\n---\n\n## 2026-05-03 22:58 - 晚间工作总结\n\n### 知识图谱实战应用\n\n成功使用知识图谱处理了两份真实文档：\n\n#### 1. Pandora Lite 半导体周报\n- **输入**: 周报截图\n- **输出**: \n  - 23个实体（股票17只）\n  - 关键发现: COHR/IIVI/SMCI/INTC\n  - 生成子图: subgraph_report_pand..."
+    },
+    {
+      "date": "2026-05-01",
+      "similarity_score": 1,
+      "patterns": {
+        "success_signals": [
+          "买入"
+        ],
+        "failure_signals": [],
+        "market_context": [],
+        "emotions": []
+      },
+      "preview": "\n\n---\n\n## 🕐 23:50 每日存档摘要 (2026-05-01)\n\n### 今日核心进展\n\n#### ✅ 完成的重大任务\n1. **SKILL系统重构 v3.0.0** - 从79个技能整理为54个核心技能\n   - 去除重复和过时项\n   - 创建 `SKILL_REGISTRY.json` 技能注册表\n   - 建立技能熟练度追踪机制\n\n2. **SSMG四层整合架构** - SOU..."
+    }
+  ],
+  "insights": [
+    "当前整体亏损 ¥112,595.08，需要关注风险控制",
+    "亏损个股(5只)多于盈利(1只)，需审视策略"
+  ],
+  "recommendations": [
+    "参考历史模式 [2026-05-05]，关注回调",
+    "假期期间关注美股走势，为节后开盘做准备",
+    "5月8日兴森科技业绩说明会，提前准备关注问题"
+  ]
+}
