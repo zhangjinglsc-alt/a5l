@@ -192,7 +192,7 @@ class FeishuDocUpdater:
             }
     
     def _markdown_to_blocks(self, markdown: str) -> list:
-        """Markdown转飞书blocks（简化版）"""
+        """Markdown转飞书blocks（使用数字block_type）"""
         blocks = []
         lines = markdown.split('\n')
         
@@ -201,53 +201,54 @@ class FeishuDocUpdater:
             if not line:
                 continue
             
-            # 标题
+            # 标题 - 使用数字block_type (3=heading1, 4=heading2, 5=heading3, 6=heading4)
             if line.startswith('# '):
                 blocks.append({
-                    'block_type': 'heading1',
+                    'block_type': 3,
                     'heading1': {'elements': [{'type': 'textRun', 'textRun': {'content': line[2:]}}]}
                 })
             elif line.startswith('## '):
                 blocks.append({
-                    'block_type': 'heading2',
+                    'block_type': 4,
                     'heading2': {'elements': [{'type': 'textRun', 'textRun': {'content': line[3:]}}]}
                 })
             elif line.startswith('### '):
                 blocks.append({
-                    'block_type': 'heading3',
+                    'block_type': 5,
                     'heading3': {'elements': [{'type': 'textRun', 'textRun': {'content': line[4:]}}]}
                 })
             elif line.startswith('#### '):
                 blocks.append({
-                    'block_type': 'heading4',
+                    'block_type': 6,
                     'heading4': {'elements': [{'type': 'textRun', 'textRun': {'content': line[5:]}}]}
                 })
-            # 分隔线
+            # 分隔线 - 11=divider
             elif line.startswith('---') or line.startswith('==='):
-                blocks.append({'block_type': 'divider', 'divider': {}})
-            # 表格行（简化处理为文本）
+                blocks.append({'block_type': 11, 'divider': {}})
+            # 表格行（简化处理为文本）- 2=text
             elif line.startswith('|') and line.endswith('|'):
                 if '---' in line:
                     continue
                 blocks.append({
-                    'block_type': 'text',
+                    'block_type': 2,
                     'text': {'elements': [{'type': 'textRun', 'textRun': {'content': line}}]}
                 })
-            # 列表
+            # 无序列表 - 9=bullet
             elif line.startswith('- ') or line.startswith('* '):
                 blocks.append({
-                    'block_type': 'bullet',
+                    'block_type': 9,
                     'bullet': {'elements': [{'type': 'textRun', 'textRun': {'content': line[2:]}}]}
                 })
+            # 有序列表 - 10=ordered
             elif line[0:2].strip().isdigit() and line[1:3] == '. ':
                 blocks.append({
-                    'block_type': 'ordered',
+                    'block_type': 10,
                     'ordered': {'elements': [{'type': 'textRun', 'textRun': {'content': line[3:]}}]}
                 })
-            # 普通段落
+            # 普通段落 - 2=text
             else:
                 blocks.append({
-                    'block_type': 'text',
+                    'block_type': 2,
                     'text': {'elements': [{'type': 'textRun', 'textRun': {'content': line}}]}
                 })
         
