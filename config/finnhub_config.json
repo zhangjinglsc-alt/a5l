@@ -16,8 +16,13 @@
     "us_sim_001_positions": 4,
     "us_sim_001_watchlist": 4,
     "total_symbols": 8,
+    "update_frequency": "15min",
     "calls_per_15min_update": 8,
     "calls_per_hour": 32,
-    "safety_buffer": "95%"
+    "calls_per_day": 768,
+    "safety_buffer": "95%",
+    "monitoring_mode": "hybrid",
+    "websocket_primary": true,
+    "finnhub_fallback": "1sec"
   }
 }
