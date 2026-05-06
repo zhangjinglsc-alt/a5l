@@ -169,12 +169,12 @@ def run_trading():
     minute = now.minute
     time_val = hour * 100 + minute
     
-    # 港股交易时间: 09:30-12:00, 13:00-16:00
-    is_trading_hours = (930 <= time_val < 1200) or (1300 <= time_val < 1600)
+    # 港股交易时间: 09:30-12:00, 13:00-16:10 (含收市竞价)
+    is_trading_hours = (930 <= time_val < 1200) or (1300 <= time_val <= 1610)
     
     if not is_trading_hours:
-        print(f"\n⏸️ 当前非港股交易时间 (12:01处于午休时间)")
-        print("   港股交易时间: 09:30-12:00, 13:00-16:00")
+        print(f"\n⏸️ 当前非港股交易时间")
+        print("   港股交易时间: 09:30-12:00, 13:00-16:10")
         return
     
     # 港股重点股票池
