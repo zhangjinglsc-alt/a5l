@@ -1,0 +1,44 @@
+{
+  "extraction": {
+    "doc_id": "test_analysis_001",
+    "doc_title": "半导体行业测试分析",
+    "entities_added": 5,
+    "relations_added": 0,
+    "entity_types": {
+      "Stock": 2,
+      "Industry": 3
+    },
+    "timestamp": "2026-05-03T23:01:55.212725"
+  },
+  "thinking": {
+    "observation": [],
+    "analysis": [
+      "【产业链分析】",
+      "【政策影响分析】",
+      "【竞争格局分析】"
+    ],
+    "reasoning": [
+      "【关联推理】",
+      "【趋势推理】"
+    ],
+    "judgment": [
+      "【投资判断】"
+    ],
+    "confidence": 0.7
+  },
+  "signals": [],
+  "analysis": [],
+  "reasoning": {
+    "hidden_relations": [],
+    "trend_prediction": [],
+    "risk_warnings": [],
+    "opportunity_alerts": []
+  },
+  "recommendations": [],
+  "knowledge_added": {
+    "thinking_node": "thinking_test_analysis_001",
+    "signal_nodes": [],
+    "analysis_nodes": []
+  },
+  "timestamp": "2026-05-03T23:01:55.215232"
+}

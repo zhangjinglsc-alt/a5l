@@ -1,0 +1,13 @@
+{
+  "symbol": "DEMO",
+  "timestamp": "20260502_044028",
+  "results": {
+    "lstm": {
+      "status": "skipped"
+    },
+    "xgboost": {
+      "status": "error",
+      "message": "No module named 'sklearn'"
+    }
+  }
+}

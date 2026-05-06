@@ -1,0 +1,93 @@
+{
+  "version": "3.0",
+  "name": "A5L Layer0 Collective Decision System",
+  "description": "CIO + CSO + UZI 联合审批与集体决策机制",
+  "components": {
+    "proposal_submission": {
+      "status": "active",
+      "description": "决策提案提交系统"
+    },
+    "scoring_engine": {
+      "status": "active",
+      "description": "4维度评分引擎"
+    },
+    "voting_mechanism": {
+      "status": "active",
+      "description": "加权投票机制"
+    },
+    "consensus_detector": {
+      "status": "active",
+      "description": "共识达成判断"
+    },
+    "execution_tracker": {
+      "status": "active",
+      "description": "决策执行追踪"
+    }
+  },
+  "managers": {
+    "CIO": {
+      "role": "Chief Investment Officer",
+      "weight": 0.35,
+      "focus": ["returns", "growth", "timing"],
+      "threshold": 60
+    },
+    "CSO": {
+      "role": "Chief Security Officer",
+      "weight": 0.35,
+      "focus": ["risk", "compliance", "safety"],
+      "threshold": 70
+    },
+    "UZI": {
+      "role": "Analysis Engine",
+      "weight": 0.30,
+      "focus": ["fundamentals", "technicals", "valuation"],
+      "threshold": 65
+    }
+  },
+  "consensus_rules": {
+    "unanimous": {
+      "description": "全体一致",
+      "requirement": "所有管理者通过",
+      "threshold": 100,
+      "use_case": ["清仓", "重大调仓", "策略变更"]
+    },
+    "super_majority": {
+      "description": "绝对多数",
+      "requirement": "加权得分 >= 75%",
+      "threshold": 75,
+      "use_case": ["新建仓", "增减持", "止损止盈"]
+    },
+    "simple_majority": {
+      "description": "简单多数",
+      "requirement": "加权得分 >= 60%",
+      "threshold": 60,
+      "use_case": ["观察名单", "轻度调整"]
+    }
+  },
+  "decision_types": {
+    "trade_execution": {
+      "name": "交易执行",
+      "required_consensus": "super_majority",
+      "auto_execute": false,
+      "max_delay_hours": 24
+    },
+    "position_adjustment": {
+      "name": "仓位调整",
+      "required_consensus": "super_majority",
+      "auto_execute": true,
+      "max_delay_hours": 4
+    },
+    "risk_action": {
+      "name": "风险处置",
+      "required_consensus": "unanimous",
+      "auto_execute": true,
+      "max_delay_hours": 1
+    },
+    "strategy_change": {
+      "name": "策略变更",
+      "required_consensus": "unanimous",
+      "auto_execute": false,
+      "max_delay_hours": 72
+    }
+  }
+}

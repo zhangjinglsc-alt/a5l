@@ -1,0 +1,83 @@
+{
+  "entity_type": "research_report",
+  "entity_id": "report_000066_20260504",
+  "stock_code": "000066",
+  "stock_name": "中国长城",
+  "report_date": "2026-05-04",
+  "analyst": "A5L AI Investment System v2.1",
+  "rating": "CAUTION",
+  "target_price_low": 15.0,
+  "target_price_high": 22.0,
+  "current_price": 19.82,
+  "user_cost": 15.5,
+  "methodology": "A5L 10-Dimension Deep Research Framework",
+  "investment_thesis": "信创+国产替代双主线驱动，但估值偏高需警惕",
+  "key_catalysts": [
+    "党政信创放量",
+    "AI算力国产化"
+  ],
+  "key_risks": [
+    "估值泡沫",
+    "业绩兑现不确定"
+  ],
+  "scenarios": {
+    "bull": {
+      "probability": 0.25,
+      "target": "28-32",
+      "return": "+80-105%"
+    },
+    "base": {
+      "probability": 0.5,
+      "target": "18-22",
+      "return": "+15-40%"
+    },
+    "bear": {
+      "probability": 0.25,
+      "target": "12-15",
+      "return": "-20% to -10%"
+    }
+  },
+  "position_advice": "减仓至15%以内",
+  "user_position_pct": 36.7,
+  "feishu_doc_id": "MoNYdcowkoYy43xMzxDcUszJnnd",
+  "local_path": "/workspace/projects/workspace/data/reports/deep_research_000066_20260504.md",
+  "created_at": "2026-05-04T02:23:49.533441",
+  "relations": [
+    {
+      "target": "stock_000066",
+      "relation": "analyzes",
+      "properties": {
+        "depth": "deep",
+        "framework": "10-dimension"
+      }
+    },
+    {
+      "target": "industry_信创",
+      "relation": "covers",
+      "properties": {
+        "focus": "cyber_security"
+      }
+    },
+    {
+      "target": "sector_AI算力",
+      "relation": "related_to",
+      "properties": {
+        "catalyst": "localization"
+      }
+    },
+    {
+      "target": "competitor_华为",
+      "relation": "compares_with",
+      "properties": {
+        "advantage": "state_owned"
+      }
+    },
+    {
+      "target": "competitor_浪潮信息",
+      "relation": "compares_with",
+      "properties": {
+        "advantage": "cpu_tech"
+      }
+    }
+  ]
+}

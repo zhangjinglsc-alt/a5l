@@ -1,0 +1,28 @@
+{
+  "api_key": "d7t10uhr01qugn08ufg0d7t10uhr01qugn08ufgg",
+  "setup_date": "2026-05-06T00:00:00+08:00",
+  "status": "active",
+  "source": "OpenStock项目",
+  "rate_limiting": {
+    "enabled": true,
+    "max_requests_per_minute": 60,
+    "safety_margin": 0.8,
+    "max_allowed_per_minute": 48,
+    "min_delay_between_requests": 1.25,
+    "recommended_update_interval": "15min",
+    "daily_limit": 1000
+  },
+  "usage_guidelines": {
+    "us_sim_001_positions": 4,
+    "us_sim_001_watchlist": 4,
+    "total_symbols": 8,
+    "update_frequency": "15min",
+    "calls_per_15min_update": 8,
+    "calls_per_hour": 32,
+    "calls_per_day": 768,
+    "safety_buffer": "95%",
+    "monitoring_mode": "hybrid",
+    "websocket_primary": true,
+    "finnhub_fallback": "1sec"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-05-06T03:34:46.942879",
+    "severity": "critical",
+    "error_type": "position_data_corrupt",
+    "message": "JSON parse error: Extra data: line 1 column 5 (char 4)",
+    "healing_attempted": true,
+    "healing_success": false
+  }
+]

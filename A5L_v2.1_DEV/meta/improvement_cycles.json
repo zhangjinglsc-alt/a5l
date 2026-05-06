@@ -1,0 +1,50 @@
+[
+  {
+    "cycle_id": "C20260501232747",
+    "timestamp": "2026-05-01T23:27:47.977787",
+    "target_component": "goal_manager",
+    "improvement_type": "性能优化",
+    "before_metrics": {
+      "goals_count": 2,
+      "tasks_count": 0,
+      "completion_rate": 0.0,
+      "avg_progress": 17.5
+    },
+    "after_metrics": {
+      "goals_count": 2,
+      "tasks_count": 0,
+      "completion_rate": 0.0,
+      "avg_progress": 17.5
+    },
+    "improvement_delta": 0.0,
+    "lessons_learned": [
+      "成功实施了 1 项改进",
+      "递归深度 0 的改进已完成"
+    ],
+    "meta_feedback": null
+  },
+  {
+    "cycle_id": "C20260501233209",
+    "timestamp": "2026-05-01T23:32:09.981638",
+    "target_component": "goal_manager",
+    "improvement_type": "性能优化",
+    "before_metrics": {
+      "goals_count": 3,
+      "tasks_count": 0,
+      "completion_rate": 0.0,
+      "avg_progress": 25.0
+    },
+    "after_metrics": {
+      "goals_count": 3,
+      "tasks_count": 0,
+      "completion_rate": 0.0,
+      "avg_progress": 25.0
+    },
+    "improvement_delta": 0.0,
+    "lessons_learned": [
+      "成功实施了 1 项改进",
+      "递归深度 0 的改进已完成"
+    ],
+    "meta_feedback": null
+  }
+]

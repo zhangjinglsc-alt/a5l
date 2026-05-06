@@ -1,0 +1,15 @@
+{
+  "drill_id": "DRILL_20260504_010709",
+  "scenario": {
+    "id": "file_corruption",
+    "name": "文件损坏",
+    "description": "模拟关键文件损坏",
+    "severity": "high",
+    "action": "corrupt_file"
+  },
+  "start_time": "2026-05-04T01:07:08.364027",
+  "end_time": "2026-05-04T01:07:09.365013",
+  "recovery_time_seconds": 1.000986,
+  "success": true,
+  "rto_achieved": true
+}

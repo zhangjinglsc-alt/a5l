@@ -1,0 +1,127 @@
+{
+  "entity_type": "industry_research_report",
+  "entity_id": "industry_cpo_20260504",
+  "industry_name": "CPO (Co-Packaged Optics)",
+  "industry_cn": "共封装光学",
+  "report_date": "2026-05-04",
+  "analyst": "UZI Chief Analyst (A5L Layer 0)",
+  "rating": "STRONG_BUY",
+  "confidence": 85,
+  "recommended_allocation": "15-20%",
+  "investment_horizon": "12-18 months",
+  "expected_return": "+120%",
+  
+  "market_size": {
+    "2024": "$10亿",
+    "2027": "$100亿",
+    "cagr": "100%+"
+  },
+  
+  "key_catalysts": [
+    "NVIDIA B100/CPO交换机发布 (2024Q4-2025Q1)",
+    "GPT-5训练启动 (2025年)",
+    "1.6T CPO量产 (2026年)"
+  ],
+  
+  "key_risks": [
+    "技术路线不确定性 (CPO vs NPO)",
+    "客户集中度过高 (NVIDIA/Cisco占60%+)",
+    "硅光芯片依赖进口"
+  ],
+  
+  "top_picks": [
+    {
+      "rank": 1,
+      "name": "源杰科技",
+      "ticker": "688498.SH",
+      "logic": "光芯片国产替代",
+      "target_return": "+200%",
+      "allocation_pct": 20,
+      "risk_level": "高"
+    },
+    {
+      "rank": 2,
+      "name": "中际旭创",
+      "ticker": "300308.SZ",
+      "logic": "全球龙头，绑定NVIDIA",
+      "target_return": "+150%",
+      "allocation_pct": 40,
+      "risk_level": "中"
+    },
+    {
+      "rank": 3,
+      "name": "天孚通信",
+      "ticker": "300394.SZ",
+      "logic": "光引擎专家",
+      "target_return": "+120%",
+      "allocation_pct": 30,
+      "risk_level": "中"
+    },
+    {
+      "rank": 4,
+      "name": "新易盛",
+      "ticker": "300502.SZ",
+      "logic": "弹性标的",
+      "target_return": "+100%",
+      "allocation_pct": 10,
+      "risk_level": "高"
+    }
+  ],
+  
+  "scenarios": {
+    "bull": {
+      "probability": 0.40,
+      "market_size_2027": "$150亿",
+      "leader_return": "+200-300%"
+    },
+    "base": {
+      "probability": 0.45,
+      "market_size_2027": "$100亿",
+      "leader_return": "+80-150%"
+    },
+    "bear": {
+      "probability": 0.15,
+      "market_size_2027": "$50亿",
+      "leader_return": "-20% to +20%"
+    }
+  },
+  
+  "competitive_landscape": {
+    "market_leader": "中际旭创 (30%+市占率)",
+    "cr3": "65%",
+    "china_share": "40-50%"
+  },
+  
+  "value_chain": {
+    "upstream": "光芯片 - 毛利率50-70%，国产化率低",
+    "midstream": "封装制造 - 毛利率25-35%，中国优势",
+    "downstream": "云厂商 - capex驱动"
+  },
+  
+  "archiving": {
+    "feishu_doc_id": "AHfydbl1no7l0Ux056bcfBZ6nPg",
+    "feishu_url": "https://www.feishu.cn/docx/AHfydbl1no7l0Ux056bcfBZ6nPg",
+    "local_md_path": "data/reports/uzi_cpo_industry_analysis_pro.md",
+    "word_count": 15000,
+    "version": "v1.0"
+  },
+  
+  "relations": [
+    {"target": "stock_300308", "relation": "covers", "properties": {"rating": "STRONG_BUY", "target": "+150%"}},
+    {"target": "stock_300394", "relation": "covers", "properties": {"rating": "STRONG_BUY", "target": "+120%"}},
+    {"target": "stock_688498", "relation": "covers", "properties": {"rating": "STRONG_BUY", "target": "+200%"}},
+    {"target": "stock_300502", "relation": "covers", "properties": {"rating": "BUY", "target": "+100%"}},
+    {"target": "industry_光通信", "relation": "sub_industry_of", "properties": {"segment": "CPO"}},
+    {"target": "sector_AI算力", "relation": "driven_by", "properties": {"catalyst": "AI_demand"}},
+    {"target": "competitor_NVDA", "relation": "key_customer", "properties": {"share": "40%+"}},
+    {"target": "theme_国产替代", "relation": "related_to", "properties": {"focus": "硅光芯片"}}
+  ],
+  
+  "metadata": {
+    "created_at": "2026-05-04T02:38:00+08:00",
+    "created_by": "A5L Chief Architect",
+    "methodology": "UZI 10-Dimension Industry Research Framework",
+    "analysis_depth": "professional",
+    "data_sources": ["公司年报", "行业数据", "技术文献", "A5L系统"]
+  }
+}

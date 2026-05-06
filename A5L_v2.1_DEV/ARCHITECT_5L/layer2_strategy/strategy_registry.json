@@ -1,0 +1,370 @@
+{
+  "stock_wizard": {
+    "name": "股票魔法师 (CANSLIM)",
+    "description": "基于马克·米勒维尼的CANSLIM方法，寻找高增长强势股",
+    "market": "ALL",
+    "style": "momentum",
+    "holding_period": "medium",
+    "entry_rules": [
+      {
+        "indicator": "price_trend",
+        "condition": "above_ma",
+        "params": {
+          "periods": [
+            50,
+            150,
+            200
+          ]
+        }
+      },
+      {
+        "indicator": "rs_rating",
+        "condition": ">",
+        "params": {
+          "value": 80
+        }
+      },
+      {
+        "indicator": "earnings_growth",
+        "condition": ">",
+        "params": {
+          "value": 0.25
+        }
+      },
+      {
+        "indicator": "volume",
+        "condition": "surge",
+        "params": {
+          "multiplier": 1.5
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "price",
+        "condition": "break_below",
+        "params": {
+          "ma_period": 50
+        }
+      },
+      {
+        "indicator": "stop_loss",
+        "condition": "trailing",
+        "params": {
+          "percent": 8
+        }
+      },
+      {
+        "indicator": "time",
+        "condition": "max_hold",
+        "params": {
+          "days": 60
+        }
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 10,
+      "stop_loss_pct": 7,
+      "trailing_stop_pct": 8
+    },
+    "active": true
+  },
+  "turtle_trading": {
+    "name": "海龟交易法则",
+    "description": "经典的趋势跟踪系统，基于唐奇安通道突破",
+    "market": "ALL",
+    "style": "trend",
+    "holding_period": "medium",
+    "entry_rules": [
+      {
+        "indicator": "donchian",
+        "condition": "breakout_high",
+        "params": {
+          "period": 20
+        }
+      },
+      {
+        "indicator": "atr",
+        "condition": "filter",
+        "params": {
+          "min_atr": 0.02
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "donchian",
+        "condition": "breakout_low",
+        "params": {
+          "period": 10
+        }
+      },
+      {
+        "indicator": "stop_loss",
+        "condition": "fixed",
+        "params": {
+          "atr_multiplier": 2
+        }
+      }
+    ],
+    "risk_params": {
+      "position_unit_pct": 1,
+      "max_units": 4,
+      "atr_period": 20
+    },
+    "active": true
+  },
+  "trend_rs": {
+    "name": "趋势突破+相对强度",
+    "description": "价格突破新高且相对强度排名靠前",
+    "market": "ALL",
+    "style": "momentum",
+    "holding_period": "short",
+    "entry_rules": [
+      {
+        "indicator": "price",
+        "condition": "break_high",
+        "params": {
+          "period": 20
+        }
+      },
+      {
+        "indicator": "rs_rank",
+        "condition": "top_pct",
+        "params": {
+          "percent": 20
+        }
+      },
+      {
+        "indicator": "volume",
+        "condition": "above_avg",
+        "params": {
+          "multiplier": 1.5
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "stop_loss",
+        "condition": "trailing",
+        "params": {
+          "percent": 5
+        }
+      },
+      {
+        "indicator": "rs_rank",
+        "condition": "drop_below",
+        "params": {
+          "percent": 30
+        }
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 8,
+      "stop_loss_pct": 5
+    },
+    "active": true
+  },
+  "volume_price": {
+    "name": "量价分析策略",
+    "description": "基于成交量和价格的背离与确认",
+    "market": "ALL",
+    "style": "momentum",
+    "holding_period": "short",
+    "entry_rules": [
+      {
+        "indicator": "volume",
+        "condition": "surge",
+        "params": {
+          "multiplier": 2
+        }
+      },
+      {
+        "indicator": "price",
+        "condition": "up",
+        "params": {
+          "min_pct": 2
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "volume",
+        "condition": "shrink",
+        "params": {
+          "multiplier": 0.7
+        }
+      },
+      {
+        "indicator": "divergence",
+        "condition": "bearish",
+        "params": {}
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 5,
+      "stop_loss_pct": 3
+    },
+    "active": true
+  },
+  "fundamental_growth": {
+    "name": "基本面增长策略",
+    "description": "基于财务指标的高增长价值投资",
+    "market": "ALL",
+    "style": "value",
+    "holding_period": "long",
+    "entry_rules": [
+      {
+        "indicator": "revenue_growth",
+        "condition": ">",
+        "params": {
+          "value": 0.2,
+          "quarters": 2
+        }
+      },
+      {
+        "indicator": "profit_growth",
+        "condition": ">",
+        "params": {
+          "value": 0.2,
+          "quarters": 2
+        }
+      },
+      {
+        "indicator": "roe",
+        "condition": ">",
+        "params": {
+          "value": 0.15
+        }
+      },
+      {
+        "indicator": "pe",
+        "condition": "<",
+        "params": {
+          "value": 30
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "growth",
+        "condition": "decelerate",
+        "params": {
+          "threshold": 0.1
+        }
+      },
+      {
+        "indicator": "pe",
+        "condition": ">",
+        "params": {
+          "value": 50
+        }
+      },
+      {
+        "indicator": "time",
+        "condition": "max_hold",
+        "params": {
+          "days": 180
+        }
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 15,
+      "stop_loss_pct": 10
+    },
+    "active": true
+  },
+  "yangguan_daodao": {
+    "name": "阳关大道超短线",
+    "description": "基于浪主系统的超短交易策略",
+    "market": "CN",
+    "style": "momentum",
+    "holding_period": "short",
+    "entry_rules": [
+      {
+        "indicator": "pattern",
+        "condition": "yangguan_setup",
+        "params": {}
+      },
+      {
+        "indicator": "volume",
+        "condition": "confirm",
+        "params": {}
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "time",
+        "condition": "max_hold",
+        "params": {
+          "days": 3
+        }
+      },
+      {
+        "indicator": "stop_loss",
+        "condition": "fixed",
+        "params": {
+          "percent": 3
+        }
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 5,
+      "stop_loss_pct": 3,
+      "max_hold_days": 3
+    },
+    "active": true
+  },
+  "buffett_value": {
+    "name": "巴菲特价值投资",
+    "description": "基于安全边际和护城河的价值投资",
+    "market": "ALL",
+    "style": "value",
+    "holding_period": "long",
+    "entry_rules": [
+      {
+        "indicator": "moat",
+        "condition": "exists",
+        "params": {}
+      },
+      {
+        "indicator": "margin_of_safety",
+        "condition": ">",
+        "params": {
+          "value": 0.3
+        }
+      },
+      {
+        "indicator": "roe",
+        "condition": ">",
+        "params": {
+          "value": 0.15
+        }
+      },
+      {
+        "indicator": "debt",
+        "condition": "<",
+        "params": {
+          "value": 0.5
+        }
+      }
+    ],
+    "exit_rules": [
+      {
+        "indicator": "valuation",
+        "condition": "fair_value",
+        "params": {}
+      },
+      {
+        "indicator": "moat",
+        "condition": "erode",
+        "params": {}
+      }
+    ],
+    "risk_params": {
+      "max_position_pct": 20,
+      "concentration_limit": 40
+    },
+    "active": true
+  }
+}

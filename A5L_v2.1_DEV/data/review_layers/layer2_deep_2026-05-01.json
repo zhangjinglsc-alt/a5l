@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-01",
+  "timestamp": "2026-05-01T15:09:04.259191",
+  "frameworks": {
+    "langzhu": {
+      "framework": "浪主指数",
+      "wave_position": "震荡整理",
+      "key_levels": {
+        "support": 0,
+        "resistance": 0,
+        "current": 0
+      },
+      "direction": "观望",
+      "confidence": 0.5
+    },
+    "buffett": {
+      "framework": "巴菲特情绪",
+      "stage": "情绪阶段（高潮）",
+      "divergence": "high",
+      "contrarian_opportunity": false,
+      "sentiment_score": 87.77777777777777
+    },
+    "factor": {
+      "framework": "因子投资",
+      "dominant_style": "均衡风格",
+      "active_factors": [
+        "大盘因子",
+        "反转因子"
+      ],
+      "factor_scores": {
+        "growth": 0,
+        "value": 0,
+        "tech": 0
+      }
+    }
+  }
+}

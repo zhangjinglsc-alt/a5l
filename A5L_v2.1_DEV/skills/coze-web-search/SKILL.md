@@ -1,0 +1,46 @@
+---
+name: coze-web-search
+description: Web search using Coze API with summary and content extraction. Use for quick information retrieval and web page analysis.
+---
+
+# Coze Web Search SKILL
+
+## 描述
+
+Coze Web搜索工具，集成Coze平台的网络搜索能力，支持实时搜索、图片搜索、新闻搜索等，适用于信息查询、热点追踪、资料收集。
+
+## 使用方法
+
+触发此 Skill 的指令：
+- `coze搜索` - 使用Coze搜索
+- `网络搜索` - 网络信息搜索
+- `图片搜索` - 搜索图片
+- `新闻搜索` - 搜索新闻
+
+## 功能特点
+
+### 搜索类型
+- **网页搜索** - 全网信息搜索
+- **图片搜索** - 图片内容搜索
+- **新闻搜索** - 新闻资讯搜索
+- **实时搜索** - 最新信息获取
+
+### 高级功能
+- 时间筛选
+- 站点限定
+- 内容摘要
+- 多语言支持
+
+## 使用场景
+- 热点事件追踪
+- 行业动态监控
+- 竞品信息收集
+- 资料文献查找
+
+## 使用示例
+
+```
+coze_web_search("AI最新进展")
+coze_image_search("新能源汽车")
+coze_news_search("央行政策")
+```

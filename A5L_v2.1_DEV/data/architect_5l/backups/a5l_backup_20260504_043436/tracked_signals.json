@@ -1,0 +1,226 @@
+{
+  "signals": [
+    {
+      "signal_id": "SIG_20260504_311AB050",
+      "entity_id": "NVDA",
+      "signal_type": "bullish",
+      "confidence": 85.0,
+      "generated_at": "2026-05-04T04:13:38.281395",
+      "valid_until": "2026-08-02T04:13:38.281398",
+      "predictions": {
+        "week_1": {
+          "predicted_return": 5.0,
+          "predicted_direction": "up"
+        },
+        "month_1": {
+          "predicted_return": 12.0,
+          "predicted_direction": "up"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 945.0,
+          "actual_return": 6.179775280898876,
+          "actual_direction": "up",
+          "predicted_direction": "up",
+          "correct": true,
+          "error_pct": 1.179775280898876,
+          "verified_at": "2026-05-04T04:13:38.282999"
+        }
+      },
+      "overall_accuracy": 100.0,
+      "rating": "excellent",
+      "status": "active"
+    },
+    {
+      "signal_id": "SIG_20260504_9BDB78F3",
+      "entity_id": "AAPL",
+      "signal_type": "bullish",
+      "confidence": 72.0,
+      "generated_at": "2026-05-04T04:13:38.281777",
+      "valid_until": "2026-08-02T04:13:38.281780",
+      "predictions": {
+        "week_1": {
+          "predicted_return": 3.0,
+          "predicted_direction": "up"
+        },
+        "month_1": {
+          "predicted_return": 8.0,
+          "predicted_direction": "up"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 875.0,
+          "actual_return": -1.6853932584269662,
+          "actual_direction": "down",
+          "predicted_direction": "up",
+          "correct": false,
+          "error_pct": 4.685393258426966,
+          "verified_at": "2026-05-04T04:13:38.283622"
+        }
+      },
+      "overall_accuracy": 0.0,
+      "rating": "poor",
+      "status": "active"
+    },
+    {
+      "signal_id": "SIG_20260504_C50D0FA8",
+      "entity_id": "TSLA",
+      "signal_type": "bearish",
+      "confidence": 68.0,
+      "generated_at": "2026-05-04T04:13:38.282369",
+      "valid_until": "2026-08-02T04:13:38.282372",
+      "predictions": {
+        "week_1": {
+          "predicted_return": -4.0,
+          "predicted_direction": "down"
+        },
+        "month_1": {
+          "predicted_return": -10.0,
+          "predicted_direction": "down"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 168.0,
+          "actual_return": -4.0,
+          "actual_direction": "down",
+          "predicted_direction": "down",
+          "correct": true,
+          "error_pct": 0.0,
+          "verified_at": "2026-05-04T04:13:38.284292"
+        }
+      },
+      "overall_accuracy": 100.0,
+      "rating": "excellent",
+      "status": "active"
+    },
+    {
+      "signal_id": "SIG_20260504_0726A481",
+      "entity_id": "NVDA",
+      "signal_type": "bullish",
+      "confidence": 85.0,
+      "generated_at": "2026-05-04T04:15:02.423324",
+      "valid_until": "2026-08-02T04:15:02.423327",
+      "predictions": {
+        "week_1": {
+          "predicted_return": 5.0,
+          "predicted_direction": "up"
+        },
+        "month_1": {
+          "predicted_return": 10.0,
+          "predicted_direction": "up"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 945.0,
+          "actual_return": 6.179775280898876,
+          "actual_direction": "up",
+          "predicted_direction": "up",
+          "correct": true,
+          "error_pct": 1.179775280898876,
+          "verified_at": "2026-05-04T04:15:02.424095"
+        }
+      },
+      "overall_accuracy": 100.0,
+      "rating": "excellent",
+      "status": "active"
+    },
+    {
+      "signal_id": "SIG_20260504_AB33CC45",
+      "entity_id": "NVDA",
+      "signal_type": "bullish",
+      "confidence": 85.0,
+      "generated_at": "2026-05-04T04:15:22.397055",
+      "valid_until": "2026-08-02T04:15:22.397058",
+      "predictions": {
+        "week_1": {
+          "predicted_return": 5.0,
+          "predicted_direction": "up"
+        },
+        "month_1": {
+          "predicted_return": 10.0,
+          "predicted_direction": "up"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 945.0,
+          "actual_return": 6.179775280898876,
+          "actual_direction": "up",
+          "predicted_direction": "up",
+          "correct": true,
+          "error_pct": 1.179775280898876,
+          "verified_at": "2026-05-04T04:15:22.397736"
+        }
+      },
+      "overall_accuracy": 100.0,
+      "rating": "excellent",
+      "status": "active"
+    },
+    {
+      "signal_id": "SIG_20260504_35FCB9A5",
+      "entity_id": "NVDA",
+      "signal_type": "bullish",
+      "confidence": 85.0,
+      "generated_at": "2026-05-04T04:15:39.127135",
+      "valid_until": "2026-08-02T04:15:39.127138",
+      "predictions": {
+        "week_1": {
+          "predicted_return": 5.0,
+          "predicted_direction": "up"
+        },
+        "month_1": {
+          "predicted_return": 10.0,
+          "predicted_direction": "up"
+        },
+        "month_3": {
+          "predicted_return": 20.0,
+          "predicted_direction": "up"
+        }
+      },
+      "validations": {
+        "week_1": {
+          "period": "week_1",
+          "actual_price": 945.0,
+          "actual_return": 6.179775280898876,
+          "actual_direction": "up",
+          "predicted_direction": "up",
+          "correct": true,
+          "error_pct": 1.179775280898876,
+          "verified_at": "2026-05-04T04:15:39.127881"
+        }
+      },
+      "overall_accuracy": 100.0,
+      "rating": "excellent",
+      "status": "active"
+    }
+  ]
+}

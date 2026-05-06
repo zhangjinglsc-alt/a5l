@@ -1,0 +1,180 @@
+[
+  {
+    "rule_id": "RULE-US-001",
+    "name": "美股大波段策略",
+    "market": "US",
+    "strategy_type": "swing_trading_long",
+    "description": "美股大波段持股策略，抓大趋势，持有时间较长",
+    "entry_conditions": [
+      {"indicator": "ma", "condition": "golden_cross", "fast": 20, "slow": 60},
+      {"indicator": "price", "condition": "breaks_above", "period": 60, "lookback": "days"},
+      {"indicator": "volume", "condition": "above_average", "period": 20, "multiplier": 1.3},
+      {"indicator": "trend_strength", "condition": "above", "value": 0.6}
+    ],
+    "exit_conditions": [
+      {"type": "stop_loss", "pct": 8.0},
+      {"type": "take_profit", "pct": 25.0},
+      {"type": "trailing_stop", "pct": 12.0},
+      {"type": "ma_cross", "fast": 20, "slow": 60, "direction": "death_cross"},
+      {"type": "black_swan", "trigger": "vix_above", "value": 40, "action": "immediate_exit"}
+    ],
+    "risk_params": {
+      "max_position_pct": 20.0,
+      "max_daily_trades": 2,
+      "max_consecutive_losses": 2,
+      "sector_concentration_limit": 35.0,
+      "max_drawdown_exit": 15.0
+    },
+    "position_sizing": {
+      "method": "fixed_pct",
+      "pct_per_trade": 15.0,
+      "max_total_exposure": 70.0
+    },
+    "holding_style": "long_swing",
+    "avg_holding_days": 30,
+    "active": true,
+    "created_at": "2026-05-02T01:10:00",
+    "updated_at": "2026-05-02T01:10:00"
+  },
+  {
+    "rule_id": "RULE-CN-001",
+    "name": "A股超短轮动策略",
+    "market": "CN",
+    "strategy_type": "ultra_short_rotation",
+    "description": "A股超短持股快速轮动策略，避免长时间暴露，抓短期热点",
+    "entry_conditions": [
+      {"indicator": "volume", "condition": "surge", "period": 3, "multiplier": 2.0},
+      {"indicator": "price", "condition": "breaks_above", "period": 5, "lookback": "days"},
+      {"indicator": "momentum", "condition": "ranking_top", "value": 20},
+      {"indicator": "limit_up", "condition": "not_reached", "days_ago": 2}
+    ],
+    "exit_conditions": [
+      {"type": "stop_loss", "pct": 3.0},
+      {"type": "take_profit", "pct": 8.0},
+      {"type": "time_exit", "days": 3, "reason": "max_holding_period"},
+      {"type": "momentum_decay", "condition": "drop_below", "value": -0.5},
+      {"type": "volume_shrink", "condition": "below_average", "period": 2, "multiplier": 0.7},
+      {"type": "black_swan", "trigger": "market_drop", "value": -5.0, "action": "immediate_exit"},
+      {"type": "sector_rotation", "trigger": "new_leader", "action": "switch"}
+    ],
+    "risk_params": {
+      "max_position_pct": 8.0,
+      "max_daily_trades": 8,
+      "max_consecutive_losses": 3,
+      "single_stock_max_holding_days": 3,
+      "sector_rotation_frequency": "daily",
+      "cash_ratio_min": 30.0
+    },
+    "position_sizing": {
+      "method": "rotation_sizing",
+      "pct_per_trade": 5.0,
+      "max_total_exposure": 70.0,
+      "max_stocks_holding": 8
+    },
+    "holding_style": "ultra_short",
+    "avg_holding_days": 2,
+    "rotation_frequency": "daily",
+    "active": true,
+    "created_at": "2026-05-02T00:45:36",
+    "updated_at": "2026-05-02T01:10:00"
+  },
+  {
+    "rule_id": "RULE-HK-001",
+    "name": "港股波段价值策略",
+    "market": "HK",
+    "strategy_type": "value_swing",
+    "description": "港股价值+波段结合策略，低估值买入，趋势持有",
+    "entry_conditions": [
+      {"indicator": "pe", "condition": "below", "value": 12},
+      {"indicator": "pb", "condition": "below", "value": 1.2},
+      {"indicator": "dividend_yield", "condition": "above", "value": 4.0},
+      {"indicator": "ma", "condition": "price_above", "period": 60},
+      {"indicator": "trend", "condition": "turning_up"}
+    ],
+    "exit_conditions": [
+      {"type": "stop_loss", "pct": 6.0},
+      {"type": "take_profit", "pct": 20.0},
+      {"type": "trailing_stop", "pct": 10.0},
+      {"type": "pe_target", "value": 18},
+      {"type": "time_exit", "days": 60, "reason": "max_holding_period"},
+      {"type": "black_swan", "trigger": "hsi_drop", "value": -8.0, "action": "immediate_exit"}
+    ],
+    "risk_params": {
+      "max_position_pct": 18.0,
+      "max_daily_trades": 3,
+      "max_consecutive_losses": 2,
+      "max_drawdown_exit": 12.0
+    },
+    "position_sizing": {
+      "method": "fixed_pct",
+      "pct_per_trade": 12.0,
+      "max_total_exposure": 65.0
+    },
+    "holding_style": "swing",
+    "avg_holding_days": 25,
+    "active": true,
+    "created_at": "2026-05-02T00:45:36",
+    "updated_at": "2026-05-02T01:10:00"
+  },
+  {
+    "rule_id": "RULE-BLACKSWAN-001",
+    "name": "全市场黑天鹅风控",
+    "market": "ALL",
+    "strategy_type": "risk_management",
+    "description": "全局黑天鹅检测与风控斩仓机制",
+    "triggers": [
+      {
+        "name": "美股崩盘",
+        "market": "US",
+        "conditions": [
+          {"indicator": "vix", "above": 40},
+          {"indicator": "sp500_change", "below": -5.0}
+        ],
+        "action": "emergency_liquidate_all",
+        "notification": "immediate"
+      },
+      {
+        "name": "A股千股跌停",
+        "market": "CN",
+        "conditions": [
+          {"indicator": "csi300_change", "below": -5.0},
+          {"indicator": "limit_down_stocks", "above": 500}
+        ],
+        "action": "reduce_exposure_to_30pct",
+        "notification": "immediate"
+      },
+      {
+        "name": "港股暴跌",
+        "market": "HK",
+        "conditions": [
+          {"indicator": "hsi_change", "below": -8.0},
+          {"indicator": "volume_surge", "above": 3.0}
+        ],
+        "action": "emergency_liquidate_all",
+        "notification": "immediate"
+      },
+      {
+        "name": "跨市场联动风险",
+        "market": "ALL",
+        "conditions": [
+          {"indicator": "correlation_spike", "above": 0.9},
+          {"indicator": "global_fear_index", "above": 80}
+        ],
+        "action": "reduce_all_exposure_to_50pct",
+        "notification": "immediate"
+      },
+      {
+        "name": "个股黑天鹅",
+        "market": "ANY",
+        "conditions": [
+          {"indicator": "single_stock_drop", "below": -20.0, "period": "1d"}
+        ],
+        "action": "immediate_stop_loss",
+        "notification": "immediate"
+      }
+    ],
+    "active": true,
+    "priority": "highest",
+    "created_at": "2026-05-02T01:10:00"
+  }
+]

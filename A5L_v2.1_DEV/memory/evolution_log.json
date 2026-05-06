@@ -1,0 +1,200 @@
+[
+  {
+    "timestamp": "2026-05-01T22:13:17.724028",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 9
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 54,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 0.04,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  },
+  {
+    "timestamp": "2026-05-01T22:22:31.589961",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 11
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 54,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 0.05,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  },
+  {
+    "timestamp": "2026-05-02T03:00:33.486953",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 26
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 55,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 0.07,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  },
+  {
+    "timestamp": "2026-05-03T03:00:21.707293",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 26
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 58,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 0.15,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  },
+  {
+    "timestamp": "2026-05-04T03:00:40.465418",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 26
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 56,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 0.27,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  },
+  {
+    "timestamp": "2026-05-05T03:00:37.233876",
+    "checks": {
+      "system_health": {
+        "status": "healthy",
+        "issues": [],
+        "checks": 7
+      },
+      "code_quality": {
+        "status": "healthy",
+        "issues": [],
+        "files_checked": 34
+      },
+      "data_integrity": {
+        "status": "healthy",
+        "issues": []
+      },
+      "skill_coverage": {
+        "status": "healthy",
+        "skill_count": 56,
+        "has_manifest": false
+      },
+      "performance": {
+        "status": "healthy",
+        "data_size_mb": 1.06,
+        "recommendation": "正常"
+      }
+    },
+    "fixes_applied": [],
+    "learnings": [
+      "所有检查通过，系统健康"
+    ]
+  }
+]

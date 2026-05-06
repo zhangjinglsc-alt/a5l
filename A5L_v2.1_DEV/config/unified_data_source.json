@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "description": "A5L多数据源互为保障配置",
+  "created_at": "2026-05-06",
+  
+  "data_sources": {
+    "US": {
+      "primary": "finnhub",
+      "fallback": ["yahoo", "cache"],
+      "description": "美股: Finnhub主数据源，Yahoo备用，本地缓存兜底"
+    },
+    "CN": {
+      "primary": "tushare",
+      "fallback": ["akshare", "cache"],
+      "description": "A股: Tushare主数据源，akshare备用，本地缓存兜底"
+    },
+    "HK": {
+      "primary": "tushare",
+      "fallback": ["yahoo", "cache"],
+      "description": "港股: Tushare主数据源，Yahoo备用，本地缓存兜底"
+    }
+  },
+  
+  "rate_limits": {
+    "finnhub": {
+      "max_per_minute": 60,
+      "safety_margin": 0.8,
+      "effective_limit": 48,
+      "min_delay_seconds": 1.25
+    },
+    "yahoo": {
+      "max_per_hour": 100,
+      "safety_margin": 0.5,
+      "effective_limit": 50,
+      "min_delay_seconds": 72
+    },
+    "tushare": {
+      "max_per_minute": 15000,
+      "safety_margin": 0.9,
+      "effective_limit": 13500,
+      "description": "积分会员，限制宽松"
+    },
+    "akshare": {
+      "max_per_minute": 1000,
+      "safety_margin": 0.8,
+      "effective_limit": 800
+    }
+  },
+  
+  "cache_settings": {
+    "enabled": true,
+    "duration_seconds": 300,
+    "description": "价格缓存5分钟，减少API调用"
+  },
+  
+  "failover_settings": {
+    "max_retries_per_source": 3,
+    "failure_threshold": 3,
+    "recovery_check_interval": 300,
+    "description": "连续失败3次后标记为不可用，5分钟后尝试恢复"
+  },
+  
+  "update_frequency": {
+    "recommended": "15min",
+    "conservative": "30min",
+    "aggressive": "5min",
+    "description": "推荐15分钟更新，平衡实时性和API限制"
+  },
+  
+  "monitoring": {
+    "log_level": "INFO",
+    "health_check_interval": 60,
+    "alert_threshold_usage_pct": 80
+  }
+}

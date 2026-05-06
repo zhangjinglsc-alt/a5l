@@ -1,0 +1,211 @@
+{
+  "report_type": "UZI_BATCH_ANALYSIS",
+  "version": "0.1",
+  "generated_at": "2026-05-04T01:50:01.143704",
+  "stocks_analyzed": 3,
+  "results": [
+    {
+      "stock_code": "601975",
+      "stock_name": "招商南油",
+      "industry": "航运",
+      "analysis_version": "0.1",
+      "dimensions": {
+        "industry_position": {
+          "name": "产业链位置",
+          "raw_score": 60,
+          "weight": 0.15,
+          "weighted_score": 9.0,
+          "rating": "良好"
+        },
+        "policy_support": {
+          "name": "政策支持",
+          "raw_score": 70,
+          "weight": 0.15,
+          "weighted_score": 10.5,
+          "rating": "良好"
+        },
+        "earnings_quality": {
+          "name": "盈利质量",
+          "raw_score": 55,
+          "weight": 0.15,
+          "weighted_score": 8.2,
+          "rating": "一般"
+        },
+        "growth_potential": {
+          "name": "成长潜力",
+          "raw_score": 65,
+          "weight": 0.15,
+          "weighted_score": 9.8,
+          "rating": "良好"
+        },
+        "valuation": {
+          "name": "估值水平",
+          "raw_score": 50,
+          "weight": 0.15,
+          "weighted_score": 7.5,
+          "rating": "一般"
+        },
+        "risk_control": {
+          "name": "风险控制",
+          "raw_score": 40,
+          "weight": 0.25,
+          "weighted_score": 10.0,
+          "rating": "一般"
+        }
+      },
+      "raw_score": 55.0,
+      "bearish_penalty": 30,
+      "final_score": 25.0,
+      "overall_rating": "建议回避",
+      "signal": "BEARISH",
+      "bearish_factors": {
+        "factors": [
+          {
+            "factor": "强周期性行业",
+            "description": "航运业受经济周期影响大，运价波动剧烈",
+            "penalty": 10
+          },
+          {
+            "factor": "央企背景限制",
+            "description": "央企决策流程较慢，灵活性不足",
+            "penalty": 5
+          },
+          {
+            "factor": "用户持仓过度集中",
+            "description": "该股票占用户组合36.7%，风险过度暴露",
+            "penalty": 15
+          }
+        ],
+        "total_penalty": 30
+      },
+      "analyzed_at": "2026-05-04T01:50:01.142529"
+    },
+    {
+      "stock_code": "000066",
+      "stock_name": "中国长城",
+      "industry": "信创",
+      "analysis_version": "0.1",
+      "dimensions": {
+        "industry_position": {
+          "name": "产业链位置",
+          "raw_score": 60,
+          "weight": 0.15,
+          "weighted_score": 9.0,
+          "rating": "良好"
+        },
+        "policy_support": {
+          "name": "政策支持",
+          "raw_score": 70,
+          "weight": 0.15,
+          "weighted_score": 10.5,
+          "rating": "良好"
+        },
+        "earnings_quality": {
+          "name": "盈利质量",
+          "raw_score": 55,
+          "weight": 0.15,
+          "weighted_score": 8.2,
+          "rating": "一般"
+        },
+        "growth_potential": {
+          "name": "成长潜力",
+          "raw_score": 65,
+          "weight": 0.15,
+          "weighted_score": 9.8,
+          "rating": "良好"
+        },
+        "valuation": {
+          "name": "估值水平",
+          "raw_score": 50,
+          "weight": 0.15,
+          "weighted_score": 7.5,
+          "rating": "一般"
+        },
+        "risk_control": {
+          "name": "风险控制",
+          "raw_score": 40,
+          "weight": 0.25,
+          "weighted_score": 10.0,
+          "rating": "一般"
+        }
+      },
+      "raw_score": 55.0,
+      "bearish_penalty": 0,
+      "final_score": 55.0,
+      "overall_rating": "谨慎观望",
+      "signal": "CAUTION",
+      "bearish_factors": {
+        "factors": [],
+        "total_penalty": 0
+      },
+      "analyzed_at": "2026-05-04T01:50:01.143149"
+    },
+    {
+      "stock_code": "688981",
+      "stock_name": "中芯国际",
+      "industry": "半导体",
+      "analysis_version": "0.1",
+      "dimensions": {
+        "industry_position": {
+          "name": "产业链位置",
+          "raw_score": 60,
+          "weight": 0.15,
+          "weighted_score": 9.0,
+          "rating": "良好"
+        },
+        "policy_support": {
+          "name": "政策支持",
+          "raw_score": 70,
+          "weight": 0.15,
+          "weighted_score": 10.5,
+          "rating": "良好"
+        },
+        "earnings_quality": {
+          "name": "盈利质量",
+          "raw_score": 55,
+          "weight": 0.15,
+          "weighted_score": 8.2,
+          "rating": "一般"
+        },
+        "growth_potential": {
+          "name": "成长潜力",
+          "raw_score": 65,
+          "weight": 0.15,
+          "weighted_score": 9.8,
+          "rating": "良好"
+        },
+        "valuation": {
+          "name": "估值水平",
+          "raw_score": 50,
+          "weight": 0.15,
+          "weighted_score": 7.5,
+          "rating": "一般"
+        },
+        "risk_control": {
+          "name": "风险控制",
+          "raw_score": 40,
+          "weight": 0.25,
+          "weighted_score": 10.0,
+          "rating": "一般"
+        }
+      },
+      "raw_score": 55.0,
+      "bearish_penalty": 0,
+      "final_score": 55.0,
+      "overall_rating": "谨慎观望",
+      "signal": "CAUTION",
+      "bearish_factors": {
+        "factors": [],
+        "total_penalty": 0
+      },
+      "analyzed_at": "2026-05-04T01:50:01.143698"
+    }
+  ],
+  "summary": {
+    "bullish_count": 0,
+    "watch_count": 0,
+    "caution_count": 2,
+    "bearish_count": 1,
+    "avg_score": 45.0
+  }
+}

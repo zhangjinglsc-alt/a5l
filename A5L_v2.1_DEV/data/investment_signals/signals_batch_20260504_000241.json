@@ -1,0 +1,58 @@
+{
+  "batch_id": "20260504_000241",
+  "generated_at": "2026-05-04T00:02:41.130920",
+  "signal_count": 2,
+  "signals": [
+    {
+      "signal_id": "SIG_20260504_000241_stock_NVDA",
+      "entity_id": "stock_NVDA",
+      "entity_type": "stock",
+      "signal_type": "bullish",
+      "action": "看多",
+      "confidence": 83.75,
+      "confidence_level": "高",
+      "suggestion": "重点关注",
+      "factors": {
+        "industry_position": 95.0,
+        "policy_support": 80.0,
+        "competition": 85.0,
+        "demand_trend": 95.0,
+        "valuation": 50.0,
+        "earnings_expectation": 90.0
+      },
+      "reasoning": [
+        "产业链关键位置，具备定价权",
+        "政策强力支持，行业景气度上行",
+        "竞争格局良好，龙头地位稳固",
+        "需求快速增长，市场空间广阔",
+        "业绩预期向好，超预期概率大"
+      ],
+      "generated_at": "2026-05-04T00:02:41.130693",
+      "valid_until": "2026-05-11T00:02:41.130699"
+    },
+    {
+      "signal_id": "SIG_20260504_000241_stock_TSLA",
+      "entity_id": "stock_TSLA",
+      "entity_type": "stock",
+      "signal_type": "watch",
+      "action": "观望",
+      "confidence": 57.0,
+      "confidence_level": "低",
+      "suggestion": "暂不关注",
+      "factors": {
+        "industry_position": 80.0,
+        "policy_support": 40.0,
+        "competition": 60.0,
+        "demand_trend": 70.0,
+        "valuation": 30.0,
+        "earnings_expectation": 50.0
+      },
+      "reasoning": [
+        "产业链关键位置，具备定价权",
+        "估值偏高，注意回调风险"
+      ],
+      "generated_at": "2026-05-04T00:02:41.130831",
+      "valid_until": "2026-05-11T00:02:41.130834"
+    }
+  ]
+}

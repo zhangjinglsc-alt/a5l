@@ -1,0 +1,27 @@
+{
+  "signal_id": "SIG_20260504_010800_601975",
+  "stock_code": "601975.SH",
+  "stock_name": "招商南油",
+  "signal_type": "WATCH",
+  "action": "观望/持有",
+  "confidence": 58.3,
+  "confidence_level": "低",
+  "current_price": 4.955,
+  "target_price": {
+    "low": 5.2,
+    "high": 5.8
+  },
+  "expected_return": "+10.2%",
+  "risk_level": "高",
+  "position_advice": "减仓至20%以内",
+  "factors": {
+    "industry_position": 0.6,
+    "policy_support": 0.7,
+    "competition": 0.5,
+    "demand_trend": 0.65,
+    "valuation": 0.55,
+    "earnings_expectation": 0.5
+  },
+  "generated_at": "2026-05-04T01:08:00.018400",
+  "data_source": "用户投喂研报 - 招商南油深度研究"
+}

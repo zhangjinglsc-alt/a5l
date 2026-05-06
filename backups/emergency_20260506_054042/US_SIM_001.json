@@ -1,0 +1,151 @@
+{
+  "account": "US_SIM_001",
+  "currency": "USD",
+  "initial_capital": 1000000.0,
+  "current_equity": 1000000.0,
+  "cash": 957629.36,
+  "positions": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 100,
+      "cost_basis": 198.48,
+      "current_price": 197.48,
+      "market_value": 19748.0,
+      "unrealized_pnl": -100.0,
+      "unrealized_pnl_pct": -0.5,
+      "entry_time": "2026-05-05T23:13:53.364850",
+      "notes": "\u539f\u6709\u6301\u4ed3"
+    },
+    "INTC": {
+      "symbol": "INTC",
+      "quantity": 92,
+      "cost_basis": 108.64,
+      "current_price": 108.64,
+      "market_value": 9994.88,
+      "unrealized_pnl": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "entry_time": "2026-05-06T00:49:00",
+      "notes": "\u8ffd\u6da8\u7b56\u7565\u6d4b\u8bd5 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    },
+    "WDC": {
+      "symbol": "WDC",
+      "quantity": 10,
+      "cost_basis": 473.8,
+      "current_price": 473.8,
+      "market_value": 4738.0,
+      "unrealized_pnl": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "entry_time": "2026-05-06T00:49:00",
+      "notes": "\u5747\u503c\u56de\u5f52\u6d4b\u8bd5 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "quantity": 22,
+      "cost_basis": 354.08,
+      "current_price": 354.08,
+      "market_value": 7789.76,
+      "unrealized_pnl": 0.0,
+      "unrealized_pnl_pct": 0.0,
+      "entry_time": "2026-05-06T00:49:00",
+      "notes": "\u7a81\u7834\u7b56\u7565\u6d4b\u8bd5 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    }
+  },
+  "trades": [
+    {
+      "trade_id": "US-TRADE-001",
+      "time": "2026-05-05T23:13:53.364870",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "quantity": 100,
+      "price": 198.48,
+      "amount": 19848.0,
+      "plan_id": "US-PLAN-20260505-001"
+    },
+    {
+      "trade_id": "US-TRADE-002",
+      "time": "2026-05-06T00:49:00",
+      "symbol": "INTC",
+      "action": "BUY",
+      "quantity": 92,
+      "price": 108.64,
+      "amount": 9994.88,
+      "plan_id": "US-PLAN-20260506-0002",
+      "notes": "\u8ffd\u6da8\u7b56\u7565 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    },
+    {
+      "trade_id": "US-TRADE-003",
+      "time": "2026-05-06T00:49:00",
+      "symbol": "WDC",
+      "action": "BUY",
+      "quantity": 10,
+      "price": 473.8,
+      "amount": 4738.0,
+      "plan_id": "US-PLAN-20260506-0003",
+      "notes": "\u5747\u503c\u56de\u5f52 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    },
+    {
+      "trade_id": "US-TRADE-004",
+      "time": "2026-05-06T00:49:00",
+      "symbol": "AMD",
+      "action": "BUY",
+      "quantity": 22,
+      "price": 354.08,
+      "amount": 7789.76,
+      "plan_id": "US-PLAN-20260506-0004",
+      "notes": "\u7a81\u7834\u7b56\u7565 - \u4ea4\u6613\u65f6\u95f4\u6b63\u786e"
+    }
+  ],
+  "watchlist": [
+    "AAPL",
+    "TSLA",
+    "AVGO",
+    "MRVL",
+    "INTC",
+    "WDC",
+    "AMD",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "NFLX",
+    "CRM",
+    "ORCL",
+    "INTU",
+    "ADBE",
+    "QCOM",
+    "TXN",
+    "MU",
+    "LRCX",
+    "KLAC",
+    "AMAT",
+    "SNPS",
+    "CDNS"
+  ],
+  "trading_rules": {
+    "max_positions": 50,
+    "max_position_size_pct": 20,
+    "max_single_loss_pct": 5,
+    "default_stop_loss_pct": 8,
+    "default_take_profit_pct": 15,
+    "allow_short": true,
+    "allow_options": false,
+    "trading_hours": "09:30-16:00 EST",
+    "record_required": true
+  },
+  "experiment_log": {
+    "total_trades": 1,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "total_pnl": 0.0,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": 0.0,
+    "profit_factor": 0.0
+  },
+  "created_at": "2026-05-05T23:10:00+08:00",
+  "last_updated": "2026-05-06T00:49:30.418794",
+  "status": "active",
+  "market": "US",
+  "strategy": "aggressive_experimentation",
+  "notes": "Chief\u6307\u5bfc:\u653e\u5f00\u6807\u7684\u9650\u5236,\u5927\u80c6\u8bd5\u9519,\u5168\u9762\u8bb0\u5f55,\u4e0d\u65ad\u4fee\u6b63\u76f4\u5230\u627e\u5230\u76c8\u5229\u6a21\u5f0f"
+}

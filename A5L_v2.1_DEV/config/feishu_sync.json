@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "created_at": "2026-05-01",
+  "root_folder": {
+    "name": "OpenClaw Agent数据归档",
+    "token": "DG2GfGe0nlLuvSdYlxwcpH0MnGb",
+    "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+  },
+  "sync_config": {
+    "auto_sync_enabled": true,
+    "sync_time": "23:30",
+    "sync_layers": ["soul", "skill", "memory", "goal", "data"],
+    "retention_days": 90
+  },
+  "layer_mapping": {
+    "soul": {
+      "folder": "01-SOUL（灵魂层）",
+      "filename_pattern": "SOUL-人格宪章-{date}.md",
+      "format": "doc",
+      "doc_id": "WuQ1datWLosRLixj86icKPudnac",
+      "url": "https://www.feishu.cn/docx/WuQ1datWLosRLixj86icKPudnac"
+    },
+    "skill": {
+      "folder": "02-SKILL（技能层）",
+      "filename_pattern": "SKILL-注册表-{date}",
+      "format": "bitable",
+      "csv_import": true
+    },
+    "memory": {
+      "folder": "03-MOUL（记忆层）/每日情景记忆",
+      "filename_pattern": "MEMORY-{date}.md",
+      "format": "doc",
+      "doc_id": "P6F5dv7oHoXtr4xRZK4cZM1On9g",
+      "url": "https://www.feishu.cn/docx/P6F5dv7oHoXtr4xRZK4cZM1On9g"
+    },
+    "goal": {
+      "folder": "04-GOAL（目标层）",
+      "filename_pattern": "GOAL-进展-{date}.md",
+      "format": "doc"
+    },
+    "data": {
+      "folder": "05-DATA（数据层）",
+      "filename_pattern": "DATA-持仓-{date}",
+      "format": "bitable"
+    },
+    "simulation": {
+      "folder": "06-SIMULATION（模拟交易）",
+      "filename_pattern": "SIMULATION-交易计划-{date}",
+      "format": "doc",
+      "source_dir": "data/simulation/plans",
+      "file_patterns": ["*_LIVE_STATUS.md", "*-PLAN-*.md"],
+      "live_status_docs": {
+        "US_SIM_001": {
+          "doc_id": "UwxNdkLXHoB6hYxRAlyc9r7Vnef",
+          "url": "https://my.feishu.cn/docx/UwxNdkLXHoB6hYxRAlyc9r7Vnef",
+          "title": "CIO美股模拟交易计划 - US_SIM_001",
+          "update_mode": "replace_all"
+        },
+        "CN_SIM_001": {
+          "doc_id": "XHnvd8pvwoGlkYxPjPPc2GdgnBg",
+          "url": "https://www.feishu.cn/docx/XHnvd8pvwoGlkYxPjPPc2GdgnBg",
+          "title": "CIO A股模拟交易计划 - CN_SIM_001",
+          "update_mode": "replace_all"
+        },
+        "HK_SIM_001": {
+          "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM",
+          "url": "https://www.feishu.cn/docx/MoIhdpAnxoUXNzxWPlycLfMqnAM",
+          "title": "CIO港股模拟交易计划 - HK_SIM_001",
+          "update_mode": "replace_all"
+        }
+      }
+    }
+  }
+}

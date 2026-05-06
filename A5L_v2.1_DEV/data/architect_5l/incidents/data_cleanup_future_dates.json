@@ -1,0 +1,16 @@
+{
+  "cleanup_time": "2026-05-04T12:14:38.387488",
+  "reason": "未来日期数据(2026-07-01)，属于测试数据",
+  "records_to_delete": [
+    "recvi4miZAR4Pl",
+    "recvilTabEWXq9",
+    "recvilTabE0r6G",
+    "recvilTabEAzQS",
+    "recvilTcFqKUNF",
+    "recvilTcFqcw4B",
+    "recvilTcFq4buX",
+    "recvilTcFqSWF5"
+  ],
+  "count": 8,
+  "action": "已从飞书表格标记删除"
+}

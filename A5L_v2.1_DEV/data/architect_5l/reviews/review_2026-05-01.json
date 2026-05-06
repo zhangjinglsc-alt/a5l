@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-01",
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0,
+  "total_pnl": 0,
+  "strategy_performance": {},
+  "errors": [],
+  "lessons": [
+    "当日无交易，保持观望也是策略的一部分"
+  ],
+  "improvements": []
+}

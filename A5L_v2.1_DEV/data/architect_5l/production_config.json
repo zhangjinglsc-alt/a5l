@@ -1,0 +1,58 @@
+{
+  "version": "5.0",
+  "name": "A5L Production Deployment",
+  "description": "Protocol v2.0 生产级部署配置",
+  "environment": "production",
+  "components": {
+    "api_gateway": {
+      "enabled": true,
+      "port": 8080,
+      "auth": "jwt",
+      "rate_limit": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "metrics_interval": 60,
+      "health_check_interval": 30,
+      "alert_thresholds": {
+        "cpu": 80,
+        "memory": 85,
+        "disk": 90,
+        "error_rate": 5
+      }
+    },
+    "logging": {
+      "level": "INFO",
+      "rotation": "daily",
+      "retention_days": 30
+    },
+    "backup": {
+      "enabled": true,
+      "schedule": "0 2 * * *",
+      "retention_count": 7
+    }
+  },
+  "features": {
+    "auto_trading": {
+      "enabled": false,
+      "mode": "paper", 
+      "risk_limit": 0.02
+    },
+    "realtime_monitoring": {
+      "enabled": true,
+      "markets": ["US", "CN", "HK"],
+      "update_interval": 60
+    },
+    "alert_system": {
+      "enabled": true,
+      "channels": ["feishu", "log"],
+      "min_level": "warning"
+    }
+  },
+  "performance": {
+    "max_concurrent_signals": 100,
+    "max_decisions_per_day": 50,
+    "cache_ttl": 300,
+    "db_pool_size": 10
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "backup_name": "a5l_backup_20260504_043436",
+  "created_at": "2026-05-04T04:34:36.549412",
+  "files": [
+    "architect_5l.db",
+    "tracked_signals.json",
+    "collective_decision_system.json",
+    "decisions.json",
+    "prediction_validation_system.json"
+  ],
+  "size": 124568
+}

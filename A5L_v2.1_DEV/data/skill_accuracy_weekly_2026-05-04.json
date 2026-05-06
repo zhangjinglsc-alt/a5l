@@ -1,0 +1,84 @@
+{
+  "period": {
+    "start": "2026-04-27",
+    "end": "2026-05-04"
+  },
+  "skill_accuracy": {
+    "langzhu": {
+      "correct": 2,
+      "total": 2,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        },
+        {
+          "date": "2026-05-04",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    },
+    "buffett": {
+      "correct": 2,
+      "total": 2,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        },
+        {
+          "date": "2026-05-04",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    },
+    "factor": {
+      "correct": 2,
+      "total": 2,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        },
+        {
+          "date": "2026-05-04",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    }
+  },
+  "trend_analysis": {
+    "langzhu": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 2,
+      "consecutive_incorrect": 0,
+      "total_predictions": 2
+    },
+    "buffett": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 2,
+      "consecutive_incorrect": 0,
+      "total_predictions": 2
+    },
+    "factor": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 2,
+      "consecutive_incorrect": 0,
+      "total_predictions": 2
+    }
+  },
+  "overall_accuracy": 100.0,
+  "data_points": 2,
+  "note": "本周2个验证数据点，所有Skill连续2天100%准确，表现优秀",
+  "recommendations": {
+    "weight_adjustments": {
+      "langzhu": "+5% (连续准确)",
+      "buffett": "+5% (连续准确)",
+      "factor": "+5% (连续准确)"
+    },
+    "system_status": "表现优秀，保持当前配置"
+  }
+}

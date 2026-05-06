@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-05-04T00:45:18.037197",
+  "overall_status": "critical",
+  "overall_score": 67.5,
+  "summary": {
+    "healthy": 2,
+    "warning": 1,
+    "critical": 1
+  },
+  "details": [
+    {
+      "component": "knowledge_graph",
+      "status": "critical",
+      "score": 0,
+      "error": "no such table: entities"
+    },
+    {
+      "component": "backup",
+      "status": "healthy",
+      "score": 100,
+      "metrics": {
+        "today_backup": true,
+        "core_backup_exists": true,
+        "kg_backup_exists": true
+      }
+    },
+    {
+      "component": "signal_system",
+      "status": "healthy",
+      "score": 90,
+      "metrics": {
+        "signal_count": 2
+      }
+    },
+    {
+      "component": "git_sync",
+      "status": "warning",
+      "score": 80,
+      "metrics": {
+        "uncommitted_files": 2
+      }
+    }
+  ]
+}

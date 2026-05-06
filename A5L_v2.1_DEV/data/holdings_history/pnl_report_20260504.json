@@ -1,0 +1,88 @@
+{
+  "date": "20260504",
+  "holdings_count": 7,
+  "total_market_value": 3787421.47,
+  "total_cost": 3900016.55,
+  "total_pnl": -112595.07999999961,
+  "total_pnl_pct": -2.887041081915399,
+  "update_time": "2026-05-01 15:34:49",
+  "details": [
+    {
+      "name": "中国长城",
+      "code": "000066",
+      "account": "自有账户",
+      "shares": 0,
+      "current_price": 19.82,
+      "market_value": 0,
+      "pnl": null,
+      "pnl_pct": null,
+      "change_pct": 9.99
+    },
+    {
+      "name": "聚灿光电",
+      "code": "300708",
+      "account": "自有账户",
+      "shares": 100,
+      "current_price": 8.85,
+      "market_value": 885.0,
+      "pnl": -191.0,
+      "pnl_pct": -17.750929368029738,
+      "change_pct": 0.23
+    },
+    {
+      "name": "兴森科技",
+      "code": "002436",
+      "account": "自有账户",
+      "shares": 100,
+      "current_price": 27.71,
+      "market_value": 2771.0,
+      "pnl": -158.0,
+      "pnl_pct": -5.394332536701946,
+      "change_pct": 0.91
+    },
+    {
+      "name": "招商南油",
+      "code": "601975",
+      "account": "WGB",
+      "shares": 456500,
+      "current_price": 4.48,
+      "market_value": 2045120.0000000002,
+      "pnl": 50215.00000000023,
+      "pnl_pct": 2.517162471395893,
+      "change_pct": -1.97
+    },
+    {
+      "name": "招商南油",
+      "code": "601975",
+      "account": "王力",
+      "shares": 265500,
+      "current_price": 4.48,
+      "market_value": 1189440.0,
+      "pnl": -135405.0,
+      "pnl_pct": -10.220440881763528,
+      "change_pct": -1.97
+    },
+    {
+      "name": "中芯国际",
+      "code": "688981",
+      "account": "老娘",
+      "shares": 3139,
+      "current_price": 118.73,
+      "market_value": 372693.47000000003,
+      "pnl": -8538.079999999958,
+      "pnl_pct": -2.2396047756278197,
+      "change_pct": 5.57
+    },
+    {
+      "name": "招商南油",
+      "code": "601975",
+      "account": "老娘",
+      "shares": 39400,
+      "current_price": 4.48,
+      "market_value": 176512.00000000003,
+      "pnl": -18517.99999999997,
+      "pnl_pct": -9.49494949494948,
+      "change_pct": -1.97
+    }
+  ]
+}

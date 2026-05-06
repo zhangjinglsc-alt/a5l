@@ -1,0 +1,111 @@
+{
+  "account_id": "CN_SIM_001",
+  "account_name": "A股模拟账户",
+  "created_at": "2026-05-01",
+  "initial_capital": 5000000.0,
+  "currency": "CNY",
+  "current_status": {
+    "cash": 5000000.0,
+    "market_value": 0.0,
+    "total_equity": 5000000.0,
+    "available_funds": 5000000.0,
+    "margin_used": 0.0,
+    "updated_at": "2026-05-05T18:42:00+08:00",
+    "note": "REINITIALIZED: 资金调整为¥500万，等待A股开市交易"
+  },
+  "trading_params": {
+    "max_positions": 20,
+    "max_single_position_pct": 15.0,
+    "min_trade_amount": 1000.0,
+    "commission_rate": 0.00025,
+    "stamp_duty_rate": 0.001,
+    "transfer_fee_rate": 0.00002,
+    "slippage": 0.001
+  },
+  "risk_management": {
+    "enabled": true,
+    "max_single_loss_pct": 5.0,
+    "max_daily_loss_pct": 10.0,
+    "stop_loss_enabled": true,
+    "take_profit_enabled": true,
+    "max_consecutive_losses": 3,
+    "cool_down_period_hours": 24,
+    "circuit_breaker_check": true
+  },
+  "watchlist": [
+    "000066.SZ",
+    "601975.SH",
+    "688981.SH",
+    "300708.SZ",
+    "002436.SZ",
+    "000001.SZ",
+    "000002.SZ",
+    "000333.SZ",
+    "000858.SZ",
+    "002415.SZ",
+    "002594.SZ",
+    "300750.SZ",
+    "300760.SZ",
+    "600000.SH",
+    "600009.SH",
+    "600036.SH",
+    "600276.SH",
+    "600519.SH",
+    "600900.SH",
+    "603288.SH"
+  ],
+  "strategy_config": {
+    "active_strategy": "yangguan_daodao",
+    "available_strategies": [
+      "yangguan_daodao",
+      "buffett_value",
+      "factor_investing",
+      "momentum",
+      "breakout"
+    ],
+    "entry_rules": {
+      "min_volume": 10000000,
+      "max_spread_pct": 1.0,
+      "signal_strength_threshold": 0.75,
+      "limit_up_protection": true
+    },
+    "exit_rules": {
+      "stop_loss_pct": 5.0,
+      "take_profit_pct": 15.0,
+      "trailing_stop_enabled": true,
+      "trailing_stop_pct": 5.0,
+      "limit_down_exit": true
+    }
+  },
+  "market_specific": {
+    "market_type": "A股",
+    "trade_time": {
+      "morning_start": "09:30",
+      "morning_end": "11:30",
+      "afternoon_start": "13:00",
+      "afternoon_end": "15:00"
+    },
+    "lot_size": 100,
+    "price_limits": {
+      "normal_stock": 0.1,
+      "st_stock": 0.05,
+      "kcb_stock": 0.2
+    },
+    "t_plus_1": true,
+    "holiday_calendar": "china_a_share"
+  },
+  "reporting": {
+    "daily_report_time": "15:30",
+    "weekly_report_day": "Friday",
+    "weekly_report_time": "16:00",
+    "alert_immediately": true
+  },
+  "autonomy_level": {
+    "auto_select_stocks": true,
+    "auto_execute_trades": true,
+    "auto_manage_positions": true,
+    "human_confirmation_required": false,
+    "max_daily_trades": 10,
+    "market_timing_check": true
+  }
+}

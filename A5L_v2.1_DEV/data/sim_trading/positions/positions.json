@@ -1,0 +1,54 @@
+{
+  "US_SIM_001": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "quantity": 5,
+      "avg_price": 180.5,
+      "entry_time": "2026-05-02T07:28:40.824046",
+      "last_updated": "2026-05-02T07:28:40.827958",
+      "unrealized_pnl": 46.999999999999886,
+      "stop_loss": null,
+      "take_profit": null,
+      "current_price": 185.2,
+      "market_value": 1852.0
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "quantity": 5,
+      "avg_price": 890.0,
+      "entry_time": "2026-05-02T07:28:40.824550",
+      "last_updated": "2026-05-02T07:28:40.824553",
+      "unrealized_pnl": 177.5,
+      "stop_loss": null,
+      "take_profit": null,
+      "current_price": 925.5,
+      "market_value": 4627.5
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "quantity": 8,
+      "avg_price": 175.3,
+      "entry_time": "2026-05-02T07:28:40.825167",
+      "last_updated": "2026-05-02T07:28:40.825169",
+      "unrealized_pnl": -20.0,
+      "stop_loss": null,
+      "take_profit": null,
+      "current_price": 172.8,
+      "market_value": 1382.4
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "quantity": 15,
+      "avg_price": 420.25,
+      "entry_time": "2026-05-02T07:28:40.826241",
+      "last_updated": "2026-05-02T07:28:40.826243",
+      "unrealized_pnl": 230.25000000000034,
+      "stop_loss": null,
+      "take_profit": null,
+      "current_price": 435.6,
+      "market_value": 6534.0
+    }
+  },
+  "CN_SIM_001": {},
+  "HK_SIM_001": {}
+}

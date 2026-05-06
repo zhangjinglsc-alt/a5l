@@ -1,0 +1,63 @@
+{
+  "report_title": "Exploring the Impact of Agentic AI on the CPU Market",
+  "source": "UBS Global Research",
+  "date": "2026-05-05",
+  "entities": [
+    {"id": "ARM", "type": "company", "name": "ARM Holdings", "importance": "high", "role": "最大受益者"},
+    {"id": "AMD", "type": "company", "name": "AMD", "importance": "high", "role": "次要受益者"},
+    {"id": "INTC", "type": "company", "name": "Intel", "importance": "medium", "role": "间接受益，份额承压"},
+    {"id": "NVDA", "type": "company", "name": "NVIDIA", "importance": "medium", "role": "间接受益"},
+    {"id": "TSMC", "type": "company", "name": "TSMC", "importance": "medium", "role": "代工受益"},
+    {"id": "中芯国际", "type": "company", "name": "中芯国际", "importance": "low", "role": "间接受益（A股持仓）"},
+    {"id": "中国长城", "type": "company", "name": "中国长城", "importance": "low", "role": "国产CPU（A股持仓）"},
+    {"id": "AGENTIC_AI", "type": "technology", "name": "Agentic AI", "importance": "high", "role": "核心驱动力"},
+    {"id": "CPU_TAM_2025", "type": "metric", "name": "2025年服务器CPU TAM", "value": "$31B", "importance": "high"},
+    {"id": "CPU_TAM_2030_UBS", "type": "metric", "name": "2030年服务器CPU TAM (UBS)", "value": "$173B", "importance": "high"},
+    {"id": "CPU_TAM_2030_AMD", "type": "metric", "name": "2030年服务器CPU TAM (AMD)", "value": "$60B", "importance": "high"},
+    {"id": "ARM_SHARE_2025", "type": "metric", "name": "ARM市场份额2025", "value": "15%", "importance": "high"},
+    {"id": "ARM_SHARE_2030", "type": "metric", "name": "ARM市场份额2030E", "value": "40-45%", "importance": "high"},
+    {"id": "CPU_ATTACH_TRADITIONAL", "type": "metric", "name": "传统AI CPU attach rate", "value": "8-24 cores/GPU", "importance": "high"},
+    {"id": "CPU_ATTACH_AGENTIC", "type": "metric", "name": "Agentic AI CPU attach rate", "value": "80-120 cores/GPU", "importance": "high"},
+    {"id": "ARM_PT_OLD", "type": "metric", "name": "ARM原目标价", "value": "$175", "importance": "medium"},
+    {"id": "ARM_PT_NEW", "type": "metric", "name": "ARM新目标价", "value": "$245", "importance": "high"},
+    {"id": "ARM_PT_UPSIDE", "type": "metric", "name": "ARM目标价上调", "value": "+40%", "importance": "high"},
+    {"id": "HEAD_NODE", "type": "market_segment", "name": "AI Head Node市场", "value_2030": "$79B", "importance": "high"},
+    {"id": "STANDALONE", "type": "market_segment", "name": "AI Standalone CPU", "value_2030": "$46B", "importance": "high"},
+    {"id": "TRADITIONAL_SERVER", "type": "market_segment", "name": "传统服务器市场", "value_2030": "$48B", "importance": "medium"},
+    {"id": "UBS", "type": "research_firm", "name": "UBS", "importance": "high", "role": "研报发布方"}
+  ],
+  "relationships": [
+    {"from": "AGENTIC_AI", "to": "CPU_TAM_2030_UBS", "type": "drives", "description": "驱动服务器CPU市场5倍增长"},
+    {"from": "AGENTIC_AI", "to": "CPU_ATTACH_AGENTIC", "type": "causes", "description": "导致CPU attach rate 5-10x增长"},
+    {"from": "AGENTIC_AI", "to": "ARM", "type": "benefits", "description": "ARM是最大受益者"},
+    {"from": "ARM", "to": "HEAD_NODE", "type": "dominates", "description": "Head Node市场75%+份额"},
+    {"from": "AMD", "to": "STANDALONE", "type": "competes", "description": "Standalone高核心数场景优势"},
+    {"from": "AGENTIC_AI", "to": "AMD", "type": "benefits", "description": "AMD是次要受益者"},
+    {"from": "AGENTIC_AI", "to": "INTC", "type": "benefits_less", "description": "Intel受益但份额承压"},
+    {"from": "UBS", "to": "ARM_PT_NEW", "type": "predicts", "description": "上调目标价至$245"},
+    {"from": "CPU_TAM_2030_UBS", "to": "CPU_TAM_2030_AMD", "type": "exceeds", "description": "UBS预测显著高于AMD"},
+    {"from": "ARM_SHARE_2025", "to": "ARM_SHARE_2030", "type": "grows_to", "description": "ARM份额3倍增长"},
+    {"from": "CPU_ATTACH_TRADITIONAL", "to": "CPU_ATTACH_AGENTIC", "type": "increases_to", "description": "5-10倍增长"},
+    {"from": "AGENTIC_AI", "to": "中芯国际", "type": "benefits_indirectly", "description": "间接受益"},
+    {"from": "AGENTIC_AI", "to": "中国长城", "type": "affects", "description": "需关注国产CPU定位"}
+  ],
+  "investment_signals": [
+    {"signal": "BULLISH", "target": "ARM Holdings", "reason": "最大受益者，目标价+40%", "confidence": "high"},
+    {"signal": "BULLISH", "target": "AMD", "reason": "高核心数优势，EPS上调11%", "confidence": "high"},
+    {"signal": "NEUTRAL", "target": "Intel", "reason": "受益但竞争力相对弱", "confidence": "medium"},
+    {"signal": "WATCH", "target": "中芯国际", "reason": "ARM芯片代工需求增加", "confidence": "medium"}
+  ],
+  "risks": [
+    "软件扩展性限制：高核心数CPU实际性能可能低于纸面",
+    "ARM生态成熟度：软件栈需到2028年才能完全达标",
+    "云-边缘转移：本地PC执行可减少25%云CPU需求",
+    "Intel追赶：Coral Rapids可能分流市场份额"
+  ],
+  "key_insights": [
+    "Agentic AI使CPU工作占比从20-30%反转至70-80%",
+    "服务器CPU市场规模5倍增长：$31B→$173B（2025-2030）",
+    "CPU attach rate 5-10倍增长：8-24核→80-120核/GPU",
+    "ARM市场份额3倍增长：15%→45%",
+    "ARM目标价上调40%：$175→$245"
+  ]
+}

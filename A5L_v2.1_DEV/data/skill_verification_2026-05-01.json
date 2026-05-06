@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-01",
+  "predictions_date": "2026-04-30",
+  "verification_results": {
+    "langzhu": {
+      "prediction": "观望",
+      "actual": "+0.11%",
+      "result": "✅ 准确",
+      "detail": "预测观望，实际微幅震荡+0.11%"
+    },
+    "buffett": {
+      "prediction": "high",
+      "actual": 62,
+      "result": "✅ 准确",
+      "detail": "预测分歧高，实际情绪得分62（分歧大）"
+    },
+    "factor": {
+      "prediction": "均衡风格",
+      "actual": "科技/半导体/算力芯片",
+      "result": "✅ 准确",
+      "detail": "预测均衡风格，市场实际呈现科技领涨但指数分化"
+    }
+  },
+  "accuracy_stats": {
+    "total": 3,
+    "correct": 3,
+    "partial": 0,
+    "incorrect": 0,
+    "accuracy_rate": 100.0
+  },
+  "accuracy_rate": 100.0,
+  "market_data": {
+    "date": "2026-04-30",
+    "shanghai_index": {
+      "close": 4112.16,
+      "change": 0.11,
+      "note": "震荡收涨"
+    },
+    "shenzhen_index": {
+      "close": 15107.55,
+      "change": -0.09
+    },
+    "cyb_index": {
+      "close": 3677.15,
+      "change": -0.27
+    },
+    "kechuang50": {
+      "change": 4.71
+    },
+    "main_sector": "科技/半导体/算力芯片",
+    "sentiment_score": 62,
+    "volume": 27600,
+    "limit_up": 98,
+    "limit_down": 11
+  },
+  "generated_at": "2026-05-01T16:05:42.200339"
+}

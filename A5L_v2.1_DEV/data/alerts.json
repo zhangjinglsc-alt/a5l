@@ -1,0 +1,13 @@
+[
+  {
+    "id": "ALERT_20260504_001213_7943866860720540035",
+    "timestamp": "2026-05-04T00:12:13.220142",
+    "issue": {
+      "type": "db_table_missing",
+      "db": "knowledge_graph",
+      "table": "entities",
+      "severity": "warning"
+    },
+    "acknowledged": false
+  }
+]

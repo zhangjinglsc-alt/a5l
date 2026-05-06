@@ -1,0 +1,64 @@
+{
+  "period": {
+    "start": "2026-04-27",
+    "end": "2026-05-03"
+  },
+  "skill_accuracy": {
+    "langzhu": {
+      "correct": 1,
+      "total": 1,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    },
+    "buffett": {
+      "correct": 1,
+      "total": 1,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    },
+    "factor": {
+      "correct": 1,
+      "total": 1,
+      "trend": [
+        {
+          "date": "2026-05-01",
+          "result": "✅ 准确"
+        }
+      ],
+      "accuracy_rate": 100.0
+    }
+  },
+  "trend_analysis": {
+    "langzhu": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 1,
+      "consecutive_incorrect": 0,
+      "total_predictions": 1
+    },
+    "buffett": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 1,
+      "consecutive_incorrect": 0,
+      "total_predictions": 1
+    },
+    "factor": {
+      "accuracy_rate": 100.0,
+      "consecutive_correct": 1,
+      "consecutive_incorrect": 0,
+      "total_predictions": 1
+    }
+  },
+  "overall_accuracy": 100.0,
+  "data_points": 1,
+  "note": "本周仅1个验证数据点，统计结果仅供参考"
+}

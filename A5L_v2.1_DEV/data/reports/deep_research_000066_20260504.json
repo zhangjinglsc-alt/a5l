@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "stock_code": "000066.SZ",
+    "stock_name": "中国长城",
+    "report_date": "2026-05-04",
+    "analyst": "A5L AI Investment System v2.1",
+    "rating": "CAUTION (谨慎持有)",
+    "target_range": "¥15.00 - ¥22.00",
+    "current_price": "¥19.82",
+    "user_cost": "¥15.50 (估算)",
+    "methodology": "A5L 10-Dimension Deep Research Framework"
+  },
+  "executive_summary": {
+    "investment_thesis": "信创+国产替代双主线驱动，但估值偏高需警惕",
+    "key_catalyst": "党政信创放量、AI算力国产化",
+    "key_risk": "估值泡沫、业绩兑现不确定",
+    "position_advice": "减仓至15%以内，当前36.7%仓位过重"
+  },
+  "dimensions": {
+    "business": {
+      "overview": "中国长城(000066.SZ)是中国电子信息产业集团(CEC)旗下核心企业，专注于自主安全计算领域。",
+      "core_businesses": [
+        {
+          "name": "网络安全与信息化",
+          "revenue_pct": 75,
+          "description": "飞腾CPU+麒麟OS整机，党政军信创主力"
+        },
+        {
+          "name": "系统装备",
+          "revenue_pct": 20,
+          "description": "军事通信、海洋信息化"
+        },
+        {
+          "name": "其他业务",
+          "revenue_pct": 5,
+          "description": "电源、产业园等"
+        }
+      ],
+      "value_proposition": "国产替代核心标的，信创产业链国家队",
+      "technology": "飞腾CPU(ARM架构)、麒麟操作系统、长城整机"
+    },
+    "segments": {
+      "cyber_security": {
+        "name": "网络安全与信息化",
+        "revenue_pct": 75,
+        "margin": "中等(信创压价)",
+        "growth": "高(政策驱动)",
+        "competition": "激烈(华为、浪潮、联想)"
+      },
+      "system_equipment": {
+        "name": "系统装备",
+        "revenue_pct": 20,
+        "margin": "高(军工保密)",
+        "growth": "稳定",
+        "competition": "中等"
+      }
+    },
+    "operations": {
+      "products": [
+        "长城台式机/笔记本(飞腾CPU+麒麟OS)",
+        "长城服务器(FT-2000+/64、S2500)",
+        "飞腾CPU(桌面级D3000、服务器级S5000)",
+        "麒麟操作系统(安全版/通用版)"
+      ],
+      "capacity": "年产能百万台整机，飞腾CPU出货量国内领先",
+      "customers": "党政军、金融、电力、电信等关键行业",
+      "geography": "全国布局，重点覆盖京津冀、长三角、大湾区"
+    },
+    "customers": {
+      "structure": [
+        {
+          "type": "党政军",
+          "pct": 60,
+          "sticky": "极高(国产替代刚性)"
+        },
+        {
+          "type": "金融",
+          "pct": 20,
+          "sticky": "高(合规要求)"
+        },
+        {
+          "type": "能源电力",
+          "pct": 10,
+          "sticky": "中"
+        },
+        {
+          "type": "其他行业",
+          "pct": 10,
+          "sticky": "低"
+        }
+      ],
+      "concentration": "高，依赖党政军采购",
+      "stickiness": "高，信创政策驱动客户粘性"
+    },
+    "competition": {
+      "players": [
+        {
+          "name": "华为",
+          "advantage": "全产业链能力，技术领先",
+          "position": "领先"
+        },
+        {
+          "name": "浪潮信息",
+          "advantage": "服务器规模，渠道优势",
+          "position": "领先"
+        },
+        {
+          "name": "联想(国产)",
+          "advantage": "品牌认知，渠道覆盖",
+          "position": "追赶"
+        },
+        {
+          "name": "中国长城",
+          "advantage": "CEC背景，飞腾CPU",
+          "position": "追赶"
+        },
+        {
+          "name": "中科曙光",
+          "advantage": "海光CPU，性能优势",
+          "position": "竞争"
+        }
+      ],
+      "advantages": [
+        "CEC央企背景",
+        "飞腾CPU自主可控",
+        "党政客户资源"
+      ],
+      "disadvantages": [
+        "性能落后x86",
+        "生态不完善",
+        "盈利能力弱"
+      ]
+    },
+    "industry": {
+      "market_size": "信创市场规模超2万亿，PC/服务器千亿级",
+      "drivers": [
+        "党政信创2.0放量",
+        "行业信创启动(金融、电信)",
+        "AI算力国产化需求",
+        "数据安全政策趋严"
+      ],
+      "supply": "国产CPU性能逐步追赶，但生态差距明显",
+      "cycle": "成长期早期，渗透率<20%",
+      "policy": "信创政策强力推动，国产替代国家战略"
+    },
+    "growth_triggers": {
+      "positive": [
+        {
+          "trigger": "党政信创2.0招标放量",
+          "source": "政策文件",
+          "impact": "收入+30-50%"
+        },
+        {
+          "trigger": "AI算力国产化",
+          "source": "AI大模型趋势",
+          "impact": "服务器需求爆发"
+        },
+        {
+          "trigger": "行业信创启动",
+          "source": "金融/电信订单",
+          "impact": "增量市场打开"
+        },
+        {
+          "trigger": "飞腾CPU性能突破",
+          "source": "S5000发布",
+          "impact": "竞争力提升"
+        }
+      ],
+      "negative": [
+        {
+          "trigger": "华为供应恢复",
+          "source": "制裁放松",
+          "impact": "市场份额被挤压"
+        },
+        {
+          "trigger": "信创政策放缓",
+          "source": "财政预算收紧",
+          "impact": "订单延迟"
+        },
+        {
+          "trigger": "ARM授权风险",
+          "source": "地缘政治",
+          "impact": "飞腾CPU断供风险"
+        }
+      ]
+    },
+    "risks": {
+      "high": [
+        {
+          "risk": "估值泡沫风险",
+          "level": "HIGH",
+          "desc": "PE 80x+，透支未来3年增长"
+        },
+        {
+          "risk": "业绩兑现风险",
+          "level": "HIGH",
+          "desc": "2025年业绩低于预期"
+        }
+      ],
+      "medium": [
+        {
+          "risk": "竞争加剧",
+          "level": "MEDIUM",
+          "desc": "华为、浪潮强势竞争"
+        },
+        {
+          "risk": "技术路线风险",
+          "level": "MEDIUM",
+          "desc": "ARM vs x86，RISC-V崛起"
+        },
+        {
+          "risk": "政策依赖",
+          "level": "MEDIUM",
+          "desc": "信创政策变化影响订单"
+        }
+      ],
+      "low": [
+        {
+          "risk": "客户集中",
+          "level": "LOW",
+          "desc": "党政军占比过高"
+        }
+      ]
+    },
+    "management": {
+      "credibility": "高(央企背景，规范治理)",
+      "transparency": "良好(定期披露详细)",
+      "execution": "中等(业绩波动大)",
+      "alignment": "高(股权激励绑定)",
+      "notes": "管理层稳定，但行业特性导致业绩高波动"
+    },
+    "scenarios": {
+      "bull": {
+        "probability": 25,
+        "target": "¥28-32",
+        "upside": "+40-60%",
+        "assumption": "党政信创超预期+AI算力爆发",
+        "user_pnl": "+80-105%"
+      },
+      "base": {
+        "probability": 50,
+        "target": "¥18-22",
+        "upside": "-5% to +10%",
+        "assumption": "信创稳步推进，业绩温和增长",
+        "user_pnl": "+15-40%"
+      },
+      "bear": {
+        "probability": 25,
+        "target": "¥12-15",
+        "downside": "-25% to -40%",
+        "assumption": "估值回归+业绩不及预期",
+        "user_pnl": "-20% to -10%"
+      },
+      "expected": {
+        "price": "¥20.50",
+        "return": "+3%",
+        "risk_reward": "1:0.5 (不佳)"
+      }
+    }
+  },
+  "investment_advice": {
+    "current_position": "38.18万股，成本¥15.50，占比36.7%",
+    "advice": "减仓至15%以内",
+    "actions": [
+      "若涨至¥22以上，减仓1/3锁定利润",
+      "若跌破¥17，减仓一半控制风险",
+      "¥17-22区间，维持现有仓位",
+      "长期持有需关注Q2业绩是否超预期"
+    ],
+    "risk_warning": "PE 80x估值过高，已透支信创预期。当前仓位36.7%严重超标，建议立即减仓分散风险。"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "account_id": "A_SIM_001",
+  "account_type": "a_share_paper_trading",
+  "synced_from": "feishu_signalarena",
+  "sync_time": "2026-05-04T12:14:38.387295",
+  "initial_capital": 1000000.0,
+  "current_capital": 9989900.55,
+  "available_cash": 5379595.55,
+  "positions_value": 4610305,
+  "total_return": -10099.45,
+  "total_return_pct": -1.01,
+  "positions_count": 5,
+  "positions": [
+    {
+      "symbol": "000066.SZ",
+      "name": "中国长城",
+      "quantity": 48000,
+      "avg_cost": 16.862,
+      "current_price": 17.2,
+      "market_value": 825600,
+      "unrealized_pnl": 16224,
+      "unrealized_pnl_pct": 2.0,
+      "date": "2025-04-27"
+    },
+    {
+      "symbol": "601975.SH",
+      "name": "招商南油",
+      "quantity": 761400,
+      "avg_cost": 4.617,
+      "current_price": 4.45,
+      "market_value": 3388230,
+      "unrealized_pnl": -126545,
+      "unrealized_pnl_pct": -3.6,
+      "date": "2025-04-27"
+    },
+    {
+      "symbol": "688981.SH",
+      "name": "中芯国际",
+      "quantity": 3139,
+      "avg_cost": 121.45,
+      "current_price": 125.0,
+      "market_value": 392375,
+      "unrealized_pnl": 11143.45,
+      "unrealized_pnl_pct": 2.92,
+      "date": "2025-04-27"
+    },
+    {
+      "symbol": "002436.SZ",
+      "name": "兴森科技",
+      "quantity": 100,
+      "avg_cost": 29.29,
+      "current_price": 30.0,
+      "market_value": 3000,
+      "unrealized_pnl": 71,
+      "unrealized_pnl_pct": 2.42,
+      "date": "2025-04-27"
+    },
+    {
+      "symbol": "300708.SZ",
+      "name": "聚灿光电",
+      "quantity": 100,
+      "avg_cost": 10.76,
+      "current_price": 11.0,
+      "market_value": 1100,
+      "unrealized_pnl": 24,
+      "unrealized_pnl_pct": 2.23,
+      "date": "2025-04-27"
+    }
+  ],
+  "trades_count": 10,
+  "last_update": "2026-05-04T12:14:38.387304"
+}

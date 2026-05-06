@@ -1,0 +1,103 @@
+{
+  "date": "2026-05-02",
+  "account_id": "US_SIM_001",
+  "total_trades": 5,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0.0,
+  "total_pnl": 0,
+  "avg_profit": 0,
+  "avg_loss": 0,
+  "profit_factor": Infinity,
+  "strategy_performance": {
+    "turtle_trading": {
+      "trades": 2,
+      "wins": 0,
+      "losses": 0,
+      "total_pnl": 0,
+      "win_rate": 0.0
+    },
+    "trend_rs": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 0,
+      "total_pnl": 0,
+      "win_rate": 0.0
+    },
+    "volume_price": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 0,
+      "total_pnl": 0,
+      "win_rate": 0.0
+    },
+    "fundamental_growth": {
+      "trades": 1,
+      "wins": 0,
+      "losses": 0,
+      "total_pnl": 0,
+      "win_rate": 0.0
+    }
+  },
+  "trade_reviews": [
+    {
+      "trade_id": "T20260502072840824",
+      "symbol": "AAPL",
+      "strategy": "turtle_trading",
+      "entry_quality": 6,
+      "exit_quality": 7,
+      "timing_score": 4,
+      "risk_management": 5,
+      "lessons": [],
+      "improvements": []
+    },
+    {
+      "trade_id": "T20260502072840824",
+      "symbol": "NVDA",
+      "strategy": "trend_rs",
+      "entry_quality": 6,
+      "exit_quality": 7,
+      "timing_score": 4,
+      "risk_management": 5,
+      "lessons": [],
+      "improvements": []
+    },
+    {
+      "trade_id": "T20260502072840825",
+      "symbol": "TSLA",
+      "strategy": "volume_price",
+      "entry_quality": 6,
+      "exit_quality": 7,
+      "timing_score": 4,
+      "risk_management": 5,
+      "lessons": [],
+      "improvements": []
+    },
+    {
+      "trade_id": "T20260502072840826",
+      "symbol": "MSFT",
+      "strategy": "fundamental_growth",
+      "entry_quality": 6,
+      "exit_quality": 7,
+      "timing_score": 4,
+      "risk_management": 5,
+      "lessons": [],
+      "improvements": []
+    },
+    {
+      "trade_id": "T20260502072840827",
+      "symbol": "AAPL",
+      "strategy": "turtle_trading",
+      "entry_quality": 6,
+      "exit_quality": 7,
+      "timing_score": 4,
+      "risk_management": 5,
+      "lessons": [],
+      "improvements": []
+    }
+  ],
+  "summary": "2026-05-02: 今日共5笔交易，胜率0.0%，亏损0.00元",
+  "action_items": [
+    "改进风险管理: 5笔交易风控不足"
+  ]
+}

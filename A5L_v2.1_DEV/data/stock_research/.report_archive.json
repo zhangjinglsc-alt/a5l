@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "created_at": "2026-05-01",
+  "last_scan": "2026-05-05T16:02:00+08:00",
+  "local_path": "/workspace/projects/workspace/data/stock_research",
+  "feishu": {
+    "space_id": "7631410432208751835",
+    "report_center": {
+      "node_token": "X1fCwWbswiJiFck0LGMci7xnnHf",
+      "obj_token": "VSBvdqEqfo1OqwxAeJucoOvSnWh"
+    },
+    "categories": {
+      "industry": {
+        "name": "行业研报",
+        "node_token": "XJ5hw9byKijPifkOss6cGsoQnMh",
+        "obj_token": "OiRfdTXNholkbaxqjgBc1dOynug",
+        "local_path": "industry"
+      },
+      "company": {
+        "name": "公司研报",
+        "node_token": "UXznwFLuoijo1ikcAwhctkjwnAe",
+        "obj_token": "ZcP1d8g2doIF5YxUurFc8dwWnQb",
+        "local_path": "company"
+      },
+      "macro": {
+        "name": "宏观研报",
+        "node_token": "A9qLwYn6TiT16Dkjb1ecl6Khn2g",
+        "obj_token": "UlsxdRmPbozoLnxm9K2ctVF5nKh",
+        "local_path": "macro"
+      },
+      "strategy": {
+        "name": "策略研报",
+        "node_token": "VK9dwLnrTi26bKkZin7cCQGpnyd",
+        "obj_token": "JlGCd8TTDoKxfhxXs4vcMbyanRf",
+        "local_path": "strategy"
+      }
+    }
+  },
+  "scan_history": [
+    {
+      "date": "2026-05-04",
+      "time": "16:06:00",
+      "reports_archived": 8,
+      "new_files": 0,
+      "feishu_synced": true,
+      "batch_id": "AI_Infrastructure_Chain_20260504"
+    }
+  ],
+  "file_mappings": {
+    "KB-2026-0504-001": {
+      "title": "AI存储市场分析 - NAND需求爆发",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/AI_Storage_Impact_Analysis.md",
+      "feishu_url": "https://www.feishu.cn/wiki/UaDKwSoD9i7kiRkXMhoc6H1zn8g"
+    },
+    "KB-2026-0504-002": {
+      "title": "MediaTek TPU业务深度分析",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/MediaTek_TPU_Analysis_MS.md",
+      "feishu_url": "https://www.feishu.cn/wiki/XocPwL7boibdLykAxwjc2nj8nbb"
+    },
+    "KB-2026-0504-003": {
+      "title": "全球模拟半导体 - 周期复苏分析",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/Global_Analog_Semiconductors_MS.md",
+      "feishu_url": "https://www.feishu.cn/wiki/RCBPwbaFRiCkzskknO6cy0XEnCe"
+    },
+    "KB-2026-0504-004": {
+      "title": "中国数据中心市场分析",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/China_Cloud_DataCenter_MS.md",
+      "feishu_url": "https://www.feishu.cn/wiki/FUvhwoeS3irUPlkWjaFcl8Kjnvb"
+    },
+    "KB-2026-0504-005": {
+      "title": "存储价格追踪 - 2026年4月",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/GS_Memory_Pricing_Tracker_Apr2026.md",
+      "feishu_url": "-"
+    },
+    "KB-2026-0504-006": {
+      "title": "中国AI模型与应用",
+      "type": "industry",
+      "local_path": "knowledge_base/research/reports/2026-05-04/China_Internet_AI_Models_GS.md",
+      "feishu_url": "https://www.feishu.cn/wiki/CFRxwfPxYiYzwYkn3UucLr1bnfd"
+    },
+    "KB-2026-0504-007": {
+      "title": "韩国AI CPU与DRAM短缺报道",
+      "type": "industry",
+      "local_path": "data/knowledge/KOR-2026-001_korea_ai_cpu_dram_shortage.md",
+      "feishu_url": "https://www.feishu.cn/wiki/O2yYwLN8NiDfpGklKZuck3kbntd"
+    },
+    "KB-2026-0504-SUM": {
+      "title": "AI基础设施产业链 - 综合投资机会",
+      "type": "strategy",
+      "local_path": "knowledge_base/research/reports/2026-05-04/AI_Infrastructure_Investment_Summary.md",
+      "feishu_url": "https://www.feishu.cn/wiki/OnOrwtXqmimQ8JkZSAic1cesnG5"
+    }
+  }
+}
+ummary.md",
+      "feishu_url": "https://www.feishu.cn/wiki/OnOrwtXqmimQ8JkZSAic1cesnG5"
+    }
+  }
+}
+ledge_base/research/reports/2026-05-04/AI_Infrastructure_Investment_Summary.md",
+      "feishu_url": "https://www.feishu.cn/wiki/OnOrwtXqmimQ8JkZSAic1cesnG5"
+    }
+  }
+}

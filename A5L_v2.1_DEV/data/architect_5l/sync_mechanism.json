@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-05-04T12:14:38.387694",
+  "name": "Feishu-Local Data Sync",
+  "sync_direction": "bidirectional",
+  "sync_frequency": "on_trade + hourly",
+  "data_sources": {
+    "feishu_signalarena": {
+      "app_token": "Rwi0bovpMaxXMnse0pScvOdnnDd",
+      "tables": [
+        "持仓记录",
+        "交易流水",
+        "每日盈亏"
+      ]
+    },
+    "local_storage": {
+      "position_file": "data/positions/position_summary.json",
+      "simulation_file": "data/simulation/a_simulation_status.json"
+    }
+  },
+  "validation_rules": [
+    "日期不能是未来日期",
+    "signal_id必须唯一",
+    "持仓数量必须>=0",
+    "成本价必须>0"
+  ],
+  "alert_conditions": [
+    "持仓数据不一致超过5分钟",
+    "发现未来日期记录",
+    "信号重复"
+  ]
+}

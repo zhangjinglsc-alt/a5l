@@ -1,0 +1,412 @@
+[
+  {
+    "action": "BUY",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 239.76,
+    "cost": 23999.98,
+    "timestamp": "2026-05-04T09:30:23.121958",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00386",
+    "name": "中国石油化工",
+    "quantity": 500,
+    "price": 150.42,
+    "cost": 75285.21,
+    "timestamp": "2026-05-04T09:30:23.122023",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02331",
+    "name": "李宁",
+    "quantity": 100,
+    "price": 390.15,
+    "cost": 39054.01,
+    "timestamp": "2026-05-04T09:30:23.122064",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 200,
+    "price": 447.06,
+    "cost": 89501.41,
+    "timestamp": "2026-05-04T10:00:18.723508",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02331",
+    "name": "李宁",
+    "quantity": 500,
+    "price": 191.4,
+    "cost": 95795.7,
+    "timestamp": "2026-05-04T10:00:18.723565",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "01093",
+    "name": "石药集团",
+    "quantity": 200,
+    "price": 393.29,
+    "cost": 78736.66,
+    "timestamp": "2026-05-04T10:00:18.723606",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 500,
+    "price": 279.43,
+    "cost": 139854.71,
+    "timestamp": "2026-05-04T10:30:24.068486",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "03690",
+    "name": "美团-W",
+    "quantity": 200,
+    "price": 225.0,
+    "cost": 45045.0,
+    "timestamp": "2026-05-04T10:30:24.068543",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 500,
+    "price": 149.67,
+    "cost": 74909.83,
+    "timestamp": "2026-05-04T10:30:24.068585",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 500,
+    "price": 441.09,
+    "cost": 220765.54,
+    "timestamp": "2026-05-04T11:00:24.592193",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02359",
+    "name": "药明康德",
+    "quantity": 200,
+    "price": 178.35,
+    "cost": 35705.67,
+    "timestamp": "2026-05-04T11:00:24.592246",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "01810",
+    "name": "小米集团-W",
+    "quantity": 100,
+    "price": 435.22,
+    "cost": 43565.52,
+    "timestamp": "2026-05-04T11:00:24.592287",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "01093",
+    "name": "石药集团",
+    "quantity": 200,
+    "price": 436.07,
+    "revenue": 87126.79,
+    "timestamp": "2026-05-04T11:00:24.592327",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 500,
+    "price": 70.25,
+    "cost": 35160.12,
+    "timestamp": "2026-05-04T11:30:20.316210",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "03690",
+    "name": "美团-W",
+    "quantity": 500,
+    "price": 91.15,
+    "cost": 45620.57,
+    "timestamp": "2026-05-04T13:00:23.333454",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 100,
+    "price": 68.5,
+    "cost": 6856.85,
+    "timestamp": "2026-05-04T13:30:29.720654",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "03690",
+    "name": "美团-W",
+    "quantity": 100,
+    "price": 16.24,
+    "revenue": 1622.38,
+    "timestamp": "2026-05-04T13:30:29.720776",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00386",
+    "name": "中国石油化工",
+    "quantity": 200,
+    "price": 326.19,
+    "revenue": 65172.76,
+    "timestamp": "2026-05-04T13:30:29.720816",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 200,
+    "price": 50.01,
+    "cost": 10012.0,
+    "timestamp": "2026-05-04T14:00:45.072039",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 200,
+    "price": 142.76,
+    "cost": 28580.55,
+    "timestamp": "2026-05-04T14:00:45.072099",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02318",
+    "name": "中国平安",
+    "quantity": 200,
+    "price": 13.02,
+    "cost": 2606.6,
+    "timestamp": "2026-05-04T14:00:45.072140",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 409.42,
+    "revenue": 40901.06,
+    "timestamp": "2026-05-04T14:00:45.072198",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 500,
+    "price": 42.96,
+    "cost": 21501.48,
+    "timestamp": "2026-05-04T14:30:28.778487",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "06186",
+    "name": "中国飞鹤",
+    "quantity": 200,
+    "price": 153.28,
+    "cost": 30686.66,
+    "timestamp": "2026-05-04T14:30:28.778540",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 100,
+    "price": 265.0,
+    "cost": 26526.5,
+    "timestamp": "2026-05-04T14:30:28.778580",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "02318",
+    "name": "中国平安",
+    "quantity": 200,
+    "price": 224.87,
+    "revenue": 44929.03,
+    "timestamp": "2026-05-04T15:00:22.965241",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 347.71,
+    "revenue": 34736.23,
+    "timestamp": "2026-05-04T15:00:22.965283",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 200,
+    "price": 40.0,
+    "revenue": 7992.0,
+    "timestamp": "2026-05-04T15:00:22.965315",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00981",
+    "name": "中芯国际",
+    "quantity": 200,
+    "price": 296.46,
+    "cost": 59351.29,
+    "timestamp": "2026-05-04T15:30:26.906511",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00386",
+    "name": "中国石油化工",
+    "quantity": 100,
+    "price": 459.37,
+    "cost": 45982.94,
+    "timestamp": "2026-05-04T15:30:26.906563",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 100,
+    "price": 54.51,
+    "cost": 5456.45,
+    "timestamp": "2026-05-04T15:30:26.906602",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 100,
+    "price": 425.18,
+    "revenue": 42475.48,
+    "timestamp": "2026-05-04T15:30:26.906642",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 200,
+    "price": 463.87,
+    "revenue": 92681.23,
+    "timestamp": "2026-05-04T15:30:26.906681",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "03988",
+    "name": "中国银行",
+    "quantity": 200,
+    "price": 445.47,
+    "cost": 89183.09,
+    "timestamp": "2026-05-05T09:30:26.753314",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "02331",
+    "name": "李宁",
+    "quantity": 200,
+    "price": 14.86,
+    "revenue": 2969.03,
+    "timestamp": "2026-05-05T09:30:26.753442",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "09618",
+    "name": "京东集团-SW",
+    "quantity": 100,
+    "price": 210.54,
+    "cost": 21075.05,
+    "timestamp": "2026-05-05T10:00:29.538207",
+    "reason": "建议买入"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "quantity": 200,
+    "price": 77.45,
+    "revenue": 15474.51,
+    "timestamp": "2026-05-05T10:00:29.538316",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "quantity": 100,
+    "price": 240.17,
+    "revenue": 23992.98,
+    "timestamp": "2026-05-05T10:00:29.538361",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "SELL",
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "quantity": 200,
+    "price": 124.92,
+    "revenue": 24959.02,
+    "timestamp": "2026-05-05T10:00:29.538390",
+    "reason": "建议卖出"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02020",
+    "name": "安踏体育",
+    "quantity": 200,
+    "price": 41.11,
+    "cost": 8230.22,
+    "timestamp": "2026-05-05T10:30:44.397216",
+    "reason": "建议买入"
+  },
+  {
+    "action": "BUY",
+    "symbol": "02359",
+    "name": "药明康德",
+    "quantity": 200,
+    "price": 247.18,
+    "cost": 49485.44,
+    "timestamp": "2026-05-05T10:30:44.397307",
+    "reason": "建议买入"
+  }
+]

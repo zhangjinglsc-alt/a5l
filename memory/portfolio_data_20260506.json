@@ -1,0 +1,107 @@
+{
+  "date": "2026-05-06",
+  "total_value": 4751325.47,
+  "total_cost": 4850299.333,
+  "total_pnl": -8528.663,
+  "pnl_pct": -0.17583786926249076,
+  "accounts": [
+    {
+      "name": "张晋 (自有)",
+      "tail": "6662",
+      "value": 955016.0,
+      "cost": 946286.2,
+      "pnl": 8729.80000000012
+    },
+    {
+      "name": "WGB",
+      "tail": "9603",
+      "value": 2045120.0000000002,
+      "cost": 1993078.9999999998,
+      "pnl": 52041.000000000466
+    },
+    {
+      "name": "王力",
+      "tail": "0055",
+      "value": 1189440.0,
+      "cost": 1322721.0,
+      "pnl": -133281.0
+    },
+    {
+      "name": "老娘",
+      "tail": "0179",
+      "value": 561749.4700000001,
+      "cost": 588213.133,
+      "pnl": -26463.66299999997
+    }
+  ],
+  "stocks": {
+    "000066": {
+      "name": "中国长城",
+      "total_shares": 48000,
+      "total_cost": 809375.9999999999,
+      "total_value": 951360.0,
+      "accounts": [
+        {
+          "account": "张晋 (自有)",
+          "shares": 48000
+        }
+      ]
+    },
+    "002436": {
+      "name": "兴森科技",
+      "total_shares": 100,
+      "total_cost": 16341.800000000001,
+      "total_value": 2771.0,
+      "accounts": [
+        {
+          "account": "张晋 (自有)",
+          "shares": 100
+        }
+      ]
+    },
+    "300708": {
+      "name": "聚灿光电",
+      "total_shares": 100,
+      "total_cost": 120568.4,
+      "total_value": 885.0,
+      "accounts": [
+        {
+          "account": "张晋 (自有)",
+          "shares": 100
+        }
+      ]
+    },
+    "601975": {
+      "name": "招商南油",
+      "total_shares": 764200,
+      "total_cost": 3522791.0,
+      "total_value": 3423616.0,
+      "accounts": [
+        {
+          "account": "WGB",
+          "shares": 456500
+        },
+        {
+          "account": "王力",
+          "shares": 265500
+        },
+        {
+          "account": "老娘",
+          "shares": 42200
+        }
+      ]
+    },
+    "688981": {
+      "name": "中芯国际",
+      "total_shares": 3139,
+      "total_cost": 381222.13300000003,
+      "total_value": 372693.47000000003,
+      "accounts": [
+        {
+          "account": "老娘",
+          "shares": 3139
+        }
+      ]
+    }
+  }
+}

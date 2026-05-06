@@ -1,0 +1,111 @@
+{
+  "snapshot_time": "2026-05-04T23:50:00+08:00",
+  "snapshot_type": "daily_cron_backup",
+  "cron_job_id": "839bcf99-26d0-4dde-a7ef-ad18c8eb9a7f",
+  
+  "session_context": {
+    "current_date": "2026-05-04",
+    "day_of_week": "Monday",
+    "market_status": "closed",
+    "next_market_open": "2026-05-05 09:30",
+    "us_market_open": "2026-05-04 21:30"
+  },
+
+  "portfolio_state": {
+    "a_share_simulation": {
+      "total_value": 9989900.55,
+      "total_return_pct": -1.01,
+      "cash": 5379595.55,
+      "positions_value": 4610305,
+      "positions_count": 5,
+      "positions": [
+        {"symbol": "000066.SZ", "name": "中国长城", "qty": 48000, "avg_cost": 16.862, "price": 17.2, "pnl_pct": 2.0},
+        {"symbol": "601975.SH", "name": "招商南油", "qty": 761400, "avg_cost": 4.617, "price": 4.45, "pnl_pct": -3.6, "risk": "high_concentration_90.1%"},
+        {"symbol": "688981.SH", "name": "中芯国际", "qty": 3139, "avg_cost": 121.45, "price": 125.0, "pnl_pct": 2.92},
+        {"symbol": "002436.SZ", "name": "兴森科技", "qty": 100, "avg_cost": 29.29, "price": 30.0, "pnl_pct": 2.42},
+        {"symbol": "300708.SZ", "name": "聚灿光电", "qty": 100, "avg_cost": 10.76, "price": 11.0, "pnl_pct": 2.23}
+      ]
+    },
+    "us_simulation": {
+      "initial_capital": 100000,
+      "currency": "USD",
+      "positions": [
+        {"symbol": "AAPL", "qty": 10, "avg_cost": 180.5, "status": "holding"},
+        {"symbol": "NVDA", "qty": 5, "avg_cost": 890.0, "status": "holding_observing"},
+        {"symbol": "TSLA", "qty": 8, "avg_cost": 175.3, "status": "observing"}
+      ],
+      "monitoring": "21:30_daily"
+    }
+  },
+
+  "skill_weights": {
+    "langzhu": {"weight": 0.30, "accuracy_7d": 1.0, "trend": "increasing"},
+    "buffett": {"weight": 0.25, "accuracy_7d": 1.0, "trend": "increasing"},
+    "factor": {"weight": 0.25, "accuracy_7d": 1.0, "trend": "increasing"},
+    "others": {"weight": 0.20, "accuracy_7d": null, "trend": "stable"}
+  },
+
+  "verification_results": {
+    "2026-05-04": {
+      "langzhu": {"prediction": "观望", "actual": "震荡整理", "result": "correct"},
+      "buffett": {"prediction": "high_divergence", "actual": 87.78, "result": "correct"},
+      "factor": {"prediction": "balanced", "actual": "large_cap+reversal", "result": "correct"},
+      "accuracy_rate": 1.0
+    }
+  },
+
+  "active_research": {
+    "ai_infrastructure_chain": {
+      "status": "completed",
+      "reports_analyzed": 6,
+      "knowledge_graph_nodes": 50,
+      "output_files": [
+        "AI_Infrastructure_Investment_Summary.md",
+        "ai_infrastructure_knowledge_graph_20260504.html"
+      ]
+    },
+    "evolution_v32": {
+      "status": "designed",
+      "short_term": "6_tasks_self_healing",
+      "medium_term": "6_tasks_predictive",
+      "deployment_schedule": "next_week"
+    }
+  },
+
+  "key_decisions": [
+    {"time": "03:08", "decision": "统一进化v3.2双轨设计", "status": "completed"},
+    {"time": "14:41", "decision": "AI产业链投资配置", "status": "analyzed"},
+    {"time": "14:41", "decision": "知识图谱50+节点", "status": "completed"}
+  ],
+
+  "risk_alerts": [
+    {"type": "concentration", "symbol": "601975", "level": "high", "value": "90.1%", "action": "monitoring"}
+  ],
+
+  "next_day_plan": {
+    "2026-05-05": [
+      "复盘会准备 (17:30 Layer0周会)",
+      "美股监控 (21:30 AAPL/NVDA/TSLA)",
+      "自修复系统部署启动",
+      "KG扩展评估",
+      "招商南油集中度处理方案"
+    ]
+  },
+
+  "files_for_recovery": {
+    "memory": "/workspace/projects/workspace/memory/2026-05-04.md",
+    "portfolio": "/workspace/projects/workspace/data/positions/position_summary.json",
+    "verification": "/workspace/projects/workspace/data/skill_verification_2026-05-04.json",
+    "knowledge_graph": "/workspace/projects/workspace/knowledge_base/visualization/ai_infrastructure_knowledge_graph_20260504.html",
+    "session_backup": "/workspace/projects/workspace/memory/session_backup_20260504_2350.json"
+  },
+
+  "metadata": {
+    "git_commits_today": 21,
+    "git_commits_total": 145,
+    "skills_total": 62,
+    "skills_avg_proficiency": 76,
+    "system_health": 93.5,
+    "backup_status": "completed"
+  }
+}

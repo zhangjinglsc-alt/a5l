@@ -1,0 +1,666 @@
+{
+  "proposals": [
+    {
+      "id": "DEC_B3AB6D42519D",
+      "type": "risk_action",
+      "title": "清仓招商南油",
+      "description": "CSO合规违规 + CIO Kelly=0 + UZI低评分，三系统一致看空",
+      "target": "601975",
+      "proposed_action": "清仓所有持仓",
+      "urgency": 9,
+      "submitter": "CSO",
+      "submitted_at": "2026-05-04T04:07:12.781020",
+      "return_potential": 20,
+      "risk_level": 85,
+      "compliance_score": 30,
+      "timing_score": 40,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 28.0,
+          "decision": "reject",
+          "reasoning": "收益潜力20分，时机40分",
+          "confidence": 0.28,
+          "timestamp": "2026-05-04T04:07:12.781069"
+        },
+        {
+          "manager": "CSO",
+          "score": 22.5,
+          "decision": "reject",
+          "reasoning": "风险等级85分，合规30分",
+          "confidence": 0.225,
+          "timestamp": "2026-05-04T04:07:12.781078"
+        },
+        {
+          "manager": "UZI",
+          "score": 26.25,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益20/风险15/合规30/时机40",
+          "confidence": 0.2625,
+          "timestamp": "2026-05-04T04:07:12.781086"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 25.549999999999997,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_2D31984D9AA9",
+      "type": "position_adjustment",
+      "title": "减持中国长城至20%",
+      "description": "当前持仓36.7%，超过20%限制，需减仓",
+      "target": "000066",
+      "proposed_action": "减持至20%仓位",
+      "urgency": 7,
+      "submitter": "CSO",
+      "submitted_at": "2026-05-04T04:07:12.781461",
+      "return_potential": 65,
+      "risk_level": 50,
+      "compliance_score": 40,
+      "timing_score": 70,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 67.0,
+          "decision": "approve",
+          "reasoning": "收益潜力65分，时机70分",
+          "confidence": 0.67,
+          "timestamp": "2026-05-04T04:07:12.781488"
+        },
+        {
+          "manager": "CSO",
+          "score": 45.0,
+          "decision": "reject",
+          "reasoning": "风险等级50分，合规40分",
+          "confidence": 0.45,
+          "timestamp": "2026-05-04T04:07:12.781496"
+        },
+        {
+          "manager": "UZI",
+          "score": 56.25,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益65/风险50/合规40/时机70",
+          "confidence": 0.5625,
+          "timestamp": "2026-05-04T04:07:12.781503"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 56.074999999999996,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_C4CEFE07BAEC",
+      "type": "trade_execution",
+      "title": "增持中芯国际",
+      "description": "分散投资，增加半导体配置",
+      "target": "688981",
+      "proposed_action": "增持至10%仓位",
+      "urgency": 5,
+      "submitter": "CIO",
+      "submitted_at": "2026-05-04T04:07:12.781895",
+      "return_potential": 75,
+      "risk_level": 45,
+      "compliance_score": 85,
+      "timing_score": 70,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 73.0,
+          "decision": "approve",
+          "reasoning": "收益潜力75分，时机70分",
+          "confidence": 0.73,
+          "timestamp": "2026-05-04T04:07:12.781919"
+        },
+        {
+          "manager": "CSO",
+          "score": 70.0,
+          "decision": "approve",
+          "reasoning": "风险等级45分，合规85分",
+          "confidence": 0.7,
+          "timestamp": "2026-05-04T04:07:12.781926"
+        },
+        {
+          "manager": "UZI",
+          "score": 71.25,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益75/风险55/合规85/时机70",
+          "confidence": 0.7125,
+          "timestamp": "2026-05-04T04:07:12.781933"
+        }
+      ],
+      "consensus_level": "simple_majority",
+      "final_score": 71.425,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_FD84400E278E",
+      "type": "trade_execution",
+      "title": "新建仓宁德时代",
+      "description": "新能源龙头，基本面优秀，估值合理",
+      "target": "300750",
+      "proposed_action": "建仓10%仓位",
+      "urgency": 6,
+      "submitter": "CIO",
+      "submitted_at": "2026-05-04T04:08:24.771166",
+      "return_potential": 85,
+      "risk_level": 35,
+      "compliance_score": 90,
+      "timing_score": 80,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 83.0,
+          "decision": "approve",
+          "reasoning": "收益潜力85分，时机80分",
+          "confidence": 0.83,
+          "timestamp": "2026-05-04T04:08:24.771216"
+        },
+        {
+          "manager": "CSO",
+          "score": 77.5,
+          "decision": "approve",
+          "reasoning": "风险等级35分，合规90分",
+          "confidence": 0.775,
+          "timestamp": "2026-05-04T04:08:24.771227"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益85/风险65/合规90/时机80",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:08:24.771234"
+        }
+      ],
+      "consensus_level": "unanimous",
+      "final_score": 80.175,
+      "status": "approved"
+    },
+    {
+      "id": "DEC_F7F977CCB2DE",
+      "type": "risk_action",
+      "title": "止损清仓ST股",
+      "description": "连续亏损，基本面恶化，触发止损线",
+      "target": "ST_000XXX",
+      "proposed_action": "立即清仓",
+      "urgency": 10,
+      "submitter": "CSO",
+      "submitted_at": "2026-05-04T04:08:24.771841",
+      "return_potential": 10,
+      "risk_level": 95,
+      "compliance_score": 85,
+      "timing_score": 85,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 40.0,
+          "decision": "reject",
+          "reasoning": "收益潜力10分，时机85分",
+          "confidence": 0.4,
+          "timestamp": "2026-05-04T04:08:24.771871"
+        },
+        {
+          "manager": "CSO",
+          "score": 45.0,
+          "decision": "reject",
+          "reasoning": "风险等级95分，合规85分",
+          "confidence": 0.45,
+          "timestamp": "2026-05-04T04:08:24.771879"
+        },
+        {
+          "manager": "UZI",
+          "score": 46.25,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益10/风险5/合规85/时机85",
+          "confidence": 0.4625,
+          "timestamp": "2026-05-04T04:08:24.771886"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 43.625,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_A040D8BDEC39",
+      "type": "position_adjustment",
+      "title": "科技板块仓位微调",
+      "description": "增加AI算力配置，减少传统科技",
+      "target": "SECTOR_TECH",
+      "proposed_action": "调整子板块配比",
+      "urgency": 4,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:08:24.772613",
+      "return_potential": 70,
+      "risk_level": 50,
+      "compliance_score": 80,
+      "timing_score": 65,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 68.0,
+          "decision": "approve",
+          "reasoning": "收益潜力70分，时机65分",
+          "confidence": 0.68,
+          "timestamp": "2026-05-04T04:08:24.772641"
+        },
+        {
+          "manager": "CSO",
+          "score": 65.0,
+          "decision": "reject",
+          "reasoning": "风险等级50分，合规80分",
+          "confidence": 0.65,
+          "timestamp": "2026-05-04T04:08:24.772649"
+        },
+        {
+          "manager": "UZI",
+          "score": 66.25,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益70/风险50/合规80/时机65",
+          "confidence": 0.6625,
+          "timestamp": "2026-05-04T04:08:24.772656"
+        }
+      ],
+      "consensus_level": "simple_majority",
+      "final_score": 66.425,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_49F9495E1BC9",
+      "type": "trade_execution",
+      "title": "新建仓宁德时代",
+      "description": "新能源龙头，基本面优秀，估值合理",
+      "target": "300750",
+      "proposed_action": "建仓10%仓位",
+      "urgency": 6,
+      "submitter": "CIO",
+      "submitted_at": "2026-05-04T04:08:46.330120",
+      "return_potential": 85,
+      "risk_level": 35,
+      "compliance_score": 90,
+      "timing_score": 80,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 83.0,
+          "decision": "approve",
+          "reasoning": "收益潜力85分，时机80分",
+          "confidence": 0.83,
+          "timestamp": "2026-05-04T04:08:46.330169"
+        },
+        {
+          "manager": "CSO",
+          "score": 77.5,
+          "decision": "approve",
+          "reasoning": "风险等级35分，合规90分",
+          "confidence": 0.775,
+          "timestamp": "2026-05-04T04:08:46.330179"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益85/风险65/合规90/时机80",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:08:46.330187"
+        }
+      ],
+      "consensus_level": "unanimous",
+      "final_score": 80.175,
+      "status": "approved"
+    },
+    {
+      "id": "DEC_BB4919465D8E",
+      "type": "risk_action",
+      "title": "止盈兑现部分收益",
+      "description": "股价达到目标价位，建议部分止盈",
+      "target": "PROFIT_001",
+      "proposed_action": "卖出50%持仓",
+      "urgency": 8,
+      "submitter": "CIO",
+      "submitted_at": "2026-05-04T04:08:46.331003",
+      "return_potential": 75,
+      "risk_level": 30,
+      "compliance_score": 90,
+      "timing_score": 85,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 79.0,
+          "decision": "approve",
+          "reasoning": "收益潜力75分，时机85分",
+          "confidence": 0.79,
+          "timestamp": "2026-05-04T04:08:46.331036"
+        },
+        {
+          "manager": "CSO",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "风险等级30分，合规90分",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:08:46.331044"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益75/风险70/合规90/时机85",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:08:46.331052"
+        }
+      ],
+      "consensus_level": "super_majority",
+      "final_score": 79.65,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_058D9BFD651C",
+      "type": "position_adjustment",
+      "title": "科技板块仓位微调",
+      "description": "增加AI算力配置，减少传统科技",
+      "target": "SECTOR_TECH",
+      "proposed_action": "调整子板块配比",
+      "urgency": 4,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:08:46.332068",
+      "return_potential": 70,
+      "risk_level": 50,
+      "compliance_score": 80,
+      "timing_score": 65,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 68.0,
+          "decision": "approve",
+          "reasoning": "收益潜力70分，时机65分",
+          "confidence": 0.68,
+          "timestamp": "2026-05-04T04:08:46.332097"
+        },
+        {
+          "manager": "CSO",
+          "score": 65.0,
+          "decision": "reject",
+          "reasoning": "风险等级50分，合规80分",
+          "confidence": 0.65,
+          "timestamp": "2026-05-04T04:08:46.332104"
+        },
+        {
+          "manager": "UZI",
+          "score": 66.25,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益70/风险50/合规80/时机65",
+          "confidence": 0.6625,
+          "timestamp": "2026-05-04T04:08:46.332112"
+        }
+      ],
+      "consensus_level": "simple_majority",
+      "final_score": 66.425,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_44B7F51B66C7",
+      "type": "trade_execution",
+      "title": "BULLISH NVDA",
+      "description": "AI芯片龙头，财报超预期",
+      "target": "NVDA",
+      "proposed_action": "执行bullish信号",
+      "urgency": 7,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:02.421010",
+      "return_potential": 85,
+      "risk_level": 35,
+      "compliance_score": 90,
+      "timing_score": 80,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 83.0,
+          "decision": "approve",
+          "reasoning": "收益潜力85分，时机80分",
+          "confidence": 0.83,
+          "timestamp": "2026-05-04T04:15:02.421059"
+        },
+        {
+          "manager": "CSO",
+          "score": 77.5,
+          "decision": "approve",
+          "reasoning": "风险等级35分，合规90分",
+          "confidence": 0.775,
+          "timestamp": "2026-05-04T04:15:02.421069"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益85/风险65/合规90/时机80",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:15:02.421077"
+        }
+      ],
+      "consensus_level": "unanimous",
+      "final_score": 80.175,
+      "status": "approved"
+    },
+    {
+      "id": "DEC_6C67FED90638",
+      "type": "trade_execution",
+      "title": "BEARISH TSLA",
+      "description": "竞争加剧，销量下滑",
+      "target": "TSLA",
+      "proposed_action": "执行bearish信号",
+      "urgency": 5,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:02.421967",
+      "return_potential": 30,
+      "risk_level": 70,
+      "compliance_score": 75,
+      "timing_score": 60,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 42.0,
+          "decision": "reject",
+          "reasoning": "收益潜力30分，时机60分",
+          "confidence": 0.42,
+          "timestamp": "2026-05-04T04:15:02.422012"
+        },
+        {
+          "manager": "CSO",
+          "score": 52.5,
+          "decision": "reject",
+          "reasoning": "风险等级70分，合规75分",
+          "confidence": 0.525,
+          "timestamp": "2026-05-04T04:15:02.422020"
+        },
+        {
+          "manager": "UZI",
+          "score": 48.75,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益30/风险30/合规75/时机60",
+          "confidence": 0.4875,
+          "timestamp": "2026-05-04T04:15:02.422028"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 47.7,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_0D6BC53F4449",
+      "type": "trade_execution",
+      "title": "BULLISH NVDA",
+      "description": "AI芯片龙头，财报超预期",
+      "target": "NVDA",
+      "proposed_action": "执行bullish信号",
+      "urgency": 7,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:22.394536",
+      "return_potential": 85,
+      "risk_level": 35,
+      "compliance_score": 90,
+      "timing_score": 80,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 83.0,
+          "decision": "approve",
+          "reasoning": "收益潜力85分，时机80分",
+          "confidence": 0.83,
+          "timestamp": "2026-05-04T04:15:22.394585"
+        },
+        {
+          "manager": "CSO",
+          "score": 77.5,
+          "decision": "approve",
+          "reasoning": "风险等级35分，合规90分",
+          "confidence": 0.775,
+          "timestamp": "2026-05-04T04:15:22.394596"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益85/风险65/合规90/时机80",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:15:22.394626"
+        }
+      ],
+      "consensus_level": "unanimous",
+      "final_score": 80.175,
+      "status": "approved"
+    },
+    {
+      "id": "DEC_0B458737B35F",
+      "type": "trade_execution",
+      "title": "BEARISH TSLA",
+      "description": "竞争加剧，销量下滑",
+      "target": "TSLA",
+      "proposed_action": "执行bearish信号",
+      "urgency": 5,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:22.395623",
+      "return_potential": 30,
+      "risk_level": 70,
+      "compliance_score": 75,
+      "timing_score": 60,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 42.0,
+          "decision": "reject",
+          "reasoning": "收益潜力30分，时机60分",
+          "confidence": 0.42,
+          "timestamp": "2026-05-04T04:15:22.395654"
+        },
+        {
+          "manager": "CSO",
+          "score": 52.5,
+          "decision": "reject",
+          "reasoning": "风险等级70分，合规75分",
+          "confidence": 0.525,
+          "timestamp": "2026-05-04T04:15:22.395662"
+        },
+        {
+          "manager": "UZI",
+          "score": 48.75,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益30/风险30/合规75/时机60",
+          "confidence": 0.4875,
+          "timestamp": "2026-05-04T04:15:22.395670"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 47.7,
+      "status": "rejected"
+    },
+    {
+      "id": "DEC_A8D0B2357ED1",
+      "type": "trade_execution",
+      "title": "BULLISH NVDA",
+      "description": "AI芯片龙头，财报超预期",
+      "target": "NVDA",
+      "proposed_action": "执行bullish信号",
+      "urgency": 7,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:39.124352",
+      "return_potential": 85,
+      "risk_level": 35,
+      "compliance_score": 90,
+      "timing_score": 80,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 83.0,
+          "decision": "approve",
+          "reasoning": "收益潜力85分，时机80分",
+          "confidence": 0.83,
+          "timestamp": "2026-05-04T04:15:39.124403"
+        },
+        {
+          "manager": "CSO",
+          "score": 77.5,
+          "decision": "approve",
+          "reasoning": "风险等级35分，合规90分",
+          "confidence": 0.775,
+          "timestamp": "2026-05-04T04:15:39.124414"
+        },
+        {
+          "manager": "UZI",
+          "score": 80.0,
+          "decision": "approve",
+          "reasoning": "综合评分: 收益85/风险65/合规90/时机80",
+          "confidence": 0.8,
+          "timestamp": "2026-05-04T04:15:39.124421"
+        }
+      ],
+      "consensus_level": "unanimous",
+      "final_score": 80.175,
+      "status": "approved"
+    },
+    {
+      "id": "DEC_594A3433F1A8",
+      "type": "trade_execution",
+      "title": "BEARISH TSLA",
+      "description": "竞争加剧，销量下滑",
+      "target": "TSLA",
+      "proposed_action": "执行bearish信号",
+      "urgency": 5,
+      "submitter": "UZI",
+      "submitted_at": "2026-05-04T04:15:39.125536",
+      "return_potential": 30,
+      "risk_level": 70,
+      "compliance_score": 75,
+      "timing_score": 60,
+      "votes": [
+        {
+          "manager": "CIO",
+          "score": 42.0,
+          "decision": "reject",
+          "reasoning": "收益潜力30分，时机60分",
+          "confidence": 0.42,
+          "timestamp": "2026-05-04T04:15:39.125567"
+        },
+        {
+          "manager": "CSO",
+          "score": 52.5,
+          "decision": "reject",
+          "reasoning": "风险等级70分，合规75分",
+          "confidence": 0.525,
+          "timestamp": "2026-05-04T04:15:39.125575"
+        },
+        {
+          "manager": "UZI",
+          "score": 48.75,
+          "decision": "reject",
+          "reasoning": "综合评分: 收益30/风险30/合规75/时机60",
+          "confidence": 0.4875,
+          "timestamp": "2026-05-04T04:15:39.125581"
+        }
+      ],
+      "consensus_level": "no_consensus",
+      "final_score": 47.7,
+      "status": "rejected"
+    }
+  ],
+  "executed": [],
+  "rejected": []
+}

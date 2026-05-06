@@ -1,0 +1,120 @@
+{
+  "reports": [
+    {
+      "doc_id": "2e23c8f0",
+      "title": "招商南油(601975)深度研究报告",
+      "source": "小张AI",
+      "date": "2026-04-12",
+      "classification": {
+        "category": "个股",
+        "confidence": "HIGH",
+        "method": "keyword_match"
+      },
+      "priority": {
+        "score": 100,
+        "level": "P0 - 立即阅读",
+        "reasons": [
+          "持仓股票 601975",
+          "个股分析"
+        ]
+      },
+      "archive_path": "空间2/20_个股档案/",
+      "processed_at": "2026-05-04T01:50:01.237002"
+    },
+    {
+      "doc_id": "4645691f",
+      "title": "中国长城2025年报点评",
+      "source": "券商研报",
+      "date": "2026-03-31",
+      "classification": {
+        "category": "财报",
+        "confidence": "HIGH",
+        "method": "keyword_match"
+      },
+      "priority": {
+        "score": 75,
+        "level": "P1 - 今日阅读",
+        "reasons": [
+          "财报相关"
+        ]
+      },
+      "archive_path": "空间2/40_持仓与交易/",
+      "processed_at": "2026-05-04T01:50:01.237512"
+    },
+    {
+      "doc_id": "2f5908e5",
+      "title": "半导体行业周报：AI算力需求持续",
+      "source": "Pandora",
+      "date": "2026-05-03",
+      "classification": {
+        "category": "宏观",
+        "confidence": "HIGH",
+        "method": "keyword_match"
+      },
+      "priority": {
+        "score": 50,
+        "level": "P2 - 本周阅读",
+        "reasons": []
+      },
+      "archive_path": "空间2/50_研报中心/",
+      "processed_at": "2026-05-04T01:50:01.237198"
+    },
+    {
+      "doc_id": "38232021",
+      "title": "高盛美股周报：AI周期intact",
+      "source": "Goldman Sachs",
+      "date": "2026-05-01",
+      "classification": {
+        "category": "宏观",
+        "confidence": "HIGH",
+        "method": "keyword_match"
+      },
+      "priority": {
+        "score": 50,
+        "level": "P2 - 本周阅读",
+        "reasons": []
+      },
+      "archive_path": "空间2/50_研报中心/",
+      "processed_at": "2026-05-04T01:50:01.237362"
+    },
+    {
+      "doc_id": "cf8a1d4f",
+      "title": "宏观经济月报：4月PMI分析",
+      "source": "宏观组",
+      "date": "2026-05-01",
+      "classification": {
+        "category": "宏观",
+        "confidence": "HIGH",
+        "method": "keyword_match"
+      },
+      "priority": {
+        "score": 50,
+        "level": "P2 - 本周阅读",
+        "reasons": []
+      },
+      "archive_path": "空间2/50_研报中心/",
+      "processed_at": "2026-05-04T01:50:01.237664"
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "by_category": {
+      "个股": 1,
+      "财报": 1,
+      "宏观": 3
+    },
+    "by_priority": {
+      "P0": 1,
+      "P1": 1,
+      "P2": 3,
+      "P3": 0
+    }
+  },
+  "reading_queue": [
+    "招商南油(601975)深度研究报告",
+    "中国长城2025年报点评",
+    "半导体行业周报：AI算力需求持续",
+    "高盛美股周报：AI周期intact",
+    "宏观经济月报：4月PMI分析"
+  ]
+}

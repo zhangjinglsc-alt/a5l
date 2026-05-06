@@ -1,0 +1,64 @@
+{
+  "version": "4.0",
+  "name": "A5L Prediction Validation & Feedback Loop",
+  "description": "预测验证闭环系统 - 追踪决策结果、计算准确率、驱动系统自优化",
+  "components": {
+    "signal_tracker": {
+      "status": "active",
+      "description": "投资信号追踪器"
+    },
+    "accuracy_calculator": {
+      "status": "active",
+      "description": "准确率计算器"
+    },
+    "backtest_engine": {
+      "status": "active",
+      "description": "回测引擎"
+    },
+    "feedback_optimizer": {
+      "status": "active",
+      "description": "反馈优化器"
+    }
+  },
+  "validation_periods": {
+    "week_1": {
+      "name": "1周验证",
+      "days": 7,
+      "tolerance_pct": 3.0
+    },
+    "month_1": {
+      "name": "1月验证",
+      "days": 30,
+      "tolerance_pct": 5.0
+    },
+    "month_3": {
+      "name": "3月验证",
+      "days": 90,
+      "tolerance_pct": 10.0
+    }
+  },
+  "accuracy_thresholds": {
+    "excellent": 80.0,
+    "good": 65.0,
+    "acceptable": 50.0,
+    "poor": 30.0
+  },
+  "feedback_rules": {
+    "excellent": {
+      "action": "increase_confidence",
+      "weight_adjustment": 0.05
+    },
+    "good": {
+      "action": "maintain",
+      "weight_adjustment": 0.0
+    },
+    "acceptable": {
+      "action": "review_parameters",
+      "weight_adjustment": -0.02
+    },
+    "poor": {
+      "action": "recalibrate",
+      "weight_adjustment": -0.05
+    }
+  }
+}

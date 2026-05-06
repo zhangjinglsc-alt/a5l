@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-05",
+  "predictions_date": "2026-05-04",
+  "verification_results": {
+    "langzhu": {
+      "prediction": "观望",
+      "actual": "+0.11%",
+      "result": "✅ 准确",
+      "detail": "预测观望，实际上证指数微涨0.11%，市场呈现震荡格局"
+    },
+    "buffett": {
+      "prediction": "high",
+      "actual": 87.78,
+      "result": "✅ 准确",
+      "detail": "预测分歧度高，实际情绪得分87.78，节后首日市场分化明显（上证+0.11%，深成指-0.09%，创业板指-0.27%）"
+    },
+    "factor": {
+      "prediction": "均衡风格",
+      "actual": "能源金属/科技半导体",
+      "result": "✅ 准确",
+      "detail": "预测均衡风格，实际能源金属板块领涨，科技股（半导体）也表现活跃，呈现均衡轮动特征"
+    }
+  },
+  "accuracy_stats": {
+    "total": 3,
+    "correct": 3,
+    "partial": 0,
+    "incorrect": 0
+  },
+  "accuracy_rate": 100.0,
+  "market_data": {
+    "date": "2026-05-05",
+    "shanghai_index": {
+      "close": 4112.16,
+      "change": 0.11,
+      "note": "微涨震荡"
+    },
+    "shenzhen_index": {
+      "close": 15107.55,
+      "change": -0.09
+    },
+    "cyb_index": {
+      "close": 3677.15,
+      "change": -0.27
+    },
+    "main_sector": "能源金属/科技半导体",
+    "sentiment_score": 87.78,
+    "volume": 27400,
+    "limit_up": 79,
+    "limit_down": 11
+  },
+  "generated_at": "2026-05-05T16:05:00.000000"
+}

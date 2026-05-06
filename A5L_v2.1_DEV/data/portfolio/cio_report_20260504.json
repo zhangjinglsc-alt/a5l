@@ -1,0 +1,91 @@
+{
+  "report_type": "CIO_PORTFOLIO_DAILY",
+  "generated_at": "2026-05-04T01:50:01.175948",
+  "total_capital": 3770000,
+  "risk_assessment": {
+    "concentration_risk": "HIGH",
+    "max_single_position": "36.7%",
+    "herfindahl_index": 0.27,
+    "effective_diversification": 3.7,
+    "recommendation": "减仓集中持仓"
+  },
+  "rebalance_plans": [
+    {
+      "stock_code": "601975",
+      "stock_name": "招商南油",
+      "current_price": 4.955,
+      "target_price": 5.5,
+      "stop_loss": 4.5,
+      "potential_gain": "+11.0%",
+      "potential_loss": "-9.2%",
+      "win_loss_ratio": 1.2,
+      "signal_confidence": 58.3,
+      "win_prob": "40.8%",
+      "current_weight": "36.7%",
+      "recommended_weight": "0.0%",
+      "kelly_raw": "0.0%",
+      "action": "REDUCE",
+      "position_value": 0,
+      "recommended_shares": 0
+    },
+    {
+      "stock_code": "000066",
+      "stock_name": "中国长城",
+      "current_price": 19.82,
+      "target_price": 25.0,
+      "stop_loss": 17.0,
+      "potential_gain": "+26.1%",
+      "potential_loss": "-14.2%",
+      "win_loss_ratio": 1.84,
+      "signal_confidence": 75.0,
+      "win_prob": "52.5%",
+      "current_weight": "36.7%",
+      "recommended_weight": "13.3%",
+      "kelly_raw": "13.3%",
+      "action": "REDUCE",
+      "position_value": 502181,
+      "recommended_shares": 25300
+    }
+  ],
+  "summary": {
+    "high_priority_actions": [
+      {
+        "stock_code": "601975",
+        "stock_name": "招商南油",
+        "current_price": 4.955,
+        "target_price": 5.5,
+        "stop_loss": 4.5,
+        "potential_gain": "+11.0%",
+        "potential_loss": "-9.2%",
+        "win_loss_ratio": 1.2,
+        "signal_confidence": 58.3,
+        "win_prob": "40.8%",
+        "current_weight": "36.7%",
+        "recommended_weight": "0.0%",
+        "kelly_raw": "0.0%",
+        "action": "REDUCE",
+        "position_value": 0,
+        "recommended_shares": 0
+      },
+      {
+        "stock_code": "000066",
+        "stock_name": "中国长城",
+        "current_price": 19.82,
+        "target_price": 25.0,
+        "stop_loss": 17.0,
+        "potential_gain": "+26.1%",
+        "potential_loss": "-14.2%",
+        "win_loss_ratio": 1.84,
+        "signal_confidence": 75.0,
+        "win_prob": "52.5%",
+        "current_weight": "36.7%",
+        "recommended_weight": "13.3%",
+        "kelly_raw": "13.3%",
+        "action": "REDUCE",
+        "position_value": 502181,
+        "recommended_shares": 25300
+      }
+    ],
+    "concentration_alert": true
+  }
+}

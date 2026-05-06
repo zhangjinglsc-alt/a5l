@@ -1,0 +1,106 @@
+{
+  "sync_type": "A5L完整能力文档",
+  "sync_time": "2026-05-02T07:33:09.710768",
+  "total_documents": 16,
+  "synced_count": 16,
+  "total_size": 152495,
+  "documents": [
+    {
+      "source": "SOUL.md",
+      "target": "A5L-SOUL-核心宪章.md",
+      "size": 24051,
+      "sync_time": "2026-05-02T07:33:09.710491"
+    },
+    {
+      "source": "A5L_SOUL_BINDING.md",
+      "target": "A5L-SOUL-绑定文档.md",
+      "size": 7812,
+      "sync_time": "2026-05-02T07:33:09.710517"
+    },
+    {
+      "source": "skills/ARCHITECT-5L-SUPER/SKILL.md",
+      "target": "A5L-SKILL-完整文档.md",
+      "size": 31166,
+      "sync_time": "2026-05-02T07:33:09.710534"
+    },
+    {
+      "source": "feishu_export/LAYER0-TRINITY-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer0-三位一体.md",
+      "size": 11785,
+      "sync_time": "2026-05-02T07:33:09.710549"
+    },
+    {
+      "source": "feishu_export/SIX-IN-ONE-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer0-六位一体.md",
+      "size": 8801,
+      "sync_time": "2026-05-02T07:33:09.710563"
+    },
+    {
+      "source": "feishu_export/SEVEN-IN-ONE-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer0-七位一体.md",
+      "size": 9189,
+      "sync_time": "2026-05-02T07:33:09.710578"
+    },
+    {
+      "source": "feishu_export/SECURITY-OFFICER-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer0-安全师.md",
+      "size": 6698,
+      "sync_time": "2026-05-02T07:33:09.710593"
+    },
+    {
+      "source": "feishu_export/INFORMATION-PIPELINE-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer1-信息处理链路.md",
+      "size": 5811,
+      "sync_time": "2026-05-02T07:33:09.710606"
+    },
+    {
+      "source": "feishu_export/MULTIMODAL-PIPELINE-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer1-多模态处理.md",
+      "size": 5583,
+      "sync_time": "2026-05-02T07:33:09.710621"
+    },
+    {
+      "source": "feishu_export/A5L-研报阅读补充说明-2026-05-02.md",
+      "target": "A5L-Layer3-研报阅读.md",
+      "size": 7669,
+      "sync_time": "2026-05-02T07:33:09.710636"
+    },
+    {
+      "source": "feishu_export/KIWI-KNOWLEDGE-HUB-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer3-KIWI知识中心.md",
+      "size": 9834,
+      "sync_time": "2026-05-02T07:33:09.710651"
+    },
+    {
+      "source": "feishu_export/A5L-LAYER4-LAYER5-TRADING-REVIEW-COMPLETE-2026-05-02.md",
+      "target": "A5L-Layer4-5-交易与复盘.md",
+      "size": 8895,
+      "sync_time": "2026-05-02T07:33:09.710665"
+    },
+    {
+      "source": "feishu_export/P1-COMPLETION-REPORT-2026-05-02.md",
+      "target": "A5L-P1-完成报告.md",
+      "size": 3113,
+      "sync_time": "2026-05-02T07:33:09.710680"
+    },
+    {
+      "source": "feishu_export/P2-COMPLETION-REPORT-2026-05-02.md",
+      "target": "A5L-P2-完成报告.md",
+      "size": 5312,
+      "sync_time": "2026-05-02T07:33:09.710694"
+    },
+    {
+      "source": "feishu_export/P3-COMPLETION-REPORT-2026-05-02.md",
+      "target": "A5L-P3-完成报告.md",
+      "size": 3544,
+      "sync_time": "2026-05-02T07:33:09.710712"
+    },
+    {
+      "source": "feishu_export/A5L-自动飞书同步报告-2026-05-02.md",
+      "target": "A5L-系统同步报告.md",
+      "size": 3232,
+      "sync_time": "2026-05-02T07:33:09.710727"
+    }
+  ],
+  "target_folder": "OpenClaw Agent数据归档 (DG2GfGe0nlLuvSdYlxwcpH0MnGb)"
+}

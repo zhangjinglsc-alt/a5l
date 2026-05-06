@@ -1,0 +1,72 @@
+{
+  "stock_code": "601975",
+  "timestamp": "2026-05-04T02:07:53.787409",
+  "version": "ComprehensiveAnalyzer v1.0",
+  "conflict_resolution": "five_step + private_banker = merged",
+  "five_step_analysis": {
+    "step1_business": {
+      "model": "油品运输",
+      "moat_score": 25.5,
+      "growth_stage": "Mature",
+      "industry_position": "Top3"
+    },
+    "step2_financial": {
+      "profitability_score": 36.0,
+      "financial_health": 65,
+      "cash_flow_quality": 75,
+      "earnings_sustainability": 65
+    },
+    "step3_valuation": {
+      "pe_relative": "Low",
+      "pb_relative": "Low",
+      "dcf_estimate": 6.8,
+      "margin_of_safety": 25
+    },
+    "step4_risks": {
+      "business_risk": "Medium",
+      "financial_risk": "Medium",
+      "market_risk": 1.1,
+      "regulatory_risk": "Low"
+    },
+    "step5_outlook": {
+      "growth_outlook": "Stable",
+      "industry_trend": "Neutral",
+      "catalysts": [
+        "成品油运输回暖",
+        "国企改革"
+      ],
+      "target_price": 6.5
+    }
+  },
+  "institutional_insights": {
+    "institutional_view": {
+      "analyst_consensus": "Hold",
+      "institutional_holding": 25,
+      "smart_money_flow": "Inflow",
+      "earnings_surprise_history": []
+    },
+    "market_positioning": {
+      "sector_rank": 3,
+      "vs_peers": {},
+      "market_share": 15,
+      "competitive_dynamics": "Moderate"
+    },
+    "catalyst_analysis": {
+      "near_term": [],
+      "medium_term": [],
+      "upside_scenario": {},
+      "downside_scenario": {}
+    },
+    "fund_flow": {
+      "northbound_flow": 0,
+      "institutional_net_buy": 0,
+      "margin_balance": {},
+      "block_trades": []
+    }
+  },
+  "comprehensive_score": 34.5,
+  "investment_grade": "E (回避)",
+  "recommendation": "AVOID - 风险收益比不佳",
+  "target_price": 6.5,
+  "risk_level": "Medium"
+}

@@ -1,0 +1,10 @@
+{
+  "account_id": "HK_SIM_001",
+  "trades": [],
+  "trade_count": 0,
+  "total_commission": 0.0,
+  "total_stamp_duty": 0.0,
+  "last_trade_time": null,
+  "updated_at": "2026-05-05T18:42:00+08:00",
+  "note": "REINITIALIZED: 资金调整为HK$500万，清空所有交易记录，等待港股明日开市"
+}

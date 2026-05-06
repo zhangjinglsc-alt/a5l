@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-05-06T03:33:45.940920",
+    "error_type": "yahoo_rate_limit",
+    "context": {},
+    "success": true,
+    "action": "create_and_switch",
+    "message": "创建配置并切换到Finnhub"
+  },
+  {
+    "timestamp": "2026-05-06T03:33:45.941203",
+    "error_type": "memory_error",
+    "context": {},
+    "success": true,
+    "action": "clear_cache",
+    "message": "已清理 1 个缓存目录",
+    "cleared_dirs": [
+      "/tmp/openclaw"
+    ]
+  },
+  {
+    "timestamp": "2026-05-06T03:33:45.948999",
+    "error_type": "github_push_failed",
+    "context": {},
+    "success": true,
+    "action": "retry_with_delay",
+    "message": "推送成功",
+    "stdout": ""
+  },
+  {
+    "timestamp": "2026-05-06T03:33:54.607022",
+    "error_type": "feishu_doc_update_failed",
+    "context": {
+      "doc_id": "test123"
+    },
+    "success": true,
+    "action": "mark_for_recreation",
+    "message": "已将文档 test123 标记为待重新创建"
+  },
+  {
+    "timestamp": "2026-05-06T03:34:46.928825",
+    "error_type": "yahoo_rate_limit",
+    "context": {},
+    "success": true,
+    "action": "switch_to_finnhub",
+    "message": "已将数据源切换到Finnhub"
+  },
+  {
+    "timestamp": "2026-05-06T03:34:46.930067",
+    "error_type": "position_data_corrupt",
+    "context": {},
+    "success": false,
+    "action": "restore_from_backup",
+    "message": "备份恢复失败",
+    "stdout": ""
+  },
+  {
+    "timestamp": "2026-05-06T03:35:53.920220",
+    "error_type": "yahoo_rate_limit",
+    "context": {},
+    "success": true,
+    "action": "switch_to_finnhub",
+    "message": "已将数据源切换到Finnhub"
+  },
+  {
+    "timestamp": "2026-05-06T03:35:53.922068",
+    "error_type": "memory_error",
+    "context": {},
+    "success": true,
+    "action": "clear_cache",
+    "message": "已清理 0 个缓存目录",
+    "cleared_dirs": []
+  },
+  {
+    "timestamp": "2026-05-06T03:35:53.924209",
+    "error_type": "feishu_doc_update_failed",
+    "context": {},
+    "success": false,
+    "action": null,
+    "message": "修复执行异常: 'NoneType' object has no attribute 'get'"
+  }
+]

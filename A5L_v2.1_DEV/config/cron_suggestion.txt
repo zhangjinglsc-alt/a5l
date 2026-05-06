@@ -1,0 +1,3 @@
+# A5L Monthly SKILL Audit
+# 每月第一个周日 09:00 执行
+0 9 1-7 * 0 cd /workspace/projects/workspace && python3 ARCHITECT_5L/layer0_control/skill_lifecycle_manager.py >> logs/monthly_audit.log 2>&1

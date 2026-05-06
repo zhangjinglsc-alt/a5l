@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-02T00:01:17.073999",
+  "overall_stats": {
+    "total_trades": 0,
+    "win_rate": 0.0,
+    "strategies_used": []
+  },
+  "strategy_learnings": {},
+  "market_patterns": {},
+  "recommendations": [
+    "胜率低于50%，建议减少交易频率，提高信号质量"
+  ]
+}

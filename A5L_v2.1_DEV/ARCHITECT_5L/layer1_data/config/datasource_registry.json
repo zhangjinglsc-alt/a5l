@@ -1,0 +1,236 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-02",
+  "description": "五层架构Layer 1数据源连接器配置",
+  "connectors": {
+    "akshare": {
+      "name": "AKShare",
+      "enabled": true,
+      "priority": 1,
+      "category": "A_share",
+      "api_type": "python_library",
+      "rate_limit": 300,
+      "timeout": 30,
+      "retry_count": 3,
+      "install_cmd": "pip install akshare",
+      "import_path": "akshare",
+      "supported_data": {
+        "price": {
+          "methods": ["stock_zh_a_hist", "stock_zh_a_daily"],
+          "frequency": ["daily", "weekly", "monthly"],
+          "realtime": true
+        },
+        "financial": {
+          "methods": ["stock_financial_report_sina", "stock_financial_analysis"],
+          "report_types": ["balance", "income", "cashflow"]
+        },
+        "fund_flow": {
+          "methods": ["stock_individual_fund_flow"],
+          "realtime": true
+        },
+        "sector": {
+          "methods": ["stock_board_industry_name_ths", "stock_board_concept_name_ths"]
+        }
+      },
+      "authentication": {
+        "required": false,
+        "token_env": null
+      }
+    },
+    "tushare": {
+      "name": "TuShare",
+      "enabled": true,
+      "priority": 2,
+      "category": "A_share",
+      "api_type": "rest_api",
+      "rate_limit": 200,
+      "timeout": 30,
+      "retry_count": 3,
+      "base_url": "https://api.tushare.pro",
+      "install_cmd": "pip install tushare",
+      "import_path": "tushare",
+      "supported_data": {
+        "price": {
+          "api_name": "daily",
+          "frequency": ["daily", "weekly", "monthly"],
+          "realtime": false
+        },
+        "financial": {
+          "api_name": "income",
+          "report_types": ["income", "balancesheet", "cashflow"]
+        },
+        "fund_holdings": {
+          "api_name": "fund_portfolio"
+        },
+        "margin": {
+          "api_name": "margin"
+        }
+      },
+      "authentication": {
+        "required": true,
+        "token_env": "TUSHARE_TOKEN",
+        "register_url": "https://tushare.pro/register"
+      }
+    },
+    "eastmoney": {
+      "name": "EastMoney",
+      "enabled": true,
+      "priority": 3,
+      "category": "A_share",
+      "api_type": "rest_api",
+      "rate_limit": 100,
+      "timeout": 20,
+      "retry_count": 2,
+      "base_url": "https://push2.eastmoney.com/api",
+      "supported_data": {
+        "price": {
+          "endpoints": ["/qt/stock/get"],
+          "realtime": true
+        },
+        "fund_flow": {
+          "endpoints": ["/qt/ulist.np/get"],
+          "realtime": true
+        },
+        "sector": {
+          "endpoints": ["/qt/clist/get"],
+          "realtime": true
+        }
+      },
+      "authentication": {
+        "required": false
+      }
+    },
+    "jin10": {
+      "name": "Jin10",
+      "enabled": true,
+      "priority": 4,
+      "category": "sentiment",
+      "api_type": "rest_api",
+      "rate_limit": 60,
+      "timeout": 15,
+      "retry_count": 2,
+      "base_url": "https://flash-api.jin10.com",
+      "supported_data": {
+        "news": {
+          "endpoints": ["/getFlashList"],
+          "categories": ["important", "forex", "commodity", "stock"]
+        },
+        "calendar": {
+          "endpoints": ["/getCalendarList"]
+        },
+        "sentiment": {
+          "endpoints": ["/getSentiment"]
+        }
+      },
+      "authentication": {
+        "required": false
+      }
+    },
+    "yahoo_finance": {
+      "name": "Yahoo Finance",
+      "enabled": true,
+      "priority": 1,
+      "category": "US_HK",
+      "api_type": "python_library",
+      "rate_limit": 200,
+      "timeout": 30,
+      "retry_count": 3,
+      "install_cmd": "pip install yfinance",
+      "import_path": "yfinance",
+      "supported_data": {
+        "price": {
+          "methods": ["download", "Ticker.history"],
+          "frequency": ["1d", "1wk", "1mo"],
+          "realtime": false
+        },
+        "financial": {
+          "methods": ["Ticker.financials", "Ticker.balance_sheet"]
+        },
+        "info": {
+          "methods": ["Ticker.info"]
+        }
+      },
+      "authentication": {
+        "required": false
+      }
+    },
+    "hkex": {
+      "name": "HKEX",
+      "enabled": true,
+      "priority": 2,
+      "category": "HK",
+      "api_type": "rest_api",
+      "rate_limit": 100,
+      "timeout": 30,
+      "retry_count": 3,
+      "base_url": "https://www.hkex.com.hk",
+      "supported_data": {
+        "price": {
+          "endpoints": ["/MarketData/market-data/quotes"],
+          "delay": "15min"
+        },
+        "announcements": {
+          "endpoints": ["/ListedCo/NewsInfo/list"]
+        }
+      },
+      "authentication": {
+        "required": false
+      }
+    }
+  },
+  "data_mapping": {
+    "symbol_formats": {
+      "akshare": {
+        "sh": "{code}.SH",
+        "sz": "{code}.SZ",
+        "bj": "{code}.BJ"
+      },
+      "tushare": {
+        "sh": "{code}.SH",
+        "sz": "{code}.SZ"
+      },
+      "yahoo": {
+        "us": "{code}",
+        "hk": "{code}.HK",
+        "sh": "{code}.SS",
+        "sz": "{code}.SZ"
+      }
+    },
+    "field_mapping": {
+      "akshare_to_standard": {
+        "日期": "date",
+        "股票代码": "symbol",
+        "开盘": "open",
+        "收盘": "close",
+        "最高": "high",
+        "最低": "low",
+        "成交量": "volume",
+        "成交额": "amount",
+        "振幅": "amplitude",
+        "涨跌幅": "change_pct",
+        "涨跌额": "change",
+        "换手率": "turnover"
+      },
+      "tushare_to_standard": {
+        "trade_date": "date",
+        "ts_code": "symbol",
+        "open": "open",
+        "close": "close",
+        "high": "high",
+        "low": "low",
+        "vol": "volume",
+        "amount": "amount",
+        "pct_chg": "change_pct",
+        "change": "change"
+      }
+    }
+  },
+  "fallback_chain": {
+    "A_share_price": ["akshare", "tushare", "eastmoney"],
+    "A_share_financial": ["tushare", "akshare"],
+    "A_share_fund_flow": ["eastmoney", "akshare"],
+    "US_price": ["yahoo_finance"],
+    "HK_price": ["yahoo_finance", "hkex"],
+    "news_sentiment": ["jin10"]
+  }
+}

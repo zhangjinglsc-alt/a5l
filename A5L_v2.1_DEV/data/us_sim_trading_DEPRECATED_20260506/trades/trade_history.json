@@ -1,0 +1,13 @@
+{
+  "trades": [],
+  "trade_stats": {
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate": 0,
+    "total_pnl": 0,
+    "total_pnl_pct": 0
+  },
+  "updated_at": "2026-05-05T18:42:00+08:00",
+  "note": "REINITIALIZED: 资金调整为$100万，清空所有交易记录，CIO准备开始新交易周期"
+}

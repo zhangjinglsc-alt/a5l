@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-05-04T00:06:31.430708",
+  "report_type": "hidden_relation_discovery",
+  "target_entities": [
+    "stock_NVDA",
+    "stock_TSLA",
+    "stock_AAPL"
+  ],
+  "findings": [
+    {
+      "entity": "stock_NVDA",
+      "hidden_paths": [],
+      "industry_analysis": {
+        "stock": "stock_NVDA",
+        "analyzed_at": "2026-05-04T00:06:31.430954",
+        "upstream": [],
+        "downstream": [],
+        "peers": [],
+        "transmission_effects": []
+      },
+      "insight_summary": "发现 0 条隐藏关联路径"
+    },
+    {
+      "entity": "stock_TSLA",
+      "hidden_paths": [],
+      "industry_analysis": {
+        "stock": "stock_TSLA",
+        "analyzed_at": "2026-05-04T00:06:31.431265",
+        "upstream": [],
+        "downstream": [],
+        "peers": [],
+        "transmission_effects": []
+      },
+      "insight_summary": "发现 0 条隐藏关联路径"
+    },
+    {
+      "entity": "stock_AAPL",
+      "hidden_paths": [],
+      "industry_analysis": {
+        "stock": "stock_AAPL",
+        "analyzed_at": "2026-05-04T00:06:31.431548",
+        "upstream": [],
+        "downstream": [],
+        "peers": [],
+        "transmission_effects": []
+      },
+      "insight_summary": "发现 0 条隐藏关联路径"
+    }
+  ]
+}

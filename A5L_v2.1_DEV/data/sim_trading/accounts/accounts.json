@@ -1,0 +1,50 @@
+{
+  "US_SIM_001": {
+    "name": "美股模拟账户",
+    "market": "US",
+    "currency": "USD",
+    "initial_capital": 100000,
+    "available_cash": 86949.88885,
+    "total_equity": 100420.78885,
+    "margin_used": 0,
+    "commission_rate": 0.001,
+    "min_commission": 1.0,
+    "risk_per_trade": 0.02,
+    "max_position_pct": 0.3,
+    "trading_hours": "09:30-16:00 EST",
+    "unrealized_pnl": 434.7500000000002
+  },
+  "CN_SIM_001": {
+    "name": "A股模拟账户",
+    "market": "CN",
+    "currency": "CNY",
+    "initial_capital": 1000000,
+    "available_cash": 1000000,
+    "total_equity": 1000000,
+    "commission_rate": 0.0003,
+    "min_commission": 5.0,
+    "stamp_duty": 0.001,
+    "risk_per_trade": 0.02,
+    "max_position_pct": 0.3,
+    "price_limit": true,
+    "t_plus_1": true,
+    "trading_hours": "09:30-11:30, 13:00-15:00 CST",
+    "unrealized_pnl": 0
+  },
+  "HK_SIM_001": {
+    "name": "港股模拟账户",
+    "market": "HK",
+    "currency": "HKD",
+    "initial_capital": 800000,
+    "available_cash": 800000,
+    "total_equity": 800000,
+    "commission_rate": 0.0025,
+    "min_commission": 100.0,
+    "stamp_duty": 0.001,
+    "risk_per_trade": 0.02,
+    "max_position_pct": 0.3,
+    "t_plus_2": true,
+    "trading_hours": "09:30-12:00, 13:00-16:00 HKT",
+    "unrealized_pnl": 0
+  }
+}

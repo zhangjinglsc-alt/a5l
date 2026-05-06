@@ -1,0 +1,29 @@
+[
+  {
+    "strategy_id": "turtle_trading",
+    "best_params": {
+      "entry_period": 20,
+      "exit_period": 10,
+      "stop_loss_pct": 3.0
+    },
+    "best_score": 0.21606980292005679,
+    "optimization_method": "grid_search",
+    "iterations": 48,
+    "improvement": 79.25569634978824,
+    "timestamp": "2026-05-02T04:32:57.243539"
+  },
+  {
+    "strategy_id": "trend_breakout",
+    "best_params": {
+      "breakout_period": 19,
+      "stop_loss_pct": 7.786932331438645,
+      "take_profit_pct": 10.388581558561857,
+      "position_size": 0.07429144658736725
+    },
+    "best_score": 0.32941899030678023,
+    "optimization_method": "genetic",
+    "iterations": 120,
+    "improvement": 135.8372967907374,
+    "timestamp": "2026-05-02T04:32:57.243553"
+  }
+]

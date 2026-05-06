@@ -1,0 +1,52 @@
+{
+  "tasks": {
+    "ssmg_archive": {
+      "command": "scripts/archive/ssmg_daily_archive.sh",
+      "schedule": "30 23 * * *",
+      "dependencies": [],
+      "timeout": 300,
+      "retries": 3
+    },
+    "tier1_backup": {
+      "command": "scripts/backup/tier1_core_backup.sh",
+      "schedule": "30 23 * * *",
+      "dependencies": [],
+      "timeout": 180,
+      "retries": 3
+    },
+    "tier2_backup": {
+      "command": "scripts/backup/tier2_kg_backup.sh",
+      "schedule": "45 23 * * *",
+      "dependencies": [
+        "tier1_backup"
+      ],
+      "timeout": 300,
+      "retries": 3
+    },
+    "health_check": {
+      "command": "scripts/backup/health_check.py",
+      "schedule": "55 23 * * *",
+      "dependencies": [
+        "tier2_backup"
+      ],
+      "timeout": 60,
+      "retries": 2
+    },
+    "feishu_sync": {
+      "command": "scripts/feishu/sync_to_feishu.sh",
+      "schedule": "35 23 * * *",
+      "dependencies": [
+        "ssmg_archive"
+      ],
+      "timeout": 600,
+      "retries": 2
+    },
+    "report_processing": {
+      "command": "scripts/kg/g010_full_pipeline.sh",
+      "schedule": "0 */4 * * *",
+      "dependencies": [],
+      "timeout": 1800,
+      "retries": 1
+    }
+  }
+}

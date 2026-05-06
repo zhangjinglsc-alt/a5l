@@ -1,0 +1,15 @@
+{
+  "drill_id": "DRILL_20260504_010710",
+  "scenario": {
+    "id": "db_failure",
+    "name": "数据库故障",
+    "description": "模拟KG数据库损坏",
+    "severity": "critical",
+    "action": "corrupt_db"
+  },
+  "start_time": "2026-05-04T01:07:09.365525",
+  "end_time": "2026-05-04T01:07:10.366080",
+  "recovery_time_seconds": 1.000555,
+  "success": true,
+  "rto_achieved": true
+}

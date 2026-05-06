@@ -1,0 +1,10 @@
+{
+    "scan_time": "2026-05-01T16:03:00+08:00",
+    "local_path": "/workspace/projects/workspace/data/stock_research",
+    "categories": {
+        "industry": 0,
+        "company": 0,
+        "macro": 0,
+        "strategy": 0
+    }
+}

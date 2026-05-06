@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-05",
+  "source": "GS HK Market Wrap",
+  "report_time": "17:18 China Time",
+  "market_summary": {
+    "HSI": {
+      "change_pct": -0.8,
+      "level": "Below 26,000",
+      "note": "Fell below psychological support"
+    },
+    "HSCEI": {
+      "change_pct": -0.5
+    },
+    "HSTECH": {
+      "change_pct": -0.9,
+      "note": "Giving back yesterday's +3.21% gains partially"
+    },
+    "turnover": {
+      "value_hkd_b": 122,
+      "change": "-30% DoD",
+      "context": "Second lowest this year, extremely thin volumes"
+    }
+  },
+  "sector_performance": {
+    "leaders": [
+      {"sector": "Conglomerates", "change_pct": 2.1, "driver": "CK Hutch stake sale news"},
+      {"sector": "Property", "change_pct": 0.4, "driver": "KE Holdings GIR upgrade"},
+      {"sector": "Telecom", "change_pct": 0.1}
+    ],
+    "laggards": [
+      {"sector": "Financials", "change_pct": -1.8, "driver": "HSBC earnings miss"},
+      {"sector": "Healthcare", "change_pct": -0.8, "driver": "Continued selling pressure"},
+      {"sector": "Discretionary", "change_pct": -0.7, "driver": "Sportswear weakness"}
+    ]
+  },
+  "key_stocks": {
+    "gainers": [
+      {"ticker": "CK Hutch", "change_pct": 4.0, "reason": "Vodafone stake sale news"},
+      {"ticker": "KE Holdings", "change_pct": 3.5, "reason": "GIR upgraded to Buy"}
+    ],
+    "decliners": [
+      {"ticker": "HSBC", "change_pct": -5.2, "reason": "Profit miss at lunch"},
+      {"ticker": "CTG", "change_pct": -4.4, "reason": "Continued post-results weakness"},
+      {"ticker": "Li Ning", "change_pct": -4.1, "reason": "Sportswear pullback"},
+      {"ticker": "Anta", "change_pct": -3.9, "reason": "Sportswear pullback"}
+    ]
+  },
+  "flows": {
+    "selling": ["Tencent", "WuXi AppTec", "Everest Med", "Healthcare/Pharma"],
+    "buying": ["Baidu", "Techtronic (669 HK)", "Macau/Galaxy"],
+    "two_way": ["CATL", "Industrials", "Tech"]
+  },
+  "macro_factors": [
+    "US-Iran escalation overnight",
+    "Regional holidays (China, Korea, Japan)",
+    "Extremely thin volumes (30% drop DoD)",
+    "Long selling pressure on HSI"
+  ],
+  "implications": {
+    "a_share_opening": "High probability of gap-up open tomorrow (HSI Tech momentum not fully reversed)",
+    "liquidity_warning": "Market turnover extremely thin, expect volatility when liquidity returns",
+    "sector_rotation": "Financials weak (HSBC miss), Tech mixed (Tencent sold, Baidu bought)",
+    "geopolitical": "US-Iran tension may benefit shipping/oil sectors"
+  }
+}

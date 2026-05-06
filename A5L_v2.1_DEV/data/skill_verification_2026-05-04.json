@@ -1,0 +1,64 @@
+{
+  "date": "2026-05-04",
+  "predictions_date": "2026-05-01",
+  "note": "2026-05-03为周日休市，使用2026-05-01预测进行3日验证",
+  "verification_results": {
+    "langzhu": {
+      "prediction": "观望",
+      "prediction_direction": "观望",
+      "actual": "观望",
+      "actual_detail": "Layer2显示继续震荡整理，方向仍为观望",
+      "result": "✅ 准确",
+      "detail": "预测观望，实际市场继续震荡整理，方向判断一致"
+    },
+    "buffett": {
+      "prediction": "high",
+      "prediction_divergence": "high",
+      "actual": 87.78,
+      "actual_detail": "情绪得分87.78，维持高位",
+      "result": "✅ 准确",
+      "detail": "预测分歧度高，实际情绪得分87.78（>70），判断一致"
+    },
+    "factor": {
+      "prediction": "均衡风格",
+      "prediction_style": "均衡风格",
+      "actual": "均衡风格",
+      "actual_detail": "大盘因子、反转因子仍活跃",
+      "result": "✅ 准确",
+      "detail": "预测均衡风格，实际市场仍由大盘因子和反转因子主导"
+    }
+  },
+  "accuracy_stats": {
+    "total": 3,
+    "correct": 3,
+    "partial": 0,
+    "incorrect": 0,
+    "accuracy_rate": 100.0
+  },
+  "accuracy_rate": 100.0,
+  "market_data": {
+    "date": "2026-05-04",
+    "shanghai_index": {
+      "note": "Layer2显示震荡整理延续"
+    },
+    "shenzhen_index": {
+      "note": "震荡格局"
+    },
+    "cyb_index": {
+      "note": "创业板震荡"
+    },
+    "main_sector": "均衡风格（大盘因子、反转因子）",
+    "sentiment_score": 87.78,
+    "sentiment_stage": "情绪阶段（高潮）",
+    "volume": "正常",
+    "limit_up": 79,
+    "limit_down": 11
+  },
+  "portfolio_data": {
+    "total_value": 6787421.47,
+    "total_pnl_pct": 0.55,
+    "holdings_count": 7,
+    "performance": "微幅上涨"
+  },
+  "generated_at": "2026-05-04T16:00:00+08:00"
+}

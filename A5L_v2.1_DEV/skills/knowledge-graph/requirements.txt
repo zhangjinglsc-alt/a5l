@@ -1,0 +1,18 @@
+# A5L Knowledge Graph Requirements
+
+## 依赖包列表
+
+```
+networkx>=3.0
+pyvis>=0.3.0  # 可视化（后续使用）
+```
+
+## 安装命令
+
+```bash
+pip install networkx pyvis
+```
+
+## Python版本要求
+
+Python 3.8+

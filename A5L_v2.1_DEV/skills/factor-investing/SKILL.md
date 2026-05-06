@@ -1,0 +1,63 @@
+---
+name: factor-investing
+description: Quantitative factor investing analysis including value, growth, momentum, quality, and low-volatility factors. Use for multi-factor stock screening, factor backtesting, and quantitative portfolio construction.
+---
+
+# 因子投资方法论 SKILL
+
+## 描述
+
+基于《因子投资：方法与实践》，融合约翰·赫尔组合优化+瑞·达利欧宏观周期因子，包含市场/规模/价值/动量/盈利/投资/换手率因子，适用于量化策略构建和因子选股。
+
+## 使用方法
+
+触发此 Skill 的指令：
+- `/因子投资` - 启动因子投资分析
+- `/量化分析` - 进行量化策略分析
+- `/多因子模型` - 构建多因子选股模型
+- `/组合优化` - 进行投资组合优化
+- `/风险预算` - 风险预算分析
+
+## 功能
+
+### 核心因子
+1. **市场因子 (Market Factor)** - 市场风险溢价
+2. **规模因子 (Size Factor)** - SMB (Small Minus Big)
+3. **价值因子 (Value Factor)** - HML (High Minus Low)
+4. **动量因子 (Momentum Factor)** - 价格动量效应
+5. **盈利因子 (Profitability Factor)** - 盈利能力溢价
+6. **投资因子 (Investment Factor)** - 投资风格因子
+7. **换手率因子 (Turnover Factor)** - 流动性因子
+
+### 组合优化方法
+- 约翰·赫尔均值-方差优化
+- 风险平价配置
+- 风险预算分配
+- Black-Litterman 模型
+
+### 宏观周期因子
+- 瑞·达利欧经济周期分析
+- 债务周期定位
+- 货币/信贷环境评估
+
+## 工作流程
+
+1. **数据获取** - 获取股票基本面和市场数据
+2. **因子计算** - 计算各类风格因子暴露
+3. **因子检验** - 检验因子有效性 (IC测试、分层测试)
+4. **组合构建** - 基于因子得分构建投资组合
+5. **风险优化** - 应用组合优化技术
+6. **回测验证** - 验证策略历史表现
+
+## 输出
+
+- 因子暴露分析
+- 组合权重配置
+- 风险收益特征
+- 回测绩效报告
+
+## 注意事项
+
+- 因子存在周期性失效风险
+- 需关注因子拥挤度
+- 定期重新评估因子有效性

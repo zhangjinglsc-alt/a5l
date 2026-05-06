@@ -1,0 +1,78 @@
+name: Upptime CI
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  # 监控服务状态
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          
+      - name: Check services
+        uses: upptime/uptime-monitor@v1.0.0
+        with:
+          command: "update"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+
+  # 更新响应时间统计
+  response-time:
+    runs-on: ubuntu-latest
+    needs: uptime
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          
+      - name: Update response time
+        uses: upptime/uptime-monitor@v1.0.0
+        with:
+          command: "response-time"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+
+  # 生成状态页面
+  static-site:
+    runs-on: ubuntu-latest
+    needs: [uptime, response-time]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          
+      - name: Generate status page
+        uses: upptime/status-page@v1.0.0
+        with:
+          command: "site"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+
+  # 生成图表
+  graphs:
+    runs-on: ubuntu-latest
+    needs: uptime
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          
+      - name: Generate graphs
+        uses: upptime/graphs@v1.0.0
+        with:
+          command: "graphs"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}

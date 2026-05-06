@@ -1,0 +1,72 @@
+---
+name: unified-stock-price
+description: Unified stock price data from multiple sources (AKShare, TuShare, Yahoo). Use for real-time and historical price data retrieval with failover.
+---
+
+# 统一股票价格 SKILL
+
+## 描述
+
+统一的股票数据接口，自动多源切换，获取股票价格、基本面、市场数据、财务数据、技术指标，适用于股票数据查询、价格分析、财务分析、市场研究。
+
+> **版本说明**: v2.0 - 已整合原 `aakshare` 数据层功能，支持更全面的数据源。
+> **替代技能**: `aakshare` (已归档至 legacy/archive/)
+
+## 使用方法
+
+触发此 Skill 的指令：
+- `股票数据` - 获取股票数据
+- `价格` - 查询股票价格
+- `财务分析` - 获取财务数据
+- `基本面` - 获取基本面数据
+- `市场数据` - 获取市场数据
+
+## 数据源
+
+- **AkShare** - A股数据（免费）
+- **Tushare** - 金融数据（需积分）
+- **Yahoo Finance** - 美股数据
+- **东方财富** - 实时行情
+- **新浪财经** - 实时报价
+
+## 功能
+
+### 价格数据
+- 实时行情
+- 历史K线（日/周/月/分钟）
+- 分笔数据
+- 复权处理
+
+### 基本面数据
+- 财务报表（年报/季报）
+- 财务指标（ROE/毛利率/净利率）
+- 估值数据（PE/PB/PS）
+- 股东信息
+
+### 市场数据
+- 大盘指数
+- 行业板块
+- 资金流向
+- 融资融券
+
+### 技术指标
+- 均线（MA/EMA）
+- MACD/KDJ/RSI
+- 布林带
+- 成交量指标
+
+## 使用示例
+
+```python
+# 获取股票价格
+get_stock_price("000001.SZ")
+
+# 获取历史数据
+get_history_data("000001.SZ", period="1y")
+
+# 获取财务报表
+get_financial_report("000001.SZ", report_type="annual")
+
+# 获取技术指标
+calculate_indicator("000001.SZ", indicator="MACD")
+```

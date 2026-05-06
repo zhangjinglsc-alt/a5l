@@ -1,0 +1,199 @@
+# A5L 统一配置系统
+# 支持: 开发环境、测试环境、生产环境
+
+# ============================================================================
+# 系统基础配置
+# ============================================================================
+system:
+  name: "A5L"
+  version: "1.5.0"
+  environment: "development"  # development/test/production
+  debug: true
+  log_level: "INFO"
+  timezone: "Asia/Shanghai"
+
+# ============================================================================
+# 数据层配置 (L1)
+# ============================================================================
+data:
+  # 数据源配置
+  sources:
+    primary: "akshare"  # 主数据源
+    backups: ["tushare", "yahoo"]  # 备用数据源
+    
+  # 数据质量配置
+  quality:
+    check_interval: 300  # 检查间隔(秒)
+    min_quality_score: 0.8  # 最低质量分
+    auto_repair: true  # 自动修复
+    
+  # 数据归档配置
+  archival:
+    enabled: true
+    retention_days: 365  # 保留天数
+    archive_path: "./data/archive"
+
+# ============================================================================
+# 策略层配置 (L2)
+# ============================================================================
+strategy:
+  # 策略版本管理
+  versioning:
+    enabled: true
+    max_versions: 10  # 保留版本数
+    auto_backup: true
+    
+  # 回测配置
+  backtest:
+    default_period: "3y"  # 默认回测期
+    commission: 0.0003  # 佣金率
+    slippage: 0.001  # 滑点
+    
+  # 策略沙箱
+  sandbox:
+    enabled: true
+    virtual_cash: 1000000  # 虚拟资金
+
+# ============================================================================
+# 分析层配置 (L3)
+# ============================================================================
+analysis:
+  # 分析引擎配置
+  engines:
+    - "value_cell"
+    - "bearish_perspective"
+    - "industry_chain"
+    - "five_step"
+    
+  # 偏见检测
+  bias_detection:
+    enabled: true
+    sensitivity: "medium"  # low/medium/high
+    
+  # 推理链记录
+  reasoning_chain:
+    enabled: true
+    storage: "kiwi"  # 存储到KIWI知识库
+
+# ============================================================================
+# 执行层配置 (L4)
+# ============================================================================
+execution:
+  # 风控配置
+  risk_control:
+    enabled: true
+    max_position_size: 0.2  # 单票最大仓位
+    max_drawdown: 0.1  # 最大回撤
+    circuit_breaker: true  # 熔断机制
+    
+  # 交易执行
+  optimizer:
+    enabled: true
+    algorithm: "twap"  # twap/vwap/iceberg
+    urgency: "normal"  # passive/normal/aggressive
+    
+  # 模拟交易
+  simulation:
+    enabled: true
+    initial_cash: 1000000
+    commission: 0.0003
+
+# ============================================================================
+# 学习层配置 (L5)
+# ============================================================================
+learning:
+  # 复盘配置
+  review:
+    enabled: true
+    schedule: "daily"  # daily/weekly/monthly
+    auto_generate: true
+    
+  # 能力归因
+  attribution:
+    enabled: true
+    factors: ["selection", "allocation", "timing"]
+    
+  # 知识复利
+  knowledge:
+    enabled: true
+    storage: "kiwi"
+    auto_link: true
+
+# ============================================================================
+# 整合引擎配置 (L0)
+# ============================================================================
+integration:
+  # 冲突检测
+  conflict_detection:
+    enabled: true
+    check_on_startup: true
+    
+  # 自适应路由
+  adaptive_routing:
+    enabled: true
+    learning_rate: 0.1
+    
+  # 制衡机制
+  oversight:
+    enabled: true
+    checks: ["power", "conflict", "risk", "integrity"]
+    
+  # 递归改进
+  self_improvement:
+    enabled: true
+    cycle_interval: 3600  # 改进周期(秒)
+
+# ============================================================================
+# 外部服务配置
+# ============================================================================
+services:
+  # 飞书集成
+  feishu:
+    enabled: true
+    folder_token: "DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+    auto_sync: true
+    sync_time: "23:30"
+    
+  # GitHub集成
+  github:
+    enabled: true
+    repo: "zhangjinglsc-alt/a5l"
+    auto_push: true
+    
+  # KIWI知识库
+  kiwi:
+    enabled: true
+    path: "./KIWI"
+    auto_archive: true
+
+# ============================================================================
+# 通知配置
+# ============================================================================
+notifications:
+  # 告警配置
+  alerts:
+    enabled: true
+    channels: ["feishu", "console"]
+    
+  # 报告配置
+  reports:
+    daily: true
+    weekly: true
+    monthly: true
+    
+  # 风险告警
+  risk_alerts:
+    enabled: true
+    thresholds:
+      daily_loss: 0.05  # 日亏损5%告警
+      position_concentration: 0.3  # 集中度30%告警
+
+# ============================================================================
+# 路径配置
+# ============================================================================
+paths:
+  data: "./data"
+  logs: "./logs"
+  cache: "./cache"
+  skills: "./ARCHITECT_5L"
+  output: "./output"

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AI基础设施产业链 - 知识图谱 (2026-05-04)</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+        }
+        #header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        #header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+        #mynetwork {
+            width: 100%;
+            height: 700px;
+            background: white;
+            border: 2px solid #e0e6ed;
+        }
+        #sidebar {
+            position: fixed;
+            right: 20px;
+            top: 150px;
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        #sidebar h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .color-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .stat-box h4 {
+            margin: 0 0 10px 0;
+            color: #667eea;
+        }
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 13px;
+        }
+        .key-finding {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 13px;
+        }
+        .key-finding strong {
+            color: #2e7d32;
+        }
+        #controls {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 13px;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🏗️ AI基础设施产业链知识图谱</h1>
+        <p>基于6份研报分析 | 2026-05-04 | 硬件基础设施 → 软件应用变现</p>
+    </div>
+    
+    <div id="mynetwork"></div>
+    
+    <div id="sidebar">
+        <h3>📊 图例说明</h3>
+        <div class="legend-item">
+            <div class="color-box" style="background: #FF6B6B;"></div>
+            <span>📈 研报来源 (MS/GS/SNIA)</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #4ECDC4;"></div>
+            <span>🏭 行业领域 (存储/半导体/DC)</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #45B7D1;"></div>
+            <span>💡 核心概念 (AI算力/变现)</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #FFA07A;"></div>
+            <span>📄 具体研报</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #F7DC6F;"></div>
+            <span>🎯 股票标的</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #98D8C8;"></div>
+            <span>📈 关键数据</span>
+        </div>
+        
+        <div class="stat-box">
+            <h4>📈 核心发现</h4>
+            <div class="key-finding">
+                <strong>存储价格暴涨:</strong><br>
+                DRAM +45-50%, NAND +80%
+            </div>
+            <div class="key-finding">
+                <strong>MediaTek TPU:</strong><br>
+                $20B → $120B → $210B
+            </div>
+            <div class="key-finding">
+                <strong>AI应用变现:</strong><br>
+                MiniMax ARR $2.5亿
+            </div>
+            <div class="key-finding">
+                <strong>阿里云+AI:</strong><br>
+                增长 +40% YoY
+            </div>
+        </div>
+        
+        <div class="stat-box">
+            <h4>📊 统计信息</h4>
+            <div class="stat-item">
+                <span>研报数量:</span>
+                <strong>6份</strong>
+            </div>
+            <div class="stat-item">
+                <span>覆盖行业:</span>
+                <strong>4个</strong>
+            </div>
+            <div class="stat-item">
+                <span>股票标的:</span>
+                <strong>15+</strong>
+            </div>
+            <div class="stat-item">
+                <span>知识节点:</span>
+                <strong>50+</strong>
+            </div>
+        </div>
+    </div>
+    
+    <div id="controls">
+        <button onclick="fitGraph()">🔍 适配全图</button>
+        <button onclick="focusHardware()">🔧 硬件层</button>
+        <button onclick="focusSoftware()">💻 软件层</button>
+    </div>
+
+    <script type="text/javascript">
+        // 节点数据
+        var nodes = new vis.DataSet([
+            // 研报来源
+            {id: "source_MS", label: "Morgan Stanley", group: "source", color: "#FF6B6B", shape: "box", size: 30, title: "3份研报"},
+            {id: "source_GS", label: "Goldman Sachs", group: "source", color: "#FF6B6B", shape: "box", size: 30, title: "2份研报"},
+            {id: "source_SNIA", label: "SNIA/KIOXIA", group: "source", color: "#FF6B6B", shape: "box", size: 25, title: "1份研报"},
+            
+            // 行业
+            {id: "industry_storage", label: "存储", group: "industry", color: "#4ECDC4", shape: "box", size: 25},
+            {id: "industry_semiconductor", label: "半导体", group: "industry", color: "#4ECDC4", shape: "box", size: 25},
+            {id: "industry_datacenter", label: "数据中心", group: "industry", color: "#4ECDC4", shape: "box", size: 25},
+            {id: "industry_ai_application", label: "AI应用", group: "industry", color: "#4ECDC4", shape: "box", size: 25},
+            
+            // 概念
+            {id: "concept_ai_infrastructure", label: "AI基础设施", group: "concept", color: "#45B7D1", shape: "diamond", size: 35, font: {size: 16, bold: true}},
+            {id: "concept_hardware", label: "硬件层", group: "concept", color: "#45B7D1", shape: "diamond", size: 25},
+            {id: "concept_software", label: "软件层", group: "concept", color: "#45B7D1", shape: "diamond", size: 25},
+            {id: "concept_monetization", label: "应用变现", group: "concept", color: "#45B7D1", shape: "diamond", size: 25},
+            
+            // 研报
+            {id: "report_1", label: "SNIA存储需求", group: "report", color: "#FFA07A", shape: "dot", size: 20, title: "NAND需求CAGR 34%"},
+            {id: "report_2", label: "MediaTek TPU", group: "report", color: "#FFA07A", shape: "dot", size: 20, title: "$20B→$210B"},
+            {id: "report_3", label: "模拟半导体复苏", group: "report", color: "#FFA07A", shape: "dot", size: 20, title: "周期拐点已现"},
+            {id: "report_4", label: "中国DC需求", group: "report", color: "#FFA07A", shape: "dot", size: 20, title: ">4GW需求"},
+            {id: "report_5", label: "GS存储价格", group: "report", color: "#FFA07A", shape: "dot", size: 22, title: "DRAM +45-50%"},
+            {id: "report_6", label: "中国AI模型", group: "report", color: "#FFA07A", shape: "dot", size: 22, title: "MiniMax ARR $2.5亿"},
+            
+            // 股票标的
+            {id: "stock_mediatek", label: "MediaTek\n2454.TW", group: "stock", color: "#F7DC6F", shape: "dot", size: 30, title: "目标价 NT$2,988"},
+            {id: "stock_samsung", label: "Samsung", group: "stock", color: "#F7DC6F", shape: "dot", size: 28, title: "目标价 W320,000"},
+            {id: "stock_skhynix", label: "SK Hynix", group: "stock", color: "#F7DC6F", shape: "dot", size: 28, title: "目标价 W1,800,000"},
+            {id: "stock_adi", label: "ADI", group: "stock", color: "#F7DC6F", shape: "dot", size: 25, title: "模拟龙头"},
+            {id: "stock_infineon", label: "Infineon", group: "stock", color: "#F7DC6F", shape: "dot", size: 25, title: "AI电源"},
+            {id: "stock_gds", label: "GDS", group: "stock", color: "#F7DC6F", shape: "dot", size: 25, title: "中国DC龙头"},
+            {id: "stock_minimax", label: "MiniMax\n0100.HK", group: "stock", color: "#F7DC6F", shape: "dot", size: 30, title: "目标价 HK$1,000"},
+            {id: "stock_alibaba", label: "阿里巴巴\nBABA", group: "stock", color: "#F7DC6F", shape: "dot", size: 28, title: "云+AI +40%"},
+            {id: "stock_nxp", label: "NXP", group: "stock", color: "#F7DC6F", shape: "dot", size: 22},
+            {id: "stock_stm", label: "STM", group: "stock", color: "#F7DC6F", shape: "dot", size: 22},
+            {id: "stock_on", label: "Onsemi", group: "stock", color: "#F7DC6F", shape: "dot", size: 22},
+            
+            // 关键数据
+            {id: "data_dram", label: "DRAM\n+45-50%", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+            {id: "data_nand", label: "NAND\n+80%", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+            {id: "data_tpu", label: "TPU\n$20B→$210B", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+            {id: "data_arr", label: "ARR\n$2.5亿", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+            {id: "data_dc", label: "DC需求\n>4GW", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+            {id: "data_cloud", label: "云+AI\n+40%", group: "data", color: "#98D8C8", shape: "box", size: 20, font: {color: '#d32f2f', bold: true}},
+        ]);
+        
+        // 边数据
+        var edges = new vis.DataSet([
+            // 研报来源关系
+            {from: "source_MS", to: "report_2", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            {from: "source_MS", to: "report_3", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            {from: "source_MS", to: "report_4", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            {from: "source_GS", to: "report_5", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            {from: "source_GS", to: "report_6", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            {from: "source_SNIA", to: "report_1", label: "发布", arrows: "to", color: {color: "#ccc"}},
+            
+            // 研报与行业
+            {from: "report_1", to: "industry_storage", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            {from: "report_2", to: "industry_semiconductor", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            {from: "report_3", to: "industry_semiconductor", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            {from: "report_4", to: "industry_datacenter", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            {from: "report_5", to: "industry_storage", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            {from: "report_6", to: "industry_ai_application", label: "分析", arrows: "to", color: {color: "#4ECDC4"}},
+            
+            // 行业与概念
+            {from: "industry_storage", to: "concept_ai_infrastructure", label: "属于", arrows: "to", color: {color: "#45B7D1", width: 3}},
+            {from: "industry_semiconductor", to: "concept_ai_infrastructure", label: "属于", arrows: "to", color: {color: "#45B7D1", width: 3}},
+            {from: "industry_datacenter", to: "concept_ai_infrastructure", label: "属于", arrows: "to", color: {color: "#45B7D1", width: 3}},
+            {from: "industry_ai_application", to: "concept_ai_infrastructure", label: "属于", arrows: "to", color: {color: "#45B7D1", width: 3}},
+            
+            // 硬件层与软件层
+            {from: "industry_storage", to: "concept_hardware", label: "硬件", arrows: "to", color: {color: "#667eea", width: 2}},
+            {from: "industry_semiconductor", to: "concept_hardware", label: "硬件", arrows: "to", color: {color: "#667eea", width: 2}},
+            {from: "industry_datacenter", to: "concept_hardware", label: "硬件", arrows: "to", color: {color: "#667eea", width: 2}},
+            {from: "industry_ai_application", to: "concept_software", label: "软件", arrows: "to", color: {color: "#764ba2", width: 2}},
+            {from: "concept_software", to: "concept_monetization", label: "变现", arrows: "to", color: {color: "#4caf50", width: 3}},
+            
+            // 核心证据链: 硬件需求 → 软件变现
+            {from: "concept_hardware", to: "concept_software", label: "验证", arrows: "to", color: {color: "#ff5722", width: 4, dashes: true}, font: {size: 14, color: "#ff5722", bold: true}},
+            
+            // 研报与股票
+            {from: "report_2", to: "stock_mediatek", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_5", to: "stock_samsung", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_5", to: "stock_skhynix", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_3", to: "stock_adi", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_3", to: "stock_infineon", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_4", to: "stock_gds", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_6", to: "stock_minimax", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            {from: "report_6", to: "stock_alibaba", label: "推荐", arrows: "to", color: {color: "#F7DC6F", width: 2}},
+            
+            // 股票与行业
+            {from: "stock_samsung", to: "industry_storage", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_skhynix", to: "industry_storage", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_mediatek", to: "industry_semiconductor", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_adi", to: "industry_semiconductor", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_infineon", to: "industry_semiconductor", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_gds", to: "industry_datacenter", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_minimax", to: "industry_ai_application", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            {from: "stock_alibaba", to: "industry_ai_application", label: "属于", arrows: "to", color: {color: "#ccc"}},
+            
+            // 研报与关键数据
+            {from: "report_5", to: "data_dram", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            {from: "report_5", to: "data_nand", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            {from: "report_2", to: "data_tpu", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            {from: "report_6", to: "data_arr", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            {from: "report_4", to: "data_dc", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            {from: "report_6", to: "data_cloud", label: "数据", arrows: "to", color: {color: "#98D8C8"}},
+            
+            // 数据验证关系
+            {from: "data_dram", to: "data_arr", label: "验证", arrows: "to", color: {color: "#4caf50", width: 2}, font: {color: "#4caf50"}},
+            {from: "data_nand", to: "data_cloud", label: "验证", arrows: "to", color: {color: "#4caf50", width: 2}, font: {color: "#4caf50"}},
+        ]);
+        
+        // 创建网络
+        var container = document.getElementById('mynetwork');
+        var data = {nodes: nodes, edges: edges};
+        var options = {
+            nodes: {
+                font: {size: 14, color: '#333'},
+                borderWidth: 2,
+                shadow: true
+            },
+            edges: {
+                width: 2,
+                shadow: true,
+                smooth: {type: 'continuous'},
+                font: {size: 12, align: 'middle'}
+            },
+            physics: {
+                stabilization: true,
+                barnesHut: {
+                    gravitationalConstant: -6000,
+                    springConstant: 0.05,
+                    springLength: 180
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                hideEdgesOnDrag: true
+            },
+            groups: {
+                source: {color: {background: '#FF6B6B', border: '#ee5a5a'}},
+                industry: {color: {background: '#4ECDC4', border: '#3dbdb4'}},
+                concept: {color: {background: '#45B7D1', border: '#34a7c1'}},
+                report: {color: {background: '#FFA07A', border: '#ff8f6a'}},
+                stock: {color: {background: '#F7DC6F', border: '#f5d55f'}},
+                data: {color: {background: '#98D8C8', border: '#87c7b7'}}
+            }
+        };
+        
+        var network = new vis.Network(container, data, options);
+        
+        // 控制函数
+        function fitGraph() {
+            network.fit({animation: true});
+        }
+        
+        function focusHardware() {
+            network.focus('concept_hardware', {
+                scale: 1.2,
+                animation: true
+            });
+        }
+        
+        function focusSoftware() {
+            network.focus('concept_software', {
+                scale: 1.2,
+                animation: true
+            });
+        }
+        
+        // 点击事件
+        network.on("click", function (params) {
+            if (params.nodes.length > 0) {
+                var nodeId = params.nodes[0];
+                var node = nodes.get(nodeId);
+                console.log("点击了节点:", node.label, node.title || '');
+            }
+        });
+    </script>
+</body>
+</html>

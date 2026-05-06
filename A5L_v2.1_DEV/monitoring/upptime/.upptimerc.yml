@@ -1,0 +1,64 @@
+# A5L Upptime 监控配置
+# 监控核心服务状态
+
+sites:
+  - name: A5L Gateway
+    url: http://localhost:8080/status
+    __dangerous__insecure: true
+    
+  - name: A5L GitHub Repository
+    url: https://github.com/zhangjinglsc-alt/a5l
+    
+  - name: Feishu API
+    url: https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    expectedStatusCodes:
+      - 200
+      - 400  # 缺少参数也是正常响应
+      
+  - name: Finnhub API
+    url: https://finnhub.io/api/v1/quote?symbol=AAPL&token=d7t10uhr01qugn08ufg0d7t10uhr01qugn08ufgg
+    
+  - name: A5L Documentation
+    url: https://docs.openclaw.ai
+    
+  - name: GitHub API
+    url: https://api.github.com/repos/zhangjinglsc-alt/a5l
+
+# 监控配置
+workflowSchedule:
+  uptime: "*/5 * * * *"  # 每5分钟检查一次
+  graphs: "0 0 * * *"     # 每小时更新图表
+  responseTime: "0 */6 * * *"  # 每6小时更新响应时间
+  staticSite: "0 1 * * *"      # 每天更新静态站点
+  summary: "0 0 * * *"         # 每天生成摘要
+  templates: "0 0 * * *"       # 每天更新模板
+
+# 通知设置
+notifications:
+  - type: webhook
+    url: ${FEISHU_WEBHOOK_URL}
+    # 飞书群组通知
+    
+  - type: console
+    # 本地控制台输出
+
+# 状态页面配置
+status-website:
+  theme: default
+  name: A5L System Status
+  introTitle: "**A5L** 系统状态监控
+  introMessage: 实时监控A5L核心服务健康状态
+  navbar:
+    - title: 主页
+      href: /
+    - title: GitHub
+      href: https://github.com/zhangjinglsc-alt/a5l
+
+# 提交信息配置
+commitMessages:
+  readmeContent: "🟥 服务中断 - $SITE_NAME ($DATE)"
+  readmeNoData: "🟨 数据缺失 - $SITE_NAME ($DATE)"
+  readmeOk: "🟩 服务恢复 - $SITE_NAME ($DATE)"

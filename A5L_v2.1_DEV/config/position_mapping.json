@@ -1,0 +1,239 @@
+{
+  "version": "1.1",
+  "created_at": "2026-05-06",
+  "updated_at": "2026-05-06",
+  "description": "A5L持仓文件映射配置 - 区分真实持仓与模拟持仓 (含账户尾号映射)",
+  
+  "real_positions": {
+    "type": "REAL",
+    "description": "国联民生证券真实持仓 (SignalArena同步)",
+    "risk_level": "HIGH",
+    "warning": "涉及真实资金，操作前必须二次确认",
+    "broker": "国联民生证券",
+    
+    "master_file": "memory/portfolio/REAL_POSITION_MASTER.md",
+    "screenshot_dir": "memory/portfolio/screenshots/",
+    
+    "source_files": {
+      "latest_report": "memory/portfolio/REAL_POSITION_MASTER.md",
+      "screenshots": "memory/portfolio/screenshots/YYYY-MM-DD/",
+      "transaction_logs": "trading-review-wiki/raw/交割单/"
+    },
+    
+    "accounts": [
+      {
+        "id": "zhangjin",
+        "name": "张晋",
+        "alias": "自有",
+        "broker": "国联民生证券",
+        "account_suffix": "6662",
+        "type": "主账户",
+        "status": "普通账户",
+        "total_assets": 957241.03,
+        "total_pnl": 8727.67,
+        "leverage": "无杠杆",
+        "holdings": ["000066", "002436", "300708"],
+        "screenshot": "zhangjin_6662.png"
+      },
+      {
+        "id": "wgb",
+        "name": "WGB",
+        "alias": "WGB",
+        "broker": "国联民生证券",
+        "account_suffix": "9603",
+        "type": "子账户",
+        "status": "普通账户",
+        "total_assets": 2045294.43,
+        "total_pnl": 52197.53,
+        "leverage": "无杠杆",
+        "holdings": ["601975"],
+        "screenshot": "wgb_9603.png"
+      },
+      {
+        "id": "wangli",
+        "name": "王力",
+        "alias": "王力",
+        "broker": "国联民生证券",
+        "account_suffix": "0055",
+        "type": "子账户",
+        "status": "融资融券账户",
+        "total_assets": 1189797.65,
+        "total_pnl": -133022.94,
+        "leverage": "175.5%",
+        "margin_ratio": "232.42%",
+        "holdings": ["601975", "恒科技"],
+        "screenshot": "wangli_0055.png"
+      },
+      {
+        "id": "laoniang",
+        "name": "老娘",
+        "alias": "老娘",
+        "broker": "国联民生证券",
+        "account_suffix": "0179",
+        "type": "子账户",
+        "status": "融资融券账户",
+        "total_assets": 561859.94,
+        "total_pnl": -26456.55,
+        "leverage": "167.8%",
+        "margin_ratio": "247.40%",
+        "holdings": ["688981", "601975"],
+        "screenshot": "laoniang_0179.jpg"
+      }
+    ],
+    
+    "current_holdings": {
+      "000066": {
+        "name": "中国长城",
+        "total_shares": 48000,
+        "avg_cost": 16.862,
+        "current_price": 19.82,
+        "market_value": 951360,
+        "unrealized_pnl": 141908.20,
+        "unrealized_pnl_pct": 17.54,
+        "accounts": ["zhangjin(6662)"],
+        "status": "⭐核心持仓",
+        "concentration": "99.4% (张晋账户)"
+      },
+      "601975": {
+        "name": "招商南油",
+        "total_shares": 1220600,
+        "avg_cost": 4.52,
+        "current_price": 4.48,
+        "market_value": 5467616,
+        "unrealized_pnl": -121618,
+        "unrealized_pnl_pct": -2.22,
+        "accounts": [
+          "wgb(9603): 456,500股",
+          "wangli(0055): 265,500股", 
+          "laoniang(0179): 42,200股"
+        ],
+        "status": "🔴高风险集中度",
+        "concentration": "115% (跨三账户)",
+        "risk_warning": "超过50%阈值，存在系统性风险"
+      },
+      "688981": {
+        "name": "中芯国际",
+        "total_shares": 3139,
+        "avg_cost": 121.447,
+        "current_price": 118.73,
+        "market_value": 372693,
+        "unrealized_pnl": -8522,
+        "unrealized_pnl_pct": -2.24,
+        "accounts": ["laoniang(0179)"],
+        "status": "辅助持仓"
+      },
+      "002436": {
+        "name": "兴森科技",
+        "total_shares": 100,
+        "avg_cost": 163.418,
+        "current_price": 27.71,
+        "market_value": 2771,
+        "unrealized_pnl": -13564,
+        "unrealized_pnl_pct": -83.04,
+        "accounts": ["zhangjin(6662)"],
+        "status": "观察仓",
+        "note": "成本价异常，可能历史遗留"
+      },
+      "300708": {
+        "name": "聚灿光电",
+        "total_shares": 100,
+        "avg_cost": 1205.684,
+        "current_price": 8.85,
+        "market_value": 885,
+        "unrealized_pnl": -119616,
+        "unrealized_pnl_pct": -99.27,
+        "accounts": ["zhangjin(6662)"],
+        "status": "观察仓",
+        "note": "成本价异常，可能历史遗留"
+      }
+    },
+    
+    "risk_summary": {
+      "total_assets_all_accounts": 4754193.05,
+      "total_unrealized_pnl": -98554.29,
+      "high_concentration_warning": "招商南油跨账户集中度115%",
+      "margin_accounts": ["wangli(0055)", "laoniang(0179)"],
+      "margin_risk": "王力和老娘使用融资杠杆，需密切关注维持担保比例"
+    },
+    
+    "last_update": "2026-05-06 02:57",
+    "screenshot_date": "2026-05-05"
+  },
+  
+  "simulation_positions": {
+    "type": "SIMULATION",
+    "description": "A5L三市场模拟交易 (试错实验场)",
+    "risk_level": "NONE",
+    "warning": "模拟账户，不涉及真实资金",
+    
+    "master_file": "memory/simulation/SIM_POSITION_MASTER.md",
+    
+    "accounts": [
+      {
+        "id": "US_SIM_001",
+        "market": "US",
+        "currency": "USD",
+        "initial_capital": 1000000,
+        "data_file": "data/simulation/US_SIM_001.json",
+        "doc_id": "UwxNdkLXHoB6hYxRAlyc9r7Vnef",
+        "status": "active",
+        "positions": 4,
+        "holdings": ["NVDA", "INTC", "WDC", "AMD"]
+      },
+      {
+        "id": "CN_SIM_001",
+        "market": "CN",
+        "currency": "CNY",
+        "initial_capital": 5000000,
+        "data_file": "data/simulation/CN_SIM_001.json",
+        "doc_id": "XHnvd8pvwoGlkYxPjPPc2GdgnBg",
+        "status": "waiting_open",
+        "positions": 0,
+        "holdings": [],
+        "plans": ["CN-PLAN-20260506-0001", "CN-PLAN-20260506-0002"]
+      },
+      {
+        "id": "HK_SIM_001",
+        "market": "HK",
+        "currency": "HKD",
+        "initial_capital": 5000000,
+        "data_file": "data/simulation/HK_SIM_001.json",
+        "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM",
+        "status": "waiting_open",
+        "positions": 0,
+        "holdings": [],
+        "plans": ["HK-PLAN-20260506-0001", "HK-PLAN-20260506-0002"]
+      }
+    ],
+    
+    "last_update": "2026-05-06 00:49:00"
+  },
+  
+  "quick_access": {
+    "real_position_summary": "cat memory/portfolio/REAL_POSITION_MASTER.md | head -100",
+    "sim_position_summary": "cat memory/simulation/SIM_POSITION_MASTER.md | head -100",
+    "us_sim_positions": "cat data/simulation/US_SIM_001.json | jq '.positions'",
+    "cn_sim_positions": "cat data/simulation/CN_SIM_001.json | jq '.positions'",
+    "hk_sim_positions": "cat data/simulation/HK_SIM_001.json | jq '.positions'",
+    "view_screenshots": "ls -la memory/portfolio/screenshots/2026-05-06/"
+  },
+  
+  "feishu_docs": {
+    "real_position": {
+      "title_format": "[REAL] 真实持仓报告 YYYYMMDD",
+      "folder": "空间2/40_持仓与交易/真实持仓"
+    },
+    "sim_us": {
+      "title_format": "[SIM-US] 美股模拟交易计划",
+      "doc_id": "UwxNdkLXHoB6hYxRAlyc9r7Vnef"
+    },
+    "sim_cn": {
+      "title_format": "[SIM-CN] A股模拟交易计划",
+      "doc_id": "XHnvd8pvwoGlkYxPjPPc2GdgnBg"
+    },
+    "sim_hk": {
+      "title_format": "[SIM-HK] 港股模拟交易计划",
+      "doc_id": "MoIhdpAnxoUXNzxWPlycLfMqnAM"
+    }
+  }
+}

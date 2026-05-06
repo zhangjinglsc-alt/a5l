@@ -1,0 +1,66 @@
+---
+name: fx-factor-monitor
+description: Foreign exchange factor monitoring and currency risk analysis. Use for tracking forex markets and currency-hedged investments.
+---
+
+# FX Factor Monitor SKILL
+
+## 描述
+
+外汇因子监控工具，实时追踪主要货币对汇率、分析宏观因子对汇率的影响，适用于外汇投资分析、汇率风险管理、跨境投资。
+
+## 使用方法
+
+触发此 Skill 的指令：
+- `外汇` - 外汇监控
+- `汇率` - 汇率分析
+- `美元指数` - 美元指数分析
+- `人民币汇率` - 人民币汇率分析
+
+## 监控货币对
+
+### 主要货币对
+- EUR/USD - 欧元/美元
+- USD/JPY - 美元/日元
+- GBP/USD - 英镑/美元
+- USD/CHF - 美元/瑞郎
+
+### 商品货币
+- AUD/USD - 澳元/美元
+- USD/CAD - 美元/加元
+- NZD/USD - 纽元/美元
+
+### 新兴市场
+- USD/CNY - 美元/人民币
+- USD/HKD - 美元/港币
+- USD/SGD - 美元/新加坡元
+
+## 影响因子
+
+### 利率因子
+- 央行利率决议
+- 利差变化
+- 预期差
+
+### 经济因子
+- GDP增长
+- 通胀数据
+- 就业数据
+- 贸易收支
+
+### 风险因子
+- 避险情绪
+- 地缘政治
+- 市场波动率
+
+### 政策因子
+- 央行政策声明
+- 财政刺激
+- 汇率干预
+
+## 输出
+
+- 实时汇率报价
+- 技术分析图表
+- 因子影响分析
+- 汇率预测

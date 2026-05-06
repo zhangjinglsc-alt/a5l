@@ -1,0 +1,81 @@
+---
+name: unified-news-aggregator
+description: Unified news aggregation from 28+ high-value sources including financial, tech, and industry news. Use for comprehensive market intelligence and sentiment analysis.
+---
+
+# 统一新闻聚合 SKILL
+
+## 描述
+
+全网新闻聚合助手，覆盖28+高价值信源，生成科技/财经/AI早报，适用于新闻聚合、资讯获取、行业扫描、早报速读、研报速读。
+
+> **版本说明**: v2.0 - 已整合原 `ai-news-aggregator` AI新闻聚合功能，增强AI板块覆盖。
+> **替代技能**: `ai-news-aggregator` (已归档至 legacy/archive/)
+
+## 使用方法
+
+触发此 Skill 的指令：
+- `新闻聚合` - 聚合最新新闻
+- `新闻聚合` - 获取多源新闻
+- `早报速读` - 生成早报摘要
+- `研报速读` - 研报快速摘要
+
+## 信源覆盖
+
+### 财经媒体
+- 财新、第一财经、华尔街见闻
+- 36氪、虎嗅、界面
+
+### 科技媒体
+- TechCrunch、The Verge
+- 品玩、爱范儿
+
+### AI/大模型
+- OpenAI Blog、DeepMind
+- 机器之心、量子位
+
+### 投资研究
+- 券商研报、行业报告
+- 上市公司公告
+
+## 功能
+
+### 新闻聚合
+- 多源新闻抓取
+- 去重和排序
+- 分类标签
+
+### 早报生成
+- 定时生成早报
+- 重要新闻摘要
+- 市场情绪分析
+
+### 研报速读
+- 研报PDF解析
+- 核心观点提取
+- 投资评级汇总
+
+### 热点追踪
+- 实时热点监控
+- 话题趋势分析
+- 相关股票关联
+
+## 输出格式
+
+```
+📰 早报摘要 (YYYY-MM-DD)
+
+🔥 热点新闻:
+1. [标题] - 来源
+   [摘要]
+
+💹 市场动态:
+- 大盘: ...
+- 板块: ...
+
+🤖 AI/科技:
+...
+
+📊 研报精选:
+...
+```

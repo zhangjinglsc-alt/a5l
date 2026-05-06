@@ -1,0 +1,37 @@
+{
+  "ssmg_archive": {
+    "status": "pending",
+    "started_at": "2026-05-04T00:06:31.256613",
+    "failed_at": "2026-05-04T00:06:31.260537",
+    "retry_count": 1,
+    "error": "返回码: 127, 错误: bash: scripts/archive/ssmg_daily_archive.sh: No such file or directory\n"
+  },
+  "tier1_backup": {
+    "status": "completed",
+    "started_at": "2026-05-04T00:06:31.260779",
+    "completed_at": "2026-05-04T00:06:31.290289",
+    "retry_count": 0,
+    "error": null
+  },
+  "tier2_backup": {
+    "status": "completed",
+    "started_at": "2026-05-04T00:06:31.290653",
+    "completed_at": "2026-05-04T00:06:31.314973",
+    "retry_count": 0,
+    "error": null
+  },
+  "health_check": {
+    "status": "pending",
+    "started_at": "2026-05-04T00:06:31.315345",
+    "failed_at": "2026-05-04T00:06:31.317762",
+    "retry_count": 1,
+    "error": "返回码: 127, 错误: bash: scripts/backup/health_check.py: No such file or directory\n"
+  },
+  "report_processing": {
+    "status": "completed",
+    "started_at": "2026-05-04T00:06:31.318209",
+    "completed_at": "2026-05-04T00:06:31.500260",
+    "retry_count": 0,
+    "error": null
+  }
+}

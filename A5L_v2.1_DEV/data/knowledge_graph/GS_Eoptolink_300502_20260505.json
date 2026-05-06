@@ -1,0 +1,79 @@
+{
+  "report_title": "Eoptolink: 800G/1.6T optical modules shipment ramp-up ahead",
+  "ticker": "300502.SZ",
+  "company_name": "中际旭创 (Eoptolink)",
+  "source": "Goldman Sachs",
+  "date": "2026-05-05",
+  "rating": "Buy",
+  "target_price_new": 737,
+  "target_price_old": 518,
+  "target_price_change_pct": 42,
+  "current_price": 525.79,
+  "upside_pct": 40.2,
+  "market_cap_rmb_bn": 522.6,
+  "market_cap_usd_bn": 76.5,
+  "valuation_method": "P/E",
+  "target_pe_multiple": 26,
+  "reference_pe_historical_avg": 29,
+  "pe_2027e": 18.6,
+  "financial_highlights": {
+    "revenue_2025_rmb_mn": 24842,
+    "revenue_2026e_rmb_mn": 48550,
+    "revenue_2027e_rmb_mn": 69704,
+    "revenue_2028e_rmb_mn": 78753,
+    "revenue_cagr_2025_2028": "~50%",
+    "net_income_2025_rmb_mn": 9532,
+    "net_income_2026e_rmb_mn": 19429,
+    "net_income_2027e_rmb_mn": 28160,
+    "net_income_2028e_rmb_mn": 31807,
+    "net_income_cagr_2025_2028": "~50%",
+    "eps_2026e": 19.55,
+    "eps_2027e": 28.33,
+    "eps_2028e": 32.00,
+    "gross_margin_2025": "47.8%",
+    "gross_margin_2028e": "48.5%",
+    "croci_2026e": "124.8%"
+  },
+  "shipment_forecast_revision": {
+    "2026e": "+14%",
+    "2027e": "+29%",
+    "2028e": "+33%"
+  },
+  "key_catalysts": [
+    "800G/1.6T optical module shipment ramp-up",
+    "SiPh silicon photonics adoption",
+    "Thailand capacity expansion",
+    "AI data center networking upgrade"
+  ],
+  "product_roadmap": {
+    "current": "800G ramping, SiPh initial adoption",
+    "2h_2026": "1.6T acceleration",
+    "2027_2028": "1.6T mainstream, 3.2T introduction"
+  },
+  "risks": [
+    "Slower-than-expected 800G ramp pace",
+    "Geopolitical supply chain disruption",
+    "Fiercer competition leading to price erosion"
+  ],
+  "quarterly_highlights": {
+    "q1_26_revenue_rmb_mn": 8338,
+    "q1_26_net_income_rmb_mn": 2774,
+    "q1_26_gross_margin": "49.2%",
+    "q1_26_issue": "Below-expected margin due to high EML mix, SiPh ramp lag",
+    "q2_26e_revenue_rmb_mn": 8988,
+    "q2_26e_net_income_rmb_mn": 3629,
+    "q3_26e_revenue_rmb_mn": 14859,
+    "q3_26e_net_income_rmb_mn": 6234
+  },
+  "industry_themes": [
+    "AI server TAM expansion",
+    "Optical module TAM growth",
+    "Data center networking upgrade",
+    "Silicon photonics adoption"
+  ],
+  "a_share_portfolio_relevance": {
+    "related_holdings": ["中芯国际(688981)"],
+    "supply_chain_beneficiaries": ["光芯片", "光器件", "PCB"],
+    "sector": "通信/AI算力基础设施"
+  }
+}

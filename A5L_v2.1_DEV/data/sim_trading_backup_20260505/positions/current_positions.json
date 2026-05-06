@@ -1,0 +1,45 @@
+{
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "quantity": 10,
+      "avg_cost": 180.5,
+      "cost_basis": 1806.805,
+      "current_price": 180.5,
+      "market_value": 1805.0,
+      "unrealized_pnl": -1.805,
+      "unrealized_pnl_pct": -0.0999000999000999,
+      "opened_at": "2026-05-01T22:10:27.808078"
+    },
+    {
+      "symbol": "NVDA",
+      "quantity": 5,
+      "avg_cost": 890.0,
+      "cost_basis": 4454.45,
+      "current_price": 890.0,
+      "market_value": 4450.0,
+      "unrealized_pnl": -4.45,
+      "unrealized_pnl_pct": -0.0999000999000999,
+      "opened_at": "2026-05-01T22:10:27.808702"
+    },
+    {
+      "symbol": "TSLA",
+      "quantity": 8,
+      "avg_cost": 175.3,
+      "cost_basis": 1403.8024,
+      "current_price": 175.3,
+      "market_value": 1402.4,
+      "unrealized_pnl": -1.4024,
+      "unrealized_pnl_pct": -0.0999000999000999,
+      "opened_at": "2026-05-01T22:10:27.809233"
+    }
+  ],
+  "position_summary": {
+    "total_positions": 0,
+    "total_market_value": 0.0,
+    "total_cost_basis": 0.0,
+    "total_unrealized_pnl": 0.0,
+    "total_unrealized_pnl_pct": 0.0
+  },
+  "updated_at": "2026-05-01T22:08:00+08:00"
+}

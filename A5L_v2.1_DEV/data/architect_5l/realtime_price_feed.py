@@ -1,0 +1,291 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+A5L 实时价格集成模块
+集成 AKShare/Yahoo Finance 获取实时股价
+"""
+
+import json
+import sqlite3
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional
+
+class RealtimePriceFeed:
+    """实时价格数据源"""
+    
+    def __init__(self):
+        self.db_path = "/workspace/projects/workspace/data/architect_5l/architect_5l.db"
+        self.price_cache = {}
+        self.cache_ttl = 60  # 60秒缓存
+    
+    def fetch_us_price(self, symbol: str) -> Dict:
+        """获取美股实时价格 (模拟)"""
+        # 在实际部署中，这里会调用Yahoo Finance API
+        # 现在使用模拟数据
+        mock_prices = {
+            "NVDA": {"price": 945.0, "change": 6.18, "volume": 45000000},
+            "AAPL": {"price": 185.5, "change": -1.69, "volume": 52000000},
+            "TSLA": {"price": 168.0, "change": -4.0, "volume": 38000000},
+            "MSFT": {"price": 420.0, "change": 1.2, "volume": 28000000},
+            "GOOGL": {"price": 165.0, "change": 0.8, "volume": 22000000}
+        }
+        
+        return {
+            "symbol": symbol,
+            "timestamp": datetime.now().isoformat(),
+            **mock_prices.get(symbol, {"price": 100.0, "change": 0.0, "volume": 1000000})
+        }
+    
+    def fetch_cn_price(self, symbol: str) -> Dict:
+        """获取A股实时价格 (模拟)"""
+        mock_prices = {
+            "000066": {"price": 19.82, "change": 9.99, "volume": 2500000},  # 中国长城
+            "601975": {"price": 3.45, "change": -2.1, "volume": 1800000},   # 招商南油
+            "688981": {"price": 85.2, "change": -2.24, "volume": 950000},   # 中芯国际
+            "300750": {"price": 198.5, "change": 2.5, "volume": 3200000},   # 宁德时代
+            "000001": {"price": 11.2, "change": 0.5, "volume": 1500000}     # 平安银行
+        }
+        
+        return {
+            "symbol": symbol,
+            "timestamp": datetime.now().isoformat(),
+            **mock_prices.get(symbol, {"price": 10.0, "change": 0.0, "volume": 500000})
+        }
+    
+    def fetch_hk_price(self, symbol: str) -> Dict:
+        """获取港股实时价格 (模拟)"""
+        mock_prices = {
+            "00700": {"price": 385.0, "change": 1.5, "volume": 1200000},    # 腾讯
+            "09988": {"price": 78.5, "change": -0.8, "volume": 850000},     # 阿里
+            "03690": {"price": 125.0, "change": 2.1, "volume": 980000},     # 美团
+            "01810": {"price": 16.8, "change": 0.3, "volume": 2500000}      # 小米
+        }
+        
+        return {
+            "symbol": symbol,
+            "timestamp": datetime.now().isoformat(),
+            **mock_prices.get(symbol, {"price": 50.0, "change": 0.0, "volume": 300000})
+        }
+    
+    def fetch_price(self, symbol: str, market: str = "US") -> Dict:
+        """通用获取价格接口"""
+        if market.upper() == "US":
+            return self.fetch_us_price(symbol)
+        elif market.upper() == "CN":
+            return self.fetch_cn_price(symbol)
+        elif market.upper() == "HK":
+            return self.fetch_hk_price(symbol)
+        else:
+            return {"error": f"Unknown market: {market}"}
+    
+    def store_price(self, price_data: Dict) -> bool:
+        """存储价格到数据库"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # 检查表是否存在
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS realtime_prices (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    symbol TEXT NOT NULL,
+                    market TEXT NOT NULL,
+                    price REAL NOT NULL,
+                    change_pct REAL,
+                    volume INTEGER,
+                    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            
+            cursor.execute("""
+                INSERT INTO realtime_prices (symbol, market, price, change_pct, volume, timestamp)
+                VALUES (?, ?, ?, ?, ?, ?)
+            """, (
+                price_data["symbol"],
+                price_data.get("market", "US"),
+                price_data["price"],
+                price_data.get("change"),
+                price_data.get("volume"),
+                price_data["timestamp"]
+            ))
+            
+            conn.commit()
+            conn.close()
+            return True
+        except Exception as e:
+            print(f"❌ 存储价格失败: {e}")
+            return False
+    
+    def get_latest_price(self, symbol: str) -> Optional[Dict]:
+        """获取最新价格"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute("""
+                SELECT symbol, price, change_pct, volume, timestamp
+                FROM realtime_prices
+                WHERE symbol = ?
+                ORDER BY timestamp DESC
+                LIMIT 1
+            """, (symbol,))
+            
+            row = cursor.fetchone()
+            conn.close()
+            
+            if row:
+                return {
+                    "symbol": row[0],
+                    "price": row[1],
+                    "change_pct": row[2],
+                    "volume": row[3],
+                    "timestamp": row[4]
+                }
+            return None
+        except Exception as e:
+            print(f"❌ 获取价格失败: {e}")
+            return None
+    
+    def batch_update(self, symbols: List[Dict]) -> Dict:
+        """批量更新价格"""
+        results = {
+            "success": 0,
+            "failed": 0,
+            "updated": []
+        }
+        
+        for item in symbols:
+            symbol = item["symbol"]
+            market = item.get("market", "US")
+            
+            price_data = self.fetch_price(symbol, market)
+            
+            if "error" not in price_data:
+                price_data["market"] = market
+                if self.store_price(price_data):
+                    results["success"] += 1
+                    results["updated"].append(price_data)
+                else:
+                    results["failed"] += 1
+            else:
+                results["failed"] += 1
+        
+        return results
+    
+    def get_portfolio_prices(self, positions: List[Dict]) -> Dict:
+        """获取持仓组合的实时价格"""
+        portfolio = {
+            "timestamp": datetime.now().isoformat(),
+            "positions": [],
+            "total_value": 0.0,
+            "total_cost": 0.0,
+            "unrealized_pnl": 0.0
+        }
+        
+        for pos in positions:
+            symbol = pos["symbol"]
+            market = pos.get("market", "US")
+            quantity = pos.get("quantity", 0)
+            avg_cost = pos.get("avg_cost", 0)
+            
+            price_data = self.fetch_price(symbol, market)
+            
+            if "error" not in price_data:
+                current_price = price_data["price"]
+                market_value = quantity * current_price
+                cost_basis = quantity * avg_cost
+                unrealized_pnl = market_value - cost_basis
+                
+                portfolio["positions"].append({
+                    "symbol": symbol,
+                    "quantity": quantity,
+                    "avg_cost": avg_cost,
+                    "current_price": current_price,
+                    "market_value": market_value,
+                    "unrealized_pnl": unrealized_pnl,
+                    "unrealized_pnl_pct": (unrealized_pnl / cost_basis * 100) if cost_basis > 0 else 0
+                })
+                
+                portfolio["total_value"] += market_value
+                portfolio["total_cost"] += cost_basis
+                portfolio["unrealized_pnl"] += unrealized_pnl
+        
+        portfolio["unrealized_pnl_pct"] = (
+            portfolio["unrealized_pnl"] / portfolio["total_cost"] * 100
+        ) if portfolio["total_cost"] > 0 else 0
+        
+        return portfolio
+
+
+def demo_realtime_feed():
+    """演示实时价格集成"""
+    feed = RealtimePriceFeed()
+    
+    print("=" * 70)
+    print("📈 A5L 实时价格集成演示")
+    print("=" * 70)
+    
+    # Demo 1: 获取美股价格
+    print("\n🌎 美股实时价格:")
+    us_symbols = ["NVDA", "AAPL", "TSLA"]
+    for symbol in us_symbols:
+        data = feed.fetch_price(symbol, "US")
+        emoji = "🟢" if data.get("change", 0) > 0 else "🔴"
+        print(f"   {emoji} {symbol:6}: ${data['price']:>8.2f} ({data['change']:+.2f}%)")
+    
+    # Demo 2: 获取A股价格
+    print("\n🇨🇳 A股实时价格:")
+    cn_symbols = ["000066", "688981", "300750"]
+    for symbol in cn_symbols:
+        data = feed.fetch_price(symbol, "CN")
+        emoji = "🟢" if data.get("change", 0) > 0 else "🔴"
+        print(f"   {emoji} {symbol:6}: ¥{data['price']:>8.2f} ({data['change']:+.2f}%)")
+    
+    # Demo 3: 获取港股价格
+    print("\n🇭🇰 港股实时价格:")
+    hk_symbols = ["00700", "09988", "01810"]
+    for symbol in hk_symbols:
+        data = feed.fetch_price(symbol, "HK")
+        emoji = "🟢" if data.get("change", 0) > 0 else "🔴"
+        print(f"   {emoji} {symbol:6}: HK${data['price']:>8.2f} ({data['change']:+.2f}%)")
+    
+    # Demo 4: 存储到数据库
+    print("\n💾 存储到数据库:")
+    for symbol in ["NVDA", "AAPL"]:
+        data = feed.fetch_price(symbol, "US")
+        if feed.store_price(data):
+            print(f"   ✅ {symbol} 价格已存储")
+    
+    # Demo 5: 获取最新价格
+    print("\n🔄 从数据库读取最新价格:")
+    latest = feed.get_latest_price("NVDA")
+    if latest:
+        print(f"   NVDA: ${latest['price']:.2f} @ {latest['timestamp'][:19]}")
+    
+    # Demo 6: 组合持仓估值
+    print("\n💼 组合持仓实时估值:")
+    positions = [
+        {"symbol": "NVDA", "market": "US", "quantity": 5, "avg_cost": 890.0},
+        {"symbol": "AAPL", "market": "US", "quantity": 10, "avg_cost": 180.5},
+        {"symbol": "000066", "market": "CN", "quantity": 1000, "avg_cost": 18.0}
+    ]
+    
+    portfolio = feed.get_portfolio_prices(positions)
+    
+    print(f"\n   组合总成本: ${portfolio['total_cost']:,.2f}")
+    print(f"   组合市值:   ${portfolio['total_value']:,.2f}")
+    print(f"   浮动盈亏:   ${portfolio['unrealized_pnl']:,.2f} ({portfolio['unrealized_pnl_pct']:+.2f}%)")
+    
+    print("\n   持仓明细:")
+    for pos in portfolio["positions"]:
+        emoji = "🟢" if pos["unrealized_pnl"] > 0 else "🔴"
+        print(f"   {emoji} {pos['symbol']:8}: {pos['quantity']:4}股 @ ${pos['current_price']:,.2f} "
+              f"(成本 ${pos['avg_cost']:,.2f}) | PnL: ${pos['unrealized_pnl']:,.2f}")
+    
+    print("\n" + "=" * 70)
+    print("✅ 实时价格集成演示完成!")
+    print("=" * 70)
+
+
+if __name__ == "__main__":
+    demo_realtime_feed()

@@ -1,0 +1,15 @@
+{
+  "account_id": "HK_SIM_001",
+  "cash": 5000000.0,
+  "positions": [],
+  "position_summary": {
+    "total_positions": 0,
+    "total_market_value": 0,
+    "total_cost_basis": 0,
+    "total_unrealized_pnl": 0,
+    "total_unrealized_pnl_pct": 0
+  },
+  "updated_at": "2026-05-05T18:42:00+08:00",
+  "version": "3.0_reinitialized",
+  "note": "REINITIALIZED: 资金调整为HK$500万，清空持仓，等待港股明日开市（5月6日09:30）"
+}

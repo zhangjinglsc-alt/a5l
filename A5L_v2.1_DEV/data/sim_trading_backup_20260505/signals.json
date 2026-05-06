@@ -1,0 +1,222 @@
+[
+  {
+    "symbol": "00700",
+    "name": "腾讯控股",
+    "signal": "SELL",
+    "score": 40,
+    "confidence": 0.5,
+    "current_price": 391.9,
+    "change_pct": -2.58,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-05T10:30:44.396193"
+  },
+  {
+    "symbol": "09988",
+    "name": "阿里巴巴-SW",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 196.05,
+    "change_pct": 3.48,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396232"
+  },
+  {
+    "symbol": "03690",
+    "name": "美团-W",
+    "signal": "WEAK_BUY",
+    "score": 60,
+    "confidence": 0.5,
+    "current_price": 368.28,
+    "change_pct": 1.77,
+    "recommendation": "可以关注",
+    "timestamp": "2026-05-05T10:30:44.396268"
+  },
+  {
+    "symbol": "01810",
+    "name": "小米集团-W",
+    "signal": "WEAK_SELL",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 57.34,
+    "change_pct": -1.53,
+    "recommendation": "观望",
+    "timestamp": "2026-05-05T10:30:44.396299"
+  },
+  {
+    "symbol": "00981",
+    "name": "中芯国际",
+    "signal": "SELL",
+    "score": 40,
+    "confidence": 0.5,
+    "current_price": 433.28,
+    "change_pct": -3.34,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-05T10:30:44.396305"
+  },
+  {
+    "symbol": "01299",
+    "name": "友邦保险",
+    "signal": "SELL",
+    "score": 35,
+    "confidence": 0.6,
+    "current_price": 350.2,
+    "change_pct": -4.77,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-05T10:30:44.396338"
+  },
+  {
+    "symbol": "02318",
+    "name": "中国平安",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 230.87,
+    "change_pct": 4.41,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396364"
+  },
+  {
+    "symbol": "03988",
+    "name": "中国银行",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 413.44,
+    "change_pct": 2.2,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396390"
+  },
+  {
+    "symbol": "00005",
+    "name": "汇丰控股",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 325.14,
+    "change_pct": 2.62,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396414"
+  },
+  {
+    "symbol": "00883",
+    "name": "中国海洋石油",
+    "signal": "WEAK_SELL",
+    "score": 45,
+    "confidence": 0.4,
+    "current_price": 37.12,
+    "change_pct": -1.16,
+    "recommendation": "谨慎持有",
+    "timestamp": "2026-05-05T10:30:44.396439"
+  },
+  {
+    "symbol": "00857",
+    "name": "中国石油股份",
+    "signal": "WEAK_BUY",
+    "score": 60,
+    "confidence": 0.5,
+    "current_price": 22.15,
+    "change_pct": 1.72,
+    "recommendation": "可以关注",
+    "timestamp": "2026-05-05T10:30:44.396445"
+  },
+  {
+    "symbol": "00386",
+    "name": "中国石油化工",
+    "signal": "WEAK_SELL",
+    "score": 45,
+    "confidence": 0.4,
+    "current_price": 201.77,
+    "change_pct": -1.22,
+    "recommendation": "谨慎持有",
+    "timestamp": "2026-05-05T10:30:44.396472"
+  },
+  {
+    "symbol": "02331",
+    "name": "李宁",
+    "signal": "SELL",
+    "score": 40,
+    "confidence": 0.5,
+    "current_price": 374.03,
+    "change_pct": -4.55,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-05T10:30:44.396478"
+  },
+  {
+    "symbol": "02020",
+    "name": "安踏体育",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 41.11,
+    "change_pct": 2.23,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396505"
+  },
+  {
+    "symbol": "06186",
+    "name": "中国飞鹤",
+    "signal": "HOLD",
+    "score": 55,
+    "confidence": 0.4,
+    "current_price": 345.25,
+    "change_pct": 0.03,
+    "recommendation": "观望",
+    "timestamp": "2026-05-05T10:30:44.396530"
+  },
+  {
+    "symbol": "02269",
+    "name": "药明生物",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 431.95,
+    "change_pct": 3.32,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396535"
+  },
+  {
+    "symbol": "01093",
+    "name": "石药集团",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 416.16,
+    "change_pct": 4.7,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396560"
+  },
+  {
+    "symbol": "02359",
+    "name": "药明康德",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 247.18,
+    "change_pct": 2.41,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396583"
+  },
+  {
+    "symbol": "09618",
+    "name": "京东集团-SW",
+    "signal": "HOLD",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 272.77,
+    "change_pct": 0.39,
+    "recommendation": "观望",
+    "timestamp": "2026-05-05T10:30:44.396607"
+  },
+  {
+    "symbol": "09888",
+    "name": "百度集团-SW",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 339.96,
+    "change_pct": 3.13,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-05T10:30:44.396612"
+  }
+]

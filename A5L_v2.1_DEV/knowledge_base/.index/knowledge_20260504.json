@@ -1,0 +1,171 @@
+{
+  "index_version": "1.1.0",
+  "created_at": "2026-05-04T14:06:00+08:00",
+  "created_by": "KnowledgeGuardian",
+  "batch_name": "AI_Infrastructure_Chain_20260504",
+  "items": [
+    {
+      "id": "KB-2026-0504-001",
+      "type": "RESEARCH_REPORT",
+      "title": "AI Impact On Storage - NAND需求分析",
+      "source": "SNIA/KIOXIA",
+      "date": "2026-05-04",
+      "industry": "存储",
+      "tags": ["AI基础设施", "NAND", "存储", "AI推理", "数据中心"],
+      "stock_codes": [],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/01_SNIA_AI_Storage.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/AI_Storage_Impact_Analysis.md",
+      "importance": 2,
+      "key_findings": {
+        "NAND_CAGR": "34%",
+        "AI_inference_share": "56%",
+        "growth_2025_2031": "286EB to 1686EB"
+      }
+    },
+    {
+      "id": "KB-2026-0504-002",
+      "type": "RESEARCH_REPORT",
+      "title": "MediaTek Google TPU业务分析",
+      "source": "Morgan Stanley",
+      "date": "2026-04-30",
+      "industry": "半导体",
+      "tags": ["AI基础设施", "TPU", "AI算力", "MediaTek", "Google"],
+      "stock_codes": ["2454.TW"],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/02_MS_MediaTek_TPU.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/MediaTek_TPU_Analysis_MS.md",
+      "importance": 3,
+      "key_findings": {
+        "TPU_revenue_2026": "$2.0bn",
+        "TPU_revenue_2027": "$12.0bn",
+        "TPU_revenue_2028": "$21.0bn",
+        "target_price": "NT$2,988"
+      }
+    },
+    {
+      "id": "KB-2026-0504-003",
+      "type": "RESEARCH_REPORT",
+      "title": "Global Analog Semiconductors - 周期复苏分析",
+      "source": "Morgan Stanley",
+      "date": "2026-05-01",
+      "industry": "半导体",
+      "tags": ["AI基础设施", "模拟半导体", "电源", "周期复苏", "ADI", "Infineon"],
+      "stock_codes": ["ADI", "NXPI", "IFX", "STM", "ON"],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/03_MS_Global_Analog.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/Global_Analog_Semiconductors_MS.md",
+      "importance": 2,
+      "key_findings": {
+        "cycle_status": "复苏拐点已现",
+        "ADI_price_hike": "2026年2月",
+        "AI_power_content": "$191/kW"
+      }
+    },
+    {
+      "id": "KB-2026-0504-004",
+      "type": "RESEARCH_REPORT",
+      "title": "China Cloud and Data Centers - 数据中心需求",
+      "source": "Morgan Stanley",
+      "date": "2026-05-03",
+      "industry": "数据中心",
+      "tags": ["AI基础设施", "数据中心", "中国", "东数西算", "GDS"],
+      "stock_codes": ["GDS", "VNET"],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/04_MS_China_DC.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/China_Cloud_DataCenter_MS.md",
+      "importance": 2,
+      "key_findings": {
+        "DC_demand": ">4GW",
+        "tender_scale": "GW级",
+        "GDS_target": "500MW/year"
+      }
+    },
+    {
+      "id": "KB-2026-0504-005",
+      "type": "RESEARCH_REPORT",
+      "title": "South Korea Tech Memory Pricing Tracker",
+      "source": "Goldman Sachs",
+      "date": "2026-05-04",
+      "industry": "存储",
+      "tags": ["AI基础设施", "存储", "DRAM", "NAND", "价格", "Samsung", "SK Hynix"],
+      "stock_codes": ["Samsung", "SK Hynix"],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/05_GS_Memory_Pricing.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/GS_Memory_Pricing_Tracker_Apr2026.md",
+      "importance": 3,
+      "key_findings": {
+        "DRAM_2Q26": "+45-50% QoQ",
+        "NAND_2Q26": "+80% QoQ",
+        "DDR4_spot_premium": "+64%",
+        "Samsung_target": "W320,000",
+        "SK_Hynix_target": "W1,800,000"
+      }
+    },
+    {
+      "id": "KB-2026-0504-006",
+      "type": "RESEARCH_REPORT",
+      "title": "China Internet AI Models - 五大关键辩论",
+      "source": "Goldman Sachs",
+      "date": "2026-04",
+      "industry": "AI应用",
+      "tags": ["AI应用", "中国", "MiniMax", "阿里巴巴", "腾讯", "AI模型"],
+      "stock_codes": ["0100.HK", "BABA", "0700.HK"],
+      "file_path": "knowledge_base/raw/pdf/2026-05-04_AI_Infrastructure_Chain/06_GS_China_AI_Models.pdf",
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/China_Internet_AI_Models_GS.md",
+      "importance": 3,
+      "key_findings": {
+        "MiniMax_ARR": "$250M",
+        "Zhipu_ARR": "$250M",
+        "AliCloud_AI_growth": "+40% YoY",
+        "MiniMax_target": "HK$1,000"
+      }
+    },
+    {
+      "id": "KB-2026-0504-SUM",
+      "type": "SYNTHESIS_REPORT",
+      "title": "AI Infrastructure Investment Summary - 综合投资机会",
+      "source": "A5L综合",
+      "date": "2026-05-04",
+      "industry": "综合",
+      "tags": ["AI基础设施", "投资总结", "产业链", "硬件", "软件"],
+      "stock_codes": ["2454.TW", "NVDA", "AVGO", "ADI", "NXPI", "STM", "GDS", "ON", "MU", "WDC", "0100.HK", "BABA", "0700.HK"],
+      "analysis_path": "knowledge_base/research/reports/2026-05-04/AI_Infrastructure_Investment_Summary.md",
+      "importance": 3,
+      "key_findings": {
+        "evidence_chain": "6份研报闭环",
+        "investment_thesis": "硬件需求→软件变现",
+        "portfolio_count": 4
+      }
+    },
+    {
+      "id": "KB-2026-0504-007",
+      "type": "RESEARCH_REPORT",
+      "title": "韩国AI CPU与服务器DRAM短缺报道",
+      "source": "韩国科技媒体",
+      "date": "2026-05-04",
+      "industry": "存储",
+      "tags": ["AI基础设施", "AI CPU", "DRAM", "韩国", "Samsung", "SK Hynix", "短缺"],
+      "stock_codes": ["Samsung", "SK Hynix", "INTC", "AMD", "NVDA"],
+      "file_path": "workspace/projects/media/inbound/8c145892-5ae6-41a4-aa92-06b261d33af8.jpg",
+      "analysis_path": "data/knowledge/KOR-2026-001_korea_ai_cpu_dram_shortage.md",
+      "importance": 3,
+      "key_findings": {
+        "CPU_DRAM_CAGR": "56%",
+        "AI_Server_DRAM_CAGR": "33%",
+        "Hyperscale_DC_DRAM_growth": "30%/年",
+        "shortage_duration": "持续至2026年"
+      }
+    }
+  ],
+  "statistics": {
+    "total_items": 8,
+    "original_pdfs": 7,
+    "analysis_reports": 8,
+    "sources": ["SNIA", "Morgan Stanley", "Goldman Sachs", "韩国媒体", "A5L"],
+    "industries": ["存储", "半导体", "数据中心", "AI应用"],
+    "stock_coverage": 18,
+    "high_importance_items": 5
+  },
+  "sync_status": {
+    "git_committed": false,
+    "feishu_synced": true,
+    "feishu_sync_time": "2026-05-04T16:06:00+08:00",
+    "kiwi_synced": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "trades": [
+    {
+      "trade_id": "T20260501221027",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "quantity": 10,
+      "price": 180.5,
+      "amount": 1805.0,
+      "commission": 1.805,
+      "total_cost": 1806.805,
+      "strategy": "trend_following",
+      "reason": "突破均线",
+      "timestamp": "2026-05-01T22:10:27.808069"
+    },
+    {
+      "trade_id": "T20260501221027",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "quantity": 5,
+      "price": 890.0,
+      "amount": 4450.0,
+      "commission": 4.45,
+      "total_cost": 4454.45,
+      "strategy": "momentum",
+      "reason": "AI芯片强势",
+      "timestamp": "2026-05-01T22:10:27.808694"
+    },
+    {
+      "trade_id": "T20260501221027",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "quantity": 8,
+      "price": 175.3,
+      "amount": 1402.4,
+      "commission": 1.4024,
+      "total_cost": 1403.8024,
+      "strategy": "breakout",
+      "reason": "放量突破",
+      "timestamp": "2026-05-01T22:10:27.809225"
+    }
+  ],
+  "trade_stats": {
+    "total_trades": 3,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate": 0.0,
+    "total_pnl": 0,
+    "total_pnl_pct": 0.0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "largest_single_win": 0,
+    "largest_single_loss": 0
+  },
+  "updated_at": "2026-05-01T22:08:00+08:00"
+}

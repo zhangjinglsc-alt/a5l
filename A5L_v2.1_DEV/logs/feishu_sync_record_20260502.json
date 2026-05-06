@@ -1,0 +1,74 @@
+{
+  "sync_time": "2026-05-02T07:17:57.243774",
+  "total_files": 11,
+  "success_files": 10,
+  "failed_files": 1,
+  "files": [
+    {
+      "source": "/workspace/projects/workspace/SOUL.md",
+      "target": "SOUL-核心宪章-2026-05-02.md",
+      "size": 24051,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/A5L_SOUL_BINDING.md",
+      "target": "A5L-SOUL-绑定文档-2026-05-02.md",
+      "size": 7812,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/skills/ARCHITECT-5L-SUPER/SKILL.md",
+      "target": "A5L-SKILL-完整文档-2026-05-02.md",
+      "size": 26400,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/SEVEN-IN-ONE-COMPLETE-2026-05-02.md",
+      "target": "A5L-七位一体完成报告.md",
+      "size": 9189,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/KIWI-KNOWLEDGE-HUB-COMPLETE-2026-05-02.md",
+      "target": "A5L-KIWI知识中心完成报告.md",
+      "size": 9834,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/MULTIMODAL-PIPELINE-COMPLETE-2026-05-02.md",
+      "target": "A5L-多模态处理完成报告.md",
+      "size": 5583,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/INFORMATION-PIPELINE-COMPLETE-2026-05-02.md",
+      "target": "A5L-信息处理链路完成报告.md",
+      "size": 5811,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/SECURITY-OFFICER-COMPLETE-2026-05-02.md",
+      "target": "A5L-安全师完成报告.md",
+      "size": 6698,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/LAYER0-TRINITY-COMPLETE-2026-05-02.md",
+      "target": "A5L-三位一体完成报告.md",
+      "size": 11785,
+      "status": "ready"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/A5L系统最终同步报告-2026-05-02.md",
+      "target": "A5L-系统最终同步报告.md",
+      "size": 0,
+      "status": "missing"
+    },
+    {
+      "source": "/workspace/projects/workspace/feishu_export/A5L-研报阅读补充说明-2026-05-02.md",
+      "target": "A5L-研报阅读能力补充.md",
+      "size": 7669,
+      "status": "ready"
+    }
+  ]
+}

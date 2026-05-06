@@ -1,0 +1,68 @@
+{
+  "test_time": "2026-05-05T23:42:49.338391",
+  "token_configured": true,
+  "tests_passed": 8,
+  "tests_failed": 2,
+  "details": [
+    {
+      "test": "Token配置",
+      "status": "✅ PASS",
+      "message": "Token已配置，长度: 56",
+      "timestamp": "2026-05-05T23:42:49.338530"
+    },
+    {
+      "test": "基础连接",
+      "status": "✅ PASS",
+      "message": "Tushare API连接成功",
+      "timestamp": "2026-05-05T23:42:49.533648"
+    },
+    {
+      "test": "股票列表",
+      "status": "✅ PASS",
+      "message": "成功获取5512只股票",
+      "timestamp": "2026-05-05T23:42:49.786617"
+    },
+    {
+      "test": "日线数据",
+      "status": "✅ PASS",
+      "message": "成功获取4条数据",
+      "timestamp": "2026-05-05T23:42:49.889722"
+    },
+    {
+      "test": "财务数据(利润表)",
+      "status": "✅ PASS",
+      "message": "成功获取4条",
+      "timestamp": "2026-05-05T23:42:49.973717"
+    },
+    {
+      "test": "财务数据(资产负债表)",
+      "status": "✅ PASS",
+      "message": "成功获取8条",
+      "timestamp": "2026-05-05T23:42:50.048601"
+    },
+    {
+      "test": "龙虎榜数据",
+      "status": "✅ PASS",
+      "message": "成功获取96条",
+      "timestamp": "2026-05-05T23:42:50.466283"
+    },
+    {
+      "test": "资金流向",
+      "status": "❌ FAIL",
+      "message": "返回空数据（可能需要积分）",
+      "timestamp": "2026-05-05T23:42:50.558589"
+    },
+    {
+      "test": "北向资金",
+      "status": "✅ PASS",
+      "message": "成功获取4条",
+      "timestamp": "2026-05-05T23:42:50.633143"
+    },
+    {
+      "test": "新闻数据",
+      "status": "❌ FAIL",
+      "message": "返回空数据（可能会员等级不足）",
+      "timestamp": "2026-05-05T23:42:50.706744"
+    }
+  ]
+}

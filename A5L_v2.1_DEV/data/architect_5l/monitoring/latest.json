@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-05-04T04:32:05.970725",
+  "health": {
+    "timestamp": "2026-05-04T04:32:05.970733",
+    "overall_status": "healthy",
+    "overall_score": 91,
+    "components": {
+      "database": {
+        "status": "healthy",
+        "score": 100,
+        "details": {
+          "entities": 5
+        }
+      },
+      "signals": {
+        "status": "healthy",
+        "score": 83,
+        "details": {
+          "total": 6,
+          "active": 6,
+          "validated": 6,
+          "avg_accuracy": 83.3
+        }
+      },
+      "decisions": {
+        "status": "healthy",
+        "score": 90,
+        "details": {
+          "total": 15,
+          "approved": 5,
+          "rejected": 10,
+          "approval_rate": 33.3
+        }
+      }
+    }
+  },
+  "alerts": []
+}

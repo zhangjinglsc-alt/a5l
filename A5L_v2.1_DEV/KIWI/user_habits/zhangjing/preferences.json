@@ -1,0 +1,32 @@
+{
+  "communication_style": "concise",
+  "response_length": "medium",
+  "use_emoji": true,
+  "use_markdown_tables": true,
+  "preferred_analysis_time": "09:00",
+  "preferred_review_time": "21:00",
+  "quiet_hours_start": "23:00",
+  "quiet_hours_end": "08:00",
+  "preferred_markets": [
+    "A股",
+    "美股",
+    "港股"
+  ],
+  "preferred_strategies": [
+    "趋势跟踪",
+    "价值投资",
+    "超短线"
+  ],
+  "risk_tolerance": "medium",
+  "holding_period": "swing",
+  "report_format": "markdown",
+  "report_sections": [
+    "summary",
+    "signals",
+    "risks"
+  ],
+  "include_charts": true,
+  "auto_execute": false,
+  "confirm_destructive": true,
+  "proactive_suggestions": true
+}

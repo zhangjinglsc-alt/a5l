@@ -1,0 +1,89 @@
+{
+  "report_type": "CSO_COMPLIANCE_CHECK",
+  "generated_at": "2026-05-04T01:50:01.206138",
+  "compliance_score": 66.7,
+  "status": "NON_COMPLIANT",
+  "checks": {
+    "concentration": {
+      "violations": [
+        {
+          "type": "SINGLE_STOCK_OVER_LIMIT",
+          "stock": "中国长城",
+          "code": "000066",
+          "current_weight": "36.7%",
+          "limit": "20%",
+          "severity": "HIGH",
+          "action": "REDUCE_POSITION"
+        },
+        {
+          "type": "SINGLE_STOCK_OVER_LIMIT",
+          "stock": "招商南油",
+          "code": "601975",
+          "current_weight": "36.7%",
+          "limit": "20%",
+          "severity": "HIGH",
+          "action": "REDUCE_POSITION"
+        },
+        {
+          "type": "TOP3_OVER_LIMIT",
+          "current_weight": "76.0%",
+          "limit": "50%",
+          "severity": "MEDIUM",
+          "action": "REBALANCE"
+        }
+      ],
+      "warnings": [],
+      "max_single_position": 0.367,
+      "top3_concentration": 0.76,
+      "status": "VIOLATION"
+    },
+    "stop_loss": {
+      "violations": [],
+      "status": "PASS"
+    },
+    "industry": {
+      "violations": [],
+      "industry_weights": {
+        "信创": "36.7%",
+        "航运": "36.7%",
+        "半导体": "2.6%"
+      },
+      "status": "PASS"
+    },
+    "circuit_breaker": {
+      "triggered": false
+    }
+  },
+  "violations": [
+    {
+      "type": "SINGLE_STOCK_OVER_LIMIT",
+      "stock": "中国长城",
+      "code": "000066",
+      "current_weight": "36.7%",
+      "limit": "20%",
+      "severity": "HIGH",
+      "action": "REDUCE_POSITION"
+    },
+    {
+      "type": "SINGLE_STOCK_OVER_LIMIT",
+      "stock": "招商南油",
+      "code": "601975",
+      "current_weight": "36.7%",
+      "limit": "20%",
+      "severity": "HIGH",
+      "action": "REDUCE_POSITION"
+    },
+    {
+      "type": "TOP3_OVER_LIMIT",
+      "current_weight": "76.0%",
+      "limit": "50%",
+      "severity": "MEDIUM",
+      "action": "REBALANCE"
+    }
+  ],
+  "summary": {
+    "high_risk_count": 2,
+    "critical_count": 0,
+    "immediate_action_required": true
+  }
+}

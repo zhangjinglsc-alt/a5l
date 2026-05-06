@@ -1,0 +1,109 @@
+{
+  "account_id": "HK_SIM_001",
+  "account_name": "港股模拟账户",
+  "created_at": "2026-05-01",
+  "initial_capital": 5000000.0,
+  "currency": "HKD",
+  "current_status": {
+    "cash": 5000000.0,
+    "market_value": 0.0,
+    "total_equity": 5000000.0,
+    "available_funds": 5000000.0,
+    "margin_used": 0.0,
+    "updated_at": "2026-05-05T18:42:00+08:00",
+    "note": "REINITIALIZED: 资金调整为HK$500万，等待港股开市交易"
+  },
+  "trading_params": {
+    "max_positions": 15,
+    "max_single_position_pct": 20.0,
+    "min_trade_amount": 2000.0,
+    "commission_rate": 0.0025,
+    "stamp_duty_rate": 0.001,
+    "trading_fee_rate": 0.00005,
+    "settlement_fee": 0.5,
+    "slippage": 0.0015
+  },
+  "risk_management": {
+    "enabled": true,
+    "max_single_loss_pct": 5.0,
+    "max_daily_loss_pct": 10.0,
+    "stop_loss_enabled": true,
+    "take_profit_enabled": true,
+    "max_consecutive_losses": 3,
+    "cool_down_period_hours": 24,
+    "vix_check": false
+  },
+  "watchlist": [
+    "00700.HK",
+    "09988.HK",
+    "03690.HK",
+    "01810.HK",
+    "09618.HK",
+    "09999.HK",
+    "02331.HK",
+    "01299.HK",
+    "00941.HK",
+    "01398.HK",
+    "02318.HK",
+    "00005.HK",
+    "00001.HK",
+    "00883.HK",
+    "01177.HK",
+    "02899.HK",
+    "02628.HK",
+    "02382.HK",
+    "00669.HK",
+    "06862.HK"
+  ],
+  "strategy_config": {
+    "active_strategy": "trend_following",
+    "available_strategies": [
+      "trend_following",
+      "mean_reversion",
+      "momentum",
+      "breakout",
+      "dividend_arbitrage"
+    ],
+    "entry_rules": {
+      "min_volume": 5000000,
+      "max_spread_pct": 0.8,
+      "signal_strength_threshold": 0.72
+    },
+    "exit_rules": {
+      "stop_loss_pct": 5.0,
+      "take_profit_pct": 12.0,
+      "trailing_stop_enabled": true,
+      "trailing_stop_pct": 4.0
+    }
+  },
+  "market_specific": {
+    "market_type": "港股",
+    "trade_time": {
+      "morning_start": "09:30",
+      "morning_end": "12:00",
+      "afternoon_start": "13:00",
+      "afternoon_end": "16:00"
+    },
+    "lot_sizes": {
+      "default": 100,
+      "variable": true
+    },
+    "price_limits": null,
+    "t_plus_2": true,
+    "holiday_calendar": "hong_kong"
+  },
+  "reporting": {
+    "daily_report_time": "16:30",
+    "weekly_report_day": "Friday",
+    "weekly_report_time": "17:00",
+    "alert_immediately": true
+  },
+  "autonomy_level": {
+    "auto_select_stocks": true,
+    "auto_execute_trades": true,
+    "auto_manage_positions": true,
+    "human_confirmation_required": false,
+    "max_daily_trades": 8,
+    "market_timing_check": true
+  }
+}

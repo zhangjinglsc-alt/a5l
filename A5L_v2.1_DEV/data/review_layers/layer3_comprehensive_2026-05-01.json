@@ -1,0 +1,59 @@
+{
+  "date": "2026-05-01",
+  "timestamp": "2026-05-01T22:05:32.711702",
+  "summary": "## 融合复盘摘要 (2026-05-01)\n\n### 浪主指数视角\n- 当前位置: 震荡整理\n- 方向判断: 观望\n- 关键点位: 支撑0 / 压力0\n\n### 巴菲特情绪视角  \n- 市场阶段: 情绪阶段（高潮）\n- 情绪得分: 88/100\n- 逆向机会: ❌ 否\n\n### 因子投资视角\n- 主导风格: 均衡风格\n- 活跃因子: 大盘因子, 反转因子\n\n### 融合结论\n综合三个框架分析，当前市场处于**震荡整理**，\n情绪**情绪阶段（高潮）**，风格偏向**均衡风格**。",
+  "predictions": {
+    "langzhu": {
+      "direction": "观望",
+      "confidence": 0.5
+    },
+    "buffett": {
+      "divergence": "high",
+      "contrarian": false
+    },
+    "factor": {
+      "style": "均衡风格",
+      "factors": [
+        "大盘因子",
+        "反转因子"
+      ]
+    }
+  },
+  "recommendations": [
+    "浪主框架建议: 观望为主，等待方向明确",
+    "巴菲特框架建议: 情绪过热，警惕回调风险"
+  ],
+  "frameworks": {
+    "langzhu": {
+      "framework": "浪主指数",
+      "wave_position": "震荡整理",
+      "key_levels": {
+        "support": 0,
+        "resistance": 0,
+        "current": 0
+      },
+      "direction": "观望",
+      "confidence": 0.5
+    },
+    "buffett": {
+      "framework": "巴菲特情绪",
+      "stage": "情绪阶段（高潮）",
+      "divergence": "high",
+      "contrarian_opportunity": false,
+      "sentiment_score": 87.77777777777777
+    },
+    "factor": {
+      "framework": "因子投资",
+      "dominant_style": "均衡风格",
+      "active_factors": [
+        "大盘因子",
+        "反转因子"
+      ],
+      "factor_scores": {
+        "growth": 0,
+        "value": 0,
+        "tech": 0
+      }
+    }
+  }
+}

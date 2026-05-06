@@ -1,0 +1,57 @@
+# A5L Prometheus 监控配置
+global:
+  scrape_interval: 15s      # 采集间隔
+  evaluation_interval: 15s  # 规则评估间隔
+
+# 告警规则
+rule_files:
+  - "a5l_alerts.yml"
+
+# 告警管理
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['localhost:9093']
+
+# 采集目标
+scrape_configs:
+  # Prometheus自身监控
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # A5L Gateway监控
+  - job_name: 'a5l-gateway'
+    static_configs:
+      - targets: ['localhost:8080']
+    metrics_path: /metrics
+    scrape_interval: 30s
+
+  # A5L模拟交易系统监控
+  - job_name: 'a5l-simulation'
+    static_configs:
+      - targets: ['localhost:8081']
+    metrics_path: /metrics
+    scrape_interval: 60s
+
+  # 系统资源监控 (Node Exporter)
+  - job_name: 'node'
+    static_configs:
+      - targets: ['localhost:9100']
+
+  # GitHub API监控
+  - job_name: 'github-api'
+    static_configs:
+      - targets: ['api.github.com']
+    metrics_path: /repos/zhangjinglsc-alt/a5l
+    scrape_interval: 300s
+
+  # Finnhub API监控
+  - job_name: 'finnhub-api'
+    static_configs:
+      - targets: ['finnhub.io']
+    metrics_path: /api/v1/quote
+    params:
+      symbol: ['AAPL']
+      token: ['d7t10uhr01qugn08ufg0d7t10uhr01qugn08ufgg']
+    scrape_interval: 60s
