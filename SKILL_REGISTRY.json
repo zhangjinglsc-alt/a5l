@@ -261,8 +261,8 @@
           "name": "Karpathy Wiki知识系统",
           "location": "skills/karpathy-wiki/SKILL.md",
           "proficiency": 0.75,
-          "usage_count": 0,
-          "last_used": null,
+          "usage_count": 1,
+          "last_used": "2026-05-08",
           "success_rate": 1.0,
           "status": "active",
           "description": "基于Andrej Karpathy的Compilation-over-Retrieval理念，将信息源编译为结构化、交叉引用的知识wiki，实现知识复利增长"
