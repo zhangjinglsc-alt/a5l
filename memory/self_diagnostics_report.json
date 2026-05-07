@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-05-08T03:05:01.671815",
+  "score": 90,
+  "issues": [
+    {
+      "type": "skill_registry_corrupted",
+      "error": "Extra data: line 725 column 2 (char 20543)"
+    }
+  ],
+  "fixes": [
+    {
+      "issue": "skill_registry_corrupted",
+      "action": "logged"
+    }
+  ],
+  "predictions": [],
+  "details": {
+    "核心文件完整性": {
+      "status": "ok",
+      "score": 100,
+      "missing": []
+    },
+    "SKILL系统健康": {
+      "status": "error",
+      "score": 50
+    },
+    "Git同步状态": {
+      "status": "ok",
+      "score": 92,
+      "uncommitted": 4
+    },
+    "持仓数据一致性": {
+      "status": "ok",
+      "score": 100,
+      "age_days": 0.04352725632488728
+    },
+    "定时任务状态": {
+      "status": "ok",
+      "score": 100
+    },
+    "知识库完整性": {
+      "status": "ok",
+      "score": 100,
+      "kg": true,
+      "kw": true
+    },
+    "预测性风险扫描": {
+      "status": "ok",
+      "score": 90,
+      "predictions": 0
+    }
+  }
+}
