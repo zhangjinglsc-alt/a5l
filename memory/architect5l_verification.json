@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-05-08T03:06:43.201426",
+  "overall_score": 100.0,
+  "layers": {
+    "Layer 0: 元控制层": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "Six-in-One Hub": true,
+        "Chief Architect": true,
+        "Knowledge Guardian": true,
+        "Report Manager": true
+      }
+    },
+    "Layer 1: 数据底座": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "股票数据接口": true,
+        "新闻聚合": true,
+        "持仓数据": true,
+        "模拟交易数据": true
+      }
+    },
+    "Layer 2: 策略引擎": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "CTF框架": true,
+        "因子投资": true,
+        "价值投资": true,
+        "五步法": true,
+        "阳关大道": true
+      }
+    },
+    "Layer 3: 分析层": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "VALUE CELL": true,
+        "UZI分析": true,
+        "产业链分析": true,
+        "Karpathy Wiki": true
+      }
+    },
+    "Layer 4: 决策信号": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "美股监控": true,
+        "风控熔断": true,
+        "仓位管理": true
+      }
+    },
+    "Layer 5: 复盘进化": {
+      "score": 100.0,
+      "status": "完整",
+      "components": {
+        "每日复盘": true,
+        "进化报告": true,
+        "自诊断引擎": true,
+        "自修复引擎": true
+      }
+    }
+  },
+  "status": "mature"
+}
