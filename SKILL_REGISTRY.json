@@ -254,8 +254,19 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 12,
+      "count": 13,
       "skills": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code AI编程助手",
+          "location": "skills/claude-code/SKILL.md",
+          "proficiency": 0.80,
+          "usage_count": 1,
+          "last_used": "2026-05-08",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "与Anthropic Claude Code CLI深度集成，自然语言需求→自动执行代码任务，支持代码审查、批量重构、测试生成"
+        },
         {
           "id": "codex",
           "name": "Codex代码生成助手",
