@@ -2,8 +2,8 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 60,
-    "active_skills": 56,
+    "total_skills": 61,
+    "active_skills": 57,
     "deprecated_skills": 4,
     "avg_proficiency": 0.77,
     "most_used": "unified-stock-price"
@@ -11,8 +11,19 @@
   "categories": {
     "investment_analysis": {
       "name": "投资分析",
-      "count": 7,
+      "count": 8,
       "skills": [
+        {
+          "id": "catalyst_tier_framework",
+          "name": "CTF催化剂分级框架",
+          "location": "skills/catalyst-tier-framework/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 1,
+          "last_used": "2026-05-07",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "催化剂分级框架(Tier1-4)，四层催化事件分级，配套仓位管理与预期差识别"
+        },
         {
           "id": "factor_investing",
           "name": "因子投资方法论",
@@ -688,5 +699,7 @@
     "2026-05-03: 归档3个重叠技能：self-improving-agent/aakshare/ai-news-aggregator",
     "2026-05-03: SKILL合并方案制定，功能重叠问题解决",
     "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论"
+  ]
+}"2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具"
   ]
 }

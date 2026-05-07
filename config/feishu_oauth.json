@@ -12,7 +12,7 @@
     "drive:file:read",
     "drive:file:write"
   ],
-  "tenant_access_token": "t-g10456ny2SEXZDBY3FXH66EJ2XLV3KAMVFFDKJ43",
-  "tenant_token_expires_at": 1778088875.852879,
-  "tenant_token_updated_at": "2026-05-06T23:47:35.852885"
+  "tenant_access_token": "t-g104579BPGPQXAAREK7WPESW3XHO2C2TEV6O3M35",
+  "tenant_token_expires_at": 1778125057.31941,
+  "tenant_token_updated_at": "2026-05-07T09:47:39.319416"
 }
