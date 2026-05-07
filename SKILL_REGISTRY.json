@@ -254,8 +254,19 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 9,
+      "count": 10,
       "skills": [
+        {
+          "id": "kw_feishu_integration",
+          "name": "KW-Feishu知识联动",
+          "location": "skills/kw-feishu-integration/SKILL.md",
+          "proficiency": 0.75,
+          "usage_count": 1,
+          "last_used": "2026-05-08",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "KW与飞书云文档双向深度联动引擎，实现本地知识加工+云端归档的闭环管理"
+        },
         {
           "id": "karpathy_wiki",
           "name": "Karpathy Wiki知识系统",
