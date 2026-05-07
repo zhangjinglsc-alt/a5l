@@ -254,8 +254,19 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 11,
+      "count": 12,
       "skills": [
+        {
+          "id": "codex",
+          "name": "Codex代码生成助手",
+          "location": "skills/codex/SKILL.md",
+          "proficiency": 0.75,
+          "usage_count": 1,
+          "last_used": "2026-05-08",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "将投资逻辑自动转化为可执行代码，支持策略生成、回测框架、监控脚本、自然语言转代码"
+        },
         {
           "id": "hermes",
           "name": "Hermes消息协调中心",
