@@ -1,0 +1,14 @@
+[
+  {
+    "id": "HERMES-20260508031701-0000",
+    "content": "Hermes消息中心测试",
+    "priority": "P1",
+    "source": "hermes_init",
+    "channel": "auto",
+    "status": "sent",
+    "created_at": "2026-05-08T03:17:01.426574",
+    "scheduled_at": "2026-05-08T08:30:00.426583",
+    "sent_at": "2026-05-08T03:17:01.426718",
+    "metadata": {}
+  }
+]

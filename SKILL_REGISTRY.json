@@ -254,8 +254,19 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 10,
+      "count": 11,
       "skills": [
+        {
+          "id": "hermes",
+          "name": "Hermes消息协调中心",
+          "location": "skills/hermes/SKILL.md",
+          "proficiency": 0.80,
+          "usage_count": 1,
+          "last_used": "2026-05-08",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "A5L统一消息协调中心，整合所有通知渠道为单一出口，负责消息路由、优先级排序、去重合并、时机优化"
+        },
         {
           "id": "kw_feishu_integration",
           "name": "KW-Feishu知识联动",
