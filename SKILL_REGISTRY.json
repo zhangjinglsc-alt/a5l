@@ -2,11 +2,12 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 63,
-    "active_skills": 59,
+    "total_skills": 68,
+    "active_skills": 63,
     "deprecated_skills": 4,
     "avg_proficiency": 0.77,
-    "most_used": "unified-stock-price"
+    "most_used": "unified-stock-price",
+    "last_updated": "2026-05-08"
   },
   "categories": {
     "investment_analysis": {
@@ -260,7 +261,7 @@
           "id": "claude-code",
           "name": "Claude Code AI编程助手",
           "location": "skills/claude-code/SKILL.md",
-          "proficiency": 0.80,
+          "proficiency": 0.8,
           "usage_count": 1,
           "last_used": "2026-05-08",
           "success_rate": 1.0,
@@ -282,7 +283,7 @@
           "id": "hermes",
           "name": "Hermes消息协调中心",
           "location": "skills/hermes/SKILL.md",
-          "proficiency": 0.80,
+          "proficiency": 0.8,
           "usage_count": 1,
           "last_used": "2026-05-08",
           "success_rate": 1.0,
@@ -315,7 +316,7 @@
           "id": "catalyst_monitor_auto",
           "name": "催化事件自动监控",
           "location": "skills/catalyst-monitor-auto/SKILL.md",
-          "proficiency": 0.80,
+          "proficiency": 0.8,
           "usage_count": 0,
           "last_used": null,
           "success_rate": 1.0,
@@ -764,9 +765,9 @@
     "2026-05-01: 建立skill熟练度追踪机制",
     "2026-05-03: 归档3个重叠技能：self-improving-agent/aakshare/ai-news-aggregator",
     "2026-05-03: SKILL合并方案制定，功能重叠问题解决",
-    "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论"
-  ]
-}"2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具",
-    "2026-05-07: 新增催化事件自动监控系统(catalyst-monitor-auto)，主动抓取市场催化事件"
+    "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论",
+    "2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具",
+    "2026-05-07: 新增催化事件自动监控系统(catalyst-monitor-auto)，主动抓取市场催化事件",
+    "2026-05-08: A5L v2.1 Olympus发布，新增8大系统：Claude/Hermes/Codex/ClaudeCode/KarpathyWiki/KW-Feishu/CTF/Monitor"
   ]
 }
