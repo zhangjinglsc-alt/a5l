@@ -254,8 +254,19 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 7,
+      "count": 8,
       "skills": [
+        {
+          "id": "catalyst_monitor_auto",
+          "name": "催化事件自动监控",
+          "location": "skills/catalyst-monitor-auto/SKILL.md",
+          "proficiency": 0.80,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "自动催化事件监控系统，主动抓取市场催化事件，自动应用CTF框架分析并推送提醒"
+        },
         {
           "id": "claw_daily_sync",
           "name": "CLAW每日同步",
@@ -700,6 +711,7 @@
     "2026-05-03: SKILL合并方案制定，功能重叠问题解决",
     "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论"
   ]
-}"2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具"
+}"2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具",
+    "2026-05-07: 新增催化事件自动监控系统(catalyst-monitor-auto)，主动抓取市场催化事件"
   ]
 }

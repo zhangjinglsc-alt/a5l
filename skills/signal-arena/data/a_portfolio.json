@@ -1,7 +1,12 @@
 {
-  "cash": 5000000.0,
-  "positions": {},
+  "cash": 4983194.96,
+  "positions": {
+    "000001": {
+      "quantity": 1500,
+      "avg_cost": 11.2
+    }
+  },
   "total_value": 5000000.0,
-  "last_updated": "2026-05-06T09:00:58.754502",
+  "last_updated": "2026-05-07T14:32:41.904797",
   "version": "3.0_real_data"
 }

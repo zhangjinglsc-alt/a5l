@@ -1,0 +1,107 @@
+{
+  "date": "2026-05-07",
+  "total_value": 5293168.26,
+  "total_cost": 4850299.333000001,
+  "total_pnl": 442868.9269999992,
+  "pnl_pct": 9.130754549247099,
+  "accounts": [
+    {
+      "name": "\u5f20\u664b (\u81ea\u6709)",
+      "tail": "6662",
+      "value": 1155146.0,
+      "cost": 946286.2000000001,
+      "pnl": 208859.79999999993
+    },
+    {
+      "name": "WGB",
+      "tail": "9603",
+      "value": 2236850.0,
+      "cost": 1993078.9999999998,
+      "pnl": 243771.00000000023
+    },
+    {
+      "name": "\u738b\u529b",
+      "tail": "0055",
+      "value": 1300950.0,
+      "cost": 1322721.0,
+      "pnl": -21771.0
+    },
+    {
+      "name": "\u8001\u5a18",
+      "tail": "0179",
+      "value": 600222.26,
+      "cost": 588213.1329999999,
+      "pnl": 12009.127000000095
+    }
+  ],
+  "stocks": {
+    "000066": {
+      "name": "\u4e2d\u56fd\u957f\u57ce",
+      "total_shares": 48000,
+      "total_cost": 809376.0,
+      "total_value": 1151040.0,
+      "accounts": [
+        {
+          "account": "\u5f20\u664b (\u81ea\u6709)",
+          "shares": 48000
+        }
+      ]
+    },
+    "002436": {
+      "name": "\u5174\u68ee\u79d1\u6280",
+      "total_shares": 100,
+      "total_cost": 16341.8,
+      "total_value": 3184.0,
+      "accounts": [
+        {
+          "account": "\u5f20\u664b (\u81ea\u6709)",
+          "shares": 100
+        }
+      ]
+    },
+    "300708": {
+      "name": "\u805a\u707f\u5149\u7535",
+      "total_shares": 100,
+      "total_cost": 120568.4,
+      "total_value": 922.0000000000001,
+      "accounts": [
+        {
+          "account": "\u5f20\u664b (\u81ea\u6709)",
+          "shares": 100
+        }
+      ]
+    },
+    "601975": {
+      "name": "\u62db\u5546\u5357\u6cb9",
+      "total_shares": 764200,
+      "total_cost": 3522791.0,
+      "total_value": 3744580.0,
+      "accounts": [
+        {
+          "account": "WGB",
+          "shares": 456500
+        },
+        {
+          "account": "\u738b\u529b",
+          "shares": 265500
+        },
+        {
+          "account": "\u8001\u5a18",
+          "shares": 42200
+        }
+      ]
+    },
+    "688981": {
+      "name": "\u4e2d\u82af\u56fd\u9645",
+      "total_shares": 3139,
+      "total_cost": 381222.133,
+      "total_value": 393442.26,
+      "accounts": [
+        {
+          "account": "\u8001\u5a18",
+          "shares": 3139
+        }
+      ]
+    }
+  }
+}

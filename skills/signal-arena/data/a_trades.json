@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "timestamp": "2026-05-07T14:32:41.904804",
+    "symbol": "000001",
+    "name": "平安银行",
+    "action": "BUY",
+    "quantity": 1500,
+    "price": 11.2,
+    "amount": 16800.0,
+    "commission": 5.039999999999999,
+    "total_cost": 16805.04,
+    "source": "simulated_plan_execution",
+    "plan_id": "CN-PLAN-20260506-0001",
+    "note": "AKShare unavailable, using planned price"
+  }
+]
