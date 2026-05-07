@@ -2,10 +2,10 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 68,
-    "active_skills": 63,
+    "total_skills": 73,
+    "active_skills": 68,
     "deprecated_skills": 4,
-    "avg_proficiency": 0.77,
+    "avg_proficiency": 0.78,
     "most_used": "unified-stock-price",
     "last_updated": "2026-05-08"
   },
@@ -255,8 +255,78 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 13,
+      "count": 15,
       "skills": [
+        {
+          "id": "planner",
+          "name": "规划器",
+          "location": "skills/planner/SKILL.md",
+          "proficiency": 0.88,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns规划器，四级目标分解与依赖管理，动态重规划能力",
+          "layer": "L0_Meta_Control",
+          "owner": "Chief Architect",
+          "patterns": ["Planning", "Task Decomposition", "Re-planning"]
+        },
+        {
+          "id": "goal-monitor",
+          "name": "目标监控器",
+          "location": "skills/goal-monitor/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns目标监控器，SMART目标追踪与自适应反馈回路",
+          "layer": "L4_Decision_Signal",
+          "owner": "CIO",
+          "patterns": ["Goal Setting", "Monitoring", "Feedback Loop"]
+        },
+        {
+          "id": "resilience-recovery",
+          "name": "韧性恢复系统",
+          "location": "skills/resilience-recovery/SKILL.md",
+          "proficiency": 0.9,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns韧性系统，熔断器+优雅降级+自动恢复，确保高可用",
+          "layer": "L0_Meta_Control",
+          "owner": "CSO",
+          "patterns": ["Circuit Breaker", "Graceful Degradation", "Self-Healing"]
+        },
+        {
+          "id": "orchestrator-engine",
+          "name": "编排引擎",
+          "location": "skills/orchestrator-engine/SKILL.md",
+          "proficiency": 0.9,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns编排引擎，实现Prompt Chaining/Routing/Parallelization三大模式，动态协调多SKILL执行管线",
+          "layer": "L0_Meta_Control",
+          "owner": "COO",
+          "patterns": ["Prompt Chaining", "Routing", "Parallelization"]
+        },
+        {
+          "id": "reflection-optimizer",
+          "name": "反思优化器",
+          "location": "skills/reflection-optimizer/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns反思系统，Producer-Critic双角色模型，六维度审查框架提升分析质量",
+          "layer": "L3_Analysis",
+          "owner": "All Analysts",
+          "patterns": ["Reflection", "Producer-Critic"]
+        },
         {
           "id": "claude-code",
           "name": "Claude Code AI编程助手",
@@ -712,6 +782,36 @@
     }
   },
   "recently_added": [
+    {
+      "id": "planner",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 规划器，层次化任务规划与动态重规划",
+      "description": "基于Agentic Design Patterns的规划系统，四级目标分解与依赖管理"
+    },
+    {
+      "id": "goal_monitor",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 目标监控器，SMART目标追踪与自适应反馈",
+      "description": "基于Agentic Design Patterns的目标监控系统，实时监控与偏差预警"
+    },
+    {
+      "id": "resilience_recovery",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 韧性恢复系统，熔断器+优雅降级+自动恢复",
+      "description": "基于Agentic Design Patterns的异常处理系统，确保系统高可用性"
+    },
+    {
+      "id": "orchestrator_engine",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 1 - 编排引擎，实现Prompt Chaining/Routing/Parallelization三大模式",
+      "description": "基于Agentic Design Patterns的编排引擎，动态协调多SKILL执行管线"
+    },
+    {
+      "id": "reflection_optimizer",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 1 - 反思优化器，Producer-Critic双角色模型提升分析质量",
+      "description": "基于Agentic Design Patterns的反思系统，六维度审查框架自我纠错"
+    },
     {
       "id": "goal_oriented",
       "added_at": "2026-05-01",
