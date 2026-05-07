@@ -2,8 +2,8 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 63,
-    "active_skills": 59,
+    "total_skills": 61,
+    "active_skills": 57,
     "deprecated_skills": 4,
     "avg_proficiency": 0.77,
     "most_used": "unified-stock-price"
@@ -254,19 +254,8 @@
     },
     "system_framework": {
       "name": "系统框架",
-      "count": 9,
+      "count": 8,
       "skills": [
-        {
-          "id": "karpathy_wiki",
-          "name": "Karpathy Wiki知识系统",
-          "location": "skills/karpathy-wiki/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 0,
-          "last_used": null,
-          "success_rate": 1.0,
-          "status": "active",
-          "description": "基于Andrej Karpathy的Compilation-over-Retrieval理念，将信息源编译为结构化、交叉引用的知识wiki，实现知识复利增长"
-        },
         {
           "id": "catalyst_monitor_auto",
           "name": "催化事件自动监控",

@@ -1,0 +1,219 @@
+{
+  "snapshot_version": "1.0",
+  "timestamp": "2026-05-07T23:50:00+08:00",
+  "date": "2026-05-07",
+  "type": "daily_context_archive",
+  
+  "session_info": {
+    "session_key": "agent:main:cron:839bcf99-26d0-4dde-a7ef-ad18c8eb9a7f",
+    "label": "Cron: 每日对话上下文存档",
+    "model": "kimi-k2-5-260127",
+    "context_tokens": 180000,
+    "total_tokens": 66968
+  },
+
+  "portfolio_state": {
+    "real_accounts": {
+      "total_market_value": 5293168.26,
+      "total_cost": 4850299.33,
+      "total_pnl": 442868.93,
+      "pnl_rate": 9.13,
+      "account_count": 4,
+      "positions": [
+        {
+          "symbol": "000066",
+          "name": "中国长城",
+          "quantity": 48000,
+          "avg_cost": 16.86,
+          "current_price": 23.98,
+          "market_value": 1151040.00,
+          "pnl": 341664.00,
+          "pnl_rate": 42.21,
+          "daily_change": 10.00,
+          "account": "张晋(自有)",
+          "note": "三连板"
+        },
+        {
+          "symbol": "601975",
+          "name": "招商南油",
+          "quantity": 764200,
+          "avg_cost": 4.61,
+          "current_price": 4.90,
+          "market_value": 3744580.00,
+          "pnl": 221789.00,
+          "pnl_rate": 6.30,
+          "daily_change": 4.70,
+          "accounts": ["WGB", "王力", "老娘"],
+          "concentration": 70.7,
+          "risk_level": "high"
+        },
+        {
+          "symbol": "688981",
+          "name": "中芯国际",
+          "quantity": 3139,
+          "avg_cost": 121.45,
+          "current_price": 125.34,
+          "market_value": 393442.26,
+          "pnl": 12220.13,
+          "pnl_rate": 3.21,
+          "daily_change": 1.82,
+          "account": "老娘"
+        }
+      ],
+      "risk_alerts": [
+        {
+          "symbol": "601975",
+          "type": "concentration",
+          "value": 70.7,
+          "threshold": 50,
+          "action": "减仓",
+          "scheduled_time": "09:15"
+        },
+        {
+          "symbol": "000066",
+          "type": "concentration",
+          "value": 21.7,
+          "threshold": 20,
+          "action": "观察",
+          "note": "若开板放量考虑减仓30%"
+        }
+      ]
+    },
+    
+    "simulation_accounts": {
+      "us_sim_001": {
+        "currency": "USD",
+        "principal": 1000000,
+        "market_value": 1002591.78,
+        "cash": 959629.00,
+        "pnl": 2591.78,
+        "pnl_rate": 0.26,
+        "win_rate": 100,
+        "positions": [
+          {"symbol": "AMD", "quantity": 22, "avg_cost": 354.08, "current": 417.34, "pnl_rate": 17.87},
+          {"symbol": "NVDA", "quantity": 100, "avg_cost": 198.48, "current": 208.38, "pnl_rate": 4.99},
+          {"symbol": "INTC", "quantity": 92, "avg_cost": 108.64, "current": 111.07, "pnl_rate": 2.24},
+          {"symbol": "WDC", "quantity": 10, "avg_cost": 473.80, "current": 472.45, "pnl_rate": -0.28}
+        ]
+      },
+      "cn_sim_001": {
+        "currency": "CNY",
+        "principal": 5000000,
+        "cash": 4983194.96,
+        "positions": [
+          {"symbol": "000001", "name": "平安银行", "quantity": 1500, "avg_cost": 11.20, "note": "v3.0首笔交易"}
+        ]
+      },
+      "hk_sim_001": {
+        "currency": "HKD",
+        "principal": 5000000,
+        "cash": 5000000,
+        "positions": []
+      }
+    }
+  },
+
+  "skill_registry_state": {
+    "total_skills": 62,
+    "active_skills": 58,
+    "inactive_skills": 4,
+    "avg_proficiency": 76,
+    "new_skills_today": [
+      "catalyst-tier-framework",
+      "catalyst-monitor-auto"
+    ],
+    "top_proficiency": [
+      {"skill": "股票数据", "proficiency": 95},
+      {"skill": "新闻聚合", "proficiency": 89},
+      {"skill": "回测", "proficiency": 87},
+      {"skill": "因子投资", "proficiency": 85},
+      {"skill": "巴菲特", "proficiency": 82}
+    ]
+  },
+
+  "predictions": {
+    "2026-05-07": {
+      "wave_master": {"prediction": "观望", "actual": "震荡", "accuracy": true},
+      "buffett_sentiment": {"prediction": "分歧高", "actual": "87.78分", "accuracy": true},
+      "factor_investing": {"prediction": "均衡", "actual": "大盘+反转", "accuracy": true},
+      "overall_accuracy": "100% (3/3)"
+    },
+    "streak": 2
+  },
+
+  "validation_results": {
+    "prediction_accuracy": "100%",
+    "simulation_win_rate": "100%",
+    "backup_system": "100%",
+    "knowledge_graph_health": "93.5%"
+  },
+
+  "evolution_status": {
+    "current_level": "L2→L3",
+    "progress": 40,
+    "version": "v2.0.3-alpha",
+    "codename": "CTF Framework",
+    "status": "已发布",
+    "commits": 145
+  },
+
+  "key_decisions": [
+    {
+      "type": "trade",
+      "action": "买入平安银行",
+      "symbol": "000001",
+      "quantity": 1500,
+      "price": 11.20,
+      "account": "CN_SIM_001",
+      "time": "14:32",
+      "note": "A股模拟盘v3.0首笔交易"
+    },
+    {
+      "type": "risk_management",
+      "action": "减仓招商南油",
+      "symbol": "601975",
+      "reason": "集中度70.7%超过50%阈值",
+      "scheduled": "2026-05-08 09:15",
+      "priority": "P0"
+    },
+    {
+      "type": "framework_release",
+      "name": "CTF催化剂分级框架",
+      "version": "v1.0.0",
+      "note": "4层催化分级系统"
+    },
+    {
+      "type": "system_release",
+      "name": "催化事件自动监控系统",
+      "version": "v1.0.0",
+      "note": "自动新闻抓取+CTF分析+推送"
+    }
+  ],
+
+  "achievements_today": [
+    "A股模拟盘首笔交易执行成功",
+    "中国长城三连板，真实持仓扭亏为盈",
+    "CIO收盘复盘完成，总盈亏+11.40%",
+    "CTF催化剂分级框架v1.0.0发布",
+    "催化事件自动监控系统v1.0.0上线",
+    "预测验证100%准确(连续2天)"
+  ],
+
+  "tomorrow_plan": [
+    {"time": "09:15", "task": "招商南油减仓(集中度降至50%)", "priority": "P0"},
+    {"time": "14:30", "task": "A股模拟盘交易检查", "priority": "P1"},
+    {"time": "16:00", "task": "CIO收盘复盘", "priority": "P1"},
+    {"time": "21:30", "task": "美股开盘监控", "priority": "P2"}
+  ],
+
+  "cross_day_recovery": {
+    "memory_file": "memory/2026-05-07.md",
+    "session_snapshot": "memory/session_state_20260507.json",
+    "key_context": [
+      "中国长城三连板，持仓+42.21%",
+      "招商南油集中度70.7%，明日减仓",
+      "A股模拟盘买入平安银行1500股",
+      "CTF框架和自动监控系统上线"
+    ]
+  }
+}
