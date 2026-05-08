@@ -18,9 +18,9 @@
           "id": "catalyst_tier_framework",
           "name": "CTF催化剂分级框架",
           "location": "skills/catalyst-tier-framework/SKILL.md",
-          "proficiency": 0.85,
-          "usage_count": 1,
-          "last_used": "2026-05-07",
+          "proficiency": 0.854,
+          "usage_count": 2,
+          "last_used": "2026-05-08T10:16:11.054121",
           "success_rate": 1.0,
           "status": "active",
           "description": "催化剂分级框架(Tier1-4)，四层催化事件分级，配套仓位管理与预期差识别"
@@ -269,7 +269,11 @@
           "description": "Agentic Design Patterns护栏系统，输入/输出/执行三层安全防护与合规审查",
           "layer": "L0_Meta_Control",
           "owner": "CSO",
-          "patterns": ["Input Validation", "Output Verification", "Safety Boundaries"]
+          "patterns": [
+            "Input Validation",
+            "Output Verification",
+            "Safety Boundaries"
+          ]
         },
         {
           "id": "a2a-protocol",
@@ -283,21 +287,29 @@
           "description": "Agentic Design Patterns A2A协议，Six-in-One Hub智能体间标准化通信",
           "layer": "L0_Meta_Control",
           "owner": "COO",
-          "patterns": ["Inter-Agent Communication", "Task Delegation", "Message Routing"]
+          "patterns": [
+            "Inter-Agent Communication",
+            "Task Delegation",
+            "Message Routing"
+          ]
         },
         {
           "id": "planner",
           "name": "规划器",
           "location": "skills/planner/SKILL.md",
-          "proficiency": 0.88,
-          "usage_count": 0,
-          "last_used": null,
+          "proficiency": 0.881,
+          "usage_count": 1,
+          "last_used": "2026-05-08T10:16:10.553513",
           "success_rate": 1.0,
           "status": "active",
           "description": "Agentic Design Patterns规划器，四级目标分解与依赖管理，动态重规划能力",
           "layer": "L0_Meta_Control",
           "owner": "Chief Architect",
-          "patterns": ["Planning", "Task Decomposition", "Re-planning"]
+          "patterns": [
+            "Planning",
+            "Task Decomposition",
+            "Re-planning"
+          ]
         },
         {
           "id": "goal-monitor",
@@ -311,7 +323,11 @@
           "description": "Agentic Design Patterns目标监控器，SMART目标追踪与自适应反馈回路",
           "layer": "L4_Decision_Signal",
           "owner": "CIO",
-          "patterns": ["Goal Setting", "Monitoring", "Feedback Loop"]
+          "patterns": [
+            "Goal Setting",
+            "Monitoring",
+            "Feedback Loop"
+          ]
         },
         {
           "id": "resilience-recovery",
@@ -325,7 +341,11 @@
           "description": "Agentic Design Patterns韧性系统，熔断器+优雅降级+自动恢复，确保高可用",
           "layer": "L0_Meta_Control",
           "owner": "CSO",
-          "patterns": ["Circuit Breaker", "Graceful Degradation", "Self-Healing"]
+          "patterns": [
+            "Circuit Breaker",
+            "Graceful Degradation",
+            "Self-Healing"
+          ]
         },
         {
           "id": "orchestrator-engine",
@@ -339,7 +359,11 @@
           "description": "Agentic Design Patterns编排引擎，实现Prompt Chaining/Routing/Parallelization三大模式，动态协调多SKILL执行管线",
           "layer": "L0_Meta_Control",
           "owner": "COO",
-          "patterns": ["Prompt Chaining", "Routing", "Parallelization"]
+          "patterns": [
+            "Prompt Chaining",
+            "Routing",
+            "Parallelization"
+          ]
         },
         {
           "id": "reflection-optimizer",
@@ -353,7 +377,10 @@
           "description": "Agentic Design Patterns反思系统，Producer-Critic双角色模型，六维度审查框架提升分析质量",
           "layer": "L3_Analysis",
           "owner": "All Analysts",
-          "patterns": ["Reflection", "Producer-Critic"]
+          "patterns": [
+            "Reflection",
+            "Producer-Critic"
+          ]
         },
         {
           "id": "claude-code",
