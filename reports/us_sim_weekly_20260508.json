@@ -1,0 +1,36 @@
+{
+  "period": "2026-05-01 ~ 2026-05-08",
+  "total_cost": 42370.64,
+  "total_value": 44962.42,
+  "total_pnl": 2591.779999999999,
+  "total_pnl_pct": 6.116924360830988,
+  "positions": {
+    "AMD": {
+      "shares": 22,
+      "cost": 354.08,
+      "current": 417.34,
+      "pnl_pct": 17.87
+    },
+    "NVDA": {
+      "shares": 100,
+      "cost": 198.48,
+      "current": 208.38,
+      "pnl_pct": 4.99
+    },
+    "INTC": {
+      "shares": 92,
+      "cost": 108.64,
+      "current": 111.07,
+      "pnl_pct": 2.24
+    },
+    "WDC": {
+      "shares": 10,
+      "cost": 473.8,
+      "current": 472.45,
+      "pnl_pct": -0.28
+    }
+  },
+  "winners": 3,
+  "losers": 1,
+  "risk_status": "normal"
+}

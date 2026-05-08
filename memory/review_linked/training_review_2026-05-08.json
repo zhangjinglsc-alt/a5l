@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-08",
+  "type": "SKILL_training",
+  "total_rounds": 35,
+  "success_rate": 0.75,
+  "breakthroughs": [
+    {
+      "skill": "yangguan_daodao",
+      "from": 0.795,
+      "to": 0.803
+    },
+    {
+      "skill": "technical_analysis",
+      "from": 0.786,
+      "to": 0.804
+    },
+    {
+      "skill": "sector_etf_monitor",
+      "from": 0.795,
+      "to": 0.822
+    },
+    {
+      "skill": "trading_analytics",
+      "from": 0.794,
+      "to": 0.814
+    },
+    {
+      "skill": "agent_memory_guide",
+      "from": 0.79,
+      "to": 0.81
+    }
+  ],
+  "patterns": {
+    "successful": [
+      "换导师策略: 低熟练度SKILL换到最强导师后成功率大幅提升",
+      "architect_5l + blackswan_risk_control = 3连成功",
+      "79%+ SKILL集中训练2-3轮必破Expert"
+    ],
+    "failed": [
+      "langzhu_wave_predictor 多次换导师仍困难",
+      "训练系统初期未自动保存文件导致成果丢失"
+    ]
+  },
+  "insights": [
+    "导师匹配不能只看类别，需考虑教学能力和功能相似度",
+    "Beginner级SKILL需要更强导师(90%+)，普通导师效果差",
+    "临界突破(79%+)时成功率最高，应集中资源"
+  ]
+}
