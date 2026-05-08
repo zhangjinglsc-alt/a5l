@@ -11,6 +11,7 @@ import sys
 import json
 import sqlite3
 import akshare as ak
+import pandas as pd
 from datetime import datetime, timedelta
 from dataclasses import dataclass, asdict
 from typing import Optional, List, Dict, Tuple
@@ -66,28 +67,50 @@ class IndexDataFetcher:
     """指数数据获取器"""
     
     INDEX_MAP = {
-        'sh000001': {'name': '上证指数', 'ak_code': 'sh000001'},
-        'sz399001': {'name': '深证成指', 'ak_code': 'sz399001'},
-        'sz399006': {'name': '创业板指', 'ak_code': 'sz399006'},
-        'sh000016': {'name': '上证50', 'ak_code': 'sh000016'},
-        'sh000300': {'name': '沪深300', 'ak_code': 'sh000300'},
-        'sh000905': {'name': '中证500', 'ak_code': 'sh000905'},
+        'sh000001': {'name': '上证指数', 'ak_code': '000001'},
+        'sz399001': {'name': '深证成指', 'ak_code': '399001'},
+        'sz399006': {'name': '创业板指', 'ak_code': '399006'},
+        'sh000016': {'name': '上证50', 'ak_code': '000016'},
+        'sh000300': {'name': '沪深300', 'ak_code': '000300'},
+        'sh000905': {'name': '中证500', 'ak_code': '000905'},
     }
     
     def fetch_intraday(self, index_code: str, period: str = "15") -> pd.DataFrame:
         """获取日内15分钟数据"""
         try:
+            # 获取当日日线数据，从中推算日内情况
             ak_code = self.INDEX_MAP[index_code]['ak_code']
-            df = ak.index_zh_a_hist_min_em(
-                symbol=ak_code,
-                period=period,
-                start_date=datetime.now().strftime("%Y%m%d"),
-                end_date=datetime.now().strftime("%Y%m%d")
-            )
-            return df
+            df_daily = ak.index_zh_a_hist(symbol=ak_code, period="daily", 
+                                          start_date=datetime.now().strftime("%Y%m%d"),
+                                          end_date=datetime.now().strftime("%Y%m%d"))
+            if not df_daily.empty:
+                current_hour = datetime.now().hour
+                # 根据当前时间估算15分钟K线数量
+                # 9:30-11:30, 13:00-15:00 为交易时间
+                if current_hour < 9:
+                    count = 0
+                elif current_hour < 11:
+                    count = (current_hour - 9) * 4 + (datetime.now().minute - 30) // 15 + 1
+                elif current_hour == 11 and datetime.now().minute <= 30:
+                    count = 8
+                elif current_hour < 13:
+                    count = 8  # 午休
+                elif current_hour < 15:
+                    count = 8 + (current_hour - 13) * 4 + datetime.now().minute // 15 + 1
+                else:
+                    count = 16
+                
+                return pd.DataFrame({
+                    '时间': [datetime.now().strftime("%H:%M")],
+                    '收盘': [float(df_daily.iloc[0]['收盘'])],
+                    '开盘': [float(df_daily.iloc[0]['开盘'])],
+                    '最高': [float(df_daily.iloc[0]['最高'])],
+                    '最低': [float(df_daily.iloc[0]['最低'])],
+                }), count
+            return pd.DataFrame(), 0
         except Exception as e:
             print(f"获取日内数据失败: {e}")
-            return pd.DataFrame()
+            return pd.DataFrame(), 0
     
     def fetch_daily(self, index_code: str, days: int = 60) -> pd.DataFrame:
         """获取日线数据"""
@@ -100,8 +123,7 @@ class IndexDataFetcher:
                 symbol=ak_code,
                 period="daily",
                 start_date=start_date.strftime("%Y%m%d"),
-                end_date=end_date.strftime("%Y%m%d"),
-                adjust="qfq"
+                end_date=end_date.strftime("%Y%m%d")
             )
             return df
         except Exception as e:
@@ -618,10 +640,4 @@ def main():
             print(f"{status} {r['prediction_id']}: 预测{r['predicted']} -> 实际变化{r['price_change_pct']:.2f}%")
 
 if __name__ == "__main__":
-    try:
-        import pandas as pd
-    except ImportError:
-        import subprocess
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "pandas"])
-        import pandas as pd
     main()
