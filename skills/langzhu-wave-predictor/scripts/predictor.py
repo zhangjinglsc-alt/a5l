@@ -140,6 +140,8 @@ class IndexDataFetcher:
         except:
             return 0.0
 
+from wave_pattern_recognizer import WavePatternRecognizer, WaveStructure, WaveType
+
 class LangzhuWaveAnalyzer:
     """浪主波浪理论分析器"""
     
@@ -147,18 +149,12 @@ class LangzhuWaveAnalyzer:
         self.time_left_threshold = 23  # 左侧判断：23个15分钟
         self.time_right_threshold = 32  # 右侧确认：32个15分钟
         self.wave_lifecycle = 30  # 微浪型寿命约30天
+        self.wave_recognizer = WavePatternRecognizer()  # 新增浪型识别器
     
     def analyze(self, df_daily: pd.DataFrame, df_15min: pd.DataFrame) -> Dict:
         """
-        执行浪主波浪理论分析
-        
-        基于今天的文章分析逻辑：
-        1. 3794低点上升已30天，处于5浪末
-        2. 时间判断：超过23个15分钟左侧判断，32个右侧确认
-        3. 关键点位：4197.23（阻力）/4143.56（长4浪）/4061.15（4浪）
-        4. 扁担型预警：破4143后再创新高=小末浪
+        执行浪主波浪理论分析（增强版）
         """
-        
         if df_daily.empty:
             return {"error": "无数据"}
         
@@ -168,16 +164,31 @@ class LangzhuWaveAnalyzer:
         # 计算15分钟K线数量（当天）
         time_15min_count = len(df_15min) if not df_15min.empty else 0
         
-        # 关键点位（基于今天的文章，实际应用中需要动态计算或配置）
+        # 关键点位（动态计算或从配置读取）
         resistance = 4197.23
         support_1 = 4143.56  # 长4浪低点
         support_2 = 4061.15  # 4浪低点
         
-        # 浪型位置判断（简化版，实际需要更复杂的算法）
-        current_wave = "5浪末（或长5浪子5浪末）"
-        wave_structure = "3794低点上升30天，清晰5浪结构，当前处于5浪末端"
+        # ===== 增强：使用浪型识别器 =====
+        # 从3794低点开始分析（根据浪主文章）
+        wave_structure = self.wave_recognizer.identify_5wave_structure(
+            df_daily,
+            significant_low=3794,
+            significant_low_date="2025-04-07"  # 3794低点日期
+        )
         
-        # 时间周期判断
+        # 格式化浪型结构
+        wave_structure_text = self.wave_recognizer.format_wave_structure(wave_structure)
+        
+        # 获取当前浪型信息
+        current_wave = f"{wave_structure.current_wave.value} (第{wave_structure.current_wave_num}浪)"
+        wave_structure_desc = " | ".join(wave_structure.key_features[:3])  # 取前3个特征
+        
+        # 检测扁担型结构
+        is_carrying_pole = wave_structure.is_carrying_pole
+        carrying_pole_warning = wave_structure.carrying_pole_desc if is_carrying_pole else None
+        
+        # ===== 时间周期判断 =====
         if time_15min_count >= self.time_right_threshold:
             time_status = f"✅ 右侧确认（{time_15min_count}个15分钟 > {self.time_right_threshold}）"
             adjustment_confirmed = True
@@ -188,7 +199,7 @@ class LangzhuWaveAnalyzer:
             time_status = f"⏳ 观察中（{time_15min_count}/{self.time_left_threshold}个15分钟）"
             adjustment_confirmed = False
         
-        # 空间判断
+        # ===== 空间判断 =====
         if current_price < support_2:
             space_status = f"✅ 跌破4浪低点{support_2}，调整确认"
             space_confirmed = True
@@ -199,14 +210,30 @@ class LangzhuWaveAnalyzer:
             space_status = f"⏳ 在长4浪低点{support_1}之上运行"
             space_confirmed = False
         
-        # 综合预测
-        if adjustment_confirmed or space_confirmed:
+        # 综合预测（结合浪型结构）
+        if is_carrying_pole:
+            prediction = "down"
+            confidence = 0.80
+            key_scenarios = [
+                f"⚠️ 扁担型结构预警：{carrying_pole_warning}",
+                "破长4浪低点后再创新高=小末浪，通常是诱多",
+                "建议减仓观望，防范大跌风险"
+            ]
+        elif adjustment_confirmed or space_confirmed:
             prediction = "down"
             confidence = 0.75
             key_scenarios = [
                 "调整已确认，关注下方支撑",
-                "若破4143后再创新高，警惕扁担型小末浪",
+                f"当前处于{current_wave}，调整概率大",
                 "时间验证优先于空间判断"
+            ]
+        elif wave_structure.lifecycle_stage == "end":
+            prediction = "consolidation"
+            confidence = 0.70
+            key_scenarios = [
+                f"处于{current_wave}末端，即将变盘",
+                f"微浪型已运行{wave_structure.total_days}天，接近寿命极限",
+                "等待方向确认，控制仓位"
             ]
         elif time_15min_count >= 15:  # 接近左侧判断
             prediction = "consolidation"
@@ -220,16 +247,21 @@ class LangzhuWaveAnalyzer:
             prediction = "consolidation"
             confidence = 0.50
             key_scenarios = [
-                "5浪末端震荡，等待确认信号",
+                f"当前处于{current_wave}，等待确认信号",
                 "时间周期尚未满足",
-                "空间上关注4143.56支撑"
+                f"空间上关注{support_1}支撑"
             ]
         
         return {
             "current_price": current_price,
             "current_wave": current_wave,
-            "wave_structure": wave_structure,
-            "days_in_wave": 30,  # 示例
+            "wave_structure": wave_structure_desc,
+            "wave_structure_detail": wave_structure_text,  # 新增详细浪型结构
+            "wave_lifecycle": wave_structure.lifecycle_stage,
+            "wave_confidence": wave_structure.structure_confidence,
+            "days_in_wave": wave_structure.total_days,
+            "is_carrying_pole": is_carrying_pole,  # 扁担型标记
+            "carrying_pole_warning": carrying_pole_warning,
             "resistance_level": resistance,
             "support_level_1": support_1,
             "support_level_2": support_2,
@@ -238,7 +270,16 @@ class LangzhuWaveAnalyzer:
             "space_status": space_status,
             "prediction": prediction,
             "confidence": confidence,
-            "key_scenarios": key_scenarios
+            "key_scenarios": key_scenarios,
+            "waves_detail": [  # 新增各浪详情
+                {
+                    "num": w.wave_num,
+                    "type": w.wave_type.value,
+                    "amplitude": round(w.amplitude * 100, 2),
+                    "duration": w.duration_days,
+                    "length": w.length_type.value
+                } for w in wave_structure.waves
+            ] if wave_structure.waves else []
         }
 
 class PredictionDatabase:
@@ -498,7 +539,7 @@ class LangzhuPredictor:
         
         # 获取数据
         df_daily = self.fetcher.fetch_daily(index_code, days=60)
-        df_15min = self.fetcher.fetch_intraday(index_code, period="15")
+        df_15min, time_count = self.fetcher.fetch_intraday(index_code, period="15")
         
         # 执行分析
         analysis = self.analyzer.analyze(df_daily, df_15min)
@@ -540,14 +581,14 @@ class LangzhuPredictor:
             metrics={"confidence": pred.confidence}
         )
         
-        return pred
+        return pred, analysis
     
     def verify(self, session: str = 'morning') -> List[Dict]:
         """验证预测"""
         return self.verifier.verify_session(session)
     
-    def generate_report(self, pred: WavePrediction) -> str:
-        """生成预测报告"""
+    def generate_report(self, pred: WavePrediction, analysis: Dict = None) -> str:
+        """生成预测报告（增强版）"""
         
         direction_map = {
             'up': '看涨',
@@ -555,8 +596,24 @@ class LangzhuPredictor:
             'consolidation': '震荡'
         }
         
-        report = f"""
-# 🌊 浪主波浪理论预测报告
+        # 获取详细浪型结构
+        wave_detail_text = ""
+        if analysis and 'wave_structure_detail' in analysis:
+            wave_detail_text = analysis.get('wave_structure_detail', '')
+        
+        # 获取扁担型预警
+        carrying_pole_warning = analysis.get('carrying_pole_warning', '') if analysis else ''
+        
+        # 获取各浪详情
+        waves_detail = analysis.get('waves_detail', []) if analysis else []
+        waves_table = ""
+        if waves_detail:
+            waves_table = "\n| 浪号 | 类型 | 幅度 | 时长 | 长度 |\n"
+            waves_table += "|------|------|------|------|------|\n"
+            for w in waves_detail:
+                waves_table += f"| {w['num']}浪 | {w['type']} | {w['amplitude']:+.1f}% | {w['duration']}天 | {w['length']} |\n"
+        
+        report = f"""# 🌊 浪主波浪理论预测报告
 
 ## 📊 基本信息
 - **指数**: {pred.index_name} ({pred.index_code})
@@ -564,10 +621,15 @@ class LangzhuPredictor:
 - **时段**: {'早盘' if pred.session == 'morning' else '午盘'}
 - **预测ID**: {pred.prediction_id}
 
-## 🌊 浪型分析
+## 🌊 浪型结构分析
 - **当前位置**: {pred.current_wave}
 - **浪型结构**: {pred.wave_structure}
 - **运行天数**: {pred.days_in_wave}天
+- **生命周期**: {(analysis.get('wave_lifecycle', 'unknown') if analysis else 'unknown')}
+- **结构置信度**: {(analysis.get('wave_confidence', 0) * 100 if analysis else 0):.0f}%
+
+### 各浪详情
+{waves_table if waves_table else '暂无详细浪型数据'}
 
 ## 🎯 关键点位
 ```
@@ -594,8 +656,15 @@ class LangzhuPredictor:
         for i, scenario in enumerate(pred.key_scenarios, 1):
             report += f"{i}. {scenario}\n"
         
+        # 添加扁担型预警
+        if carrying_pole_warning:
+            report += f"\n## ⚠️ 扁担型结构预警\n\n> {carrying_pole_warning}\n\n**风险提示**: 破长4浪低点后再创新高通常是诱多信号，建议减仓防范。\n"
+        
+        # 添加详细浪型结构
+        if wave_detail_text:
+            report += f"\n## 📋 详细浪型结构\n\n```\n{wave_detail_text}\n```\n"
+        
         report += f"""
-
 ## 📝 操作建议
 - 时间周期验证优先于空间判断
 - 重点关注{pred.support_level_1:.2f}支撑
@@ -622,8 +691,8 @@ def main():
     predictor = LangzhuPredictor()
     
     if args.action == 'predict':
-        pred = predictor.predict(args.index, args.session)
-        report = predictor.generate_report(pred)
+        pred, analysis = predictor.predict(args.index, args.session)
+        report = predictor.generate_report(pred, analysis)
         print(report)
         
         # 保存报告

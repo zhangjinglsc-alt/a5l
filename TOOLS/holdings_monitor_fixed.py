@@ -16,15 +16,15 @@ class HoldingsMonitorFixed:
         self.report_date = "2026-05-04"
         self.last_trade_date = "2026-04-24"
         
-        # 当前持仓（基于2026-05-04 15:32最新报告）
+        # 当前持仓（基于2026-05-08 15:40最新报告）
         self.current_holdings = {
             "000066.SZ": {
                 "name": "中国长城",
                 "shares": 151362,
                 "avg_cost": 18.83,
-                "current_price": 19.82,
-                "market_value": 3000000.00,
-                "pnl_pct": 5.26,
+                "current_price": 23.09,
+                "market_value": 3495000.00,
+                "pnl_pct": 22.62,
                 "account": "自有账户",
                 "industry": "信创/国产芯片",
                 "status": "⭐满仓核心持仓"
@@ -33,9 +33,9 @@ class HoldingsMonitorFixed:
                 "name": "聚灿光电", 
                 "shares": 100,
                 "avg_cost": 10.76,
-                "current_price": 8.85,
-                "market_value": 885.00,
-                "pnl_pct": -17.75,
+                "current_price": 9.25,
+                "market_value": 925.00,
+                "pnl_pct": -14.00,
                 "account": "自有账户",
                 "industry": "LED芯片",
                 "status": "观察仓"
@@ -44,9 +44,9 @@ class HoldingsMonitorFixed:
                 "name": "兴森科技",
                 "shares": 100,
                 "avg_cost": 29.29,
-                "current_price": 27.71,
-                "market_value": 2771.00,
-                "pnl_pct": -5.39,
+                "current_price": 32.01,
+                "market_value": 3201.00,
+                "pnl_pct": 9.30,
                 "account": "自有账户",
                 "industry": "PCB/封装基板",
                 "status": "观察仓"
@@ -55,24 +55,24 @@ class HoldingsMonitorFixed:
                 "name": "招商南油",
                 "shares": 761400,  # 合计: WGB 456500 + 王力 265500 + 老娘 39400
                 "avg_cost": 4.62,
-                "current_price": 4.48,
-                "market_value": 3411072.00,
-                "pnl_pct": -2.95,
+                "current_price": 5.00,
+                "market_value": 3807000.00,
+                "pnl_pct": 8.31,
                 "accounts": {
-                    "WGB": {"shares": 456500, "cost": 4.37},
-                    "王力": {"shares": 265500, "cost": 4.99},
-                    "老娘": {"shares": 39400, "cost": 4.95}
+                    "WGB": {"shares": 456500, "cost": 4.37, "value": 2282500},
+                    "王力": {"shares": 265500, "cost": 4.99, "value": 1327500},
+                    "老娘": {"shares": 39400, "cost": 4.95, "value": 197000}
                 },
                 "industry": "航运/油运",
-                "status": "⚠️高集中度"
+                "status": "⚠️⚠️极高集中度"
             },
             "688981.SH": {
                 "name": "中芯国际",
                 "shares": 3139,
                 "avg_cost": 121.45,
-                "current_price": 118.73,
-                "market_value": 372693.47,
-                "pnl_pct": -2.24,
+                "current_price": 120.31,
+                "market_value": 377653.00,
+                "pnl_pct": -0.90,
                 "account": "老娘",
                 "industry": "半导体代工",
                 "status": "持仓"
@@ -91,11 +91,11 @@ class HoldingsMonitorFixed:
             "logic": "信创/国产替代主线布局"
         }
         
-        # 板块分布
+        # 板块分布 (基于2026-05-08数据)
         self.sector_distribution = {
-            "信创/国产芯片": {"stocks": ["中国长城"], "weight": 44.2},
-            "航运/油运": {"stocks": ["招商南油"], "weight": 50.3},
-            "半导体代工": {"stocks": ["中芯国际"], "weight": 5.5},
+            "信创/国产芯片": {"stocks": ["中国长城"], "weight": 45.5},
+            "航运/油运": {"stocks": ["招商南油"], "weight": 49.5},
+            "半导体代工": {"stocks": ["中芯国际"], "weight": 4.9},
             "LED芯片": {"stocks": ["聚灿光电"], "weight": 0.01},
             "PCB/封装基板": {"stocks": ["兴森科技"], "weight": 0.04}
         }
