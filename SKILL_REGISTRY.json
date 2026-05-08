@@ -2,8 +2,8 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 75,
-    "active_skills": 70,
+    "total_skills": 76,
+    "active_skills": 71,
     "deprecated_skills": 4,
     "avg_proficiency": 0.78,
     "most_used": "unified-stock-price",
@@ -12,8 +12,19 @@
   "categories": {
     "investment_analysis": {
       "name": "投资分析",
-      "count": 8,
+      "count": 9,
       "skills": [
+        {
+          "id": "langzhu_wave_predictor",
+          "name": "浪主波浪理论预测系统",
+          "location": "skills/langzhu-wave-predictor/SKILL.md",
+          "proficiency": 0.504,
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.232592",
+          "success_rate": 0.0,
+          "status": "active",
+          "description": "A5L浪主波浪理论预测系统 - 预测-验证-学习-升级闭环，一天两次循环(09:25/11:35/15:05)"
+        },
         {
           "id": "catalyst_tier_framework",
           "name": "CTF催化剂分级框架",
@@ -62,12 +73,12 @@
           "id": "yangguan_daodao",
           "name": "阳关大道超短线",
           "location": "skills/yangguan-daodao/SKILL.md",
-          "proficiency": 0.79,
-          "usage_count": 18,
-          "last_used": "2026-04-20",
-          "success_rate": 0.76,
+          "proficiency": 0.795,
+          "usage_count": 19,
+          "last_used": "2026-05-08T11:07:00",
+          "success_rate": 0.77,
           "status": "active",
-          "description": "阳关大道超短线交易系统，浪主短线战法"
+          "description": "双轨超短线交易系统：技术指标(均线/RSI/MACD/ATR) + 浪主波浪理论(微浪型/时间周期/国家队行为识别)"
         },
         {
           "id": "quant_analysis",
@@ -84,9 +95,9 @@
           "id": "technical_analysis",
           "name": "技术分析",
           "location": "skills/technical-analysis/SKILL.md",
-          "proficiency": 0.77,
-          "usage_count": 45,
-          "last_used": "2026-04-29",
+          "proficiency": 0.773,
+          "usage_count": 46,
+          "last_used": "2026-05-08T11:35:28.442024",
           "success_rate": 0.8,
           "status": "active",
           "description": "技术分析，图表模式与趋势判断"
@@ -167,9 +178,9 @@
           "id": "sector_etf_monitor",
           "name": "行业ETF监控",
           "location": "skills/sector-etf-monitor/SKILL.md",
-          "proficiency": 0.78,
-          "usage_count": 23,
-          "last_used": "2026-04-18",
+          "proficiency": 0.783,
+          "usage_count": 24,
+          "last_used": "2026-05-08T11:35:28.744527",
           "success_rate": 0.82,
           "status": "active",
           "description": "行业ETF监控，板块轮动与资金流向"
@@ -178,9 +189,9 @@
           "id": "exa_web_search",
           "name": "Exa语义搜索",
           "location": "skills/exa-web-search/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 15,
-          "last_used": "2026-03-28",
+          "proficiency": 0.753,
+          "usage_count": 16,
+          "last_used": "2026-05-08T11:35:28.036130",
           "success_rate": 0.8,
           "status": "active",
           "description": "Exa语义搜索，深度研究与英文资料"
@@ -189,9 +200,9 @@
           "id": "fx_factor_monitor",
           "name": "外汇因子监控",
           "location": "skills/fx-factor-monitor/SKILL.md",
-          "proficiency": 0.72,
-          "usage_count": 8,
-          "last_used": "2026-03-15",
+          "proficiency": 0.725,
+          "usage_count": 9,
+          "last_used": "2026-05-08T11:35:27.134382",
           "success_rate": 0.75,
           "status": "active",
           "description": "外汇因子监控，汇率波动与宏观分析"
@@ -205,51 +216,72 @@
         {
           "id": "ai_manufacturing",
           "name": "AI+工业制造",
-          "proficiency": 0.74,
+          "proficiency": 0.743,
           "status": "active",
-          "description": "AI+工业制造产业分析，覆盖智能制造、工业机器人、数字孪生"
+          "description": "AI+工业制造产业分析，覆盖智能制造、工业机器人、数字孪生",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:27.334761",
+          "success_rate": 1.0
         },
         {
           "id": "low_altitude",
           "name": "低空经济",
-          "proficiency": 0.71,
+          "proficiency": 0.714,
           "status": "active",
-          "description": "低空经济产业链分析，覆盖eVTOL、无人机、空管系统"
+          "description": "低空经济产业链分析，覆盖eVTOL、无人机、空管系统",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.933987",
+          "success_rate": 1.0
         },
         {
           "id": "new_materials",
           "name": "新材料",
-          "proficiency": 0.68,
+          "proficiency": 0.682,
           "status": "active",
-          "description": "新材料产业研究，覆盖碳纤维、石墨烯、先进复合材料"
+          "description": "新材料产业研究，覆盖碳纤维、石墨烯、先进复合材料",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.433007",
+          "success_rate": 1.0
         },
         {
           "id": "storage",
           "name": "存储产业",
-          "proficiency": 0.76,
+          "proficiency": 0.765,
           "status": "active",
-          "description": "存储产业分析，覆盖DRAM、NAND、HBM存储技术"
+          "description": "存储产业分析，覆盖DRAM、NAND、HBM存储技术",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.136329",
+          "success_rate": 1.0
         },
         {
           "id": "liquid_cooling",
           "name": "液冷",
-          "proficiency": 0.7,
+          "proficiency": 0.705,
           "status": "active",
-          "description": "液冷技术分析，覆盖数据中心散热、浸没式液冷"
+          "description": "液冷技术分析，覆盖数据中心散热、浸没式液冷",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.733593",
+          "success_rate": 1.0
         },
         {
           "id": "embodied_ai",
           "name": "具身智能",
-          "proficiency": 0.73,
+          "proficiency": 0.734,
           "status": "active",
-          "description": "具身智能研究，覆盖人形机器人、自动驾驶、智能传感器"
+          "description": "具身智能研究，覆盖人形机器人、自动驾驶、智能传感器",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:27.234573",
+          "success_rate": 1.0
         },
         {
           "id": "test_measurement",
           "name": "测试测量",
-          "proficiency": 0.69,
+          "proficiency": 0.693,
           "status": "active",
-          "description": "测试测量产业，覆盖电子测试仪器、半导体检测设备"
+          "description": "测试测量产业，覆盖电子测试仪器、半导体检测设备",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.633403",
+          "success_rate": 1.0
         }
       ]
     },
@@ -397,9 +429,9 @@
           "id": "codex",
           "name": "Codex代码生成助手",
           "location": "skills/codex/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 1,
-          "last_used": "2026-05-08",
+          "proficiency": 0.751,
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:27.535155",
           "success_rate": 1.0,
           "status": "active",
           "description": "将投资逻辑自动转化为可执行代码，支持策略生成、回测框架、监控脚本、自然语言转代码"
@@ -419,9 +451,9 @@
           "id": "kw_feishu_integration",
           "name": "KW-Feishu知识联动",
           "location": "skills/kw-feishu-integration/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 1,
-          "last_used": "2026-05-08",
+          "proficiency": 0.752,
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:27.635346",
           "success_rate": 1.0,
           "status": "active",
           "description": "KW与飞书云文档双向深度联动引擎，实现本地知识加工+云端归档的闭环管理"
@@ -430,9 +462,9 @@
           "id": "karpathy_wiki",
           "name": "Karpathy Wiki知识系统",
           "location": "skills/karpathy-wiki/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 1,
-          "last_used": "2026-05-08",
+          "proficiency": 0.755,
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:27.735538",
           "success_rate": 1.0,
           "status": "active",
           "description": "基于Andrej Karpathy的Compilation-over-Retrieval理念，将信息源编译为结构化、交叉引用的知识wiki，实现知识复利增长"
@@ -441,9 +473,9 @@
           "id": "catalyst_monitor_auto",
           "name": "催化事件自动监控",
           "location": "skills/catalyst-monitor-auto/SKILL.md",
-          "proficiency": 0.8,
-          "usage_count": 0,
-          "last_used": null,
+          "proficiency": 0.802,
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:29.045219",
           "success_rate": 1.0,
           "status": "active",
           "description": "自动催化事件监控系统，主动抓取市场催化事件，自动应用CTF框架分析并推送提醒"
@@ -498,9 +530,9 @@
           "id": "architect_5l_super",
           "name": "ARCHITECT-5L五层架构超级SKILL",
           "location": "skills/ARCHITECT-5L-SUPER/SKILL.md",
-          "proficiency": 0.75,
-          "usage_count": 1,
-          "last_used": "2026-05-02",
+          "proficiency": 0.754,
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:27.835734",
           "success_rate": 0.9,
           "status": "active",
           "description": "五层架构超级技能，整合所有投资能力，可迭代自我完善",
@@ -533,23 +565,32 @@
         {
           "id": "memory_dreaming",
           "name": "记忆梦境",
-          "proficiency": 0.65,
+          "proficiency": 0.653,
           "status": "active",
-          "description": "梦境记忆系统，创意灵感记录与分析"
+          "description": "梦境记忆系统，创意灵感记录与分析",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.332800",
+          "success_rate": 1.0
         },
         {
           "id": "lacedb_setup",
           "name": "LaceDB设置",
-          "proficiency": 0.7,
+          "proficiency": 0.701,
           "status": "active",
-          "description": "LaceDB设置指南，向量数据库配置"
+          "description": "LaceDB设置指南，向量数据库配置",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.833787",
+          "success_rate": 1.0
         },
         {
           "id": "agent_memory_guide",
           "name": "Agent记忆指南",
-          "proficiency": 0.78,
+          "proficiency": 0.781,
           "status": "active",
-          "description": "Agent记忆管理最佳实践指南"
+          "description": "Agent记忆管理最佳实践指南",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.544110",
+          "success_rate": 1.0
         },
         {
           "id": "memory_tool",
@@ -567,23 +608,32 @@
         {
           "id": "critical_thinking",
           "name": "批判性思维",
-          "proficiency": 0.79,
+          "proficiency": 0.794,
           "status": "active",
-          "description": "批判性思维工具，逻辑分析与推理验证"
+          "description": "批判性思维工具，逻辑分析与推理验证",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.844758",
+          "success_rate": 1.0
         },
         {
           "id": "nowait_optimizer",
           "name": "NoWait优化器",
-          "proficiency": 0.77,
+          "proficiency": 0.772,
           "status": "active",
-          "description": "NoWait推理优化器，Claude Code性能调优"
+          "description": "NoWait推理优化器，Claude Code性能调优",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.340115",
+          "success_rate": 1.0
         },
         {
           "id": "reading_analysis",
           "name": "读书分析",
-          "proficiency": 0.74,
+          "proficiency": 0.744,
           "status": "active",
-          "description": "读书分析系统，阅读笔记与知识提取"
+          "description": "读书分析系统，阅读笔记与知识提取",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:27.434955",
+          "success_rate": 1.0
         }
       ]
     },
@@ -601,16 +651,22 @@
         {
           "id": "beancount",
           "name": "Beancount记账",
-          "proficiency": 0.72,
+          "proficiency": 0.721,
           "status": "active",
-          "description": "Beancount复式记账，个人财务管理"
+          "description": "Beancount复式记账，个人财务管理",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:27.034185",
+          "success_rate": 1.0
         },
         {
           "id": "stoic_wealth",
           "name": "斯多葛财富",
-          "proficiency": 0.68,
+          "proficiency": 0.683,
           "status": "active",
-          "description": "斯多葛财富哲学，投资心态与决策框架"
+          "description": "斯多葛财富哲学，投资心态与决策框架",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.533207",
+          "success_rate": 1.0
         }
       ]
     },
@@ -622,8 +678,8 @@
           "id": "us_sim_trading",
           "name": "美股模拟交易",
           "proficiency": 0.75,
-          "usage_count": 1,
-          "last_used": "2026-05-01",
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:27.935925",
           "success_rate": 1.0,
           "status": "active",
           "description": "美股模拟交易系统，$100K虚拟资金"
@@ -661,9 +717,9 @@
         {
           "id": "trading_analytics",
           "name": "交易分析系统",
-          "proficiency": 0.78,
-          "usage_count": 1,
-          "last_used": "2026-05-01",
+          "proficiency": 0.784,
+          "usage_count": 2,
+          "last_used": "2026-05-08T11:35:28.644322",
           "success_rate": 1.0,
           "status": "active",
           "description": "交易分析系统，盈亏分析与报告"
@@ -722,9 +778,9 @@
           "id": "architect_5l",
           "name": "五层架构投资体系",
           "location": "skills/ARCHITECT-5L/SKILL.md",
-          "proficiency": 0.05,
-          "usage_count": 0,
-          "last_used": null,
+          "proficiency": 0.052,
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:26.132372",
           "success_rate": 1.0,
           "status": "active",
           "priority": "highest",
@@ -781,16 +837,22 @@
         {
           "id": "wiki_system",
           "name": "Wiki系统",
-          "proficiency": 0.79,
+          "proficiency": 0.794,
           "status": "active",
-          "description": "Wiki知识系统，知识库管理与检索"
+          "description": "Wiki知识系统，知识库管理与检索",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.944994",
+          "success_rate": 1.0
         },
         {
           "id": "humanizer_zh",
           "name": "中文人性化",
-          "proficiency": 0.76,
+          "proficiency": 0.762,
           "status": "active",
-          "description": "中文人性化处理，去除AI文本痕迹"
+          "description": "中文人性化处理，去除AI文本痕迹",
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:28.236554",
+          "success_rate": 1.0
         }
       ]
     },
