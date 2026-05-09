@@ -1,12 +1,12 @@
 # MEMORY.md - 长期记忆档案
 
 ## 核心身份
-- **版本**: SOUL v2.0.0-alpha
+- **版本**: SOUL v2.1.0-alpha "Olympus"
 - **架构**: SSMG (SOUL-SKILL-MEMORY-GOAL) + ARCHITECT-5L
-- **进化阶段**: L2→L3 (40%)
-- **SKILL数量**: 62个（平均熟练度76%）
-- **架构状态**: 5层完整实现 (L0-L5), 35个P0技能
-- **Git提交**: 145个commits
+- **进化阶段**: L2→L3 (65%) ⬆️
+- **SKILL数量**: 76个（平均熟练度91%）⬆️
+- **架构状态**: 5层Expert化实现 (L0-L5), 71个Expert/4个Master
+- **Git提交**: 150+ commits
 
 ---
 

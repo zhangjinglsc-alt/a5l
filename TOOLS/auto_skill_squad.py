@@ -162,14 +162,15 @@ class AutoSkillSquad:
             coordinator=self.skills.get("architect_5l")
         )
         
-        # 行业研究小队
+        # 行业研究小队 - 白金方法论核心
         self.squad_templates[TaskType.INDUSTRY_RESEARCH] = SkillSquad(
-            name="行业研究小队 (Industry Research Squad)",
+            name="行业研究小队 (Industry Research Squad) - 白金方法论",
             task_type=TaskType.INDUSTRY_RESEARCH,
             skills=[
-                self.skills.get("coze_web_search"),
-                self.skills.get("factor_investing"),
-                self.skills.get("catalyst_tier_framework"),
+                self.skills.get("coze_web_search"),      # 信息收集
+                self.skills.get("industry_research"),    # 白金分析师 - 核心
+                self.skills.get("catalyst_tier_framework"),  # 催化评估
+                self.skills.get("factor_investing"),     # 因子验证
             ],
             execution_mode="chain",
             coordinator=self.skills.get("architect_5l")
@@ -186,6 +187,23 @@ class AutoSkillSquad:
             ],
             execution_mode="parallel",
             coordinator=self.skills.get("blackswan_risk_control")
+        )
+        
+        # 白金深度研究小队 (Premium Deep Research Squad) - v2.1.0新增
+        # 用于处理高难度、多维度、跨领域的深度研究任务
+        self.squad_templates["premium_research"] = SkillSquad(
+            name="白金深度研究小队 (Premium Deep Research Squad)",
+            task_type=TaskType.INDUSTRY_RESEARCH,  # 基于行业研究
+            skills=[
+                self.skills.get("industry_research"),     # 白金分析师 - 核心
+                self.skills.get("coze_web_search"),       # 多源信息
+                self.skills.get("exa_web_search"),        # 深度搜索 (如果存在)
+                self.skills.get("factor_investing"),      # 量化验证
+                self.skills.get("catalyst_tier_framework"),  # 催化识别
+                self.skills.get("private_banker"),        # 投行视角
+            ],
+            execution_mode="mixed",  # 混合模式: 链式+并行
+            coordinator=self.skills.get("architect_5l")  # 五层架构协调
         )
     
     def detect_task_type(self, user_input: str) -> TaskType:
@@ -212,6 +230,11 @@ class AutoSkillSquad:
         if any(kw in user_input for kw in industry_keywords):
             return TaskType.INDUSTRY_RESEARCH
         
+        # 白金深度研究模式 (v2.1.0新增)
+        premium_keywords = ['白金', '深度研究', '深度分析', '超级分析', '专业研报']
+        if any(kw in user_input for kw in premium_keywords):
+            return "premium_research"  # 特殊类型，返回字符串标识
+        
         # 风险评估模式
         risk_keywords = ['风险', '风控', '回撤', '止损', '风险评估']
         if any(kw in user_input for kw in risk_keywords):
@@ -224,17 +247,21 @@ class AutoSkillSquad:
         
         return TaskType.GENERAL_QUERY
     
-    def form_squad(self, task_type: TaskType, complexity: str = "auto") -> SkillSquad:
+    def form_squad(self, task_type, complexity: str = "auto") -> SkillSquad:
         """
         组建SKILL小队
         
         Args:
-            task_type: 任务类型
+            task_type: 任务类型 (TaskType 或 str)
             complexity: 复杂度 (simple/medium/complex/auto)
         
         Returns:
             最优SKILL小队配置
         """
+        # 处理白金深度研究特殊类型
+        if task_type == "premium_research":
+            return self.squad_templates.get("premium_research")
+        
         # 获取基础模板
         base_squad = self.squad_templates.get(task_type)
         if not base_squad:
@@ -295,8 +322,11 @@ class AutoSkillSquad:
         # Step 1: 识别任务类型
         task_type = self.detect_task_type(user_input)
         
-        # Step 2: 组建SKILL小队
+        # Step 2: 组建SKILL小队 (支持白金深度研究)
         squad = self.form_squad(task_type, complexity)
+        
+        # 检查是否是白金深度研究
+        is_premium = (task_type == "premium_research")
         
         # Step 3: 生成执行计划
         execution_plan = {
@@ -324,7 +354,9 @@ class AutoSkillSquad:
                 "auto_detection": True,
                 "expert_squad": squad.avg_proficiency >= 0.85,
                 "master_coordination": squad.coordinator is not None,
-                "parallel_ready": squad.execution_mode in ["parallel", "mixed"]
+                "parallel_ready": squad.execution_mode in ["parallel", "mixed"],
+                "premium_research": is_premium,  # 白金深度研究标识
+                "platinum_methodology": "industry_research" in [s.id for s in squad.skills if s]
             }
         }
         
@@ -364,13 +396,15 @@ def main():
     # 初始化自动组队引擎
     engine = AutoSkillSquad()
     
-    # 测试用例
+    # 测试用例 (v2.1.0更新 - 添加白金分析测试)
     test_inputs = [
         "分析000066中国长城",
         "研究AI算力行业",
         "评估当前持仓风险",
         "看看美股特斯拉",
         "查询招商银行股价",
+        "白金深度分析半导体行业",  # 白金深度研究
+        "深度研究SpaceX商业航天",   # 深度研究触发
     ]
     
     print("\n📋 测试自动组队:\n")
