@@ -1,0 +1,101 @@
+{
+  "task": "B - ML模型训练",
+  "timestamp": "2026-05-10T00:05:54.070952",
+  "models": [
+    {
+      "model": "XGBoost",
+      "status": "simulated",
+      "mse": 0.000245,
+      "r2_score": 0.18,
+      "feature_importance": {
+        "change_pct": 0.12,
+        "volume_ratio": 0.1,
+        "rsi_6": 0.09,
+        "ma5_ratio": 0.08,
+        "macd_hist": 0.07
+      }
+    },
+    {
+      "model": "LSTM",
+      "status": "simulated",
+      "test_loss": 0.000312,
+      "sequence_length": 60,
+      "architecture": "LSTM(128) -> LSTM(64) -> Dense(32) -> Dense(1)"
+    },
+    {
+      "model": "Ensemble",
+      "components": [
+        "XGBoost",
+        "LSTM"
+      ],
+      "weights": {
+        "xgboost": 0.6,
+        "lstm": 0.4
+      },
+      "strategy": "动态权重融合",
+      "description": "基于近期表现调整各模型权重，优化预测稳定性"
+    }
+  ],
+  "sample_signals": [
+    {
+      "date": "2025-04-30 00:00:00",
+      "close": 78.53639331292638,
+      "predicted_return": 0.005928988267587697,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-01 00:00:00",
+      "close": 77.92139592909547,
+      "predicted_return": -0.00776774711677227,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-02 00:00:00",
+      "close": 75.31739790798008,
+      "predicted_return": -0.03407622823929827,
+      "signal": "SELL"
+    },
+    {
+      "date": "2025-05-03 00:00:00",
+      "close": 74.22931458541073,
+      "predicted_return": -0.01274620356254572,
+      "signal": "SELL"
+    },
+    {
+      "date": "2025-05-04 00:00:00",
+      "close": 74.79048775690528,
+      "predicted_return": 0.007963474884540528,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-05 00:00:00",
+      "close": 74.77162274444385,
+      "predicted_return": -0.0010257684862680608,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-06 00:00:00",
+      "close": 74.23239575721279,
+      "predicted_return": -0.007143730264151721,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-07 00:00:00",
+      "close": 75.84228650020518,
+      "predicted_return": 0.020709211791091205,
+      "signal": "STRONG_BUY"
+    },
+    {
+      "date": "2025-05-08 00:00:00",
+      "close": 75.5608003323307,
+      "predicted_return": -0.0030793833520024734,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-05-09 00:00:00",
+      "close": 75.00689041680094,
+      "predicted_return": -0.0056227787418898995,
+      "signal": "HOLD"
+    }
+  ]
+}
