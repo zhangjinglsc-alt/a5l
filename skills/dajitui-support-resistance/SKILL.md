@@ -213,8 +213,220 @@ date,open,high,low,close,volume
 - [在线演示](https://sr.dajitui.vip/)
 - [项目文档](references/README.md)
 
+## 🔥 与开盘啦API的联合使用（强烈推荐！）
+
+**Chief战略指示**: 大鸡腿（技术分析）+ 开盘啦（数据获取）= 黄金组合！
+
+### 为什么需要联合使用？
+
+| 能力 | 大鸡腿 | 开盘啦 | 联合效果 |
+|------|--------|--------|----------|
+| **数据来源** | 本地CSV/JSON文件 | 实时API + 8年历史数据 | 📊 数据无忧 |
+| **数据处理** | 压力支撑计算、形态识别 | K线数据获取、清洗 | ⚡ 全流程自动化 |
+| **市场视角** | 个股技术分析 | 市场情绪、板块强度 | 🎯 多维度验证 |
+| **实战应用** | 技术点位计算 | 资金面、情绪面确认 | ✅ 高置信度信号 |
+
+### 联合使用架构
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                    A5L 智能分析流水线                           │
+├────────────────────────────────────────────────────────────────┤
+│                                                                │
+│   步骤1: 数据获取 (开盘啦L1)                                     │
+│   ┌────────────────────────────────────────────────────────┐   │
+│   │  • 获取个股历史K线 (8年数据)                             │   │
+│   │  • 获取市场情绪、板块强度                               │   │
+│   │  • 获取连板梯队、资金流向                               │   │
+│   └──────────────────┬───────────────────────────────────────┘   │
+│                      │                                          │
+│                      ▼                                          │
+│   步骤2: 技术分析 (大鸡腿L2)                                     │
+│   ┌────────────────────────────────────────────────────────┐   │
+│   │  • 压力支撑位计算                                       │   │
+│   │  • 形态识别 (三角形/矩形/旗形)                          │   │
+│   │  • 通道分析 + 突破评分                                  │   │
+│   └──────────────────┬───────────────────────────────────────┘   │
+│                      │                                          │
+│                      ▼                                          │
+│   步骤3: 综合决策 (CIO Layer 4)                                  │
+│   ┌────────────────────────────────────────────────────────┐   │
+│   │  技术信号 + 市场情绪 + 资金流向 = 最终交易决策           │   │
+│   └────────────────────────────────────────────────────────┘   │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+```
+
+### 实战代码示例
+
+#### 示例1: 强势股技术验证
+```python
+# 联合使用: 筛选连板强势股的技术面支撑
+from kaipanla import KaipanlaAPI
+from dajitui import DaJiTuiAnalyzer
+
+kaipanla = KaipanlaAPI()
+djt = DaJiTuiAnalyzer()
+
+# 1. 从开盘啦获取连板梯队
+ladder = kaipanla.get_ladder(limit=20)
+
+print("=== 强势股技术面分析 ===")
+for stock in ladder['stocks'][:5]:
+    code = stock['code']
+    name = stock['name']
+    
+    # 2. 获取历史K线数据
+    kline_data = kaipanla.get_stock_kline(code, days=120)
+    
+    # 3. 大鸡腿技术分析
+    analysis = djt.analyze(kline_data=kline_data)
+    
+    # 4. 综合判断
+    support = analysis['support_levels'][-1]
+    resistance = analysis['resistance_levels'][-1]
+    pattern = analysis['pattern']['type']
+    breakout = analysis['breakout_up']
+    
+    print(f"\n📈 {name} ({code})")
+    print(f"   连板数: {stock['limit_up_days']}板")
+    print(f"   形态: {pattern} (置信度: {analysis['pattern']['confidence']:.0%})")
+    print(f"   压力位: ¥{resistance:.2f}")
+    print(f"   支撑位: ¥{support:.2f}")
+    print(f"   突破倾向: {breakout:.0%}")
+    
+    if breakout > 0.7 and pattern == 'ascending_triangle':
+        print(f"   ✅ 信号: 强势突破，可继续持有")
+    elif analysis['position_in_channel'] > 0.85:
+        print(f"   ⚠️  信号: 接近通道上轨，注意回调风险")
+```
+
+#### 示例2: 板块龙头股筛选
+```python
+# 联合使用: 在热门板块中筛选技术形态最佳标的
+def select_sector_leaders():
+    # 1. 获取热门板块
+    sectors = kaipanla.get_sectors()
+    top_sector = sectors[0]  # 最强板块
+    
+    print(f"\n🏭 热门板块: {top_sector['name']}")
+    print(f"   涨停数: {top_sector['limit_up_count']}")
+    
+    # 2. 获取板块成分股
+    sector_stocks = kaipanla.get_sector_stocks(top_sector['code'])
+    
+    # 3. 技术筛选
+    candidates = []
+    for stock in sector_stocks[:30]:  # 分析前30只
+        kline = kaipanla.get_stock_kline(stock['code'], days=60)
+        analysis = djt.analyze(kline_data=kline)
+        
+        # 筛选: 上升通道 + 突破倾向>0.6
+        if (analysis['channel']['type'] == 'ascending' and 
+            analysis['breakout_up'] > 0.6):
+            candidates.append({
+                'code': stock['code'],
+                'name': stock['name'],
+                'pattern': analysis['pattern']['type'],
+                'breakout_score': analysis['breakout_up'],
+                'support': analysis['support_levels'][-1]
+            })
+    
+    # 4. 按突破评分排序
+    candidates.sort(key=lambda x: x['breakout_score'], reverse=True)
+    
+    print("\n🎯 技术形态最佳标的:")
+    for i, c in enumerate(candidates[:5], 1):
+        print(f"   {i}. {c['name']} - {c['pattern']} "
+              f"(突破评分: {c['breakout_score']:.0%})")
+    
+    return candidates[:5]
+```
+
+#### 示例3: 实时持仓监控
+```python
+# 联合使用: 实时监控持仓股票的技术面变化
+class PositionMonitor:
+    def __init__(self):
+        self.kaipanla = KaipanlaAPI()
+        self.djt = DaJiTuiAnalyzer()
+        self.positions = ['000066.SZ', '601975.SH']  # 持仓股票
+    
+    def monitor(self):
+        print("=== 持仓技术面监控 ===")
+        
+        for code in self.positions:
+            # 获取最新数据
+            realtime = self.kaipanla.get_stock_realtime(code)
+            kline = self.kaipanla.get_stock_kline(code, days=60)
+            
+            # 技术分析
+            analysis = self.djt.analyze(kline_data=kline)
+            
+            current_price = realtime['price']
+            resistance = analysis['nearest_resistance']
+            support = analysis['nearest_support']
+            
+            print(f"\n📊 {code}")
+            print(f"   现价: ¥{current_price}")
+            print(f"   压力位: ¥{resistance} (距离: {(resistance/current_price-1)*100:.1f}%)")
+            print(f"   支撑位: ¥{support} (距离: {(current_price/support-1)*100:.1f}%)")
+            
+            # 生成告警
+            if current_price > resistance * 0.98:
+                print(f"   🚨 告警: 接近压力位，考虑减仓！")
+            elif current_price < support * 0.98:
+                print(f"   🚨 告警: 跌破支撑位，触发止损！")
+            elif analysis['breakout_up'] > 0.8:
+                print(f"   ✅ 信号: 突破形态确认，可加仓！")
+```
+
+### 数据流转示意
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         数据源层                                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │  开盘啦API    │  │  开盘啦API    │  │  开盘啦API    │          │
+│  │  个股K线      │  │  市场情绪     │  │  板块资金     │          │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘          │
+│         │                 │                 │                  │
+│         └─────────────────┼─────────────────┘                  │
+│                           ▼                                    │
+│  ┌────────────────────────────────────────────────────────┐   │
+│  │                   大鸡腿分析层                          │   │
+│  │  • 压力支撑位计算                                       │   │
+│  │  • 形态识别 (上升三角形/矩形/旗形等)                     │   │
+│  │  • 通道分析 (上升/下降/横盘)                            │   │
+│  │  • 突破评分 (0-1概率)                                   │   │
+│  └────────────────────────┬───────────────────────────────┘   │
+│                           │                                    │
+│                           ▼                                    │
+│  ┌────────────────────────────────────────────────────────┐   │
+│  │                   CIO决策层                             │   │
+│  │  技术信号 + 市场情绪 + 资金流向 = 交易决策               │   │
+│  └────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 推荐工作流
+
+| 时间 | 操作 | 使用技能 |
+|------|------|----------|
+| **09:15** | 获取竞价数据 | 开盘啦API |
+| **09:25** | 筛选强势标的 | 开盘啦API + 大鸡腿 |
+| **09:30** | 确认技术形态 | 大鸡腿 |
+| **盘中** | 监控持仓技术位 | 大鸡腿 |
+| **盘后** | 复盘策略表现 | 开盘啦(历史) + 大鸡腿 |
+
+### 相关链接
+- [开盘啦API Skill](../kaipanla-api/SKILL.md) - 数据源层
+- [GitHub仓库](https://github.com/YaoBa-Quant/dajitui-support-resistance) - 大鸡腿官方
+- [在线演示](https://sr.dajitui.vip/) - 可视化界面
+
 ## Changelog
 - **v1.0.0** (2026-05-09): 初始版本，集成大鸡腿压力支撑分析系统
+- **v1.0.1** (2026-05-09): 添加与开盘啦API联合使用方案（Chief战略指示）
 
 ## Owner
 - **Role**: Chief Architect

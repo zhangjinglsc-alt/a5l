@@ -409,6 +409,178 @@ sentiment = call_api("/api/sentiment")
 ## Changelog
 - **v1.0.0** (2026-05-09): 初始版本，集成开盘啦Inst套餐API，8年历史数据支持
 
+## 🔥 与开盘啦API的联合使用（推荐！）
+
+**Chief战略指示**: 大鸡腿（技术分析）+ 开盘啦（数据获取）= 黄金组合！
+
+### 完美互补架构
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    A5L CIO模拟交易引擎                        │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌──────────────────┐      ┌──────────────────┐           │
+│  │   开盘啦API       │ ───> │   大鸡腿分析      │           │
+│  │   (数据层L1)      │      │   (策略层L2)      │           │
+│  └──────────────────┘      └──────────────────┘           │
+│         │                           │                      │
+│         ▼                           ▼                      │
+│  • 8年历史K线数据          • 压力支撑计算                  │
+│  • 实时行情数据            • 形态识别                      │
+│  • 市场情绪数据            • 通道分析                      │
+│  • 板块强度数据            • 突破评分                      │
+│                                                             │
+│                    ↓ 联合输出 ↓                            │
+│                                                             │
+│  "600519在压力位¥1520遇阻，开盘啦显示白酒板块                 │
+│   资金净流出-5.2亿，建议观望"                                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 联合使用场景
+
+#### 场景1: 强势股技术分析
+```python
+# 步骤1: 从开盘啦获取强势股列表
+kaipanla = KaipanlaAPI()
+ladder = kaipanla.get_ladder(limit=20)  # 连板梯队
+
+# 步骤2: 用大鸡腿做技术分析
+from dajitui import DaJiTuiAnalyzer
+djt = DaJiTuiAnalyzer()
+
+for stock in ladder['stocks']:
+    # 获取历史K线数据
+    kline = kaipanla.get_stock_kline(stock['code'], days=120)
+    
+    # 大鸡腿技术分析
+    analysis = djt.analyze(kline_data=kline)
+    
+    # 综合判断
+    if analysis['breakout_up'] > 0.7:
+        print(f"{stock['name']} 强势突破，可追涨")
+    elif analysis['position_in_channel'] > 0.8:
+        print(f"{stock['name']} 接近通道上轨，注意回调风险")
+```
+
+#### 场景2: 板块龙头筛选
+```python
+# 步骤1: 获取热门板块
+sectors = kaipanla.get_sectors()
+hot_sector = sectors[0]  # 最强板块
+
+# 步骤2: 获取板块成分股
+sector_stocks = kaipanla.get_sector_stocks(hot_sector['code'])
+
+# 步骤3: 大鸡腿技术筛选
+candidates = []
+for stock in sector_stocks:
+    kline = kaipanla.get_stock_kline(stock['code'], days=60)
+    analysis = djt.analyze(kline_data=kline)
+    
+    # 筛选条件: 上升通道 + 突破倾向>0.6
+    if (analysis['channel']['type'] == 'ascending' and 
+        analysis['breakout_up'] > 0.6):
+        candidates.append({
+            'code': stock['code'],
+            'pattern': analysis['pattern']['type'],
+            'breakout_score': analysis['breakout_up']
+        })
+
+# 按突破评分排序
+candidates.sort(key=lambda x: x['breakout_score'], reverse=True)
+```
+
+#### 场景3: 历史策略回测
+```python
+# 结合开盘啦8年数据 + 大鸡腿技术分析
+class CombinedBacktest:
+    def __init__(self):
+        self.kaipanla = KaipanlaAPI()
+        self.djt = DaJiTuiAnalyzer()
+    
+    def backtest_pattern_strategy(self, start_date, end_date):
+        """
+        回测形态策略: 识别上升三角形后的表现
+        """
+        results = []
+        
+        # 遍历所有交易日
+        for date in get_trading_days(start_date, end_date):
+            # 获取当日所有股票
+            all_stocks = self.kaipanla.get_all_stocks(date=date)
+            
+            for stock in all_stocks:
+                # 获取前120日K线
+                kline = self.kaipanla.get_stock_kline(
+                    stock['code'], 
+                    end_date=date,
+                    days=120
+                )
+                
+                # 大鸡腿形态识别
+                analysis = self.djt.analyze(kline_data=kline)
+                
+                # 识别上升三角形
+                if analysis['pattern']['type'] == 'ascending_triangle':
+                    # 记录后续5日收益
+                    future_return = self.get_future_return(
+                        stock['code'], 
+                        date, 
+                        days=5
+                    )
+                    
+                    results.append({
+                        'date': date,
+                        'code': stock['code'],
+                        'pattern': 'ascending_triangle',
+                        'breakout_score': analysis['breakout_up'],
+                        'future_return_5d': future_return
+                    })
+        
+        # 统计分析
+        avg_return = sum(r['future_return_5d'] for r in results) / len(results)
+        win_rate = len([r for r in results if r['future_return_5d'] > 0]) / len(results)
+        
+        return {
+            'total_signals': len(results),
+            'avg_return_5d': avg_return,
+            'win_rate': win_rate
+        }
+```
+
+### 数据流向图
+
+```
+开盘啦API                    大鸡腿分析                  CIO决策
+    │                            │                          │
+    ├─> 个股K线数据 ────────────>├─> 压力支撑计算 ────┐     │
+    │                            │                     │     │
+    ├─> 市场情绪数据 ───────────>├─> 形态识别 ────────┼────>│
+    │                            │                     │     │
+    ├─> 板块资金流向 ───────────>├─> 通道分析 ────────┘     │
+    │                            │                          │
+    └─> 连板梯队数据 ───────────>└─> 突破评分               │
+                                                              │
+                         联合输出:                            │
+         "形态 + 资金 + 情绪 = 高置信度交易信号"                │
+                                                              ▼
+                                                    ┌─────────────────┐
+                                                    │   买入/卖出决策  │
+                                                    └─────────────────┘
+```
+
+### 最佳实践建议
+
+| 使用场景 | 开盘啦数据 | 大鸡腿分析 | 输出 |
+|---------|-----------|-----------|------|
+| **超短线** | 竞价数据 + L2大单 | 60分钟形态 | 早盘强势突破标 |
+| **短线** | 日线 + 板块强度 | 日线形态 + 通道 | 板块龙头候选 |
+| **中线** | 周线 + 资金流向 | 周线趋势 + 支撑 | 波段操作点位 |
+| **策略回测** | 8年历史K线 | 形态识别统计 | 策略胜率验证 |
+
 ## Owner
 - **Role**: Chief Architect
 - **System**: A5L (ARCHITECT-5L)
