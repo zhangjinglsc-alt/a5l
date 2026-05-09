@@ -129,7 +129,7 @@ class AutoSkillSquad:
             self._load_default_skills()
     
     def _load_default_skills(self):
-        """加载默认SKILL (v2.1.0 Olympus状态)"""
+        """加载默认SKILL (v2.1.1 Olympus+状态)"""
         default_skills = [
             Skill("architect_5l", "五层架构", 0.9716, "trading_systems"),
             Skill("unified_stock_price", "统一股价", 0.95, "data_research"),
@@ -141,6 +141,8 @@ class AutoSkillSquad:
             Skill("private_banker", "私人投行", 0.83, "investment_analysis"),
             Skill("technical_analysis", "技术分析", 0.804, "investment_analysis"),
             Skill("catalyst_tier_framework", "CTF框架", 0.854, "investment_analysis"),
+            Skill("industry_research", "白金分析师", 0.85, "investment_analysis"),
+            Skill("sector_etf_monitor", "板块监控", 0.822, "data_research"),
         ]
         for skill in default_skills:
             self.skills[skill.id] = skill
@@ -148,17 +150,18 @@ class AutoSkillSquad:
     def init_squad_templates(self):
         """初始化SKILL小队模板 (v2.1.0优化版)"""
         
-        # 个股分析小队 - 全Expert级覆盖
+        # 个股分析小队 - v2.1.1升级：自下而上行业关联
         self.squad_templates[TaskType.STOCK_ANALYSIS] = SkillSquad(
-            name="个股分析小队 (Stock Analysis Squad)",
+            name="个股分析小队 (Stock Analysis Squad) - 自下而上",
             task_type=TaskType.STOCK_ANALYSIS,
             skills=[
-                self.skills.get("unified_stock_price"),
-                self.skills.get("stock_five_steps"),
-                self.skills.get("private_banker"),
-                self.skills.get("catalyst_tier_framework"),
+                self.skills.get("unified_stock_price"),       # 数据基础
+                self.skills.get("stock_five_steps"),          # 个股五维
+                self.skills.get("private_banker"),            # 投行视角
+                self.skills.get("catalyst_tier_framework"),   # 催化评估
+                self.skills.get("industry_research"),         # ⭐ 白金分析师 - 自下而上行业分析
             ],
-            execution_mode="parallel",
+            execution_mode="mixed",  # 个股并行 + 行业链式
             coordinator=self.skills.get("architect_5l")
         )
         
@@ -189,21 +192,39 @@ class AutoSkillSquad:
             coordinator=self.skills.get("blackswan_risk_control")
         )
         
-        # 白金深度研究小队 (Premium Deep Research Squad) - v2.1.0新增
-        # 用于处理高难度、多维度、跨领域的深度研究任务
+        # 白金深度研究小队 (Premium Deep Research Squad) - v2.1.1升级
+        # 双向分析模式：个股→行业（自下而上）| 行业→标的（自上而下）
         self.squad_templates["premium_research"] = SkillSquad(
-            name="白金深度研究小队 (Premium Deep Research Squad)",
-            task_type=TaskType.INDUSTRY_RESEARCH,  # 基于行业研究
+            name="白金深度研究小队 (Premium Deep Research Squad) - 双向分析",
+            task_type=TaskType.INDUSTRY_RESEARCH,
             skills=[
-                self.skills.get("industry_research"),     # 白金分析师 - 核心
-                self.skills.get("coze_web_search"),       # 多源信息
-                self.skills.get("exa_web_search"),        # 深度搜索 (如果存在)
-                self.skills.get("factor_investing"),      # 量化验证
-                self.skills.get("catalyst_tier_framework"),  # 催化识别
-                self.skills.get("private_banker"),        # 投行视角
+                # 数据层 (并行)
+                self.skills.get("industry_research"),         # ⭐ 白金分析师 - 核心
+                self.skills.get("coze_web_search"),           # 多源信息
+                self.skills.get("factor_investing"),          # 量化筛选
+                # 分析层 (并行)
+                self.skills.get("catalyst_tier_framework"),   # 催化识别
+                self.skills.get("private_banker"),            # 投行视角
+                self.skills.get("stock_five_steps"),          # 个股五维 - 用于自上而下找标的
             ],
-            execution_mode="mixed",  # 混合模式: 链式+并行
-            coordinator=self.skills.get("architect_5l")  # 五层架构协调
+            execution_mode="mixed",  # 混合模式: 并行分析 + 链式整合
+            coordinator=self.skills.get("architect_5l")
+        )
+        
+        # 自上而下选股小队 (Top-Down Stock Picking Squad) - v2.1.1新增
+        # 专门用于：聊行业 → 找好标的
+        self.squad_templates["top_down_picking"] = SkillSquad(
+            name="自上而下选股小队 (Top-Down Stock Picking Squad)",
+            task_type=TaskType.INDUSTRY_RESEARCH,
+            skills=[
+                self.skills.get("industry_research"),         # ⭐ 白金分析师 - 行业框架
+                self.skills.get("sector_etf_monitor"),        # 板块轮动
+                self.skills.get("factor_investing"),          # 因子筛选
+                self.skills.get("catalyst_tier_framework"),   # 催化事件
+                self.skills.get("private_banker"),            # 投行标的池
+            ],
+            execution_mode="chain",  # 链式：行业→板块→个股
+            coordinator=self.skills.get("architect_5l")
         )
     
     def detect_task_type(self, user_input: str) -> TaskType:
@@ -230,10 +251,15 @@ class AutoSkillSquad:
         if any(kw in user_input for kw in industry_keywords):
             return TaskType.INDUSTRY_RESEARCH
         
-        # 白金深度研究模式 (v2.1.0新增)
+        # 自上而下选股模式 (v2.1.1新增)
+        top_down_keywords = ['选股', '找标的', '推荐股票', '有什么好股票', '行业龙头', '板块机会']
+        if any(kw in user_input for kw in top_down_keywords):
+            return "top_down_picking"
+        
+        # 白金深度研究模式 (v2.1.0)
         premium_keywords = ['白金', '深度研究', '深度分析', '超级分析', '专业研报']
         if any(kw in user_input for kw in premium_keywords):
-            return "premium_research"  # 特殊类型，返回字符串标识
+            return "premium_research"
         
         # 风险评估模式
         risk_keywords = ['风险', '风控', '回撤', '止损', '风险评估']
@@ -258,9 +284,11 @@ class AutoSkillSquad:
         Returns:
             最优SKILL小队配置
         """
-        # 处理白金深度研究特殊类型
+        # 处理特殊类型 (v2.1.1双向分析)
         if task_type == "premium_research":
             return self.squad_templates.get("premium_research")
+        if task_type == "top_down_picking":
+            return self.squad_templates.get("top_down_picking")
         
         # 获取基础模板
         base_squad = self.squad_templates.get(task_type)
@@ -325,8 +353,9 @@ class AutoSkillSquad:
         # Step 2: 组建SKILL小队 (支持白金深度研究)
         squad = self.form_squad(task_type, complexity)
         
-        # 检查是否是白金深度研究
+        # 检查特殊分析模式
         is_premium = (task_type == "premium_research")
+        is_top_down = (task_type == "top_down_picking")
         
         # Step 3: 生成执行计划
         execution_plan = {
@@ -355,8 +384,10 @@ class AutoSkillSquad:
                 "expert_squad": squad.avg_proficiency >= 0.85,
                 "master_coordination": squad.coordinator is not None,
                 "parallel_ready": squad.execution_mode in ["parallel", "mixed"],
-                "premium_research": is_premium,  # 白金深度研究标识
-                "platinum_methodology": "industry_research" in [s.id for s in squad.skills if s]
+                "premium_research": is_premium,  # 白金深度研究
+                "top_down_picking": is_top_down,  # 自上而下选股 (v2.1.1)
+                "platinum_methodology": "industry_research" in [s.id for s in squad.skills if s],
+                "bidirectional_analysis": True  # 双向分析模式 (v2.1.1)
             }
         }
         
@@ -367,6 +398,18 @@ class AutoSkillSquad:
         print(f"\n{'='*60}")
         print(f"🎯 {plan['squad_name']}")
         print(f"{'='*60}")
+        
+        # 打印分析模式标识
+        features = plan.get('v2.1_features', {})
+        if features.get('top_down_picking'):
+            print("🔍 分析模式: 自上而下选股 (行业→标的)")
+        elif features.get('premium_research'):
+            print("💎 分析模式: 白金深度研究 (双向分析)")
+        elif 'stock' in plan['task_type'] or plan['task_type'] == 'stock_analysis':
+            print("📈 分析模式: 自下而上分析 (个股→行业)")
+        elif 'industry' in plan['task_type']:
+            print("🏭 分析模式: 行业研究")
+        
         print(f"任务类型: {plan['task_type']}")
         print(f"执行模式: {plan['execution_mode']}")
         print(f"协调者: {plan['coordinator'] or 'None'}")
@@ -396,15 +439,18 @@ def main():
     # 初始化自动组队引擎
     engine = AutoSkillSquad()
     
-    # 测试用例 (v2.1.0更新 - 添加白金分析测试)
+    # 测试用例 (v2.1.1更新 - 双向分析模式测试)
     test_inputs = [
-        "分析000066中国长城",
-        "研究AI算力行业",
-        "评估当前持仓风险",
-        "看看美股特斯拉",
-        "查询招商银行股价",
-        "白金深度分析半导体行业",  # 白金深度研究
-        "深度研究SpaceX商业航天",   # 深度研究触发
+        "分析000066中国长城",           # 个股分析 → 自下而上行业关联
+        "研究AI算力行业",               # 行业研究
+        "评估当前持仓风险",             # 风险评估
+        "看看美股特斯拉",               # 个股分析
+        "查询招商银行股价",             # 快速查询
+        "白金深度分析半导体行业",       # 白金深度研究
+        "深度研究SpaceX商业航天",       # 深度研究
+        "AI算力行业有什么好股票",       # ⭐ 自上而下选股
+        "半导体板块推荐几个标的",       # ⭐ 自上而下选股
+        "自下而上分析一下中芯国际",     # 个股→行业
     ]
     
     print("\n📋 测试自动组队:\n")
