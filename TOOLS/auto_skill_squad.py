@@ -246,15 +246,15 @@ class AutoSkillSquad:
             if re.search(pattern, user_input):
                 return TaskType.STOCK_ANALYSIS
         
+        # 自上而下选股模式 (v2.1.1新增) - 必须在行业研究之前检查
+        top_down_keywords = ['选股', '找标的', '推荐', '有什么好股票', '行业龙头', '板块机会', '标的']
+        if any(kw in user_input for kw in top_down_keywords):
+            return "top_down_picking"
+        
         # 行业研究模式
         industry_keywords = ['行业', '板块', '产业链', '研报', '研究']
         if any(kw in user_input for kw in industry_keywords):
             return TaskType.INDUSTRY_RESEARCH
-        
-        # 自上而下选股模式 (v2.1.1新增)
-        top_down_keywords = ['选股', '找标的', '推荐股票', '有什么好股票', '行业龙头', '板块机会']
-        if any(kw in user_input for kw in top_down_keywords):
-            return "top_down_picking"
         
         # 白金深度研究模式 (v2.1.0)
         premium_keywords = ['白金', '深度研究', '深度分析', '超级分析', '专业研报']
@@ -358,9 +358,12 @@ class AutoSkillSquad:
         is_top_down = (task_type == "top_down_picking")
         
         # Step 3: 生成执行计划
+        # 处理task_type可能是TaskType枚举或字符串的情况
+        task_type_str = task_type.value if isinstance(task_type, TaskType) else task_type
+        
         execution_plan = {
             "input": user_input,
-            "task_type": task_type.value,
+            "task_type": task_type_str,
             "squad_name": squad.name,
             "execution_mode": squad.execution_mode,
             "coordinator": squad.coordinator.name if squad.coordinator else None,
@@ -405,10 +408,12 @@ class AutoSkillSquad:
             print("🔍 分析模式: 自上而下选股 (行业→标的)")
         elif features.get('premium_research'):
             print("💎 分析模式: 白金深度研究 (双向分析)")
-        elif 'stock' in plan['task_type'] or plan['task_type'] == 'stock_analysis':
+        elif plan['task_type'] == 'stock_analysis':
             print("📈 分析模式: 自下而上分析 (个股→行业)")
-        elif 'industry' in plan['task_type']:
+        elif plan['task_type'] == 'industry_research':
             print("🏭 分析模式: 行业研究")
+        elif plan['task_type'] == 'top_down_picking':
+            print("🔍 分析模式: 自上而下选股 (行业→标的)")
         
         print(f"任务类型: {plan['task_type']}")
         print(f"执行模式: {plan['execution_mode']}")
