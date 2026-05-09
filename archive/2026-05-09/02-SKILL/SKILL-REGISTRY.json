@@ -2,11 +2,11 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 76,
-    "active_skills": 71,
+    "total_skills": 77,
+    "active_skills": 72,
     "deprecated_skills": 4,
-    "avg_proficiency": 0.91,
-    "expert_rate": "91.0%",
+    "avg_proficiency": 0.909,
+    "expert_rate": "90.9%",
     "master_count": 4,
     "beginner_count": 0,
     "most_used": "unified-stock-price",
@@ -132,7 +132,7 @@
     },
     "data_research": {
       "name": "数据研究",
-      "count": 6,
+      "count": 7,
       "skills": [
         {
           "id": "unified_stock_price",
@@ -210,6 +210,20 @@
           "success_rate": 0.75,
           "status": "active",
           "description": "外汇因子监控，汇率波动与宏观分析"
+        },
+        {
+          "id": "kaipanla_api",
+          "name": "开盘啦Quant API",
+          "location": "skills/kaipanla-api/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "开盘啦Quant API数据获取，A股市场情绪/板块/竞价/L2/龙虎榜等量化数据",
+          "api_key": "sk_inst_646653fc7a80b2f8",
+          "tier": "Inst",
+          "base_url": "http://124.222.49.67:3000"
         }
       ]
     },
