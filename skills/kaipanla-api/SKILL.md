@@ -11,6 +11,8 @@
 ## Description
 开盘啦（Kaipanla）Quant API 数据获取技能。提供A股市场量化数据接口封装，包括市场情绪、板块强度、竞价数据、L2大单、龙虎榜等专业量化数据。
 
+**核心价值**: 8年历史数据积淀，支持2017年以来的A股全市场数据回测！
+
 ## Capabilities
 
 ### 核心数据类型
@@ -25,6 +27,20 @@
 | L2大单 | `/api/stock/bigorder/:code` | 个股大单资金流向 |
 | 龙虎榜 | `/api/lhb/detail/:code` | 席位明细、机构买卖 |
 | 人气榜 | `/api/hot/rank` | App人气榜单 |
+
+### 🏛️ 历史数据宝藏（2017-至今）
+
+**Chief特别指示**: 开盘啦拥有过去8年所有A股的分时逐笔委托数据！这是CIO模拟交易的核武器！
+
+| 数据类型 | 接口 | 历史范围 | 用途 |
+|---------|------|---------|------|
+| **个股历史K线** | `/api/stock/kline/:code` | 2017-至今 | 长期趋势分析、回测 |
+| **指数历史K线** | `/api/index/kline/:code` | 2017-至今 | 大盘环境判断 |
+| **指数分时明细** | `/api/intraday/index/:code` | 历史交易日 | 日内波动规律 |
+| **分时成交量** | `/api/intraday/volume/:code` | 历史交易日 | 量能分析、资金流向 |
+| **概念历史热度** | `/api/conception/history` | 历史序列 | 题材轮动规律 |
+| **历史竞价数据** | `/api/auction/limit-bid` | 历史交易日 | 早盘强势标的研究 |
+| **历史龙虎榜** | `/api/lhb/detail/:code` | 历史交易日 | 游资行为模式分析 |
 
 ### 实时数据
 - WebSocket实时推送: `ws://124.222.49.67:3000/ws/realtime`
@@ -78,7 +94,209 @@ sector_data = call_api("/api/sector/capital/801571", {"date": "20260509"})
 - 响应字段检查: `requestedDate`, `dataDate`, `isFallback`
 - `isFallback=true`: 表示返回了其他日期的数据
 
+### 历史数据调用示例
+```python
+# 获取2020年以来上证指数K线（8年历史）
+kline = call_api("/api/index/kline/SH000001", {
+    "begin": "20200101",
+    "end": "20260509",
+    "type": "day"
+})
+
+# 获取某历史交易日的指数分时明细
+intraday = call_api("/api/intraday/index/SH000001", {
+    "date": "20240430"
+})
+
+# 获取概念历史热度序列
+concept_history = call_api("/api/conception/history")
+```
+
 ## Integration with A5L
+
+### 🔥 与CIO模拟交易系统深度集成（重点！）
+
+**Chief指示**: 利用8年历史数据，让CIO模拟交易如虎添翼！
+
+#### 1. 策略回测验证
+```python
+class CIOBacktestEngine:
+    """CIO策略回测引擎 - 基于开盘啦8年历史数据"""
+    
+    def __init__(self):
+        self.kaipanla = KaipanlaAPI()
+        
+    def backtest_strategy(self, strategy, start_date, end_date):
+        """
+        回测策略在历史数据上的表现
+        
+        Args:
+            strategy: 策略函数 (买入/卖出信号生成器)
+            start_date: 回测开始日期 (如 "20230101")
+            end_date: 回测结束日期 (如 "20241231")
+        """
+        results = []
+        
+        # 获取历史交易日列表
+        trading_days = self.get_trading_days(start_date, end_date)
+        
+        for date in trading_days:
+            # 获取当日市场情绪
+            sentiment = self.kaipanla.get_sentiment(date=date)
+            
+            # 获取当日连板梯队
+            ladder = self.kaipanla.get_ladder(date=date)
+            
+            # 获取当日板块强度
+            sectors = self.kaipanla.get_sectors(date=date)
+            
+            # 执行策略生成信号
+            signals = strategy(sentiment, ladder, sectors, date)
+            
+            # 记录结果
+            results.append({
+                'date': date,
+                'signals': signals,
+                'sentiment': sentiment['mood'],
+                'limit_up_count': sentiment['limitUpCount']
+            })
+            
+        return self.calculate_performance(results)
+    
+    def calculate_performance(self, results):
+        """计算回测绩效指标"""
+        # 胜率、盈亏比、最大回撤、夏普比率等
+        pass
+```
+
+#### 2. 早盘竞价策略验证
+```python
+def verify_auction_strategy():
+    """
+    验证早盘竞价策略在历史数据上的表现
+    
+    策略逻辑: 竞价涨停委买额前10 + 竞价净额>5000W
+    """
+    kaipanla = KaipanlaAPI()
+    
+    # 获取过去1年的竞价数据
+    for date in get_past_trading_days(252):  # 约1年
+        auction_data = kaipanla.get_auction_limit_bid(date=date, limit=20)
+        
+        # 筛选强势标的
+        strong_stocks = [
+            stock for stock in auction_data['list']
+            if stock['limitBidAmount'] > 1000000000  # 10亿+
+            and stock['auctionNetAmount'] > 50000000  # 5000万+
+        ]
+        
+        # 记录当日表现（与次日涨幅对比）
+        for stock in strong_stocks:
+            next_day_return = get_next_day_return(stock['code'], date)
+            record_performance(stock, next_day_return)
+```
+
+#### 3. 情绪周期量化
+```python
+class SentimentCycleAnalyzer:
+    """市场情绪周期量化分析器"""
+    
+    def __init__(self):
+        self.kaipanla = KaipanlaAPI()
+        
+    def analyze_8year_sentiment(self):
+        """
+        分析8年市场情绪周期规律
+        
+        输出:
+        - 情绪冰点/高潮识别模型
+        - 情绪转折点预测
+        - 不同情绪阶段的胜率分布
+        """
+        # 获取2017-2025完整情绪数据
+        sentiment_data = []
+        for year in range(2017, 2026):
+            year_data = self.kaipanla.get_sentiment_history(year=year)
+            sentiment_data.extend(year_data)
+            
+        # 分析情绪周期
+        cycles = self.identify_sentiment_cycles(sentiment_data)
+        
+        return {
+            'ice_point_threshold': 30,      # 情绪冰点阈值
+            'euphoria_threshold': 85,       # 情绪高潮阈值
+            'cycle_duration_avg': 22,       # 平均周期长度(交易日)
+            'win_rate_by_mood': {...}       # 不同情绪区间胜率
+        }
+```
+
+#### 4. 板块轮动规律挖掘
+```python
+def analyze_sector_rotation():
+    """
+    基于8年历史数据挖掘板块轮动规律
+    
+    应用场景:
+    - 识别当前市场处于轮动周期的哪个阶段
+    - 预测下一个可能轮动的板块
+    - 验证产业链传导逻辑
+    """
+    kaipanla = KaipanlaAPI()
+    
+    # 获取概念历史热度序列
+    concept_history = kaipanla.get_conception_history()
+    
+    # 分析板块轮动模式
+    rotation_patterns = {
+        'AI算力 -> CPO -> 光模块 -> 服务器': [...],
+        '政策催化 -> 游资炒作 -> 机构接力': [...],
+        '上游材料 -> 中游制造 -> 下游应用': [...]
+    }
+    
+    return rotation_patterns
+```
+
+#### 5. 实时模拟交易信号生成
+```python
+class CIOSignalGenerator:
+    """CIO实时交易信号生成器"""
+    
+    def __init__(self):
+        self.kaipanla = KaipanlaAPI()
+        
+    def generate_pre_market_signals(self):
+        """盘前信号生成 (09:15-09:25)"""
+        # 1. 获取竞价数据
+        auction = self.kaipanla.get_auction_limit_bid(limit=20)
+        
+        # 2. 获取市场情绪
+        sentiment = self.kaipanla.get_sentiment()
+        
+        # 3. 获取连板梯队
+        ladder = self.kaipanla.get_ladder()
+        
+        # 4. 生成交易信号
+        signals = []
+        
+        # 信号1: 竞价涨停委买额前5 + 情绪>60
+        if sentiment['mood'] > 60:
+            for stock in auction['list'][:5]:
+                signals.append({
+                    'code': stock['code'],
+                    'signal': 'BUY_AUCTION',
+                    'confidence': 0.85,
+                    'reason': f"竞价强势+情绪良好: {stock['limitBidAmount']/1e8:.1f}亿"
+                })
+                
+        return signals
+    
+    def generate_intraday_signals(self):
+        """盘中信号生成 (09:30-15:00)"""
+        # 实时监控L2大单
+        # 监控板块资金流向
+        # 监控市场情绪变化
+        pass
+```
 
 ### 与阳关大道集成
 ```python
@@ -152,6 +370,25 @@ sentiment = call_api("/api/sentiment")
 }
 ```
 
+### 历史K线数据 (/api/stock/kline/:code)
+```json
+{
+  "code": "000001.SZ",
+  "klines": [
+    {
+      "date": "20260509",
+      "open": 11.20,
+      "high": 11.45,
+      "low": 11.15,
+      "close": 11.38,
+      "volume": 152345600,
+      "amount": 1723456789,
+      "changePct": 1.61
+    }
+  ]
+}
+```
+
 ## Rate Limits
 - Inst套餐: Unlimited调用
 - WebSocket: 最多6条并发连接
@@ -170,8 +407,9 @@ sentiment = call_api("/api/sentiment")
 - [App模块核验](http://124.222.49.67:3000/APP_MODULE_INTERFACE_GUIDE.md)
 
 ## Changelog
-- **v1.0.0** (2026-05-09): 初始版本，集成开盘啦Inst套餐API
+- **v1.0.0** (2026-05-09): 初始版本，集成开盘啦Inst套餐API，8年历史数据支持
 
 ## Owner
 - **Role**: Chief Architect
 - **System**: A5L (ARCHITECT-5L)
+- **Priority**: P0 (CIO模拟交易核心数据源)
