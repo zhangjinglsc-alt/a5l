@@ -2,8 +2,8 @@
   "version": "1.0",
   "last_updated": "2026-05-06",
   "summary": {
-    "total_skills": 77,
-    "active_skills": 72,
+    "total_skills": 78,
+    "active_skills": 73,
     "deprecated_skills": 4,
     "avg_proficiency": 0.909,
     "expert_rate": "90.9%",
@@ -16,7 +16,7 @@
   "categories": {
     "investment_analysis": {
       "name": "投资分析",
-      "count": 9,
+      "count": 10,
       "skills": [
         {
           "id": "langzhu_wave_predictor",
@@ -127,6 +127,20 @@
           "success_rate": 1.0,
           "status": "active",
           "description": "行业深度研究SKILL v4.0，白金方法论实战，80+句式模板"
+        },
+        {
+          "id": "dajitui_support_resistance",
+          "name": "大鸡腿压力支撑位分析",
+          "location": "skills/dajitui-support-resistance/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "基于局部高低点+分位数回归的压力支撑分析，支持形态识别、通道分析、LightGBM模型训练",
+          "layer": "L2_Strategy",
+          "github": "https://github.com/YaoBa-Quant/dajitui-support-resistance",
+          "demo": "https://sr.dajitui.vip/"
         }
       ]
     },
