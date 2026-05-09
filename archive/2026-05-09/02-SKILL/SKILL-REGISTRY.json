@@ -1,0 +1,1004 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-06",
+  "summary": {
+    "total_skills": 76,
+    "active_skills": 71,
+    "deprecated_skills": 4,
+    "avg_proficiency": 0.78,
+    "most_used": "unified-stock-price",
+    "last_updated": "2026-05-08"
+  },
+  "categories": {
+    "investment_analysis": {
+      "name": "投资分析",
+      "count": 9,
+      "skills": [
+        {
+          "id": "langzhu_wave_predictor",
+          "name": "浪主波浪理论预测系统",
+          "location": "skills/langzhu-wave-predictor/SKILL.md",
+          "proficiency": 0.706,
+          "usage_count": 19,
+          "last_used": "2026-05-08T15:58:10.315459",
+          "success_rate": 0.0,
+          "status": "active",
+          "description": "A5L浪主波浪理论预测系统 - 预测-验证-学习-升级闭环，一天两次循环(09:25/11:35/15:05)"
+        },
+        {
+          "id": "catalyst_tier_framework",
+          "name": "CTF催化剂分级框架",
+          "location": "skills/catalyst-tier-framework/SKILL.md",
+          "proficiency": 0.854,
+          "usage_count": 2,
+          "last_used": "2026-05-08T10:16:11.054121",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "催化剂分级框架(Tier1-4)，四层催化事件分级，配套仓位管理与预期差识别"
+        },
+        {
+          "id": "factor_investing",
+          "name": "因子投资方法论",
+          "location": "skills/factor-investing/SKILL.md",
+          "proficiency": 0.941,
+          "usage_count": 60,
+          "last_used": "2026-04-28",
+          "success_rate": 0.92,
+          "status": "active",
+          "description": "因子投资方法论，量化因子分析与策略构建"
+        },
+        {
+          "id": "stock_five_steps",
+          "name": "股票五步法分析",
+          "location": "skills/stock-five-steps/SKILL.md",
+          "proficiency": 0.88,
+          "usage_count": 56,
+          "last_used": "2026-04-30",
+          "success_rate": 0.89,
+          "status": "active",
+          "description": "股票五步法分析，深度基本面研究框架"
+        },
+        {
+          "id": "buffett_value",
+          "name": "巴菲特价值投资",
+          "location": "skills/buffett-value-investing/SKILL.md",
+          "proficiency": 0.82,
+          "usage_count": 23,
+          "last_used": "2026-04-15",
+          "success_rate": 0.85,
+          "status": "active",
+          "description": "巴菲特价值投资框架，长期价值投资体系"
+        },
+        {
+          "id": "yangguan_daodao",
+          "name": "阳关大道超短线",
+          "location": "skills/yangguan-daodao/SKILL.md",
+          "proficiency": 0.898,
+          "usage_count": 39,
+          "last_used": "2026-05-08T11:07:00",
+          "success_rate": 0.77,
+          "status": "active",
+          "description": "双轨超短线交易系统：技术指标(均线/RSI/MACD/ATR) + 浪主波浪理论(微浪型/时间周期/国家队行为识别)"
+        },
+        {
+          "id": "quant_analysis",
+          "name": "量化分析",
+          "location": "skills/quant_analysis/SKILL.md",
+          "proficiency": 0.81,
+          "usage_count": 31,
+          "last_used": "2026-04-25",
+          "success_rate": 0.84,
+          "status": "active",
+          "description": "量化分析，技术指标与量化策略开发"
+        },
+        {
+          "id": "technical_analysis",
+          "name": "技术分析",
+          "location": "skills/technical-analysis/SKILL.md",
+          "proficiency": 0.804,
+          "usage_count": 53,
+          "last_used": "2026-05-08T15:58:12.619400",
+          "success_rate": 0.8,
+          "status": "active",
+          "description": "技术分析，图表模式与趋势判断"
+        },
+        {
+          "id": "private_banker",
+          "name": "私人投行分析",
+          "location": "skills/private-banker-stock/SKILL.md",
+          "proficiency": 0.83,
+          "usage_count": 12,
+          "last_used": "2026-04-10",
+          "success_rate": 0.88,
+          "status": "active",
+          "description": "私人投行分析，专业机构级股票研究"
+        },
+        {
+          "id": "industry_research",
+          "name": "行业深度研究",
+          "location": "skills/industry-research/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 2,
+          "last_used": "2026-05-05",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "行业深度研究SKILL v4.0，白金方法论实战，80+句式模板"
+        }
+      ]
+    },
+    "data_research": {
+      "name": "数据研究",
+      "count": 6,
+      "skills": [
+        {
+          "id": "unified_stock_price",
+          "name": "统一股票价格",
+          "location": "skills/unified-stock-price/SKILL.md",
+          "proficiency": 0.95,
+          "usage_count": 128,
+          "last_used": "2026-05-01",
+          "success_rate": 0.98,
+          "status": "active",
+          "description": "统一股票价格接口，多源数据自动切换(v2.0)"
+        },
+        {
+          "id": "unified_backtest",
+          "name": "统一回测引擎",
+          "location": "skills/unified-backtest-engine/SKILL.md",
+          "proficiency": 0.87,
+          "usage_count": 34,
+          "last_used": "2026-04-22",
+          "success_rate": 0.91,
+          "status": "active",
+          "description": "统一回测引擎，策略回测与绩效评估"
+        },
+        {
+          "id": "unified_news",
+          "name": "统一新闻聚合",
+          "location": "skills/unified-news-aggregator/SKILL.md",
+          "proficiency": 0.89,
+          "usage_count": 67,
+          "last_used": "2026-04-28",
+          "success_rate": 0.93,
+          "status": "active",
+          "description": "统一新闻聚合，28+高价值信源覆盖(v2.0)"
+        },
+        {
+          "id": "coze_web_search",
+          "name": "Coze网页搜索",
+          "location": "skills/coze-web-search/SKILL.md",
+          "proficiency": 0.92,
+          "usage_count": 156,
+          "last_used": "2026-05-01",
+          "success_rate": 0.94,
+          "status": "active",
+          "description": "Coze网页搜索，中文内容与实时信息"
+        },
+        {
+          "id": "sector_etf_monitor",
+          "name": "行业ETF监控",
+          "location": "skills/sector-etf-monitor/SKILL.md",
+          "proficiency": 0.916,
+          "usage_count": 49,
+          "last_used": "2026-05-08T15:58:13.120265",
+          "success_rate": 0.82,
+          "status": "active",
+          "description": "行业ETF监控，板块轮动与资金流向"
+        },
+        {
+          "id": "exa_web_search",
+          "name": "Exa语义搜索",
+          "location": "skills/exa-web-search/SKILL.md",
+          "proficiency": 0.81,
+          "usage_count": 27,
+          "last_used": "2026-05-08T15:58:12.118527",
+          "success_rate": 0.8,
+          "status": "active",
+          "description": "Exa语义搜索，深度研究与英文资料"
+        },
+        {
+          "id": "fx_factor_monitor",
+          "name": "外汇因子监控",
+          "location": "skills/fx-factor-monitor/SKILL.md",
+          "proficiency": 0.806,
+          "usage_count": 21,
+          "last_used": "2026-05-08T15:58:11.217004",
+          "success_rate": 0.75,
+          "status": "active",
+          "description": "外汇因子监控，汇率波动与宏观分析"
+        }
+      ]
+    },
+    "ai_industry": {
+      "name": "AI产业分析",
+      "count": 7,
+      "skills": [
+        {
+          "id": "ai_manufacturing",
+          "name": "AI+工业制造",
+          "proficiency": 0.8,
+          "status": "active",
+          "description": "AI+工业制造产业分析，覆盖智能制造、工业机器人、数字孪生",
+          "usage_count": 14,
+          "last_used": "2026-05-08T15:58:11.417333",
+          "success_rate": 1.0
+        },
+        {
+          "id": "low_altitude",
+          "name": "低空经济",
+          "proficiency": 0.812,
+          "status": "active",
+          "description": "低空经济产业链分析，覆盖eVTOL、无人机、空管系统",
+          "usage_count": 14,
+          "last_used": "2026-05-08T15:58:11.016656",
+          "success_rate": 1.0
+        },
+        {
+          "id": "new_materials",
+          "name": "新材料",
+          "proficiency": 0.734,
+          "status": "active",
+          "description": "新材料产业研究，覆盖碳纤维、石墨烯、先进复合材料",
+          "usage_count": 9,
+          "last_used": "2026-05-08T15:58:10.515826",
+          "success_rate": 1.0
+        },
+        {
+          "id": "storage",
+          "name": "存储产业",
+          "proficiency": 0.817,
+          "status": "active",
+          "description": "存储产业分析，覆盖DRAM、NAND、HBM存储技术",
+          "usage_count": 10,
+          "last_used": "2026-05-08T15:58:12.318895",
+          "success_rate": 1.0
+        },
+        {
+          "id": "liquid_cooling",
+          "name": "液冷",
+          "proficiency": 0.824,
+          "status": "active",
+          "description": "液冷技术分析，覆盖数据中心散热、浸没式液冷",
+          "usage_count": 16,
+          "last_used": "2026-05-08T15:58:10.916493",
+          "success_rate": 1.0
+        },
+        {
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "proficiency": 0.803,
+          "status": "active",
+          "description": "具身智能研究，覆盖人形机器人、自动驾驶、智能传感器",
+          "usage_count": 13,
+          "last_used": "2026-05-08T15:58:11.317172",
+          "success_rate": 1.0
+        },
+        {
+          "id": "test_measurement",
+          "name": "测试测量",
+          "proficiency": 0.801,
+          "status": "active",
+          "description": "测试测量产业，覆盖电子测试仪器、半导体检测设备",
+          "usage_count": 17,
+          "last_used": "2026-05-08T15:58:10.716168",
+          "success_rate": 1.0
+        }
+      ]
+    },
+    "system_framework": {
+      "name": "系统框架",
+      "count": 20,
+      "skills": [
+        {
+          "id": "guardrails-system",
+          "name": "护栏系统",
+          "location": "skills/guardrails-system/SKILL.md",
+          "proficiency": 0.88,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns护栏系统，输入/输出/执行三层安全防护与合规审查",
+          "layer": "L0_Meta_Control",
+          "owner": "CSO",
+          "patterns": [
+            "Input Validation",
+            "Output Verification",
+            "Safety Boundaries"
+          ]
+        },
+        {
+          "id": "a2a-protocol",
+          "name": "A2A通信协议",
+          "location": "skills/a2a-protocol/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns A2A协议，Six-in-One Hub智能体间标准化通信",
+          "layer": "L0_Meta_Control",
+          "owner": "COO",
+          "patterns": [
+            "Inter-Agent Communication",
+            "Task Delegation",
+            "Message Routing"
+          ]
+        },
+        {
+          "id": "planner",
+          "name": "规划器",
+          "location": "skills/planner/SKILL.md",
+          "proficiency": 0.881,
+          "usage_count": 1,
+          "last_used": "2026-05-08T10:16:10.553513",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns规划器，四级目标分解与依赖管理，动态重规划能力",
+          "layer": "L0_Meta_Control",
+          "owner": "Chief Architect",
+          "patterns": [
+            "Planning",
+            "Task Decomposition",
+            "Re-planning"
+          ]
+        },
+        {
+          "id": "goal-monitor",
+          "name": "目标监控器",
+          "location": "skills/goal-monitor/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns目标监控器，SMART目标追踪与自适应反馈回路",
+          "layer": "L4_Decision_Signal",
+          "owner": "CIO",
+          "patterns": [
+            "Goal Setting",
+            "Monitoring",
+            "Feedback Loop"
+          ]
+        },
+        {
+          "id": "resilience-recovery",
+          "name": "韧性恢复系统",
+          "location": "skills/resilience-recovery/SKILL.md",
+          "proficiency": 0.9,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns韧性系统，熔断器+优雅降级+自动恢复，确保高可用",
+          "layer": "L0_Meta_Control",
+          "owner": "CSO",
+          "patterns": [
+            "Circuit Breaker",
+            "Graceful Degradation",
+            "Self-Healing"
+          ]
+        },
+        {
+          "id": "orchestrator-engine",
+          "name": "编排引擎",
+          "location": "skills/orchestrator-engine/SKILL.md",
+          "proficiency": 0.9,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns编排引擎，实现Prompt Chaining/Routing/Parallelization三大模式，动态协调多SKILL执行管线",
+          "layer": "L0_Meta_Control",
+          "owner": "COO",
+          "patterns": [
+            "Prompt Chaining",
+            "Routing",
+            "Parallelization"
+          ]
+        },
+        {
+          "id": "reflection-optimizer",
+          "name": "反思优化器",
+          "location": "skills/reflection-optimizer/SKILL.md",
+          "proficiency": 0.85,
+          "usage_count": 0,
+          "last_used": null,
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "Agentic Design Patterns反思系统，Producer-Critic双角色模型，六维度审查框架提升分析质量",
+          "layer": "L3_Analysis",
+          "owner": "All Analysts",
+          "patterns": [
+            "Reflection",
+            "Producer-Critic"
+          ]
+        },
+        {
+          "id": "claude-code",
+          "name": "Claude Code AI编程助手",
+          "location": "skills/claude-code/SKILL.md",
+          "proficiency": 0.802,
+          "usage_count": 3,
+          "last_used": "2026-05-08T15:58:12.919917",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "与Anthropic Claude Code CLI深度集成，自然语言需求→自动执行代码任务，支持代码审查、批量重构、测试生成"
+        },
+        {
+          "id": "codex",
+          "name": "Codex代码生成助手",
+          "location": "skills/codex/SKILL.md",
+          "proficiency": 0.803,
+          "usage_count": 9,
+          "last_used": "2026-05-08T15:58:11.617652",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "将投资逻辑自动转化为可执行代码，支持策略生成、回测框架、监控脚本、自然语言转代码"
+        },
+        {
+          "id": "hermes",
+          "name": "Hermes消息协调中心",
+          "location": "skills/hermes/SKILL.md",
+          "proficiency": 0.804,
+          "usage_count": 2,
+          "last_used": "2026-05-08T15:56:27.392193",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "A5L统一消息协调中心，整合所有通知渠道为单一出口，负责消息路由、优先级排序、去重合并、时机优化"
+        },
+        {
+          "id": "kw_feishu_integration",
+          "name": "KW-Feishu知识联动",
+          "location": "skills/kw-feishu-integration/SKILL.md",
+          "proficiency": 0.81,
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:11.717824",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "KW与飞书云文档双向深度联动引擎，实现本地知识加工+云端归档的闭环管理"
+        },
+        {
+          "id": "karpathy_wiki",
+          "name": "Karpathy Wiki知识系统",
+          "location": "skills/karpathy-wiki/SKILL.md",
+          "proficiency": 0.811,
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:12.018355",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "基于Andrej Karpathy的Compilation-over-Retrieval理念，将信息源编译为结构化、交叉引用的知识wiki，实现知识复利增长"
+        },
+        {
+          "id": "catalyst_monitor_auto",
+          "name": "催化事件自动监控",
+          "location": "skills/catalyst-monitor-auto/SKILL.md",
+          "proficiency": 0.802,
+          "usage_count": 1,
+          "last_used": "2026-05-08T11:35:29.045219",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "自动催化事件监控系统，主动抓取市场催化事件，自动应用CTF框架分析并推送提醒"
+        },
+        {
+          "id": "claw_daily_sync",
+          "name": "CLAW每日同步",
+          "proficiency": 0.88,
+          "status": "active",
+          "description": "CLAW每日同步系统，持仓与数据自动更新"
+        },
+        {
+          "id": "auto_briefing",
+          "name": "自动简报",
+          "proficiency": 0.85,
+          "status": "active",
+          "description": "自动简报生成，市场摘要与持仓报告"
+        },
+        {
+          "id": "self_evolution_core",
+          "name": "自进化核心",
+          "proficiency": 0.91,
+          "usage_count": 1,
+          "last_used": "2026-05-01",
+          "status": "active",
+          "description": "自进化核心系统，Agent自主改进引擎(v2.0)"
+        },
+        {
+          "id": "report_data_integrity",
+          "name": "报告数据完整性",
+          "proficiency": 0.82,
+          "status": "active",
+          "description": "报告数据完整性检查，数据一致性验证"
+        },
+        {
+          "id": "unified_framework",
+          "name": "统一框架",
+          "proficiency": 0.847,
+          "status": "active",
+          "description": "统一框架，系统架构标准化",
+          "usage_count": 2
+        },
+        {
+          "id": "goal_oriented",
+          "name": "Goal-Oriented管理",
+          "proficiency": 0.95,
+          "usage_count": 1,
+          "last_used": "2026-05-01",
+          "status": "active",
+          "description": "Goal-Oriented管理，目标导向任务系统"
+        },
+        {
+          "id": "architect_5l_super",
+          "name": "ARCHITECT-5L五层架构超级SKILL",
+          "location": "skills/ARCHITECT-5L-SUPER/SKILL.md",
+          "proficiency": 0.811,
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:11.918189",
+          "success_rate": 0.9,
+          "status": "active",
+          "description": "五层架构超级技能，整合所有投资能力，可迭代自我完善",
+          "capabilities": [
+            "data_collection",
+            "strategy_execution",
+            "cognitive_analysis",
+            "risk_management",
+            "self_improvement",
+            "multi_market_trading",
+            "report_generation",
+            "recursive_learning"
+          ],
+          "version": "1.0.0",
+          "layer": "meta"
+        }
+      ]
+    },
+    "memory_systems": {
+      "name": "记忆系统",
+      "count": 5,
+      "skills": [
+        {
+          "id": "memory_palace",
+          "name": "记忆宫殿",
+          "proficiency": 0.81,
+          "status": "active",
+          "description": "记忆宫殿系统，长期知识存储与检索"
+        },
+        {
+          "id": "memory_dreaming",
+          "name": "记忆梦境",
+          "proficiency": 0.72,
+          "status": "active",
+          "description": "梦境记忆系统，创意灵感记录与分析",
+          "usage_count": 9,
+          "last_used": "2026-05-08T15:58:10.415639",
+          "success_rate": 1.0
+        },
+        {
+          "id": "lacedb_setup",
+          "name": "LaceDB设置",
+          "proficiency": 0.853,
+          "status": "active",
+          "description": "LaceDB设置指南，向量数据库配置",
+          "usage_count": 19,
+          "last_used": "2026-05-08T15:58:10.816333",
+          "success_rate": 1.0
+        },
+        {
+          "id": "agent_memory_guide",
+          "name": "Agent记忆指南",
+          "proficiency": 0.81,
+          "status": "active",
+          "description": "Agent记忆管理最佳实践指南",
+          "usage_count": 7,
+          "last_used": "2026-05-08T15:58:12.519239",
+          "success_rate": 1.0
+        },
+        {
+          "id": "memory_tool",
+          "name": "记忆工具",
+          "proficiency": 0.83,
+          "status": "active",
+          "description": "记忆工具，MEMORY.md读写操作"
+        }
+      ]
+    },
+    "technical_tools": {
+      "name": "技术工具",
+      "count": 4,
+      "skills": [
+        {
+          "id": "critical_thinking",
+          "name": "批判性思维",
+          "proficiency": 0.801,
+          "status": "active",
+          "description": "批判性思维工具，逻辑分析与推理验证",
+          "usage_count": 4,
+          "last_used": "2026-05-08T15:57:27.735101",
+          "success_rate": 1.0
+        },
+        {
+          "id": "nowait_optimizer",
+          "name": "NoWait优化器",
+          "proficiency": 0.809,
+          "status": "active",
+          "description": "NoWait推理优化器，Claude Code性能调优",
+          "usage_count": 8,
+          "last_used": "2026-05-08T15:58:12.419075",
+          "success_rate": 1.0
+        },
+        {
+          "id": "reading_analysis",
+          "name": "读书分析",
+          "proficiency": 0.832,
+          "status": "active",
+          "description": "读书分析系统，阅读笔记与知识提取",
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:11.517495",
+          "success_rate": 1.0
+        }
+      ]
+    },
+    "financial_tools": {
+      "name": "金融工具",
+      "count": 3,
+      "skills": [
+        {
+          "id": "financial_calculator",
+          "name": "金融计算器",
+          "proficiency": 0.86,
+          "status": "active",
+          "description": "金融计算器，复利、IRR、NPV计算"
+        },
+        {
+          "id": "beancount",
+          "name": "Beancount记账",
+          "proficiency": 0.801,
+          "status": "active",
+          "description": "Beancount复式记账，个人财务管理",
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:11.116838",
+          "success_rate": 1.0
+        },
+        {
+          "id": "stoic_wealth",
+          "name": "斯多葛财富",
+          "proficiency": 0.841,
+          "status": "active",
+          "description": "斯多葛财富哲学，投资心态与决策框架",
+          "usage_count": 20,
+          "last_used": "2026-05-08T15:58:10.616004",
+          "success_rate": 1.0
+        }
+      ]
+    },
+    "trading_systems": {
+      "name": "模拟交易系统",
+      "count": 12,
+      "skills": [
+        {
+          "id": "us_sim_trading",
+          "name": "美股模拟交易",
+          "proficiency": 0.815,
+          "usage_count": 11,
+          "last_used": "2026-05-08T15:58:11.818007",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "美股模拟交易系统，$100K虚拟资金"
+        },
+        {
+          "id": "cn_sim_trading",
+          "name": "A股模拟交易",
+          "proficiency": 0.802,
+          "usage_count": 2,
+          "last_used": "2026-05-08T15:57:27.835264",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "A股模拟交易系统，¥1M虚拟资金"
+        },
+        {
+          "id": "hk_sim_trading",
+          "name": "港股模拟交易",
+          "proficiency": 0.803,
+          "usage_count": 2,
+          "last_used": "2026-05-08T15:57:27.935448",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "港股模拟交易系统，HK$800K虚拟资金"
+        },
+        {
+          "id": "trading_time_manager",
+          "name": "交易时间管理",
+          "proficiency": 0.85,
+          "usage_count": 2,
+          "last_used": "2026-05-01",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "交易时间管理，市场开盘监控"
+        },
+        {
+          "id": "trading_analytics",
+          "name": "交易分析系统",
+          "proficiency": 0.814,
+          "usage_count": 8,
+          "last_used": "2026-05-08T15:58:12.719574",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "交易分析系统，盈亏分析与报告"
+        },
+        {
+          "id": "unified_trading_manager",
+          "name": "统一交易管理",
+          "proficiency": 0.82,
+          "usage_count": 1,
+          "last_used": "2026-05-01",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "统一交易管理，多市场协调"
+        },
+        {
+          "id": "trading_rules_engine",
+          "name": "交易规则引擎",
+          "proficiency": 0.85,
+          "usage_count": 1,
+          "last_used": "2026-05-02",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "交易规则引擎，策略定义与执行"
+        },
+        {
+          "id": "auto_trading_scheduler",
+          "name": "自动交易调度",
+          "proficiency": 0.88,
+          "usage_count": 1,
+          "last_used": "2026-05-02",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "自动交易调度，24/7监控执行"
+        },
+        {
+          "id": "trading_visualization",
+          "name": "交易可视化",
+          "proficiency": 0.803,
+          "usage_count": 2,
+          "last_used": "2026-05-08T15:58:12.819745",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "交易可视化，图表与报表生成"
+        },
+        {
+          "id": "blackswan_risk_control",
+          "name": "黑天鹅风控",
+          "proficiency": 0.9,
+          "usage_count": 1,
+          "last_used": "2026-05-02",
+          "success_rate": 1.0,
+          "status": "active",
+          "description": "黑天鹅风控系统，极端事件检测"
+        },
+        {
+          "id": "architect_5l",
+          "name": "五层架构投资体系",
+          "location": "skills/ARCHITECT-5L/SKILL.md",
+          "proficiency": 0.972,
+          "usage_count": 72,
+          "last_used": "2026-05-08T15:58:10.215276",
+          "success_rate": 1.0,
+          "status": "active",
+          "priority": "highest",
+          "description": "数据→策略→分析→决策→复盘五层架构，终极投资研究系统"
+        }
+      ]
+    },
+    "security_infra": {
+      "name": "安全基建",
+      "count": 3,
+      "skills": [
+        {
+          "id": "healthcheck",
+          "name": "健康检查",
+          "proficiency": 0.88,
+          "status": "active",
+          "description": "系统健康检查，安全加固与风险评估"
+        },
+        {
+          "id": "node_connect",
+          "name": "节点连接",
+          "proficiency": 0.81,
+          "status": "active",
+          "description": "节点连接诊断，设备配对与网络问题排查"
+        },
+        {
+          "id": "triple_backup",
+          "name": "三重备份标准",
+          "location": "skills/triple-backup-standard/SKILL.md",
+          "proficiency": 0.95,
+          "status": "active",
+          "description": "A5L所有角色产出强制执行三重备份：本地SSMG归档 → 飞书云文档 → GitHub版本控制"
+        }
+      ]
+    },
+    "utility_tools": {
+      "name": "实用工具",
+      "count": 5,
+      "skills": [
+        {
+          "id": "agent_browser",
+          "name": "Agent浏览器",
+          "proficiency": 0.84,
+          "status": "active",
+          "description": "Agent浏览器自动化，网页操作与数据抓取"
+        },
+        {
+          "id": "message",
+          "name": "消息工具",
+          "proficiency": 0.93,
+          "status": "active",
+          "description": "消息工具，多渠道消息发送与管理"
+        },
+        {
+          "id": "wiki_system",
+          "name": "Wiki系统",
+          "proficiency": 0.804,
+          "status": "active",
+          "description": "Wiki知识系统，知识库管理与检索",
+          "usage_count": 4,
+          "last_used": "2026-05-08T15:58:13.020092",
+          "success_rate": 1.0
+        },
+        {
+          "id": "humanizer_zh",
+          "name": "中文人性化",
+          "proficiency": 0.817,
+          "status": "active",
+          "description": "中文人性化处理，去除AI文本痕迹",
+          "usage_count": 10,
+          "last_used": "2026-05-08T15:58:12.218717",
+          "success_rate": 1.0
+        }
+      ]
+    },
+    "feishu_tools": {
+      "name": "飞书工具",
+      "count": 10,
+      "skills": [
+        {
+          "id": "feishu_bitable",
+          "name": "飞书多维表格",
+          "proficiency": 0.87,
+          "status": "active",
+          "description": "飞书多维表格，数据表管理与记录操作"
+        },
+        {
+          "id": "feishu_calendar",
+          "name": "飞书日历",
+          "proficiency": 0.85,
+          "status": "active",
+          "description": "飞书日历管理，日程查询与会议安排"
+        },
+        {
+          "id": "feishu_doc",
+          "name": "飞书文档",
+          "proficiency": 0.89,
+          "status": "active",
+          "description": "飞书文档操作，云文档创建与编辑"
+        },
+        {
+          "id": "feishu_task",
+          "name": "飞书任务",
+          "proficiency": 0.82,
+          "status": "active",
+          "description": "飞书任务管理，待办事项与清单协作"
+        },
+        {
+          "id": "feishu_im",
+          "name": "飞书IM",
+          "proficiency": 0.91,
+          "status": "active",
+          "description": "飞书IM消息，群聊与单聊消息处理"
+        }
+      ]
+    }
+  },
+  "recently_added": [
+    {
+      "id": "guardrails_system",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 3 - 护栏系统，三层安全防护与合规审查",
+      "description": "基于Agentic Design Patterns的护栏系统，输入/输出/执行三层防护"
+    },
+    {
+      "id": "a2a_protocol",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 3 - A2A通信协议，Six-in-One Hub标准化通信",
+      "description": "基于Agentic Design Patterns的A2A协议，智能体间任务委托与协调"
+    },
+    {
+      "id": "planner",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 规划器，层次化任务规划与动态重规划",
+      "description": "基于Agentic Design Patterns的规划系统，四级目标分解与依赖管理"
+    },
+    {
+      "id": "goal_monitor",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 目标监控器，SMART目标追踪与自适应反馈",
+      "description": "基于Agentic Design Patterns的目标监控系统，实时监控与偏差预警"
+    },
+    {
+      "id": "resilience_recovery",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 2 - 韧性恢复系统，熔断器+优雅降级+自动恢复",
+      "description": "基于Agentic Design Patterns的异常处理系统，确保系统高可用性"
+    },
+    {
+      "id": "orchestrator_engine",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 1 - 编排引擎，实现Prompt Chaining/Routing/Parallelization三大模式",
+      "description": "基于Agentic Design Patterns的编排引擎，动态协调多SKILL执行管线"
+    },
+    {
+      "id": "reflection_optimizer",
+      "added_at": "2026-05-08",
+      "reason": "Agentic Design Patterns Phase 1 - 反思优化器，Producer-Critic双角色模型提升分析质量",
+      "description": "基于Agentic Design Patterns的反思系统，六维度审查框架自我纠错"
+    },
+    {
+      "id": "goal_oriented",
+      "added_at": "2026-05-01",
+      "reason": "实现Goal-Oriented自主管理系统",
+      "description": "Goal-Oriented管理，目标导向任务系统"
+    },
+    {
+      "id": "us_sim_trading",
+      "added_at": "2026-05-01",
+      "reason": "美股模拟交易系统",
+      "description": "美股模拟交易系统，$100K虚拟资金"
+    },
+    {
+      "id": "architect_5l",
+      "added_at": "2026-05-02",
+      "reason": "五层架构投资体系 - 终极Goal，数据→策略→分析→决策→复盘完整闭环"
+    }
+  ],
+  "deprecated_skills": [
+    {
+      "id": "self_improving_agent",
+      "name": "Agent自我改进",
+      "location": "skills/legacy/archive/self-improving-agent",
+      "archived_at": "2026-05-03",
+      "reason": "被claw-self-evolution-core替代，功能重复",
+      "replacement": "claw-self-evolution-core",
+      "description": "【已归档】Agent自我改进v1.x"
+    },
+    {
+      "id": "aakshare",
+      "name": "AkShare数据层",
+      "location": "skills/legacy/archive/aakshare",
+      "archived_at": "2026-05-03",
+      "reason": "被unified-stock-price覆盖，功能包含",
+      "replacement": "unified-stock-price",
+      "description": "【已归档】AkShare数据层，已被unified-stock-price替代"
+    },
+    {
+      "id": "ai_news_aggregator",
+      "name": "AI新闻聚合",
+      "location": "skills/legacy/archive/ai-news-aggregator",
+      "archived_at": "2026-05-03",
+      "reason": "被unified-news-aggregator覆盖，功能包含",
+      "replacement": "unified-news-aggregator",
+      "description": "【已归档】AI新闻聚合，已被unified-news-aggregator替代"
+    }
+  ],
+  "evolution_notes": [
+    "2026-05-01: 从79个skill整理为54个核心skill，去除重复和过时项",
+    "2026-05-01: 新增Goal-Oriented管理和美股模拟交易技能",
+    "2026-05-01: 建立skill熟练度追踪机制",
+    "2026-05-03: 归档3个重叠技能：self-improving-agent/aakshare/ai-news-aggregator",
+    "2026-05-03: SKILL合并方案制定，功能重叠问题解决",
+    "2026-05-05: v2.0.2-alpha迭代，新增行业研究SKILL v4.0及白金方法论",
+    "2026-05-07: 新增CTF催化剂分级框架SKILL，与VALUE CELL/UZI并列核心分析工具",
+    "2026-05-07: 新增催化事件自动监控系统(catalyst-monitor-auto)，主动抓取市场催化事件",
+    "2026-05-08: A5L v2.1 Olympus发布，新增8大系统：Claude/Hermes/Codex/ClaudeCode/KarpathyWiki/KW-Feishu/CTF/Monitor",
+    "2026-05-08: Agentic Design Patterns深度集成Phase 1+2+3全部完成，新增7大SKILL：编排引擎/反思优化器/规划器/目标监控器/韧性恢复系统/护栏系统/A2A通信协议"
+  ]
+}
