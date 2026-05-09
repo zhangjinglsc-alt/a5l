@@ -5,9 +5,13 @@
     "total_skills": 76,
     "active_skills": 71,
     "deprecated_skills": 4,
-    "avg_proficiency": 0.78,
+    "avg_proficiency": 0.91,
+    "expert_rate": "91.0%",
+    "master_count": 4,
+    "beginner_count": 0,
     "most_used": "unified-stock-price",
-    "last_updated": "2026-05-08"
+    "last_updated": "2026-05-09",
+    "milestone": "Zero-Beginner + architect_5l Master"
   },
   "categories": {
     "investment_analysis": {

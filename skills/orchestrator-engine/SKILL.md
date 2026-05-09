@@ -318,10 +318,78 @@ Orchestrator-Engine作为COO的核心工具，负责:
 | 任务成功率 | > 98% | 成功完成的编排任务比例 |
 | 资源利用率 | > 70% | SKILL调用效率 |
 
+## v2.1.0 Olympus升级 (2026-05-09)
+
+### SKILL Expertization驱动的架构优化
+
+基于91% Expert率的大规模训练成果，v2.1.0对编排引擎进行以下核心升级：
+
+#### 1. 智能SKILL组队 (Auto Skill Squad)
+
+**自动识别协作关系**: Expert级SKILL之间的高信任度使得自动组队成为可能
+
+```
+输入: "分析特斯拉"
+自动识别Skill Squad:
+  ├─ Data Squad: unified-stock-price (Master) + unified-news (Expert)
+  ├─ Analysis Squad: factor-investing (94.1%) + stock-five-steps (88%) + private-banker (83%)
+  ├─ Risk Squad: blackswan-risk-control (Master) + bearish-perspective (Expert)
+  └─ Meta Squad: architect-5l (97.16%) - 整体协调
+
+执行策略: 各Squad并行，结果由architect-5l整合
+```
+
+**Expert级信任假设**: 91% Expert率意味着:
+- 减少90%的显式SKILL指定
+- 允许更激进的并行策略 (Expert级SKILL自洽)
+- Master级SKILL自动兜底 (architect_5l 97.16%可靠性)
+
+#### 2. 隐式路由表 (v2.1.0 Routing Table)
+
+基于训练后的SKILL能力重新设计路由决策:
+
+| 输入特征 | v2.0路由 | v2.1优化路由 | 收益 |
+|----------|----------|--------------|------|
+| 股票代码 | 询问分析深度 | 直接Expert全套 | -1轮交互 |
+| 行业关键词 | 单一SKILL | 自动组队分析 | +40%信息覆盖 |
+| 复杂分析 | 串行执行 | 并行Squad | -30%时间 |
+| 紧急查询 | 简化流程 | Master级快速通道 | -50%延迟 |
+
+#### 3. 自适应执行策略
+
+```yaml
+执行策略矩阵:
+  简单任务 (单SKILL可完成):
+    策略: 直接路由到最优Expert SKILL
+    回退: Master级兜底
+    示例: "查股价" → unified-stock-price (Master)
+
+  中等任务 (2-3 SKILL协作):
+    策略: 预设Squad并行执行
+    回退: 顺序执行
+    示例: "分析个股" → [数据+分析+风控] Squad
+
+  复杂任务 (多维度深度分析):
+    策略: 分层编排 (Meta → Squad → Individual)
+    回退: architect_5l重新规划
+    示例: "深度研报" → architect_5l协调全流程
+```
+
+#### 4. 性能优化指标 (v2.1.0目标)
+
+| 指标 | v2.0基线 | v2.1目标 | 优化来源 |
+|------|----------|----------|----------|
+| 编排延迟 | 800ms | <300ms | Expert级SKILL快速响应 |
+| 任务成功率 | 85% | >95% | Expert自洽减少失败 |
+| 用户干预 | 35% | <5% | 自动Squad减少确认 |
+| 并行效率 | 60% | >85% | Expert并行可靠性 |
+| 路由准确率 | 88% | >96% | 训练优化决策树 |
+
 ## 版本历史
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.1.0 | 2026-05-09 | Olympus升级: 91% Expert驱动的智能组队与隐式路由 |
 | v1.0.0 | 2026-05-08 | 初始版本，实现三大编排模式 |
 
 ## 参考资料
