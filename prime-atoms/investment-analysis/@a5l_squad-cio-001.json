@@ -1,0 +1,67 @@
+{
+  "id": "@a5l/squad-cio-001",
+  "kind": "squad",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:46:28.492025",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": [
+      "@a5l/squad-platinum-001"
+    ]
+  },
+  "content": {
+    "name": "\u6295\u8d44\u51b3\u7b56\u5c0f\u961f",
+    "name_en": "Investment Decision Squad",
+    "manager": "@a5l/persona-cio",
+    "description": "\u6295\u8d44\u51b3\u7b56\u6267\u884c\uff0c\u7b56\u7565\u5f00\u53d1\u4e0e\u56de\u6d4b\uff0c\u98ce\u9669\u63a7\u5236",
+    "members": [
+      {
+        "skill": "@a5l/skill-factor-investing",
+        "role": "\u961f\u957f",
+        "expertise": "\u56e0\u5b50\u6295\u8d44"
+      },
+      {
+        "skill": "@a5l/skill-stock-five-steps",
+        "role": "\u526f\u961f\u957f",
+        "expertise": "\u4e94\u6b65\u6cd5\u5206\u6790"
+      },
+      {
+        "skill": "@a5l/skill-yangguan-daodao",
+        "role": "\u7b56\u7565\u5e08",
+        "expertise": "\u8d85\u77ed\u7ebf"
+      },
+      {
+        "skill": "@a5l/skill-buffett-value",
+        "role": "\u7b56\u7565\u5e08",
+        "expertise": "\u4ef7\u503c\u6295\u8d44"
+      },
+      {
+        "skill": "@a5l/skill-bearish-perspective",
+        "role": "\u98ce\u63a7\u5e08",
+        "expertise": "\u7a7a\u65b9\u5ba1\u67e5"
+      },
+      {
+        "skill": "@a5l/skill-quant-analysis",
+        "role": "\u91cf\u5316\u5e08",
+        "expertise": "\u91cf\u5316\u5206\u6790"
+      }
+    ],
+    "core_functions": [
+      "\u6295\u8d44\u51b3\u7b56",
+      "\u7b56\u7565\u56de\u6d4b",
+      "\u98ce\u9669\u63a7\u5236",
+      "\u76c8\u4e8f\u5f52\u56e0"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "@a5l/squad-rm-001",
+  "kind": "squad",
+  "version": "2.1.0",
+  "domain": "a5l-core",
+  "created_at": "2026-05-11T01:46:28.493747",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": []
+  },
+  "content": {
+    "name": "\u62a5\u544a\u751f\u6210\u5c0f\u961f",
+    "name_en": "Report Generation Squad",
+    "manager": "@a5l/persona-report-manager",
+    "description": "\u62a5\u544a\u64b0\u5199\u4e0e\u7f16\u8f91\uff0c\u5185\u5bb9\u8d28\u91cf\u5ba1\u67e5\uff0c\u53ef\u89c6\u5316\u5448\u73b0",
+    "members": [
+      {
+        "skill": "@a5l/skill-reading-analysis",
+        "role": "\u961f\u957f",
+        "expertise": "\u9605\u8bfb\u5206\u6790"
+      },
+      {
+        "skill": "@a5l/skill-humanizer-zh",
+        "role": "\u526f\u961f\u957f",
+        "expertise": "\u6587\u672c\u4f18\u5316"
+      },
+      {
+        "skill": "@a5l/skill-critical-thinking",
+        "role": "\u7f16\u8f91",
+        "expertise": "\u6279\u5224\u5ba1\u67e5"
+      },
+      {
+        "skill": "@a5l/skill-canvas",
+        "role": "\u8bbe\u8ba1\u5e08",
+        "expertise": "\u53ef\u89c6\u5316"
+      },
+      {
+        "skill": "@a5l/skill-coze-asr",
+        "role": "\u7ffb\u8bd1",
+        "expertise": "\u8bed\u97f3\u8f6c\u5199"
+      }
+    ],
+    "core_functions": [
+      "\u62a5\u544a\u64b0\u5199",
+      "\u8d28\u91cf\u5ba1\u67e5",
+      "\u53ef\u89c6\u5316",
+      "\u591a\u8bed\u8a00"
+    ]
+  }
+}

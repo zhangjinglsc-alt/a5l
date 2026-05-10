@@ -1,0 +1,69 @@
+{
+  "id": "@a5l/squad-platinum-001",
+  "kind": "squad",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:46:28.493944",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": [
+      "@a5l/squad-cio-001",
+      "@a5l/squad-kg-002"
+    ]
+  },
+  "content": {
+    "name": "\u767d\u91d1\u5206\u6790\u5e08\u5c0f\u961f",
+    "name_en": "Platinum Analyst Squad",
+    "manager": "@a5l/persona-chief-architect",
+    "description": "\u8de8\u9886\u57df\u6df1\u5ea6\u5206\u6790\uff0c\u91cd\u5927\u6295\u8d44\u51b3\u7b56\u652f\u6301\uff0c\u767d\u91d1\u65b9\u6cd5\u8bbav4.0\u5e94\u7528",
+    "members": [
+      {
+        "skill": "@a5l/skill-private-banker-stock",
+        "role": "\u961f\u957f",
+        "expertise": "\u79c1\u884c\u7ea7\u5206\u6790"
+      },
+      {
+        "skill": "@a5l/skill-uzi-integration",
+        "role": "\u526f\u961f\u957f",
+        "expertise": "51\u8bc4\u59d4\u6253\u5206"
+      },
+      {
+        "skill": "@a5l/skill-value-cell",
+        "role": "\u7b56\u7565\u5e08",
+        "expertise": "VALUE\u5206\u6790"
+      },
+      {
+        "skill": "@a5l/skill-industry-chain",
+        "role": "\u5206\u6790\u5e08",
+        "expertise": "\u4ea7\u4e1a\u94fe"
+      },
+      {
+        "skill": "@a5l/skill-bearish-perspective",
+        "role": "\u98ce\u63a7\u5e08",
+        "expertise": "\u7a7a\u65b9\u5ba1\u67e5"
+      },
+      {
+        "skill": "@a5l/skill-unified-backtest",
+        "role": "\u91cf\u5316\u5e08",
+        "expertise": "\u56de\u6d4b\u5f15\u64ce"
+      }
+    ],
+    "core_functions": [
+      "\u6df1\u5ea6\u5206\u6790",
+      "\u51b3\u7b56\u652f\u6301",
+      "\u7efc\u5408\u8bc4\u4f30",
+      "\u65b9\u6cd5\u8bba\u5e94\u7528"
+    ],
+    "special_attribute": "\u8de8\u7ba1\u7406\u8005\u8c03\u7528\uff0c\u76f4\u63a5\u5bf9Chief\u6c47\u62a5"
+  }
+}

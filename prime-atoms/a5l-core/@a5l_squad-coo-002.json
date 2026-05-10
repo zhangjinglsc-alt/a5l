@@ -1,0 +1,49 @@
+{
+  "id": "@a5l/squad-coo-002",
+  "kind": "squad",
+  "version": "2.1.0",
+  "domain": "a5l-core",
+  "created_at": "2026-05-11T01:46:28.492890",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": []
+  },
+  "content": {
+    "name": "\u7cfb\u7edf\u7ef4\u62a4\u5c0f\u961f",
+    "name_en": "System Maintenance Squad",
+    "manager": "@a5l/persona-coo",
+    "description": "\u7cfb\u7edf\u5b89\u5168\u68c0\u67e5\uff0c\u5f02\u5e38\u6062\u590d\uff0c\u5b89\u5168\u62a4\u680f",
+    "members": [
+      {
+        "skill": "@a5l/skill-healthcheck",
+        "role": "\u961f\u957f",
+        "expertise": "\u5b89\u5168\u68c0\u67e5"
+      },
+      {
+        "skill": "@a5l/skill-resilience-recovery",
+        "role": "\u5de5\u7a0b\u5e08",
+        "expertise": "\u5f02\u5e38\u6062\u590d"
+      },
+      {
+        "skill": "@a5l/skill-guardrails-system",
+        "role": "\u5de5\u7a0b\u5e08",
+        "expertise": "\u5b89\u5168\u62a4\u680f"
+      }
+    ],
+    "core_functions": [
+      "\u5b89\u5168\u68c0\u67e5",
+      "\u5f02\u5e38\u6062\u590d",
+      "\u5408\u89c4\u68c0\u67e5"
+    ]
+  }
+}
