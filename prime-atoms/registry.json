@@ -1,0 +1,5056 @@
+{
+  "version": "2.1.0-prime",
+  "total_atoms": 74,
+  "kinds": {
+    "tool": 63,
+    "data": 1,
+    "strategy": 0,
+    "analysis": 3,
+    "memory": 6,
+    "risk-control": 1
+  },
+  "domains": {
+    "general": 48,
+    "ai-industry": 11,
+    "investment-analysis": 6,
+    "memory-system": 5,
+    "trading": 1,
+    "integration": 2,
+    "a5l-core": 1
+  },
+  "atoms": {
+    "@a5l/skill-exa-web-search": {
+      "id": "@a5l/skill-exa-web-search",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.873419",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "exa-web-search",
+        "description": "Advanced web search using Exa API with neural search capabilities. Use for finding specific web content, research papers, and high-quality sources with semantic understanding.",
+        "trigger_words": [
+          "exa\u641c\u7d22",
+          "web\u641c\u7d22",
+          "\u6df1\u5ea6\u641c\u7d22"
+        ],
+        "source_path": "skills/exa-web-search/SKILL.md"
+      }
+    },
+    "@a5l/skill-guardrails-system": {
+      "id": "@a5l/skill-guardrails-system",
+      "kind": "risk-control",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.873742",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "guardrails-system",
+        "description": "Agentic Design Patterns-based guardrails and safety system for A5L. Implements input validation, output verification, compliance checking, and safety boundaries to ensure responsible AI operations.",
+        "trigger_words": [],
+        "source_path": "skills/guardrails-system/SKILL.md"
+      }
+    },
+    "@a5l/skill-factor-investing": {
+      "id": "@a5l/skill-factor-investing",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.874620",
+      "edges": {
+        "requires": [
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-unified-stock-price",
+          "@a5l/skill-fx-factor-monitor",
+          "@a5l/skill-private-banker-stock",
+          "@a5l/skill-stock-five-steps",
+          "@a5l/skill-buffett-value-investing"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "factor-investing",
+        "description": "Quantitative factor investing analysis including value, growth, momentum, quality, and low-volatility factors. Use for multi-factor stock screening, factor backtesting, and quantitative portfolio construction.",
+        "trigger_words": [
+          "/\u56e0\u5b50\u6295\u8d44",
+          "/\u91cf\u5316\u5206\u6790",
+          "/\u591a\u56e0\u5b50\u6a21\u578b",
+          "/\u7ec4\u5408\u4f18\u5316",
+          "/\u98ce\u9669\u9884\u7b97"
+        ],
+        "source_path": "skills/factor-investing/SKILL.md"
+      }
+    },
+    "@a5l/skill-memory-dreaming": {
+      "id": "@a5l/skill-memory-dreaming",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "memory-system",
+      "created_at": "2026-05-11T01:23:32.874950",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-memory",
+          "@a5l/skill-memory-lacedb-setup",
+          "@a5l/skill-unified-memory-system",
+          "@a5l/skill-memory-palace"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "memory-dreaming",
+        "description": "Record, analyze, and retrieve dream content for personal insight and pattern recognition. Use for maintaining a dream journal and exploring subconscious patterns.",
+        "trigger_words": [
+          "\u68a6\u5883",
+          "\u68a6",
+          "\u68a6\u7684\u7ba1\u7406",
+          "\u8bb0\u5fc6",
+          "\u6f5c\u610f\u8bc6"
+        ],
+        "source_path": "skills/memory-dreaming/SKILL.md"
+      }
+    },
+    "@a5l/skill-embodied-ai": {
+      "id": "@a5l/skill-embodied-ai",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.875623",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "embodied-ai",
+        "description": "Analysis of embodied AI sector including humanoid robots, autonomous driving, and physical AI systems. Use for tracking robotics investments and autonomous vehicle developments.",
+        "trigger_words": [
+          "\u5177\u8eab\u667a\u80fd",
+          "\u4eba\u5f62\u673a\u5668\u4eba",
+          "\u81ea\u52a8\u9a7e\u9a76",
+          "\u667a\u80fd\u673a\u5668\u4eba",
+          "\u591a\u6a21\u6001AI"
+        ],
+        "source_path": "skills/embodied-ai/SKILL.md"
+      }
+    },
+    "@a5l/skill-unified-news-aggregator": {
+      "id": "@a5l/skill-unified-news-aggregator",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.876054",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "unified-news-aggregator",
+        "description": "Unified news aggregation from 28+ high-value sources including financial, tech, and industry news. Use for comprehensive market intelligence and sentiment analysis.",
+        "trigger_words": [
+          "\u65b0\u95fb\u805a\u5408",
+          "\u65b0\u95fb\u805a\u5408",
+          "\u65e9\u62a5\u901f\u8bfb",
+          "\u7814\u62a5\u901f\u8bfb"
+        ],
+        "source_path": "skills/unified-news-aggregator/SKILL.md"
+      }
+    },
+    "@a5l/skill-claw-self-evolution-core": {
+      "id": "@a5l/skill-claw-self-evolution-core",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.876458",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "claw-self-evolution-core",
+        "description": "Core self-improvement engine for agent autonomous evolution. Use for recursive self-improvement, capability assessment, and skill conflict resolution.",
+        "trigger_words": [
+          "\u81ea\u6211\u8fdb\u5316",
+          "\u9519\u8bef\u4fee\u590d",
+          "\u7528\u6237\u7ea0\u6b63",
+          "\u6210\u529f\u6a21\u5f0f\u56fa\u5316",
+          "\u77e5\u8bc6\u5b66\u4e60"
+        ],
+        "source_path": "skills/claw-self-evolution-core/SKILL.md"
+      }
+    },
+    "@a5l/skill-knowledge-graph": {
+      "id": "@a5l/skill-knowledge-graph",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.876853",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "knowledge-graph",
+        "description": "Knowledge graph construction and management for investment research. Use for entity extraction, relationship mapping, and investment signal generation from unstructured data.",
+        "trigger_words": [],
+        "source_path": "skills/knowledge-graph/SKILL.md"
+      }
+    },
+    "@a5l/skill-ai-llm": {
+      "id": "@a5l/skill-ai-llm",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.877450",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "ai-llm",
+        "description": "Large language model industry analysis including training, inference, and application layers. Use for tracking AI infrastructure investments and LLM market developments.",
+        "trigger_words": [
+          "AI\u5927\u6a21\u578b",
+          "LLM",
+          "\u6a21\u578b\u9009\u62e9",
+          "Prompt\u5de5\u7a0b"
+        ],
+        "source_path": "skills/ai-llm/SKILL.md"
+      }
+    },
+    "@a5l/skill-ARCHITECT-5L": {
+      "id": "@a5l/skill-ARCHITECT-5L",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.877807",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "ARCHITECT-5L",
+        "description": "A5L five-layer investment architecture - Layer 0-5 system design and coordination. Use for investment system architecture, meta-control, and strategy orchestration.",
+        "trigger_words": [],
+        "source_path": "skills/ARCHITECT-5L/SKILL.md"
+      }
+    },
+    "@a5l/skill-beancount-skill": {
+      "id": "@a5l/skill-beancount-skill",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.878773",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "beancount-skill",
+        "description": "Double-entry bookkeeping using Beancount. Use for personal finance tracking, expense categorization, and financial statement generation.",
+        "trigger_words": [
+          "\u8bb0\u8d26",
+          "\u8d22\u52a1\u5206\u6790",
+          "\u6295\u8d44\u8ddf\u8e2a",
+          "\u9884\u7b97\u7ba1\u7406"
+        ],
+        "source_path": "skills/beancount-skill/SKILL.md"
+      }
+    },
+    "@a5l/skill-track_validation_metrics": {
+      "id": "@a5l/skill-track_validation_metrics",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.879253",
+      "edges": {
+        "requires": [
+          "@a5l/skill-backtest-engine"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "track_validation_metrics",
+        "description": "Track and validate prediction accuracy, backtest performance, and system metrics. Use for performance attribution and strategy effectiveness measurement.",
+        "trigger_words": [
+          "\u9a8c\u8bc1\u6307\u6807",
+          "\u76c8\u4e8f\u8ddf\u8e2a",
+          "\u98ce\u9669\u63a7\u5236"
+        ],
+        "source_path": "skills/track_validation_metrics/SKILL.md"
+      }
+    },
+    "@a5l/skill-nowait-reasoning-optimizer": {
+      "id": "@a5l/skill-nowait-reasoning-optimizer",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.879669",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "nowait-reasoning-optimizer",
+        "description": "Optimize reasoning workflows for Claude Code and other coding agents. Use for reducing wait times and improving development efficiency.",
+        "trigger_words": [
+          "Claude Code\u4f18\u5316",
+          "\u4ee3\u7801\u4f18\u5316",
+          "\u63a8\u7406\u6548\u7387"
+        ],
+        "source_path": "skills/nowait-reasoning-optimizer/SKILL.md"
+      }
+    },
+    "@a5l/skill-technical-analysis": {
+      "id": "@a5l/skill-technical-analysis",
+      "kind": "analysis",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.880087",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "technical-analysis",
+        "description": "Technical analysis including chart patterns, indicators, and trend analysis. Use for price action analysis, support/resistance identification, and trading signal generation.",
+        "trigger_words": [
+          "\u6280\u672f\u5206\u6790",
+          "\u6307\u6807\u8ba1\u7b97",
+          "\u56fe\u8868\u751f\u6210"
+        ],
+        "source_path": "skills/technical-analysis/SKILL.md"
+      }
+    },
+    "@a5l/skill-finceptterminal": {
+      "id": "@a5l/skill-finceptterminal",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.880457",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "finceptterminal",
+        "description": "finceptterminal - \u91d1\u878d\u6570\u636e\u7ec8\u7aef\u89e3\u6790\u5668",
+        "trigger_words": [],
+        "source_path": "skills/finceptterminal/SKILL.md"
+      }
+    },
+    "@a5l/skill-memory": {
+      "id": "@a5l/skill-memory",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "memory-system",
+      "created_at": "2026-05-11T01:23:32.880715",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-memory-palace"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-memory-dreaming",
+          "@a5l/skill-memory-lacedb-setup",
+          "@a5l/skill-unified-memory-system",
+          "@a5l/skill-memory-palace"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "memory",
+        "description": "Persistent memory management including long-term, working, and episodic memory. Use for storing user preferences, project context, and learning from interactions.",
+        "trigger_words": [
+          "\u8bb0\u5fc6",
+          "\u6587\u6863\u7ba1\u7406",
+          "\u77e5\u8bc6\u5e93\u68c0\u7d22",
+          "Session\u6062\u590d"
+        ],
+        "source_path": "skills/memory/SKILL.md"
+      }
+    },
+    "@a5l/skill-stoic-wealth-philosophy": {
+      "id": "@a5l/skill-stoic-wealth-philosophy",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.880964",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "stoic-wealth-philosophy",
+        "description": "Stoic philosophy applied to wealth management and investment psychology. Use for developing rational investment mindset and emotional discipline.",
+        "trigger_words": [
+          "\u8d22\u52a1",
+          "\u9884\u7b97",
+          "\u6295\u8d44\u7ec4\u5408",
+          "\u4fdd\u9669\u89c4\u5212",
+          "\u7a0e\u52a1"
+        ],
+        "source_path": "skills/stoic-wealth-philosophy/SKILL.md"
+      }
+    },
+    "@a5l/skill-tavily": {
+      "id": "@a5l/skill-tavily",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.881478",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "tavily",
+        "description": "AI-optimized web search using Tavily Search API. Use when you need comprehensive web research, current events lookup, domain-specific search, or AI-generated answer summaries. Tavily is optimized for LLM consumption with clean structured results, answer generation, and raw content extraction. Best for research tasks, news queries, fact-checking, and gathering authoritative sources.",
+        "trigger_words": [],
+        "source_path": "skills/tavily/SKILL.md"
+      }
+    },
+    "@a5l/skill-financial-calculator": {
+      "id": "@a5l/skill-financial-calculator",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.882317",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "financial-calculator",
+        "description": "Financial calculations including compound interest, IRR, NPV, and amortization. Use for investment return analysis and financial planning.",
+        "trigger_words": [
+          "\u8d22\u52a1\u8ba1\u7b97",
+          "\u8d22\u52a1\u5206\u6790",
+          "\u8d37\u6b3e\u5206\u6790",
+          "\u6295\u8d44\u51b3\u7b56"
+        ],
+        "source_path": "skills/financial-calculator/SKILL.md"
+      }
+    },
+    "@a5l/skill-healthcheck": {
+      "id": "@a5l/skill-healthcheck",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.882713",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "healthcheck",
+        "description": "\u4e3b\u673a\u5b89\u5168\u4e0e\u98ce\u9669\u5bb9\u5fcd\u5ea6\u914d\u7f6e\uff0c\u7cfb\u7edf\u5b89\u5168\u589e\u5f3a\uff0c\u9632\u706b\u5899\u3001SSH\u914d\u7f6e\u3001\u5b89\u5168\u68c0\u6d4b\u3001\u5907\u4efd\u9a8c\u8bc1\u3001\u52a0\u5bc6\u5b58\u50a8\u3001\u6743\u9650\u7ba1\u7406\u3001\u7aef\u53e3\u7ba1\u7406\u3001\u65e5\u5fd7\u5206\u6790\u3002",
+        "trigger_words": [
+          "\u7cfb\u7edf\u5b89\u5168",
+          "\u4e3b\u673a\u5b89\u5168",
+          "\u9632\u706b\u5899",
+          "SSH\u914d\u7f6e",
+          "\u5b89\u5168\u68c0\u6d4b"
+        ],
+        "source_path": "skills/healthcheck/SKILL.md"
+      }
+    },
+    "@a5l/skill-node-connect": {
+      "id": "@a5l/skill-node-connect",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.883136",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "node-connect",
+        "description": "\u8282\u70b9\u8fde\u63a5\u8bca\u65ad\u5de5\u5177\uff0c\u7528\u4e8e\u8bca\u65adOpenClaw\u8282\u70b9\u8fde\u63a5\u548c\u914d\u5bf9\u5931\u8d25\u3001\u4e8c\u7ef4\u7801\u8fde\u63a5\u5931\u8d25\u3001\u672c\u5730Wi-Fi\u53ef\u7528\u6027\u68c0\u67e5\u3001\u7aef\u53e3\u51b2\u7a81\u68c0\u67e5\u3001DNS\u95ee\u9898\u6392\u67e5\u3001\u7f51\u7edc\u68c0\u6d4b\u3002",
+        "trigger_words": [
+          "\u8282\u70b9\u8fde\u63a5",
+          "\u914d\u5bf9\u5931\u8d25",
+          "\u7f51\u7edc\u68c0\u6d4b",
+          "DNS\u95ee\u9898\u6392\u67e5",
+          "\u7aef\u53e3\u51b2\u7a81"
+        ],
+        "source_path": "skills/node-connect/SKILL.md"
+      }
+    },
+    "@a5l/skill-karpathy-wiki": {
+      "id": "@a5l/skill-karpathy-wiki",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.883619",
+      "edges": {
+        "requires": [
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "karpathy-wiki",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/karpathy-wiki/SKILL.md"
+      }
+    },
+    "@a5l/skill-storage": {
+      "id": "@a5l/skill-storage",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.884240",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "storage",
+        "description": "Data storage industry analysis including DRAM, NAND, and HBM memory technologies. Use for tracking semiconductor memory investments and supply chain dynamics.",
+        "trigger_words": [
+          "\u5b58\u50a8",
+          "DRAM",
+          "NAND",
+          "HBM",
+          "\u5b58\u50a8\u82af\u7247"
+        ],
+        "source_path": "skills/storage/SKILL.md"
+      }
+    },
+    "@a5l/skill-unified-backtest-engine": {
+      "id": "@a5l/skill-unified-backtest-engine",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "trading",
+      "created_at": "2026-05-11T01:23:32.884588",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [],
+        "derived_from": []
+      },
+      "content": {
+        "name": "unified-backtest-engine",
+        "description": "Unified backtesting engine for trading strategy validation. Use for historical performance testing, strategy optimization, and risk assessment.",
+        "trigger_words": [
+          "\u56de\u6d4b",
+          "\u56de\u6d4b\u5f15\u64ce",
+          "\u7b56\u7565\u56de\u6d4b"
+        ],
+        "source_path": "skills/unified-backtest-engine/SKILL.md"
+      }
+    },
+    "@a5l/skill-agent-browser": {
+      "id": "@a5l/skill-agent-browser",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.884994",
+      "edges": {
+        "requires": [],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "agent-browser",
+        "description": "Browser automation for web interaction, form filling, and data extraction. Use for automated web testing, scraping, and web-based workflows.",
+        "trigger_words": [
+          "\u6d4f\u89c8\u5668",
+          "\u7f51\u9875\u81ea\u52a8\u5316",
+          "\u722c\u866b",
+          "\u6570\u636e\u6293\u53d6",
+          "\u6d4b\u8bd5\u81ea\u52a8\u5316"
+        ],
+        "source_path": "skills/agent-browser/SKILL.md"
+      }
+    },
+    "@a5l/skill-codex": {
+      "id": "@a5l/skill-codex",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.885356",
+      "edges": {
+        "requires": [
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "codex",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/codex/SKILL.md"
+      }
+    },
+    "@a5l/skill-reflection-optimizer": {
+      "id": "@a5l/skill-reflection-optimizer",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.886179",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "reflection-optimizer",
+        "description": "Agentic Design Patterns-based reflection and self-correction system for A5L. Implements Producer-Critic dual-role model to iteratively optimize analysis quality through structured critique loops.",
+        "trigger_words": [],
+        "source_path": "skills/reflection-optimizer/SKILL.md"
+      }
+    },
+    "@a5l/skill-catalyst-tier-framework": {
+      "id": "@a5l/skill-catalyst-tier-framework",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.886832",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "catalyst-tier-framework",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/catalyst-tier-framework/SKILL.md"
+      }
+    },
+    "@a5l/skill-unified-stock-price": {
+      "id": "@a5l/skill-unified-stock-price",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.887443",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-fx-factor-monitor",
+          "@a5l/skill-private-banker-stock",
+          "@a5l/skill-stock-five-steps",
+          "@a5l/skill-buffett-value-investing"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "unified-stock-price",
+        "description": "Unified stock price data from multiple sources (AKShare, TuShare, Yahoo). Use for real-time and historical price data retrieval with failover.",
+        "trigger_words": [
+          "\u80a1\u7968\u6570\u636e",
+          "\u4ef7\u683c",
+          "\u8d22\u52a1\u5206\u6790",
+          "\u57fa\u672c\u9762",
+          "\u5e02\u573a\u6570\u636e"
+        ],
+        "source_path": "skills/unified-stock-price/SKILL.md"
+      }
+    },
+    "@a5l/skill-fx-factor-monitor": {
+      "id": "@a5l/skill-fx-factor-monitor",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.887779",
+      "edges": {
+        "requires": [
+          "@a5l/skill-factor-investing"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-unified-stock-price",
+          "@a5l/skill-private-banker-stock",
+          "@a5l/skill-stock-five-steps",
+          "@a5l/skill-buffett-value-investing"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "fx-factor-monitor",
+        "description": "Foreign exchange factor monitoring and currency risk analysis. Use for tracking forex markets and currency-hedged investments.",
+        "trigger_words": [
+          "\u5916\u6c47",
+          "\u6c47\u7387",
+          "\u7f8e\u5143\u6307\u6570",
+          "\u4eba\u6c11\u5e01\u6c47\u7387"
+        ],
+        "source_path": "skills/fx-factor-monitor/SKILL.md"
+      }
+    },
+    "@a5l/skill-resilience-recovery": {
+      "id": "@a5l/skill-resilience-recovery",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.888181",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "resilience-recovery",
+        "description": "Agentic Design Patterns-based exception handling and recovery system for A5L. Implements circuit breaker, graceful degradation, and automated recovery strategies to ensure system reliability.",
+        "trigger_words": [],
+        "source_path": "skills/resilience-recovery/SKILL.md"
+      }
+    },
+    "@a5l/skill-KNOWLEDGE-GUARDIAN": {
+      "id": "@a5l/skill-KNOWLEDGE-GUARDIAN",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.888944",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "KNOWLEDGE-GUARDIAN",
+        "description": "Knowledge Guardian v1.1 - Chief Librarian for knowledge graph management. Use for document archival, entity management, and research organization.",
+        "trigger_words": [],
+        "source_path": "skills/KNOWLEDGE-GUARDIAN/SKILL.md"
+      }
+    },
+    "@a5l/skill-planner": {
+      "id": "@a5l/skill-planner",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.889523",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "planner",
+        "description": "Agentic Design Patterns-based hierarchical planning system for A5L. Implements task decomposition, dynamic re-planning, and plan execution monitoring for complex multi-step objectives.",
+        "trigger_words": [],
+        "source_path": "skills/planner/SKILL.md"
+      }
+    },
+    "@a5l/skill-kw-feishu-integration": {
+      "id": "@a5l/skill-kw-feishu-integration",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "integration",
+      "created_at": "2026-05-11T01:23:32.890225",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-message"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "kw-feishu-integration",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/kw-feishu-integration/SKILL.md"
+      }
+    },
+    "@a5l/skill-wiki-system": {
+      "id": "@a5l/skill-wiki-system",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.890749",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "wiki-system",
+        "description": "Compilation-over-retrieval knowledge wiki for OpenClaw agents. Drop sources in, get structured cross-referenced pages out. Knowledge compounds instead of disappearing. Based on Andrej Karpathy's LLM Wiki pattern.",
+        "trigger_words": [],
+        "source_path": "skills/wiki-system/SKILL.md"
+      }
+    },
+    "@a5l/skill-langzhu-wave-predictor": {
+      "id": "@a5l/skill-langzhu-wave-predictor",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.891552",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "langzhu-wave-predictor",
+        "description": "A5L\u6d6a\u4e3b\u6ce2\u6d6a\u7406\u8bba\u9884\u6d4b\u7cfb\u7edf - \u9884\u6d4b-\u9a8c\u8bc1-\u5b66\u4e60-\u5347\u7ea7\u95ed\u73af\uff0c\u4e00\u5929\u4e24\u6b21\u5faa\u73af",
+        "trigger_words": [],
+        "source_path": "skills/langzhu-wave-predictor/SKILL.md"
+      }
+    },
+    "@a5l/skill-report-data-integrity": {
+      "id": "@a5l/skill-report-data-integrity",
+      "kind": "data",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.892109",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "report-data-integrity",
+        "description": "Data integrity validation and quality checks for investment reports. Use for ensuring data accuracy and consistency across analyses.",
+        "trigger_words": [
+          "\u7814\u62a5\u6570\u636e\u7ba1\u7406",
+          "\u98de\u4e66\u540c\u6b65",
+          "\u6570\u636e\u5b8c\u6574\u6027",
+          "\u6570\u636e\u5907\u4efd"
+        ],
+        "source_path": "skills/report-data-integrity/SKILL.md"
+      }
+    },
+    "@a5l/skill-auto-briefing": {
+      "id": "@a5l/skill-auto-briefing",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.892931",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "auto-briefing",
+        "description": "Automated briefing generation for daily market summaries. Use for creating personalized market briefings and investment updates.",
+        "trigger_words": [
+          "\u5927\u76d8\u5206\u6790",
+          "\u6301\u4ed3\u8ddf\u8e2a",
+          "\u81ea\u9009\u80a1\u6392\u5e8f"
+        ],
+        "source_path": "skills/auto-briefing/SKILL.md"
+      }
+    },
+    "@a5l/skill-a2a-protocol": {
+      "id": "@a5l/skill-a2a-protocol",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.893266",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "a2a-protocol",
+        "description": "Agentic Design Patterns-based Agent-to-Agent communication protocol for A5L. Implements standardized message formats, task delegation, and cross-session coordination for the Six-in-One Hub.",
+        "trigger_words": [],
+        "source_path": "skills/a2a-protocol/SKILL.md"
+      }
+    },
+    "@a5l/skill-quant_analysis": {
+      "id": "@a5l/skill-quant_analysis",
+      "kind": "analysis",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.894027",
+      "edges": {
+        "requires": [
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "quant_analysis",
+        "description": "Quantitative analysis including statistical methods and mathematical modeling. Use for advanced quantitative research and algorithm development.",
+        "trigger_words": [
+          "/\u91cf\u5316\u5206\u6790",
+          "/\u56de\u6d4b",
+          "/\u7b56\u7565\u56de\u6d4b",
+          "/\u80a1\u7968\u5206\u6790"
+        ],
+        "source_path": "skills/quant_analysis/SKILL.md"
+      }
+    },
+    "@a5l/skill-memory-lacedb-setup": {
+      "id": "@a5l/skill-memory-lacedb-setup",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "memory-system",
+      "created_at": "2026-05-11T01:23:32.894351",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-memory-palace"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-memory-dreaming",
+          "@a5l/skill-memory",
+          "@a5l/skill-unified-memory-system",
+          "@a5l/skill-memory-palace"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "memory-lacedb-setup",
+        "description": "Memory LaceDB setup and configuration for long-term storage. Use for persistent memory database initialization and management.",
+        "trigger_words": [
+          "\u8bb0\u5fc6\u7cfb\u7edf",
+          "\u77e5\u8bc6\u5e93\u68c0\u7d22",
+          "Session\u6062\u590d"
+        ],
+        "source_path": "skills/memory-lacedb-setup/SKILL.md"
+      }
+    },
+    "@a5l/skill-coze-web-search": {
+      "id": "@a5l/skill-coze-web-search",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.894582",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "coze-web-search",
+        "description": "Web search using Coze API with summary and content extraction. Use for quick information retrieval and web page analysis.",
+        "trigger_words": [
+          "coze\u641c\u7d22",
+          "\u7f51\u7edc\u641c\u7d22",
+          "\u56fe\u7247\u641c\u7d22",
+          "\u65b0\u95fb\u641c\u7d22"
+        ],
+        "source_path": "skills/coze-web-search/SKILL.md"
+      }
+    },
+    "@a5l/skill-material": {
+      "id": "@a5l/skill-material",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.894817",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "material",
+        "description": "New materials industry analysis including carbon fiber, graphene, and advanced composites. Use for tracking materials science investments.",
+        "trigger_words": [
+          "\u65b0\u6750\u6599",
+          "\u78b3\u7ea4\u7ef4",
+          "\u77f3\u58a8\u70ef",
+          "\u9ad8\u6e29\u5408\u91d1",
+          "\u534a\u5bfc\u4f53\u6750\u6599"
+        ],
+        "source_path": "skills/material/SKILL.md"
+      }
+    },
+    "@a5l/skill-yangguan-daodao": {
+      "id": "@a5l/skill-yangguan-daodao",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.897134",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "yangguan-daodao",
+        "description": "\u8d85\u77ed\u7ebf\u4ea4\u6613\u7cfb\u7edf\uff0c\u5305\u542b\u6280\u672f\u6307\u6807\u7b56\u7565\uff08\u5747\u7ebf/RSI/MACD/ATR\uff09\u548c\u6d6a\u4e3b\u6ce2\u6d6a\u7406\u8bba\uff08\u5fae\u6d6a\u578b/\u65f6\u95f4\u5468\u671f/\u56fd\u5bb6\u961f\u884c\u4e3a\u8bc6\u522b\uff09",
+        "trigger_words": [
+          "/\u9633\u5173",
+          "/\u8d85\u77ed",
+          "/\u8d85\u77ed\u7ebf",
+          "/\u6d6a\u4e3b",
+          "/\u6ce2\u6d6a"
+        ],
+        "source_path": "skills/yangguan-daodao/SKILL.md"
+      }
+    },
+    "@a5l/skill-ARCHITECT-5L-SUPER": {
+      "id": "@a5l/skill-ARCHITECT-5L-SUPER",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.897550",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "ARCHITECT-5L-SUPER",
+        "description": "ARCHITECT-5L Super Edition with enhanced capabilities. Use for advanced investment system orchestration and meta-control.",
+        "trigger_words": [],
+        "source_path": "skills/ARCHITECT-5L-SUPER/SKILL.md"
+      }
+    },
+    "@a5l/skill-dajitui-support-resistance": {
+      "id": "@a5l/skill-dajitui-support-resistance",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.898693",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "dajitui-support-resistance",
+        "description": "- **Name**: dajitui-support-resistance",
+        "trigger_words": [],
+        "source_path": "skills/dajitui-support-resistance/SKILL.md"
+      }
+    },
+    "@a5l/skill-critical-thinking-logical-reasoning": {
+      "id": "@a5l/skill-critical-thinking-logical-reasoning",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.901990",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "critical-thinking-logical-reasoning",
+        "description": "Critical thinking and logical reasoning frameworks. Use for investment thesis validation and bias detection.",
+        "trigger_words": [
+          "\u6279\u5224\u6027\u601d\u7ef4",
+          "\u903b\u8f91\u63a8\u7406",
+          "\u8bba\u8bc1\u5206\u6790"
+        ],
+        "source_path": "skills/critical-thinking-logical-reasoning/SKILL.md"
+      }
+    },
+    "@a5l/skill-liquid-cooling": {
+      "id": "@a5l/skill-liquid-cooling",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.903050",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "liquid-cooling",
+        "description": "Liquid cooling industry analysis for data centers and AI infrastructure. Use for tracking thermal management investments.",
+        "trigger_words": [
+          "\u6db2\u51b7",
+          "\u6570\u636e\u4e2d\u5fc3\u6db2\u51b7",
+          "AI\u670d\u52a1\u5668\u6db2\u51b7",
+          "\u6d78\u6ca1\u5f0f\u6db2\u51b7",
+          "\u51b7\u677f\u5f0f\u6db2\u51b7"
+        ],
+        "source_path": "skills/liquid-cooling/SKILL.md"
+      }
+    },
+    "@a5l/skill-test-measurement": {
+      "id": "@a5l/skill-test-measurement",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.903628",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "test-measurement",
+        "description": "Test and measurement industry including electronic testing equipment. Use for tracking semiconductor testing investments.",
+        "trigger_words": [
+          "\u6d4b\u8bd5\u6d4b\u91cf",
+          "\u7535\u5b50\u6d4b\u8bd5",
+          "\u901a\u4fe1\u6d4b\u8bd5",
+          "\u534a\u5bfc\u4f53\u6d4b\u8bd5"
+        ],
+        "source_path": "skills/test-measurement/SKILL.md"
+      }
+    },
+    "@a5l/skill-sector-etf-monitor": {
+      "id": "@a5l/skill-sector-etf-monitor",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.903933",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "sector-etf-monitor",
+        "description": "Sector and ETF monitoring for industry rotation strategies. Use for tracking sector performance and ETF flows.",
+        "trigger_words": [
+          "\u677f\u5757ETF",
+          "\u884c\u4e1a\u677f\u5757",
+          "\u677f\u5757\u8f6e\u52a8",
+          "\u8d44\u91d1\u6d41\u5411"
+        ],
+        "source_path": "skills/sector-etf-monitor/SKILL.md"
+      }
+    },
+    "@a5l/skill-claude-code": {
+      "id": "@a5l/skill-claude-code",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.904212",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "claude-code",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/claude-code/SKILL.md"
+      }
+    },
+    "@a5l/skill-ai-apps": {
+      "id": "@a5l/skill-ai-apps",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.904663",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "ai-apps",
+        "description": "AI applications industry analysis including enterprise AI adoption. Use for tracking AI software and application layer investments.",
+        "trigger_words": [
+          "AI\u5e94\u7528",
+          "AI\u5199\u4f5c",
+          "AI\u7ed8\u753b",
+          "AI\u89c6\u9891",
+          "AI\u7f16\u7a0b"
+        ],
+        "source_path": "skills/ai-apps/SKILL.md"
+      }
+    },
+    "@a5l/skill-humanizer-zh": {
+      "id": "@a5l/skill-humanizer-zh",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.904921",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "humanizer-zh",
+        "description": "|",
+        "trigger_words": [],
+        "source_path": "skills/humanizer-zh/SKILL.md"
+      }
+    },
+    "@a5l/skill-kaipanla-api": {
+      "id": "@a5l/skill-kaipanla-api",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.908199",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-backtest-engine",
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/strategy-validation",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "kaipanla-api",
+        "description": "- **Name**: kaipanla-api",
+        "trigger_words": [],
+        "source_path": "skills/kaipanla-api/SKILL.md"
+      }
+    },
+    "@a5l/skill-reading-analysis": {
+      "id": "@a5l/skill-reading-analysis",
+      "kind": "analysis",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.908884",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "reading-analysis",
+        "description": "Reading list management and document analysis workflow. Use for organizing research materials and tracking reading progress.",
+        "trigger_words": [
+          "\u8bfb\u4e66",
+          "\u4e66\u7c4d",
+          "\u4e09\u91cd\u9605\u8bfb\u6cd5",
+          "\u7814\u62a5\u901f\u8bfb",
+          "\u6587\u732e\u5206\u6790"
+        ],
+        "source_path": "skills/reading-analysis/SKILL.md"
+      }
+    },
+    "@a5l/skill-ai-manufacturing": {
+      "id": "@a5l/skill-ai-manufacturing",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.909220",
+      "edges": {
+        "requires": [
+          "@a5l/skill-factor-investing"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-claw-daily-sync",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "ai-manufacturing",
+        "description": "AI + Manufacturing industry analysis including smart factories. Use for tracking industrial AI and automation investments.",
+        "trigger_words": [
+          "AI\u5de5\u4e1a",
+          "\u667a\u80fd\u5236\u9020",
+          "\u5de5\u4e1a4.0",
+          "\u673a\u5668\u89c6\u89c9"
+        ],
+        "source_path": "skills/ai-manufacturing/SKILL.md"
+      }
+    },
+    "@a5l/skill-message": {
+      "id": "@a5l/skill-message",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "integration",
+      "created_at": "2026-05-11T01:23:32.909455",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-kw-feishu-integration"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "message",
+        "description": "Multi-platform messaging for sending notifications and alerts. Use for investment alerts, system notifications, and communication.",
+        "trigger_words": [
+          "\u6d88\u606f\u53d1\u9001",
+          "\u6587\u4ef6\u4f20\u8f93",
+          "\u56fe\u7247\u4f20\u8f93",
+          "\u89c6\u9891\u4f20\u8f93",
+          "\u8bed\u97f3\u4f20\u8f93"
+        ],
+        "source_path": "skills/message/SKILL.md"
+      }
+    },
+    "@a5l/skill-triple-backup-standard": {
+      "id": "@a5l/skill-triple-backup-standard",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.909790",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "triple-backup-standard",
+        "description": "A5L\u6240\u6709\u89d2\u8272\u4ea7\u51fa\u5f3a\u5236\u6267\u884c\u4e09\u91cd\u5907\u4efd\uff1a\u672c\u5730SSMG\u5f52\u6863 \u2192 \u98de\u4e66\u4e91\u6587\u6863 \u2192 GitHub\u7248\u672c\u63a7\u5236\u3002Chief\u89e6\u53d1\u8bcd\"\u4e09\u91cd\u5907\u4efd\"/\"\u5907\u4efd\"\u81ea\u52a8\u6267\u884c\u3002",
+        "trigger_words": [],
+        "source_path": "skills/triple-backup-standard/SKILL.md"
+      }
+    },
+    "@a5l/skill-orchestrator-engine": {
+      "id": "@a5l/skill-orchestrator-engine",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "a5l-core",
+      "created_at": "2026-05-11T01:23:32.910197",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [],
+        "derived_from": []
+      },
+      "content": {
+        "name": "orchestrator-engine",
+        "description": "Agentic Design Patterns-based workflow orchestration engine for A5L. Implements Prompt Chaining, Routing, and Parallelization patterns to dynamically coordinate multi-SKILL execution pipelines.",
+        "trigger_words": [],
+        "source_path": "skills/orchestrator-engine/SKILL.md"
+      }
+    },
+    "@a5l/skill-private-banker-stock": {
+      "id": "@a5l/skill-private-banker-stock",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.910626",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-unified-stock-price",
+          "@a5l/skill-fx-factor-monitor",
+          "@a5l/skill-stock-five-steps",
+          "@a5l/skill-buffett-value-investing"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "private-banker-stock",
+        "description": "Private banker style institutional-grade stock analysis. Use for comprehensive fundamental analysis and valuation modeling.",
+        "trigger_words": [
+          "\u79c1\u4eba\u6295\u884c",
+          "\u6df1\u5ea6\u5206\u6790",
+          "\u4e13\u4e1a\u5efa\u8bae"
+        ],
+        "source_path": "skills/private-banker-stock/SKILL.md"
+      }
+    },
+    "@a5l/skill-hermes": {
+      "id": "@a5l/skill-hermes",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.910860",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "hermes",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/hermes/SKILL.md"
+      }
+    },
+    "@a5l/skill-REPORT-MANAGER": {
+      "id": "@a5l/skill-REPORT-MANAGER",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.911622",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "REPORT-MANAGER",
+        "description": "Report Manager for research document management and classification. Use for organizing investment reports and research workflows.",
+        "trigger_words": [],
+        "source_path": "skills/REPORT-MANAGER/SKILL.md"
+      }
+    },
+    "@a5l/skill-goal-monitor": {
+      "id": "@a5l/skill-goal-monitor",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.912241",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "goal-monitor",
+        "description": "Agentic Design Patterns-based goal setting and monitoring system for A5L. Implements SMART goal tracking, progress monitoring, and adaptive feedback loops to ensure strategic objectives are met.",
+        "trigger_words": [],
+        "source_path": "skills/goal-monitor/SKILL.md"
+      }
+    },
+    "@a5l/skill-low-altitude": {
+      "id": "@a5l/skill-low-altitude",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.912941",
+      "edges": {
+        "requires": [],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "low-altitude",
+        "description": "Low altitude economy analysis including eVTOL and drones. Use for tracking urban air mobility and drone delivery investments.",
+        "trigger_words": [
+          "\u4f4e\u7a7a\u7ecf\u6d4e",
+          "eVTOL",
+          "\u65e0\u4eba\u673a",
+          "\u4f4e\u7a7a\u7269\u6d41",
+          "\u7a7a\u4e2d\u51fa\u884c"
+        ],
+        "source_path": "skills/low-altitude/SKILL.md"
+      }
+    },
+    "@a5l/skill-unified-memory-system": {
+      "id": "@a5l/skill-unified-memory-system",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "memory-system",
+      "created_at": "2026-05-11T01:23:32.913366",
+      "edges": {
+        "requires": [
+          "@a5l/skill-memory-palace",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-memory-dreaming",
+          "@a5l/skill-memory",
+          "@a5l/skill-memory-lacedb-setup",
+          "@a5l/skill-memory-palace"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "unified-memory-system",
+        "description": "Unified memory system integration across all memory types. Use for comprehensive memory management and retrieval.",
+        "trigger_words": [
+          "\u8bb0\u5fc6\u7cfb\u7edf",
+          "\u77e5\u8bc6\u5e93\u68c0\u7d22",
+          "Session\u6062\u590d"
+        ],
+        "source_path": "skills/unified-memory-system/SKILL.md"
+      }
+    },
+    "@a5l/skill-industry-research": {
+      "id": "@a5l/skill-industry-research",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.913731",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-knowledge-graph"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "industry-research",
+        "description": "\u884c\u4e1a\u6df1\u5ea6\u7814\u7a76\u65b9\u6cd5\u8bba\uff0c\u56db\u6b65\u7814\u7a76\u6cd5\uff08\u4ea7\u4e1a\u94fe/\u9a71\u52a8\u529b/\u7ade\u4e89\u683c\u5c40/\u5546\u4e1a\u6a21\u5f0f\uff09\uff0c\u751f\u621070+\u9875\u4e13\u4e1a\u7ea7\u884c\u4e1a\u6df1\u5ea6\u7814\u62a5\u3002",
+        "trigger_words": [],
+        "source_path": "skills/industry-research/SKILL.md"
+      }
+    },
+    "@a5l/skill-claw-daily-sync": {
+      "id": "@a5l/skill-claw-daily-sync",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.914899",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-daily-report-template"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "claw-daily-sync",
+        "description": "Daily synchronization and system health checks. Use for maintaining system consistency and automated daily operations.",
+        "trigger_words": [
+          "\u6570\u636e\u5907\u4efd",
+          "\u540c\u6b65",
+          "\u68c0\u67e5\u72b6\u6001",
+          "\u6570\u636e\u5b8c\u6574\u6027\u4fdd\u969c",
+          "\u5907\u4efd\u68c0\u67e5"
+        ],
+        "source_path": "skills/claw-daily-sync/SKILL.md"
+      }
+    },
+    "@a5l/skill-stock-five-steps": {
+      "id": "@a5l/skill-stock-five-steps",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.915280",
+      "edges": {
+        "requires": [
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-unified-stock-price",
+          "@a5l/skill-fx-factor-monitor",
+          "@a5l/skill-private-banker-stock",
+          "@a5l/skill-buffett-value-investing"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "stock-five-steps",
+        "description": "Five-step stock analysis framework for systematic evaluation. Use for structured investment analysis from business to outlook.",
+        "trigger_words": [
+          "/\u4e2a\u80a1\u5206\u6790",
+          "/\u4e94\u6b65\u6cd5",
+          "/\u5206\u6790"
+        ],
+        "source_path": "skills/stock-five-steps/SKILL.md"
+      }
+    },
+    "@a5l/skill-memory-palace": {
+      "id": "@a5l/skill-memory-palace",
+      "kind": "memory",
+      "version": "2.1.0",
+      "domain": "memory-system",
+      "created_at": "2026-05-11T01:23:32.915664",
+      "edges": {
+        "requires": [
+          "@a5l/skill-technical-analysis"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-memory-dreaming",
+          "@a5l/skill-memory",
+          "@a5l/skill-memory-lacedb-setup",
+          "@a5l/skill-unified-memory-system"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "memory-palace",
+        "description": "|",
+        "trigger_words": [],
+        "source_path": "skills/memory-palace/SKILL.md"
+      }
+    },
+    "@a5l/skill-buffett-value-investing": {
+      "id": "@a5l/skill-buffett-value-investing",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "investment-analysis",
+      "created_at": "2026-05-11T01:23:32.916148",
+      "edges": {
+        "requires": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-fundamental-analysis"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-unified-stock-price",
+          "@a5l/skill-fx-factor-monitor",
+          "@a5l/skill-private-banker-stock",
+          "@a5l/skill-stock-five-steps"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "buffett-value-investing",
+        "description": "Buffett-style value investing framework. Use for moat analysis, margin of safety calculation, and long-term value investing.",
+        "trigger_words": [
+          "/\u5df4\u83f2\u7279",
+          "/\u4ef7\u503c\u6295\u8d44",
+          "/\u957f\u671f\u6301\u6709"
+        ],
+        "source_path": "skills/buffett-value-investing/SKILL.md"
+      }
+    },
+    "@a5l/skill-claude-core": {
+      "id": "@a5l/skill-claude-core",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.916523",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-catalyst-monitor-auto",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "claude-core",
+        "description": "> **\u7248\u672c**: v1.0.0",
+        "trigger_words": [],
+        "source_path": "skills/claude-core/SKILL.md"
+      }
+    },
+    "@a5l/skill-daily-report-template": {
+      "id": "@a5l/skill-daily-report-template",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "ai-industry",
+      "created_at": "2026-05-11T01:23:32.917081",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-factor-investing",
+          "@a5l/skill-fundamental-analysis",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-feishu-api"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-guardrails-system",
+          "@a5l/skill-embodied-ai",
+          "@a5l/skill-ai-llm",
+          "@a5l/skill-nowait-reasoning-optimizer",
+          "@a5l/skill-storage",
+          "@a5l/skill-liquid-cooling",
+          "@a5l/skill-ai-apps",
+          "@a5l/skill-kaipanla-api",
+          "@a5l/skill-ai-manufacturing",
+          "@a5l/skill-claw-daily-sync"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "daily-report-template",
+        "description": "A5L\u6301\u4ed3\u65e5\u62a5\u5b8c\u6574\u751f\u6210\u6a21\u677f\uff0c\u5305\u542bA+H\u5e02\u573a\u73af\u5883\u30014\u8d26\u6237\u6301\u4ed3\u5f52\u56e0\u3001\u6a21\u62df\u76d8\u5206\u6790\u3001L3\u7efc\u5408\u7814\u5224\u3001\u98ce\u9669\u8bc4\u4f30\u3001\u660e\u65e5\u64cd\u4f5c\u5efa\u8bae\u7b49\u5168\u6a21\u5757\u3002",
+        "trigger_words": [],
+        "source_path": "skills/daily-report-template/SKILL.md"
+      }
+    },
+    "@a5l/skill-catalyst-monitor-auto": {
+      "id": "@a5l/skill-catalyst-monitor-auto",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.917612",
+      "edges": {
+        "requires": [
+          "@a5l/skill-feishu-api",
+          "@a5l/skill-messaging"
+        ],
+        "enhances": [
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-unified-framework"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "catalyst-monitor-auto",
+        "description": "\u81ea\u52a8\u50ac\u5316\u4e8b\u4ef6\u76d1\u63a7\u7cfb\u7edf - \u4e3b\u52a8\u6293\u53d6\u5e02\u573a\u50ac\u5316\u4e8b\u4ef6\uff0c\u81ea\u52a8\u5e94\u7528CTF\u6846\u67b6\u5206\u6790\uff0c\u5e76\u63a8\u9001\u63d0\u9192\u3002\u652f\u6301\u65b0\u95fb\u805a\u5408\u3001\u667a\u80fd\u5206\u7ea7\u3001\u5b9a\u65f6\u76d1\u63a7\u3001\u63a8\u9001\u901a\u77e5\u3002Use when: (1) \u9700\u8981\u81ea\u52a8\u76d1\u63a7\u5e02\u573a\u50ac\u5316\u4e8b\u4ef6\uff0c(2) \u9700\u8981\u5b9a\u65f6\u83b7\u53d6AI/\u7b97\u529b/\u5b58\u50a8\u7b49\u884c\u4e1a\u65b0\u95fb\uff0c(3) \u9700\u8981\u81ea\u52a8\u8bc6\u522b\u50ac\u5316\u7ea7\u522b(Tier1-4)\uff0c(4) \u9700\u8981\u63a8\u9001\u91cd\u8981\u50ac\u5316\u4e8b\u4ef6\u63d0\u9192\u3002",
+        "trigger_words": [],
+        "source_path": "skills/catalyst-monitor-auto/SKILL.md"
+      }
+    },
+    "@a5l/skill-unified-framework": {
+      "id": "@a5l/skill-unified-framework",
+      "kind": "tool",
+      "version": "2.1.0",
+      "domain": "general",
+      "created_at": "2026-05-11T01:23:32.918191",
+      "edges": {
+        "requires": [
+          "@a5l/skill-stock-data",
+          "@a5l/skill-factor-investing"
+        ],
+        "enhances": [
+          "@a5l/portfolio-construction",
+          "@a5l/decision-support"
+        ],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [
+          "@a5l/skill-exa-web-search",
+          "@a5l/skill-unified-news-aggregator",
+          "@a5l/skill-claw-self-evolution-core",
+          "@a5l/skill-knowledge-graph",
+          "@a5l/skill-ARCHITECT-5L",
+          "@a5l/skill-beancount-skill",
+          "@a5l/skill-track_validation_metrics",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-finceptterminal",
+          "@a5l/skill-stoic-wealth-philosophy",
+          "@a5l/skill-tavily",
+          "@a5l/skill-financial-calculator",
+          "@a5l/skill-healthcheck",
+          "@a5l/skill-node-connect",
+          "@a5l/skill-karpathy-wiki",
+          "@a5l/skill-agent-browser",
+          "@a5l/skill-codex",
+          "@a5l/skill-reflection-optimizer",
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-resilience-recovery",
+          "@a5l/skill-KNOWLEDGE-GUARDIAN",
+          "@a5l/skill-planner",
+          "@a5l/skill-wiki-system",
+          "@a5l/skill-langzhu-wave-predictor",
+          "@a5l/skill-report-data-integrity",
+          "@a5l/skill-auto-briefing",
+          "@a5l/skill-a2a-protocol",
+          "@a5l/skill-quant_analysis",
+          "@a5l/skill-coze-web-search",
+          "@a5l/skill-material",
+          "@a5l/skill-yangguan-daodao",
+          "@a5l/skill-ARCHITECT-5L-SUPER",
+          "@a5l/skill-dajitui-support-resistance",
+          "@a5l/skill-critical-thinking-logical-reasoning",
+          "@a5l/skill-test-measurement",
+          "@a5l/skill-sector-etf-monitor",
+          "@a5l/skill-claude-code",
+          "@a5l/skill-humanizer-zh",
+          "@a5l/skill-reading-analysis",
+          "@a5l/skill-triple-backup-standard",
+          "@a5l/skill-hermes",
+          "@a5l/skill-REPORT-MANAGER",
+          "@a5l/skill-goal-monitor",
+          "@a5l/skill-low-altitude",
+          "@a5l/skill-industry-research",
+          "@a5l/skill-claude-core",
+          "@a5l/skill-catalyst-monitor-auto"
+        ],
+        "derived_from": []
+      },
+      "content": {
+        "name": "unified-framework",
+        "description": "Unified architecture framework integrating technical analysis, data acquisition, AI applications, and validation metrics layers. Use for comprehensive investment research and trading support system orchestration.",
+        "trigger_words": [
+          "\u7edf\u4e00\u6846\u67b6",
+          "\u7cfb\u7edf\u67b6\u6784",
+          "\u6846\u67b6\u96c6\u6210"
+        ],
+        "source_path": "skills/unified-framework/SKILL.md"
+      }
+    }
+  },
+  "index": {
+    "@a5l/skill-exa-web-search": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-guardrails-system": {
+      "kind": "risk-control",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 13
+    },
+    "@a5l/skill-factor-investing": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 10
+    },
+    "@a5l/skill-memory-dreaming": {
+      "kind": "memory",
+      "domain": "memory-system",
+      "version": "2.1.0",
+      "edges_count": 6
+    },
+    "@a5l/skill-embodied-ai": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 11
+    },
+    "@a5l/skill-unified-news-aggregator": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-claw-self-evolution-core": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-knowledge-graph": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-ai-llm": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 12
+    },
+    "@a5l/skill-ARCHITECT-5L": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 54
+    },
+    "@a5l/skill-beancount-skill": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-track_validation_metrics": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-nowait-reasoning-optimizer": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 11
+    },
+    "@a5l/skill-technical-analysis": {
+      "kind": "analysis",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-finceptterminal": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-memory": {
+      "kind": "memory",
+      "domain": "memory-system",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-stoic-wealth-philosophy": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-tavily": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-financial-calculator": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-healthcheck": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-node-connect": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-karpathy-wiki": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-storage": {
+      "kind": "memory",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 12
+    },
+    "@a5l/skill-unified-backtest-engine": {
+      "kind": "tool",
+      "domain": "trading",
+      "version": "2.1.0",
+      "edges_count": 5
+    },
+    "@a5l/skill-agent-browser": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 47
+    },
+    "@a5l/skill-codex": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-reflection-optimizer": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-catalyst-tier-framework": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-unified-stock-price": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 9
+    },
+    "@a5l/skill-fx-factor-monitor": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 8
+    },
+    "@a5l/skill-resilience-recovery": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-KNOWLEDGE-GUARDIAN": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 53
+    },
+    "@a5l/skill-planner": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-kw-feishu-integration": {
+      "kind": "tool",
+      "domain": "integration",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-wiki-system": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-langzhu-wave-predictor": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 52
+    },
+    "@a5l/skill-report-data-integrity": {
+      "kind": "data",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-auto-briefing": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-a2a-protocol": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    },
+    "@a5l/skill-quant_analysis": {
+      "kind": "analysis",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 52
+    },
+    "@a5l/skill-memory-lacedb-setup": {
+      "kind": "memory",
+      "domain": "memory-system",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-coze-web-search": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-material": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-yangguan-daodao": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-ARCHITECT-5L-SUPER": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 55
+    },
+    "@a5l/skill-dajitui-support-resistance": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-critical-thinking-logical-reasoning": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-liquid-cooling": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 11
+    },
+    "@a5l/skill-test-measurement": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-sector-etf-monitor": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-claude-code": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 52
+    },
+    "@a5l/skill-ai-apps": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 11
+    },
+    "@a5l/skill-humanizer-zh": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-kaipanla-api": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 15
+    },
+    "@a5l/skill-reading-analysis": {
+      "kind": "analysis",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-ai-manufacturing": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 13
+    },
+    "@a5l/skill-message": {
+      "kind": "tool",
+      "domain": "integration",
+      "version": "2.1.0",
+      "edges_count": 3
+    },
+    "@a5l/skill-triple-backup-standard": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-orchestrator-engine": {
+      "kind": "tool",
+      "domain": "a5l-core",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-private-banker-stock": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-hermes": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-REPORT-MANAGER": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-goal-monitor": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-low-altitude": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 48
+    },
+    "@a5l/skill-unified-memory-system": {
+      "kind": "memory",
+      "domain": "memory-system",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-industry-research": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-claw-daily-sync": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 12
+    },
+    "@a5l/skill-stock-five-steps": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 7
+    },
+    "@a5l/skill-memory-palace": {
+      "kind": "memory",
+      "domain": "memory-system",
+      "version": "2.1.0",
+      "edges_count": 6
+    },
+    "@a5l/skill-buffett-value-investing": {
+      "kind": "tool",
+      "domain": "investment-analysis",
+      "version": "2.1.0",
+      "edges_count": 9
+    },
+    "@a5l/skill-claude-core": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 49
+    },
+    "@a5l/skill-daily-report-template": {
+      "kind": "tool",
+      "domain": "ai-industry",
+      "version": "2.1.0",
+      "edges_count": 17
+    },
+    "@a5l/skill-catalyst-monitor-auto": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 50
+    },
+    "@a5l/skill-unified-framework": {
+      "kind": "tool",
+      "domain": "general",
+      "version": "2.1.0",
+      "edges_count": 51
+    }
+  }
+}

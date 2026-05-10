@@ -1,0 +1,32 @@
+{
+  "id": "@a5l/skill-unified-backtest-engine",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:23:32.884588",
+  "edges": {
+    "requires": [
+      "@a5l/skill-stock-data",
+      "@a5l/skill-backtest-engine",
+      "@a5l/skill-technical-analysis"
+    ],
+    "enhances": [
+      "@a5l/strategy-validation",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "name": "unified-backtest-engine",
+    "description": "Unified backtesting engine for trading strategy validation. Use for historical performance testing, strategy optimization, and risk assessment.",
+    "trigger_words": [
+      "\u56de\u6d4b",
+      "\u56de\u6d4b\u5f15\u64ce",
+      "\u7b56\u7565\u56de\u6d4b"
+    ],
+    "source_path": "skills/unified-backtest-engine/SKILL.md"
+  }
+}

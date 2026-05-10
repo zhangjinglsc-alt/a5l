@@ -1,0 +1,28 @@
+{
+  "id": "@a5l/signal-breakout-4consecutive",
+  "kind": "signal",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:24:08.098742",
+  "edges": {
+    "requires": [
+      "@a5l/skill-technical-analysis",
+      "@a5l/skill-yangguan-daodao"
+    ],
+    "enhances": [
+      "@a5l/decision-buy-cgw-20260506"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "price_action",
+    "pattern": "4_consecutive_limit_up",
+    "target": "000066.SZ",
+    "entry_price": 16.86,
+    "signal_strength": 0.9,
+    "detected_at": "2026-05-06T09:25:00+08:00"
+  }
+}

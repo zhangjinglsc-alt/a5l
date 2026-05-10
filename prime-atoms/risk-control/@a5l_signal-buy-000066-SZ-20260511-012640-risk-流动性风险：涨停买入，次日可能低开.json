@@ -1,0 +1,22 @@
+{
+  "id": "@a5l/signal-buy-000066-SZ-20260511-012640-risk-\u6d41\u52a8\u6027\u98ce\u9669\uff1a\u6da8\u505c\u4e70\u5165\uff0c\u6b21\u65e5\u53ef\u80fd\u4f4e\u5f00",
+  "kind": "risk",
+  "version": "1.0.0",
+  "domain": "risk-control",
+  "created_at": "2026-05-11T01:26:40.171144",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [
+      "@a5l/signal-buy-000066-SZ-20260511-012640"
+    ],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "description": "\u6d41\u52a8\u6027\u98ce\u9669\uff1a\u6da8\u505c\u4e70\u5165\uff0c\u6b21\u65e5\u53ef\u80fd\u4f4e\u5f00",
+    "severity": "medium",
+    "parent_decision": "@a5l/signal-buy-000066-SZ-20260511-012640"
+  }
+}

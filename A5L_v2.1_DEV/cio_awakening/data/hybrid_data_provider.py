@@ -24,7 +24,7 @@ class HybridDataProvider:
         try:
             import tushare as ts
             # Try to get token from environment or config
-            self.tushare_token = os.getenv('TUSHARE_TOKEN')
+            self.tushare_token = os.getenv('TUSHARE_TOKEN') or 'fd24d18cd957a2feb18629058771772d8820c244719d67fca7d7d73b'
             if self.tushare_token:
                 ts.set_token(self.tushare_token)
                 self.pro = ts.pro_api()

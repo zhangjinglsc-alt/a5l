@@ -1,0 +1,37 @@
+{
+  "id": "@a5l/skill-buffett-value-investing",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:23:32.916148",
+  "edges": {
+    "requires": [
+      "@a5l/skill-factor-investing",
+      "@a5l/skill-fundamental-analysis"
+    ],
+    "enhances": [
+      "@a5l/portfolio-construction",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-factor-investing",
+      "@a5l/skill-unified-stock-price",
+      "@a5l/skill-fx-factor-monitor",
+      "@a5l/skill-private-banker-stock",
+      "@a5l/skill-stock-five-steps"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "buffett-value-investing",
+    "description": "Buffett-style value investing framework. Use for moat analysis, margin of safety calculation, and long-term value investing.",
+    "trigger_words": [
+      "/\u5df4\u83f2\u7279",
+      "/\u4ef7\u503c\u6295\u8d44",
+      "/\u957f\u671f\u6301\u6709"
+    ],
+    "source_path": "skills/buffett-value-investing/SKILL.md"
+  }
+}

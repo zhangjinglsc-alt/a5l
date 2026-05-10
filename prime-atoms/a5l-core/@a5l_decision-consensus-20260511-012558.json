@@ -1,0 +1,25 @@
+{
+  "id": "@a5l/decision-consensus-20260511-012558",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "a5l-core",
+  "created_at": "2026-05-11T01:25:58.612937",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [
+      "@a5l/principle-recursive-improvement"
+    ],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "six_in_one_consensus",
+    "decision_type": "strategy",
+    "description": "A5L\u7cfb\u7edfPrime\u6df1\u5ea6\u96c6\u6210\u51b3\u7b56",
+    "final_decision": "\u6267\u884c\u9009\u9879A\uff1a\u6df1\u5ea6\u96c6\u6210\uff0c\u52063\u4e2a\u9636\u6bb5\uff0c\u9884\u8ba125-30\u5929\u5b8c\u6210",
+    "confidence": 0.92,
+    "timestamp": "2026-05-11T01:25:58.612942"
+  }
+}

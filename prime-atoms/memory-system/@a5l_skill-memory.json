@@ -1,0 +1,36 @@
+{
+  "id": "@a5l/skill-memory",
+  "kind": "memory",
+  "version": "2.1.0",
+  "domain": "memory-system",
+  "created_at": "2026-05-11T01:23:32.880715",
+  "edges": {
+    "requires": [
+      "@a5l/skill-technical-analysis",
+      "@a5l/skill-memory-palace"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-memory-dreaming",
+      "@a5l/skill-memory-lacedb-setup",
+      "@a5l/skill-unified-memory-system",
+      "@a5l/skill-memory-palace"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "memory",
+    "description": "Persistent memory management including long-term, working, and episodic memory. Use for storing user preferences, project context, and learning from interactions.",
+    "trigger_words": [
+      "\u8bb0\u5fc6",
+      "\u6587\u6863\u7ba1\u7406",
+      "\u77e5\u8bc6\u5e93\u68c0\u7d22",
+      "Session\u6062\u590d"
+    ],
+    "source_path": "skills/memory/SKILL.md"
+  }
+}

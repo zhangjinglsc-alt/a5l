@@ -1,0 +1,38 @@
+{
+  "id": "@a5l/skill-nowait-reasoning-optimizer",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.879669",
+  "edges": {
+    "requires": [],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-ai-llm",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-ai-apps",
+      "@a5l/skill-kaipanla-api",
+      "@a5l/skill-ai-manufacturing",
+      "@a5l/skill-claw-daily-sync",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "nowait-reasoning-optimizer",
+    "description": "Optimize reasoning workflows for Claude Code and other coding agents. Use for reducing wait times and improving development efficiency.",
+    "trigger_words": [
+      "Claude Code\u4f18\u5316",
+      "\u4ee3\u7801\u4f18\u5316",
+      "\u63a8\u7406\u6548\u7387"
+    ],
+    "source_path": "skills/nowait-reasoning-optimizer/SKILL.md"
+  }
+}

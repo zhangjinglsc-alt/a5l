@@ -1,0 +1,20 @@
+{
+  "id": "@a5l/signal-buy-000066-SZ-20260511-012640-source-technical_breakout",
+  "kind": "signal_source",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:26:40.170126",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "technical_breakout",
+    "detail": "4\u8fde\u677f\u7a81\u7834",
+    "parent_decision": "@a5l/signal-buy-000066-SZ-20260511-012640"
+  }
+}

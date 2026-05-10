@@ -1,0 +1,31 @@
+{
+  "decision_id": "@a5l/decision-buy-cgw-20260506",
+  "timestamp": "2026-05-11T01:24:08.099779",
+  "summary": {
+    "action": "BUY",
+    "target": "000066.SZ",
+    "confidence": 0.85,
+    "sources_count": 4,
+    "risks_count": 2
+  },
+  "sources": [
+    "@a5l/analysis-catalyst-tier-2",
+    "@a5l/signal-breakout-4consecutive",
+    "@a5l/analysis-industry-chain-cpu",
+    "@a5l/signal-volume-expansion"
+  ],
+  "risks": [
+    "@a5l/principle-diversification",
+    "@a5l/risk-concentration-limit"
+  ],
+  "skills_used": [
+    "@a5l/skill-unified-stock-price",
+    "@a5l/skill-catalyst-tier-framework",
+    "@a5l/skill-industry-research",
+    "@a5l/skill-technical-analysis"
+  ],
+  "validation": [
+    "@a5l/position-cgw-20260509",
+    "@a5l/pnl-cgw-plus42pct"
+  ]
+}

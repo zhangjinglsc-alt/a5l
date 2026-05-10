@@ -1,0 +1,40 @@
+{
+  "id": "@a5l/skill-ai-apps",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.904663",
+  "edges": {
+    "requires": [],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-ai-llm",
+      "@a5l/skill-nowait-reasoning-optimizer",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-kaipanla-api",
+      "@a5l/skill-ai-manufacturing",
+      "@a5l/skill-claw-daily-sync",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "ai-apps",
+    "description": "AI applications industry analysis including enterprise AI adoption. Use for tracking AI software and application layer investments.",
+    "trigger_words": [
+      "AI\u5e94\u7528",
+      "AI\u5199\u4f5c",
+      "AI\u7ed8\u753b",
+      "AI\u89c6\u9891",
+      "AI\u7f16\u7a0b"
+    ],
+    "source_path": "skills/ai-apps/SKILL.md"
+  }
+}

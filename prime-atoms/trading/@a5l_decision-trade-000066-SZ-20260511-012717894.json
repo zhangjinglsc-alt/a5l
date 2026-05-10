@@ -1,0 +1,33 @@
+{
+  "id": "@a5l/decision-trade-000066-SZ-20260511-012717894",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:27:17.894517",
+  "edges": {
+    "requires": [
+      "@a5l/skill-catalyst-tier-framework",
+      "@a5l/skill-technical-analysis",
+      "@a5l/skill-yangguan-daodao",
+      "@a5l/skill-industry-research"
+    ],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "session_id": "session-20260511-012717",
+    "action": "BUY",
+    "symbol": "000066.SZ",
+    "name": "\u4e2d\u56fd\u957f\u57ce",
+    "quantity": 48000,
+    "price": 16.86,
+    "total_value": 809280.0,
+    "reasoning": "\u50ac\u5316\u5242Tier 2 + 4\u8fde\u677f\u7a81\u7834 + \u4fe1\u521bCPU\u4ea7\u4e1a\u94fe + \u96c6\u4e2d\u5ea6\u7b56\u7565",
+    "confidence": 0.85,
+    "timestamp": "2026-05-11T01:27:17.894524",
+    "status": "recorded"
+  }
+}

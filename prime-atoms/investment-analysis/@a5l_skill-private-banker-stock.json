@@ -1,0 +1,35 @@
+{
+  "id": "@a5l/skill-private-banker-stock",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:23:32.910626",
+  "edges": {
+    "requires": [
+      "@a5l/skill-stock-data"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-factor-investing",
+      "@a5l/skill-unified-stock-price",
+      "@a5l/skill-fx-factor-monitor",
+      "@a5l/skill-stock-five-steps",
+      "@a5l/skill-buffett-value-investing"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "private-banker-stock",
+    "description": "Private banker style institutional-grade stock analysis. Use for comprehensive fundamental analysis and valuation modeling.",
+    "trigger_words": [
+      "\u79c1\u4eba\u6295\u884c",
+      "\u6df1\u5ea6\u5206\u6790",
+      "\u4e13\u4e1a\u5efa\u8bae"
+    ],
+    "source_path": "skills/private-banker-stock/SKILL.md"
+  }
+}

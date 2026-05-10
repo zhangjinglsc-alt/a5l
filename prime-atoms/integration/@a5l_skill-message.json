@@ -1,0 +1,32 @@
+{
+  "id": "@a5l/skill-message",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "integration",
+  "created_at": "2026-05-11T01:23:32.909455",
+  "edges": {
+    "requires": [
+      "@a5l/skill-feishu-api",
+      "@a5l/skill-messaging"
+    ],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-kw-feishu-integration"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "message",
+    "description": "Multi-platform messaging for sending notifications and alerts. Use for investment alerts, system notifications, and communication.",
+    "trigger_words": [
+      "\u6d88\u606f\u53d1\u9001",
+      "\u6587\u4ef6\u4f20\u8f93",
+      "\u56fe\u7247\u4f20\u8f93",
+      "\u89c6\u9891\u4f20\u8f93",
+      "\u8bed\u97f3\u4f20\u8f93"
+    ],
+    "source_path": "skills/message/SKILL.md"
+  }
+}

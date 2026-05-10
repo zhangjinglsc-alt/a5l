@@ -1,0 +1,39 @@
+{
+  "id": "@a5l/skill-kaipanla-api",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.908199",
+  "edges": {
+    "requires": [
+      "@a5l/skill-stock-data",
+      "@a5l/skill-backtest-engine",
+      "@a5l/skill-technical-analysis"
+    ],
+    "enhances": [
+      "@a5l/strategy-validation",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-ai-llm",
+      "@a5l/skill-nowait-reasoning-optimizer",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-ai-apps",
+      "@a5l/skill-ai-manufacturing",
+      "@a5l/skill-claw-daily-sync",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "kaipanla-api",
+    "description": "- **Name**: kaipanla-api",
+    "trigger_words": [],
+    "source_path": "skills/kaipanla-api/SKILL.md"
+  }
+}

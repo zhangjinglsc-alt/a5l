@@ -1,0 +1,42 @@
+{
+  "id": "@a5l/skill-claw-daily-sync",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.914899",
+  "edges": {
+    "requires": [
+      "@a5l/skill-feishu-api"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-ai-llm",
+      "@a5l/skill-nowait-reasoning-optimizer",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-ai-apps",
+      "@a5l/skill-kaipanla-api",
+      "@a5l/skill-ai-manufacturing",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "claw-daily-sync",
+    "description": "Daily synchronization and system health checks. Use for maintaining system consistency and automated daily operations.",
+    "trigger_words": [
+      "\u6570\u636e\u5907\u4efd",
+      "\u540c\u6b65",
+      "\u68c0\u67e5\u72b6\u6001",
+      "\u6570\u636e\u5b8c\u6574\u6027\u4fdd\u969c",
+      "\u5907\u4efd\u68c0\u67e5"
+    ],
+    "source_path": "skills/claw-daily-sync/SKILL.md"
+  }
+}

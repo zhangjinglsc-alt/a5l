@@ -1,0 +1,41 @@
+{
+  "id": "@a5l/skill-ai-llm",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.877450",
+  "edges": {
+    "requires": [
+      "@a5l/skill-memory-palace"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-nowait-reasoning-optimizer",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-ai-apps",
+      "@a5l/skill-kaipanla-api",
+      "@a5l/skill-ai-manufacturing",
+      "@a5l/skill-claw-daily-sync",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "ai-llm",
+    "description": "Large language model industry analysis including training, inference, and application layers. Use for tracking AI infrastructure investments and LLM market developments.",
+    "trigger_words": [
+      "AI\u5927\u6a21\u578b",
+      "LLM",
+      "\u6a21\u578b\u9009\u62e9",
+      "Prompt\u5de5\u7a0b"
+    ],
+    "source_path": "skills/ai-llm/SKILL.md"
+  }
+}

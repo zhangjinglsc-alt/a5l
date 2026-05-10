@@ -1,0 +1,35 @@
+{
+  "id": "@a5l/skill-memory-lacedb-setup",
+  "kind": "memory",
+  "version": "2.1.0",
+  "domain": "memory-system",
+  "created_at": "2026-05-11T01:23:32.894351",
+  "edges": {
+    "requires": [
+      "@a5l/skill-technical-analysis",
+      "@a5l/skill-memory-palace"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-memory-dreaming",
+      "@a5l/skill-memory",
+      "@a5l/skill-unified-memory-system",
+      "@a5l/skill-memory-palace"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "memory-lacedb-setup",
+    "description": "Memory LaceDB setup and configuration for long-term storage. Use for persistent memory database initialization and management.",
+    "trigger_words": [
+      "\u8bb0\u5fc6\u7cfb\u7edf",
+      "\u77e5\u8bc6\u5e93\u68c0\u7d22",
+      "Session\u6062\u590d"
+    ],
+    "source_path": "skills/memory-lacedb-setup/SKILL.md"
+  }
+}

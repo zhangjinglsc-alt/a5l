@@ -1,0 +1,144 @@
+{
+  "version": "2.1.0-prime",
+  "total_decisions": 2,
+  "signals": [
+    {
+      "id": "@a5l/signal-buy-000066-SZ-20260511-012640",
+      "kind": "signal",
+      "version": "1.0.0",
+      "domain": "trading",
+      "created_at": "2026-05-11T01:26:40.169837",
+      "edges": {
+        "requires": [
+          "@a5l/skill-catalyst-tier-framework",
+          "@a5l/skill-technical-analysis",
+          "@a5l/skill-industry-research"
+        ],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [],
+        "derived_from": []
+      },
+      "content": {
+        "action": "BUY",
+        "symbol": "000066.SZ",
+        "name": "\u4e2d\u56fd\u957f\u57ce",
+        "quantity": 48000,
+        "price": 16.86,
+        "total_value": 809280.0,
+        "confidence": 0.85,
+        "timestamp": "2026-05-11T01:26:40.169855",
+        "status": "pending_execution"
+      }
+    },
+    {
+      "id": "@a5l/signal-sell-002436-SZ-20260511-012640",
+      "kind": "signal",
+      "version": "1.0.0",
+      "domain": "trading",
+      "created_at": "2026-05-11T01:26:40.171477",
+      "edges": {
+        "requires": [],
+        "enhances": [],
+        "validates_with": [],
+        "contradicts": [],
+        "related": [],
+        "derived_from": []
+      },
+      "content": {
+        "action": "SELL",
+        "symbol": "002436.SZ",
+        "name": "\u5174\u68ee\u79d1\u6280",
+        "quantity": 9300,
+        "price": 9.85,
+        "total_value": 91605.0,
+        "reason": "\u8c03\u4ed3\u6362\u80a1\uff1a\u96c6\u4e2d\u8d44\u91d1\u4e70\u5165\u4e2d\u56fd\u957f\u57ce",
+        "pnl": 12580.5,
+        "pnl_pct": 15.8,
+        "holding_days": 45,
+        "timestamp": "2026-05-11T01:26:40.171482",
+        "status": "executed"
+      }
+    }
+  ],
+  "daily_report": {
+    "date": "2026-05-11",
+    "summary": {
+      "total_signals": 2,
+      "buy_count": 1,
+      "sell_count": 1,
+      "total_buy_value": 809280.0,
+      "total_sell_value": 91605.0,
+      "total_pnl": 12580.5
+    },
+    "buy_signals": [
+      {
+        "id": "@a5l/signal-buy-000066-SZ-20260511-012640",
+        "kind": "signal",
+        "version": "1.0.0",
+        "domain": "trading",
+        "created_at": "2026-05-11T01:26:40.169837",
+        "edges": {
+          "requires": [
+            "@a5l/skill-catalyst-tier-framework",
+            "@a5l/skill-technical-analysis",
+            "@a5l/skill-industry-research"
+          ],
+          "enhances": [],
+          "validates_with": [],
+          "contradicts": [],
+          "related": [],
+          "derived_from": []
+        },
+        "content": {
+          "action": "BUY",
+          "symbol": "000066.SZ",
+          "name": "\u4e2d\u56fd\u957f\u57ce",
+          "quantity": 48000,
+          "price": 16.86,
+          "total_value": 809280.0,
+          "confidence": 0.85,
+          "timestamp": "2026-05-11T01:26:40.169855",
+          "status": "pending_execution"
+        }
+      }
+    ],
+    "sell_signals": [
+      {
+        "id": "@a5l/signal-sell-002436-SZ-20260511-012640",
+        "kind": "signal",
+        "version": "1.0.0",
+        "domain": "trading",
+        "created_at": "2026-05-11T01:26:40.171477",
+        "edges": {
+          "requires": [],
+          "enhances": [],
+          "validates_with": [],
+          "contradicts": [],
+          "related": [],
+          "derived_from": []
+        },
+        "content": {
+          "action": "SELL",
+          "symbol": "002436.SZ",
+          "name": "\u5174\u68ee\u79d1\u6280",
+          "quantity": 9300,
+          "price": 9.85,
+          "total_value": 91605.0,
+          "reason": "\u8c03\u4ed3\u6362\u80a1\uff1a\u96c6\u4e2d\u8d44\u91d1\u4e70\u5165\u4e2d\u56fd\u957f\u57ce",
+          "pnl": 12580.5,
+          "pnl_pct": 15.8,
+          "holding_days": 45,
+          "timestamp": "2026-05-11T01:26:40.171482",
+          "status": "executed"
+        }
+      }
+    ],
+    "signal_atoms": [
+      "@a5l/signal-buy-000066-SZ-20260511-012640",
+      "@a5l/signal-sell-002436-SZ-20260511-012640"
+    ]
+  },
+  "timestamp": "2026-05-11T01:26:40.171734"
+}

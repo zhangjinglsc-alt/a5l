@@ -1,104 +1,135 @@
 {
-  "timestamp": "2026-05-10T09:27:10.897228",
+  "timestamp": "2026-05-10T22:16:32.790104",
   "system_version": "2.1.0-cloud",
   "data_source": "hybrid_cloud_local",
   "market_status": {
-    "date": "20130307",
-    "total_stocks": 2398,
-    "up_stocks": 702,
-    "down_stocks": 1642,
-    "limit_up": 0,
-    "limit_down": 0,
-    "avg_change": -0.00944732402001668,
-    "total_amount": 2485.867102848,
-    "top_gainer": "600744.SH",
-    "top_gainer_pct": 0.1012,
-    "avg_turnover": 103.66418277097581,
-    "median_change": -0.0105,
-    "std_change": 0.02462249643118351,
+    "date": "20260508",
+    "total_stocks": 5491,
+    "up_stocks": 3637,
+    "down_stocks": 1728,
+    "limit_up": 132,
+    "limit_down": 5,
+    "avg_change": 0.9922328173374614,
+    "total_amount": 30.75719586376,
+    "top_gainer": "920270.BJ",
+    "top_gainer_pct": 29.9748,
+    "avg_turnover": 0.5601383329768713,
+    "median_change": 0.725,
+    "std_change": 2.919936576365574,
     "distribution": {
-      ">5%": 0,
-      "0-5%": 702,
-      "-5-0%": 1696,
-      "<-5%": 0
+      ">5%": 397,
+      "0-5%": 3240,
+      "-5-0%": 1791,
+      "<-5%": 63
     },
     "top_amount": [
       {
-        "code": "600016.SH",
-        "close": 10.39,
-        "pct_chg": -0.0152,
-        "amount": 4120533992.0
+        "code": "688256.SH",
+        "close": 1182.53,
+        "pct_chg": -5.6,
+        "amount": 22579188.932
       },
       {
-        "code": "601166.SH",
-        "close": 19.93,
-        "pct_chg": -0.030600000000000002,
-        "amount": 2834575951.0
+        "code": "300476.SZ",
+        "close": 358.66,
+        "pct_chg": 6.0936,
+        "amount": 20050788.655
       },
       {
-        "code": "600837.SH",
-        "close": 12.03,
-        "pct_chg": -0.0345,
-        "amount": 2345930726.0
+        "code": "002384.SZ",
+        "close": 211.39,
+        "pct_chg": 0.1516,
+        "amount": 18776822.516
       },
       {
-        "code": "000001.SZ",
-        "close": 23.74,
-        "pct_chg": -0.021,
-        "amount": 2106340352.3
+        "code": "300308.SZ",
+        "close": 886.0,
+        "pct_chg": 0.9721,
+        "amount": 17406542.425
       },
       {
-        "code": "600000.SH",
-        "close": 10.76,
-        "pct_chg": -0.0315,
-        "amount": 2072717387.0
+        "code": "300502.SZ",
+        "close": 551.67,
+        "pct_chg": -2.0994,
+        "amount": 16488159.417
       },
       {
-        "code": "600030.SH",
-        "close": 13.98,
-        "pct_chg": -0.0285,
-        "amount": 1907324500.0
+        "code": "688041.SH",
+        "close": 323.28,
+        "pct_chg": -5.363,
+        "amount": 16242863.702
       },
       {
-        "code": "601901.SH",
-        "close": 7.34,
-        "pct_chg": -0.0252,
-        "amount": 1607253212.0
+        "code": "300750.SZ",
+        "close": 437.0,
+        "pct_chg": -3.2415,
+        "amount": 16224287.222
       },
       {
-        "code": "600519.SH",
-        "close": 183.86,
-        "pct_chg": 0.0375,
-        "amount": 1573676093.0
+        "code": "000066.SZ",
+        "close": 23.09,
+        "pct_chg": -3.7114,
+        "amount": 15440406.337
       },
       {
-        "code": "000858.SZ",
-        "close": 25.11,
-        "pct_chg": 0.015,
-        "amount": 1421779857.6
+        "code": "002475.SZ",
+        "close": 71.29,
+        "pct_chg": 2.546,
+        "amount": 15166942.308
       },
       {
-        "code": "601318.SH",
-        "close": 43.61,
-        "pct_chg": -0.0204,
-        "amount": 1416654048.0
+        "code": "603986.SH",
+        "close": 334.1,
+        "pct_chg": -4.5865,
+        "amount": 14821436.654
       }
     ]
   },
   "analysis": {
     "market_mood": {
-      "status": "BEAR",
-      "emoji": "📉",
-      "up_ratio": 0.292743953294412,
-      "limit_up": 0,
-      "avg_change": -0.00944732402001668
+      "status": "STRONG_BULL",
+      "emoji": "🚀",
+      "up_ratio": 0.6623565835002732,
+      "limit_up": 132,
+      "avg_change": 0.9922328173374614
     }
   },
   "signal": {
-    "action": "SELL",
-    "confidence": 0.8121768140116763,
-    "mood": "BEAR",
-    "reasoning": "市场BEAR, 涨跌比29.3%, 涨停0家"
+    "action": "BUY",
+    "confidence": 0.95,
+    "mood": "STRONG_BULL",
+    "reasoning": "市场STRONG_BULL, 涨跌比66.2%, 涨停132家"
   },
-  "recommendations": []
+  "recommendations": [
+    {
+      "code": "920270.BJ",
+      "close": 20.64,
+      "pct_chg": 29.9748,
+      "amount": 190798.318
+    },
+    {
+      "code": "920438.BJ",
+      "close": 70.1,
+      "pct_chg": 22.5524,
+      "amount": 1170756.205
+    },
+    {
+      "code": "301028.SZ",
+      "close": 17.75,
+      "pct_chg": 20.0135,
+      "amount": 610451.172
+    },
+    {
+      "code": "300488.SZ",
+      "close": 41.56,
+      "pct_chg": 20.0116,
+      "amount": 969911.213
+    },
+    {
+      "code": "301183.SZ",
+      "close": 240.4,
+      "pct_chg": 20.002,
+      "amount": 2910978.363
+    }
+  ]
 }

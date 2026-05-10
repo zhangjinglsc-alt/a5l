@@ -1,0 +1,42 @@
+{
+  "id": "@a5l/skill-ai-manufacturing",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "ai-industry",
+  "created_at": "2026-05-11T01:23:32.909220",
+  "edges": {
+    "requires": [
+      "@a5l/skill-factor-investing"
+    ],
+    "enhances": [
+      "@a5l/portfolio-construction",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-guardrails-system",
+      "@a5l/skill-embodied-ai",
+      "@a5l/skill-ai-llm",
+      "@a5l/skill-nowait-reasoning-optimizer",
+      "@a5l/skill-storage",
+      "@a5l/skill-liquid-cooling",
+      "@a5l/skill-ai-apps",
+      "@a5l/skill-kaipanla-api",
+      "@a5l/skill-claw-daily-sync",
+      "@a5l/skill-daily-report-template"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "ai-manufacturing",
+    "description": "AI + Manufacturing industry analysis including smart factories. Use for tracking industrial AI and automation investments.",
+    "trigger_words": [
+      "AI\u5de5\u4e1a",
+      "\u667a\u80fd\u5236\u9020",
+      "\u5de5\u4e1a4.0",
+      "\u673a\u5668\u89c6\u89c9"
+    ],
+    "source_path": "skills/ai-manufacturing/SKILL.md"
+  }
+}

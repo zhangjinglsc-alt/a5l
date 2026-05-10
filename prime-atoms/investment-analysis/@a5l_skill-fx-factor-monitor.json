@@ -1,0 +1,37 @@
+{
+  "id": "@a5l/skill-fx-factor-monitor",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:23:32.887779",
+  "edges": {
+    "requires": [
+      "@a5l/skill-factor-investing"
+    ],
+    "enhances": [
+      "@a5l/portfolio-construction",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-factor-investing",
+      "@a5l/skill-unified-stock-price",
+      "@a5l/skill-private-banker-stock",
+      "@a5l/skill-stock-five-steps",
+      "@a5l/skill-buffett-value-investing"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "fx-factor-monitor",
+    "description": "Foreign exchange factor monitoring and currency risk analysis. Use for tracking forex markets and currency-hedged investments.",
+    "trigger_words": [
+      "\u5916\u6c47",
+      "\u6c47\u7387",
+      "\u7f8e\u5143\u6307\u6570",
+      "\u4eba\u6c11\u5e01\u6c47\u7387"
+    ],
+    "source_path": "skills/fx-factor-monitor/SKILL.md"
+  }
+}

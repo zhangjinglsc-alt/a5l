@@ -1,0 +1,20 @@
+{
+  "@a5l/decision-buy-cgw-20260506": {
+    "kind": "decision",
+    "domain": "trading",
+    "version": "1.0.0",
+    "edges_count": 14
+  },
+  "@a5l/analysis-catalyst-tier-2": {
+    "kind": "analysis",
+    "domain": "investment-analysis",
+    "version": "1.0.0",
+    "edges_count": 3
+  },
+  "@a5l/signal-breakout-4consecutive": {
+    "kind": "signal",
+    "domain": "trading",
+    "version": "1.0.0",
+    "edges_count": 3
+  }
+}

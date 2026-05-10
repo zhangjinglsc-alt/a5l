@@ -1,0 +1,40 @@
+{
+  "id": "@a5l/skill-factor-investing",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:23:32.874620",
+  "edges": {
+    "requires": [
+      "@a5l/skill-backtest-engine",
+      "@a5l/skill-fundamental-analysis"
+    ],
+    "enhances": [
+      "@a5l/strategy-validation",
+      "@a5l/portfolio-construction",
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-unified-stock-price",
+      "@a5l/skill-fx-factor-monitor",
+      "@a5l/skill-private-banker-stock",
+      "@a5l/skill-stock-five-steps",
+      "@a5l/skill-buffett-value-investing"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "factor-investing",
+    "description": "Quantitative factor investing analysis including value, growth, momentum, quality, and low-volatility factors. Use for multi-factor stock screening, factor backtesting, and quantitative portfolio construction.",
+    "trigger_words": [
+      "/\u56e0\u5b50\u6295\u8d44",
+      "/\u91cf\u5316\u5206\u6790",
+      "/\u591a\u56e0\u5b50\u6a21\u578b",
+      "/\u7ec4\u5408\u4f18\u5316",
+      "/\u98ce\u9669\u9884\u7b97"
+    ],
+    "source_path": "skills/factor-investing/SKILL.md"
+  }
+}

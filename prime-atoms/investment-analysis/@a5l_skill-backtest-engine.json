@@ -1,0 +1,33 @@
+{
+  "id": "@a5l/skill-backtest-engine",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:22:50.406833",
+  "edges": {
+    "requires": [
+      "@a5l/data-stock-price",
+      "@a5l/lib-quant"
+    ],
+    "enhances": [],
+    "validates_with": [
+      "@a5l/test-backtest-accuracy"
+    ],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "name": "backtest-engine",
+    "summary": "\n    \u7edf\u4e00\u56de\u6d4b\u5f15\u64ce\uff0c\u652f\u6301\u591a\u7b56\u7565\uff08\u53cc\u5747\u7ebf/RSI/MACD/\u7a81\u7834\uff09\u3001\n    \u591a\u6570\u636e\u6e90\uff08AkShare/TQ/CSV\uff09\u3001\u56de\u6d4b\u62a5\u544a\u3001\u5b9e\u76d8\u6a21\u62df\n    ",
+    "trigger_words": [
+      "\u56de\u6d4b",
+      "\u7b56\u7565",
+      "\u56e0\u5b50"
+    ],
+    "interfaces": [
+      "run_backtest",
+      "get_signals"
+    ]
+  }
+}

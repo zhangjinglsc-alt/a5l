@@ -1,0 +1,22 @@
+{
+  "id": "@a5l/data-stock-price",
+  "kind": "data",
+  "version": "1.0.0",
+  "domain": "infrastructure",
+  "created_at": "2026-05-11T01:22:50.407431",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "sources": [
+      "tushare",
+      "akshare",
+      "yahoo"
+    ]
+  }
+}

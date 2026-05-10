@@ -1,0 +1,36 @@
+{
+  "id": "@a5l/skill-memory-dreaming",
+  "kind": "memory",
+  "version": "2.1.0",
+  "domain": "memory-system",
+  "created_at": "2026-05-11T01:23:32.874950",
+  "edges": {
+    "requires": [
+      "@a5l/skill-memory-palace"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-memory",
+      "@a5l/skill-memory-lacedb-setup",
+      "@a5l/skill-unified-memory-system",
+      "@a5l/skill-memory-palace"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "memory-dreaming",
+    "description": "Record, analyze, and retrieve dream content for personal insight and pattern recognition. Use for maintaining a dream journal and exploring subconscious patterns.",
+    "trigger_words": [
+      "\u68a6\u5883",
+      "\u68a6",
+      "\u68a6\u7684\u7ba1\u7406",
+      "\u8bb0\u5fc6",
+      "\u6f5c\u610f\u8bc6"
+    ],
+    "source_path": "skills/memory-dreaming/SKILL.md"
+  }
+}

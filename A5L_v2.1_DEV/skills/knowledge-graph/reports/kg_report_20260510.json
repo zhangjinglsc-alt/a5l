@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-05-10T20:00:55.351319",
+  "graph_stats": {
+    "total_entities": 69,
+    "total_relations": 112,
+    "entity_types": {
+      "Analysis": 2,
+      "Company": 10,
+      "Concept": 14,
+      "Event": 2,
+      "Industry": 13,
+      "Location": 6,
+      "Person": 3,
+      "Report": 6,
+      "Stock": 13
+    },
+    "relation_types": {
+      "acquisition_unwound": 1,
+      "belongs_to": 3,
+      "competes_with": 22,
+      "considering_incorporation": 1,
+      "correlates_with": 1,
+      "incorporated_in": 4,
+      "industry_chain": 23,
+      "industry_position": 4,
+      "mentioned_in": 52,
+      "unwinding_overseas_structure": 1
+    }
+  },
+  "entity_distribution": {
+    "Analysis": 2,
+    "Company": 10,
+    "Concept": 14,
+    "Event": 2,
+    "Industry": 13,
+    "Location": 6,
+    "Person": 3,
+    "Report": 6,
+    "Stock": 13
+  },
+  "relation_distribution": {
+    "acquisition_unwound": 1,
+    "belongs_to": 3,
+    "competes_with": 22,
+    "considering_incorporation": 1,
+    "correlates_with": 1,
+    "incorporated_in": 4,
+    "industry_chain": 23,
+    "industry_position": 4,
+    "mentioned_in": 52,
+    "unwinding_overseas_structure": 1
+  },
+  "top_entities": {
+    "report_gs_20260503": 0.06487584121690278,
+    "stock_AAPL": 0.04834246256849519,
+    "report_test_doc": 0.03484588133941732,
+    "stock_宁德时代": 0.03313227726509588,
+    "stock_比亚迪": 0.03313227726509588,
+    "stock_中际旭创": 0.03313227726509588,
+    "stock_新易盛": 0.03313227726509588,
+    "stock_TSLA": 0.031167265435478538,
+    "report_pandora_20260503": 0.025918786477519936,
+    "report_pandora_deep_analysis_20260503": 0.025918786477519936
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "@a5l/skill-unified-stock-price",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "investment-analysis",
+  "created_at": "2026-05-11T01:23:32.887443",
+  "edges": {
+    "requires": [
+      "@a5l/skill-stock-data",
+      "@a5l/skill-technical-analysis",
+      "@a5l/skill-fundamental-analysis"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-factor-investing",
+      "@a5l/skill-fx-factor-monitor",
+      "@a5l/skill-private-banker-stock",
+      "@a5l/skill-stock-five-steps",
+      "@a5l/skill-buffett-value-investing"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "unified-stock-price",
+    "description": "Unified stock price data from multiple sources (AKShare, TuShare, Yahoo). Use for real-time and historical price data retrieval with failover.",
+    "trigger_words": [
+      "\u80a1\u7968\u6570\u636e",
+      "\u4ef7\u683c",
+      "\u8d22\u52a1\u5206\u6790",
+      "\u57fa\u672c\u9762",
+      "\u5e02\u573a\u6570\u636e"
+    ],
+    "source_path": "skills/unified-stock-price/SKILL.md"
+  }
+}

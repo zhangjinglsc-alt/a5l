@@ -1,0 +1,31 @@
+{
+  "id": "@a5l/skill-kw-feishu-integration",
+  "kind": "tool",
+  "version": "2.1.0",
+  "domain": "integration",
+  "created_at": "2026-05-11T01:23:32.890225",
+  "edges": {
+    "requires": [
+      "@a5l/skill-fundamental-analysis",
+      "@a5l/skill-memory-palace",
+      "@a5l/skill-knowledge-graph",
+      "@a5l/skill-feishu-api",
+      "@a5l/skill-messaging"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-message"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "kw-feishu-integration",
+    "description": "> **\u7248\u672c**: v1.0.0",
+    "trigger_words": [],
+    "source_path": "skills/kw-feishu-integration/SKILL.md"
+  }
+}

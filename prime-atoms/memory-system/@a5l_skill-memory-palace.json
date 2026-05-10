@@ -1,0 +1,30 @@
+{
+  "id": "@a5l/skill-memory-palace",
+  "kind": "memory",
+  "version": "2.1.0",
+  "domain": "memory-system",
+  "created_at": "2026-05-11T01:23:32.915664",
+  "edges": {
+    "requires": [
+      "@a5l/skill-technical-analysis"
+    ],
+    "enhances": [
+      "@a5l/decision-support"
+    ],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [
+      "@a5l/skill-memory-dreaming",
+      "@a5l/skill-memory",
+      "@a5l/skill-memory-lacedb-setup",
+      "@a5l/skill-unified-memory-system"
+    ],
+    "derived_from": []
+  },
+  "content": {
+    "name": "memory-palace",
+    "description": "|",
+    "trigger_words": [],
+    "source_path": "skills/memory-palace/SKILL.md"
+  }
+}

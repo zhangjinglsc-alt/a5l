@@ -1,0 +1,28 @@
+{
+  "id": "@a5l/decision-trade-002436-SZ-20260511-012717894",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:27:17.894916",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "session_id": "session-20260511-012717",
+    "action": "SELL",
+    "symbol": "002436.SZ",
+    "name": "\u5174\u68ee\u79d1\u6280",
+    "quantity": 9300,
+    "price": 9.85,
+    "total_value": 91605.0,
+    "reasoning": "\u8c03\u4ed3\u6362\u80a1\uff1a\u96c6\u4e2d\u8d44\u91d1\u4e70\u5165\u4e2d\u56fd\u957f\u57ce\uff0c\u5174\u68ee\u6da8\u5e45\u5df2\u8fbe\u6807",
+    "confidence": 0.75,
+    "timestamp": "2026-05-11T01:27:17.894923",
+    "status": "recorded"
+  }
+}
