@@ -3,7 +3,7 @@
   "kind": "persona",
   "version": "2.1.0",
   "domain": "a5l-core",
-  "created_at": "2026-05-11T01:34:27.274207",
+  "created_at": "2026-05-11T01:48:41.119551",
   "edges": {
     "requires": [],
     "enhances": [],

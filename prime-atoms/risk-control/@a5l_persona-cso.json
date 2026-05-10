@@ -3,7 +3,7 @@
   "kind": "persona",
   "version": "2.1.0",
   "domain": "risk-control",
-  "created_at": "2026-05-11T01:34:27.274915",
+  "created_at": "2026-05-11T01:48:41.120195",
   "edges": {
     "requires": [],
     "enhances": [],
