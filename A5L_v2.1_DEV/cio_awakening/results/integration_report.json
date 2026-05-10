@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-05-10T00:43:19.907613",
+  "backtest": {
+    "timestamp": "2026-05-10T00:43:19.907592",
+    "best_strategy": {
+      "name": "CTF催化剂",
+      "return": 32.1,
+      "sharpe": 1.45
+    },
+    "strategies": [
+      {
+        "name": "CTF催化剂",
+        "return": 32.1,
+        "sharpe": 1.45
+      },
+      {
+        "name": "阳关大道",
+        "return": 28.5,
+        "sharpe": 1.38
+      },
+      {
+        "name": "浪主波浪",
+        "return": 24.2,
+        "sharpe": 1.25
+      },
+      {
+        "name": "因子投资",
+        "return": 22.8,
+        "sharpe": 1.18
+      }
+    ],
+    "recommendation": "CTF催化剂策略表现最佳，建议作为主策略"
+  },
+  "sector_rotation": [
+    {
+      "name": "机器人概念",
+      "strength": 95,
+      "trend": "up"
+    },
+    {
+      "name": "通信",
+      "strength": 85,
+      "trend": "up"
+    },
+    {
+      "name": "算力",
+      "strength": 75,
+      "trend": "stable"
+    },
+    {
+      "name": "商业航天",
+      "strength": 70,
+      "trend": "up"
+    },
+    {
+      "name": "锂电池",
+      "strength": 60,
+      "trend": "down"
+    }
+  ],
+  "summary": {
+    "best_strategy": "CTF催化剂",
+    "hot_sector": "机器人概念",
+    "market_status": "强催化"
+  }
+}

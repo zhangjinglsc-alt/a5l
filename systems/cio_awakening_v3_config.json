@@ -1,0 +1,279 @@
+{
+  "config": {
+    "version": "3.0.0",
+    "codename": "Data Awakening",
+    "data_source": "feishu_cloud",
+    "timestamp": "2026-05-10T02:31:36.416086"
+  },
+  "components": {
+    "data_layer": {
+      "name": "Data Layer",
+      "adapters": [
+        {
+          "name": "FeishuCloudAdapter",
+          "source": "飞书云文档",
+          "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+          "data_range": "2014-08-07 ~ 2015-06-03",
+          "cache_enabled": true,
+          "real_time_sync": false
+        }
+      ],
+      "data_pipeline": [
+        "parquet_reader",
+        "data_cleaner",
+        "feature_engineer",
+        "cache_manager"
+      ],
+      "status": "built"
+    },
+    "analysis_layer": {
+      "name": "Analysis Layer",
+      "modules": [
+        {
+          "name": "MultiFactorScorer",
+          "type": "多因子评分",
+          "skills": [
+            "factor-investing",
+            "quant_analysis"
+          ],
+          "factors": [
+            "momentum",
+            "value",
+            "quality",
+            "volatility"
+          ]
+        },
+        {
+          "name": "TechnicalAnalyzer",
+          "type": "技术面量化",
+          "skills": [
+            "technical-analysis",
+            "langzhu-wave-predictor"
+          ],
+          "indicators": [
+            "MA",
+            "RSI",
+            "MACD",
+            "Bollinger",
+            "KDJ"
+          ]
+        },
+        {
+          "name": "FundamentalFilter",
+          "type": "基本面过滤",
+          "skills": [
+            "buffett-value-investing",
+            "stock-five-steps"
+          ],
+          "filters": [
+            "roe",
+            "growth",
+            "debt_ratio",
+            "cash_flow"
+          ]
+        }
+      ],
+      "status": "built"
+    },
+    "strategy_layer": {
+      "name": "Strategy Layer",
+      "strategies": [
+        {
+          "id": "TREND_FOLLOW_001",
+          "name": "趋势跟踪策略",
+          "type": "趋势",
+          "skills": [
+            "technical-analysis",
+            "sector-etf-monitor"
+          ],
+          "signals": [
+            "突破20日均线",
+            "板块轮动确认"
+          ],
+          "risk_level": "medium",
+          "position_size": 0.2
+        },
+        {
+          "id": "MEAN_REVERSION_001",
+          "name": "均值回归策略",
+          "type": "均值回归",
+          "skills": [
+            "quant_analysis",
+            "factor-investing"
+          ],
+          "signals": [
+            "RSI超卖",
+            "偏离均值2σ"
+          ],
+          "risk_level": "medium",
+          "position_size": 0.15
+        },
+        {
+          "id": "BREAKOUT_001",
+          "name": "突破策略",
+          "type": "突破",
+          "skills": [
+            "yangguan-daodao",
+            "technical-analysis"
+          ],
+          "signals": [
+            "涨停板突破",
+            "成交量放大3倍"
+          ],
+          "risk_level": "high",
+          "position_size": 0.1
+        },
+        {
+          "id": "VALUE_GROWTH_001",
+          "name": "价值成长策略",
+          "type": "价值投资",
+          "skills": [
+            "buffett-value-investing",
+            "private-banker-stock"
+          ],
+          "signals": [
+            "PE<20",
+            "ROE>15%",
+            "净利润增长>20%"
+          ],
+          "risk_level": "low",
+          "position_size": 0.25
+        }
+      ],
+      "strategy_count": 4,
+      "combination_mode": "multi_strategy_portfolio",
+      "rebalance_frequency": "daily",
+      "status": "built"
+    },
+    "execution_layer": {
+      "name": "Execution Layer",
+      "signal_engine": {
+        "name": "SignalGenerator",
+        "aggregation_method": "weighted_vote",
+        "confidence_threshold": 0.7,
+        "output": [
+          "BUY",
+          "SELL",
+          "HOLD",
+          "STRONG_BUY",
+          "STRONG_SELL"
+        ]
+      },
+      "position_manager": {
+        "name": "PositionManager",
+        "max_positions": 10,
+        "max_sector_exposure": 0.3,
+        "cash_reserve": 0.2
+      },
+      "risk_controller": {
+        "name": "RiskController",
+        "stop_loss": 0.08,
+        "take_profit": 0.15,
+        "max_drawdown": 0.15,
+        "daily_loss_limit": 0.05
+      },
+      "status": "built"
+    },
+    "feedback_layer": {
+      "name": "Feedback Layer",
+      "performance_monitor": {
+        "name": "PerformanceMonitor",
+        "metrics": [
+          "return",
+          "sharpe",
+          "max_drawdown",
+          "win_rate"
+        ],
+        "tracking_frequency": "daily"
+      },
+      "strategy_tracker": {
+        "name": "StrategyEffectivenessTracker",
+        "skills": [
+          "track_validation_metrics"
+        ],
+        "tracking_items": [
+          "signal_accuracy",
+          "strategy_return",
+          "risk_adjusted_return"
+        ]
+      },
+      "adaptive_optimizer": {
+        "name": "AdaptiveOptimizer",
+        "skills": [
+          "reflection-optimizer"
+        ],
+        "optimization_frequency": "weekly",
+        "parameters": [
+          "position_size",
+          "confidence_threshold",
+          "factor_weights"
+        ]
+      },
+      "status": "built"
+    }
+  },
+  "strategies": [
+    {
+      "id": "TREND_FOLLOW_001",
+      "name": "趋势跟踪策略",
+      "type": "趋势",
+      "skills": [
+        "technical-analysis",
+        "sector-etf-monitor"
+      ],
+      "signals": [
+        "突破20日均线",
+        "板块轮动确认"
+      ],
+      "risk_level": "medium",
+      "position_size": 0.2
+    },
+    {
+      "id": "MEAN_REVERSION_001",
+      "name": "均值回归策略",
+      "type": "均值回归",
+      "skills": [
+        "quant_analysis",
+        "factor-investing"
+      ],
+      "signals": [
+        "RSI超卖",
+        "偏离均值2σ"
+      ],
+      "risk_level": "medium",
+      "position_size": 0.15
+    },
+    {
+      "id": "BREAKOUT_001",
+      "name": "突破策略",
+      "type": "突破",
+      "skills": [
+        "yangguan-daodao",
+        "technical-analysis"
+      ],
+      "signals": [
+        "涨停板突破",
+        "成交量放大3倍"
+      ],
+      "risk_level": "high",
+      "position_size": 0.1
+    },
+    {
+      "id": "VALUE_GROWTH_001",
+      "name": "价值成长策略",
+      "type": "价值投资",
+      "skills": [
+        "buffett-value-investing",
+        "private-banker-stock"
+      ],
+      "signals": [
+        "PE<20",
+        "ROE>15%",
+        "净利润增长>20%"
+      ],
+      "risk_level": "low",
+      "position_size": 0.25
+    }
+  ],
+  "status": "built"
+}

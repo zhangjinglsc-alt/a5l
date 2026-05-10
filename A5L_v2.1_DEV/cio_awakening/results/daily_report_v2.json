@@ -1,0 +1,64 @@
+{
+  "system_version": "2.0.0",
+  "timestamp": "2026-05-10T00:44:06.131905",
+  "backtest_summary": {
+    "timestamp": "2026-05-10T00:44:06.131898",
+    "best_strategy": {
+      "name": "CTF催化剂",
+      "return": 32.1,
+      "sharpe": 1.45
+    },
+    "strategies": [
+      {
+        "name": "CTF催化剂",
+        "return": 32.1,
+        "sharpe": 1.45
+      },
+      {
+        "name": "阳关大道",
+        "return": 28.5,
+        "sharpe": 1.38
+      },
+      {
+        "name": "浪主波浪",
+        "return": 24.2,
+        "sharpe": 1.25
+      },
+      {
+        "name": "因子投资",
+        "return": 22.8,
+        "sharpe": 1.18
+      }
+    ],
+    "recommendation": "CTF催化剂策略表现最佳，建议作为主策略"
+  },
+  "latest_signal": {
+    "timestamp": "2026-05-10T00:44:06.131816",
+    "market_status": {
+      "limit_up": 97,
+      "up_down_ratio": 2.00653983353151,
+      "intensity": "强"
+    },
+    "ctf_signal": {
+      "tier": "Tier 1-2共振",
+      "action": "STRONG_BUY",
+      "confidence": 0.85
+    },
+    "ml_signal": {},
+    "kg_signal": {
+      "hot_sector": "机器人概念",
+      "sector_strength": 95,
+      "trend": "up"
+    },
+    "final_signal": {
+      "action": "STRONG_BUY",
+      "confidence": 0.95,
+      "reason": "CTF: Tier 1-2共振 + 板块: 机器人概念"
+    }
+  },
+  "system_status": {
+    "ml_model": "已加载",
+    "knowledge_graph": "模拟数据",
+    "strategies_active": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-05-10T00:38:11.840088",
+  "a_task": {
+    "market_sentiment": "\u5f3a",
+    "ctf_tier": "Tier 1-2\u5171\u632f",
+    "top_sectors": [
+      "\u673a\u5668\u4eba\u6982\u5ff5",
+      "\u901a\u4fe1",
+      "\u7b97\u529b"
+    ]
+  },
+  "b_task": {
+    "model": "RandomForest",
+    "accuracy": 0.875,
+    "feature_importance": {
+      "\u4eba\u6c14\u5206\u6570": 0.20440917107583778,
+      "\u6da8\u8dcc\u5e45": 0.6794856956315289,
+      "\u6982\u5ff5\u6570\u91cf": 0.11610513329263332
+    }
+  }
+}

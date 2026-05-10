@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-05-10T00:39:40.991407",
+  "data": {
+    "sentiment": {
+      "limit_up": 97,
+      "limit_down": 1,
+      "up_count": 3375,
+      "down_count": 1682,
+      "seal_rate": 85.0877,
+      "intensity": 70
+    },
+    "ladder": [
+      {
+        "level": 1,
+        "count": 79
+      },
+      {
+        "level": 2,
+        "count": 13
+      },
+      {
+        "level": 3,
+        "count": 4
+      },
+      {
+        "level": 4,
+        "count": 1
+      }
+    ],
+    "sectors": [
+      {
+        "name": "机器人概念",
+        "count": 23
+      },
+      {
+        "name": "通信",
+        "count": 16
+      },
+      {
+        "name": "算力",
+        "count": 9
+      },
+      {
+        "name": "商业航天",
+        "count": 6
+      },
+      {
+        "name": "锂电池",
+        "count": 6
+      }
+    ],
+    "hot_stocks": [
+      {
+        "rank": 1,
+        "name": "航天发展",
+        "code": "000547",
+        "change": 10.01,
+        "score": 10028,
+        "themes": [
+          "商业航天",
+          "军工",
+          "通信"
+        ]
+      },
+      {
+        "rank": 2,
+        "name": "大位科技",
+        "code": "600589",
+        "change": 10.03,
+        "score": 5221,
+        "themes": [
+          "股权转让",
+          "数据中心",
+          "算力"
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "立讯精密",
+        "code": "002475",
+        "change": 2.55,
+        "score": 4908,
+        "themes": [
+          "光模块",
+          "CPO/MPO",
+          "机器人概念"
+        ]
+      },
+      {
+        "rank": 4,
+        "name": "烽火通信",
+        "code": "600498",
+        "change": 10.0,
+        "score": 4631,
+        "themes": [
+          "光芯片",
+          "光模块",
+          "光纤概念"
+        ]
+      },
+      {
+        "rank": 5,
+        "name": "浪潮信息",
+        "code": "000977",
+        "change": 4.42,
+        "score": 4140,
+        "themes": [
+          "AI政务",
+          "通信",
+          "基础建设"
+        ]
+      }
+    ]
+  }
+}

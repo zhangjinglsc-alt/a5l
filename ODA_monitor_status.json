@@ -1,0 +1,38 @@
+{
+  "start_time": "2026-05-10T02:44:38.705072",
+  "target_time": "09:15",
+  "check_count": 1,
+  "last_check": "2026-05-10T02:44:38.705148",
+  "data_state": {
+    "earliest_file": null,
+    "latest_file": "20150603",
+    "total_files": 0,
+    "has_2010_data": false
+  },
+  "phases": {
+    "phase1": {
+      "status": "completed",
+      "version": "v1.1"
+    },
+    "phase2": {
+      "status": "completed",
+      "version": "v1.1"
+    },
+    "phase3": {
+      "status": "completed",
+      "version": "v1.0"
+    },
+    "phase4": {
+      "status": "completed",
+      "version": "v1.0"
+    },
+    "phase5": {
+      "status": "completed",
+      "version": "v1.0"
+    },
+    "phase6": {
+      "status": "completed",
+      "version": "v1.0"
+    }
+  }
+}

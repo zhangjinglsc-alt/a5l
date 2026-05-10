@@ -1,0 +1,47 @@
+2026-05-10 01:14:01 - 启动数据上传监控...
+2026-05-10 01:14:58 - 检测到数据文件上传！
+文件: 1d_price.zip
+2026-05-10 02:00:44 - 检测到数据: 1d_price_merged.zip (70M)
+2026-05-10 02:00:44 - 启动升级流水线
+==============================================
+🚀 CIO觉醒系统 - 史诗级升级流水线
+==============================================
+开始时间: 2026-05-10 02:00:44
+交付时间: 2026-05-10 09:13:00
+==============================================
+
+🔍 Phase 1: 检测数据上传...
+--------------------------------------------
+✅ 检测到数据文件: 70MB
+
+📊 Phase 2: 数据导入...
+--------------------------------------------
+
+======================================================================
+🚀 CIO历史数据处理器 - 流式处理版
+支持800MB+大型zip文件
+======================================================================
+
+======================================================================
+🚀 流式处理大型zip文件
+======================================================================
+📦 Zip文件: /workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/data/historical/kaipanla_history.zip
+💾 输出目录: /workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/data/processed
+
+📊 Zip文件大小: 70.0 MB
+
+Traceback (most recent call last):
+  File "/workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/process_large_zip.py", line 261, in <module>
+    main()
+  File "/workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/process_large_zip.py", line 243, in main
+    if processor.process_zip_streaming():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/process_large_zip.py", line 77, in process_zip_streaming
+    with zipfile.ZipFile(self.zip_path, 'r') as zf:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/zipfile/__init__.py", line 1365, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.12/zipfile/__init__.py", line 1432, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-05-10 02:00:45 - 升级完成

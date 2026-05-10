@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-05-10T00:42:31.128390",
+  "metrics": {
+    "xgboost": {
+      "train_acc": 1.0,
+      "test_acc": 0.47191011235955055,
+      "feature_importance": [
+        {
+          "feature": "low",
+          "importance": 0.07113718241453171
+        },
+        {
+          "feature": "high",
+          "importance": 0.051954180002212524
+        },
+        {
+          "feature": "ma_ratio_20",
+          "importance": 0.0497012659907341
+        },
+        {
+          "feature": "ma_ratio_10",
+          "importance": 0.047660067677497864
+        },
+        {
+          "feature": "rsi_14",
+          "importance": 0.04553091153502464
+        },
+        {
+          "feature": "ma_ratio_5",
+          "importance": 0.04476809874176979
+        },
+        {
+          "feature": "close_open_ratio",
+          "importance": 0.042379315942525864
+        },
+        {
+          "feature": "high_low_ratio",
+          "importance": 0.042251106351614
+        },
+        {
+          "feature": "ma_10",
+          "importance": 0.04221176356077194
+        },
+        {
+          "feature": "volatility_20",
+          "importance": 0.042102620005607605
+        }
+      ]
+    },
+    "lstm": {
+      "train_acc": 0.5924855470657349,
+      "test_acc": 0.4810126721858978,
+      "train_loss": 0.6465910077095032,
+      "test_loss": 0.6952841281890869
+    },
+    "ensemble": {
+      "test_acc": 0.449438202247191,
+      "weights": {
+        "xgb": 0.6,
+        "lstm": 0.4
+      }
+    }
+  }
+}

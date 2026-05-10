@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-05-10T09:27:10.897228",
+  "system_version": "2.1.0-cloud",
+  "data_source": "hybrid_cloud_local",
+  "market_status": {
+    "date": "20130307",
+    "total_stocks": 2398,
+    "up_stocks": 702,
+    "down_stocks": 1642,
+    "limit_up": 0,
+    "limit_down": 0,
+    "avg_change": -0.00944732402001668,
+    "total_amount": 2485.867102848,
+    "top_gainer": "600744.SH",
+    "top_gainer_pct": 0.1012,
+    "avg_turnover": 103.66418277097581,
+    "median_change": -0.0105,
+    "std_change": 0.02462249643118351,
+    "distribution": {
+      ">5%": 0,
+      "0-5%": 702,
+      "-5-0%": 1696,
+      "<-5%": 0
+    },
+    "top_amount": [
+      {
+        "code": "600016.SH",
+        "close": 10.39,
+        "pct_chg": -0.0152,
+        "amount": 4120533992.0
+      },
+      {
+        "code": "601166.SH",
+        "close": 19.93,
+        "pct_chg": -0.030600000000000002,
+        "amount": 2834575951.0
+      },
+      {
+        "code": "600837.SH",
+        "close": 12.03,
+        "pct_chg": -0.0345,
+        "amount": 2345930726.0
+      },
+      {
+        "code": "000001.SZ",
+        "close": 23.74,
+        "pct_chg": -0.021,
+        "amount": 2106340352.3
+      },
+      {
+        "code": "600000.SH",
+        "close": 10.76,
+        "pct_chg": -0.0315,
+        "amount": 2072717387.0
+      },
+      {
+        "code": "600030.SH",
+        "close": 13.98,
+        "pct_chg": -0.0285,
+        "amount": 1907324500.0
+      },
+      {
+        "code": "601901.SH",
+        "close": 7.34,
+        "pct_chg": -0.0252,
+        "amount": 1607253212.0
+      },
+      {
+        "code": "600519.SH",
+        "close": 183.86,
+        "pct_chg": 0.0375,
+        "amount": 1573676093.0
+      },
+      {
+        "code": "000858.SZ",
+        "close": 25.11,
+        "pct_chg": 0.015,
+        "amount": 1421779857.6
+      },
+      {
+        "code": "601318.SH",
+        "close": 43.61,
+        "pct_chg": -0.0204,
+        "amount": 1416654048.0
+      }
+    ]
+  },
+  "analysis": {
+    "market_mood": {
+      "status": "BEAR",
+      "emoji": "📉",
+      "up_ratio": 0.292743953294412,
+      "limit_up": 0,
+      "avg_change": -0.00944732402001668
+    }
+  },
+  "signal": {
+    "action": "SELL",
+    "confidence": 0.8121768140116763,
+    "mood": "BEAR",
+    "reasoning": "市场BEAR, 涨跌比29.3%, 涨停0家"
+  },
+  "recommendations": []
+}

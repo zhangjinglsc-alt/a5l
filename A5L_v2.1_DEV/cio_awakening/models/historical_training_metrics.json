@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-05-10T00:46:51.956148",
+  "data_period": "2018-2025",
+  "metrics": {
+    "xgboost_historical": {
+      "cv_mean": 0.9832572107864607,
+      "cv_std": 0.0006985064499507276,
+      "feature_importance": [
+        {
+          "feature": "ma_ratio_250",
+          "importance": 0.24046210944652557
+        },
+        {
+          "feature": "trend_250d",
+          "importance": 0.21559830009937286
+        },
+        {
+          "feature": "ma_ratio_20",
+          "importance": 0.06176223233342171
+        },
+        {
+          "feature": "ma_ratio_60",
+          "importance": 0.03736080974340439
+        },
+        {
+          "feature": "low",
+          "importance": 0.03714124113321304
+        },
+        {
+          "feature": "ma_120",
+          "importance": 0.0332004688680172
+        },
+        {
+          "feature": "close",
+          "importance": 0.03312183916568756
+        },
+        {
+          "feature": "macd_hist",
+          "importance": 0.027650276198983192
+        },
+        {
+          "feature": "macd_signal",
+          "importance": 0.027071598917245865
+        },
+        {
+          "feature": "ma_60",
+          "importance": 0.025935359299182892
+        },
+        {
+          "feature": "ma_10",
+          "importance": 0.022586366161704063
+        },
+        {
+          "feature": "ma_5",
+          "importance": 0.017595438286662102
+        },
+        {
+          "feature": "open",
+          "importance": 0.0159451961517334
+        },
+        {
+          "feature": "ma_ratio_5",
+          "importance": 0.013193613849580288
+        },
+        {
+          "feature": "ma_ratio_120",
+          "importance": 0.012831082567572594
+        },
+        {
+          "feature": "trend_120d",
+          "importance": 0.012149907648563385
+        },
+        {
+          "feature": "macd",
+          "importance": 0.010114738717675209
+        },
+        {
+          "feature": "ma_ratio_10",
+          "importance": 0.00836406834423542
+        },
+        {
+          "feature": "rsi_28",
+          "importance": 0.007925531826913357
+        },
+        {
+          "feature": "rsi_14",
+          "importance": 0.007863671518862247
+        }
+      ]
+    }
+  }
+}

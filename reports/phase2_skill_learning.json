@@ -1,0 +1,749 @@
+{
+  "operation": "DATA_AWAKENING_PHASE_2",
+  "timestamp": "2026-05-10T02:30:47.355848",
+  "data_range": "2014-08-07 ~ 2015-06-03",
+  "skills_processed": [
+    {
+      "skill": "factor-investing",
+      "category": "量化分析",
+      "focus": "日频因子回测",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "2014-2015年A股牛市特征明显",
+        "成交量数据完整，适合因子构建"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "technical-analysis",
+      "category": "技术分析",
+      "focus": "K线模式识别",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "日K线数据连续，适合模式识别",
+        "10个月覆盖牛熊转换"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "quant_analysis",
+      "category": "统计分析",
+      "focus": "统计套利模型",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "stock-five-steps",
+      "category": "基本面",
+      "focus": "五步法数据驱动",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "buffett-value-investing",
+      "category": "价值投资",
+      "focus": "价值曲线拟合",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "基本面数据需从其他源补充",
+        "价格数据可用于价值曲线"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "yangguan-daodao",
+      "category": "超短交易",
+      "focus": "超短模式挖掘",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "涨停数据完整",
+        "适合超短模式挖掘"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "private-banker-stock",
+      "category": "机构分析",
+      "focus": "机构行为追踪",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "unified-backtest-engine",
+      "category": "回测",
+      "focus": "全市场回测框架",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "sector-etf-monitor",
+      "category": "板块",
+      "focus": "板块轮动量化",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "langzhu-wave-predictor",
+      "category": "波浪理论",
+      "focus": "波浪识别训练",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "ai-llm",
+      "category": "产业链",
+      "focus": "AI产业链数据关联",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "storage",
+      "category": "存储芯片",
+      "focus": "存储周期股模型",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "liquid-cooling",
+      "category": "液冷",
+      "focus": "主题投资量化",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "embodied-ai",
+      "category": "具身智能",
+      "focus": "事件驱动策略",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "low-altitude",
+      "category": "低空经济",
+      "focus": "政策敏感模型",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "material",
+      "category": "新材料",
+      "focus": "大宗商品关联",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "test-measurement",
+      "category": "测试测量",
+      "focus": "半导体周期",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "track_validation_metrics",
+      "category": "预测追踪",
+      "focus": "预测准确性追踪",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "reflection-optimizer",
+      "category": "自我改进",
+      "focus": "递归优化",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "orchestrator-engine",
+      "category": "协调器",
+      "focus": "智能协调升级",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "knowledge-graph",
+      "category": "知识图谱",
+      "focus": "数据关联增强",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    },
+    {
+      "skill": "report-data-integrity",
+      "category": "数据验证",
+      "focus": "质量验证框架",
+      "data_days": 210,
+      "adaptation_status": "completed",
+      "key_insights": [
+        "数据适配完成",
+        "可开始训练"
+      ],
+      "next_steps": "基于2014-08-07~2015-06-03数据训练模型"
+    }
+  ],
+  "adaptations": {
+    "factor-investing": {
+      "skill_name": "factor-investing",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount",
+        "turnover_rate",
+        "volume_ratio"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/factor-investing_v3_0.pkl"
+    },
+    "technical-analysis": {
+      "skill_name": "technical-analysis",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount",
+        "pre_close",
+        "change",
+        "pct_chg"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/technical-analysis_v3_0.pkl"
+    },
+    "quant_analysis": {
+      "skill_name": "quant_analysis",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/quant_analysis_v3_0.pkl"
+    },
+    "stock-five-steps": {
+      "skill_name": "stock-five-steps",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/stock-five-steps_v3_0.pkl"
+    },
+    "buffett-value-investing": {
+      "skill_name": "buffett-value-investing",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount",
+        "pe",
+        "pb",
+        "eps"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/buffett-value-investing_v3_0.pkl"
+    },
+    "yangguan-daodao": {
+      "skill_name": "yangguan-daodao",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount",
+        "pct_chg",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/yangguan-daodao_v3_0.pkl"
+    },
+    "private-banker-stock": {
+      "skill_name": "private-banker-stock",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/private-banker-stock_v3_0.pkl"
+    },
+    "unified-backtest-engine": {
+      "skill_name": "unified-backtest-engine",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/unified-backtest-engine_v3_0.pkl"
+    },
+    "sector-etf-monitor": {
+      "skill_name": "sector-etf-monitor",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/sector-etf-monitor_v3_0.pkl"
+    },
+    "langzhu-wave-predictor": {
+      "skill_name": "langzhu-wave-predictor",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/langzhu-wave-predictor_v3_0.pkl"
+    },
+    "ai-llm": {
+      "skill_name": "ai-llm",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount",
+        "industry",
+        "sector"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/ai-llm_v3_0.pkl"
+    },
+    "storage": {
+      "skill_name": "storage",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/storage_v3_0.pkl"
+    },
+    "liquid-cooling": {
+      "skill_name": "liquid-cooling",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/liquid-cooling_v3_0.pkl"
+    },
+    "embodied-ai": {
+      "skill_name": "embodied-ai",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/embodied-ai_v3_0.pkl"
+    },
+    "low-altitude": {
+      "skill_name": "low-altitude",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/low-altitude_v3_0.pkl"
+    },
+    "material": {
+      "skill_name": "material",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/material_v3_0.pkl"
+    },
+    "test-measurement": {
+      "skill_name": "test-measurement",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/test-measurement_v3_0.pkl"
+    },
+    "track_validation_metrics": {
+      "skill_name": "track_validation_metrics",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/track_validation_metrics_v3_0.pkl"
+    },
+    "reflection-optimizer": {
+      "skill_name": "reflection-optimizer",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/reflection-optimizer_v3_0.pkl"
+    },
+    "orchestrator-engine": {
+      "skill_name": "orchestrator-engine",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/orchestrator-engine_v3_0.pkl"
+    },
+    "knowledge-graph": {
+      "skill_name": "knowledge-graph",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/knowledge-graph_v3_0.pkl"
+    },
+    "report-data-integrity": {
+      "skill_name": "report-data-integrity",
+      "data_source": "feishu_cloud",
+      "folder_token": "IbSnfbAhilS33qdQsRscWoBZnKh",
+      "date_range": [
+        "2014-08-07",
+        "2015-06-03"
+      ],
+      "fields_required": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "vol",
+        "amount"
+      ],
+      "learning_mode": "historical_pattern",
+      "output_model": "models/report-data-integrity_v3_0.pkl"
+    }
+  },
+  "status": "completed"
+}
