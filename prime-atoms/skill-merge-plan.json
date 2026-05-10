@@ -1,0 +1,111 @@
+{
+  "analysis_date": "2026-05-11",
+  "total_skills_before": 76,
+  "total_skills_after": 55,
+  "reduction": 21,
+  "reduction_rate": "27.6%",
+  "merge_plan": [
+    {
+      "target": "\ud83d\udd0d unified-search",
+      "merge_from": [
+        "tavily",
+        "exa-web-search",
+        "coze-web-search"
+      ],
+      "reason": "\u90fd\u662fweb\u641c\u7d22\uff0c\u53ea\u662f\u6570\u636e\u6e90\u4e0d\u540c",
+      "approach": "\u7edf\u4e00\u63a5\u53e3\uff0c\u652f\u6301\u591a\u6e90\u5207\u6362"
+    },
+    {
+      "target": "\ud83d\udcf0 unified-news",
+      "merge_from": [
+        "unified-news",
+        "coze-asr"
+      ],
+      "reason": "\u65b0\u95fb\u805a\u5408+\u8bed\u97f3\u8f6c\u6587\u5b57\u53ef\u6574\u5408",
+      "approach": "\u591a\u5a92\u4f53\u5185\u5bb9\u7edf\u4e00\u5904\u7406"
+    },
+    {
+      "target": "\ud83d\udcdd content-analysis",
+      "merge_from": [
+        "reading-analysis",
+        "humanizer-zh",
+        "critical-thinking"
+      ],
+      "reason": "\u90fd\u662f\u5185\u5bb9\u5904\u7406\u5206\u6790",
+      "approach": "\u7edf\u4e00\u5185\u5bb9\u5206\u6790\u6846\u67b6"
+    },
+    {
+      "target": "\u26a0\ufe0f risk-analysis",
+      "merge_from": [
+        "bearish-perspective",
+        "black-swan-control"
+      ],
+      "reason": "\u98ce\u9669\u5206\u6790\u4e0d\u540c\u7ef4\u5ea6",
+      "approach": "\u7efc\u5408\u98ce\u9669\u5206\u6790\u6846\u67b6"
+    },
+    {
+      "target": "\ud83d\udee1\ufe0f system-resilience",
+      "merge_from": [
+        "guardrails-system",
+        "resilience-recovery"
+      ],
+      "reason": "\u90fd\u662f\u7cfb\u7edf\u4fdd\u62a4\u4e0e\u6062\u590d",
+      "approach": "\u7edf\u4e00\u7cfb\u7edf\u97e7\u6027\u6846\u67b6"
+    },
+    {
+      "target": "\ud83d\udcca unified-viz",
+      "merge_from": [
+        "canvas"
+      ],
+      "reason": "\u53ef\u89c6\u5316\u7edf\u4e00",
+      "approach": "\u6574\u5408\u6240\u6709\u53ef\u89c6\u5316\u80fd\u529b"
+    },
+    {
+      "target": "\ud83e\udde0 knowledge-core",
+      "merge_from": [
+        "knowledge-graph",
+        "knowledge-guardian"
+      ],
+      "reason": "\u77e5\u8bc6\u7ba1\u7406\u6838\u5fc3\u529f\u80fd",
+      "approach": "\u7edf\u4e00\u77e5\u8bc6\u7ba1\u7406"
+    },
+    {
+      "target": "\ud83d\udcad memory-core",
+      "merge_from": [
+        "memory-palace",
+        "memory-dreaming"
+      ],
+      "reason": "\u8bb0\u5fc6\u7cfb\u7edf\u5408\u5e76",
+      "approach": "\u7edf\u4e00\u8bb0\u5fc6\u7ba1\u7406"
+    },
+    {
+      "target": "\ud83e\udd16 ai-analysis",
+      "merge_from": [
+        "ai-llm",
+        "ai-apps"
+      ],
+      "reason": "AI\u5206\u6790\u53ef\u6574\u5408",
+      "approach": "\u7edf\u4e00AI\u4ea7\u4e1a\u5206\u6790"
+    },
+    {
+      "target": "\ud83c\udfed manufacturing-ai",
+      "merge_from": [
+        "ai-manufacturing",
+        "embodied-ai"
+      ],
+      "reason": "\u667a\u80fd\u5236\u9020\u76f8\u5173",
+      "approach": "\u6574\u5408\u667a\u80fd\u5236\u9020\u5206\u6790"
+    }
+  ],
+  "remove_list": [
+    "weather",
+    "memory-dreaming",
+    "memory-lacedb-setup",
+    "node-connect",
+    "tmux",
+    "healthcheck",
+    "coze-image-gen",
+    "coze-tts"
+  ],
+  "priority": "high"
+}
