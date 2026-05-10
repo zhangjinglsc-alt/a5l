@@ -3,14 +3,26 @@
   "kind": "persona",
   "version": "2.1.0",
   "domain": "investment-analysis",
-  "created_at": "2026-05-11T01:25:58.611829",
+  "created_at": "2026-05-11T01:34:27.274479",
   "edges": {
     "requires": [],
     "enhances": [],
     "validates_with": [],
     "contradicts": [],
     "related": [],
-    "derived_from": []
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": [
+      "@a5l/persona-chief-architect",
+      "@a5l/persona-coo",
+      "@a5l/persona-cso",
+      "@a5l/persona-kg",
+      "@a5l/persona-report-manager"
+    ]
   },
   "content": {
     "name": "Chief Investment Officer (CIO)",

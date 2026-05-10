@@ -1,0 +1,28 @@
+{
+  "id": "@a5l/signal-buy-000001-SZ-20260511-013223",
+  "kind": "signal",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:32:23.365413",
+  "edges": {
+    "requires": [
+      "@a5l/skill-test-skill"
+    ],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "action": "BUY",
+    "symbol": "000001.SZ",
+    "name": "\u5e73\u5b89\u94f6\u884c",
+    "quantity": 1000,
+    "price": 10.0,
+    "total_value": 10000.0,
+    "confidence": 0.8,
+    "timestamp": "2026-05-11T01:32:23.365417",
+    "status": "pending_execution"
+  }
+}

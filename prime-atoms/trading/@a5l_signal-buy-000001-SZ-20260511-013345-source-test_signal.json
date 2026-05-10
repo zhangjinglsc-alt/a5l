@@ -1,0 +1,20 @@
+{
+  "id": "@a5l/signal-buy-000001-SZ-20260511-013345-source-test_signal",
+  "kind": "signal_source",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:33:45.769694",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "test_signal",
+    "detail": "\u6d4b\u8bd5\u4fe1\u53f7",
+    "parent_decision": "@a5l/signal-buy-000001-SZ-20260511-013345"
+  }
+}

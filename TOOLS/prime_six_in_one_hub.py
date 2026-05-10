@@ -155,6 +155,8 @@ class SixInOneHubPrime:
             )
             opinion_atom.add_edge("contributes_to", decision_id)
             opinion_atom.save()
+            # 添加到kg以便后续查询
+            self.kg.add_atom(opinion_atom)
         
         # 验证关系
         decision.add_edge("validates_with", "@a5l/principle-recursive-improvement")

@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "pass_rate": 1.0
+  },
+  "results": [
+    {
+      "test": "SKILL\u8fc1\u79fb\u5b8c\u6574\u6027",
+      "status": "\u2705 PASS",
+      "details": "74\u4e2aSKILL\u5df2\u8fc1\u79fb",
+      "timestamp": "2026-05-11T01:34:27.272236"
+    },
+    {
+      "test": "Atom\u7ed3\u6784\u6b63\u786e\u6027",
+      "status": "\u2705 PASS",
+      "details": "\u68c0\u67e55\u4e2aatom\u6837\u672c\u5168\u90e8\u901a\u8fc7",
+      "timestamp": "2026-05-11T01:34:27.274038"
+    },
+    {
+      "test": "\u7d22\u5f15\u4f18\u5316",
+      "status": "\u2705 PASS",
+      "details": "3\u4e2aatoms\uff0c\u7d22\u5f150.4KB",
+      "timestamp": "2026-05-11T01:34:27.274175"
+    },
+    {
+      "test": "\u516d\u7ba1\u7406\u8005Hub",
+      "status": "\u2705 PASS",
+      "details": "6\u4e2a\u7ba1\u7406\u8005\u5df2\u5173\u8054",
+      "timestamp": "2026-05-11T01:34:27.276588"
+    },
+    {
+      "test": "Layer 4\u51b3\u7b56\u4fe1\u53f7",
+      "status": "\u2705 PASS",
+      "details": "2\u4e2a\u4fe1\u53f7/1\u4e2a\u98ce\u9669\u5df2\u5173\u8054",
+      "timestamp": "2026-05-11T01:34:27.277285"
+    },
+    {
+      "test": "\u81ea\u52a8\u5316\u51b3\u7b56\u8bb0\u5f55",
+      "status": "\u2705 PASS",
+      "details": "\u8bb0\u5f55/SKILL\u63a8\u65ad/\u62a5\u544a\u751f\u6210\u6b63\u5e38",
+      "timestamp": "2026-05-11T01:34:27.277976"
+    },
+    {
+      "test": "\u61d2\u52a0\u8f7d",
+      "status": "\u2705 PASS",
+      "details": "\u4ece\u6587\u4ef6\u61d2\u52a0\u8f7d\u6210\u529f",
+      "timestamp": "2026-05-11T01:34:27.278194"
+    },
+    {
+      "test": "Prime\u683c\u5f0f\u5bfc\u51fa",
+      "status": "\u2705 PASS",
+      "details": "3\u4e2aatoms\u5bfc\u51fa\u6210\u529f",
+      "timestamp": "2026-05-11T01:34:27.279446"
+    }
+  ],
+  "timestamp": "2026-05-11T01:34:27.279543"
+}

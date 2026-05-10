@@ -1,0 +1,30 @@
+{
+  "id": "@a5l/decision-trade-000858-SZ-20260511-013223366",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:32:23.366029",
+  "edges": {
+    "requires": [
+      "@a5l/skill-unified-backtest-engine"
+    ],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "session_id": "session-20260511-013223",
+    "action": "BUY",
+    "symbol": "000858.SZ",
+    "name": "\u4e94\u7cae\u6db2",
+    "quantity": 100,
+    "price": 100.0,
+    "total_value": 10000.0,
+    "reasoning": "\u6d4b\u8bd5\u51b3\u7b56\uff1a\u56de\u6d4b\u7b56\u7565\u89e6\u53d1",
+    "confidence": 0.75,
+    "timestamp": "2026-05-11T01:32:23.366034",
+    "status": "recorded"
+  }
+}

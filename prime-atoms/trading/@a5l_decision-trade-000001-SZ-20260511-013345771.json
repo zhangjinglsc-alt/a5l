@@ -1,0 +1,28 @@
+{
+  "id": "@a5l/decision-trade-000001-SZ-20260511-013345771",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:33:45.771226",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "session_id": "session-20260511-013345",
+    "action": "SELL",
+    "symbol": "000001.SZ",
+    "name": "\u6d4b\u8bd5\u80a1\u79681",
+    "quantity": 100,
+    "price": 11.0,
+    "total_value": 1100.0,
+    "reasoning": "\u6d4b\u8bd5\u5bfc\u51fa",
+    "confidence": 0.8,
+    "timestamp": "2026-05-11T01:33:45.771230",
+    "status": "recorded"
+  }
+}

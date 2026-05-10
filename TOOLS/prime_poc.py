@@ -28,7 +28,13 @@ class PrimeAtom:
             "validates_with": [],
             "contradicts": [],
             "related": [],
-            "derived_from": []
+            "derived_from": [],
+            "contributed_by": [],
+            "contributes_to": [],
+            "triggered_by": [],
+            "triggers": [],
+            "has_risk": [],
+            "collaborates_with": []
         }
         self.content: Dict[str, Any] = {}
     

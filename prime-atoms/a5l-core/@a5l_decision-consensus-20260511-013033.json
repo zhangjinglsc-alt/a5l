@@ -1,0 +1,25 @@
+{
+  "id": "@a5l/decision-consensus-20260511-013033",
+  "kind": "decision",
+  "version": "1.0.0",
+  "domain": "a5l-core",
+  "created_at": "2026-05-11T01:30:33.479457",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [
+      "@a5l/principle-recursive-improvement"
+    ],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "six_in_one_consensus",
+    "decision_type": "test",
+    "description": "\u7aef\u5230\u7aef\u6d4b\u8bd5\u51b3\u7b56",
+    "final_decision": "\u6d4b\u8bd5\u901a\u8fc7",
+    "confidence": 0.95,
+    "timestamp": "2026-05-11T01:30:33.479462"
+  }
+}

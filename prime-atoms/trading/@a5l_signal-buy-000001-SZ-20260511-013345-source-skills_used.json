@@ -1,0 +1,22 @@
+{
+  "id": "@a5l/signal-buy-000001-SZ-20260511-013345-source-skills_used",
+  "kind": "signal_source",
+  "version": "1.0.0",
+  "domain": "trading",
+  "created_at": "2026-05-11T01:33:45.769835",
+  "edges": {
+    "requires": [],
+    "enhances": [],
+    "validates_with": [],
+    "contradicts": [],
+    "related": [],
+    "derived_from": []
+  },
+  "content": {
+    "type": "skills_used",
+    "detail": [
+      "test-skill"
+    ],
+    "parent_decision": "@a5l/signal-buy-000001-SZ-20260511-013345"
+  }
+}

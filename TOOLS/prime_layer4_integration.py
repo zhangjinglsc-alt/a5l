@@ -82,6 +82,7 @@ class Layer4DecisionSignalPrime:
             )
             signal_atom.add_edge("triggers", decision_id)
             signal_atom.save()
+            self.kg.add_atom(signal_atom)  # 添加到kg
             
             decision.add_edge("triggered_by", signal_atom_id)
         
@@ -101,6 +102,7 @@ class Layer4DecisionSignalPrime:
             )
             risk_atom.add_edge("contradicts", decision_id)
             risk_atom.save()
+            self.kg.add_atom(risk_atom)  # 添加到kg
             
             decision.add_edge("has_risk", risk_atom_id)
         
