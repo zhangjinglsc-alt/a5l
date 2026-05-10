@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-05-11T01:39:52.528316",
+  "status": "PASSED",
+  "checks": {
+    "file_structure": "OK",
+    "registry": "OK",
+    "compatibility": "OK",
+    "export_format": "OK"
+  },
+  "summary": {
+    "total_atoms_in_registry": 74,
+    "test_decision_created": "@a5l/decision-trade-TEST-SZ-20260511-013952527",
+    "export_path": "/tmp/integration-test-export.json"
+  }
+}

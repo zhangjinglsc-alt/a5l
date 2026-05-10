@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "total_tests": 8,
+    "total_time_ms": 39.11,
+    "avg_time_ms": 4.88875
+  },
+  "results": [
+    {
+      "test": "100 atoms\u521b\u5efa",
+      "elapsed_ms": 0.93,
+      "details": "\u5185\u5b58atoms: 100",
+      "timestamp": "2026-05-11T01:38:41.607952"
+    },
+    {
+      "test": "500 atoms\u521b\u5efa",
+      "elapsed_ms": 4.92,
+      "details": "\u5185\u5b58atoms: 500",
+      "timestamp": "2026-05-11T01:38:41.612975"
+    },
+    {
+      "test": "ID\u67e5\u8be2 (100\u6b21)",
+      "elapsed_ms": 0.07,
+      "details": "\u5e73\u5747: 0.00ms/\u6b21",
+      "timestamp": "2026-05-11T01:38:41.624790"
+    },
+    {
+      "test": "\u7c7b\u578b\u8fc7\u6ee4\u67e5\u8be2",
+      "elapsed_ms": 0.05,
+      "details": "\u627e\u5230 200 \u4e2askill",
+      "timestamp": "2026-05-11T01:38:41.624863"
+    },
+    {
+      "test": "\u4fdd\u5b58100 atoms",
+      "elapsed_ms": 20.71,
+      "details": "\u5230 /tmp/prime-perf-test",
+      "timestamp": "2026-05-11T01:38:41.648898"
+    },
+    {
+      "test": "\u52a0\u8f7d100 atoms",
+      "elapsed_ms": 0.0,
+      "details": "\u4ece /tmp/prime-perf-test, \u52a0\u8f7d 0 \u4e2a",
+      "timestamp": "2026-05-11T01:38:41.648934"
+    },
+    {
+      "test": "\u5bfc\u51fa200 atoms",
+      "elapsed_ms": 12.3,
+      "details": "\u6587\u4ef6\u5927\u5c0f: 87.0KB",
+      "timestamp": "2026-05-11T01:38:41.664951"
+    },
+    {
+      "test": "\u4e00\u65e5\u4ea4\u6613\u6a21\u62df",
+      "elapsed_ms": 0.13,
+      "details": "\u751f\u6210 15 \u4e2aatoms",
+      "timestamp": "2026-05-11T01:38:41.667306"
+    }
+  ],
+  "timestamp": "2026-05-11T01:38:41.667426"
+}
