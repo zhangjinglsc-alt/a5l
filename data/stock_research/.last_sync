@@ -1,0 +1,22 @@
+{
+  "scan_time": "2026-05-11T16:01:00+08:00",
+  "scan_type": "daily",
+  "directories_scanned": [
+    "data/stock_research/",
+    "knowledge_base/raw/pdf/",
+    "knowledge_base/research/reports/"
+  ],
+  "files_found": {
+    "pdf": 6,
+    "markdown": 7,
+    "total": 13
+  },
+  "new_files": [],
+  "sync_status": "no_new_files",
+  "feishu_wiki": {
+    "space_id": "7631410432208751835",
+    "report_center_node": "X1fCwWbswiJiFck0LGMci7xnnHf",
+    "existing_reports": 7
+  },
+  "next_scan": "2026-05-12T16:00:00+08:00"
+}

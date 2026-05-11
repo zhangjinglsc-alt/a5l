@@ -1,0 +1,16 @@
+{
+  "date": "2026-05-11",
+  "timestamp": "2026-05-11T15:12:53.043406",
+  "limit_up": 95,
+  "limit_down": 3,
+  "up_count": 0,
+  "down_count": 0,
+  "flat_count": 0,
+  "total_volume": 0,
+  "shanghai_index": {
+    "close": 0,
+    "change_pct": 0
+  },
+  "top_sectors": [],
+  "market_sentiment": "neutral"
+}

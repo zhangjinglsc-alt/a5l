@@ -1,0 +1,73 @@
+{
+  "msg_type": "interactive",
+  "card": {
+    "config": {
+      "wide_screen_mode": true
+    },
+    "header": {
+      "title": {
+        "tag": "plain_text",
+        "content": "🌙 CIO收盘复盘 | 2026-05-11"
+      },
+      "template": "blue"
+    },
+    "elements": [
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**📊 市场概况**\n情绪: ➡️ neutral\n涨停: **95** 家 | 跌停: 3 家\n上涨: 0 家 | 下跌: 0 家\n成交: 0 亿元"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🔥 热点板块**\n"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🧠 ML验证**\n今日准确率: **75%**\n验证结果: correct"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**💡 关键洞察**\n🔥 涨停家数达95家，市场情绪极度活跃"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🔮 明日展望**\n趋势: 震荡整理 (概率: 50%)\n建议: 观望为主，等待方向选择"
+        }
+      },
+      {
+        "tag": "note",
+        "elements": [
+          {
+            "tag": "plain_text",
+            "content": "⏰ 生成时间: 15:12:54 | CIO觉醒系统 v2.0"
+          }
+        ]
+      }
+    ]
+  }
+}

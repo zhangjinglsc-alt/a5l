@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-05-11T09:15:13.813972",
+  "data": {
+    "sentiment": {
+      "limit_up": 55,
+      "limit_down": 42,
+      "up_count": 289,
+      "down_count": 185,
+      "seal_rate": 100,
+      "intensity": 42
+    },
+    "ladder": [
+      {
+        "level": 1,
+        "count": 46
+      },
+      {
+        "level": 2,
+        "count": 30
+      },
+      {
+        "level": 3,
+        "count": 11
+      },
+      {
+        "level": 4,
+        "count": 3
+      }
+    ],
+    "sectors": [
+      {
+        "name": "机器人概念",
+        "count": 23
+      },
+      {
+        "name": "通信",
+        "count": 16
+      },
+      {
+        "name": "算力",
+        "count": 9
+      },
+      {
+        "name": "商业航天",
+        "count": 6
+      },
+      {
+        "name": "锂电池",
+        "count": 6
+      }
+    ],
+    "hot_stocks": []
+  }
+}

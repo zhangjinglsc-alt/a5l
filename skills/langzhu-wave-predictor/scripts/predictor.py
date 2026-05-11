@@ -10,7 +10,6 @@ import os
 import sys
 import json
 import sqlite3
-import akshare as ak
 import pandas as pd
 from datetime import datetime, timedelta
 from dataclasses import dataclass, asdict
@@ -19,7 +18,11 @@ from pathlib import Path
 
 # 添加TOOLS路径
 sys.path.insert(0, '/workspace/projects/workspace/TOOLS')
+sys.path.insert(0, '/workspace/projects/workspace')
 from process_manager import log_execution_start, log_execution_complete
+
+# 导入 A5L 统一数据管理器
+from tools.a5l_data_manager import get_index_daily, get_data_manager
 
 # 数据目录
 DATA_DIR = Path("/workspace/projects/workspace/skills/langzhu-wave-predictor/data")
@@ -79,10 +82,9 @@ class IndexDataFetcher:
         """获取日内15分钟数据"""
         try:
             # 获取当日日线数据，从中推算日内情况
-            ak_code = self.INDEX_MAP[index_code]['ak_code']
-            df_daily = ak.index_zh_a_hist(symbol=ak_code, period="daily", 
-                                          start_date=datetime.now().strftime("%Y%m%d"),
-                                          end_date=datetime.now().strftime("%Y%m%d"))
+            # 使用 A5LDataManager (自动故障转移: Tushare > AKShare > Cache)
+            today_str = datetime.now().strftime("%Y-%m-%d")
+            df_daily = get_index_daily(index_code, start_date=today_str, end_date=today_str)
             if not df_daily.empty:
                 current_hour = datetime.now().hour
                 # 根据当前时间估算15分钟K线数量
@@ -115,20 +117,26 @@ class IndexDataFetcher:
     def fetch_daily(self, index_code: str, days: int = 60) -> pd.DataFrame:
         """获取日线数据"""
         try:
-            ak_code = self.INDEX_MAP[index_code]['ak_code']
             end_date = datetime.now()
             start_date = end_date - timedelta(days=days)
             
-            df = ak.index_zh_a_hist(
-                symbol=ak_code,
-                period="daily",
-                start_date=start_date.strftime("%Y%m%d"),
-                end_date=end_date.strftime("%Y%m%d")
+            # 使用 A5LDataManager (自动故障转移: Tushare > AKShare > Cache)
+            df = get_index_daily(
+                index_code,
+                start_date=start_date.strftime("%Y-%m-%d"),
+                end_date=end_date.strftime("%Y-%m-%d")
             )
             return df
         except Exception as e:
             print(f"获取日线数据失败: {e}")
-            return pd.DataFrame()
+            # 降级：尝试直接从数据管理器获取
+            try:
+                dm = get_data_manager()
+                df = dm.get_index_daily(index_code)
+                return df
+            except Exception as e2:
+                print(f"降级获取也失败: {e2}")
+                return pd.DataFrame()
     
     def get_current_price(self, index_code: str) -> float:
         """获取当前价格"""

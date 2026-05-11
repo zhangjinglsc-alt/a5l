@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "date": "2026-05-11",
+      "market_data": {
+        "date": "2026-05-11",
+        "timestamp": "2026-05-11T15:12:53.043406",
+        "limit_up": 95,
+        "limit_down": 3,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-05-11",
+        "timestamp": "2026-05-11T15:12:54.164926",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-05-11T09:15:13.813972",
+          "data": {
+            "sentiment": {
+              "limit_up": 55,
+              "limit_down": 42,
+              "up_count": 289,
+              "down_count": 185,
+              "seal_rate": 100,
+              "intensity": 42
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 46
+              },
+              {
+                "level": 2,
+                "count": 30
+              },
+              {
+                "level": 3,
+                "count": 11
+              },
+              {
+                "level": 4,
+                "count": 3
+              }
+            ],
+            "sectors": [
+              {
+                "name": "机器人概念",
+                "count": 23
+              },
+              {
+                "name": "通信",
+                "count": 16
+              },
+              {
+                "name": "算力",
+                "count": 9
+              },
+              {
+                "name": "商业航天",
+                "count": 6
+              },
+              {
+                "name": "锂电池",
+                "count": 6
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 95,
+          "limit_down": 3
+        },
+        "accuracy": 0.75,
+        "validation_result": "correct",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-05-11T15:12:54.165558"
+    }
+  ]
+}
