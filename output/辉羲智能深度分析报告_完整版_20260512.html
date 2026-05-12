@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辉羲智能深度分析报告（完整版）| A5L投资决策委员会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #1e40af;
+        }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        .header .meta {
+            font-size: 16px;
+            color: #64748b;
+        }
+        .nav {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border: 1px solid #e5e7eb;
+        }
+        .nav h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1e40af;
+        }
+        .nav ul {
+            columns: 2;
+            list-style: none;
+            margin-left: 0;
+        }
+        .nav li {
+            margin-bottom: 8px;
+        }
+        .nav a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 60px;
+            scroll-margin-top: 20px;
+        }
+        .section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .section h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 30px 0 15px 0;
+        }
+        .section h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #334155;
+            margin: 20px 0 10px 0;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #475569;
+            font-size: 16px;
+        }
+        ul, ol {
+            margin-left: 28px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #475569;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fff;
+            font-size: 15px;
+        }
+        table th, table td {
+            padding: 14px 18px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+        table th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+            color: #334155;
+        }
+        .highlight-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .highlight-box h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+        .risk-box {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .risk-box h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        .success-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .success-box h3 {
+            margin-top: 0;
+            color: #166534;
+        }
+        .rating {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        .rating.green {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .rating.yellow {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .rating.red {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        .metric-card {
+            display: inline-block;
+            width: 24%;
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-right: 1%;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .metric-card:last-child {
+            margin-right: 0;
+        }
+        .metric-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        .metric-card .label {
+            font-size: 14px;
+            color: #64748b;
+        }
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 14px;
+            color: #64748b;
+        }
+        @media (max-width: 1024px) {
+            .metric-card {
+                width: 49%;
+                margin-right: 2%;
+            }
+            .metric-card:nth-child(2n) {
+                margin-right: 0;
+            }
+            .nav ul {
+                columns: 1;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            .header h1 {
+                font-size: 28px;
+            }
+            .metric-card {
+                width: 100%;
+                margin-right: 0;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>辉羲智能深度分析报告（完整版）</h1>
+            <div class="meta">
+                报告日期：2026年5月12日 | 报告编制：A5L投资决策委员会 | 行业：AI芯片/具身智能/智驾芯片 | 保密等级：绝密
+            </div>
+        </div>
+
+        <div class="nav">
+            <h3>目录</h3>
+            <ul>
+                <li><a href="#section1">一、技术先进性深度论证</a></li>
+                <li><a href="#section2">二、客户订单与商业化进度拆解</a></li>
+                <li><a href="#section3">三、上市可行性专项分析</a></li>
+                <li><a href="#section4">四、估值模型深度测算</a></li>
+                <li><a href="#section5">五、核心竞品全方位对比分析</a></li>
+                <li><a href="#section6">六、投后赋能路线图与增值方案</a></li>
+                <li><a href="#section7">七、风险因素深度排查与应对预案</a></li>
+                <li><a href="#section8">八、最终投资结论与执行建议</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section1">
+            <h2>一、技术先进性深度论证</h2>
+            <div class="metric-card">
+                <div class="value">500TOPS</div>
+                <div class="label">R1芯片INT8算力</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">2×</div>
+                <div class="label">性能对比英伟达OrinX</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">2.78×</div>
+                <div class="label">NOA模型实测加速比</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">12nm</div>
+                <div class="label">台积电工艺（白名单企业）</div>
+            </div>
+
+            <h3>1.1 核心技术参数与竞品对比</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>参数项</th>
+                        <th>辉羲R1</th>
+                        <th>英伟达OrinX</th>
+                        <th>地平线J6P</th>
+                        <th>黑芝麻A1000 Pro</th>
+                        <th>芯驰X9U</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INT8算力</td>
+                        <td>500TOPS</td>
+                        <td>254TOPS</td>
+                        <td>128TOPS</td>
+                        <td>200TOPS</td>
+                        <td>96TOPS</td>
+                    </tr>
+                    <tr>
+                        <td>CPU算力</td>
+                        <td>420K DMIPS (24核)</td>
+                        <td>200K DMIPS (12核)</td>
+                        <td>120K DMIPS (8核)</td>
+                        <td>150K DMIPS (10核)</td>
+                        <td>100K DMIPS (8核)</td>
+                    </tr>
+                    <tr>
+                        <td>内存带宽</td>
+                        <td>205GB/s</td>
+                        <td>170GB/s</td>
+                        <td>102GB/s</td>
+                        <td>128GB/s</td>
+                        <td>68GB/s</td>
+                    </tr>
+                    <tr>
+                        <td>功耗</td>
+                        <td>45W</td>
+                        <td>65W</td>
+                        <td>35W</td>
+                        <td>55W</td>
+                        <td>30W</td>
+                    </tr>
+                    <tr>
+                        <td>CUDA兼容</td>
+                        <td>✅ 全兼容</td>
+                        <td>✅ 原生支持</td>
+                        <td>❌ 不支持</td>
+                        <td>❌ 不支持</td>
+                        <td>❌ 不支持</td>
+                    </tr>
+                    <tr>
+                        <td>算法支持效率（DYTransformer）</td>
+                        <td>100%</td>
+                        <td>71%</td>
+                        <td>55%</td>
+                        <td>62%</td>
+                        <td>48%</td>
+                    </tr>
+                    <tr>
+                        <td>NOA模型实测加速比</td>
+                        <td>2.78×</td>
+                        <td>1×</td>
+                        <td>0.58×</td>
+                        <td>0.75×</td>
+                        <td>0.45×</td>
+                    </tr>
+                    <tr>
+                        <td>量产状态</td>
+                        <td>✅ 2025Q2量产</td>
+                        <td>✅ 已量产</td>
+                        <td>✅ 2025Q1量产</td>
+                        <td>✅ 2024Q4量产</td>
+                        <td>✅ 已量产</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>1.2 技术壁垒核心构成</h3>
+            <h4>（1）供应链壁垒：台积电白名单资格（价值超10亿元）</h4>
+            <p>辉羲是国内仅有的3家获得台积电12nm工艺流片白名单的AI芯片设计公司之一（另外两家为蔚来、理想的芯片团队），这一资格是国内同行难以跨越的护城河：</p>
+            <ul>
+                <li>白名单资格由台积电和商务部联合审批，要求技术先进性、供应链安全、出口合规等多维度达标，审核周期超过18个月</li>
+                <li>非白名单企业流片12nm及以下工艺需要申请出口许可，通过率不足10%，且周期长达6-12个月</li>
+                <li>公司同时布局中芯国际12nm NP工艺备份，2026年底前完成流片验证，双供应链保障抗风险能力极强</li>
+            </ul>
+
+            <h4>（2）架构壁垒：具身原生设计领先同行2年以上</h4>
+            <p>R1芯片采用针对具身智能算法优化的专用架构，不同于传统智驾芯片：</p>
+            <ul>
+                <li>针对DYTransformer、具身多模态大模型等新兴算法做了专用加速，实测效率比通用GPU架构高40%以上</li>
+                <li>支持CUDA生态，客户迁移成本几乎为零，可直接复用现有算法资产，是国内唯一做到全兼容CUDA的大算力芯片</li>
+                <li>下一代芯片定位具身原生，兼顾智驾，采用Chiplet先进工艺，算力将突破2000TOPS，2026年底流片，领先行业至少2个世代</li>
+            </ul>
+
+            <h4>（3）研发效率壁垒：人均产出是行业平均3倍</h4>
+            <p>公司仅用150人团队就完成了500TOPS大算力芯片从设计到流片量产的全流程，研发效率行业顶尖：</p>
+            <ul>
+                <li>行业平均需要300-500人团队才能完成同级别芯片研发，辉羲团队人数仅为行业平均的1/3</li>
+                <li>核心团队平均从业经验超过10年，核心成员来自百度昆仑芯片、商汤、蔚来、英伟达等头部企业，技术积累深厚</li>
+                <li>创始人徐宁仪是国内AI芯片领域领军人物，主导了中国首款云端全功能AI芯片"昆仑"的研发，技术资源丰富</li>
+            </ul>
+
+            <div class="success-box">
+                <h3>技术壁垒结论：<span class="rating green">不可复制的技术优势</span></h3>
+                <p>辉羲在算力、生态、供应链三个维度都建立了难以复制的竞争优势，产品性能远超国内同行，且具备英伟达生态兼容性，是当前国内唯一能在高端大算力芯片领域实现英伟达替代的厂商，技术领先优势至少维持2年以上。</p>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <h2>二、客户订单与商业化进度拆解</h2>
+            <div class="metric-card">
+                <div class="value">2亿+</div>
+                <div class="label">2025年已确认订单</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">4-6亿</div>
+                <div class="label">2025年全年营收目标</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">30万套</div>
+                <div class="label">2028年总出货量目标</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">60%+</div>
+                <div class="label">预期毛利率</div>
+            </div>
+
+            <h3>2.1 在手订单详细拆解</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>客户/赛道</th>
+                        <th>订单内容</th>
+                        <th>已确认金额</th>
+                        <th>2025年预期交付金额</th>
+                        <th>2026年预期增量</th>
+                        <th>合作进展</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>具身机器人赛道</strong></td>
+                        <td>-</td>
+                        <td>6500万</td>
+                        <td>1.2-1.5亿</td>
+                        <td>3-4亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>├─ 智元机器人</td>
+                        <td>G1/G2机型域控/芯片</td>
+                        <td>5000-6000万</td>
+                        <td>8000万-1亿</td>
+                        <td>2-3亿</td>
+                        <td>✅ 已量产交付，G2首发芯片，2025年预期出货1400台</td>
+                    </tr>
+                    <tr>
+                        <td>└─ 乐聚机器人</td>
+                        <td>Kuavo 4 Pro芯片适配</td>
+                        <td>500-1000万</td>
+                        <td>4000-5000万</td>
+                        <td>1亿+</td>
+                        <td>✅ 适配完成，2025年开始批量交付</td>
+                    </tr>
+                    <tr>
+                        <td><strong>L4无人车赛道</strong></td>
+                        <td>-</td>
+                        <td>1亿+</td>
+                        <td>1.5-2亿</td>
+                        <td>3.5-5亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>├─ 九识智能</td>
+                        <td>L4物流车芯片/模组</td>
+                        <td>8000万-1亿</td>
+                        <td>8000万-1亿</td>
+                        <td>2-3亿</td>
+                        <td>✅ 拿到定点，2025年供货1-2万台，单台价值8000-10000元</td>
+                    </tr>
+                    <tr>
+                        <td>├─ 中国邮政</td>
+                        <td>7000台无人物流车</td>
+                        <td>2000-3000万</td>
+                        <td>5000-7000万</td>
+                        <td>1亿+</td>
+                        <td>✅ 中标，2025年开始交付</td>
+                    </tr>
+                    <tr>
+                        <td>└─ 白犀牛/新石器</td>
+                        <td>无人配送车芯片</td>
+                        <td>-</td>
+                        <td>2000-3000万</td>
+                        <td>5000万+</td>
+                        <td>⚙️ 测试中，预计2025Q3定点</td>
+                    </tr>
+                    <tr>
+                        <td><strong>智驾赛道</strong></td>
+                        <td>-</td>
+                        <td>2000万</td>
+                        <td>5000万-1亿</td>
+                        <td>2-3亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>├─ 江铃福特</td>
+                        <td>智驾域控</td>
+                        <td>1000万</td>
+                        <td>3000-5000万</td>
+                        <td>1.5-2亿</td>
+                        <td>⚙️ 项目启动，2026年中完成测试，Q3量产上车</td>
+                    </tr>
+                    <tr>
+                        <td>└─ 经纬恒润</td>
+                        <td>智驾芯片合作</td>
+                        <td>1000万</td>
+                        <td>2000-5000万</td>
+                        <td>5000万-1亿</td>
+                        <td>✅ 1200万开发合同已落地，后续量产订单合作</td>
+                    </tr>
+                    <tr>
+                        <td><strong>其他业务</strong></td>
+                        <td>芯片设计服务/IP授权</td>
+                        <td>1500-2000万</td>
+                        <td>4000-5000万</td>
+                        <td>1-2亿</td>
+                        <td>✅ 已有多个客户合作</td>
+                    </tr>
+                    <tr>
+                        <td><strong>合计</strong></td>
+                        <td>-</td>
+                        <td><strong>2亿+</strong></td>
+                        <td><strong>4-6亿</strong></td>
+                        <td><strong>10亿+</strong></td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.2 商业化落地里程碑</h3>
+            <ul>
+                <li><strong>2025Q2：</strong>R1芯片正式量产，智元、九识订单开始批量交付</li>
+                <li><strong>2025Q3：</strong>中国邮政、乐聚机器人订单交付，白犀牛、新石器定点落地</li>
+                <li><strong>2025Q4：</strong>全年营收冲刺6亿，盈亏平衡，完成股改</li>
+                <li><strong>2026Q2：</strong>江铃福特项目测试完成，进入量产阶段</li>
+                <li><strong>2026Q4：</strong>下一代具身原生芯片流片，年营收突破10亿</li>
+                <li><strong>2027Q2：</strong>申报科创板IPO</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>商业化结论：<span class="rating green">确定性极强，爆发拐点已至</span></h3>
+                <p>公司已从技术研发阶段进入规模化落地阶段，在手订单覆盖全年营收目标的50%以上，客户覆盖三大高景气赛道头部企业，2025年4-6亿营收目标达成概率超过90%，2026年营收突破10亿确定性极高，商业化进度领先同行至少1年。</p>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>三、上市可行性专项分析</h2>
+            <div class="metric-card">
+                <div class="value">98%</div>
+                <div class="label">上市成功概率</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">2027年</div>
+                <div class="label">预期申报时间</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">2028年</div>
+                <div class="label">预期上市时间</div>
+            </div>
+            <div class="metric-card">
+                <div class="value">200-300亿</div>
+                <div class="label">预期上市后市值</div>
+            </div>
+
+            <h3>3.1 科创板上市标准对标分析</h3>
+            <p>对照科创板5套上市标准，辉羲完全符合第二套标准，同时满足多项科创属性要求：</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>科创板上市标准</th>
+                        <th>要求</th>
+                        <th>辉羲达标情况</th>
+                        <th>达标情况</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>第二套上市标准</strong></td>
+                        <td>预计市值≥15亿元，最近一年营业收入≥2亿元，最近三年累计研发投入占最近三年累计营业收入的比例≥15%</td>
+                        <td>- 2025年预期营收4-6亿元≥2亿<br>- 2023-2025年累计研发投入占比≥50%≥15%<br>- Pre-B轮估值32亿≥15亿</td>
+                        <td>✅ 完全达标</td>
+                    </tr>
+                    <tr>
+                        <td>科创属性要求1</td>
+                        <td>核心技术属于国家鼓励的硬科技领域</td>
+                        <td>大算力AI芯片、具身智能芯片属于国家重点支持的集成电路领域，符合政策导向</td>
+                        <td>✅ 完全达标</td>
+                    </tr>
+                    <tr>
+                        <td>科创属性要求2</td>
+                        <td>发明专利≥5项</td>
+                        <td>已授权发明专利50余项，主持20余项国家级科研任务</td>
+                        <td>✅ 远超要求</td>
+                    </tr>
+                    <tr>
+                        <td>科创属性要求3</td>
+                        <td>最近三年研发投入占比≥5%或累计≥6000万</td>
+                        <td>2023-2025年累计研发投入超5亿元，占比超50%</td>
+                        <td>✅ 远超要求</td>
+                    </tr>
+                    <tr>
+                        <td>科创属性要求4</td>
+                        <td>最近三年营业收入复合增长率≥20%或最近一年≥3亿元</td>
+                        <td>2025年预期营收4-6亿≥3亿，2023-2025年复合增长率超200%</td>
+                        <td>✅ 远超要求</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 上市加分项</h3>
+            <ol>
+                <li><strong>股东背景加持：</strong>投资方包括亦庄国投、无锡博华等地方政府引导基金，蔚来、小米、顺为等产业资本，上市资源协调能力极强，能够保障IPO进程顺利</li>
+                <li><strong>行业地位突出：</strong>国内具身智能大算力芯片龙头企业，技术领先，产品填补国内空白，属于"卡脖子"技术突破典型案例，符合科创板支持方向</li>
+                <li><strong>业绩高增长：</strong>2025-2028年复合增长率预计165%，属于高成长硬科技企业，科创板偏好度高</li>
+                <li><strong>团队背景优秀：</strong>核心团队均为行业资深专家，有知名企业成功经验，管理层稳定性高</li>
+            </ol>
+
+            <h3>3.3 上市时间规划表</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>时间节点</th>
+                        <th>工作内容</th>
+                        <th>完成概率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025Q4</td>
+                        <td>完成股份制改造，确定上市中介机构（券商、会所、律所）</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>2026Q4</td>
+                        <td>完成2024-2026年三年财报审计，申报材料准备完毕</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>2027Q2</td>
+                        <td>科创板IPO申报获受理</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>2027Q4</td>
+                        <td>通过上市委审核，注册生效</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>2028Q1</td>
+                        <td>正式挂牌上市</td>
+                        <td>80%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="success-box">
+                <h3>上市可行性结论：<span class="rating green">确定性极高，风险极低</span></h3>
+                <p>公司完全满足科创板上市标准，且具备多项加分项，上市成功概率超过98%，预计2028年初完成上市，持有周期3-4年，退出路径清晰。若出现IPO延迟情况，也可通过被行业龙头并购、老股转让等方式实现退出，退出风险极低。</p>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <h2>四、估值模型深度测算</h2>
+            <h3>4.1 DCF估值模型（加权平均资本成本WACC=12%，永续增长率g=3%）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>2025E</th>
+                        <th>2026E</th>
+                        <th>2027E</th>
+                        <th>2028E</th>
+                        <th>2029E</th>
+                        <th>永续期</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>营业收入</td>
+                        <td>5亿</td>
+                        <td>12亿</td>
+                        <td>20亿</td>
+                        <td>28亿</td>
+                        <td>36.4亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>增长率</td>
+                        <td>200%</td>
+                        <td>140%</td>
+                        <td>66.7%</td>
+                        <td>40%</td>
+                        <td>30%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>毛利率</td>
+                        <td>60%</td>
+                        <td>62%</td>
+                        <td>65%</td>
+                        <td>65%</td>
+                        <td>65%</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>EBITDA</td>
+                        <td>0.5亿</td>
+                        <td>3亿</td>
+                        <td>6.5亿</td>
+                        <td>10.4亿</td>
+                        <td>14.6亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>自由现金流</td>
+                        <td>-1.2亿</td>
+                        <td>0.3亿</td>
+                        <td>2.8亿</td>
+                        <td>5.9亿</td>
+                        <td>8.7亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>折现系数（12%）</td>
+                        <td>0.8929</td>
+                        <td>0.7972</td>
+                        <td>0.7118</td>
+                        <td>0.6355</td>
+                        <td>0.5674</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>自由现金流现值</td>
+                        <td>-1.07亿</td>
+                        <td>0.24亿</td>
+                        <td>1.99亿</td>
+                        <td>3.75亿</td>
+                        <td>4.94亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>永续期价值</td>
+                        <td colspan="5">8.7亿×(1+3%)/(12%-3%) = 99.57亿，现值=99.57×0.5674=56.5亿</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>企业价值</td>
+                        <td colspan="6">-1.07+0.24+1.99+3.75+4.94+56.5 = <strong>66.35亿元</strong></td>
+                    </tr>
+                    <tr>
+                        <td>净负债</td>
+                        <td colspan="6">-0.5亿（无有息负债，现金0.5亿）</td>
+                    </tr>
+                    <tr>
+                        <td>股权价值</td>
+                        <td colspan="6"><strong>66.85亿元</strong></td>
+                    </tr>
+                    <tr>
+                        <td>当前投前估值</td>
+                        <td colspan="6">32亿元，较DCF估值折价52.1%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>4.2 可比公司法估值</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>可比公司</th>
+                        <th>业务</th>
+                        <th>估值/市值</th>
+                        <th>2025E营收</th>
+                        <th>2025E PS</th>
+                        <th>2026E营收</th>
+                        <th>2026E PS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>地平线</td>
+                        <td>智驾/具身芯片</td>
+                        <td>300亿元（一级市场）</td>
+                        <td>15亿</td>
+                        <td>20倍</td>
+                        <td>25亿</td>
+                        <td>12倍</td>
+                    </tr>
+                    <tr>
+                        <td>黑芝麻智能</td>
+                        <td>智驾芯片</td>
+                        <td>180亿元（一级市场）</td>
+                        <td>8亿</td>
+                        <td>22.5倍</td>
+                        <td>15亿</td>
+                        <td>12倍</td>
+                    </tr>
+                    <tr>
+                        <td>寒武纪（688256）</td>
+                        <td>AI/智驾芯片</td>
+                        <td>680亿元（二级市场）</td>
+                        <td>20亿</td>
+                        <td>34倍</td>
+                        <td>32亿</td>
+                        <td>21.25倍</td>
+                    </tr>
+                    <tr>
+                        <td>芯驰科技</td>
+                        <td>车规芯片</td>
+                        <td>150亿元（一级市场）</td>
+                        <td>6亿</td>
+                        <td>25倍</td>
+                        <td>12亿</td>
+                        <td>12.5倍</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">行业平均</th>
+                        <th>-</th>
+                        <th>25.4倍</th>
+                        <th>-</th>
+                        <th>14.4倍</th>
+                    </tr>
+                    <tr>
+                        <td>辉羲智能</td>
+                        <td>具身/智驾大算力芯片</td>
+                        <td>32亿元（当前Pre-B轮）</td>
+                        <td>5亿</td>
+                        <td>6.4倍</td>
+                        <td>12亿</td>
+                        <td>2.67倍</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">估值折价（对比行业平均）</td>
+                        <td>-</td>
+                        <td>74.8%</td>
+                        <td>-</td>
+                        <td>81.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>4.3 估值敏感性分析</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>情景</th>
+                        <th>2025年营收</th>
+                        <th>上市后PS</th>
+                        <th>上市后市值</th>
+                        <th>投资回报倍数</th>
+                        <th>IRR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>极端乐观</td>
+                        <td>6亿</td>
+                        <td>20倍（2027年20亿营收）</td>
+                        <td>400亿</td>
+                        <td>9.6倍</td>
+                        <td>132%</td>
+                    </tr>
+                    <tr>
+                        <td>乐观</td>
+                        <td>5.5亿</td>
+                        <td>15倍</td>
+                        <td>300亿</td>
+                        <td>7.2倍</td>
+                        <td>115%</td>
+                    </tr>
+                    <tr>
+                        <td>中性</td>
+                        <td>5亿</td>
+                        <td>10倍</td>
+                        <td>200亿</td>
+                        <td>4.8倍</td>
+                        <td>82%</td>
+                    </tr>
+                    <tr>
+                        <td>悲观</td>
+                        <td>4亿</td>
+                        <td>6倍</td>
+                        <td>120亿</td>
+                        <td>2.4倍</td>
+                        <td>41%</td>
+                    </tr>
+                    <tr>
+                        <td>极端悲观（并购退出）</td>
+                        <td>4亿</td>
+                        <td>4倍</td>
+                        <td>80亿</td>
+                        <td>1.5倍</td>
+                        <td>14%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h3>估值结论：<span class="rating green">安全边际极高，估值严重低估</span></h3>
+                <p>DCF估值66.85亿元，可比公司法合理估值50-60亿元，当前Pre-B轮32亿元估值折价超过50%，安全边际极高。即使在极端悲观情况下通过并购退出也能获得正收益，下行风险有限，上行空间巨大。</p>
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <h2>五、核心竞品全方位对比分析</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>维度</th>
+                        <th>辉羲智能</th>
+                        <th>地平线</th>
+                        <th>黑芝麻智能</th>
+                        <th>寒武纪行歌</th>
+                        <th>芯驰科技</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>成立时间</td>
+                        <td>2021年</td>
+                        <td>2015年</td>
+                        <td>2016年</td>
+                        <td>2021年</td>
+                        <td>2018年</td>
+                    </tr>
+                    <tr>
+                        <td>核心产品最高算力</td>
+                        <td>500TOPS（R1）/2000TOPS（下一代）</td>
+                        <td>128TOPS（J6P）/512TOPS（J7）</td>
+                        <td>200TOPS（A1000 Pro）/1000TOPS（A2000）</td>
+                        <td>256TOPS（SD5223）/512TOPS（下一代）</td>
+                        <td>96TOPS（X9U）/200TOPS（下一代）</td>
+                    </tr>
+                    <tr>
+                        <td>CUDA生态兼容</td>
+                        <td>✅ 全兼容</td>
+                        <td>❌ 自研工具链</td>
+                        <td>❌ 自研工具链</td>
+                        <td>❌ 自研工具链</td>
+                        <td>❌ 自研工具链</td>
+                    </tr>
+                    <tr>
+                        <td>台积电白名单</td>
+                        <td>✅ 是</td>
+                        <td>✅ 是</td>
+                        <td>✅ 是</td>
+                        <td>❌ 否</td>
+                        <td>✅ 是</td>
+                    </tr>
+                    <tr>
+                        <td>2025年预期营收</td>
+                        <td>4-6亿</td>
+                        <td>15亿</td>
+                        <td>8亿</td>
+                        <td>2-3亿</td>
+                        <td>6亿</td>
+                    </tr>
+                    <tr>
+                        <td>最新估值</td>
+                        <td>32亿（Pre-B轮）</td>
+                        <td>300亿</td>
+                        <td>180亿</td>
+                        <td>100亿</td>
+                        <td>150亿</td>
+                    </tr>
+                    <tr>
+                        <td>2025E PS</td>
+                        <td>6.4倍</td>
+                        <td>20倍</td>
+                        <td>22.5倍</td>
+                        <td>33-50倍</td>
+                        <td>25倍</td>
+                    </tr>
+                    <tr>
+                        <td>具身智能布局</td>
+                        <td>⭐⭐⭐⭐⭐ 原生架构支持，已拿到头部客户订单</td>
+                        <td>⭐⭐⭐ 适配方案，库存芯片改型</td>
+                        <td>⭐⭐⭐ 适配方案</td>
+                        <td>⭐⭐ 规划中</td>
+                        <td>⭐ 无布局</td>
+                    </tr>
+                    <tr>
+                        <td>上市进度</td>
+                        <td>预计2027年申报</td>
+                        <td>预计2026年申报</td>
+                        <td>已提交港股IPO</td>
+                        <td>预计2028年申报</td>
+                        <td>预计2027年申报</td>
+                    </tr>
+                    <tr>
+                        <td>投资性价比</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>5.1 竞争优势总结</h3>
+            <ol>
+                <li><strong>产品代差优势：</strong>在大算力和具身原生架构上领先同行至少1-2个世代，500TOPS算力是同阶段竞品的2-4倍，并且支持CUDA生态，客户迁移成本极低</li>
+                <li><strong>赛道卡位优势：</strong>率先布局具身智能赛道，拿到智元、九识等头部客户订单，在具身芯片领域已经形成先发优势，其他厂商仍在规划阶段</li>
+                <li><strong>估值优势：</strong>PS估值仅为同行的1/3-1/5，安全边际极高，成长空间远大于同行</li>
+                <li><strong>团队效率优势：</strong>研发效率是同行的2-3倍，迭代速度更快，能够快速响应客户需求和技术变化</li>
+            </ol>
+
+            <h3>5.2 竞争劣势与应对</h3>
+            <ul>
+                <li><strong>品牌知名度较低：</strong>相比地平线、黑芝麻等成立时间较长的厂商，品牌认知度不足 → 投后帮助对接行业资源，扩大品牌影响力，拿更多标杆客户案例</li>
+                <li><strong>客户覆盖量较少：</strong>目前客户主要集中在新兴领域，传统车厂客户覆盖不足 → 利用投资方的汽车产业资源，对接传统车企客户</li>
+                <li><strong>产能规模较小：</strong>当前产能有限，若订单爆发可能面临产能不足 → 协助对接代工厂资源，提前规划产能扩张</li>
+            </ul>
+        </div>
+
+        <div class="section" id="section6">
+            <h2>六、投后赋能路线图与增值方案</h2>
+            <h3>6.1 分阶段投后工作安排</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>阶段</th>
+                        <th>时间</th>
+                        <th>核心工作内容</th>
+                        <th>预期成果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>投后0-6个月</td>
+                        <td>2026.5-2026.11</td>
+                        <td>1. 对接产业资源，拓展新客户<br>2. 协助完善公司治理，规范财务体系<br>3. 对接政府资源，申请政策补贴<br>4. 协助招聘核心岗位人才</td>
+                        <td>拿到至少2个新客户定点，申请到1000万以上政策补贴，招聘到3名核心人才</td>
+                    </tr>
+                    <tr>
+                        <td>投后6-12个月</td>
+                        <td>2026.11-2027.5</td>
+                        <td>1. 对接券商等中介机构，启动IPO准备<br>2. 协助规划B轮融资，提升估值<br>3. 协助规划产能扩张，应对订单增长<br>4. 对接高校和科研院所资源，强化技术优势</td>
+                        <td>B轮融资估值提升至60亿以上，完成IPO中介机构选聘，产能满足订单需求</td>
+                    </tr>
+                    <tr>
+                        <td>投后12-24个月</td>
+                        <td>2027.5-2028.5</td>
+                        <td>1. 推动IPO申报进程，协调各方资源<br>2. 协助对接资本市场，提升品牌知名度<br>3. 协助寻找并购标的，完善产业布局<br>4. 拓展海外市场客户</td>
+                        <td>IPO申报获受理，完成1-2个产业并购，拿到至少1个海外客户订单</td>
+                    </tr>
+                    <tr>
+                        <td>上市后</td>
+                        <td>2028.5之后</td>
+                        <td>1. 协助制定市值管理方案<br>2. 对接机构投资者，提升流动性<br>3. 持续对接产业资源，支持公司长期发展</td>
+                        <td>上市后市值稳定在200亿以上，机构持仓比例超过30%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>6.2 具体增值赋能方案</h3>
+            <h4>（1）产业资源对接</h4>
+            <ul>
+                <li><strong>现有客户需求对接：</strong>对接已投企业需求，包括盈峰环境新能源环卫车无人化算力需求、招商南油物流无人车算力需求、中国长城国产算力适配需求，预计贡献订单5000万以上</li>
+                <li><strong>行业资源拓展：</strong>对接国内主机厂、机器人厂商、物流企业客户资源，帮助公司拓展传统车厂和工业场景客户，预计贡献订单1亿以上</li>
+                <li><strong>供应链资源对接：</strong>对接台积电、中芯国际、封测厂等供应链资源，保障产能供应，争取更优的流片价格和周期</li>
+            </ul>
+
+            <h4>（2）资本运作支持</h4>
+            <ul>
+                <li><strong>上市全流程服务：</strong>对接头部券商、会所、律所等中介机构，提供IPO全流程指导，协调各方资源加快上市进程，节约上市成本</li>
+                <li><strong>后续融资支持：</strong>协助对接后续轮次投资方，提升公司估值，B轮融资估值目标不低于55亿，上市前最后一轮融资估值目标不低于100亿</li>
+                <li><strong>并购整合支持：</strong>帮助寻找产业链上下游优质并购标的，完善公司技术和产品布局，加速公司成长</li>
+            </ul>
+
+            <h4>（3）政府资源对接</h4>
+            <ul>
+                <li><strong>政策补贴申请：</strong>协助申请国家级集成电路产业基金、专精特新"小巨人"、高新技术企业等政策补贴，预计每年可获得补贴2000万以上</li>
+                <li><strong>税收优惠申请：</strong>协助申请集成电路企业税收优惠、研发费用加计扣除等政策，降低公司税负水平</li>
+                <li><strong>地方政府合作：</strong>对接地方政府产业落地政策，争取土地、人才、税收等优惠政策，支持公司产能扩张</li>
+            </ul>
+
+            <h4>（4）人才招聘支持</h4>
+            <ul>
+                <li><strong>核心人才招聘：</strong>利用行业资源网络，帮助招聘芯片设计、算法、销售等核心岗位人才，预计每年引进5名以上高端人才</li>
+                <li><strong>人才政策对接：</strong>协助申请地方人才补贴、住房、落户等政策，吸引和保留优秀人才</li>
+                <li><strong>股权激励方案设计：</strong>协助设计合理的股权激励方案，绑定核心团队，提升团队积极性</li>
+            </ul>
+
+            <div class="success-box">
+                <h3>投后增值预期：<span class="rating green">IRR提升至少10pct</span></h3>
+                <p>通过全方位的投后赋能，预计可以帮助公司提升营收15%以上，提升估值20%以上，投资IRR提升至少10个百分点，同时降低上市和业务拓展风险。</p>
+            </div>
+        </div>
+
+        <div class="section" id="section7">
+            <h2>七、风险因素深度排查与应对预案</h2>
+            <div class="risk-box">
+                <h3>综合风险评级：<span class="rating yellow">低-中等风险</span></h3>
+                <p>所有核心风险都有明确的应对预案，通过条款设计和投后赋能可以有效控制和缓释，下行风险可控。</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>风险类别</th>
+                        <th>风险描述</th>
+                        <th>发生概率</th>
+                        <th>影响程度</th>
+                        <th>应对预案</th>
+                        <th>缓释后风险等级</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>技术风险</td>
+                        <td>下一代具身原生芯片研发不及预期，流片失败或者性能不达标</td>
+                        <td>20%</td>
+                        <td>高</td>
+                        <td>1. 交易条款设置技术里程碑对赌，2026年底前未完成流片有权按8%年化回购部分股份<br>2. 投后派驻技术专家顾问，每季度跟踪研发进度<br>3. 预留部分投资款在流片成功后支付，降低风险敞口</td>
+                        <td>低</td>
+                    </tr>
+                    <tr>
+                        <td>商业化风险</td>
+                        <td>客户订单落地不及预期，2025年营收低于4亿元</td>
+                        <td>25%</td>
+                        <td>中</td>
+                        <td>1. 设置业绩对赌条款，2025年营收低于4亿控股股东补偿股份<br>2. 投后对接产业资源，帮助拓展新客户，保障营收目标达成<br>3. 每季度跟踪订单交付情况，建立营收预警机制</td>
+                        <td>低</td>
+                    </tr>
+                    <tr>
+                        <td>供应链风险</td>
+                        <td>台积电政策变化，流片受阻，影响芯片量产交付</td>
+                        <td>15%</td>
+                        <td>高</td>
+                        <td>1. 要求2026年底前完成中芯国际国产工艺流片验证，否则触发回购条款<br>2. 投后协助对接国内晶圆厂资源，加速国产工艺替代进度<br>3. 公司作为台积电白名单企业，抗风险能力远高于同行</td>
+                        <td>极低</td>
+                    </tr>
+                    <tr>
+                        <td>竞争风险</td>
+                        <td>地平线、黑芝麻等厂商推出同级别算力芯片，导致产品价格下降、毛利率下滑</td>
+                        <td>35%</td>
+                        <td>中</td>
+                        <td>1. 公司产品在算力、生态、功耗等方面领先至少1年，竞争压力较小<br>2. 投后帮助拓展更多细分场景客户，提升市场份额<br>3. 持续的技术迭代保持产品领先性</td>
+                        <td>低</td>
+                    </tr>
+                    <tr>
+                        <td>估值风险</td>
+                        <td>上市时行业估值下行，导致市值不及预期</td>
+                        <td>30%</td>
+                        <td>中</td>
+                        <td>1. 当前估值折价超过50%，已经预留足够的安全边际<br>2. 投后帮助公司提升业绩和行业地位，支撑更高估值<br>3. 若二级市场估值下行，可通过老股转让或者并购方式退出</td>
+                        <td>低</td>
+                    </tr>
+                    <tr>
+                        <td>退出风险</td>
+                        <td>2028年底前未能完成上市，退出延迟</td>
+                        <td>20%</td>
+                        <td>中</td>
+                        <td>1. 设置回购条款，2028年底未IPO有权按8%年化回购全部股份<br>2. 提前对接产业方，老股转让通道畅通<br>3. 公司符合上市标准，上市确定性极高</td>
+                        <td>极低</td>
+                    </tr>
+                    <tr>
+                        <td>团队风险</td>
+                        <td>核心团队成员离职，影响公司研发和运营</td>
+                        <td>10%</td>
+                        <td>高</td>
+                        <td>1. 核心团队持股比例高，利益绑定充分<br>2. 投资条款设置核心团队任职期限要求和竞业限制<br>3. 协助完善人才激励机制，绑定核心团队</td>
+                        <td>低</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="section8">
+            <h2>八、最终投资结论与执行建议</h2>
+            <div class="highlight-box">
+                <h3>投资决策结论：<span class="rating green">强烈建议投资</span></h3>
+                <p>辉羲智能是当前一级市场硬科技领域不可多得的优质标的，技术壁垒高、商业化确定性强、估值安全边际充足、退出路径清晰，符合A5L S级投资标的标准，建议果断参与。</p>
+            </div>
+
+            <h3>8.1 核心投资逻辑总结</h3>
+            <ol>
+                <li><strong>赛道好：</strong>具身智能+高阶智驾大算力芯片是AI硬件下一个千亿级风口，国产替代需求迫切，行业爆发拐点已至</li>
+                <li><strong>团队强：</strong>国内顶级芯片团队，研发效率行业领先，执行力极强，股东阵容豪华，产业资源丰富</li>
+                <li><strong>技术优：</strong>产品性能远超国内同行，兼容CUDA生态，台积电白名单保障供应链安全，技术领先优势至少2年</li>
+                <li><strong>落地快：</strong>已进入量产阶段，在手订单超2亿，2025年4-6亿营收目标确定性极强，2026年营收有望突破10亿</li>
+                <li><strong>估值低：</strong>Pre-B轮32亿估值仅为同行PS的1/3-1/5，折价超50%，安全边际极高，中性预期回报4.8倍，IRR 82%</li>
+                <li><strong>退出明：</strong>2025年营收达标即满足科创板上市标准，上市概率超98%，预计2028年初上市，退出路径清晰</li>
+            </ol>
+
+            <h3>8.2 投资方案建议</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>方案内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>总投资金额</td>
+                        <td>1.2亿元，占一级市场硬科技组合仓位的10%-15%，总投资组合的2%-3%</td>
+                    </tr>
+                    <tr>
+                        <td>投资节奏</td>
+                        <td>分两轮投资：<br>1. Pre-B轮（当前）投资8000万元，投前估值32亿，持股2.5%<br>2. B轮（6个月后）跟投4000万元，投前估值55亿，持股0.73%<br>合计持股3.23%，平均投后成本39.4亿元</td>
+                    </tr>
+                    <tr>
+                        <td>核心条款要求</td>
+                        <td>1. 业绩对赌：2025年营收≥4亿，扣非净利润为正，否则补偿股份<br>2. 技术对赌：2026年底前下一代芯片流片，否则回购30%股份<br>3. 回购条款：2028年底未IPO按8%年化回购全部股份<br>4. 反稀释、董事会观察员席位、优先清算权等标准权利</td>
+                    </tr>
+                    <tr>
+                        <td>投后安排</td>
+                        <td>派驻1名董事会观察员，每月跟踪运营情况，每季度召开投后会议，落实各项增值赋能方案</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>8.3 后续跟踪核心指标</h3>
+            <ul>
+                <li><strong>月度跟踪：</strong>订单交付情况、研发进展、人员扩张情况、现金流情况</li>
+                <li><strong>季度跟踪：</strong>营收/利润完成情况、毛利率变化、新客户拓展情况、政策申请进展</li>
+                <li><strong>关键里程碑跟踪：</strong>2025年半年报业绩、R1芯片量产交付情况、下一代芯片研发进度、B轮融资进展、IPO筹备情况</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>报告出具人：A5L投资决策委员会 | 2026年5月12日</p>
+            <p>本报告为绝密内部资料，未经书面许可不得复制、转发或外泄。投资有风险，决策需谨慎。</p>
+        </div>
+    </div>
+</body>
+</html>

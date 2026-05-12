@@ -2827,3 +2827,174 @@
 2026-05-11 19:01:41,038 - INFO - 非交易时段，每小时检查
 2026-05-11 19:06:52,316 - INFO - 非交易时段，每小时检查
 2026-05-11 19:06:56,333 - INFO - 非交易时段，每小时检查
+2026-05-11 20:01:41,038 - INFO - 非交易时段，每小时检查
+2026-05-11 20:06:52,317 - INFO - 非交易时段，每小时检查
+2026-05-11 20:06:56,333 - INFO - 非交易时段，每小时检查
+2026-05-11 21:01:41,038 - INFO - 非交易时段，每小时检查
+2026-05-11 21:06:52,317 - INFO - 非交易时段，每小时检查
+2026-05-11 21:06:56,334 - INFO - 非交易时段，每小时检查
+2026-05-11 22:01:41,038 - INFO - 非交易时段，每小时检查
+2026-05-11 22:06:52,317 - INFO - 非交易时段，每小时检查
+2026-05-11 22:06:56,334 - INFO - 非交易时段，每小时检查
+2026-05-11 23:01:41,039 - INFO - 非交易时段，每小时检查
+2026-05-11 23:06:52,317 - INFO - 非交易时段，每小时检查
+2026-05-11 23:06:56,334 - INFO - 非交易时段，每小时检查
+2026-05-12 00:01:41,039 - INFO - 非交易时段，每小时检查
+2026-05-12 00:06:52,318 - INFO - 非交易时段，每小时检查
+2026-05-12 00:06:56,334 - INFO - 非交易时段，每小时检查
+2026-05-12 01:01:41,039 - INFO - 非交易时段，每小时检查
+2026-05-12 01:06:52,318 - INFO - 非交易时段，每小时检查
+2026-05-12 01:06:56,334 - INFO - 非交易时段，每小时检查
+2026-05-12 02:01:41,040 - INFO - 非交易时段，每小时检查
+2026-05-12 02:06:52,318 - INFO - 非交易时段，每小时检查
+2026-05-12 02:06:56,335 - INFO - 非交易时段，每小时检查
+2026-05-12 03:01:41,040 - INFO - 非交易时段，每小时检查
+2026-05-12 03:06:52,318 - INFO - 非交易时段，每小时检查
+2026-05-12 03:06:56,335 - INFO - 非交易时段，每小时检查
+2026-05-12 04:01:41,040 - INFO - 非交易时段，每小时检查
+2026-05-12 04:06:52,318 - INFO - 非交易时段，每小时检查
+2026-05-12 04:06:56,335 - INFO - 非交易时段，每小时检查
+2026-05-12 05:01:41,041 - INFO - 非交易时段，每小时检查
+2026-05-12 05:06:52,319 - INFO - 非交易时段，每小时检查
+2026-05-12 05:06:56,335 - INFO - 非交易时段，每小时检查
+2026-05-12 06:01:41,041 - INFO - 非交易时段，每小时检查
+2026-05-12 06:06:52,319 - INFO - 非交易时段，每小时检查
+2026-05-12 06:06:56,335 - INFO - 非交易时段，每小时检查
+2026-05-12 07:01:41,041 - INFO - 非交易时段，每小时检查
+2026-05-12 07:06:52,319 - INFO - 非交易时段，每小时检查
+2026-05-12 07:06:56,336 - INFO - 非交易时段，每小时检查
+2026-05-12 08:01:41,041 - INFO - 非交易时段，每小时检查
+2026-05-12 08:06:52,319 - INFO - 非交易时段，每小时检查
+2026-05-12 08:06:56,336 - INFO - 非交易时段，每小时检查
+2026-05-12 09:01:41,041 - INFO - 非交易时段，每小时检查
+2026-05-12 09:06:52,320 - INFO - 非交易时段，每小时检查
+2026-05-12 09:06:56,336 - INFO - 非交易时段，每小时检查
+2026-05-12 10:01:43,464 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:01:43,465 - WARNING - 未获取到指数数据
+2026-05-12 10:06:56,681 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:06:56,682 - WARNING - 未获取到指数数据
+2026-05-12 10:06:57,691 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:06:57,691 - WARNING - 未获取到指数数据
+2026-05-12 10:16:43,728 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:16:43,729 - WARNING - 未获取到指数数据
+2026-05-12 10:21:57,080 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:21:57,081 - WARNING - 未获取到指数数据
+2026-05-12 10:22:03,807 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 10:22:03,807 - WARNING - 未获取到指数数据
+2026-05-12 10:31:48,873 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 10:31:48,873 - WARNING - 未获取到指数数据
+2026-05-12 10:36:59,869 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:36:59,869 - WARNING - 未获取到指数数据
+2026-05-12 10:37:04,238 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:37:04,240 - WARNING - 未获取到指数数据
+2026-05-12 10:46:51,398 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 10:46:51,399 - WARNING - 未获取到指数数据
+2026-05-12 10:52:05,527 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 10:52:05,527 - WARNING - 未获取到指数数据
+2026-05-12 10:52:10,240 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 10:52:10,240 - WARNING - 未获取到指数数据
+2026-05-12 11:01:51,653 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:01:51,654 - WARNING - 未获取到指数数据
+2026-05-12 11:07:05,975 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:07:05,977 - WARNING - 未获取到指数数据
+2026-05-12 11:07:10,489 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:07:10,490 - WARNING - 未获取到指数数据
+2026-05-12 11:16:56,675 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 11:16:56,675 - WARNING - 未获取到指数数据
+2026-05-12 11:22:08,205 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:22:08,206 - WARNING - 未获取到指数数据
+2026-05-12 11:22:13,377 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:22:13,378 - WARNING - 未获取到指数数据
+2026-05-12 11:31:59,422 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:31:59,423 - WARNING - 未获取到指数数据
+2026-05-12 11:37:13,728 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:37:13,730 - WARNING - 未获取到指数数据
+2026-05-12 11:37:14,123 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 11:37:14,124 - WARNING - 未获取到指数数据
+2026-05-12 11:47:05,082 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 11:47:05,082 - WARNING - 未获取到指数数据
+2026-05-12 11:52:18,751 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 11:52:18,751 - WARNING - 未获取到指数数据
+2026-05-12 11:52:19,452 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 11:52:19,452 - WARNING - 未获取到指数数据
+2026-05-12 12:02:10,955 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:02:10,956 - WARNING - 未获取到指数数据
+2026-05-12 12:07:23,983 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:07:23,983 - WARNING - 未获取到指数数据
+2026-05-12 12:07:24,359 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:07:24,359 - WARNING - 未获取到指数数据
+2026-05-12 12:17:16,760 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:17:16,761 - WARNING - 未获取到指数数据
+2026-05-12 12:22:29,700 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:22:29,700 - WARNING - 未获取到指数数据
+2026-05-12 12:22:29,841 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:22:29,841 - WARNING - 未获取到指数数据
+2026-05-12 12:32:21,471 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:32:21,471 - WARNING - 未获取到指数数据
+2026-05-12 12:37:35,140 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:37:35,140 - WARNING - 未获取到指数数据
+2026-05-12 12:37:35,818 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:37:35,819 - WARNING - 未获取到指数数据
+2026-05-12 12:47:27,265 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:47:27,265 - WARNING - 未获取到指数数据
+2026-05-12 12:52:40,320 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:52:40,320 - WARNING - 未获取到指数数据
+2026-05-12 12:52:40,507 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 12:52:40,507 - WARNING - 未获取到指数数据
+2026-05-12 13:02:32,349 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:02:32,349 - WARNING - 未获取到指数数据
+2026-05-12 13:07:45,485 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:07:45,485 - WARNING - 未获取到指数数据
+2026-05-12 13:07:45,546 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:07:45,547 - WARNING - 未获取到指数数据
+2026-05-12 13:17:36,742 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:17:36,742 - WARNING - 未获取到指数数据
+2026-05-12 13:22:45,808 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 13:22:45,809 - WARNING - 未获取到指数数据
+2026-05-12 13:22:47,763 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 13:22:47,763 - WARNING - 未获取到指数数据
+2026-05-12 13:32:39,297 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 13:32:39,297 - WARNING - 未获取到指数数据
+2026-05-12 13:37:46,225 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 13:37:46,226 - WARNING - 未获取到指数数据
+2026-05-12 13:37:53,584 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:37:53,584 - WARNING - 未获取到指数数据
+2026-05-12 13:47:45,134 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:47:45,134 - WARNING - 未获取到指数数据
+2026-05-12 13:52:46,488 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 13:52:46,489 - WARNING - 未获取到指数数据
+2026-05-12 13:52:58,387 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 13:52:58,388 - WARNING - 未获取到指数数据
+2026-05-12 14:02:45,548 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:02:45,549 - WARNING - 未获取到指数数据
+2026-05-12 14:07:46,821 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:07:46,823 - WARNING - 未获取到指数数据
+2026-05-12 14:07:58,731 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:07:58,732 - WARNING - 未获取到指数数据
+2026-05-12 14:17:50,558 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 14:17:50,558 - WARNING - 未获取到指数数据
+2026-05-12 14:22:51,679 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 14:22:51,679 - WARNING - 未获取到指数数据
+2026-05-12 14:23:03,594 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 14:23:03,594 - WARNING - 未获取到指数数据
+2026-05-12 14:32:53,108 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:32:53,110 - WARNING - 未获取到指数数据
+2026-05-12 14:37:54,503 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:37:54,504 - WARNING - 未获取到指数数据
+2026-05-12 14:38:09,083 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 14:38:09,083 - WARNING - 未获取到指数数据
+2026-05-12 14:47:57,907 - ERROR - 获取指数数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-12 14:47:57,908 - WARNING - 未获取到指数数据
+2026-05-12 14:52:54,951 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:52:54,952 - WARNING - 未获取到指数数据
+2026-05-12 14:53:14,581 - ERROR - 获取指数数据失败: [Errno 32] Broken pipe
+2026-05-12 14:53:14,583 - WARNING - 未获取到指数数据
+2026-05-12 15:02:57,908 - INFO - 非交易时段，每小时检查
+2026-05-12 15:07:54,952 - INFO - 非交易时段，每小时检查
+2026-05-12 15:08:14,583 - INFO - 非交易时段，每小时检查
+2026-05-12 16:02:57,908 - INFO - 非交易时段，每小时检查
+2026-05-12 16:07:54,953 - INFO - 非交易时段，每小时检查
+2026-05-12 16:08:14,583 - INFO - 非交易时段，每小时检查
+2026-05-12 17:02:57,908 - INFO - 非交易时段，每小时检查
+2026-05-12 17:07:54,953 - INFO - 非交易时段，每小时检查
+2026-05-12 17:08:14,583 - INFO - 非交易时段，每小时检查
