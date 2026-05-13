@@ -1,0 +1,222 @@
+[
+  {
+    "symbol": "000001",
+    "name": "平安银行",
+    "signal": "HOLD",
+    "score": 55,
+    "confidence": 0.4,
+    "current_price": 614.94,
+    "change_pct": -0.3,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727617"
+  },
+  {
+    "symbol": "000002",
+    "name": "万科A",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 1012.04,
+    "change_pct": 2.84,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-13T09:31:33.727624"
+  },
+  {
+    "symbol": "000858",
+    "name": "五粮液",
+    "signal": "WEAK_BUY",
+    "score": 60,
+    "confidence": 0.5,
+    "current_price": 909.83,
+    "change_pct": 1.52,
+    "recommendation": "可以关注",
+    "timestamp": "2026-05-13T09:31:33.727660"
+  },
+  {
+    "symbol": "000725",
+    "name": "京东方A",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 562.47,
+    "change_pct": 2.11,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-13T09:31:33.727689"
+  },
+  {
+    "symbol": "002594",
+    "name": "比亚迪",
+    "signal": "HOLD",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 909.19,
+    "change_pct": -0.34,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727716"
+  },
+  {
+    "symbol": "002415",
+    "name": "海康威视",
+    "signal": "SELL",
+    "score": 35,
+    "confidence": 0.6,
+    "current_price": 1734.98,
+    "change_pct": -2.12,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-13T09:31:33.727721"
+  },
+  {
+    "symbol": "002714",
+    "name": "牧原股份",
+    "signal": "WEAK_SELL",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 698.91,
+    "change_pct": -0.69,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727748"
+  },
+  {
+    "symbol": "002230",
+    "name": "科大讯飞",
+    "signal": "SELL",
+    "score": 40,
+    "confidence": 0.5,
+    "current_price": 1206.01,
+    "change_pct": -4.99,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-13T09:31:33.727766"
+  },
+  {
+    "symbol": "300750",
+    "name": "宁德时代",
+    "signal": "BUY",
+    "score": 65,
+    "confidence": 0.6,
+    "current_price": 244.82,
+    "change_pct": 3.26,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-13T09:31:33.727798"
+  },
+  {
+    "symbol": "300059",
+    "name": "东方财富",
+    "signal": "HOLD",
+    "score": 55,
+    "confidence": 0.4,
+    "current_price": 1162.21,
+    "change_pct": -0.34,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727827"
+  },
+  {
+    "symbol": "300124",
+    "name": "汇川技术",
+    "signal": "WEAK_SELL",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 70.19,
+    "change_pct": -0.81,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727832"
+  },
+  {
+    "symbol": "600036",
+    "name": "招商银行",
+    "signal": "HOLD",
+    "score": 50,
+    "confidence": 0.3,
+    "current_price": 589.34,
+    "change_pct": 0.1,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727846"
+  },
+  {
+    "symbol": "600519",
+    "name": "贵州茅台",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 689.57,
+    "change_pct": 2.58,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-13T09:31:33.727851"
+  },
+  {
+    "symbol": "600276",
+    "name": "恒瑞医药",
+    "signal": "HOLD",
+    "score": 55,
+    "confidence": 0.4,
+    "current_price": 1772.03,
+    "change_pct": 0.49,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727882"
+  },
+  {
+    "symbol": "601318",
+    "name": "中国平安",
+    "signal": "WEAK_BUY",
+    "score": 60,
+    "confidence": 0.5,
+    "current_price": 937.61,
+    "change_pct": 1.88,
+    "recommendation": "可以关注",
+    "timestamp": "2026-05-13T09:31:33.727887"
+  },
+  {
+    "symbol": "601012",
+    "name": "隆基绿能",
+    "signal": "BUY",
+    "score": 70,
+    "confidence": 0.7,
+    "current_price": 1078.3,
+    "change_pct": 4.37,
+    "recommendation": "建议买入",
+    "timestamp": "2026-05-13T09:31:33.727915"
+  },
+  {
+    "symbol": "601888",
+    "name": "中国中免",
+    "signal": "HOLD",
+    "score": 55,
+    "confidence": 0.4,
+    "current_price": 1636.97,
+    "change_pct": -0.35,
+    "recommendation": "观望",
+    "timestamp": "2026-05-13T09:31:33.727942"
+  },
+  {
+    "symbol": "603259",
+    "name": "药明康德",
+    "signal": "SELL",
+    "score": 40,
+    "confidence": 0.5,
+    "current_price": 1487.4,
+    "change_pct": -4.97,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-13T09:31:33.727948"
+  },
+  {
+    "symbol": "600900",
+    "name": "长江电力",
+    "signal": "WEAK_SELL",
+    "score": 45,
+    "confidence": 0.4,
+    "current_price": 359.07,
+    "change_pct": -1.19,
+    "recommendation": "谨慎持有",
+    "timestamp": "2026-05-13T09:31:33.727977"
+  },
+  {
+    "symbol": "601166",
+    "name": "兴业银行",
+    "signal": "SELL",
+    "score": 35,
+    "confidence": 0.6,
+    "current_price": 974.03,
+    "change_pct": -3.5,
+    "recommendation": "建议卖出",
+    "timestamp": "2026-05-13T09:31:33.727999"
+  }
+]

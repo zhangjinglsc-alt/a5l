@@ -1,0 +1,52 @@
+{
+  "report_date": "2026-05-13",
+  "report_time": "09:15:20",
+  "version": "v2.1.0",
+  "summary": {
+    "signal": "谨慎做多",
+    "strength": 0.55,
+    "ctf_tier": "Tier 2-3",
+    "market_status": "中等催化",
+    "risk_level": "中等"
+  },
+  "market_sentiment": {
+    "limit_up": 51,
+    "limit_down": 86,
+    "up_count": 633,
+    "down_count": 1135,
+    "seal_rate": 100.0,
+    "intensity": 51,
+    "up_down_ratio": 0.56
+  },
+  "ladder": [
+    {"level": 1, "count": 24},
+    {"level": 2, "count": 19},
+    {"level": 3, "count": 6},
+    {"level": 4, "count": 3}
+  ],
+  "sectors": [
+    {"name": "芯片", "count": 11, "rank": 1},
+    {"name": "通信", "count": 7, "rank": 2},
+    {"name": "智能电网", "count": 7, "rank": 3},
+    {"name": "电力", "count": 5, "rank": 4},
+    {"name": "算力", "count": 4, "rank": 5}
+  ],
+  "ml_prediction": {
+    "signal_strength": 0.55,
+    "confidence": "medium",
+    "action": "精选个股，控制仓位"
+  },
+  "trading_advice": {
+    "position": "5-6成",
+    "focus_sector": "芯片",
+    "avoid": "高位接力、跌停扩散",
+    "strategy": "早盘观察持续性，再决定是否参与"
+  },
+  "checklist": [
+    "09:25 观察竞价封单变化",
+    "09:30 确认芯片板块持续性", 
+    "10:00 评估涨停/跌停比例变化",
+    "关注2板芯片股的接力机会",
+    "回避4板以上高位股"
+  ]
+}

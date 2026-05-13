@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-05-13T09:15:20.617056",
+  "data": {
+    "sentiment": {
+      "limit_up": 51,
+      "limit_down": 86,
+      "up_count": 633,
+      "down_count": 1135,
+      "seal_rate": 100,
+      "intensity": 51
+    },
+    "ladder": [
+      {
+        "level": 1,
+        "count": 24
+      },
+      {
+        "level": 2,
+        "count": 19
+      },
+      {
+        "level": 3,
+        "count": 6
+      },
+      {
+        "level": 4,
+        "count": 3
+      }
+    ],
+    "sectors": [
+      {
+        "name": "芯片",
+        "count": 11
+      },
+      {
+        "name": "通信",
+        "count": 7
+      },
+      {
+        "name": "智能电网",
+        "count": 7
+      },
+      {
+        "name": "电力",
+        "count": 5
+      },
+      {
+        "name": "算力",
+        "count": 4
+      }
+    ],
+    "hot_stocks": []
+  }
+}
