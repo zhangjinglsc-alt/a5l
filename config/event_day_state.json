@@ -1,8 +1,10 @@
 {
-  "date": "2026-05-12",
-  "events": [],
-  "frequency_minutes": 120,
-  "mode": "\u5e38\u89c4\u76d1\u63a7",
-  "updated_at": "2026-05-12T21:30:07.731732",
-  "next_reset": "2026-05-13T06:00:00"
+  "date": "2026-05-13",
+  "events": [
+    "CPI"
+  ],
+  "frequency_minutes": 30,
+  "mode": "\u91cd\u8981\u4e8b\u4ef6\u65e5\u76d1\u63a7",
+  "updated_at": "2026-05-13T21:30:07.234413",
+  "next_reset": "2026-05-14T06:00:00"
 }
