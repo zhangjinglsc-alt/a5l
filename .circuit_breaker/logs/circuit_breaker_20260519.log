@@ -1,0 +1,9 @@
+[2026-05-19T12:54:09.218504] [test_task] [SUCCESS] 任务执行成功
+[2026-05-19T12:54:14.573182] [test_failure_task] [SUCCESS] 任务执行成功
+[2026-05-19T12:54:31.302073] [test_failure_task] [FAILURE] 执行失败: 手动测试失败 (当前失败次数: 1)
+[2026-05-19T12:54:39.573516] [test_failure_task] [FAILURE] 执行失败: 手动测试失败2 (当前失败次数: 2)
+[2026-05-19T12:54:46.024542] [test_failure_task] [FUSE_TRIGGERED] 任务连续失败3次，已触发熔断，冷却时间120分钟
+[2026-05-19T12:54:46.074268] [test_failure_task] [NOTIFY_FAILED] 发送通知失败: Command '['/usr/bin/node', '/usr/lib/node_modules/openclaw/bin/openclaw.js', 'message', 'send', '--to', 'user:ou_15b3ad56ed656d75824368e8398e330b', '--message', '⚠️ 任务熔断通知\n任务: test_failure_task\n时间: 2026-05-19 12:54:46\n详情: 任务连续失败3次，已触发熔断，冷却时间120分钟']' returned non-zero exit status 1.
+[2026-05-19T12:54:46.074568] [test_failure_task] [FAILURE] 执行失败: 手动测试失败3 (当前失败次数: 3)
+[2026-05-19T12:55:00.470715] [test_failure_task] [MANUAL_RECOVER] 手动恢复任务执行
+[2026-05-19T12:55:00.494003] [test_failure_task] [NOTIFY_FAILED] 发送通知失败: Command '['/usr/bin/node', '/usr/lib/node_modules/openclaw/bin/openclaw.js', 'message', 'send', '--to', 'user:ou_15b3ad56ed656d75824368e8398e330b', '--message', '⚠️ 任务熔断通知\n任务: test_failure_task\n时间: 2026-05-19 12:55:00\n详情: 任务已被手动恢复执行']' returned non-zero exit status 1.

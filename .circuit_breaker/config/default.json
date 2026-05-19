@@ -1,0 +1,24 @@
+{
+  "default_rules": {
+    "failure_threshold": 3,
+    "time_window_minutes": 60,
+    "cool_down_minutes": 120,
+    "notify_on_trigger": true,
+    "notify_channel": "feishu_dm"
+  },
+  "task_overrides": {
+    "backup.sh": {
+      "failure_threshold": 2,
+      "cool_down_minutes": 60
+    },
+    "local_trading.sh": {
+      "failure_threshold": 2,
+      "cool_down_minutes": 30,
+      "notify_on_trigger": true
+    },
+    "update_trading_plan_docs.py": {
+      "failure_threshold": 5,
+      "time_window_minutes": 30
+    }
+  }
+}
