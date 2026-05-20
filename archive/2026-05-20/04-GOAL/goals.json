@@ -1,0 +1,746 @@
+[
+  {
+    "id": "G001-L3-EVOLUTION",
+    "title": "实现L3自主进化",
+    "description": "从L2半辅助模式进化到L3半自主模式：自主识别并修复简单问题，异常时尝试自我恢复",
+    "status": "active",
+    "created_at": "2026-05-01T22:21:13",
+    "deadline": "2026-05-15",
+    "parent_id": null,
+    "progress": 45.0,
+    "milestones": [
+      {
+        "name": "建立自诊断引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现自修复功能",
+        "completed": false,
+        "progress": 35
+      },
+      {
+        "name": "建立预测能力",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "完善验收机制",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "持续运行7天无干预",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T001-诊断",
+      "T002-修复",
+      "T003-预测",
+      "T004-验收",
+      "T005-持续运行"
+    ]
+  },
+  {
+    "id": "G002-RECURSIVE-IMPROVEMENT",
+    "title": "建立递归自我改进系统",
+    "description": "实现能够改进自身的自我改进机制（Meta-Self-Improvement）。递归层级：Level 0功能改进 → Level 1流程改进 → Level 2元认知改进",
+    "status": "active",
+    "created_at": "2026-05-01T23:25:00",
+    "deadline": "2026-05-08",
+    "parent_id": "G001-L3-EVOLUTION",
+    "progress": 30.0,
+    "milestones": [
+      {
+        "name": "设计递归改进框架",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现改进效果度量",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立元反馈机制",
+        "completed": false,
+        "progress": 20
+      },
+      {
+        "name": "创建改进日志系统",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现递归深度控制",
+        "completed": true,
+        "date": "2026-05-01"
+      }
+    ],
+    "tasks": [
+      "T006-递归框架",
+      "T007-效果度量",
+      "T008-元反馈",
+      "T009-日志系统",
+      "T010-递归控制"
+    ],
+    "recursive_config": {
+      "max_depth": 3,
+      "min_improvement_threshold": 0.05,
+      "auto_trigger": true,
+      "target_components": [
+        "evolution_engine",
+        "goal_manager",
+        "archive_system",
+        "feishu_sync"
+      ]
+    }
+  },
+  {
+    "id": "G003-SIM-TRADING-US",
+    "title": "美股模拟交易系统",
+    "description": "美股模拟交易环境，$100,000本金，实现自主选股、自动执行、自动风控",
+    "status": "active",
+    "created_at": "2026-05-01T15:36:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 25.0,
+    "milestones": [
+      {
+        "name": "初始化交易账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 30
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 20
+      },
+      {
+        "name": "建立风控系统",
+        "completed": false,
+        "progress": 10
+      }
+    ],
+    "tasks": [
+      "T011-US账户初始化",
+      "T012-US选股策略",
+      "T013-US自动执行",
+      "T014-US风控系统"
+    ],
+    "account_info": {
+      "account_id": "US_SIM_001",
+      "initial_capital": 100000,
+      "currency": "USD",
+      "current_equity": 99992.34
+    }
+  },
+  {
+    "id": "G004-SIM-TRADING-CN",
+    "title": "A股模拟交易系统",
+    "description": "A股模拟交易环境，¥1,000,000本金，支持T+1、涨跌停、印花税等A股特有规则",
+    "status": "active",
+    "created_at": "2026-05-01T23:33:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 20.0,
+    "milestones": [
+      {
+        "name": "初始化A股账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现A股交易引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持T+1规则",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持涨跌停保护",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T015-CN账户初始化",
+      "T016-CN交易引擎",
+      "T017-CN选股策略",
+      "T018-CN自动执行"
+    ],
+    "account_info": {
+      "account_id": "CN_SIM_001",
+      "initial_capital": 1000000,
+      "currency": "CNY",
+      "current_equity": 1000000
+    },
+    "market_specific": {
+      "t_plus_1": true,
+      "price_limits": true,
+      "stamp_duty": true,
+      "lot_size": 100
+    }
+  },
+  {
+    "id": "G005-SIM-TRADING-HK",
+    "title": "港股模拟交易系统",
+    "description": "港股模拟交易环境，HK$800,000本金，支持T+2、无涨跌停、每手股数可变等港股规则",
+    "status": "active",
+    "created_at": "2026-05-01T23:33:00",
+    "deadline": "2026-06-01",
+    "parent_id": null,
+    "progress": 20.0,
+    "milestones": [
+      {
+        "name": "初始化港股账户",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "实现港股交易引擎",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持T+2交收",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "支持可变每手股数",
+        "completed": true,
+        "date": "2026-05-01"
+      },
+      {
+        "name": "建立选股策略",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现自动执行",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T019-HK账户初始化",
+      "T020-HK交易引擎",
+      "T021-HK选股策略",
+      "T022-HK自动执行"
+    ],
+    "account_info": {
+      "account_id": "HK_SIM_001",
+      "initial_capital": 800000,
+      "currency": "HKD",
+      "current_equity": 800000
+    },
+    "market_specific": {
+      "t_plus_2": true,
+      "no_price_limits": true,
+      "variable_lot_size": true
+    }
+  },
+  {
+    "id": "G006-ARCHITECT-5L",
+    "title": "构建五层架构投资体系 (ARCHITECT-5L)",
+    "description": "构建完整的数据→策略→分析→决策→复盘投资闭环系统。Layer 1数据底座 + Layer 2策略引擎 + Layer 3非结构化分析 + Layer 4决策信号 + Layer 5复盘进化。这是终极Goal，整合所有交易和研究能力。",
+    "status": "active",
+    "created_at": "2026-05-02T02:51:00",
+    "deadline": "2026-06-15",
+    "parent_id": "G001-L3-EVOLUTION",
+    "progress": 98.0,
+    "note": "P1 100%, P2 100%, P3 100%, P4 100%, Layer 0 Trinity Complete",
+    "priority": "highest",
+    "milestones": [
+      {
+        "name": "Phase 1: 架构设计与规划",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 2: Layer 1 数据底座",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 3: Layer 2 策略引擎",
+        "completed": true,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 4: Layer 3 非结构化分析",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 5: Layer 4 决策信号",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 6: Layer 5 复盘进化",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Phase 7: 递归改进整合",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "系统联调与验证",
+        "completed": true,
+        "progress": 0,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "P0: 真实数据+监控设施+自愈能力",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "P1: Web仪表板+单元测试+策略优化+归因分析",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02",
+        "note": "全部完成: Web仪表板(2版本)+单元测试(100%)+策略优化(网格/遗传)+归因分析(Brinson)"
+      },
+      {
+        "name": "P2: 机器学习+实时推送+A/B测试+多因子",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "P3: 另类数据+算法交易+NLP+知识图谱",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "P4: SKILL整合+研报阅读+高价值SKILL",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Layer 0 元控制层设计",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Layer 0 标准制定能力",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "Layer 0 三位一体智能中枢",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02",
+        "note": "Chief Architect + CIO + COO"
+      }
+    ],
+    "tasks": [
+      "T023-更新SOUL写入终极Goal",
+      "T024-创建五层架构文件结构",
+      "T025-创建强力Skill文档",
+      "T026-Layer1数据底座搭建",
+      "T027-Layer2策略引擎实现",
+      "T028-Layer3非结构化分析",
+      "T029-Layer4决策信号",
+      "T030-Layer5复盘进化",
+      "T031-递归改进整合",
+      "T032-系统联调测试",
+      "T033-Layer0元控制层",
+      "T034-Layer0三位一体"
+    ],
+    "architecture": {
+      "layer0": {
+        "name": "元控制层",
+        "components": [
+          "Chief Architect",
+          "Chief Investment Officer",
+          "Chief Operating Officer",
+          "Chief Security Officer"
+        ]
+      },
+      "layer1": {
+        "name": "数据底座层",
+        "data_sources": [
+          "AKShare",
+          "TuShare",
+          "EastMoney",
+          "Jin10"
+        ],
+        "markets": [
+          "A-share",
+          "US",
+          "HK"
+        ],
+        "data_types": [
+          "price",
+          "volume",
+          "financial",
+          "announcement",
+          "macro",
+          "sector",
+          "sentiment"
+        ]
+      },
+      "layer2": {
+        "name": "交易策略层",
+        "strategies": [
+          "Stock Wizard",
+          "Turtle Trading",
+          "Trend+RS",
+          "Volume-Price",
+          "Fundamental Growth",
+          "Yangguan",
+          "Buffett Value"
+        ]
+      },
+      "layer3": {
+        "name": "非结构化分析层",
+        "outputs": "Daily Feishu Reports (YYYYMMDD-Market-Sector)",
+        "principles": [
+          "Honesty above all",
+          "Verified sources only",
+          "No hallucination"
+        ]
+      },
+      "layer4": {
+        "name": "决策信号层",
+        "modes": [
+          "Simulated Trading (Auto)",
+          "Real Portfolio Research Assistant"
+        ]
+      },
+      "layer5": {
+        "name": "复盘进化层",
+        "schedule": "Daily 21:00",
+        "outputs": "Review reports with attribution analysis"
+      }
+    },
+    "success_criteria": [
+      "Layer 1: 99.9% data availability, <1min latency",
+      "Layer 2: 5+ strategies with documented rules and backtests",
+      "Layer 3: Daily Feishu reports with VERIFIED information only",
+      "Layer 4: Automated simulated trading + real portfolio tracking",
+      "Layer 5: Daily 21:00 review reports with honest attribution",
+      "Layer 0: Trinity intelligence hub with autonomous decision making",
+      "Recursive: Monthly improvement in win rate and risk-adjusted returns"
+    ],
+    "commitment": "Absolute honesty. No fabricated data. No hallucinated sources. Meticulous verification. Continuous improvement."
+  },
+  {
+    "id": "G007-P5-AGENTIFICATION",
+    "title": "P5: 智能体化 (Agentification)",
+    "description": "将A5L各层进化为独立智能体，实现自主决策、多智能体协作、自然语言意图理解。Layer 0作为智能体协调中心，各Layer作为专业智能体。",
+    "status": "active",
+    "created_at": "2026-05-02T06:17:00",
+    "deadline": "2026-05-31",
+    "parent_id": "G006-ARCHITECT-5L",
+    "progress": 0.0,
+    "priority": "high",
+    "milestones": [
+      {
+        "name": "设计智能体架构",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现Layer 1智能体",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现Layer 2智能体",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现Layer 3智能体",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现Layer 4智能体",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现Layer 5智能体",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "建立智能体通信协议",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现自然语言意图理解",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T035-P5架构设计",
+      "T036-L1智能体",
+      "T037-L2智能体",
+      "T038-L3智能体",
+      "T039-L4智能体",
+      "T040-L5智能体",
+      "T041-通信协议",
+      "T042-NLP意图理解"
+    ],
+    "agent_design": {
+      "layer0": "Orchestrator Agent - 协调所有智能体",
+      "layer1": "Data Agent - 自主数据采集和处理",
+      "layer2": "Strategy Agent - 自主策略优化和信号生成",
+      "layer3": "Analysis Agent - 自主深度分析和研报阅读",
+      "layer4": "Execution Agent - 自主决策执行和风控",
+      "layer5": "Learning Agent - 自主复盘和知识沉淀"
+    },
+    "success_criteria": [
+      "Each Layer can operate as independent agent",
+      "Agents can communicate and collaborate",
+      "Natural language commands understood",
+      "Layer 0 can coordinate multi-agent tasks"
+    ]
+  },
+  {
+    "id": "G008-KIWI-INTEGRATION",
+    "title": "飞书知识库(KIWI)集成",
+    "description": "将飞书Wiki(KIWI)集成到A5L系统，让A5L能够调阅飞书知识库内的所有内容。扩展A5L的记忆边界，实现知识的无缝流转。",
+    "status": "active",
+    "created_at": "2026-05-02T06:17:00",
+    "deadline": "2026-05-15",
+    "parent_id": "G006-ARCHITECT-5L",
+    "progress": 0.0,
+    "priority": "high",
+    "milestones": [
+      {
+        "name": "分析KIWI API能力",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "设计KIWI集成架构",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现KIWI内容读取",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "实现KIWI搜索功能",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "集成到Layer 3分析层",
+        "completed": false,
+        "progress": 0
+      },
+      {
+        "name": "权限配置和测试",
+        "completed": false,
+        "progress": 0
+      }
+    ],
+    "tasks": [
+      "T043-KIWI API分析",
+      "T044-KIWI架构设计",
+      "T045-KIWI读取实现",
+      "T046-KIWI搜索实现",
+      "T047-KIWI集成L3",
+      "T048-权限配置"
+    ],
+    "integration_scope": [
+      "Read all KIWI documents",
+      "Search KIWI content",
+      "Extract insights from KIWI",
+      "Cross-reference KIWI with other data sources"
+    ],
+    "success_criteria": [
+      "A5L can read any KIWI document",
+      "A5L can search KIWI content",
+      "KIWI knowledge is accessible in Layer 3 analysis",
+      "No permission barriers"
+    ]
+  },
+  {
+    "id": "G009-INFORMATION-PIPELINE",
+    "title": "建立多模态5步信息处理链路",
+    "description": "建立支持文本/图片/公众号/研报/PDF的完整信息处理闭环：提取→复查→分析+KIWI→输出→归档。确保所有类型信息都经过可靠性验证、知识关联、闭环归档。",
+    "status": "active",
+    "created_at": "2026-05-02T06:24:00",
+    "deadline": "2026-05-10",
+    "parent_id": "G006-ARCHITECT-5L",
+    "progress": 90.0,
+    "priority": "high",
+    "milestones": [
+      {
+        "name": "设计5步处理链路",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现Step1-2(阅读+复查)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现Step3(分析+KIWI)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现Step4(输出)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现Step5(归档)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "集成到A5L Layer 0",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "写入SOUL核心原则",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现图片处理(OCR+图表识别)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现公众号文章解析",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现研报解析(评级/目标价)",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "实现PDF文档处理",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      },
+      {
+        "name": "SOUL写入多模态支持原则",
+        "completed": true,
+        "progress": 100,
+        "date": "2026-05-02"
+      }
+    ],
+    "tasks": [
+      "T049-设计链路",
+      "T050-实现阅读",
+      "T051-实现复查",
+      "T052-实现分析",
+      "T053-实现输出",
+      "T054-实现归档",
+      "T055-Layer0集成",
+      "T056-SOUL写入",
+      "T057-图片处理",
+      "T058-公众号解析",
+      "T059-研报解析",
+      "T060-PDF处理",
+      "T061-多模态SOUL写入"
+    ],
+    "pipeline_steps": [
+      {
+        "step": 1,
+        "name": "阅读信息",
+        "description": "解析和理解原始信息，提取关键词"
+      },
+      {
+        "step": 2,
+        "name": "复查确认",
+        "description": "验证信息来源可靠性，评估内容质量"
+      },
+      {
+        "step": 3,
+        "name": "分析+KIWI",
+        "description": "SKILL深度分析，调阅KIWI相关知识"
+      },
+      {
+        "step": 4,
+        "name": "输出理解",
+        "description": "生成结构化理解，提取关键洞察"
+      },
+      {
+        "step": 5,
+        "name": "归档总结",
+        "description": "更新KIWI，更新策略，形成闭环"
+      }
+    ],
+    "success_criteria": [
+      "所有信息必须经过5步处理",
+      "可靠性评分自动计算",
+      "自动调阅KIWI相关内容",
+      "自动归档到KIWI",
+      "策略更新建议自动生成"
+    ],
+    "supported_types": [
+      "text - 纯文本",
+      "image - 图片(OCR+图表)",
+      "wechat - 公众号文章",
+      "report - 研报",
+      "pdf - PDF文档",
+      "web - 网页内容"
+    ]
+  }
+]

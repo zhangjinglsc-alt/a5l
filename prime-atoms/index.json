@@ -1,20 +1,446 @@
 {
-  "@a5l/decision-buy-cgw-20260506": {
-    "kind": "decision",
-    "domain": "trading",
-    "version": "1.0.0",
-    "edges_count": 14
+  "@a5l/skill-exa-web-search": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
   },
-  "@a5l/analysis-catalyst-tier-2": {
-    "kind": "analysis",
+  "@a5l/skill-guardrails-system": {
+    "kind": "risk-control",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 13
+  },
+  "@a5l/skill-factor-investing": {
+    "kind": "tool",
     "domain": "investment-analysis",
-    "version": "1.0.0",
+    "version": "2.1.0",
+    "edges_count": 10
+  },
+  "@a5l/skill-memory-dreaming": {
+    "kind": "memory",
+    "domain": "memory-system",
+    "version": "2.1.0",
+    "edges_count": 6
+  },
+  "@a5l/skill-embodied-ai": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 11
+  },
+  "@a5l/skill-unified-news-aggregator": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-claw-self-evolution-core": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-knowledge-graph": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-ai-llm": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 12
+  },
+  "@a5l/skill-ARCHITECT-5L": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 54
+  },
+  "@a5l/skill-beancount-skill": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-track_validation_metrics": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-nowait-reasoning-optimizer": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 11
+  },
+  "@a5l/skill-technical-analysis": {
+    "kind": "analysis",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-finceptterminal": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-memory": {
+    "kind": "memory",
+    "domain": "memory-system",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-stoic-wealth-philosophy": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-tavily": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-financial-calculator": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-healthcheck": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-node-connect": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-karpathy-wiki": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-storage": {
+    "kind": "memory",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 12
+  },
+  "@a5l/skill-unified-backtest-engine": {
+    "kind": "tool",
+    "domain": "trading",
+    "version": "2.1.0",
+    "edges_count": 5
+  },
+  "@a5l/skill-agent-browser": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 47
+  },
+  "@a5l/skill-codex": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-reflection-optimizer": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-catalyst-tier-framework": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-unified-stock-price": {
+    "kind": "tool",
+    "domain": "investment-analysis",
+    "version": "2.1.0",
+    "edges_count": 9
+  },
+  "@a5l/skill-fx-factor-monitor": {
+    "kind": "tool",
+    "domain": "investment-analysis",
+    "version": "2.1.0",
+    "edges_count": 8
+  },
+  "@a5l/skill-resilience-recovery": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-KNOWLEDGE-GUARDIAN": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 53
+  },
+  "@a5l/skill-planner": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-kw-feishu-integration": {
+    "kind": "tool",
+    "domain": "integration",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-wiki-system": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-langzhu-wave-predictor": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 52
+  },
+  "@a5l/skill-report-data-integrity": {
+    "kind": "data",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-auto-briefing": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-a2a-protocol": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
+  },
+  "@a5l/skill-quant_analysis": {
+    "kind": "analysis",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 52
+  },
+  "@a5l/skill-memory-lacedb-setup": {
+    "kind": "memory",
+    "domain": "memory-system",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-coze-web-search": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-material": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-yangguan-daodao": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-ARCHITECT-5L-SUPER": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 55
+  },
+  "@a5l/skill-dajitui-support-resistance": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-critical-thinking-logical-reasoning": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-liquid-cooling": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 11
+  },
+  "@a5l/skill-test-measurement": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-sector-etf-monitor": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-claude-code": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 52
+  },
+  "@a5l/skill-ai-apps": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 11
+  },
+  "@a5l/skill-humanizer-zh": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-kaipanla-api": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 15
+  },
+  "@a5l/skill-reading-analysis": {
+    "kind": "analysis",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-ai-manufacturing": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 13
+  },
+  "@a5l/skill-message": {
+    "kind": "tool",
+    "domain": "integration",
+    "version": "2.1.0",
     "edges_count": 3
   },
-  "@a5l/signal-breakout-4consecutive": {
-    "kind": "signal",
-    "domain": "trading",
-    "version": "1.0.0",
-    "edges_count": 3
+  "@a5l/skill-triple-backup-standard": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-orchestrator-engine": {
+    "kind": "tool",
+    "domain": "a5l-core",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-private-banker-stock": {
+    "kind": "tool",
+    "domain": "investment-analysis",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-hermes": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-REPORT-MANAGER": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-goal-monitor": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-low-altitude": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 48
+  },
+  "@a5l/skill-unified-memory-system": {
+    "kind": "memory",
+    "domain": "memory-system",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-industry-research": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-claw-daily-sync": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 12
+  },
+  "@a5l/skill-stock-five-steps": {
+    "kind": "tool",
+    "domain": "investment-analysis",
+    "version": "2.1.0",
+    "edges_count": 7
+  },
+  "@a5l/skill-memory-palace": {
+    "kind": "memory",
+    "domain": "memory-system",
+    "version": "2.1.0",
+    "edges_count": 6
+  },
+  "@a5l/skill-buffett-value-investing": {
+    "kind": "tool",
+    "domain": "investment-analysis",
+    "version": "2.1.0",
+    "edges_count": 9
+  },
+  "@a5l/skill-claude-core": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 49
+  },
+  "@a5l/skill-daily-report-template": {
+    "kind": "tool",
+    "domain": "ai-industry",
+    "version": "2.1.0",
+    "edges_count": 17
+  },
+  "@a5l/skill-catalyst-monitor-auto": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 50
+  },
+  "@a5l/skill-unified-framework": {
+    "kind": "tool",
+    "domain": "general",
+    "version": "2.1.0",
+    "edges_count": 51
   }
 }

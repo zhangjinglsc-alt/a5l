@@ -3,7 +3,7 @@
   "kind": "tool",
   "version": "2.1.0",
   "domain": "trading",
-  "created_at": "2026-05-11T01:23:32.884588",
+  "created_at": "2026-05-20T08:03:57.750263",
   "edges": {
     "requires": [
       "@a5l/skill-stock-data",
@@ -17,7 +17,13 @@
     "validates_with": [],
     "contradicts": [],
     "related": [],
-    "derived_from": []
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": []
   },
   "content": {
     "name": "unified-backtest-engine",

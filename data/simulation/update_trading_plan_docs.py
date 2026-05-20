@@ -29,7 +29,7 @@ class TradingPlanDocumentUpdater:
     """交易计划文档自动更新器 (架构整改后版本)"""
     
     def __init__(self):
-        self.markets = ['CN', 'HK', 'US']
+        self.markets = ['CN', 'US']
         self.base_path = '/workspace/projects/workspace/data/simulation'
         # 使用统一数据源管理器 (多API互为保障)
         self.data_manager = UnifiedDataSourceManager(enable_cache=True, cache_duration=300)

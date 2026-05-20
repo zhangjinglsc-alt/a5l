@@ -260,6 +260,105 @@
         "historical_accuracy": 0.72
       },
       "updated_at": "2026-05-13T15:16:19.987942"
+    },
+    {
+      "date": "2026-05-19",
+      "market_data": {
+        "date": "2026-05-19",
+        "timestamp": "2026-05-19T15:15:29.024420",
+        "limit_up": 90,
+        "limit_down": 8,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-05-19",
+        "timestamp": "2026-05-19T15:15:30.155343",
+        "model_loaded": true,
+        "today_signal": {},
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 90,
+          "limit_down": 8
+        },
+        "accuracy": 0.65,
+        "validation_result": "unknown",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-05-19T15:15:30.157967"
+    },
+    {
+      "date": "2026-05-20",
+      "market_data": {
+        "date": "2026-05-20",
+        "timestamp": "2026-05-20T15:15:37.869698",
+        "limit_up": 61,
+        "limit_down": 22,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "very_bearish"
+      },
+      "ml_validation": {
+        "date": "2026-05-20",
+        "timestamp": "2026-05-20T15:15:39.019690",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-05-20T09:15:23.289345",
+          "data": {
+            "sentiment": {
+              "limit_up": 81,
+              "limit_down": 49,
+              "up_count": 1606,
+              "down_count": 1757,
+              "seal_rate": 100,
+              "intensity": 77
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 40
+              },
+              {
+                "level": 2,
+                "count": 24
+              },
+              {
+                "level": 3,
+                "count": 11
+              },
+              {
+                "level": 4,
+                "count": 2
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "very_bearish",
+          "limit_up": 61,
+          "limit_down": 22
+        },
+        "accuracy": 0.4,
+        "validation_result": "incorrect",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-05-20T15:15:39.025716"
     }
   ]
 }

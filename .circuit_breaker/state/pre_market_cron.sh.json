@@ -1,0 +1,8 @@
+{
+  "task_name": "pre_market_cron.sh",
+  "status": "normal",
+  "failure_count": 0,
+  "last_failure_time": null,
+  "fuse_triggered_time": null,
+  "failures": []
+}

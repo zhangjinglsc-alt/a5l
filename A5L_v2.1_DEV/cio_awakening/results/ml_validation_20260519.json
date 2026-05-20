@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-19",
+  "timestamp": "2026-05-19T15:15:30.155343",
+  "model_loaded": true,
+  "today_signal": {},
+  "market_actual": {
+    "sentiment": "neutral",
+    "limit_up": 90,
+    "limit_down": 8
+  },
+  "accuracy": 0.65,
+  "validation_result": "unknown",
+  "historical_accuracy": 0.72
+}

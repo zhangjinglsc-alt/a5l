@@ -24,7 +24,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.873419",
+      "created_at": "2026-05-20T08:03:57.740912",
       "edges": {
         "requires": [],
         "enhances": [
@@ -81,7 +81,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "exa-web-search",
@@ -99,7 +105,7 @@
       "kind": "risk-control",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.873742",
+      "created_at": "2026-05-20T08:03:57.741306",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -122,7 +128,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "guardrails-system",
@@ -136,7 +148,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.874620",
+      "created_at": "2026-05-20T08:03:57.742171",
       "edges": {
         "requires": [
           "@a5l/skill-backtest-engine",
@@ -156,7 +168,13 @@
           "@a5l/skill-stock-five-steps",
           "@a5l/skill-buffett-value-investing"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "factor-investing",
@@ -176,7 +194,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "memory-system",
-      "created_at": "2026-05-11T01:23:32.874950",
+      "created_at": "2026-05-20T08:03:57.742470",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace"
@@ -192,7 +210,13 @@
           "@a5l/skill-unified-memory-system",
           "@a5l/skill-memory-palace"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "memory-dreaming",
@@ -212,7 +236,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.875623",
+      "created_at": "2026-05-20T08:03:57.742745",
       "edges": {
         "requires": [],
         "enhances": [
@@ -232,7 +256,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "embodied-ai",
@@ -252,7 +282,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.876054",
+      "created_at": "2026-05-20T08:03:57.743144",
       "edges": {
         "requires": [],
         "enhances": [
@@ -309,7 +339,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "unified-news-aggregator",
@@ -328,7 +364,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.876458",
+      "created_at": "2026-05-20T08:03:57.743460",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -385,7 +421,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "claw-self-evolution-core",
@@ -405,7 +447,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.876853",
+      "created_at": "2026-05-20T08:03:57.743780",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis",
@@ -465,7 +507,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "knowledge-graph",
@@ -479,7 +527,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.877450",
+      "created_at": "2026-05-20T08:03:57.744330",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace"
@@ -501,7 +549,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "ai-llm",
@@ -520,7 +574,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.877807",
+      "created_at": "2026-05-20T08:03:57.744631",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -584,7 +638,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "ARCHITECT-5L",
@@ -598,7 +658,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.878773",
+      "created_at": "2026-05-20T08:03:57.745500",
       "edges": {
         "requires": [],
         "enhances": [
@@ -655,7 +715,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "beancount-skill",
@@ -674,7 +740,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.879253",
+      "created_at": "2026-05-20T08:03:57.745813",
       "edges": {
         "requires": [
           "@a5l/skill-backtest-engine"
@@ -734,7 +800,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "track_validation_metrics",
@@ -752,7 +824,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.879669",
+      "created_at": "2026-05-20T08:03:57.746178",
       "edges": {
         "requires": [],
         "enhances": [
@@ -772,7 +844,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "nowait-reasoning-optimizer",
@@ -790,7 +868,7 @@
       "kind": "analysis",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.880087",
+      "created_at": "2026-05-20T08:03:57.746445",
       "edges": {
         "requires": [],
         "enhances": [
@@ -847,7 +925,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "technical-analysis",
@@ -865,7 +949,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.880457",
+      "created_at": "2026-05-20T08:03:57.746764",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -922,7 +1006,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "finceptterminal",
@@ -936,7 +1026,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "memory-system",
-      "created_at": "2026-05-11T01:23:32.880715",
+      "created_at": "2026-05-20T08:03:57.747087",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -953,7 +1043,13 @@
           "@a5l/skill-unified-memory-system",
           "@a5l/skill-memory-palace"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "memory",
@@ -972,7 +1068,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.880964",
+      "created_at": "2026-05-20T08:03:57.747385",
       "edges": {
         "requires": [],
         "enhances": [
@@ -1029,7 +1125,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "stoic-wealth-philosophy",
@@ -1049,7 +1151,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.881478",
+      "created_at": "2026-05-20T08:03:57.747679",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -1109,7 +1211,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "tavily",
@@ -1123,7 +1231,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.882317",
+      "created_at": "2026-05-20T08:03:57.748440",
       "edges": {
         "requires": [],
         "enhances": [
@@ -1180,7 +1288,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "financial-calculator",
@@ -1199,7 +1313,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.882713",
+      "created_at": "2026-05-20T08:03:57.748746",
       "edges": {
         "requires": [],
         "enhances": [
@@ -1256,7 +1370,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "healthcheck",
@@ -1276,7 +1396,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.883136",
+      "created_at": "2026-05-20T08:03:57.749183",
       "edges": {
         "requires": [],
         "enhances": [
@@ -1333,7 +1453,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "node-connect",
@@ -1353,7 +1479,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.883619",
+      "created_at": "2026-05-20T08:03:57.749491",
       "edges": {
         "requires": [
           "@a5l/skill-knowledge-graph"
@@ -1412,7 +1538,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "karpathy-wiki",
@@ -1426,7 +1558,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.884240",
+      "created_at": "2026-05-20T08:03:57.749947",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace"
@@ -1448,7 +1580,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "storage",
@@ -1468,7 +1606,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "trading",
-      "created_at": "2026-05-11T01:23:32.884588",
+      "created_at": "2026-05-20T08:03:57.750263",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -1482,7 +1620,13 @@
         "validates_with": [],
         "contradicts": [],
         "related": [],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "unified-backtest-engine",
@@ -1500,7 +1644,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.884994",
+      "created_at": "2026-05-20T08:03:57.750530",
       "edges": {
         "requires": [],
         "enhances": [],
@@ -1555,7 +1699,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "agent-browser",
@@ -1575,7 +1725,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.885356",
+      "created_at": "2026-05-20T08:03:57.750835",
       "edges": {
         "requires": [
           "@a5l/skill-backtest-engine",
@@ -1636,7 +1786,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "codex",
@@ -1650,7 +1806,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.886179",
+      "created_at": "2026-05-20T08:03:57.751468",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis",
@@ -1711,7 +1867,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "reflection-optimizer",
@@ -1725,7 +1887,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.886832",
+      "created_at": "2026-05-20T08:03:57.752043",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis"
@@ -1784,7 +1946,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "catalyst-tier-framework",
@@ -1798,7 +1966,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.887443",
+      "created_at": "2026-05-20T08:03:57.752543",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -1817,7 +1985,13 @@
           "@a5l/skill-stock-five-steps",
           "@a5l/skill-buffett-value-investing"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "unified-stock-price",
@@ -1837,7 +2011,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.887779",
+      "created_at": "2026-05-20T08:03:57.752826",
       "edges": {
         "requires": [
           "@a5l/skill-factor-investing"
@@ -1855,7 +2029,13 @@
           "@a5l/skill-stock-five-steps",
           "@a5l/skill-buffett-value-investing"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "fx-factor-monitor",
@@ -1874,7 +2054,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.888181",
+      "created_at": "2026-05-20T08:03:57.753125",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -1935,7 +2115,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "resilience-recovery",
@@ -1949,7 +2135,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.888944",
+      "created_at": "2026-05-20T08:03:57.753803",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -2012,7 +2198,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "KNOWLEDGE-GUARDIAN",
@@ -2026,7 +2218,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.889523",
+      "created_at": "2026-05-20T08:03:57.754414",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -2087,7 +2279,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "planner",
@@ -2101,7 +2299,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "integration",
-      "created_at": "2026-05-11T01:23:32.890225",
+      "created_at": "2026-05-20T08:03:57.754942",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis",
@@ -2118,7 +2316,13 @@
         "related": [
           "@a5l/skill-message"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "kw-feishu-integration",
@@ -2132,7 +2336,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.890749",
+      "created_at": "2026-05-20T08:03:57.755389",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -2193,7 +2397,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "wiki-system",
@@ -2207,7 +2417,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.891552",
+      "created_at": "2026-05-20T08:03:57.756075",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -2269,7 +2479,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "langzhu-wave-predictor",
@@ -2283,7 +2499,7 @@
       "kind": "data",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.892109",
+      "created_at": "2026-05-20T08:03:57.756622",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api"
@@ -2340,7 +2556,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "report-data-integrity",
@@ -2359,7 +2581,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.892931",
+      "created_at": "2026-05-20T08:03:57.756928",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -2418,7 +2640,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "auto-briefing",
@@ -2436,7 +2664,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.893266",
+      "created_at": "2026-05-20T08:03:57.757255",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -2497,7 +2725,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "a2a-protocol",
@@ -2511,7 +2745,7 @@
       "kind": "analysis",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.894027",
+      "created_at": "2026-05-20T08:03:57.757938",
       "edges": {
         "requires": [
           "@a5l/skill-backtest-engine",
@@ -2573,7 +2807,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "quant_analysis",
@@ -2592,7 +2832,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "memory-system",
-      "created_at": "2026-05-11T01:23:32.894351",
+      "created_at": "2026-05-20T08:03:57.758316",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis",
@@ -2609,7 +2849,13 @@
           "@a5l/skill-unified-memory-system",
           "@a5l/skill-memory-palace"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "memory-lacedb-setup",
@@ -2627,7 +2873,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.894582",
+      "created_at": "2026-05-20T08:03:57.758582",
       "edges": {
         "requires": [],
         "enhances": [
@@ -2684,7 +2930,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "coze-web-search",
@@ -2703,7 +2955,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.894817",
+      "created_at": "2026-05-20T08:03:57.758874",
       "edges": {
         "requires": [],
         "enhances": [
@@ -2760,7 +3012,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "material",
@@ -2780,7 +3038,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.897134",
+      "created_at": "2026-05-20T08:03:57.759217",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -2839,7 +3097,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "yangguan-daodao",
@@ -2859,7 +3123,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.897550",
+      "created_at": "2026-05-20T08:03:57.759637",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -2924,7 +3188,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "ARCHITECT-5L-SUPER",
@@ -2938,7 +3208,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.898693",
+      "created_at": "2026-05-20T08:03:57.760819",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -2997,7 +3267,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "dajitui-support-resistance",
@@ -3011,7 +3287,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.901990",
+      "created_at": "2026-05-20T08:03:57.761580",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3068,7 +3344,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "critical-thinking-logical-reasoning",
@@ -3086,7 +3368,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.903050",
+      "created_at": "2026-05-20T08:03:57.761893",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3106,7 +3388,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "liquid-cooling",
@@ -3126,7 +3414,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.903628",
+      "created_at": "2026-05-20T08:03:57.762201",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3183,7 +3471,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "test-measurement",
@@ -3202,7 +3496,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.903933",
+      "created_at": "2026-05-20T08:03:57.762518",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -3261,7 +3555,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "sector-etf-monitor",
@@ -3280,7 +3580,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.904212",
+      "created_at": "2026-05-20T08:03:57.762832",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -3342,7 +3642,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "claude-code",
@@ -3356,7 +3662,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.904663",
+      "created_at": "2026-05-20T08:03:57.763459",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3376,7 +3682,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "ai-apps",
@@ -3396,7 +3708,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.904921",
+      "created_at": "2026-05-20T08:03:57.763753",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3453,7 +3765,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "humanizer-zh",
@@ -3467,7 +3785,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.908199",
+      "created_at": "2026-05-20T08:03:57.764321",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -3492,7 +3810,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "kaipanla-api",
@@ -3506,7 +3830,7 @@
       "kind": "analysis",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.908884",
+      "created_at": "2026-05-20T08:03:57.765154",
       "edges": {
         "requires": [],
         "enhances": [
@@ -3563,7 +3887,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "reading-analysis",
@@ -3583,7 +3913,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.909220",
+      "created_at": "2026-05-20T08:03:57.765464",
       "edges": {
         "requires": [
           "@a5l/skill-factor-investing"
@@ -3606,7 +3936,13 @@
           "@a5l/skill-claw-daily-sync",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "ai-manufacturing",
@@ -3625,7 +3961,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "integration",
-      "created_at": "2026-05-11T01:23:32.909455",
+      "created_at": "2026-05-20T08:03:57.765744",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api",
@@ -3637,7 +3973,13 @@
         "related": [
           "@a5l/skill-kw-feishu-integration"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "message",
@@ -3657,7 +3999,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.909790",
+      "created_at": "2026-05-20T08:03:57.766030",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace",
@@ -3717,7 +4059,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "triple-backup-standard",
@@ -3731,7 +4079,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "a5l-core",
-      "created_at": "2026-05-11T01:23:32.910197",
+      "created_at": "2026-05-20T08:03:57.766469",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -3747,7 +4095,13 @@
         "validates_with": [],
         "contradicts": [],
         "related": [],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "orchestrator-engine",
@@ -3761,7 +4115,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.910626",
+      "created_at": "2026-05-20T08:03:57.766933",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data"
@@ -3778,7 +4132,13 @@
           "@a5l/skill-stock-five-steps",
           "@a5l/skill-buffett-value-investing"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "private-banker-stock",
@@ -3796,7 +4156,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.910860",
+      "created_at": "2026-05-20T08:03:57.767234",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api",
@@ -3854,7 +4214,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "hermes",
@@ -3868,7 +4234,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.911622",
+      "created_at": "2026-05-20T08:03:57.767689",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api"
@@ -3927,7 +4293,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "REPORT-MANAGER",
@@ -3941,7 +4313,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.912241",
+      "created_at": "2026-05-20T08:03:57.768134",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace",
@@ -4001,7 +4373,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "goal-monitor",
@@ -4015,7 +4393,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.912941",
+      "created_at": "2026-05-20T08:03:57.768717",
       "edges": {
         "requires": [],
         "enhances": [
@@ -4072,7 +4450,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "low-altitude",
@@ -4092,7 +4476,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "memory-system",
-      "created_at": "2026-05-11T01:23:32.913366",
+      "created_at": "2026-05-20T08:03:57.769048",
       "edges": {
         "requires": [
           "@a5l/skill-memory-palace",
@@ -4109,7 +4493,13 @@
           "@a5l/skill-memory-lacedb-setup",
           "@a5l/skill-memory-palace"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "unified-memory-system",
@@ -4127,7 +4517,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.913731",
+      "created_at": "2026-05-20T08:03:57.769342",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis",
@@ -4187,7 +4577,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "industry-research",
@@ -4201,7 +4597,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.914899",
+      "created_at": "2026-05-20T08:03:57.770374",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api"
@@ -4223,7 +4619,13 @@
           "@a5l/skill-ai-manufacturing",
           "@a5l/skill-daily-report-template"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "claw-daily-sync",
@@ -4243,7 +4645,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.915280",
+      "created_at": "2026-05-20T08:03:57.770762",
       "edges": {
         "requires": [
           "@a5l/skill-fundamental-analysis"
@@ -4260,7 +4662,13 @@
           "@a5l/skill-private-banker-stock",
           "@a5l/skill-buffett-value-investing"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "stock-five-steps",
@@ -4278,7 +4686,7 @@
       "kind": "memory",
       "version": "2.1.0",
       "domain": "memory-system",
-      "created_at": "2026-05-11T01:23:32.915664",
+      "created_at": "2026-05-20T08:03:57.771092",
       "edges": {
         "requires": [
           "@a5l/skill-technical-analysis"
@@ -4294,7 +4702,13 @@
           "@a5l/skill-memory-lacedb-setup",
           "@a5l/skill-unified-memory-system"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "memory-palace",
@@ -4308,7 +4722,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "investment-analysis",
-      "created_at": "2026-05-11T01:23:32.916148",
+      "created_at": "2026-05-20T08:03:57.771468",
       "edges": {
         "requires": [
           "@a5l/skill-factor-investing",
@@ -4327,7 +4741,13 @@
           "@a5l/skill-private-banker-stock",
           "@a5l/skill-stock-five-steps"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "buffett-value-investing",
@@ -4345,7 +4765,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.916523",
+      "created_at": "2026-05-20T08:03:57.771748",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api",
@@ -4403,7 +4823,13 @@
           "@a5l/skill-catalyst-monitor-auto",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "claude-core",
@@ -4417,7 +4843,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "ai-industry",
-      "created_at": "2026-05-11T01:23:32.917081",
+      "created_at": "2026-05-20T08:03:57.772213",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -4444,7 +4870,13 @@
           "@a5l/skill-ai-manufacturing",
           "@a5l/skill-claw-daily-sync"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "daily-report-template",
@@ -4458,7 +4890,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.917612",
+      "created_at": "2026-05-20T08:03:57.772655",
       "edges": {
         "requires": [
           "@a5l/skill-feishu-api",
@@ -4518,7 +4950,13 @@
           "@a5l/skill-claude-core",
           "@a5l/skill-unified-framework"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "catalyst-monitor-auto",
@@ -4532,7 +4970,7 @@
       "kind": "tool",
       "version": "2.1.0",
       "domain": "general",
-      "created_at": "2026-05-11T01:23:32.918191",
+      "created_at": "2026-05-20T08:03:57.773146",
       "edges": {
         "requires": [
           "@a5l/skill-stock-data",
@@ -4593,7 +5031,13 @@
           "@a5l/skill-claude-core",
           "@a5l/skill-catalyst-monitor-auto"
         ],
-        "derived_from": []
+        "derived_from": [],
+        "contributed_by": [],
+        "contributes_to": [],
+        "triggered_by": [],
+        "triggers": [],
+        "has_risk": [],
+        "collaborates_with": []
       },
       "content": {
         "name": "unified-framework",

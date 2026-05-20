@@ -1,0 +1,50 @@
+# Evolution Daemon 优化版定时任务
+# 系统优化完成时间: 2026-05-01 00:20
+
+# === 核心任务 ===
+# 每日备份 (02:00)
+0 2 * * * /bin/bash /workspace/projects/workspace/backup.sh >> /workspace/projects/workspace/.evolution/backup.log 2>&1
+
+# 飞书同步 (03:00)
+0 3 * * * /bin/bash /workspace/projects/workspace/TOOLS/feishu_persistence.py >> /workspace/projects/workspace/.evolution/feishu_sync.log 2>&1
+
+# 复盘分析 (09:30, 工作日)
+30 9 * * * 1-5 /bin/bash /workspace/projects/workspace/TOOLS/review_linker.py >> /workspace/projects/workspace/.evolution/review_log.log 2>&1
+
+# === 维护任务 ===
+# 每4小时内存管理 (00:00, 04:00, 08:00, 12:00, 16:00, 20:00)
+0 */4 * * * /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto >> /workspace/projects/workspace/.evolution/memory_manager.log 2>&1
+
+# 每日系统健康检查 (06:00)
+0 6 * * * /bin/bash /workspace/projects/workspace/TOOLS/system_health_check.sh >> /workspace/projects/workspace/.evolution/health_check.log 2>&1
+
+# 会话结束存档 (23:50)
+50 23 * * * /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh session-end >> /workspace/projects/workspace/.evolution/memory_manager.log 2>&1
+
+# === 交易任务 ===
+# A股早盘 (09:30, 工作日)
+0 10 * * * 1-5 bash /workspace/projects/workspace/scripts/local_trading.sh cn >> /workspace/projects/workspace/logs/local_simulation/cn_$(date +\%Y\%m\%d).log 2>&1
+
+# 港股早盘 (09:30, 工作日)
+30 9 * * * 1-5 bash /workspace/projects/workspace/scripts/local_trading.sh hk >> /workspace/projects/workspace/logs/local_simulation/hk_$(date +\%Y\%m\%d).log 2>&1
+
+# A股午盘 (14:30, 工作日)
+30 14 * * * 1-5 bash /workspace/projects/workspace/scripts/local_trading.sh cn >> /workspace/projects/workspace/logs/local_simulation/afternoon_$(date +\%Y\%m\%d).log 2>&1
+
+# 美股交易 (22:00, 工作日)
+0 22 * * * 1-5 bash /workspace/projects/workspace/scripts/local_trading.sh us >> /workspace/projects/workspace/logs/local_simulation/us_$(date +\%Y\%m\%d).log 2>&1
+
+# 周末报告 (10:00, 周日)
+0 10 * * 0 bash /workspace/projects/workspace/scripts/local_trading.sh report >> /workspace/projects/workspace/logs/local_simulation/report_$(date +\%Y\%m\%d).log 2>&1
+
+# 周末验证 (14:00, 周六)
+0 14 * * 6 bash /workspace/projects/workspace/scripts/weekly_validation.sh >> /workspace/projects/workspace/logs/weekly_valid_$(date +\%Y\%m\%d).log 2>&1
+
+# 数据收集 (23:30)
+30 23 * * * bash /workspace/projects/workspace/scripts/collect_trading_data.sh >> /workspace/projects/workspace/logs/trading/data_collector_$(date +\%Y\%m\%d).log 2>&1
+
+# === 自动化任务 ===
+# 收盘更新 (20:00, 工作日)
+0 15 20 * * 1-5 bash /workspace/projects/workspace/scripts/auto_close_update.sh >> /workspace/projects/workspace/logs/auto_close_$(date +\%Y\%m\%d).log 2>&1
+*/15 * * * * cd /workspace/projects/workspace && python3 data/simulation/update_trading_plan_docs.py >> /workspace/projects/workspace/logs/simulation/update_20260506.log 2>&1
+15 9 * * 1-5 /workspace/projects/workspace/A5L_v2.1_DEV/cio_awakening/scripts/pre_market_cron.sh

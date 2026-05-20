@@ -3,7 +3,7 @@
   "kind": "tool",
   "version": "2.1.0",
   "domain": "general",
-  "created_at": "2026-05-11T01:23:32.876458",
+  "created_at": "2026-05-20T08:03:57.743460",
   "edges": {
     "requires": [
       "@a5l/skill-technical-analysis"
@@ -60,7 +60,13 @@
       "@a5l/skill-catalyst-monitor-auto",
       "@a5l/skill-unified-framework"
     ],
-    "derived_from": []
+    "derived_from": [],
+    "contributed_by": [],
+    "contributes_to": [],
+    "triggered_by": [],
+    "triggers": [],
+    "has_risk": [],
+    "collaborates_with": []
   },
   "content": {
     "name": "claw-self-evolution-core",

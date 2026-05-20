@@ -1,0 +1,13 @@
+{
+  "task_name": "feishu_persistence.py",
+  "status": "normal",
+  "failure_count": 1,
+  "last_failure_time": "2026-05-20T03:00:01.214360",
+  "fuse_triggered_time": null,
+  "failures": [
+    {
+      "time": "2026-05-20T03:00:01.214360",
+      "error": "命令执行失败，退出码: 127, 耗时: 0s"
+    }
+  ]
+}

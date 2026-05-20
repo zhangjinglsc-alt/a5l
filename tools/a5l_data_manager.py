@@ -31,7 +31,20 @@ class A5LDataManager:
     DATA_SOURCES = ['tushare', 'akshare', 'yahoo', 'cache']
     
     def __init__(self):
-        self.tushare_token = os.getenv('TUSHARE_TOKEN', 'c8219c203eb9b321244ca3a4c577d7b6e34621035ea8f940a332ed3c')
+        # 优先从配置文件读取token，其次环境变量，更稳定可靠
+        try:
+            import json
+            from pathlib import Path
+            config_path = Path("/workspace/projects/workspace/config/tushare_config.json")
+            if config_path.exists():
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+                    self.tushare_token = config.get('token', os.getenv('TUSHARE_TOKEN', 'c8219c203eb9b321244ca3a4c577d7b6e34621035ea8f940a332ed3c'))
+            else:
+                self.tushare_token = os.getenv('TUSHARE_TOKEN', 'c8219c203eb9b321244ca3a4c577d7b6e34621035ea8f940a332ed3c')
+        except Exception as e:
+            logger.warning(f"读取Tushare配置文件失败，使用环境变量: {e}")
+            self.tushare_token = os.getenv('TUSHARE_TOKEN', 'c8219c203eb9b321244ca3a4c577d7b6e34621035ea8f940a332ed3c')
         self._init_data_sources()
         self.cache = {}  # 内存缓存
         
@@ -190,6 +203,11 @@ class A5LDataManager:
             return None
         
         ts_code = self._convert_to_tushare_code(symbol)
+        # Tushare接口要求日期格式为YYYYMMDD，去掉横杠
+        if start:
+            start = start.replace('-', '')
+        if end:
+            end = end.replace('-', '')
         df = self.tushare_api.daily(ts_code=ts_code, start_date=start, end_date=end)
         return df if len(df) > 0 else None
     

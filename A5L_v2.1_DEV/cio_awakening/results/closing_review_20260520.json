@@ -1,0 +1,35 @@
+{
+  "report_type": "CIO收盘复盘报告",
+  "version": "2.0",
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T15:15:39.026855",
+  "market_summary": {
+    "sentiment": "very_bearish",
+    "sentiment_display": "⚠️",
+    "limit_up": 61,
+    "limit_down": 22,
+    "up_count": 0,
+    "down_count": 0,
+    "total_volume": 0,
+    "shanghai_index": {
+      "close": 0,
+      "change_pct": 0
+    },
+    "top_sectors": []
+  },
+  "ml_validation": {
+    "accuracy": 0.4,
+    "result": "incorrect",
+    "model_loaded": true
+  },
+  "key_insights": [
+    "📈 涨停家数61家，市场情绪偏乐观",
+    "⚠️ 跌停家数22家，注意风险控制",
+    "⚡ ML预测准确率仅40%，建议重新校准模型"
+  ],
+  "next_day_forecast": {
+    "trend": "继续调整",
+    "probability": 0.7,
+    "suggestion": "严格控制风险，空仓观望"
+  }
+}

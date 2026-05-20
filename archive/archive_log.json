@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-05-19T15:45:45.118421",
+    "archive_dir": "/workspace/projects/workspace/archive/2026-05-19",
+    "export_files": [
+      "/workspace/projects/workspace/feishu_export/SOUL-2026-05-19.md",
+      "/workspace/projects/workspace/feishu_export/SKILL-2026-05-19.md",
+      "/workspace/projects/workspace/feishu_export/MEMORY-2026-05-19.md",
+      "/workspace/projects/workspace/feishu_export/GOAL-2026-05-19.md"
+    ],
+    "status": "success"
+  }
+]
