@@ -1,0 +1,73 @@
+{
+  "msg_type": "interactive",
+  "card": {
+    "config": {
+      "wide_screen_mode": true
+    },
+    "header": {
+      "title": {
+        "tag": "plain_text",
+        "content": "🌙 CIO收盘复盘 | 2026-05-21"
+      },
+      "template": "blue"
+    },
+    "elements": [
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**📊 市场概况**\n情绪: 📉 bearish\n涨停: **34** 家 | 跌停: 25 家\n上涨: 695 家 | 下跌: 4773 家\n成交: 35072.8 亿元"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🔥 热点板块**\n"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🧠 ML验证**\n今日准确率: **40%**\n验证结果: incorrect"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**💡 关键洞察**\n⚠️ 跌停家数25家，注意风险控制\n🔴 涨跌比0.1:1，空头占优\n⚡ ML预测准确率仅40%，建议重新校准模型"
+        }
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**🔮 明日展望**\n趋势: 震荡偏弱 (概率: 60%)\n建议: 降低仓位，防御为主"
+        }
+      },
+      {
+        "tag": "note",
+        "elements": [
+          {
+            "tag": "plain_text",
+            "content": "⏰ 生成时间: 15:16:51 | CIO觉醒系统 v2.0"
+          }
+        ]
+      }
+    ]
+  }
+}

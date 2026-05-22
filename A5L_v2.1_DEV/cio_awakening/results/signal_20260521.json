@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-05-21T09:15:19.162030",
+  "data": {
+    "ladder": [
+      {
+        "level": 1,
+        "count": 0
+      },
+      {
+        "level": 2,
+        "count": 0
+      },
+      {
+        "level": 3,
+        "count": 0
+      },
+      {
+        "level": 4,
+        "count": 0
+      }
+    ],
+    "hot_stocks": []
+  }
+}

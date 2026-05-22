@@ -151,3 +151,42 @@
 执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
 /bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
 [2026-05-20T16:00:01.727639] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-20T20:00:01.999318] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_session_end, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh session-end
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-20T23:50:01.251905] [memory_manager_session_end] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T00:00:01.330353] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T04:00:01.723033] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T08:00:01.081107] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T12:00:02.017668] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T16:00:01.275809] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T20:00:01.533164] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_session_end, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh session-end
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-21T23:50:01.786410] [memory_manager_session_end] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-22T00:00:01.864787] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-22T04:00:01.253179] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-22T08:00:01.608590] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: memory_manager_auto, 命令: /bin/bash /workspace/projects/workspace/.evolution/memory_manager.sh auto
+/bin/bash: /workspace/projects/workspace/.evolution/memory_manager.sh: No such file or directory
+[2026-05-22T12:00:01.496286] [memory_manager_auto] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
