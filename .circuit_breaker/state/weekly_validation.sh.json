@@ -1,12 +1,12 @@
 {
-  "task_name": "memory_manager_auto",
+  "task_name": "weekly_validation.sh",
   "status": "normal",
   "failure_count": 1,
-  "last_failure_time": "2026-05-23T16:00:01.715804",
+  "last_failure_time": "2026-05-23T14:00:01.550065",
   "fuse_triggered_time": null,
   "failures": [
     {
-      "time": "2026-05-23T16:00:01.715804",
+      "time": "2026-05-23T14:00:01.550065",
       "error": "命令执行失败，退出码: 127, 耗时: 0s"
     }
   ]
