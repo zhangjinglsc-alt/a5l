@@ -188,13 +188,35 @@ class A5LDataManager:
         """从 Tushare 获取指数数据"""
         if self.tushare_api is None:
             return None
-        
+
         import tushare as ts
-        
+
         # 转换代码格式
         ts_code = self._convert_to_tushare_code(symbol)
-        
+
+        # Tushare接口要求日期格式为YYYYMMDD，去掉横杠
+        if start:
+            start = start.replace('-', '')
+        if end:
+            end = end.replace('-', '')
+
         df = self.tushare_api.index_daily(ts_code=ts_code, start_date=start, end_date=end)
+        if df is not None and len(df) > 0:
+            # 转换列名为中文，保持与其他数据源兼容
+            column_mapping = {
+                'trade_date': '日期',
+                'ts_code': '代码',
+                'close': '收盘',
+                'open': '开盘',
+                'high': '最高',
+                'low': '最低',
+                'vol': '成交量',
+                'amount': '成交额',
+                'pre_close': '昨收',
+                'change': '涨跌额',
+                'pct_chg': '涨跌幅'
+            }
+            df = df.rename(columns=column_mapping)
         return df if len(df) > 0 else None
     
     def _get_from_tushare_stock(self, symbol: str, start: str, end: str) -> Optional[Any]:

@@ -163,7 +163,7 @@ class LangzhuWaveAnalyzer:
         """
         执行浪主波浪理论分析（增强版）
         """
-        if df_daily.empty:
+        if df_daily is None or df_daily.empty:
             return {"error": "无数据"}
         
         latest = df_daily.iloc[-1]

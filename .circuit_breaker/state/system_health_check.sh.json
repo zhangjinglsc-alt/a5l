@@ -2,11 +2,11 @@
   "task_name": "system_health_check.sh",
   "status": "normal",
   "failure_count": 1,
-  "last_failure_time": "2026-05-23T06:00:01.918308",
+  "last_failure_time": "2026-05-25T06:00:01.894125",
   "fuse_triggered_time": null,
   "failures": [
     {
-      "time": "2026-05-23T06:00:01.918308",
+      "time": "2026-05-25T06:00:01.894125",
       "error": "命令执行失败，退出码: 127, 耗时: 0s"
     }
   ]
