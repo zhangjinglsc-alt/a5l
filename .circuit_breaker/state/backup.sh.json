@@ -2,11 +2,11 @@
   "task_name": "backup.sh",
   "status": "normal",
   "failure_count": 1,
-  "last_failure_time": "2026-05-25T02:00:01.505297",
+  "last_failure_time": "2026-05-27T02:00:01.512491",
   "fuse_triggered_time": null,
   "failures": [
     {
-      "time": "2026-05-25T02:00:01.505297",
+      "time": "2026-05-27T02:00:01.512491",
       "error": "命令执行失败，退出码: 127, 耗时: 0s"
     }
   ]

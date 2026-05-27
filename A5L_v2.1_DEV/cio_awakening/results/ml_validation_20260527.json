@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-27",
+  "timestamp": "2026-05-27T15:15:37.345315",
+  "model_loaded": true,
+  "today_signal": {
+    "timestamp": "2026-05-27T09:15:38.309079",
+    "data": {
+      "sentiment": {
+        "limit_up": 39,
+        "limit_down": 61,
+        "up_count": 1529,
+        "down_count": 1745,
+        "seal_rate": 100,
+        "intensity": 43
+      },
+      "hot_stocks": []
+    }
+  },
+  "market_actual": {
+    "sentiment": "very_bearish",
+    "limit_up": 47,
+    "limit_down": 22
+  },
+  "accuracy": 0.4,
+  "validation_result": "incorrect",
+  "historical_accuracy": 0.72
+}
