@@ -1,0 +1,53 @@
+{
+  "date": "20260528",
+  "type": "raw_data",
+  "holdings": {
+    "total_positions": 5,
+    "profitable": 0,
+    "losing": 0,
+    "neutral": 0,
+    "total_pnl": 0,
+    "stocks": [
+      {
+        "code": "601975",
+        "name": "招商南油",
+        "account": "WGB/王力/老娘合计",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      },
+      {
+        "code": "000066",
+        "name": "中国长城",
+        "account": "自有账户(核心持仓)",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      },
+      {
+        "code": "688981",
+        "name": "中芯国际",
+        "account": "老娘",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      },
+      {
+        "code": "002436",
+        "name": "兴森科技",
+        "account": "自有账户(保留观察)",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      },
+      {
+        "code": "300708",
+        "name": "聚灿光电",
+        "account": "自有账户(保留观察)",
+        "pnl": null,
+        "pnl_pct": null,
+        "status": "满仓标记"
+      }
+    ]
+  }
+}

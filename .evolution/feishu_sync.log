@@ -44,3 +44,9 @@
 执行任务: feishu_persistence.py, 命令: /bin/bash /workspace/projects/workspace/TOOLS/feishu_persistence.py
 /bin/bash: /workspace/projects/workspace/TOOLS/feishu_persistence.py: No such file or directory
 [2026-05-28T03:00:01.324901] [feishu_persistence.py] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: feishu_persistence.py, 命令: /bin/bash /workspace/projects/workspace/TOOLS/feishu_persistence.py
+/bin/bash: /workspace/projects/workspace/TOOLS/feishu_persistence.py: No such file or directory
+[2026-05-29T03:00:01.917646] [feishu_persistence.py] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: feishu_persistence.py, 命令: /bin/bash /workspace/projects/workspace/TOOLS/feishu_persistence.py
+/bin/bash: /workspace/projects/workspace/TOOLS/feishu_persistence.py: No such file or directory
+[2026-05-30T03:00:01.439897] [feishu_persistence.py] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
