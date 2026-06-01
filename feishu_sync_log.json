@@ -4020,5 +4020,650 @@
       "failed": [],
       "timestamp": "2026-05-29T23:30:16.280798"
     }
+  },
+  {
+    "date": "2026-05-30",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://www.feishu.cn/docx/KqQqdVxEbosc0rx8dJbcyDmsn6g"
+      },
+      {
+        "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+        "url": "https://www.feishu.cn/docx/KqipdkKaRoO211xhthTcZxz1nSh"
+      },
+      {
+        "file": "US-PLAN-20260528-0007.md",
+        "url": "https://www.feishu.cn/docx/R5Jzd6QNJoo1aGxfLIDcEhGCnIb"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/VOPxd0cfKoSPUfxDBlzcfsXCnBh"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://www.feishu.cn/docx/HingdJyROo4mDOxab8JcnvJUnzU"
+      },
+      {
+        "file": "US-PLAN-20260527-0005.md",
+        "url": "https://www.feishu.cn/docx/S4Z9dpOfnowNhTxvvhEcFC5TnPb"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/TCIBdAbyYo17VzxePCncnYYGnkh"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/XDQWdqDxOotDVRxkOkwcpWrHn4d"
+      },
+      {
+        "file": "US-PLAN-20260529-0009.md",
+        "url": "https://www.feishu.cn/docx/CaXEd179SomQLnxTtFucrdo9nqd"
+      },
+      {
+        "file": "US-PLAN-20260529-0012.md",
+        "url": "https://www.feishu.cn/docx/CYf4d2riJo8D68xO0t7ckUDjn2f"
+      },
+      {
+        "file": "US-PLAN-20260529-0008.md",
+        "url": "https://www.feishu.cn/docx/HR3FdvvdWo4ofBxBOrFcPfpWnRh"
+      },
+      {
+        "file": "US-PLAN-20260529-0010.md",
+        "url": "https://www.feishu.cn/docx/K3I5dHGlWornMCxXwo0cnPc1nde"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/BY1wdrRiWospISxNUCCcJCIvnAc"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://www.feishu.cn/docx/VB7tdVbCwoI8qAx24qwcXUAAn2b"
+      },
+      {
+        "file": "US-PLAN-20260527-0006.md",
+        "url": "https://www.feishu.cn/docx/XS3Md3KkUo4QdLxmadzcN32Gnyp"
+      },
+      {
+        "file": "US_TRADING_PLAN_20260506.md",
+        "url": "https://www.feishu.cn/docx/WSlpdZcQrogoJXxk9LGcunwGnjc"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/GO1Zd3vkLoAnK2xMvJ6cgGulnIc"
+      },
+      {
+        "file": "US-PLAN-20260508-001.md",
+        "url": "https://www.feishu.cn/docx/ENa8dYAlCoyVkKxsSEucm2tEnVg"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/BqWMd9jTioJSpLxjtRscDDsQnBh"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/KO3sdWeSYodvbexSaQ1chZ5onsg"
+      },
+      {
+        "file": "US-PLAN-20260529-0011.md",
+        "url": "https://www.feishu.cn/docx/DwrSdgE1foKTcNx8Cmmc9WdSn6f"
+      },
+      {
+        "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+        "url": "https://www.feishu.cn/docx/FqkadTdx6oFLorxwJpSczG5JnQd"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-30T23:30:18.248070"
+  },
+  {
+    "date": "2026-05-30",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://www.feishu.cn/docx/V84odTxMQoaI7HxmQsDc9T3Onfe"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://www.feishu.cn/docx/Z0LGderiao6St8xfuH4cYCv6n8g"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://www.feishu.cn/docx/T83MdBRk7oe2t9x3G58cQQNcnKb"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-30T23:30:07.334959",
+    "simulation": {
+      "date": "2026-05-30",
+      "type": "simulation_trading",
+      "synced": [
+        {
+          "file": "US-PLAN-20260506-0004.md",
+          "url": "https://www.feishu.cn/docx/KqQqdVxEbosc0rx8dJbcyDmsn6g"
+        },
+        {
+          "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+          "url": "https://www.feishu.cn/docx/KqipdkKaRoO211xhthTcZxz1nSh"
+        },
+        {
+          "file": "US-PLAN-20260528-0007.md",
+          "url": "https://www.feishu.cn/docx/R5Jzd6QNJoo1aGxfLIDcEhGCnIb"
+        },
+        {
+          "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/VOPxd0cfKoSPUfxDBlzcfsXCnBh"
+        },
+        {
+          "file": "US-PLAN-20260506-0003.md",
+          "url": "https://www.feishu.cn/docx/HingdJyROo4mDOxab8JcnvJUnzU"
+        },
+        {
+          "file": "US-PLAN-20260527-0005.md",
+          "url": "https://www.feishu.cn/docx/S4Z9dpOfnowNhTxvvhEcFC5TnPb"
+        },
+        {
+          "file": "US_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/TCIBdAbyYo17VzxePCncnYYGnkh"
+        },
+        {
+          "file": "CN_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/XDQWdqDxOotDVRxkOkwcpWrHn4d"
+        },
+        {
+          "file": "US-PLAN-20260529-0009.md",
+          "url": "https://www.feishu.cn/docx/CaXEd179SomQLnxTtFucrdo9nqd"
+        },
+        {
+          "file": "US-PLAN-20260529-0012.md",
+          "url": "https://www.feishu.cn/docx/CYf4d2riJo8D68xO0t7ckUDjn2f"
+        },
+        {
+          "file": "US-PLAN-20260529-0008.md",
+          "url": "https://www.feishu.cn/docx/HR3FdvvdWo4ofBxBOrFcPfpWnRh"
+        },
+        {
+          "file": "US-PLAN-20260529-0010.md",
+          "url": "https://www.feishu.cn/docx/K3I5dHGlWornMCxXwo0cnPc1nde"
+        },
+        {
+          "file": "CN-PLAN-20260506-0001.md",
+          "url": "https://www.feishu.cn/docx/BY1wdrRiWospISxNUCCcJCIvnAc"
+        },
+        {
+          "file": "US-PLAN-20260505-001.md",
+          "url": "https://www.feishu.cn/docx/VB7tdVbCwoI8qAx24qwcXUAAn2b"
+        },
+        {
+          "file": "US-PLAN-20260527-0006.md",
+          "url": "https://www.feishu.cn/docx/XS3Md3KkUo4QdLxmadzcN32Gnyp"
+        },
+        {
+          "file": "US_TRADING_PLAN_20260506.md",
+          "url": "https://www.feishu.cn/docx/WSlpdZcQrogoJXxk9LGcunwGnjc"
+        },
+        {
+          "file": "US-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/GO1Zd3vkLoAnK2xMvJ6cgGulnIc"
+        },
+        {
+          "file": "US-PLAN-20260508-001.md",
+          "url": "https://www.feishu.cn/docx/ENa8dYAlCoyVkKxsSEucm2tEnVg"
+        },
+        {
+          "file": "CN-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/BqWMd9jTioJSpLxjtRscDDsQnBh"
+        },
+        {
+          "file": "TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/KO3sdWeSYodvbexSaQ1chZ5onsg"
+        },
+        {
+          "file": "US-PLAN-20260529-0011.md",
+          "url": "https://www.feishu.cn/docx/DwrSdgE1foKTcNx8Cmmc9WdSn6f"
+        },
+        {
+          "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+          "url": "https://www.feishu.cn/docx/FqkadTdx6oFLorxwJpSczG5JnQd"
+        }
+      ],
+      "failed": [],
+      "timestamp": "2026-05-30T23:30:18.248070"
+    }
+  },
+  {
+    "date": "2026-05-31",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://www.feishu.cn/docx/VCCUdrD5fo8x88xZG2xc2id7nqC"
+      },
+      {
+        "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+        "url": "https://www.feishu.cn/docx/AHlldfzkzolO9exIG3bcrdLpnOd"
+      },
+      {
+        "file": "US-PLAN-20260528-0007.md",
+        "url": "https://www.feishu.cn/docx/YpCLdxOcoonuEAxvgm5caBpXnMf"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/KCkIdfzrloW3VYxevadcI2tSnQg"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://www.feishu.cn/docx/Kye9djEtEoqL0oxoV2yc3NdanDc"
+      },
+      {
+        "file": "US-PLAN-20260527-0005.md",
+        "url": "https://www.feishu.cn/docx/V6T3dWvMWo5kwqxNYjIcXNTNnUh"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/Ooccd6ceaoFpSoxf2VIcjBz2nub"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/ICaodYvA8oIcImxljYkcJwULnJA"
+      },
+      {
+        "file": "US-PLAN-20260529-0009.md",
+        "url": "https://www.feishu.cn/docx/AVAadpkakoGfcKxlATPckVWunEc"
+      },
+      {
+        "file": "US-PLAN-20260529-0012.md",
+        "url": "https://www.feishu.cn/docx/W63odelQQo1iNbxIPpTc62fCnrc"
+      },
+      {
+        "file": "US-PLAN-20260529-0008.md",
+        "url": "https://www.feishu.cn/docx/CYOxdP2b9osXshxSo9DcsZ2UnGg"
+      },
+      {
+        "file": "US-PLAN-20260529-0010.md",
+        "url": "https://www.feishu.cn/docx/TTMcd8YJPoHqmfxWsXXciahpnVh"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/GLhKd8j5moPr1qxLZiCcQxb6n0f"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://www.feishu.cn/docx/JO79dKGDJoMcrSx44wncyARcnze"
+      },
+      {
+        "file": "US-PLAN-20260527-0006.md",
+        "url": "https://www.feishu.cn/docx/Ap1udx62aogleWxTCm8cPgUqnYf"
+      },
+      {
+        "file": "US_TRADING_PLAN_20260506.md",
+        "url": "https://www.feishu.cn/docx/Hh16dt2eSoRlQJxsFZBcfpxQn12"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/Kf9EdvTlcoDyaSxAcSJcykG9nIf"
+      },
+      {
+        "file": "US-PLAN-20260508-001.md",
+        "url": "https://www.feishu.cn/docx/S9LGdypJvo67bIxZSXlcVJMfniJ"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/Qdi1d6fNYot4rMxXNXdcXdUSnIg"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/Q0tpdh5pHoBCGIxpNFwcjCVqnib"
+      },
+      {
+        "file": "US-PLAN-20260529-0011.md",
+        "url": "https://www.feishu.cn/docx/FypdddequoiTj4xlGg8cBWLKnpf"
+      },
+      {
+        "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+        "url": "https://www.feishu.cn/docx/KlPTdLT6aoYRxpxPm5OcjeaCnqe"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-31T23:31:18.591143"
+  },
+  {
+    "date": "2026-05-31",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://www.feishu.cn/docx/Va7zdMBPpoxZ02xVXSgcix3ln3g"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://www.feishu.cn/docx/LwyEdTuZkoXFPdxAH1ucs5xYn3e"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://www.feishu.cn/docx/EskJdkIxhocyEPx8yzOcspf3nne"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-05-31T23:31:08.944158",
+    "simulation": {
+      "date": "2026-05-31",
+      "type": "simulation_trading",
+      "synced": [
+        {
+          "file": "US-PLAN-20260506-0004.md",
+          "url": "https://www.feishu.cn/docx/VCCUdrD5fo8x88xZG2xc2id7nqC"
+        },
+        {
+          "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+          "url": "https://www.feishu.cn/docx/AHlldfzkzolO9exIG3bcrdLpnOd"
+        },
+        {
+          "file": "US-PLAN-20260528-0007.md",
+          "url": "https://www.feishu.cn/docx/YpCLdxOcoonuEAxvgm5caBpXnMf"
+        },
+        {
+          "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/KCkIdfzrloW3VYxevadcI2tSnQg"
+        },
+        {
+          "file": "US-PLAN-20260506-0003.md",
+          "url": "https://www.feishu.cn/docx/Kye9djEtEoqL0oxoV2yc3NdanDc"
+        },
+        {
+          "file": "US-PLAN-20260527-0005.md",
+          "url": "https://www.feishu.cn/docx/V6T3dWvMWo5kwqxNYjIcXNTNnUh"
+        },
+        {
+          "file": "US_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/Ooccd6ceaoFpSoxf2VIcjBz2nub"
+        },
+        {
+          "file": "CN_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/ICaodYvA8oIcImxljYkcJwULnJA"
+        },
+        {
+          "file": "US-PLAN-20260529-0009.md",
+          "url": "https://www.feishu.cn/docx/AVAadpkakoGfcKxlATPckVWunEc"
+        },
+        {
+          "file": "US-PLAN-20260529-0012.md",
+          "url": "https://www.feishu.cn/docx/W63odelQQo1iNbxIPpTc62fCnrc"
+        },
+        {
+          "file": "US-PLAN-20260529-0008.md",
+          "url": "https://www.feishu.cn/docx/CYOxdP2b9osXshxSo9DcsZ2UnGg"
+        },
+        {
+          "file": "US-PLAN-20260529-0010.md",
+          "url": "https://www.feishu.cn/docx/TTMcd8YJPoHqmfxWsXXciahpnVh"
+        },
+        {
+          "file": "CN-PLAN-20260506-0001.md",
+          "url": "https://www.feishu.cn/docx/GLhKd8j5moPr1qxLZiCcQxb6n0f"
+        },
+        {
+          "file": "US-PLAN-20260505-001.md",
+          "url": "https://www.feishu.cn/docx/JO79dKGDJoMcrSx44wncyARcnze"
+        },
+        {
+          "file": "US-PLAN-20260527-0006.md",
+          "url": "https://www.feishu.cn/docx/Ap1udx62aogleWxTCm8cPgUqnYf"
+        },
+        {
+          "file": "US_TRADING_PLAN_20260506.md",
+          "url": "https://www.feishu.cn/docx/Hh16dt2eSoRlQJxsFZBcfpxQn12"
+        },
+        {
+          "file": "US-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/Kf9EdvTlcoDyaSxAcSJcykG9nIf"
+        },
+        {
+          "file": "US-PLAN-20260508-001.md",
+          "url": "https://www.feishu.cn/docx/S9LGdypJvo67bIxZSXlcVJMfniJ"
+        },
+        {
+          "file": "CN-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/Qdi1d6fNYot4rMxXNXdcXdUSnIg"
+        },
+        {
+          "file": "TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/Q0tpdh5pHoBCGIxpNFwcjCVqnib"
+        },
+        {
+          "file": "US-PLAN-20260529-0011.md",
+          "url": "https://www.feishu.cn/docx/FypdddequoiTj4xlGg8cBWLKnpf"
+        },
+        {
+          "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+          "url": "https://www.feishu.cn/docx/KlPTdLT6aoYRxpxPm5OcjeaCnqe"
+        }
+      ],
+      "failed": [],
+      "timestamp": "2026-05-31T23:31:18.591143"
+    }
+  },
+  {
+    "date": "2026-06-01",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://www.feishu.cn/docx/CaPqdlv4koSHruxARi1c7yoGn2d"
+      },
+      {
+        "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+        "url": "https://www.feishu.cn/docx/MEeCdHA3po11MLxTVrac2DktnJh"
+      },
+      {
+        "file": "US-PLAN-20260528-0007.md",
+        "url": "https://www.feishu.cn/docx/FqXzdh1TpoauvKxZ3s6cgCOanTf"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/OPJMdLcw7ocZ4exBjDMcKKfIn0f"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://www.feishu.cn/docx/SGdmd0YzcoEpd3xtTGVcZg0pnQE"
+      },
+      {
+        "file": "US-PLAN-20260527-0005.md",
+        "url": "https://www.feishu.cn/docx/ZcVhdxoc3ot4j9xH17ecmeGInsd"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/H9SfdFLZUoRkP5xPDjncFpn8nRf"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/FAe8dYoYzoQrjJxxFsYcqLYQn3c"
+      },
+      {
+        "file": "US-PLAN-20260529-0009.md",
+        "url": "https://www.feishu.cn/docx/Z4wOdMn66oF2VWxdK33ccN6xnFc"
+      },
+      {
+        "file": "US-PLAN-20260529-0012.md",
+        "url": "https://www.feishu.cn/docx/Ht7TdlD1EoswMmxyecucWhdCnFd"
+      },
+      {
+        "file": "US-PLAN-20260529-0008.md",
+        "url": "https://www.feishu.cn/docx/MgmzdbhX9oagdDx7IEvcWqwRncb"
+      },
+      {
+        "file": "US-PLAN-20260529-0010.md",
+        "url": "https://www.feishu.cn/docx/ZFZMdw8F6ouuTFxNhYXc7dmrnGc"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/VNBldYGkjoMeCmxxy7ScKKFqnUc"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://www.feishu.cn/docx/TN8BdDHhzo9GgUx0gW7c5cAwnFh"
+      },
+      {
+        "file": "US-PLAN-20260527-0006.md",
+        "url": "https://www.feishu.cn/docx/TFBwdrFP6o0ulHxigGBcPqucnIf"
+      },
+      {
+        "file": "US_TRADING_PLAN_20260506.md",
+        "url": "https://www.feishu.cn/docx/Aq2sdzeGUoeCq5xtYHHc2RnSnQh"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/UFvxdPaufojz7Nx3VhtcLi92nYg"
+      },
+      {
+        "file": "US-PLAN-20260508-001.md",
+        "url": "https://www.feishu.cn/docx/UQ2zdsZ23oRe5SxaK1lcGR5jn1n"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/Qw7Sdli4oosFJBxwIsFc51vlnmf"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/VAUYdk5zsoGvW1xxdi8cHAiunEg"
+      },
+      {
+        "file": "US-PLAN-20260529-0011.md",
+        "url": "https://www.feishu.cn/docx/U0aldHnUVoaxJrxgewScCcvBnct"
+      },
+      {
+        "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+        "url": "https://www.feishu.cn/docx/FpDIdzsgUos576xhBqhcXDp0nrg"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-01T15:48:26.379586"
+  },
+  {
+    "date": "2026-06-01",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://www.feishu.cn/docx/XNxrd2vkkohpVIxZk19cicHsnYc"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://www.feishu.cn/docx/LIyddkzY6oHKjOxIYM3cEMIXnBb"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://www.feishu.cn/docx/UjicdcWA1ojDLbxniFMc0qk5n9d"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-01T15:48:14.068764",
+    "simulation": {
+      "date": "2026-06-01",
+      "type": "simulation_trading",
+      "synced": [
+        {
+          "file": "US-PLAN-20260506-0004.md",
+          "url": "https://www.feishu.cn/docx/CaPqdlv4koSHruxARi1c7yoGn2d"
+        },
+        {
+          "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+          "url": "https://www.feishu.cn/docx/MEeCdHA3po11MLxTVrac2DktnJh"
+        },
+        {
+          "file": "US-PLAN-20260528-0007.md",
+          "url": "https://www.feishu.cn/docx/FqXzdh1TpoauvKxZ3s6cgCOanTf"
+        },
+        {
+          "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/OPJMdLcw7ocZ4exBjDMcKKfIn0f"
+        },
+        {
+          "file": "US-PLAN-20260506-0003.md",
+          "url": "https://www.feishu.cn/docx/SGdmd0YzcoEpd3xtTGVcZg0pnQE"
+        },
+        {
+          "file": "US-PLAN-20260527-0005.md",
+          "url": "https://www.feishu.cn/docx/ZcVhdxoc3ot4j9xH17ecmeGInsd"
+        },
+        {
+          "file": "US_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/H9SfdFLZUoRkP5xPDjncFpn8nRf"
+        },
+        {
+          "file": "CN_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/FAe8dYoYzoQrjJxxFsYcqLYQn3c"
+        },
+        {
+          "file": "US-PLAN-20260529-0009.md",
+          "url": "https://www.feishu.cn/docx/Z4wOdMn66oF2VWxdK33ccN6xnFc"
+        },
+        {
+          "file": "US-PLAN-20260529-0012.md",
+          "url": "https://www.feishu.cn/docx/Ht7TdlD1EoswMmxyecucWhdCnFd"
+        },
+        {
+          "file": "US-PLAN-20260529-0008.md",
+          "url": "https://www.feishu.cn/docx/MgmzdbhX9oagdDx7IEvcWqwRncb"
+        },
+        {
+          "file": "US-PLAN-20260529-0010.md",
+          "url": "https://www.feishu.cn/docx/ZFZMdw8F6ouuTFxNhYXc7dmrnGc"
+        },
+        {
+          "file": "CN-PLAN-20260506-0001.md",
+          "url": "https://www.feishu.cn/docx/VNBldYGkjoMeCmxxy7ScKKFqnUc"
+        },
+        {
+          "file": "US-PLAN-20260505-001.md",
+          "url": "https://www.feishu.cn/docx/TN8BdDHhzo9GgUx0gW7c5cAwnFh"
+        },
+        {
+          "file": "US-PLAN-20260527-0006.md",
+          "url": "https://www.feishu.cn/docx/TFBwdrFP6o0ulHxigGBcPqucnIf"
+        },
+        {
+          "file": "US_TRADING_PLAN_20260506.md",
+          "url": "https://www.feishu.cn/docx/Aq2sdzeGUoeCq5xtYHHc2RnSnQh"
+        },
+        {
+          "file": "US-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/UFvxdPaufojz7Nx3VhtcLi92nYg"
+        },
+        {
+          "file": "US-PLAN-20260508-001.md",
+          "url": "https://www.feishu.cn/docx/UQ2zdsZ23oRe5SxaK1lcGR5jn1n"
+        },
+        {
+          "file": "CN-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/Qw7Sdli4oosFJBxwIsFc51vlnmf"
+        },
+        {
+          "file": "TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/VAUYdk5zsoGvW1xxdi8cHAiunEg"
+        },
+        {
+          "file": "US-PLAN-20260529-0011.md",
+          "url": "https://www.feishu.cn/docx/U0aldHnUVoaxJrxgewScCcvBnct"
+        },
+        {
+          "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+          "url": "https://www.feishu.cn/docx/FpDIdzsgUos576xhBqhcXDp0nrg"
+        }
+      ],
+      "failed": [],
+      "timestamp": "2026-06-01T15:48:26.379586"
+    }
   }
 ]

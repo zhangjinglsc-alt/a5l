@@ -2,11 +2,11 @@
   "task_name": "memory_manager_auto",
   "status": "normal",
   "failure_count": 1,
-  "last_failure_time": "2026-05-30T16:00:01.517670",
+  "last_failure_time": "2026-06-01T12:00:01.578159",
   "fuse_triggered_time": null,
   "failures": [
     {
-      "time": "2026-05-30T16:00:01.517670",
+      "time": "2026-06-01T12:00:01.578159",
       "error": "命令执行失败，退出码: 127, 耗时: 0s"
     }
   ]

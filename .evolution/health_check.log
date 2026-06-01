@@ -50,3 +50,9 @@
 执行任务: system_health_check.sh, 命令: /bin/bash /workspace/projects/workspace/TOOLS/system_health_check.sh
 /bin/bash: /workspace/projects/workspace/TOOLS/system_health_check.sh: No such file or directory
 [2026-05-30T06:00:01.721481] [system_health_check.sh] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: system_health_check.sh, 命令: /bin/bash /workspace/projects/workspace/TOOLS/system_health_check.sh
+/bin/bash: /workspace/projects/workspace/TOOLS/system_health_check.sh: No such file or directory
+[2026-05-31T06:00:01.663699] [system_health_check.sh] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
+执行任务: system_health_check.sh, 命令: /bin/bash /workspace/projects/workspace/TOOLS/system_health_check.sh
+/bin/bash: /workspace/projects/workspace/TOOLS/system_health_check.sh: No such file or directory
+[2026-06-01T06:00:01.513210] [system_health_check.sh] [FAILURE] 执行失败: 命令执行失败，退出码: 127, 耗时: 0s (当前失败次数: 1)
