@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-02",
+  "timestamp": "2026-06-02T15:16:52.005018",
+  "model_loaded": true,
+  "today_signal": {
+    "timestamp": "2026-06-02T09:15:26.204370",
+    "data": {
+      "sentiment": {
+        "limit_up": 78,
+        "limit_down": 61,
+        "up_count": 1808,
+        "down_count": 1586,
+        "seal_rate": 100,
+        "intensity": 82
+      },
+      "ladder": [
+        {
+          "level": 1,
+          "count": 25
+        },
+        {
+          "level": 2,
+          "count": 48
+        },
+        {
+          "level": 3,
+          "count": 4
+        },
+        {
+          "level": 4,
+          "count": 1
+        }
+      ],
+      "hot_stocks": []
+    }
+  },
+  "market_actual": {
+    "sentiment": "neutral",
+    "limit_up": 67,
+    "limit_down": 16
+  },
+  "accuracy": 0.75,
+  "validation_result": "correct",
+  "historical_accuracy": 0.72
+}

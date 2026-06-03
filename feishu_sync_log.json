@@ -4665,5 +4665,459 @@
       "failed": [],
       "timestamp": "2026-06-01T15:48:26.379586"
     }
+  },
+  {
+    "date": "2026-06-01",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://www.feishu.cn/docx/ZsYRd0PP8ozOCuxjywrck74dn8b"
+      },
+      {
+        "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+        "url": "https://www.feishu.cn/docx/HZnwdJGgvohT6AxSLCgceL2RnFe"
+      },
+      {
+        "file": "US-PLAN-20260528-0007.md",
+        "url": "https://www.feishu.cn/docx/YRyPdFABmoy43ZxAi0ecjceGnve"
+      },
+      {
+        "file": "US_PLAN_20260601.md",
+        "url": "https://www.feishu.cn/docx/S1oUd7hK3oO6RdxFBIRcI8TwnNd"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/REiGdTBVpocYa3xHmQ7cwpo5nie"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://www.feishu.cn/docx/UwR8dGVTuoFcOMxxmiJcTRKanoc"
+      },
+      {
+        "file": "US-PLAN-20260527-0005.md",
+        "url": "https://www.feishu.cn/docx/B79kdZAbfohlBRxODeZc6eVXnUc"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/K7hxd82K9o2MiLxkmGfc9JNFnNc"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://www.feishu.cn/docx/CURCdNsN1oI3kjxQVsOcUW1Snog"
+      },
+      {
+        "file": "US-PLAN-20260529-0009.md",
+        "url": "https://www.feishu.cn/docx/SeaBdNz4poByGpxfGzocLrYXnIf"
+      },
+      {
+        "file": "US-PLAN-20260529-0012.md",
+        "url": "https://www.feishu.cn/docx/AI8id4oIkoEL9gxzYHmcKFWDnku"
+      },
+      {
+        "file": "US-PLAN-20260529-0008.md",
+        "url": "https://www.feishu.cn/docx/Zx61ddgCyoZmDOx6vexcpq4yndh"
+      },
+      {
+        "file": "US-PLAN-20260529-0010.md",
+        "url": "https://www.feishu.cn/docx/XpsLdjBbNoK0RaxgfygcuC0dneT"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://www.feishu.cn/docx/IH1UdkrZXobEO7x4GmRcKkXVnFd"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://www.feishu.cn/docx/LVFldXlaYoTLaEx9E5ncCFO8nvb"
+      },
+      {
+        "file": "US-PLAN-20260527-0006.md",
+        "url": "https://www.feishu.cn/docx/NXkLd1cCJop7tdx7lpUcOqr1n0e"
+      },
+      {
+        "file": "US_TRADING_PLAN_20260506.md",
+        "url": "https://www.feishu.cn/docx/XQEIdV3DKooyj3xaSTLcLicTnmb"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/DEeedjznkooeZmxzcJnchr0Ynjf"
+      },
+      {
+        "file": "US-PLAN-20260508-001.md",
+        "url": "https://www.feishu.cn/docx/F5ZXdHtnDowGhAxQdcAcD1danXf"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://www.feishu.cn/docx/WmI1dRuOroEQQ9xfdOkcTv8qn5c"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://www.feishu.cn/docx/I5aedpvYDoCMQ4xvWqQcKuk7nic"
+      },
+      {
+        "file": "US-PLAN-20260529-0011.md",
+        "url": "https://www.feishu.cn/docx/Fx7bdO3guojSmnx0xRUcaXbQnyh"
+      },
+      {
+        "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+        "url": "https://www.feishu.cn/docx/U93FdO9Mso3SrkxzKoCciMwSnUe"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-01T23:30:17.896337"
+  },
+  {
+    "date": "2026-06-01",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://www.feishu.cn/docx/FEWJdXh0ao4TnPxvrTYc0r6ln9b"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://www.feishu.cn/docx/SU4ZdxPN1os1xLxEnVVc9UrCnhh"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://www.feishu.cn/docx/EdcXd6WYSoF997xwus5ccp2LnIc"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-01T23:30:08.184027",
+    "simulation": {
+      "date": "2026-06-01",
+      "type": "simulation_trading",
+      "synced": [
+        {
+          "file": "US-PLAN-20260506-0004.md",
+          "url": "https://www.feishu.cn/docx/ZsYRd0PP8ozOCuxjywrck74dn8b"
+        },
+        {
+          "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+          "url": "https://www.feishu.cn/docx/HZnwdJGgvohT6AxSLCgceL2RnFe"
+        },
+        {
+          "file": "US-PLAN-20260528-0007.md",
+          "url": "https://www.feishu.cn/docx/YRyPdFABmoy43ZxAi0ecjceGnve"
+        },
+        {
+          "file": "US_PLAN_20260601.md",
+          "url": "https://www.feishu.cn/docx/S1oUd7hK3oO6RdxFBIRcI8TwnNd"
+        },
+        {
+          "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/REiGdTBVpocYa3xHmQ7cwpo5nie"
+        },
+        {
+          "file": "US-PLAN-20260506-0003.md",
+          "url": "https://www.feishu.cn/docx/UwR8dGVTuoFcOMxxmiJcTRKanoc"
+        },
+        {
+          "file": "US-PLAN-20260527-0005.md",
+          "url": "https://www.feishu.cn/docx/B79kdZAbfohlBRxODeZc6eVXnUc"
+        },
+        {
+          "file": "US_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/K7hxd82K9o2MiLxkmGfc9JNFnNc"
+        },
+        {
+          "file": "CN_SIM_001_LIVE_STATUS.md",
+          "url": "https://www.feishu.cn/docx/CURCdNsN1oI3kjxQVsOcUW1Snog"
+        },
+        {
+          "file": "US-PLAN-20260529-0009.md",
+          "url": "https://www.feishu.cn/docx/SeaBdNz4poByGpxfGzocLrYXnIf"
+        },
+        {
+          "file": "US-PLAN-20260529-0012.md",
+          "url": "https://www.feishu.cn/docx/AI8id4oIkoEL9gxzYHmcKFWDnku"
+        },
+        {
+          "file": "US-PLAN-20260529-0008.md",
+          "url": "https://www.feishu.cn/docx/Zx61ddgCyoZmDOx6vexcpq4yndh"
+        },
+        {
+          "file": "US-PLAN-20260529-0010.md",
+          "url": "https://www.feishu.cn/docx/XpsLdjBbNoK0RaxgfygcuC0dneT"
+        },
+        {
+          "file": "CN-PLAN-20260506-0001.md",
+          "url": "https://www.feishu.cn/docx/IH1UdkrZXobEO7x4GmRcKkXVnFd"
+        },
+        {
+          "file": "US-PLAN-20260505-001.md",
+          "url": "https://www.feishu.cn/docx/LVFldXlaYoTLaEx9E5ncCFO8nvb"
+        },
+        {
+          "file": "US-PLAN-20260527-0006.md",
+          "url": "https://www.feishu.cn/docx/NXkLd1cCJop7tdx7lpUcOqr1n0e"
+        },
+        {
+          "file": "US_TRADING_PLAN_20260506.md",
+          "url": "https://www.feishu.cn/docx/XQEIdV3DKooyj3xaSTLcLicTnmb"
+        },
+        {
+          "file": "US-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/DEeedjznkooeZmxzcJnchr0Ynjf"
+        },
+        {
+          "file": "US-PLAN-20260508-001.md",
+          "url": "https://www.feishu.cn/docx/F5ZXdHtnDowGhAxQdcAcD1danXf"
+        },
+        {
+          "file": "CN-PLAN-20260506-0002.md",
+          "url": "https://www.feishu.cn/docx/WmI1dRuOroEQQ9xfdOkcTv8qn5c"
+        },
+        {
+          "file": "TRADE_PLAN_TEMPLATE.md",
+          "url": "https://www.feishu.cn/docx/I5aedpvYDoCMQ4xvWqQcKuk7nic"
+        },
+        {
+          "file": "US-PLAN-20260529-0011.md",
+          "url": "https://www.feishu.cn/docx/Fx7bdO3guojSmnx0xRUcaXbQnyh"
+        },
+        {
+          "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+          "url": "https://www.feishu.cn/docx/U93FdO9Mso3SrkxzKoCciMwSnUe"
+        }
+      ],
+      "failed": [],
+      "timestamp": "2026-06-01T23:30:17.896337"
+    }
+  },
+  {
+    "date": "2026-06-02",
+    "type": "simulation_trading",
+    "synced": [
+      {
+        "file": "US-PLAN-20260506-0004.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0004)"
+      },
+      {
+        "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-CIO_CN_TRADING_PLAN_20260508_0905)"
+      },
+      {
+        "file": "US-PLAN-20260528-0007.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260528-0007)"
+      },
+      {
+        "file": "US_PLAN_20260601.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_PLAN_20260601)"
+      },
+      {
+        "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-UNIFIED_TRADE_PLAN_TEMPLATE)"
+      },
+      {
+        "file": "US-PLAN-20260506-0003.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0003)"
+      },
+      {
+        "file": "US-PLAN-20260527-0005.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260527-0005)"
+      },
+      {
+        "file": "US_SIM_001_LIVE_STATUS.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股实时状态-2026-06-02)"
+      },
+      {
+        "file": "CN_SIM_001_LIVE_STATUS.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股实时状态-2026-06-02)"
+      },
+      {
+        "file": "US-PLAN-20260529-0009.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0009)"
+      },
+      {
+        "file": "US-PLAN-20260529-0012.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0012)"
+      },
+      {
+        "file": "US-PLAN-20260529-0008.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0008)"
+      },
+      {
+        "file": "US-PLAN-20260529-0010.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0010)"
+      },
+      {
+        "file": "CN-PLAN-20260506-0001.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股交易计划-20260506-0001)"
+      },
+      {
+        "file": "US-PLAN-20260505-001.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260505-001)"
+      },
+      {
+        "file": "US-PLAN-20260527-0006.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260527-0006)"
+      },
+      {
+        "file": "US_TRADING_PLAN_20260506.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_TRADING_PLAN_20260506)"
+      },
+      {
+        "file": "US-PLAN-20260506-0002.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0002)"
+      },
+      {
+        "file": "US-PLAN-20260508-001.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260508-001)"
+      },
+      {
+        "file": "CN-PLAN-20260506-0002.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股交易计划-20260506-0002)"
+      },
+      {
+        "file": "TRADE_PLAN_TEMPLATE.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-TRADE_PLAN_TEMPLATE)"
+      },
+      {
+        "file": "US-PLAN-20260529-0011.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0011)"
+      },
+      {
+        "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-CIO_US_TRADING_PLAN_20260507_2130)"
+      },
+      {
+        "file": "US_PLAN_20260602.md",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_PLAN_20260602)"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-02T23:30:30.247249"
+  },
+  {
+    "date": "2026-06-02",
+    "synced": [
+      {
+        "layer": "SOUL",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 SOUL-人格宪章-2026-06-02)"
+      },
+      {
+        "layer": "SKILL",
+        "url": "https://my.feishu.cn/base/DG2GfGe0nlLuvSdYlxwcpH0MnGb"
+      },
+      {
+        "layer": "MEMORY",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 MEMORY-2026-06-02)"
+      },
+      {
+        "layer": "GOAL",
+        "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 GOAL-进展-2026-06-02)"
+      }
+    ],
+    "failed": [],
+    "timestamp": "2026-06-02T23:30:07.273888",
+    "simulation": {
+      "date": "2026-06-02",
+      "type": "simulation_trading",
+      "synced": [
+        {
+          "file": "US-PLAN-20260506-0004.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0004)"
+        },
+        {
+          "file": "CIO_CN_TRADING_PLAN_20260508_0905.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-CIO_CN_TRADING_PLAN_20260508_0905)"
+        },
+        {
+          "file": "US-PLAN-20260528-0007.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260528-0007)"
+        },
+        {
+          "file": "US_PLAN_20260601.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_PLAN_20260601)"
+        },
+        {
+          "file": "UNIFIED_TRADE_PLAN_TEMPLATE.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-UNIFIED_TRADE_PLAN_TEMPLATE)"
+        },
+        {
+          "file": "US-PLAN-20260506-0003.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0003)"
+        },
+        {
+          "file": "US-PLAN-20260527-0005.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260527-0005)"
+        },
+        {
+          "file": "US_SIM_001_LIVE_STATUS.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股实时状态-2026-06-02)"
+        },
+        {
+          "file": "CN_SIM_001_LIVE_STATUS.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股实时状态-2026-06-02)"
+        },
+        {
+          "file": "US-PLAN-20260529-0009.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0009)"
+        },
+        {
+          "file": "US-PLAN-20260529-0012.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0012)"
+        },
+        {
+          "file": "US-PLAN-20260529-0008.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0008)"
+        },
+        {
+          "file": "US-PLAN-20260529-0010.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0010)"
+        },
+        {
+          "file": "CN-PLAN-20260506-0001.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股交易计划-20260506-0001)"
+        },
+        {
+          "file": "US-PLAN-20260505-001.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260505-001)"
+        },
+        {
+          "file": "US-PLAN-20260527-0006.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260527-0006)"
+        },
+        {
+          "file": "US_TRADING_PLAN_20260506.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_TRADING_PLAN_20260506)"
+        },
+        {
+          "file": "US-PLAN-20260506-0002.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260506-0002)"
+        },
+        {
+          "file": "US-PLAN-20260508-001.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260508-001)"
+        },
+        {
+          "file": "CN-PLAN-20260506-0002.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 A股交易计划-20260506-0002)"
+        },
+        {
+          "file": "TRADE_PLAN_TEMPLATE.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-TRADE_PLAN_TEMPLATE)"
+        },
+        {
+          "file": "US-PLAN-20260529-0011.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 美股交易计划-20260529-0011)"
+        },
+        {
+          "file": "CIO_US_TRADING_PLAN_20260507_2130.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-CIO_US_TRADING_PLAN_20260507_2130)"
+        },
+        {
+          "file": "US_PLAN_20260602.md",
+          "url": "https://my.feishu.cn/drive/folder/DG2GfGe0nlLuvSdYlxwcpH0MnGb (请手动上传 模拟交易-US_PLAN_20260602)"
+        }
+      ],
+      "failed": [],
+      "timestamp": "2026-06-02T23:30:30.247249"
+    }
   }
 ]

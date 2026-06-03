@@ -1,0 +1,64 @@
+{
+  "update_time": "2026-06-02 15:54:25",
+  "total_market_value": 4875464.72,
+  "total_cost": 4712184.55,
+  "total_pnl": 163280.17,
+  "total_pnl_pct": 3.47,
+  "positions": [
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "shares": 761400,
+      "cost": 4.62,
+      "price": 4.71,
+      "market_value": 3586194.0,
+      "pnl": 68526.0,
+      "pnl_pct": 1.95,
+      "weight": 73.56
+    },
+    {
+      "code": "000066",
+      "name": "中国长城",
+      "shares": 48000,
+      "cost": 16.86,
+      "price": 18.09,
+      "market_value": 868320.0,
+      "pnl": 59040.0,
+      "pnl_pct": 7.3,
+      "weight": 17.81
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "shares": 3139,
+      "cost": 121.45,
+      "price": 132.48,
+      "market_value": 415854.72,
+      "pnl": 34623.17,
+      "pnl_pct": 9.08,
+      "weight": 8.53
+    },
+    {
+      "code": "002436",
+      "name": "兴森科技",
+      "shares": 100,
+      "cost": 29.29,
+      "price": 42.22,
+      "market_value": 4222.0,
+      "pnl": 1293.0,
+      "pnl_pct": 44.14,
+      "weight": 0.09
+    },
+    {
+      "code": "300708",
+      "name": "聚灿光电",
+      "shares": 100,
+      "cost": 10.76,
+      "price": 8.74,
+      "market_value": 874.0,
+      "pnl": -202.0,
+      "pnl_pct": -18.77,
+      "weight": 0.02
+    }
+  ]
+}

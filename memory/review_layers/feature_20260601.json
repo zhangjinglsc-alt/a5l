@@ -1,0 +1,42 @@
+{
+  "date": "20260601",
+  "type": "feature_extraction",
+  "key_metrics": {
+    "total_positions": 5,
+    "profitable_count": 0,
+    "losing_count": 0,
+    "total_pnl": 0
+  },
+  "stock_features": [
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "status": "满仓标记",
+      "pnl_pct": null
+    },
+    {
+      "code": "000066",
+      "name": "中国长城",
+      "status": "满仓标记",
+      "pnl_pct": null
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "status": "满仓标记",
+      "pnl_pct": null
+    },
+    {
+      "code": "002436",
+      "name": "兴森科技",
+      "status": "满仓标记",
+      "pnl_pct": null
+    },
+    {
+      "code": "300708",
+      "name": "聚灿光电",
+      "status": "满仓标记",
+      "pnl_pct": null
+    }
+  ]
+}

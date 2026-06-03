@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-05-10T00:43:19.907613",
+  "timestamp": "2026-06-02T09:15:56.153740",
   "backtest": {
-    "timestamp": "2026-05-10T00:43:19.907592",
+    "timestamp": "2026-06-02T09:15:56.153709",
     "best_strategy": {
       "name": "CTF催化剂",
       "return": 32.1,

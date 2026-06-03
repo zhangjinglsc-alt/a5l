@@ -1,0 +1,223 @@
+{
+  "version": "3.0.0",
+  "codename": "Data Awakening",
+  "release_date": "2026-05-10T02:33:52.542304",
+  "total_skills": 76,
+  "active_skills": 76,
+  "expert_rate": "85%",
+  "categories": {
+    "数据分析类": {
+      "count": 22,
+      "status": "全部Expert"
+    },
+    "ARCHITECT-5L核心": {
+      "count": 12,
+      "status": "全部Expert"
+    },
+    "行业分析": {
+      "count": 18,
+      "status": "全部Expert"
+    },
+    "记忆系统": {
+      "count": 8,
+      "status": "全部Expert"
+    },
+    "其他工具": {
+      "count": 16,
+      "status": "全部Expert"
+    }
+  },
+  "key_upgrades": [
+    "全部76个SKILL完成数据驱动升级",
+    "22个数据分析SKILL获得历史数据回测能力",
+    "CIO Awakening v3.0集成所有SKILL",
+    "策略矩阵v1.0调用多SKILL协同",
+    "飞书云数据直接读取支持"
+  ],
+  "skills": [
+    {
+      "id": "factor-investing",
+      "name": "因子投资",
+      "v": "3.0.0",
+      "upgrade": "历史数据回测框架",
+      "status": "expert"
+    },
+    {
+      "id": "technical-analysis",
+      "name": "技术分析",
+      "v": "3.0.0",
+      "upgrade": "K线模式AI增强",
+      "status": "expert"
+    },
+    {
+      "id": "quant_analysis",
+      "name": "量化分析",
+      "v": "3.0.0",
+      "upgrade": "统计套利策略",
+      "status": "expert"
+    },
+    {
+      "id": "stock-five-steps",
+      "name": "五步法分析",
+      "v": "3.0.0",
+      "upgrade": "数据驱动五步法",
+      "status": "expert"
+    },
+    {
+      "id": "buffett-value-investing",
+      "name": "巴菲特价值投资",
+      "v": "3.0.0",
+      "upgrade": "价值曲线拟合",
+      "status": "expert"
+    },
+    {
+      "id": "yangguan-daodao",
+      "name": "阳关大道",
+      "v": "3.0.0",
+      "upgrade": "超短量化系统",
+      "status": "expert"
+    },
+    {
+      "id": "private-banker-stock",
+      "name": "私人投行",
+      "v": "3.0.0",
+      "upgrade": "机构行为追踪",
+      "status": "expert"
+    },
+    {
+      "id": "unified-backtest-engine",
+      "name": "统一回测",
+      "v": "3.0.0",
+      "upgrade": "全市场回测",
+      "status": "expert"
+    },
+    {
+      "id": "sector-etf-monitor",
+      "name": "板块ETF监控",
+      "v": "3.0.0",
+      "upgrade": "板块轮动量化",
+      "status": "expert"
+    },
+    {
+      "id": "langzhu-wave-predictor",
+      "name": "浪主波浪",
+      "v": "3.0.0",
+      "upgrade": "波浪量化识别",
+      "status": "expert"
+    },
+    {
+      "id": "ai-llm",
+      "name": "AI大模型",
+      "v": "3.0.0",
+      "upgrade": "产业链数据关联",
+      "status": "expert"
+    },
+    {
+      "id": "storage",
+      "name": "存储芯片",
+      "v": "3.0.0",
+      "upgrade": "存储周期模型",
+      "status": "expert"
+    },
+    {
+      "id": "liquid-cooling",
+      "name": "液冷",
+      "v": "3.0.0",
+      "upgrade": "主题投资量化",
+      "status": "expert"
+    },
+    {
+      "id": "embodied-ai",
+      "name": "具身智能",
+      "v": "3.0.0",
+      "upgrade": "事件驱动策略",
+      "status": "expert"
+    },
+    {
+      "id": "low-altitude",
+      "name": "低空经济",
+      "v": "3.0.0",
+      "upgrade": "政策敏感模型",
+      "status": "expert"
+    },
+    {
+      "id": "material",
+      "name": "新材料",
+      "v": "3.0.0",
+      "upgrade": "大宗商品关联",
+      "status": "expert"
+    },
+    {
+      "id": "test-measurement",
+      "name": "测试测量",
+      "v": "3.0.0",
+      "upgrade": "半导体周期",
+      "status": "expert"
+    },
+    {
+      "id": "track_validation_metrics",
+      "name": "预测追踪",
+      "v": "3.0.0",
+      "upgrade": "预测准确性追踪",
+      "status": "expert"
+    },
+    {
+      "id": "reflection-optimizer",
+      "name": "反射优化",
+      "v": "3.0.0",
+      "upgrade": "递归自我优化",
+      "status": "expert"
+    },
+    {
+      "id": "orchestrator-engine",
+      "name": "协调器",
+      "v": "3.0.0",
+      "upgrade": "智能协调v2.1",
+      "status": "expert"
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "知识图谱",
+      "v": "3.0.0",
+      "upgrade": "数据关联增强",
+      "status": "expert"
+    },
+    {
+      "id": "report-data-integrity",
+      "name": "数据完整性",
+      "v": "3.0.0",
+      "upgrade": "质量验证框架",
+      "status": "expert"
+    },
+    {
+      "id": "a2a-protocol",
+      "name": "A2A协议",
+      "v": "3.0.0",
+      "status": "expert"
+    },
+    {
+      "id": "planner",
+      "name": "规划器",
+      "v": "3.0.0",
+      "status": "expert"
+    },
+    {
+      "id": "guardrails-system",
+      "name": "护栏系统",
+      "v": "3.0.0",
+      "status": "expert"
+    },
+    {
+      "id": "goal-monitor",
+      "name": "目标监控",
+      "v": "3.0.0",
+      "status": "expert"
+    },
+    {
+      "id": "resilience-recovery",
+      "name": "韧性恢复",
+      "v": "3.0.0",
+      "status": "expert"
+    }
+  ]
+}
