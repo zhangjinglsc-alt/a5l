@@ -17,7 +17,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:24:58.779950",
-    "updated_at": "2026-05-29T15:46:06.436588",
+    "updated_at": "2026-06-04T15:47:17.430624",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -46,7 +46,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:24:58.780409",
-    "updated_at": "2026-05-29T15:46:06.436648",
+    "updated_at": "2026-06-04T15:47:17.430669",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -75,7 +75,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:24:58.780945",
-    "updated_at": "2026-05-29T15:46:06.436678",
+    "updated_at": "2026-06-04T15:47:17.430702",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -104,7 +104,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:24:58.781718",
-    "updated_at": "2026-05-29T15:46:06.436704",
+    "updated_at": "2026-06-04T15:47:17.430728",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -133,7 +133,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:24:58.783110",
-    "updated_at": "2026-05-29T15:46:06.436727",
+    "updated_at": "2026-06-04T15:47:17.430750",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -162,7 +162,7 @@
       "光学光电子"
     ],
     "created_at": "2026-05-02T17:26:40.243740",
-    "updated_at": "2026-05-29T15:46:06.436749",
+    "updated_at": "2026-06-04T15:47:17.430772",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -190,7 +190,7 @@
       "说明文档"
     ],
     "created_at": "2026-05-02T17:26:40.243772",
-    "updated_at": "2026-05-29T15:46:06.436771",
+    "updated_at": "2026-06-04T15:47:17.430793",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -218,7 +218,7 @@
       "系统报告"
     ],
     "created_at": "2026-05-02T17:26:40.243789",
-    "updated_at": "2026-05-29T15:46:06.436797",
+    "updated_at": "2026-06-04T15:47:17.430812",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -247,7 +247,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:36:17.148999",
-    "updated_at": "2026-05-29T15:46:06.436818",
+    "updated_at": "2026-06-04T15:47:17.430834",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -276,7 +276,7 @@
       "current"
     ],
     "created_at": "2026-05-02T17:43:12.519913",
-    "updated_at": "2026-05-29T15:46:06.436839",
+    "updated_at": "2026-06-04T15:47:17.430852",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -308,7 +308,7 @@
       "政策驱动"
     ],
     "created_at": "2026-05-02T20:20:31.614477",
-    "updated_at": "2026-05-29T15:46:06.436859",
+    "updated_at": "2026-06-04T15:47:17.430871",
     "content_date": null,
     "author": null,
     "source_url": null,
@@ -336,11 +336,39 @@
       "market"
     ],
     "created_at": "2026-05-29T15:46:06.434782",
-    "updated_at": "2026-05-29T15:46:06.436879",
+    "updated_at": "2026-06-04T15:47:17.430891",
     "content_date": null,
     "author": null,
     "source_url": null,
     "feishu_url": "https://www.feishu.cn/docx/a7d49798c25f3841e5e9",
+    "kiwi_url": null,
+    "access_count": 0,
+    "last_accessed": null,
+    "is_archived": false,
+    "is_important": false
+  },
+  "stock_analysis_3950215aa4": {
+    "item_id": "stock_analysis_3950215aa4",
+    "title": "sim_trading_report_2026-06-05",
+    "content_type": "stock_analysis",
+    "source": "a5l_generated",
+    "content": null,
+    "file_path": "/tmp/sim_trading_report_2026-06-05.md",
+    "file_size": 0,
+    "file_hash": null,
+    "stock_code": null,
+    "stock_name": null,
+    "industry": null,
+    "tags": [
+      "A5L生成",
+      "stock"
+    ],
+    "created_at": "2026-06-05T15:46:22.392235",
+    "updated_at": "2026-06-05T15:46:22.392239",
+    "content_date": null,
+    "author": null,
+    "source_url": null,
+    "feishu_url": null,
     "kiwi_url": null,
     "access_count": 0,
     "last_accessed": null,

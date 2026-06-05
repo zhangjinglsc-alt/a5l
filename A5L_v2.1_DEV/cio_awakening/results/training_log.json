@@ -967,6 +967,266 @@
         "historical_accuracy": 0.72
       },
       "updated_at": "2026-06-03T15:15:34.696837"
+    },
+    {
+      "date": "2026-06-04",
+      "market_data": {
+        "date": "2026-06-04",
+        "timestamp": "2026-06-04T15:15:34.983635",
+        "limit_up": 80,
+        "limit_down": 7,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-06-04",
+        "timestamp": "2026-06-04T15:15:36.133087",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-06-04T09:15:21.127384",
+          "data": {
+            "sentiment": {
+              "limit_up": 56,
+              "limit_down": 56,
+              "up_count": 1128,
+              "down_count": 2024,
+              "seal_rate": 100,
+              "intensity": 53
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 29
+              },
+              {
+                "level": 2,
+                "count": 20
+              },
+              {
+                "level": 3,
+                "count": 4
+              },
+              {
+                "level": 4,
+                "count": 3
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 80,
+          "limit_down": 7
+        },
+        "accuracy": 0.75,
+        "validation_result": "correct",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-06-04T15:15:36.135027"
+    },
+    {
+      "date": "2026-06-05",
+      "market_data": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:15:50.927064",
+        "limit_up": 73,
+        "limit_down": 11,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:15:52.088115",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-06-05T09:15:28.320197",
+          "data": {
+            "sentiment": {
+              "limit_up": 57,
+              "limit_down": 56,
+              "up_count": 1644,
+              "down_count": 1815,
+              "seal_rate": 100,
+              "intensity": 56
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 32
+              },
+              {
+                "level": 2,
+                "count": 16
+              },
+              {
+                "level": 3,
+                "count": 5
+              },
+              {
+                "level": 4,
+                "count": 1
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 73,
+          "limit_down": 11
+        },
+        "accuracy": 0.75,
+        "validation_result": "correct",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-06-05T15:15:52.091255"
+    },
+    {
+      "date": "2026-06-05",
+      "market_data": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:15:54.967549",
+        "limit_up": 73,
+        "limit_down": 11,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:15:55.754620",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-06-05T09:15:28.320197",
+          "data": {
+            "sentiment": {
+              "limit_up": 57,
+              "limit_down": 56,
+              "up_count": 1644,
+              "down_count": 1815,
+              "seal_rate": 100,
+              "intensity": 56
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 32
+              },
+              {
+                "level": 2,
+                "count": 16
+              },
+              {
+                "level": 3,
+                "count": 5
+              },
+              {
+                "level": 4,
+                "count": 1
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 73,
+          "limit_down": 11
+        },
+        "accuracy": 0.75,
+        "validation_result": "correct",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-06-05T15:15:55.756340"
+    },
+    {
+      "date": "2026-06-05",
+      "market_data": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:16:20.390193",
+        "limit_up": 73,
+        "limit_down": 11,
+        "up_count": 0,
+        "down_count": 0,
+        "flat_count": 0,
+        "total_volume": 0,
+        "shanghai_index": {
+          "close": 0,
+          "change_pct": 0
+        },
+        "top_sectors": [],
+        "market_sentiment": "neutral"
+      },
+      "ml_validation": {
+        "date": "2026-06-05",
+        "timestamp": "2026-06-05T15:16:21.105682",
+        "model_loaded": true,
+        "today_signal": {
+          "timestamp": "2026-06-05T09:15:28.320197",
+          "data": {
+            "sentiment": {
+              "limit_up": 57,
+              "limit_down": 56,
+              "up_count": 1644,
+              "down_count": 1815,
+              "seal_rate": 100,
+              "intensity": 56
+            },
+            "ladder": [
+              {
+                "level": 1,
+                "count": 32
+              },
+              {
+                "level": 2,
+                "count": 16
+              },
+              {
+                "level": 3,
+                "count": 5
+              },
+              {
+                "level": 4,
+                "count": 1
+              }
+            ],
+            "hot_stocks": []
+          }
+        },
+        "market_actual": {
+          "sentiment": "neutral",
+          "limit_up": 73,
+          "limit_down": 11
+        },
+        "accuracy": 0.75,
+        "validation_result": "correct",
+        "historical_accuracy": 0.72
+      },
+      "updated_at": "2026-06-05T15:16:21.106630"
     }
   ]
 }
