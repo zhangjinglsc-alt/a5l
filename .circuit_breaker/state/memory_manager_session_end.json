@@ -2,11 +2,11 @@
   "task_name": "memory_manager_session_end",
   "status": "normal",
   "failure_count": 1,
-  "last_failure_time": "2026-06-04T23:50:01.143734",
+  "last_failure_time": "2026-06-05T23:50:01.845844",
   "fuse_triggered_time": null,
   "failures": [
     {
-      "time": "2026-06-04T23:50:01.143734",
+      "time": "2026-06-05T23:50:01.845844",
       "error": "命令执行失败，退出码: 127, 耗时: 0s"
     }
   ]

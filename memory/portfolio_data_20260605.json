@@ -1,0 +1,55 @@
+{
+  "update_time": "2026-06-05T15:54:52.628074",
+  "date": "20260605",
+  "price_data": {
+    "000066.SZ": {
+      "name": "中国长城",
+      "price": 17.55,
+      "change_pct": -5.01
+    },
+    "300708.SZ": {
+      "name": "聚灿光电",
+      "price": 8.98,
+      "change_pct": -0.23
+    },
+    "002436.SZ": {
+      "name": "兴森科技",
+      "price": 37.8,
+      "change_pct": -7.27
+    },
+    "601975.SH": {
+      "name": "招商南油",
+      "price": 4.28,
+      "change_pct": -2.51
+    },
+    "688981.SH": {
+      "name": "中芯国际",
+      "price": 127.4,
+      "change_pct": -5.55
+    }
+  },
+  "summary": {
+    "total_market_value": 3663378.6,
+    "total_cost": 3900016.55,
+    "total_profit": -236637.94999999995,
+    "total_profit_pct": -6.067613995125225,
+    "zsyh_total_volume": 761400,
+    "zsyh_avg_cost": 4.616206987128973,
+    "zsyh_market_value": 3258792.0,
+    "zsyh_profit": -255988.0,
+    "zsyh_profit_pct": -7.283186998901781
+  },
+  "risk_check": {
+    "single_stock_concentration": {
+      "stock": "招商南油",
+      "weight": 88.95591626811381
+    },
+    "sector_concentration": {
+      "航运/油运": 88.95591626811381,
+      "半导体": 10.916387402601522,
+      "信创/国产替代": 0,
+      "PCB/半导体材料": 0.10318343837025197,
+      "LED/半导体": 0.02451289091441436
+    }
+  }
+}
