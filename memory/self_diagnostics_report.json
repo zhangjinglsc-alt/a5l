@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-18T12:01:40.330626",
-  "score": 70,
+  "timestamp": "2026-06-08T00:01:23.759502",
+  "score": 72,
   "issues": [
     {
       "type": "uncommitted_changes",
-      "count": 28
+      "count": 18
     }
   ],
   "fixes": [
@@ -15,9 +15,8 @@
   ],
   "predictions": [
     "技能数量(0)低于目标(60+)，建议扩展",
-    "有28个未提交变更，建议及时commit",
-    "持仓数据已10.4天未更新，建议同步",
-    "近7天仅4次提交，建议提高备份频率"
+    "有18个未提交变更，建议及时commit",
+    "持仓数据已30.9天未更新，建议同步"
   ],
   "details": {
     "核心文件完整性": {
@@ -33,13 +32,13 @@
     },
     "Git同步状态": {
       "status": "ok",
-      "score": 50,
-      "uncommitted": 28
+      "score": 64,
+      "uncommitted": 18
     },
     "持仓数据一致性": {
       "status": "ok",
       "score": 50,
-      "age_days": 10.41619772957707
+      "age_days": 30.91600590185711
     },
     "定时任务状态": {
       "status": "ok",
@@ -54,7 +53,7 @@
     "预测性风险扫描": {
       "status": "ok",
       "score": 90,
-      "predictions": 4
+      "predictions": 3
     }
   }
 }

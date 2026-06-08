@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-06-08T09:15:20.823996",
+  "data": {
+    "sentiment": {
+      "limit_up": 54,
+      "limit_down": 227,
+      "up_count": 638,
+      "down_count": 3344,
+      "seal_rate": 100,
+      "intensity": 43
+    },
+    "ladder": [
+      {
+        "level": 1,
+        "count": 33
+      },
+      {
+        "level": 2,
+        "count": 16
+      },
+      {
+        "level": 3,
+        "count": 3
+      },
+      {
+        "level": 4,
+        "count": 1
+      }
+    ],
+    "hot_stocks": []
+  }
+}
